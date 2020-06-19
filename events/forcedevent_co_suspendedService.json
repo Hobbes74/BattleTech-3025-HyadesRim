@@ -1,0 +1,552 @@
+{
+    "Description" : {
+        "Id" : "forcedevent_co_suspendedService",
+        "Name" : "Suspended Service",
+        "Details" : "The senior leaders all gather at the ship's bridge. Sumire starts debriefing the message she just received. \"This is unusual. [[DM.BaseDescriptionDefs[LoreComStar],ComStar]] has just declared that it has suspended regular service to several star systems all across the [[DM.BaseDescriptionDefs[LoreHyadesRim],Hyades Rim]] due to a shortage of available JumpShips. They will assure one last transport service to any DropShips still in those system. But afterwards it won't be possible to return to those systems until service is restored.\"\r\n\r\nMurad adds: \"This is also untimely. I've been reviewing the data from the known missions involving Captain Murray to see if there might be any indication of her claims of a LosTech treasure and I believe we have a possible target but it lies on those systems now out of travel. \r\n\r\nDarius completes:\"Lack of available JumpShips is hardly new to areas closer into the [[DM.BaseDescriptionDefs[LoreDeepPeriphery],Deep Periphery]]. But we could also check on alternative travel into those areas, with the right connections we might be able to find some willing captains.",
+        "Icon" : "uixTxrSpot_JumpShip.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 40,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [
+                    "planet_region_hyadesrim"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Message the local ComStar representative for additional explanations.",
+                "Details" : "na",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "ComStar eventually replies to the message.",
+                        "Details" : "Darius shakes his head in frustration, \"I have sent several messages to the local ComStar office showing my displeasure and it took several attempts until they responded to any of them Commander.\" He puts down on the table the comms log.\r\n\r\n\"This is getting on my nerves, there's nothing else I can think of than going there with a BattleMech and demanding explanations for the suspended JumpShip services.\"  He completes. \"At least they assured me though that we'll get first tickets on the next JumpShips that became available, but that should take at least two weeks to restore all regular travel service.\"\r\n\r\n\"And as for the suspended service, we should still be able to access the systems offline though, if there are any local contracts that include travel.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_co_suspendedService"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "System_AddFlashpoint",
+                                    "value" : "fp_hereMightBeDragons",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Luderitz"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "map_travel_4"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 14
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_1",
+                        "Name" : "ComStar is displeased",
+                        "Details" : "\"We finally received a reply from ComStar. They apologize once again for the inconvenience about the suspended service.\" \r\n\r\nDarius swallows hard then finishes it: \"But they have also implied that recent events that took place involving the Satan's Kittens have cast doubts over the combat reports on our last mission to them on The Twins. They have also indicated that they're willing referring this issue to MRB litigation. And they estimate to be close to a month before JumpShip service is fully restored.\"\r\n\r\n\"We should still be able to access the systems offline though, if there are any local contracts that include travel.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_co_suspendedService"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "System_AddFlashpoint",
+                                    "value" : "fp_hereMightBeDragons",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Luderitz"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "map_travel_4"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 28
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-4",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Tell Sumire to contact independent JumpShips to confirm the lockdown.",
+                "Details" : "na",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Rumored JumpShips Missing",
+                        "Details" : "\"All independent JumpShip captains I've spoken to are following ComStar's unofficial interdiction of those systems and won't risk a pirate jump.\" Sumire reports back. \"There's talk of increased pirate activity in those systems, although it's more concern than actual proof. And rumors of missing JumpShips. Quite a few rumors on those ones.\" \r\n\r\nDarius adds. \"Everyone's afraid and hunkering down so until this whole affair clears, we'll have transport issues all over the Rim for the next three weeks. We should still be able to access the systems offline though, if there are any local contracts that include travel.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 75,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_co_suspendedService"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "System_AddFlashpoint",
+                                    "value" : "fp_hereMightBeDragons",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Luderitz"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "map_travel_4"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 21
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-3",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Contact the Alphard Trading Company.",
+                "Details" : "[Liked by ATC]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [
+                        ],
+                        "tagSetSourceFile" : "Tags/PilotTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Reputation.AlphardTradingCompany",
+                            "op" : "GreaterThanOrEqual",
+                            "val" : 20,
+                            "valueConstant" : "[rep_liked_min]"
+                        },
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 150000,
+                            "valueConstant" : "150000"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "ATC JumpShip available",
+                        "Details" : "Sumire comes back smiling. \"I've managed to contact Alphard Trading Company's office and they have assured me that they will provide us with JumpShip support in the Periphery. That should cover our travel needs for the time being until regular travel service is fully restored.\"\r\n\r\nShe then swallows. \"But that didn't quite come cheap... they had the upper hand in bargaining since they have a travel monopoly on the region. And it seems they're also interested in mercenary work.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_co_suspendedService"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-150000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_AddFlashpoint",
+                                    "value" : "fp_hereMightBeDragons",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Luderitz"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_3",
+                "Name" : "Use criminal contacts.",
+                "Details" : "[MechWarrior: Criminal]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "MechWarrior",
+                    "RequirementTags" : {
+                        "items" : [
+                            "pilot_criminal"
+                        ],
+                        "tagSetSourceFile" : "Tags/PilotTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                },
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : "Tags/PilotTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Reputation.AuriganPirates",
+                            "op" : "GreaterThanOrEqual",
+                            "val" : 20,
+                            "valueConstant" : "[rep_liked_min]"
+                        },
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 300000,
+                            "valueConstant" : "300000"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_3_0",
+                        "Name" : "Pirate JumpShip available",
+                        "Details" : "After being brought to the bridge, MechWarrior [[TGT_MW,{TGT_MW.Callsign}]] quickly sends a number of messages after being briefed on the suspended JumpShip service situation.\r\n\r\n After several hours the replies start arriving. \"It won't be cheap Commander but with the right connections there are a number of pirate JumpShips who would be willing to attempt high-risk jump for the right price. But don't expect it to be cheap though, with all the fake documentation and bribes this will require.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_co_suspendedService"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-300000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_AddFlashpoint",
+                                    "value" : "fp_hereMightBeDragons",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Luderitz"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

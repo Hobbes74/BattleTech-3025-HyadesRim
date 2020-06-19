@@ -1,0 +1,100 @@
+{
+    "StatName" : null,
+    "RelativeModifier" : 0,
+    "AbsoluteModifier" : 0,
+    "Description" : {
+        "Cost" : 8000000,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "LosTech",
+        "Model" : "Unknown",
+        "UIName" : "Stealth Suite",
+        "Id" : "Gear_Sensor_Stealth_ECM",
+        "Name" : "LosTech Stealth Suite",
+        "Details" : "This prototype electronic warfare component partially recreates the capabilities of the LosTech Null Signature field. The suite can track and interfere with any hostile targeting sensors, essentially cloaking the carrying 'Mech. The stealth 'Mech cannot be targeted by ranged weapons unless sensor locked but it can still be physically attacked while cloaked.",
+        "Icon" : "UixSvgIcon_specialEquip_Sensors"
+    },
+    "BonusValueA" : "+ Cloak",
+    "BonusValueB" : null,
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "Prototype_ElectronicWarfare",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 2,
+    "Tonnage" : 1.5,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "Aura",
+				"auraEffectType" : "ECM_GHOST",
+                "effectTargetType" : "AlliesWithinRange",
+                "range" : 5.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "ECMStealth_GhostEffect_Allies",
+                "Name" : "STEALTH CHARGE",
+                "Details" : "Units within an ECM field gain a Stealth Charge and cannot be targeted.\n\nFiring a weapon, using an activated ability, or an enemy penetrating the ECM field removes a Stealth Charge. Being Sensor Locked removes all Stealth Charges.",
+                "Icon" : "uixSvgIcon_status_ECM-ghost"
+            },
+            "statisticData" : 
+            {
+                "statName" : "GhostEffectStacks",
+                "operation": "Int_Add",
+                "modValue": "1",
+                "modType": "System.Int32"
+            },
+            "nature" : "Buff"
+        },
+        {
+            "durationData" : {
+                "duration": -1,
+                "stackLimit": 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 5.0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : true,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "ECMStealth_GhostEffect",
+                "Name" : "ECM CARRIER",
+                "Details" : "PASSIVE: The ECM carrier projects an ECM field, building Stealth Charges for itself and allies if it starts or ends its turn with no active enemy units within the field.\n\nECM carriers also receive a bonus Stealth Charge.",
+                "Icon" : "uixSvgIcon_status_ECM-ghost"
+            },
+            "statisticData" : 
+            {
+                "statName" : "GhostEffectStacks",
+                "operation": "Int_Add",
+                "modValue": "1",
+                "modType": "System.Int32"
+            },
+            "nature" : "Buff"
+        }  
+    ],
+    "ComponentTags" : {
+        "items" : [
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

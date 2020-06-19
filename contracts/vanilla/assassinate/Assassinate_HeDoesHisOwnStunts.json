@@ -1,0 +1,31 @@
+{
+    "requirementList" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "planet_other_empty"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Target.IsOwner",
+                    "op" : "Equal",
+                    "val" : 1,
+                    "valueConstant" : null
+                },
+                {
+                    "obj" : "Employer.InterstellarExpeditions",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ]
+}
