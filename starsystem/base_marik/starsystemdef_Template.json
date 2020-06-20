@@ -1,31 +1,38 @@
 {
     "Description": {
-        "Id": "starsystemdef_Taygete",
-        "Name": "Taygete",
-        "Details": "Taygete is a small world once used for ice mining operations by Majesty Metals & Manufacturing until a series of strikes combined with a declining economy caused the Canopian operations to be unprofitable.",
+        "Id": "starsystemdef_Template",
+        "Name": "Template",
+		"Details": "<i>Here might be dragons.</i>",
         "Icon": ""
     },
     "Position": {
-        "x": -15.13,
-        "y": -487.42,
+        "x": ,
+        "y": ,
         "z": 0
     },
     "Tags": {
         "items": [
-            "planet_size_small",
-            "planet_climate_ice",
-            "planet_pop_none",
-            "planet_progress_2",
-            "planet_feature_moon01",
-            "planet_other_empty",
-            "planet_other_moon",
-            "planet_name_taygete",
-            "planet_faction_nofaction"
+			"planet_name_",
+			"planet_size_medium",
+			"planet_climate_terran",
+			"planet_pop_none",
+			"planet_other_empty",
+			"planet_faction_nofaction",
+			"planet_progress_2"
         ],
         "tagSetSourceFile": ""
     },
     "SupportedBiomes": [
-        "polarFrozen"
+        "lowlandsSpring",
+        "lowlandsFall",
+        "highlandsSpring",
+        "highlandsFall",
+        "desertParched",
+        "badlandsParched",
+        "polarFrozen",
+        "tundraFrozen",
+        "jungleTropical",
+        "urbanHighTech"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -36,66 +43,66 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 3,
+    "JumpDistance": 8,
     "ownerID": "NoFaction",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
-    "ShopMaxSpecials": 7,
+    "ShopMaxSpecials": 9,
     "SystemInfluence": [
         {
-            "factionID": "NoFaction",
+            "FactionID": "NoFaction",
             "Influence": 0
         },
         {
-            "factionID": "Davion",
+            "FactionID": "Davion",
             "Influence": 0
         },
         {
-            "factionID": "Liao",
+            "FactionID": "Liao",
             "Influence": 0
         },
         {
-            "factionID": "Kurita",
+            "FactionID": "Kurita",
             "Influence": 0
         },
         {
-            "factionID": "Marik",
+            "FactionID": "Marik",
             "Influence": 0
         },
         {
-            "factionID": "Steiner",
+            "FactionID": "Steiner",
             "Influence": 0
         },
         {
-            "factionID": "TaurianConcordat",
+            "FactionID": "TaurianConcordat",
             "Influence": 0
         },
         {
-            "factionID": "MagistracyOfCanopus",
+            "FactionID": "MagistracyOfCanopus",
             "Influence": 0
         },
         {
-            "factionID": "AuriganDirectorate",
+            "FactionID": "AuriganDirectorate",
             "Influence": 0
         },
         {
-            "factionID": "AuriganRestoration",
+            "FactionID": "AuriganRestoration",
             "Influence": 0
         },
         {
-            "factionID": "ComStar",
+            "FactionID": "ComStar",
             "Influence": 0
         },
         {
-            "factionID": "MercenaryReviewBoard",
+            "FactionID": "MercenaryReviewBoard",
             "Influence": 0
         },
         {
-            "factionID": "AuriganPirates",
+            "FactionID": "AuriganPirates",
             "Influence": 0
         },
         {
-            "factionID": "AuriganMercenaries",
+            "FactionID": "AuriganMercenaries",
             "Influence": 0
         }
     ],
@@ -104,7 +111,7 @@
             "Scope": "Company",
             "RequirementTags": {
                 "items": [
-                    "map_travel_2"
+                    "map_travel_2a"
                 ],
                 "tagSetSourceFile": ""
             },
@@ -116,51 +123,39 @@
         }
     ],
     "StarPosition": null,
-    "StarType": "G",
+    "StarType": "K",
     "Depletable": false,
     "UseSystemRoninHiringChance": false,
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
     "SystemShopItems": [],
-    "factionShopOwnerID": "INVALID_UNSET",
+    "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
-    "CoreSystemID": "starsystemdef_Taygete",
+    "CoreSystemID": "starsystemdef_Template",
     "StartingSystemModes": [
         "KAMEA_CAMPAIGN",
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 0,
+    "DefaultDifficulty": 2,
     "DifficultyList": [
-        0,
-        3
+        2,
+        2
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "contractEmployerIDs": [
-		"MajestyMetals",
-        "TortugaPirates",
-        "Liao",
-        "Locals",
-        "Marik",
-        "MagistracyOfCanopus",
-		"AntithesisCreed",
-        "CanopianPirates"
-	],
-    "contractTargetIDs": [
-		"MajestyMetals",
-        "ClusterPirates",
-        "Liao",
-        "Locals",
-        "Marik",
-        "MagistracyOfCanopus",
-		"AntithesisCreed",
-        "EvilEye",
-        "HarbingersOfDoom",
-        "CanopianPirates"
-	]
+    "ContractEmployerIDs": [
+        "Davion",
+        "TaurianConcordat",
+        "AuriganPirates"
+    ],
+    "ContractTargetIDs": [
+        "AuriganPirates",
+        "Davion",
+        "TaurianConcordat"
+    ]
 }

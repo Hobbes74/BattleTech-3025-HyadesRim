@@ -1,32 +1,38 @@
 {
     "Description": {
-        "Id": "starsystemdef_Nuncavoy",
-        "Name": "Nuncavoy",
-        "Details": "A world with a bare atmosphere, Nuncavoy's domed settlements were abandoned after pirate raids disabled or stole its life support systems, with the remaining colonists resettling into an unknown location in the Deep Periphery.  No news ever returned from that expedition, either due to design or disaster. Or both.",
+        "Id": "starsystemdef_Template",
+        "Name": "Template",
+		"Details": "<i>Here might be dragons.</i>",
         "Icon": ""
     },
     "Position": {
-        "x": 51.9,
-        "y": -449.63,
+        "x": ,
+        "y": ,
         "z": 0
     },
     "Tags": {
         "items": [
-            "planet_size_medium",
-            "planet_climate_mars",
-            "planet_pop_none",
-            "planet_progress_2",
-            "planet_other_empty",
-            "planet_other_pirate",
-            "planet_other_ruins",
-            "planet_name_nuncavoy",
-            "planet_faction_nofaction"
+			"planet_name_",
+			"planet_size_medium",
+			"planet_climate_terran",
+			"planet_pop_none",
+			"planet_other_empty",
+			"planet_faction_nofaction",
+			"planet_progress_2"
         ],
         "tagSetSourceFile": ""
     },
     "SupportedBiomes": [
+        "lowlandsSpring",
+        "lowlandsFall",
+        "highlandsSpring",
+        "highlandsFall",
         "desertParched",
-        "martianVacuum",
+        "badlandsParched",
+        "polarFrozen",
+        "tundraFrozen",
+        "jungleTropical",
+        "urbanHighTech"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -36,67 +42,67 @@
         "items": [],
         "tagSetSourceFile": ""
     },
-    "FuelingStation": true,
-    "JumpDistance": 5,
+    "FuelingStation": false,
+    "JumpDistance": 8,
     "ownerID": "NoFaction",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
-    "ShopMaxSpecials": 6,
+    "ShopMaxSpecials": 9,
     "SystemInfluence": [
         {
-            "factionID": "NoFaction",
+            "FactionID": "NoFaction",
             "Influence": 0
         },
         {
-            "factionID": "Davion",
+            "FactionID": "Davion",
             "Influence": 0
         },
         {
-            "factionID": "Liao",
+            "FactionID": "Liao",
             "Influence": 0
         },
         {
-            "factionID": "Kurita",
+            "FactionID": "Kurita",
             "Influence": 0
         },
         {
-            "factionID": "Marik",
+            "FactionID": "Marik",
             "Influence": 0
         },
         {
-            "factionID": "Steiner",
+            "FactionID": "Steiner",
             "Influence": 0
         },
         {
-            "factionID": "TaurianConcordat",
+            "FactionID": "TaurianConcordat",
             "Influence": 0
         },
         {
-            "factionID": "MagistracyOfCanopus",
+            "FactionID": "MagistracyOfCanopus",
             "Influence": 0
         },
         {
-            "factionID": "AuriganDirectorate",
+            "FactionID": "AuriganDirectorate",
             "Influence": 0
         },
         {
-            "factionID": "AuriganRestoration",
+            "FactionID": "AuriganRestoration",
             "Influence": 0
         },
         {
-            "factionID": "ComStar",
+            "FactionID": "ComStar",
             "Influence": 0
         },
         {
-            "factionID": "MercenaryReviewBoard",
+            "FactionID": "MercenaryReviewBoard",
             "Influence": 0
         },
         {
-            "factionID": "AuriganPirates",
+            "FactionID": "AuriganPirates",
             "Influence": 0
         },
         {
-            "factionID": "AuriganMercenaries",
+            "FactionID": "AuriganMercenaries",
             "Influence": 0
         }
     ],
@@ -105,7 +111,7 @@
             "Scope": "Company",
             "RequirementTags": {
                 "items": [
-                    "map_travel_2"
+                    "map_travel_2a"
                 ],
                 "tagSetSourceFile": ""
             },
@@ -117,49 +123,39 @@
         }
     ],
     "StarPosition": null,
-    "StarType": "M",
+    "StarType": "K",
     "Depletable": false,
     "UseSystemRoninHiringChance": false,
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
     "SystemShopItems": [],
-    "factionShopOwnerID": "INVALID_UNSET",
+    "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
-    "CoreSystemID": "starsystemdef_Nuncavoy",
+    "CoreSystemID": "starsystemdef_Template",
     "StartingSystemModes": [
         "KAMEA_CAMPAIGN",
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 0,
+    "DefaultDifficulty": 2,
     "DifficultyList": [
-        0,
+        2,
         2
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "contractEmployerIDs": [
-        "Marik",
-        "MagistracyOfCanopus",
-        "ClusterPirates",
-        "Liao",
-        "AuriganPirates",
-        "CanopianPirates"
+    "ContractEmployerIDs": [
+        "Davion",
+        "TaurianConcordat",
+        "AuriganPirates"
     ],
-    "contractTargetIDs": [
+    "ContractTargetIDs": [
         "AuriganPirates",
-        "TortugaPirates",
-        "Marik",
-        "MagistracyOfCanopus",
-        "Liao",
-        "EvilEye",
-        "HarbingersOfDoom",
-        "CanopianPirates",
-        "EvilEye",
-        "HarbingersOfDoom"
+        "Davion",
+        "TaurianConcordat"
     ]
 }
