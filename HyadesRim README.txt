@@ -10,7 +10,7 @@ Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel -
 
 Features
 * A new BattleTech story, told through four separate mini-campaigns consisting of chained flashpoints and events and set on the Hyades Rim region of the Periphery;
-* Seven original flashpoints released, and more planned: The Moon Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, The Death's Mask and God Mecha;
+* Seven original flashpoints released: The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, The Death's Mask and God Mecha; and nine more flashpoints planned;
 * Nine new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities;
 * 171 new star systems, with the star map being extended both rimwards (south) and spinwards (east), including Randis IV;
 * 20 original subfactions, canon and new, with their own contracts and 'Mech variants;
