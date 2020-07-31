@@ -1,51 +1,163 @@
 {
-    "Description": {
-        "Id": "starsystemdef_RandisIV",
-        "Name": "Randis IV",
-        "Details": "Randis IV is an isolated, tropical Deep Periphery world that is home of a neo-monastic order of MechWarriors, the Brotherhood of Randis. The planet has four landmasses, Hope, where the capital city is located, then Volcroth, Frews and Randis. The Brotherhood is dedicated to the defense of Randis and its population from any external aggressors and also provides for its economic development.",
-        "Icon": ""
+  "Description": {
+    "Id": "starsystemdef_RandisIV",
+    "Name": "Randis IV",
+    "Details": "Randis IV is an isolated, tropical Deep Periphery world that is home of a neo-monastic order of MechWarriors, the Brotherhood of Randis. The planet has four landmasses, Hope, where the capital city is located, then Volcroth, Frews and Randis. The Brotherhood is dedicated to the defense of Randis and its population from any external aggressors and also provides for its economic development.",
+    "Icon": ""
+  },
+  "Position": {
+    "x": 621.54,
+    "y": -342.98,
+    "z": 0
+  },
+  "Tags": {
+    "items": [
+      "planet_region_hyadesrim",
+      "planet_name_randisiv",
+      "planet_size_medium",
+      "planet_climate_tropical",
+      "planet_pop_small",
+      "planet_civ_periphery",
+      "planet_other_starleague",
+      "planet_other_ruins",
+      "planet_other_battlefield",
+      "planet_faction_independent",
+      "planet_progress_2"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "SupportedBiomes": [
+    "lowlandsSpring",
+    "desertParched",
+    "badlandsParched",
+    "jungleTropical"
+  ],
+  "MapRequiredTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+  },
+  "MapExcludedTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+  },
+  "FuelingStation": false,
+  "JumpDistance": 4,
+  "OwnerID": "BrotherhoodOfRandis",
+  "ShopRefreshRate": 0,
+  "ShopMaxInventory": 0,
+  "ShopMaxSpecials": 9,
+  "SystemInfluence": [
+    {
+      "factionID": "NoFaction",
+      "Influence": 0
     },
-    "Tags": {
+    {
+      "factionID": "Davion",
+      "Influence": 0
+    },
+    {
+      "factionID": "Liao",
+      "Influence": 0
+    },
+    {
+      "factionID": "Kurita",
+      "Influence": 0
+    },
+    {
+      "factionID": "Marik",
+      "Influence": 0
+    },
+    {
+      "factionID": "Steiner",
+      "Influence": 0
+    },
+    {
+      "factionID": "TaurianConcordat",
+      "Influence": 0
+    },
+    {
+      "factionID": "MagistracyOfCanopus",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganDirectorate",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganRestoration",
+      "Influence": 0
+    },
+    {
+      "factionID": "ComStar",
+      "Influence": 0
+    },
+    {
+      "factionID": "MercenaryReviewBoard",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganPirates",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganMercenaries",
+      "Influence": 0
+    }
+  ],
+  "TravelRequirements": [
+    {
+      "Scope": "Company",
+      "RequirementTags": {
         "items": [
-			"planet_region_hyadesrim",
-			"planet_name_randisiv",
-			"planet_size_medium",
-			"planet_climate_tropical",
-			"planet_pop_small",
-			"planet_civ_periphery",
-			"planet_other_starleague",
-			"planet_other_ruins",
-			"planet_other_battlefield",
-			"planet_faction_independent",
-			"planet_progress_2"
+          "map_travel_2b"
         ],
         "tagSetSourceFile": ""
-    },
-    "OwnerID": "Locals",
-    "TravelRequirements": [
-        {
-            "Scope": "Company",
-            "RequirementTags": {
-                "items": [
-                    "map_travel_3"
-                ],
-                "tagSetSourceFile": ""
-            },
-            "ExclusionTags": {
-                "items": [],
-                "tagSetSourceFile": ""
-            },
-            "RequirementComparisons": []
-        }
-    ],
+      },
+      "ExclusionTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": []
+    }
+  ],
+  "StarPosition": null,
+  "StarType": "K",
+  "Depletable": false,
+  "UseSystemRoninHiringChance": false,
+  "RoninHiringChance": 0,
+  "UseMaxContractOverride": false,
+  "MaxContractOverride": 0,
+  "SystemShopItems": [
+    "itemCollection_major_Locals",
+    "itemCollection_shop_miningProgression",
+    "itemCollection_shop_battlefield",
+    "itemCollection_shop_starleague"
+  ],
+  "factionShopOwnerID": "INVALID_UNSET",
+  "FactionShopItems": null,
+  "BlackMarketShopItems": null,
+  "CoreSystemID": "starsystemdef_RandisIV",
+  "StartingSystemModes": [
+    "KAMEA_CAMPAIGN",
+    "CAREER",
+    "NONE"
+  ],
+  "DefaultDifficulty": 4,
+  "DifficultyList": [
+    4,
+    7
+  ],
+  "DifficultyModes": [
+    "KAMEA_CAMPAIGN",
+    "CAREER"
+  ],
     "ContractEmployerIDs": [
-		"Locals",
+		"BrotherhoodOfRandis",
         "AuriganPirates",
     ],
     "ContractTargetIDs": [
-		"Locals",
+		"BrotherhoodOfRandis",
         "AuriganPirates",
-		"RimPirates",
 		"HarbingersOfDoom",
     ]
 }
