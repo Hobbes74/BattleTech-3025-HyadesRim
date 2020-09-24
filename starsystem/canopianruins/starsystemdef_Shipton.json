@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Shipton",
 		"Name": "Shipton",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "This system contains a double star, with the system's primary being orbited by a red giant several thousand astronomical units away. The increased solar radiation from the system's companion death throes has caused one of the outer planet moons to become temporarily habitable for several million years, with science  teams using the system since the Star League days for solar observations.",
 		"Icon": ""
 	},
 	"Position": {
@@ -16,22 +16,23 @@
 			"planet_size_medium",
 			"planet_climate_rocky",
 			"planet_pop_none",
-			"planet_faction_nofaction",
+			"planet_faction_independent",
+			"planet_civ_primitive",
+			"planet_industry_research",
+			"planet_other_moon",
+			"planet_other_gasgiant",
+			"planet_feature_asteroids",
 			"planet_other_empty",
-			"planet_progress_3"
+			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"lowlandsSpring",
-		"lowlandsFall",
-		"highlandsSpring",
-		"highlandsFall",
-		"desertParched",
-		"badlandsParched",
-		"polarFrozen",
-		"tundraFrozen",
-		"jungleTropical"
+        "highlandsSpring",
+        "highlandsFall",
+        "badlandsParched",
+        "tundraFrozen",
+        "martianVacuum"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -128,7 +129,10 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals",
+		"itemCollection_shop_research"
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
 	"BlackMarketShopItems": null,
@@ -138,9 +142,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 2,
+	"DefaultDifficulty": -1,
 	"DifficultyList": [
-		2,
+		-1,
 		3
 	],
 	"DifficultyModes": [

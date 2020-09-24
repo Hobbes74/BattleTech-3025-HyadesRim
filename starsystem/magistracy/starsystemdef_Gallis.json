@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Gallis",
 		"Name": "Gallis",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "Gallis is known for its capital, Myopia City, which was considered a technological marvel during the Star League with its advanced monorail mass transit system that also connected the city to other settlements. Most of the system is no longer functional, but Gallians still take pride on their capital.",
 		"Icon": ""
 	},
 	"Position": {
@@ -14,15 +14,23 @@
 		"items": [
 			"planet_name_gallis",
 			"planet_size_medium",
-			"planet_climate_ice",
-			"planet_pop_small",
+			"planet_climate_arctic",
+			"planet_pop_medium",
+			"planet_feature_moon02",
+			"planet_industry_electronics",
+			"planet_industry_manufacturing",
+			"planet_other_starleague",
+			"planet_civ_periphery",
 			"planet_faction_magistracy",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"polarFrozen"
+        "highlandsSpring",
+        "highlandsFall",
+        "polarFrozen",
+        "tundraFrozen"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -33,7 +41,7 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
+	"JumpDistance": 9,
 	"ownerID": "MagistracyOfCanopus",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
@@ -113,14 +121,16 @@
 		}
 	],
 	"StarPosition": null,
-	"StarType": "K",
+	"StarType": "M",
 	"Depletable": false,
 	"UseSystemRoninHiringChance": false,
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_MagistracyOfCanopus"
+		"itemCollection_major_MagistracyOfCanopus",
+		"itemCollection_shop_manufacturingProgression",
+		"itemCollection_shop_starleagueProgression"
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
@@ -131,9 +141,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 4,
+	"DefaultDifficulty": 0,
 	"DifficultyList": [
-		4,
+		0,
 		6
 	],
 	"DifficultyModes": [
@@ -142,7 +152,7 @@
 	],
 	"ContractEmployerIDs": [
 		"ExpansesPirates",
-		"GhostRiders",
+		"LothianPirates",
 		"TikonovPirates",
 		"RegulanPirates",
 		"RoguePirates",
@@ -155,6 +165,7 @@
 		"DevilsDisciples",
 		"TikonovPirates",
 		"RegulanPirates",
+		"LothianPirates",
 		"RoguePirates",
 		"Marik",
 		"MagistracyOfCanopus",

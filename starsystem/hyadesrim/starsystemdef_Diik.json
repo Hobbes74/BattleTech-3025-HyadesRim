@@ -21,7 +21,7 @@
       "planet_civ_primitive",
       "planet_other_blackmarket",
       "planet_faction_independent",
-      "planet_progress_2"
+      "planet_progress_1"
     ],
     "tagSetSourceFile": ""
   },
@@ -39,7 +39,7 @@
   },
   "FuelingStation": false,
   "JumpDistance": 11,
-  "ownerID": "NoFaction",
+  "ownerID": "Locals",
   "ShopRefreshRate": 0,
   "ShopMaxInventory": 0,
   "ShopMaxSpecials": 9,
@@ -106,7 +106,6 @@
       "Scope": "Company",
       "RequirementTags": {
         "items": [
-          "map_travel_2"
         ],
         "tagSetSourceFile": ""
       },
@@ -122,8 +121,8 @@
   "Depletable": false,
   "UseSystemRoninHiringChance": false,
   "RoninHiringChance": 0,
-  "UseMaxContractOverride": false,
-  "MaxContractOverride": 0,
+  "UseMaxContractOverride": true,
+  "MaxContractOverride": 3,
   "SystemShopItems": [
     "itemCollection_minor_Locals"
   ],
@@ -135,12 +134,11 @@
   "CoreSystemID": "starsystemdef_Diik",
   "StartingSystemModes": [
     "KAMEA_CAMPAIGN",
-    "CAREER",
     "NONE"
   ],
-  "DefaultDifficulty": 1,
+  "DefaultDifficulty": -1,
   "DifficultyList": [
-    3,
+    -1,
     4
   ],
   "DifficultyModes": [
@@ -148,29 +146,26 @@
     "CAREER"
   ],
     "contractEmployerIDs": [
-		"AlphardTradingCompany",
 		"TaurusMajorisMining",
-		"TaurusTerritorialIndustries",
-		"MajestyMetals",
 		"MagnaMetals",
         "Locals",
         "TaurianConcordat",
         "AuriganPirates",
+		"RenegadePirates",
         "TortugaPirates",
         "SyrtisPirates",
-        "InterstellarExpeditions",
 		"AntithesisCreed"
     ],
     "contractTargetIDs": [
 		"TaurusMajorisMining",
-		"TaurusTerritorialIndustries",
-		"MajestyMetals",
 		"MagnaMetals",
         "Locals",
         "AuriganPirates",
+		"RenegadePirates",
         "TaurianConcordat",
+		"HarbingersOfDoom",
+        "SyrtisPirates",
         "TortugaPirates",
-        "RimPirates",
 		"AntithesisCreed"
     ]
 }

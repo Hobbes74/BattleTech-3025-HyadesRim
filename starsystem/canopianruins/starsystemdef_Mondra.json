@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Mondra",
 		"Name": "Mondra",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "A world completely covered by tundra forests, criss-crossed by semi-nomadic groups whose herds supplement the local exports, mainly consisting of logging operations. Mondra also has several cults, from the ancient Terran norse religion to more extremist Periphery groups with bizarre rituals conducted on its wilderness.",
 		"Icon": ""
 	},
 	"Position": {
@@ -14,18 +14,21 @@
 		"items": [
 			"planet_name_mondra",
 			"planet_size_medium",
-			"planet_climate_arid",
-			"planet_pop_none",
-			"planet_faction_nofaction",
-			"planet_other_empty",
+			"planet_climate_desert",
+			"planet_pop_small",
+			"planet_civ_primitive",
+			"planet_other_megaforest",
+			"planet_other_stonedcaribou",
+			"planet_faction_magistracy",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-        "desertParched",
-        "badlandsParched",
-        "polarFrozen" 
+        "highlandsSpring",
+        "highlandsFall",
+        "polarFrozen",
+        "tundraFrozen"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -132,9 +135,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 1,
+	"DefaultDifficulty": -1,
 	"DifficultyList": [
-		1,
+		-1,
 		3
 	],
 	"DifficultyModes": [
@@ -142,6 +145,7 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"MarianHegemony",
 		"MarianPirates",
 		"MarshPirates",
 		"RegulanPirates",
@@ -149,6 +153,7 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"MarianHegemony",
 		"DevilsDisciples",
 		"GrimReapers",
 		"MarianPirates",

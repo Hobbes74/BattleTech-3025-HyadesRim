@@ -1,0 +1,79 @@
+{
+    "Description" : {
+        "Id" : "milestone_010_skipPrologue",
+        "Name" : "Prologue Skip",
+        "Details" : "Skipping prologue",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 10,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1110,
+                    "valueConstant" : "",
+					"set" : "true",
+                }
+            ],
+            "Actions" : [
+                {
+                    "Type" : "System_ShowSummaryOverlay",
+                    "value" : "Two Years Later",
+                    "additionalValues" : [
+						"On the day of Lady Kamea Arano's ascension to the throne, her uncle Lord Espinosa and his daughter Victoria launch a coup. By coercing Lord Alexander of House Madeira into betraying Kamea by taking his family as hostages, House Espinosa's forces quickly gain control of Coromodir and subdue the Arano house troops.\r\n\r\nWith help from you and your old mentor Mastiff Montgomery, Lady Kamea attempt an escape. Mastiff sacrifices himself to cover her exit, but the DropShip is destroyed as Alexander betrays its location to Espinosa's forces, although Kamea manages to eject from the crippled spaceship.\r\n\r\nIn the aftermath, both yours and her ejection pods are recovered by a small mercenary unit formerly employed by the Reach and are brought aboard the DropShip <i>Hysteria</i>.\r\n\r\nBarely escaping from the Directorate's purges to consolidate Lord Espinosa's rule, two years later the Aurigan survivors find themselves in the Deep Periphery...",
+					]
+                },
+				{
+                    "Type" : "System_SetDropship",
+                    "value" : "Leopard",
+                    "valueConstant" : null
+                },
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea",
+						"Alexander",
+						"Farah",
+						"Yang",
+						"Sumire"
+					]
+				}
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

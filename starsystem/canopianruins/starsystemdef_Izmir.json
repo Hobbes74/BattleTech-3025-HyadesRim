@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Izmir",
 		"Name": "Izmir",
-		"Details": "<i>Here might be Mariks.</i>",
+		"Details": "Forgotten from Marik official records during the Succession Wars, Izmir found itself cut-off from the rest of human space due to a clerical error in one of the Free Worlds League census. Over the centuries, the inhabitants gradually reverted to a life style based on sailing and fishing, with little interest for the rest of the universe.",
 		"Icon": ""
 	},
 	"Position": {
@@ -14,24 +14,25 @@
 		"items": [
 			"planet_name_izmir",
 			"planet_size_medium",
-			"planet_climate_terran",
-			"planet_pop_none",
-			"planet_other_empty",
+			"planet_climate_water",
+			"planet_pop_small",
+			"planet_civ_primitive",
+			"planet_industry_aquaculture",
+			"planet_industry_poor",
 			"planet_faction_nofaction",
+			"planet_feature_moon02",
 			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"lowlandsSpring",
-		"lowlandsFall",
-		"highlandsSpring",
-		"highlandsFall",
-		"desertParched",
-		"badlandsParched",
-		"polarFrozen",
-		"tundraFrozen",
-		"jungleTropical"
+        "lowlandsSpring",
+        "lowlandsFall",
+        "highlandsSpring",
+        "highlandsFall",
+        "polarFrozen",
+        "tundraFrozen",
+        "jungleTropical"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -42,8 +43,8 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
-	"ownerID": "NoFaction",
+	"JumpDistance": 5,
+	"ownerID": "Locals",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
 	"ShopMaxSpecials": 9,
@@ -128,7 +129,9 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals"
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
 	"BlackMarketShopItems": null,
@@ -138,9 +141,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 2,
+	"DefaultDifficulty": -1,
 	"DifficultyList": [
-		2,
+		-1,
 		2
 	],
 	"DifficultyModes": [
@@ -148,6 +151,8 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"Locals",
+		"MarianHegemony",
 		"TikonovPirates",
 		"MarshPirates",
 		"RegulanPirates",
@@ -156,6 +161,8 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"Locals",
+		"MarianHegemony",
 		"TikonovPirates",
 		"MarshPirates",
 		"RegulanPirates",

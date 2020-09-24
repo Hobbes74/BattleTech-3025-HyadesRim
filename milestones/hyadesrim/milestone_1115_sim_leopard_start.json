@@ -1,0 +1,206 @@
+{
+    "Description" : {
+        "Id" : "milestone_1115_sim_leopard_start",
+        "Name" : "sim",
+        "Details" : "First sim phase. Adds initial inventory",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1115,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+			    "items" : [
+					"SYSTEM_UseTime",
+					"map_travel_1",
+					"oc01_post_se2"
+				],
+                "tagSetSourceFile" : ""
+			},
+            "RemovedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1120,
+					"set" : true,
+                    "valueConstant" : ""
+                },
+                {
+                    "typeString" : "System.Single",
+                    "name" : "Difficulty",
+                    "value" : 2,
+					"set" : true,
+                    "valueConstant" : ""
+                },
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "MissionsComplete",
+                    "value" : 0,
+					"set" : true,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.WeaponDef.Weapon_Autocannon_AC2_0-STOCK",
+                    "value" : 2,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_AC2",
+                    "value" : 6,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_AC5",
+                    "value" : 6,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_AC10",
+                    "value" : 2,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_AC20",
+                    "value" : 2,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_0-STOCK",
+                    "value" : 2,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.WeaponDef.Weapon_SRM_SRM2_0-STOCK",
+                    "value" : 2,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_SRM",
+                    "value" : 6,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.WeaponDef.Weapon_LRM_LRM10_0-STOCK",
+                    "value" : 1,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.AmmunitionBoxDef.Ammo_AmmunitionBox_Generic_LRM",
+                    "value" : 6,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.WeaponDef.Weapon_Laser_LargeLaser_0-STOCK",
+                    "value" : 1,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.HeatSinkDef.Gear_HeatSink_Generic_Standard",
+                    "value" : 4,
+                    "valueConstant" : ""
+                },
+				{
+                    "typeString" : "System.Int32",
+                    "name" : "Item.JumpJetDef.Gear_JumpJet_Generic_Standard",
+                    "value" : 2,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [
+				{
+                    "Type" : "System_SetDropship",
+                    "value" : "Leopard",
+                    "valueConstant" : null
+                },
+                {
+                    "Type" : "System_SetContractScope",
+                    "value" : "TUTORIAL",
+                    "valueConstant" : null
+                },
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea",
+						"Alexander"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Darius",
+						"Farah",
+						"Sumire",
+						"Yang"
+					]
+				},
+                {
+                    "Type" : "System_SetTargetBreadcrumbSystem",
+                    "value" : "starsystemdef_Lastpost",
+                    "valueConstant" : null
+                },
+				{
+					"Type" : "System_ResetContracts",
+					"value" : "",
+                    "valueConstant" : null
+				}
+			],
+            "ForceEvents" : [
+				{
+					"Scope" : "Company",
+					"EventID" : "forcedevent_leopard_creditIssues",
+					"MinDaysWait" : 9,
+					"MaxDaysWait" : 9,
+					"Probability" : 100
+				}
+			],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

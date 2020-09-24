@@ -1,0 +1,109 @@
+{
+    "Description" : {
+        "Id" : "milestone_1202_notify_interstellarExpeditions",
+        "Name" : "mission",
+        "Details" : "IE Missions",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1202,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [	
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Famdo",
+					"additionalValues" : [ "starsystemdef_Famdo_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Mu",
+					"additionalValues" : [ "starsystemdef_Mu_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Diik",
+					"additionalValues" : [ "starsystemdef_Diik_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Gaul",
+					"additionalValues" : [ "starsystemdef_Gaul_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Oscar",
+					"additionalValues" : [ "starsystemdef_Oscar_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Lastpost",
+					"additionalValues" : [ "starsystemdef_Lastpost_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Rasni",
+					"additionalValues" : [ "starsystemdef_Rasni_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Prestes",
+					"additionalValues" : [ "starsystemdef_Prestes_Career" ]
+				},	
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_ZelskiII",
+					"additionalValues" : [ "starsystemdef_ZelskiII_Career" ]
+				},		
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "As part of our supplemental contract, our orders are to return to the Hyades Rim and check on IE research teams in case they require mercenary assistance. IE currently has expeditions in the [[DM.BaseDescriptionDefs[LoreLastpost],Lastpost]], [[DM.BaseDescriptionDefs[LorePrestes],Prestes]], [[DM.BaseDescriptionDefs[LoreRasni],Rasni]], [[DM.BaseDescriptionDefs[LoreZelskiII],Zelski II]], [[DM.BaseDescriptionDefs[LoreMu],Mu]] and [[DM.BaseDescriptionDefs[LoreFamdo],Famdo]] systems.",
+					"additionalValues" : [
+						"IE Contracts",
+						"castDef_DariusDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : true
+}

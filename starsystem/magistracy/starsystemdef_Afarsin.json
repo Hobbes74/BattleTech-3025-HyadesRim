@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Afarsin",
 		"Name": "Afarsin",
-		"Details": "A world completely covered by tundra forests, criss-crossed by semi-nomadic groups whose herds supplement the local exports, mainly consisting of logging operations. Afarsin also has several cults, from the ancient Terran norse religion to more extremist Periphery groups.",
+		"Details": "Once a well known cosmetic brand during the Star League's days, Afarsin Industrials is still the biggest employer in the world, although now it focuses in supplying industrial clients across Canopian space.",
 		"Icon": ""
 	},
 	"Position": {
@@ -14,21 +14,20 @@
 		"items": [
 			"planet_name_afarsin",
 			"planet_size_medium",
-			"planet_climate_arctic",
-			"planet_pop_small",
-			"planet_civ_primitive",
-			"planet_other_megaforest",
-			"planet_other_stonedcaribou",
+			"planet_climate_arid",
+			"planet_pop_medium",
 			"planet_faction_magistracy",
+			"planet_industry_manufacturing",
+			"planet_industry_chemicals",
+			"planet_civ_periphery",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-        "highlandsSpring",
-        "highlandsFall",
-        "polarFrozen",
-        "tundraFrozen"
+        "desertParched",
+        "badlandsParched",
+        "polarFrozen" 
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -39,7 +38,7 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
+	"JumpDistance": 5,
 	"ownerID": "MagistracyOfCanopus",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
@@ -126,6 +125,8 @@
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
+		"itemCollection_shop_manufacturingProgression",
+		"itemCollection_shop_chemicalsProgression",
 		"itemCollection_minor_MagistracyOfCanopus"
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
@@ -137,9 +138,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 2,
+	"DefaultDifficulty": -1,
 	"DifficultyList": [
-		2,
+		-1,
 		4
 	],
 	"DifficultyModes": [
@@ -147,6 +148,7 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"MarianHegemony",
 		"ExpansesPirates",
 		"DevilsDisciples",
 		"RegulanPirates",
@@ -157,8 +159,9 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"MarianHegemony",
 		"ExpansesPirates",
-		"GhostRiders",
+		"LothianPirates",
 		"RegulanPirates",
 		"MarianPirates",
 		"RoguePirates",

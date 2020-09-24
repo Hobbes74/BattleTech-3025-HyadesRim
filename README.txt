@@ -1,28 +1,29 @@
 Hyades Rim - a BattleTech videogame mod
-© 2020 André Galvão (Hobbes)
 
 BattleTech 1.9.X compatible - requires all DLCs.
 
-You can use either Modtek 0.7.7 or HBS's modloader.
-
 Slavish adherence to a formal ritual is a sign that one has nothing better to think about. - Natasha Kerensky, Blood Legacy.
 
-Pirates. Infernos. Phantom 'Mechs. Kittens. Bandit Kingdoms. Pay your C-Bills and pray the space birds don't get you. Explore the mysteries of the Periphery at the Hyades Rim. BattleTech version 1.9 compatible. Requires all DLCs. The Hyades Rim is an expansion for the Battletech videogame focused on the canonical region of the Periphery and the 3025 era. (they know! they are coming!)
+New Campaign Mode! Pirates. Infernos. Phantom 'Mechs. Kittens. Bandit Kingdoms. Pay your C-Bills and pray the space birds don't get you. Explore the mysteries of the Periphery at the Hyades Rim. BattleTech version 1.9 compatible. 
+
+
+Requires all DLCs. The Hyades Rim is an expansion for the Battletech videogame focused on the canonical region of the Periphery and the 3025 era. (they know! they are coming!)
 
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if HPG expires)
 
 Features
-* A new BattleTech story, told through four separate mini-campaigns consisting of chained flashpoints and events and set on the Hyades Rim region of the Periphery;
-* Seven original flashpoints released: The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, The Death's Mask and God Mecha; and nine more flashpoints planned;
+* A new BattleTech story and Campaign mode, consisting of original story missions and flashpoints, based on an alternative history where Kamea is exiled rather than presumed killed and the company enters the employ of Interstellar Expeditions;
+* Nine original story missions and flashpoints released (campaign only): You On The Run, Exodus, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, The Death's Mask and God Mecha and more planned for parts 3 and 4 of the new campaign;
 * Nine new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities;
-* 171 new star systems, with the star map being extended both rimwards (south) and spinwards (east), including Randis IV;
-* 20 original subfactions, canon and new, with their own contracts and 'Mech variants;
-* 178 new contracts and variants added, all rewritten from the vanilla ones with a Periphery flavor;
+* 253 playable systems, adding all of the Taurian, Canopian and Marian worlds, plus several Deep Periphery systems, with the star map extended in all directions;
+* 40+ original subfactions, canon and new, with their own contracts and 'Mech variants. Ally/fight pirate gangs, corporations, regional powers and bandit kingdoms;
+* 600+ new contracts and variants added, several rewritten from the vanilla ones with a Periphery flavor;
+* Tonnage restrictions - all procedural contracts, original and new, may now appear with maximum tonnage restrictions for the player. All the contracts may now appear in all system difficulty levels;
 * 300+ new BattleMech variants to fight as Opfor, can appear equipped with Infernos, ECM, plus other LosTech surprises;
 * 22 new vehicle variants, called 'technicals', only used by pirate factions;
 * 50+ canon variants of the vanilla 'Mechs, nearly all of the 3025 era and a few SLDF variants;
-* Setting and tech follow the 3025 starting date, compatible for both in Campaign and Career mode;
-* Nearly all of the new features will only appear on Periphery/Hyades Rim systems or the new pirate factions;
+* Setting and tech follow the 3025 starting date;
+* Career mode has nearly everything from above available, except for the story missions/flashpoints;
 * Otherwise, keeps everything else unchanged from the vanilla game.
 
 Requirements﻿
@@ -38,26 +39,13 @@ Recommended Mods
 * Navigation Computer by mpstark - makes travel easier
 * BattleTechPerformanceFix by m22spencer - reduces the time to generate new contracts
 
-Warning: Use any other mods at your own risk - I only use these two mods together with the Hyades Rim and I do not provide support for third party mod integration!
-
-Incompatible Mods
-* It Came From the Rim minicampaign, The Periphery Is A Harsh Mistress and Jinxed Flashpoints (all already included in the Hyades Rim)
-* BTA 3062
-* Extended 3025
-* RogueTech
-* Z_Sab_JK_RarityTables
-* JK_SUCKos
-* JK_Variants (all canon 3025 variants already included in Hyades Rim)
+Warning: Use any other mods at your own risk - I only use these two mods together with the Hyades Rim and I do not provide support for third party mod integration! Check the other-mods channel of the Discord server for more information on other mods.
 
 Disclaimer
 * This is Work In Progress - expect bugs (and please report them here, or the Hyades Rim Discord - link above )
 
 Future Plans
-* Add new contracts and Flashpoints (in progress)
-* Finish up the faction shops with their specific 'Mechs and variants (in progress)
-* Add more additional subfactions and their contracts (in progress)
-* Expand star map to include Magistracy of Canopus (in progress)
-* Replace the Argo with the Hysteria (Leopard) and create a FP to recover it (?)
+* Finish the new Campaign with new contracts, missions and flashpoints (in progress)
 
 Credits
 * ModTek, by several authors, for allowing BattleTech modding;
@@ -72,7 +60,7 @@ Credits
 * Mordel.net for the stats used in the canon 'Mech variants;
 * Camicon_Dachass: additional writing (Liao systems)
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey
 * All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer and the whole BattleTech modding community.
 
-All rights reserved
+© 2020 Hobbes

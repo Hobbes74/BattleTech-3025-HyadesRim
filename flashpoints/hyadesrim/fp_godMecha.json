@@ -1,0 +1,67 @@
+{
+    "Description" : {
+        "Id" : "fp_godMecha",
+        "Name" : "God Mecha",
+        "Details" : "A religous festival promoted by a bizarre Periphery cult that adores BattleMechs.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_10.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "godMecha",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 6,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_godMecha_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+                "planet_name_leh"
+            ],
+            "tagSetSourceFile" : "Tags/PlanetNameTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+        "AutocracyOfLeh"
+    ],
+    "TargetFaction" : "Unknown",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "LONG",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_godMecha",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_b_GodMecha",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "The Autocracy is organizing its decennial religious festival dedicated to God Mecha, consisting of gladiatorial games between selected lances. The MechWarriors who win the games will be given the title of Arauts of Mecha and receive the winner's spoils. All participants are required to use the BattleMechs provided by the Autocracy.",
+    "FlashpointDescriberCastDefId" : "castDef_AutocracyOfLehLeaderDefault",
+    "Tags" : {
+        "items" : [
+            "StartingFlashpoint"
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

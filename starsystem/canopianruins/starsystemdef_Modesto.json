@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Modesto",
 		"Name": "Modesto",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "A former colony that left the Magistracy during the Second Succession War as a protest against the Taurian-Canopian war of 2813, which sparked a peace movement in the world against the 'militarism and imperialism inherited from the Star League'. Lacking any meaningful resources and highly dependent on imports, Modesto's leadership chose to become self-sufficient by reverting civilization back to the equivalent of 19th century Terra.",
 		"Icon": ""
 	},
 	"Position": {
@@ -15,9 +15,12 @@
 			"planet_name_modesto",
 			"planet_size_medium",
 			"planet_climate_desert",
-			"planet_pop_none",
-			"planet_faction_nofaction",
-			"planet_other_empty",
+			"planet_pop_small",
+			"planet_faction_independent",
+			"planet_civ_primitive",
+			"planet_other_plague",
+			"planet_event_pox",
+			"planet_industry_poor",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
@@ -35,8 +38,8 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
-	"ownerID": "NoFaction",
+	"JumpDistance": 6,
+	"ownerID": "Locals",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
 	"ShopMaxSpecials": 9,
@@ -121,7 +124,9 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals"
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
 	"BlackMarketShopItems": null,
@@ -131,9 +136,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 1,
+	"DefaultDifficulty": -1,
 	"DifficultyList": [
-		1,
+		-1,
 		3
 	],
 	"DifficultyModes": [
@@ -141,7 +146,8 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
-		"GhostRiders",
+		"AlphardTradingCompany",
+		"LothianPirates",
 		"MarianPirates",
 		"MarshPirates",
 		"TikonovPirates",
@@ -149,6 +155,7 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"AlphardTradingCompany",
 		"DevilsDisciples",
 		"GrimReapers",
 		"MarianPirates",

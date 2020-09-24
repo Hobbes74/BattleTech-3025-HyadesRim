@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Schmitt",
 		"Name": "Schmitt",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "Once a regional center used by Star League's Department of Mega-Engineering, Schmitt's fortunes declined as it became a target for pirates and its warehouses were extensively looted for critical life preserving technologies like water filtration systems.",
 		"Icon": ""
 	},
 	"Position": {
@@ -15,9 +15,11 @@
 			"planet_name_schmitt",
 			"planet_size_medium",
 			"planet_climate_mars",
-			"planet_pop_none",
-			"planet_faction_nofaction",
-			"planet_other_empty",
+			"planet_pop_small",
+			"planet_industry_electronics",
+			"planet_industry_poor",
+			"planet_faction_independent",
+			"planet_civ_periphery",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
@@ -35,7 +37,7 @@
 	},
 	"FuelingStation": false,
 	"JumpDistance": 3,
-	"ownerID": "NoFaction",
+	"ownerID": "Locals",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
 	"ShopMaxSpecials": 9,
@@ -120,7 +122,10 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals",
+		"itemCollection_shop_electronics"
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
 	"BlackMarketShopItems": null,
@@ -130,9 +135,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 1,
+	"DefaultDifficulty": -1,
 	"DifficultyList": [
-		1,
+		-1,
 		2
 	],
 	"DifficultyModes": [
@@ -140,6 +145,8 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"Locals",
+		"DevilsDisciples",
 		"MarianPirates",
 		"MarshPirates",
 		"RegulanPirates",
@@ -147,6 +154,7 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"Locals",
 		"DevilsDisciples",
 		"GrimReapers",
 		"MarianPirates",
