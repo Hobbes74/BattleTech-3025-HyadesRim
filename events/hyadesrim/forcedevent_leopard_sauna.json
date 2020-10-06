@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "forcedevent_leopard_sauna",
         "Name" : "Rasalhague Sauna",
-        "Details" : "Farah calls you to the shared MechWarrior Barracks, where you find her and [[TGT_MW,{TGT_MW.Callsign}]] engaged in a lively discussion.\r\n\r\n\"You don't understand doctor, I need to have sauna while onboard this tin can you call a spaceship or I'll simply die!\" One of the storage bins has been emptied and its contents lay on the ground while the inside appears to be in a state of renovation, you glance and Farah catches your eye.\r\n\r\n\"Commander, this MechWarrior came up with the crazy idea of turning one of our storage spaces into a... sauna. We already have little room to spare in a <i>Leopard</i>, so what will be next? Mini-golf course? Canopian karaoke booth? Tanning bed?\" Farah shakes her head in frustration.\r\n\r\n\"Commander,\" {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:pause|Default:pauses}, then {TGT_MW.Gender?NonBinary:point|Default:points} to the storage space. \"I know what I'm doing. It's called a Rasalhague sauna on the Draconis Combine and we just need a bypass to the steam circuit to make a small sauna there. Everyone needs a place to be privately once in a while, it's too close inside this DropShip.\"\r\n\r\nYou look back at the cramped closet and wonder how a single person will fit there.",
+        "Details" : "Farah calls you to the shared MechWarrior Barracks, where you find her and [[TGT_MW,{TGT_MW.Callsign}]] engaged in a lively discussion.\r\n\r\n\"You don't understand doctor, I need to have a sauna while onboard this tin can you call a spaceship or I'll simply die!\" One of the storage bins has been emptied and its contents lay on the ground while the inside appears to be in a state of renovation, you glance at Farah and she catches your eye.\r\n\r\n\"Commander, this MechWarrior came up with the crazy idea of turning one of our storage spaces into a... sauna. We already have little room to spare in a <i>Leopard</i>, so what will be next? Mini-golf course? Canopian karaoke booth? Tanning bed?\" Farah shakes her head in frustration.\r\n\r\n\"Commander, {TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:pause|Default:pauses}, then {TGT_MW.Gender?NonBinary:point|Default:points} to the storage space. I know what I'm doing. It's called a 'Rasalhague Sauna' in the Draconis Combine and we just need a bypass to the steam conduit to make a small sauna there. Everyone needs a place to be private once in a while. It's too close inside this DropShip.\"\r\n\r\nYou look back at the cramped closet and wonder how a single person will fit there.",
         "Icon" : "uixTxrSpot_Barracks.png"
     },
     "Scope" : "MechWarrior",
@@ -114,7 +114,7 @@
                     "Description" : {
                         "Id" : "outcome_1_0",
                         "Name" : "sauna",
-                        "Details" : "You look [[TGT_MW,{TGT_MW.Callsign}]] in the eye. \"You know how the chain of command works. You have to clear changes like this before you start. Specially something that requires so much DropShip space.\"\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:shrug|Default:shrugs}. \"Well? Can I?\"\r\n\r\nYou look over {TGT_MW.Callsign}'s work. It's cleanly done, with no hazards. \"Take a break until I make a decision.\r\n\r\nAnd make sure that once it is working, everyone is assigned time using the sauna. And me first.\"",
+                        "Details" : "You look [[TGT_MW,{TGT_MW.Callsign}]] in the eye. \"You know how the chain of command works. You have to clear changes like this before you start. Especially something that requires so much DropShip space.\"\r\n\r\n{TGT_MW.SUBJ_C} {TGT_MW.Gender?NonBinary:shrug|Default:shrugs}. \"Well? Can I?\"\r\n\r\nYou look over {TGT_MW.Callsign}'s work. It's cleanly done, with no hazards. \"Make sure that once it is working, everyone is assigned time using the sauna. And me first.\"",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -123,7 +123,9 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
+                                "items" : [
+									"hysteria_sauna"
+								],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {
@@ -204,7 +206,9 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
+                                "items" : [
+									"hysteria_sauna"
+								],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {

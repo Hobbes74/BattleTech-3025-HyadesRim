@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "event_co_norwegianBlue",
         "Name" : "The Norwegian Blue",
-        "Details" : "Yang looks around the 'Mech bay, \"We seem to have a bird problem inside the <i>Argo</i>. During our last planetary landing some of the local wild life got inside the DropShip through one of the BattleMech doors. \r\n\r\nWe thought we had caught all of them before taking-off, but there's this parrot who wasn't detected after we took off, and now it has perfectly adapted to zero gravity, making it impossible for the crew to capture it on the 'Mech bays.\" \r\n\r\nHe scans all the corners of the immense compartment. \"I'm also starting to suspect some of the crew might be secretely feeding it since it has been able to elude our traps for days. We can't risk it getting inside the 'Mechs and causing all sorts of trouble.\"",
+        "Details" : "Yang looks around the BattleMech bay, \"We seem to have a bird problem. During our last planetary landing some of the local wild life got inside the DropShip through one of the 'Mech bays' doors. \r\n\r\nWe thought we had caught all of them before taking-off, but there's this parrot who wasn't detected after we took off, and now it has perfectly adapted to zero gravity, making it impossible for the crew to capture it on the 'Mech bays.\" \r\n\r\nHe scans all the corners of the immense compartment. \"I'm also starting to suspect some of the crew might be secretely feeding it since it has been able to elude our traps for days. We can't risk it getting inside the 'Mechs and causing all sorts of trouble.\"",
         "Icon" : "uixTxrSpot_MechBay.png"
     },
     "Scope" : "Company",
@@ -15,7 +15,7 @@
         },
         "ExclusionTags" : {
             "items" : [
-                "event_co_norwegianblue"
+                "company_parrot"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
@@ -26,7 +26,7 @@
             "Scope" : "StarSystem",
             "RequirementTags" : {
                 "items" : [
-                    "planet_region_hyadesrim"
+					"planet_region_hyadesrim"
 				],
                 "tagSetSourceFile" : "Tags/PlanetTags"
             },
@@ -54,7 +54,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "parrot is adopted by the crew",
-                        "Details" : "Sumire cames to you with a smile. \"We have finally located and moved Blue's nest to a better location in the 'Mech bays where it shouldn't disturb Yang anymore\". \r\n\r\n\"She seems to be learning quickly to safely avoid certain areas and also Blue seems to show curiosity to the crew members who approach him on a friendly manner. But she still can be quite noisy though, but her vocalizations are still better than most noises while working on 'Mechs.\"\r\n\r\n\"Oh, and did I mention that Blue is nesting? I wonder if she'll actually lay eggs. And if they will hatch...\"",
+                        "Details" : "Sumire cames to you with a smile. \"We have finally located and moved Blue's nest to a better location in the 'Mech bays where it shouldn't disturb Yang anymore\". \r\n\r\n\"She seems to be learning quickly to safely avoid certain areas and also Blue seems to show curiosity to the crew members who approach him on a friendly manner. Of course, that excludes Yang. But she still can be quite noisy though, but her vocalizations are still better than most noises while working on 'Mechs.\"\r\n\r\n\"Oh, and did I mention that Blue is nesting? I wonder if she'll actually lay eggs. And if they will hatch...\"",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -168,8 +168,7 @@
                             "Requirements" : null,
                             "AddedTags" : {
                                 "items" : [
-                                    "event_co_norwegianblue",
-                                    "company_parrot"
+                                    "event_co_norwegianblue"
                                 ],
                                 "tagSetSourceFile" : ""
                             },
@@ -252,18 +251,18 @@
         {
             "Description" : {
                 "Id" : "outcome_2",
-                "Name" : "Instruct Darius to set feeding traps in Hydroponics.",
-                "Details" : "[Argo: Hydroponics]",
+                "Name" : "Ask for someone with zero-g experience.",
+                "Details" : "[{TGT_MW.Callsign}: Spacer]",
                 "Icon" : null
             },
             "RequirementList" : [
                 {
-                    "Scope" : "Company",
+                    "Scope" : "MechWarrior",
                     "RequirementTags" : {
                         "items" : [
-                            "argo_rec_hydroponics"
+							"pilot_spacer"
                         ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "tagSetSourceFile" : "Tags/PilotTags"
                     },
                     "ExclusionTags" : {
                         "items" : [],
@@ -277,7 +276,7 @@
                     "Description" : {
                         "Id" : "outcome_2_0",
                         "Name" : "parrot is captured",
-                        "Details" : "\"Close-off all access between both DropShip sections for a period of time and place traps with food around in Hydroponics,  roger that, Commander.\" Darius grins in antecipation of the bird hunt.\r\n\r\nA few days later, Yang comes back, unhappy. \"We got it but the damn bird bit me in my good arm while we were moving it to a cage. We'll keep it alive onboard until we get to another world like its natural one and release it back to the fjords where it originally came from.\"",
+                        "Details" : "\"Close-off all access between both DropShip sections for a period of time while {TGT_MW.Callsign} attempts to capture it in zero gravity.  Roger that, Commander.\" Darius grins in antecipation of the bird hunt.\r\n\r\nA few hours later, Yang comes back, unhappy. \"{TGT_MW.Callsign} got it but the damn bird bit me in my good arm while we were moving it from the net to a cage. We'll keep it alive onboard until we get to another world like its natural one and release it back to the fjords where it originally came from.\"",
                         "Icon" : null
                     },
                     "Weight" : 100,

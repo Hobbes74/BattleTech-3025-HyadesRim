@@ -48,19 +48,19 @@ Future Plans
 * Finish the new Campaign with new contracts, missions and flashpoints (in progress)
 
 Credits
+* Text editing: MarkDey and SanchoPanzer;
+* Additional writing (Liao systems): Camicon_Dachass;
+* Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey
 * ModTek, by several authors, for allowing BattleTech modding;
-* HBS, for officially supporting BattleTech modding;
-* Logo Replacement mod by Mpstark
+* Logo Replacement mod by Mpstark;
 * ConverseTek, by CWolf, for allowing to create/edit the game conversions;
 * Inner Sphere Map for the coordinates of most canon systems;
 * MegaMek for the coordinates of several connecting systems;
 * Banner images taken from the sourcebook The Periphery, 2nd Edition;
-* Corporation logos taken and adapted from Sarna.net
+* Corporation logos taken and adapted from Sarna.net;
 * Sarna.net for being an amazing resource for all things BattleTech related;
 * Mordel.net for the stats used in the canon 'Mech variants;
-* Camicon_Dachass: additional writing (Liao systems)
-* Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey
 * All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer and the whole BattleTech modding community.
 
 © 2020 Hobbes

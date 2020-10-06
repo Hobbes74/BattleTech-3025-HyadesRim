@@ -11,13 +11,13 @@
    "Difficulty" : 4,
    "LanceTags" : {
       "items" : [
-         "lance_bracket_low",
-         "lance_type_fire",
-         "lance_type_light",
-		 "lance_type_dynamic",
-		 "lance_type_mech",
-        "lance_type_notallvehicles",
-        "lance_type_notfull"
+		"lance_bracket_low",
+		"lance_type_fire",
+		"lance_type_light",
+		"lance_type_dynamic",
+		"lance_type_mech",
+		"lance_type_notallvehicles",
+		"lance_type_notfull"
       ],
       "tagSetSourceFile" : "Tags/LanceTags"
    },
@@ -29,7 +29,8 @@
          "unitTagSet" : {
             "items" : [
                "unit_medium",
-               "unit_mech"
+               "unit_mech",
+               "{CUR_TEAM.faction}"
             ],
             "tagSetSourceFile" : "Tags/UnitTags"
          },
@@ -38,8 +39,7 @@
                "unit_lance_vanguard",
                "unit_lance_support",
                "unit_noncombatant",
-			   "unit_urbie",
-			   "Not{CUR_TEAM.faction}"
+			   "unit_urbie"
             ],
             "tagSetSourceFile" : "Tags/UnitTags"
          },
@@ -61,7 +61,8 @@
          "unitTagSet" : {
             "items" : [
                "unit_mech",
-               "unit_lance_tank"
+               "unit_lance_tank",
+               "{CUR_TEAM.faction}"
             ],
             "tagSetSourceFile" : "Tags/UnitTags"
          },
@@ -70,8 +71,7 @@
                "unit_assault",
                "unit_heavy",
                "unit_noncombatant",
-			   "unit_urbie",
-			   "Not{CUR_TEAM.faction}"
+			   "unit_urbie"
             ],
             "tagSetSourceFile" : "Tags/UnitTags"
          },
@@ -94,15 +94,15 @@
             "items" : [
                "unit_mech",
                "unit_medium",
-               "unit_lance_support"
+               "unit_lance_support",
+               "{CUR_TEAM.faction}"
             ],
             "tagSetSourceFile" : "Tags/UnitTags"
          },
          "excludedUnitTagSet" : {
             "items" : [
                "unit_noncombatant",
-			   "unit_urbie",
-			   "Not{CUR_TEAM.faction}"
+			   "unit_urbie"
             ],
 			"tagSetSourceFile" : "Tags/UnitTags"
          },

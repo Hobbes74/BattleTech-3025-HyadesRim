@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "event_co_rumbleSeat",
         "Name" : "Rumble Seat",
-        "Details" : "The DropShip's command deck begins shaking. Again.\r\n\r\n\"I can't stand this anymore!\" Sumire says. \"This has been happening every two and a half hours like clockwork. It makes me want to break something.\"\r\n\r\n\"Every 2.4 hours to be precise.\" Dr. Murad's tone is infuriatingly reasonable. \"And only while the DropShip is under thrust.\"\r\n\r\nSumire flashes you an exasperated look. \"Why can't we get this fixed?\"\r\n\r\nAfter seventeen seconds, the shaking stops. Right on schedule.",
+        "Details" : "The <i>Argo</i>'s command deck begins shaking. Again.\r\n\r\n\"I can't stand this anymore!\" Sumire says. \"This has been happening every two and a half hours like clockwork. It makes me want to break something.\"\r\n\r\n\"Every 2.4 hours to be precise.\" Dr. Murad's tone is infuriatingly reasonable. \"And only while the DropShip is under thrust.\"\r\n\r\nSumire flashes you an exasperated look. \"Why can't we get this fixed?\"\r\n\r\nAfter seventeen seconds, the shaking stops. Right on schedule.",
         "Icon" : "uixTxrSpot_ArgoTravel.png"
     },
     "Scope" : "Company",
@@ -15,7 +15,8 @@
         },
         "ExclusionTags" : {
             "items" : [
-                "event_co_rumbleSeat"
+                "event_co_rumbleSeat",
+                "argo_structure0"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
@@ -133,7 +134,28 @@
                 "Details" : "risky",
                 "Icon" : ""
             },
-            "RequirementList" : [],
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [
+                        ],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : null,
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 100000,
+                            "valueConstant" : "100000"
+                        }
+                    ]
+                }
+            ],
             "ResultSets" : [
                 {
                     "Description" : {
