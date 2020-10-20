@@ -48,10 +48,10 @@ Future Plans
 * Finish the new Campaign with new contracts, missions and flashpoints (in progress)
 
 Credits
-* Text editing: MarkDey and SanchoPanzer;
 * Additional writing (Liao systems): Camicon_Dachass;
-* Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey
+* Text editing: MarkDey and SanchoPanzer;
+* Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid;
 * ModTek, by several authors, for allowing BattleTech modding;
 * Logo Replacement mod by Mpstark;
 * ConverseTek, by CWolf, for allowing to create/edit the game conversions;

@@ -8,7 +8,7 @@
         "UIName" : "UrbanMech",
         "Id" : "chassisdef_urbanmech_UM-Q",
         "Name" : "SuburbanMech",
-        "Details" : "The UM-Q adapts the traditional UrbanMech R60 into an energy weapon platform for higher performance. Because its weapons aren't limited by ammunition concerns, the R90 is better-suited to longer engagements.",
+        "Details" : "This pirate Urbie carries two Large Lasers, giving it a deceiving long range.",
         "Icon" : "uixTxrIcon_urbanmech"
     },
     "MovementCapDefID" : "movedef_urbanmech_UM-R90",
@@ -16,9 +16,6 @@
     "HardpointDataDefID" : "hardpointdatadef_urbanmech",
     "PrefabIdentifier" : "chrPrfMech_urbanmechBase-001",
     "PrefabBase" : "urbanmech",
-    "VariantName" : "UM-UNK",
-    "StockRole" : "Heavy Defender",
-    "YangsThoughts" : "This is an UrbanMech variant I've never even heard of before. It's got the same armor as a standard R60, but this -Q is armed entirely with energy weapons, including a PPC for long-range power. I'm not sure why nobody thought of this sooner.",
     "Tonnage" : 30,
     "InitialTonnage" : 10,
     "weightClass" : "LIGHT",
@@ -70,7 +67,7 @@
             "Location" : "LeftArm",
             "Hardpoints" : [
                 {
-                    "WeaponMount" : "AntiPersonnel",
+                    "WeaponMount" : "Energy",
                     "Omni" : false
                 },
                 {
@@ -86,12 +83,7 @@
         },
         {
             "Location" : "LeftTorso",
-            "Hardpoints" : [
-                {
-                    "WeaponMount" : "Energy",
-                    "Omni" : false
-                }
-            ],
+            "Hardpoints" : [],
             "Tonnage" : 0,
             "InventorySlots" : 10,
             "MaxArmor" : 70,
@@ -212,5 +204,8 @@
             "z" : 0.5
         }
     ],
+    "VariantName" : "UM-UNK",
+    "StockRole" : "Heavy Defender",
+    "YangsThoughts" : "This pirate Urbie carries two Large Lasers, giving it a deceiving long range.",
     "FixedEquipment" : null
 }
