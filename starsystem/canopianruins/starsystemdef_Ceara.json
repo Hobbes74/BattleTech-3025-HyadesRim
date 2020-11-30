@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Ceara",
 		"Name": "Ceará",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "Founded during the Star League by a joint venture of Terran corporations, Ceará's logging operations soon floundered after most of its investment funding was embezzled by Regulan officers. After Ceara's economy crashed, the Free Worlds League gradually retreated from the planet and most cities became effectively dominated by criminal gangs.",
 		"Icon": ""
 	},
 	"Position": {
@@ -15,10 +15,13 @@
 			"planet_name_ceara",
 			"planet_size_medium",
 			"planet_climate_rocky",
-			"planet_pop_none",
-			"planet_faction_nofaction",
-			"planet_other_empty",
-			"planet_progress_3"
+			"planet_pop_small",
+			"planet_faction_independent",
+			"planet_civ_primitive",
+			"planet_industry_poor",
+			"planet_feature_moon03",
+			"planet_other_blackmarket",
+			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -39,7 +42,7 @@
 	},
 	"FuelingStation": false,
 	"JumpDistance": 7,
-	"ownerID": "NoFaction",
+	"ownerID": "Locals",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
 	"ShopMaxSpecials": 9,
@@ -124,10 +127,14 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals"
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Ceara",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -144,6 +151,7 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"Locals",
 		"AlphardTradingCompany",
 		"ExpansesPirates",
 		"MarianPirates",
@@ -153,6 +161,7 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"Locals",
 		"AlphardTradingCompany",
 		"ExpansesPirates",
 		"GrimReapers",

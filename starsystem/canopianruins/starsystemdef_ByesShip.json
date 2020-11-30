@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_ByesShip",
 		"Name": "Bye's Ship",
-		"Details": "Once a Periphery hub, most of the system's space arcologies have been deactivated or abandoned, with only a few facilities remaining that are still operational, centered around one of Bye's Ship's moons. One of still operating stations contains a well known slave market.",
+		"Details": "Once a Periphery hub, most of the system's space arcologies have been deactivated or abandoned, with only a few facilities remaining that are still operational, centered around one of Bye's Ship's moons. One of still operating stations contains a market well known for its Lothian slaves.",
 		"Icon": ""
 	},
 	"Position": {
@@ -16,15 +16,14 @@
 			"planet_size_medium",
 			"planet_climate_lunar",
 			"planet_pop_small",
-			"planet_civ_primitive",
+			"planet_civ_periphery",
 			"planet_faction_independent",
 			"planet_other_moon",
 			"planet_other_ruins",
 			"planet_other_pirate",
-			"planet_other_blackmarket",
-			"planet_feature_gasgiant",
+			"planet_feature_asteroids",
 			"planet_other_hub",
-			"planet_progress_3"
+			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -108,7 +107,7 @@
 			"Scope": "Company",
 				"RequirementTags": {
 				"items": [
-				"map_travel_2"
+					"map_travel_2"
 				],
 				"tagSetSourceFile": ""
 			},
@@ -126,7 +125,9 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_major_Locals",
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
 	"BlackMarketShopItems": null,
@@ -146,6 +147,7 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"Locals",
 		"CanopianPirates",
 		"DevilsDisciples",
 		"MarianPirates",
@@ -155,6 +157,7 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"Locals",
 		"CanopianPirates",
 		"DevilsDisciples",
 		"GrimReapers",

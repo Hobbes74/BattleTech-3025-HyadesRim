@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Stafford",
 		"Name": "Stafford",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "One of the sources of the germanium found by Julius Reilly on Alphard, Stafford's mines were reactivated by the Marian Hegemony after the system was rediscovered by the first Imperator. The system is the sole supplier of several metals and rare earth elements to the Marian industry due to Marik and Canopian trade sanctions and embargoes imposed in retaliation for pirate raids.",
 		"Icon": ""
 	},
 	"Position": {
@@ -17,7 +17,11 @@
 			"planet_climate_desert",
 			"planet_pop_small",
 			"planet_faction_marian",
-			"planet_progress_3"
+			"planet_industry_mining",
+			"planet_other_boreholes",
+			"planet_civ_periphery",
+			"planet_other_blackmarket",
+			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -121,11 +125,14 @@
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Locals"
+		"itemCollection_major_Locals",
+		"itemCollection_shop_mining"
 	],
 	"FactionShopownerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Stafford",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",

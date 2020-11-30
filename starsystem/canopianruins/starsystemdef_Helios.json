@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Helios",
 		"Name": "Helios",
-		"Details": "Helios was named after the greek god of Terra's sun, and it has a small colony founded by the Phythians, one of the Magistracy's myriad of religions. Despite its remoteness, the Canopian military has a near constant presence in the planet, while keeping their distance from the locals.",
+		"Details": "Helios was named after the greek god of Terra's sun, and it has a small colony founded by the Phythians, one of the Magistracy's myriad of religions. Despite its remoteness, the Canopian military has a near constant presence in the planet as a deterrent to pirates, while keeping their distance from the locals.",
 		"Icon": ""
 	},
 	"Position": {
@@ -16,23 +16,21 @@
 			"planet_name_helios",
 			"planet_faction_independent",
 			"planet_other_newcolony",
-			"planet_climate_terran",
-			"planet_civ_primitive",
+			"planet_climate_tropical",
+			"planet_civ_periphery",
 			"planet_size_large",
+			"planet_other_blackmarket",
 			"planet_pop_small",
+			"planet_other_floatingworld",
+			"planet_feature_moon02",
 			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
         "lowlandsSpring",
-        "lowlandsFall",
-        "highlandsSpring",
-        "highlandsFall",
         "desertParched",
         "badlandsParched",
-        "polarFrozen",
-        "tundraFrozen",
         "jungleTropical"
 	],
 	"FuelingStation": false,
@@ -130,10 +128,14 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals"
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Helios",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",

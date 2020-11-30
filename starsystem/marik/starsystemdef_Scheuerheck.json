@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Scheuerheck",
 		"Name": "Scheuerheck",
-		"Details": "Although firstly colonized by the Free Worlds League, the Magistrix Kossandra Centrella was later able to subvert the planetary goverment into joining the Magistracy of Canopus. The world was later conquered by Anton Marik during the Reunification War and rejoined the FWL.",
+		"Details": "Colonized around 2530 by the Free Worlds League, Scheuerheck found itself in the middle of a power play made by Magistrix Kossandra Centrella, who convinced the planetary governments of Scheuerheck, Ruschegg and Payvand to join her Magistracy Free State. Between 2550 and 2559 all three worlds joined the Canopians but belonged briefly to the Magistracy since they were invaded and reintegrated into the FWL during the Reunification War.",
 		"Icon": ""
 	},
 	"Position": {
@@ -13,25 +13,23 @@
 	"Tags": {
 		"items": [
 			"planet_name_scheuerheck",
-			"planet_size_medium",
-			"planet_climate_terran",
+			"planet_size_large",
+			"planet_climate_rocky",
 			"planet_pop_medium",
 			"planet_faction_marik",
+			"planet_civ_periphery",
+			"planet_other_battlefield",
+			"planet_industry_mining",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"lowlandsSpring",
-		"lowlandsFall",
-		"highlandsSpring",
-		"highlandsFall",
-		"desertParched",
-		"badlandsParched",
-		"polarFrozen",
-		"tundraFrozen",
-		"jungleTropical",
-		"urbanHighTech"
+        "highlandsSpring",
+        "highlandsFall",
+        "badlandsParched",
+        "tundraFrozen",
+        "martianVacuum"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -42,7 +40,7 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
+	"JumpDistance": 4,
 	"ownerID": "Marik",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
@@ -129,7 +127,9 @@
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Marik"
+		"itemCollection_minor_Marik",
+		"itemCollection_shop_mining",
+		"itemCollection_shop_battlefield"
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
@@ -140,9 +140,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 6,
+	"DefaultDifficulty": 0,
 	"DifficultyList": [
-		-1,
+		0,
 		8
 	],
 	"DifficultyModes": [

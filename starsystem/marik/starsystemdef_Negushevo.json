@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Negushevo",
 		"Name": "Negushevo",
-		"Details": "<i>Here might be naked precentors.</i>",
+		"Details": "Founded by settlers from the Slavic speaking regions of Terra, Negushevo is the capital of the Rim Commonality and a temperate world known for its wine and cereal production, as well as hosting the <i>Universe's Annual Song Contest</i>, which despite its name is only contested by artists from mainly the Free World League and a few Periphery worlds. Negushevo is also known for its local mafia syndicates, with federal, Regulan and Andurien law enforcement and intelligence agencies operating on the planet.",
 		"Icon": ""
 	},
 	"Position": {
@@ -14,23 +14,28 @@
 		"items": [
 			"planet_name_negushevo",
 			"planet_size_medium",
-			"planet_climate_terran",
-			"planet_pop_medium",
+			"planet_climate_arctic",
+			"planet_pop_large",
 			"planet_faction_marik",
+			"planet_civ_innersphere",
+			"planet_other_capital",
+			"planet_other_comstar",
+			"planet_industry_manufacturing",
+			"planet_other_blackmarket",
+			"planet_industry_recreation",
+			"planet_other_factionhq_marik",
+			"planet_other_megacity",
+			"planet_industry_rich",
+			"planet_feature_rings",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"lowlandsSpring",
-		"lowlandsFall",
-		"highlandsSpring",
-		"highlandsFall",
-		"desertParched",
-		"badlandsParched",
-		"polarFrozen",
-		"tundraFrozen",
-		"jungleTropical",
+        "highlandsSpring",
+        "highlandsFall",
+        "polarFrozen",
+        "tundraFrozen",
 		"urbanHighTech"
 	],
 	"MapRequiredTags": {
@@ -129,11 +134,16 @@
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Marik"
+		"itemCollection_major_Marik",
+		"itemCollection_shop_manufacturingProgression"
 	],
-	"FactionShopOwnerID": "INVALID_UNSET",
-	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+    "factionShopOwnerID": "Marik",
+    "FactionShopItems": [
+        "itemCollection_faction_Marik"
+    ],
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Negushevo",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -150,6 +160,10 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"MarianHegemony",
+		"TikonovPirates",
+		"RegulanPirates",
+		"CorporatePirates",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",
@@ -157,6 +171,10 @@
 		"MagistracyOfCanopus"
 	],
 	"ContractTargetIDs": [
+		"MarianHegemony",
+		"TikonovPirates",
+		"RegulanPirates",
+		"CorporatePirates",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",

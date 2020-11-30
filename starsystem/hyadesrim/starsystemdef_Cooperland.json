@@ -14,25 +14,23 @@
 		"items": [
 			"planet_name_cooperland",
 			"planet_size_medium",
-			"planet_climate_terran",
+			"planet_climate_desert",
 			"planet_pop_small",
 			"planet_other_hub",
+			"planet_other_moon",
+			"planet_other_pirate",
+			"planet_civ_primitive",
 			"planet_faction_independent",
-			"planet_progress_2"
+			"planet_feature_moon03",
+			"planet_feature_asteroids",
+			"planet_other_blackmarket",
+			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"lowlandsSpring",
-		"lowlandsFall",
-		"highlandsSpring",
-		"highlandsFall",
-		"desertParched",
-		"badlandsParched",
-		"polarFrozen",
-		"tundraFrozen",
-		"jungleTropical",
-		"urbanHighTech"
+        "desertParched",
+        "martianVacuum" 
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -111,7 +109,7 @@
 			"Scope": "Company",
 			"RequirementTags": {
 				"items": [
-					"map_travel_4"
+					"map_travel_3"
 				],
 			"tagSetSourceFile": ""
 			},
@@ -129,10 +127,14 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals"
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Cooperland",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -149,13 +151,15 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"Locals",
+		"DeathsConsorts",
 		"Davion",
-		"TaurianConcordat",
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"Locals",
+		"DeathsConsorts",
 		"AuriganPirates",
-		"Davion",
-		"TaurianConcordat"
+		"Davion"
 	]
 }

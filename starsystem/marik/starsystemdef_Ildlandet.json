@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Ildlandet",
 		"Name": "Ildlandet",
-		"Details": "<i>Here might be Mariks.</i>",
+		"Details": "Once a thriving Marik border outpost, Ildlandet's fortunes changed for the worse after a series of new tariffs requested by Captain-General Stephan Marik and approved by the League's Parliament during the Third Succession War, that restricted trade with the Periphery. While the new custom taxes barely raised federal revenue, they also encouraged illicit border trading.",
 		"Icon": ""
 	},
 	"Position": {
@@ -18,6 +18,9 @@
 			"planet_pop_none",
 			"planet_faction_marik",
 			"planet_other_empty",
+			"planet_other_hub",
+			"planet_other_blackmarket",
+			"planet_other_pirate",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
@@ -124,7 +127,9 @@
 	"SystemShopItems": [],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Ildlandet",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -141,6 +146,7 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"MarianHegemony",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",
@@ -148,6 +154,7 @@
 		"MagistracyOfCanopus"
 	],
 	"ContractTargetIDs": [
+		"MarianHegemony",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",

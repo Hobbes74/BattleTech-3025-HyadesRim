@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Romita",
 		"Name": "Romita",
-		"Details": "<i>Here might be Mariks.</i>",
+		"Details": "A major Marik border world with links to several important systems, Romita is one of the most trade hubs between the Free Worlds League and the Periphery. The system has also seen an increase on pirate activity, especially originating from the Marian Hegemony.",
 		"Icon": ""
 	},
 	"Position": {
@@ -17,6 +17,11 @@
 			"planet_climate_terran",
 			"planet_pop_medium",
 			"planet_faction_marik",
+			"planet_civ_periphery",
+			"planet_industry_manufacturing",
+			"planet_other_pirate",
+			"planet_other_hub",
+			"planet_other_blackmarket",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
@@ -30,8 +35,7 @@
 		"badlandsParched",
 		"polarFrozen",
 		"tundraFrozen",
-		"jungleTropical",
-		"urbanHighTech"
+		"jungleTropical"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -42,7 +46,7 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
+	"JumpDistance": 7,
 	"ownerID": "Marik",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
@@ -122,18 +126,21 @@
 		}
 	],
 	"StarPosition": null,
-	"StarType": "K",
+	"StarType": "G",
 	"Depletable": false,
 	"UseSystemRoninHiringChance": false,
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Marik"
+		"itemCollection_major_Marik",
+		"itemCollection_shop_manufacturing"
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Romita",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -150,6 +157,7 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"MarianHegemony",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",
@@ -157,6 +165,7 @@
 		"MagistracyOfCanopus"
 	],
 	"ContractTargetIDs": [
+		"MarianHegemony",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",

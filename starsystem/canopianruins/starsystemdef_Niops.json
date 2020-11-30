@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Niops",
 		"Name": "Niops",
-		"Details": "Niops contains three habitable worlds, which were first settled by the Star League to study stellar evolution. As the research teams found themselves cut off from the rest of the Inner Sphere, they developed a technocratic society, the Niops Association, with the scientists as the top caste and ruling over the underclasses of laborers and farmers. With this system, the Niops rulers were able to retain a high level of development, although at the expense of personal freedoms.",
+		"Details": "Niops contains three habitable worlds, which were first settled by the Star League with scientists to study stellar evolution. As the research teams found themselves cut off from the rest of the Inner Sphere and overwhelmed with refugees, they developed a technocratic society, the Niops Association, with the scientists as the top caste and ruling over the underclasses of laborers and farmers. With this system, the Niops rulers were able to retain a high level of development, although at the expense of personal freedoms.",
 		"Icon": ""
 	},
 	"Position": {
@@ -15,8 +15,10 @@
 			"planet_region_marikexpanses",
 			"planet_name_niops",
 			"planet_size_medium",
+			"planet_climate_lunar",
 			"planet_climate_terran",
-			"planet_pop_small",
+			"planet_climate_mars",
+			"planet_pop_medium",
 			"planet_civ_innersphere",
 			"planet_industry_manufacturing",
 			"planet_industry_electronics",
@@ -24,11 +26,14 @@
 			"planet_industry_research",
 			"planet_other_starleague",
 			"planet_faction_independent",
-			"planet_progress_3"
+			"planet_other_megacity",
+			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
+        "martianVacuum",
+        "lunarVacuum",
 		"lowlandsSpring",
 		"lowlandsFall",
 		"highlandsSpring",
@@ -136,7 +141,11 @@
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_major_Locals"
+		"itemCollection_major_Locals",
+		"itemCollection_shop_electronics",
+		"itemCollection_shop_manufacturing",
+		"itemCollection_shop_research",
+		"itemCollection_shop_starleague"
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,

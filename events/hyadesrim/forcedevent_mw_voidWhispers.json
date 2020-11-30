@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "forcedevent_mw_voidWhispers",
         "Name" : "Void Whispers",
-        "Details" : "This might be interesting. During a calibration of our sensor array while leaving [[TGT_SYSTEM,{TGT_SYSTEM.Name}]], we accidently discovered an old transmission during the full spectrum tests. It was too faint but definitely artificial in origin and we'll be able to listen to it better, if we adjust the comms array for better gain.\"\r\n\r\n\"What possible use can we have for a possibly decades old radio signal out of nowhere?\" Darius skeptical tone continues. \"We're not here to do science, Dr. Murad.\"\r\n\r\n\"It could be a distress signal from a JumpShip that became stranded during a misjump accident. Or even from something dating back to the Star League. We should verify this. \" Murad continues. \"[[TGT_MW,{TGT_MW.Callsign}]] has been helping me trying to figure out the transmission but we need go outside to manually adjust the array when the <i>Hysteria</i> is at optimal range.\"\r\n\r\n\"Dr. Murad is right about the possibility of a stranded spaceship or lost colony but depending on the signal's distance the survivors might have already died. \" Sumire ponders. \"This could be anything. What will be your decision Commander? \"",
+        "Details" : "Farah gets your attention. \"This might be interesting, Commander. During a calibration of our sensor array while leaving [[TGT_SYSTEM,{TGT_SYSTEM.Name}]], we accidently discovered an old transmission during the full spectrum tests. It was too faint to make out, but definitely artificial in origin. We'll be able to listen to it better,if we adjust the comms array for better gain.\"\r\n\r\n\"What possible use can we have for a possibly decades old radio signal out of nowhere?\" Darius' skeptical tone continues. \"We're not here to do science, Dr. Murad.\"\r\n\r\n\"It could be a distress signal from a JumpShip that became stranded during a misjump accident. Or even from something dating back to the Star League. We should verify this. \" Dr. Murad continues. \"[[TGT_MW,{TGT_MW.Callsign}]] has been helping me trying to figure out the transmission but we need go outside to manually adjust the array when the <i>Hysteria</i> is at optimal range.\"\r\n\r\nSumire ponders, \"Dr. Murad is right about the possibility of a stranded spaceship or lost colony, but depending on the signal's distance the survivors might have already died.\"\r\n\r\nDarius turns to you. \"This could be anything. What will be your decision, Commander?\"",
         "Icon" : "uixTxrSpot_ComputerScreen.png"
     },
     "Scope" : "MechWarrior",
@@ -10,12 +10,12 @@
     "Requirements" : {
         "Scope" : "MechWarrior",
         "RequirementTags" : {
-            "items" : [],
-            "tagSetSourceFile" : "Tags/PilotTags"
+            "tagSetSourceFile" : "Tags/PilotTags",
+            "items" : []
         },
         "ExclusionTags" : {
-            "items" : [],
-            "tagSetSourceFile" : "Tags/PilotTags"
+            "tagSetSourceFile" : "Tags/PilotTags",
+            "items" : []
         },
         "RequirementComparisons" : [
             {
@@ -30,26 +30,26 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
+                "tagSetSourceFile" : "",
+                "items" : []
             },
             "ExclusionTags" : {
-                "items" : [],
-                "tagSetSourceFile" : "Tags/CompanyTags"
+                "tagSetSourceFile" : "Tags/CompanyTags",
+                "items" : []
             },
             "RequirementComparisons" : []
         },
         {
             "Scope" : "StarSystem",
             "RequirementTags" : {
+                "tagSetSourceFile" : "",
                 "items" : [
                     "planet_region_hyadesrim"
-                ],
-                "tagSetSourceFile" : ""
+                ]
             },
             "ExclusionTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
+                "tagSetSourceFile" : "",
+                "items" : []
             },
             "RequirementComparisons" : []
         }
@@ -60,12 +60,12 @@
             "Requirements" : {
                 "Scope" : "SecondaryMechWarrior",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "Tags/PilotTags"
+                    "tagSetSourceFile" : "Tags/PilotTags",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : [
                     {
@@ -82,12 +82,12 @@
             "Requirements" : {
                 "Scope" : "TertiaryMechWarrior",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "Tags/PilotTags"
+                    "tagSetSourceFile" : "Tags/PilotTags",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : [
                     {
@@ -114,7 +114,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Mental breakdown.",
-                        "Details" : "You stick with Darius. \"This is a waste of time.\"\r\n\r\nDr. Murad orders [[TGT_MW,{TGT_MW.Callsign}]] to stop working on the signal but on the next day, she reports back to you. Mechwarrior [[TGT_MW,{TGT_MW.Callsign}]] has suffered a nervous breakdown during the night from an unknown reason and was been placed yesterday under medical observation. \r\n\r\nThe MedTechs said that physically {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} fine, but {TGT_MW.Gender?Male:he|Female:she|NonBinary:they} was found in a coma after spending most of the night screaming the hell out of {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} lungs out and only talking gibberish.",
+                        "Details" : "You agree with Darius. \"This is a waste of time.\"\r\n\r\nDr. Murad orders [[TGT_MW,{TGT_MW.Callsign}]] to stop working on the signal but on the next day, she reports back to you. [[TGT_MW,{TGT_MW.Callsign}]] suffered a nervous breakdown overnight and has been placed under medical observation. \r\n\r\nThe MedTechs report that physically {TGT_MW.Gender?Male:he's|Female:she's|NonBinary:they're} fine, but {TGT_MW.Gender?Male:he was|Female:she was|NonBinary:they were} in a near coma after spending most of the night screaming the hell out of {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} lungs out and only talking gibberish.",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -123,12 +123,12 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -148,12 +148,12 @@
                             "Scope" : "SecondaryMechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -173,14 +173,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "forcedevent_mw_voidWhispers"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
                             "Actions" : null,
@@ -194,7 +194,7 @@
                     "Description" : {
                         "Id" : "outcome_0_1",
                         "Name" : "EVA without space suit",
-                        "Details" : "Yang comes horrified to you.\" Check out the cameras covering access hatch seven!\" Sumire switches the controls and a MechWarrior can be seen naked inside, with Techs and MechWarriors attempting to open the inner airlock's doors. \r\n\r\n\"{TRT_MW.FirstName} just walked butt naked across the bay, got into an airlock and rigged the doors before we realized what was going on.\" Suddenly the crew gets more frantic. \"{TRT_MW.Gender?Male:He|Female:She|NonBinary:They} just opened the outer airlock and walked into space!\"",
+                        "Details" : "Yang comes to you, horrified. \"Check out the cameras covering access hatch seven!\" Sumire switches the controls and a MechWarrior can be seen naked inside, with Techs and MechWarriors attempting to open the inner airlock's doors. \r\n\r\n\"{TRT_MW.Callsign} just walked butt naked across the bay, got into an airlock and rigged the doors before we realized what was going on.\" Suddenly the crew gets more frantic. \"{TRT_MW.Gender?Male:He|Female:She|NonBinary:They} just opened the outer airlock and walked into space!\"",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -203,14 +203,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "forcedevent_mw_voidWhispers"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
                             "Actions" : null,
@@ -222,12 +222,12 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -247,12 +247,12 @@
                             "Scope" : "TertiaryMechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
                             "Actions" : [
@@ -275,12 +275,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -288,7 +288,7 @@
         {
             "Description" : {
                 "Id" : "outcome_1",
-                "Name" : "Allow {TGT_MW.Callsign} to go EVA and realign the antenna.",
+                "Name" : "Allow {TGT_MW.Callsign} to do an EVA and realign the antenna.",
                 "Details" : "Risky choice.",
                 "Icon" : null
             },
@@ -298,7 +298,7 @@
                     "Description" : {
                         "Id" : "outcome_1_0",
                         "Name" : "Unforeseen consequences.",
-                        "Details" : "Before [[TGT_MW,{TGT_MW.Callsign}]] leaves the <i>Hysteria</i> to manually align the antenna array, you warn caution. \"Don't worry, Commander this should be an easy operation. I'm also carrying a manual terminal to read the data and properly calibrate it, so we don't have to repeat this anymore\". \r\n\r\nAn hour later, [[TGT_MW,{TGT_MW.Callsign}]] has finished the realignment. \"We are starting to receive the full transmission. Wait for verification\". Then the transmission is suddenly cut off. \"[[TGT_MW,{TGT_MW.Callsign}]] respond!\" Murad is nearly screaming but no reply is heard. \r\n\r\nLater, after [[TGT_MW,{TGT_MW.Callsign}]] reaches the airlock, she comes to you. \"Commander, the EVA suit had a major tear on its side, must have been hit by a meteroid and [[TGT_MW,{TGT_MW.Callsign}]] almost died from suffocation\".",
+                        "Details" : "Before [[TGT_MW,{TGT_MW.Callsign}]] leaves the <i>Hysteria</i> to manually align the antenna array, you warn caution. \"Don't worry Commander, this should be an easy operation. I'm also carrying a manual terminal to read the data and properly calibrate it, so we don't have to repeat this anymore\". \r\n\r\nAn hour later, [[TGT_MW,{TGT_MW.Callsign}]] has finished the realignment. \"We are starting to receive the full transmission. Wait for verification\". Then the transmission is suddenly cut off. \"[[TGT_MW,{TGT_MW.Callsign}]] respond!\" Dr. Murad is nearly screaming but no reply is heard. \r\n\r\nLater, after [[TGT_MW,{TGT_MW.Callsign}]] reaches the airlock, Farah comes to you. \"Commander, the EVA suit had a major tear on its side - must have been hit by a meteroid and [[TGT_MW,{TGT_MW.Callsign}]] almost died from suffocation\".",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -307,14 +307,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "forcedevent_mw_voidWhispers"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -334,12 +334,12 @@
                             "Scope" : "MechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -361,7 +361,7 @@
                     "Description" : {
                         "Id" : "outcome_1_1",
                         "Name" : "Unforeseen consequences.",
-                        "Details" : "\"Commander, [[SCN_MW,{SCN_MW.Callsign}]] has also volunteered to join [[TGT_MW,{TGT_MW.Callsign}]] in the EVA space walk to realign the <i>Hysteria</i> antenna array. We thought it safer to have someone as a back-up in case anything goes wrong\". Sumire nods in agreement while listening to the operation until suddenly she turns serious. \r\n\r\n\"[[TGT_MW,{TGT_MW.Callsign}]] respond! [[SCN_MW,{SCN_MW.Callsign}]] what is happening?\" All of the bridge stops for several seconds waiting for a reply from both MechWarriors, until [[TGT_MW,{TGT_MW.Callsign}]] cames back.\r\n\r\n\"Bridge, [[SCN_MW,{SCN_MW.Callsign}]] was checking the data on the portable terminal when {SCN_MW.Gender?Male:he|Female:she|NonBinary:they} suddenly started attacking me. Then, without any warning {SCN_MW.Gender?Male:he|Female:she|NonBinary:they} stopped and removed {SCN_MW.Gender?Male:his|Female:her|NonBinary:their} helmet and jumped away from the ship!\"\r\n\r\nSeveral hours later, [[SCN_MW,{SCN_MW.Callsign}]]'s body is recovered still holding the helmet on {SCN_MW.Gender?Male:his|Female:her|NonBinary:their} gloves and with a serene expression in {SCN_MW.Gender?Male:his|Female:her|NonBinary:their} dead blue face.",
+                        "Details" : "\"Commander, [[SCN_MW,{SCN_MW.Callsign}]] has also volunteered to join [[TGT_MW,{TGT_MW.Callsign}]] in the EVA space walk to realign the <i>Hysteria</i>'s antenna array. We thought it safer to have someone as a back-up in case anything goes wrong\". Sumire nods in agreement while listening to the operation until suddenly she turns serious. \r\n\r\n\"[[TGT_MW,{TGT_MW.Callsign}]] respond! [[SCN_MW,{SCN_MW.Callsign}]] what is happening?\" All of the bridge stops for several seconds waiting for a reply from both MechWarriors, until [[TGT_MW,{TGT_MW.Callsign}]] cames back.\r\n\r\n\"Bridge, [[SCN_MW,{SCN_MW.Callsign}]] was checking the data on the portable terminal when {SCN_MW.Gender?Male:he|Female:she|NonBinary:they} suddenly started attacking me. Then, without any warning {SCN_MW.Gender?Male:he|Female:she|NonBinary:they} stopped and removed {SCN_MW.Gender?Male:his|Female:her|NonBinary:their} helmet and jumped away from the ship!\"\r\n\r\nSeveral hours later, [[SCN_MW,{SCN_MW.Callsign}]]'s body is recovered still holding the helmet in {SCN_MW.Gender?Male:his|Female:her|NonBinary:their} gloves and with a serene expression in {SCN_MW.Gender?Male:his|Female:her|NonBinary:their} dead blue face.",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -370,14 +370,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "forcedevent_mw_voidWhispers"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -397,12 +397,12 @@
                             "Scope" : "SecondaryMechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
                             "Actions" : [
@@ -423,12 +423,12 @@
                             "Scope" : "MechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : "Tags/PilotTags"
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
                             "Actions" : [
@@ -449,12 +449,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -462,7 +462,7 @@
         {
             "Description" : {
                 "Id" : "outcome_2",
-                "Name" : "Allow [[TGT_MW,{TGT_MW.Callsign}]] to continue research using the MedBay's computers but forbid any EVA activity while on route.",
+                "Name" : "Allow [[TGT_MW,{TGT_MW.Callsign}]] to continue doing research using the MedBay's computers but forbid any EVA activity while on route.",
                 "Details" : "[{TGT_MW.Callsign}: Bookish]",
                 "Icon" : null
             },
@@ -470,14 +470,14 @@
                 {
                     "Scope" : "MechWarrior",
                     "RequirementTags" : {
+                        "tagSetSourceFile" : "Tags/PilotTags",
                         "items" : [
                             "pilot_bookish"
-                        ],
-                        "tagSetSourceFile" : "Tags/PilotTags"
+                        ]
                     },
                     "ExclusionTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
+                        "tagSetSourceFile" : "",
+                        "items" : []
                     },
                     "RequirementComparisons" : []
                 }
@@ -487,7 +487,7 @@
                     "Description" : {
                         "Id" : "outcome_2_0",
                         "Name" : "Morale drop.",
-                        "Details" : "Dr. Murad and {TGT_MW.Callsign} look at you skeptically. \"We could gather a lot more data but I guess this will have to do\". \r\n\r\nA few days later, they came back to you with horrified faces. \"Commander, this data contains the final logs of the <i>The Abyss</i>, broadcast by the its captain before he committed suicide to avoid being killed by his crew.\"\r\n\r\n\"It seems that they were chased all over the Periphery by unknown JumpShips and the crew started suffered a number of mental breakdowns. The descriptions of an aborted mutiny are particularly gruesome. What ever those people encountered out there made them insane. \"",
+                        "Details" : "Dr. Murad and {TGT_MW.Callsign} look at you skeptically. \"We could gather a lot more data but I guess this will have to do\". \r\n\r\nA few days later, they came back to you with horrified faces. \"Commander, this data contains the final logs of the <i>The Abyss</i>, broadcast by the its captain before he committed suicide to avoid being killed by his crew.\"\r\n\r\n\"It seems that they were chased all over the Periphery by unknown JumpShips and the crew suffered a number of mental breakdowns. The descriptions of an aborted mutiny are particularly gruesome. Whatever those people encountered out there made them insane. \"",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -496,14 +496,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "forcedevent_mw_voidWhispers"
-								],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -523,12 +523,12 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -548,22 +548,14 @@
                             "Scope" : "MechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
-                            "Actions" : [
-                                {
-                                    "Type" : "MechWarrior_SetTimeout",
-                                    "value" : "7",
-                                    "valueConstant" : null,
-                                    "additionalValues" : null
-                                }
-                            ],
                             "Actions" : null,
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
@@ -575,7 +567,7 @@
                     "Description" : {
                         "Id" : "outcome_2_1",
                         "Name" : "Data corrupted; minor crew injuries.",
-                        "Details" : "Dr. Murad and {TGT_MW.Callsign} look at you skeptically. \"We could gather a lot more data but I guess this will have to do\". \r\n\r\nA few days later, they came back to you with disappointed faces. \"Commander, this data appears to have been transmitted by a spaceship but most of the transmission was downgraded and impossible to decode. I'm afraid we've gained nothing from this affair.\"  ",
+                        "Details" : "Dr. Murad and {TGT_MW.Callsign} look at you skeptically. \"We could gather a lot more data but I guess this will have to do\". \r\n\r\nA few days later, they come back to you with disappointed faces. \"Commander, this data appears to have been transmitted by a spaceship but most of the transmission was fragmented and impossible to decode. I'm afraid we've gained nothing from this affair.\"  ",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -584,14 +576,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "forcedevent_mw_voidWhispers"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
                             "Actions" : null,
@@ -603,12 +595,12 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -628,12 +620,12 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -653,12 +645,12 @@
                             "Scope" : "MechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : null,
                             "Actions" : [
@@ -679,12 +671,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -695,9 +687,9 @@
     "EventType" : "UNSELECTABLE",
     "OneTimeEvent" : false,
     "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
         "items" : [
             "BLACKLISTED"
-        ],
-        "tagSetSourceFile" : "tags/EventTags"
+        ]
     }
 }

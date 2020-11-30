@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Weistheimer",
 		"Name": "Weistheimer",
-		"Details": "A satellite tidally locked to its gas giant, Weistheimer still contains a number of ore extraction facilities operating on its frozen wastes to mine rare earth elements from underneath the tundra landscapes. During the Star League era the world was also used as a high-security prison facility.",
+		"Details": "A satellite orbiting one of the system's gas giants, Weistheimer still contains a number of ore extraction facilities operating on its frozen wastes to mine rare earth elements from underneath the ice landscapes. During the Star League era the world was also used as a high-security prison facility.",
 		"Icon": ""
 	},
 	"Position": {
@@ -22,10 +22,12 @@
 			"planet_other_blackmarket",
 			"planet_industry_poor",
 			"planet_feature_gasgiant",
+			"planet_other_gasgiant",
+			"planet_feature_moon03",
 			"planet_feature_rings",
 			"planet_industry_mining",
 			"planet_other_empty",
-			"planet_progress_3"
+			"planet_progress_2"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -127,10 +129,16 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals",
+		"itemCollection_shop_mining"
+		
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Weistheimer",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -147,6 +155,7 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"Locals",
 		"LothianPirates",
 		"MajestyMetals",
 		"MarianPirates",
@@ -158,6 +167,7 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"Locals",
 		"LothianPirates",
 		"MajestyMetals",
 		"ExpansesPirates",

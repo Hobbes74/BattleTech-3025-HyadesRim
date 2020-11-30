@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Bazaar",
 		"Name": "Bazaar",
-		"Details": "A lifeless moon in one of the system's gas giants, Bazaar is a series of domed settlements spread around the improvised DropShip pads built on the airless regolith. All kinds of trading are allowed on its markets.",
+		"Details": "A lifeless moon in one of the system's gas giants, Bazaar is a series of domed settlements spread around the improvised DropShip pads built on the airless regolith. All kinds of trading are allowed on its markets, including weapons, drugs, slaves and every known kind of human vice.",
 		"Icon": ""
 	},
 	"Position": {
@@ -14,10 +14,12 @@
 		"items": [
 			"planet_region_marikexpanses",
 			"planet_name_bazaar",
-			"planet_pop_none",
+			"planet_pop_small",
 			"planet_faction_independent",
 			"planet_size_medium",
 			"planet_other_gasgiant",
+			"planet_other_moon",
+			"planet_feature_gasgiant",
 			"planet_other_taintedair",
 			"planet_other_blackmarket",
 			"planet_climate_mars",
@@ -38,7 +40,7 @@
 	},
 	"FuelingStation": false,
 	"JumpDistance": 7,
-	"ownerID": "NoFaction",
+	"ownerID": "Locals",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
 	"ShopMaxSpecials": 9,
@@ -123,10 +125,14 @@
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
-	"SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_major_Locals",
+	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Bazaar",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -143,6 +149,11 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"Locals",
+		"LothianPirates",
+		"MarianPirates",
+		"TikonovPirates",
+		"RegulanPirates",
 		"AlphardTradingCompany",
 		"CanopianPirates",
 		"MarianPirates",
@@ -151,8 +162,13 @@
 		"AuriganPirates"
 	],
 	"ContractTargetIDs": [
+		"Locals",
 		"AlphardTradingCompany",
 		"GrimReapers",
+		"LothianPirates",
+		"MarianPirates",
+		"TikonovPirates",
+		"RegulanPirates",
 		"CanopianPirates",
 		"MarianPirates",
 		"MarshPirates",
