@@ -6,7 +6,7 @@
         "Icon" : "uixTxrSpot_Sumire"
     },
     "Scope" : "Company",
-    "Weight" : 10000,
+    "Weight" : 10,
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {
@@ -41,7 +41,7 @@
             "Description" : {
                 "Id" : "outcome_0",
                 "Name" : "Tell Sumire to watch it privately and report back anything significant.",
-                "Details" : "safe choice",
+                "Details" : "[unneutral choice]",
                 "Icon" : null
             },
             "RequirementList" : [],
@@ -68,7 +68,29 @@
                                 "items" : [],
                                 "tagSetSourceFile" : ""
                             },
-                            "Stats" : null,
+							"Stats" : [
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.TaurianConcordat",
+									"value" : "-20",
+									"set" : false,
+									"valueConstant" : null
+								},
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.MagistracyOfCanopus",
+									"value" : "-10",
+									"set" : false,
+									"valueConstant" : null
+								},
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.InterstellarExpeditions",
+									"value" : "-20",
+									"set" : false,
+									"valueConstant" : null
+								}
+                            ],
                             "Actions" : null,
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
@@ -94,7 +116,7 @@
             "Description" : {
                 "Id" : "outcome_1",
                 "Name" : "Organize a viewing for the command staff.",
-                "Details" : "[Argo: Lounge]",
+                "Details" : "[Company mistaken as Banshees]",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -118,7 +140,7 @@
                     "Description" : {
                         "Id" : "outcome_1_0",
                         "Name" : "Those mechs look similar",
-                        "Details" : "Five minutes into the viewing of the holovid and most in the command staff are displeased about the music, when Yang starts shouting. \"Stop! Stop! Can anyone else see this? The Banshee 'Mechs on the vid! They are ours! I recognize them from the battle damage I had to fix!\"\r\n\r\nDarius whistles. \"Yang is right. This is battle footage of our encounter with TTI and Jinxie's forces that has been edited to present our 'Mechs as the Banshees. They must have deployed camera crews filming the battle to use on this holo-vid. Which explains what they we're actually doing there. \"\r\n\r\n\"And if they're using our 'Mechs as theirs, then someone who listens to this music might mistake us as the Banshees.\" Sumire considers. \"Considering how popular they are on these frontier regions, that's well possible to happen. But why?\"",
+                        "Details" : "Five minutes into the viewing of the holovid and most in the command staff are displeased about the music, when Yang starts shouting. \"Stop! Stop! Can anyone else see this? The Banshee 'Mechs on the vid! They are ours! I recognize them from the battle damage I had to fix!\"\r\n\r\nDarius whistles. \"Yang is right. This is battle footage of our encounter with TTI and Jinxie's forces that has been edited to present our 'Mechs as the Banshees. They must have deployed camera crews filming the battle to use on this holovid. Which explains what they we're actually doing there. \"\r\n\r\n\"And if they're using our 'Mechs as theirs, then someone who listens to this music might mistake us as the Banshees.\" Sumire considers. \"Considering how popular they are on these frontier regions, that's well possible to happen. But why?\"",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -160,7 +182,28 @@
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null
-                                }
+                                },
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.TaurianConcordat",
+									"value" : "-20",
+									"set" : false,
+									"valueConstant" : null
+								},
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.MagistracyOfCanopus",
+									"value" : "-10",
+									"set" : false,
+									"valueConstant" : null
+								},
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.InterstellarExpeditions",
+									"value" : "-20",
+									"set" : false,
+									"valueConstant" : null
+								}
                             ],
                             "Actions" : null,
                             "ForceEvents" : null,
@@ -187,8 +230,8 @@
         {
             "Description" : {
                 "Id" : "outcome_2",
-                "Name" : "Organize a Jinxie and the Banshees Party.",
-                "Details" : "[Argo: Upgraded Lounge]",
+                "Name" : "Organize a Jinxie and the Banshees party.",
+                "Details" : "[\u00A220,000]",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -196,7 +239,6 @@
                     "Scope" : "Company",
                     "RequirementTags" : {
                         "items" : [
-                            "argo_rec_lounge2"
                         ],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
@@ -212,10 +254,10 @@
                     "Description" : {
                         "Id" : "outcome_2_0",
                         "Name" : "Massive drunk party.",
-                        "Details" : "\"Sumire, organize a Banshees holovid party.\" Darius eyebrows go up but later Murad reassures him that she knows few people who enjoy that kind of music. \"They'll watch the album with popcorn and a couple of beers, like we did in college\".\r\n\r\nSeveral hours later, Darius reports loud party noises from the lounge and when both of go check it, you find a large party attended by several of the <i>Argo</i>'s crew. The Banshees' music is being played from speakers placed around the chamber, while the holovid's images are being projected into a white screen, and everyone is dancing or drinking hard. \r\n\r\nAs you move through several MechWarriors already intoxicated, several grin or give a thumbs up as you move through them, which you ignore until you reach Sumire. \"Commander, when they started recognizing our 'Mechs on the holovids posing as Banshees they just kept replaying the footage while drinking and dancing and cheering.\" \r\n\r\n\"We're celebrities now across the Rim and then the party simply got out of control, this wasn't what I was intenting, I apologize.\"",
+                        "Details" : "\"Sumire, organize a Banshees holovid party in one of the 'Mech bays.\" Darius eyebrows go up but later Murad reassures him that she knows few people onboard who enjoy that kind of music. \"They'll watch the album with popcorn and a couple of beers, like we did in college\".\r\n\r\nSeveral hours later, Darius reports loud party noises from the 'Mech bays below and when both of go check it, you find a large party attended by several of the <i>Hysteria</i>'s crew. The Banshees' music is being played from speakers placed around the bay, while the holovid's images are being projected into a white screen, and everyone is dancing or drinking hard. \r\n\r\nAs you move through several MechWarriors already intoxicated, several grin or give a thumbs up as you move through them, which you ignore until you reach Sumire. \"Commander, it seems that the Banshees are using footage of our 'Mechs as theirs and when our MechWarriors started recognizing them on the holovids posing as Banshees they just kept replaying the footage while drinking and dancing and cheering.\" \r\n\r\n\"It seems that due to a case of mistaken identity now we're celebrities now across the Rim and then the party simply got out of control, this wasn't what I was intenting, I apologize.\"",
                         "Icon" : null
                     },
-                    "Weight" : 100,
+                    "Weight" : 10,
                     "Results" : [
                         {
                             "Scope" : "Company",
@@ -250,11 +292,39 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-20000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
                                     "name" : "Morale",
                                     "value" : "2",
                                     "set" : false,
                                     "valueConstant" : null
-                                }
+                                },
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.TaurianConcordat",
+									"value" : "-20",
+									"set" : false,
+									"valueConstant" : null
+								},
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.MagistracyOfCanopus",
+									"value" : "-10",
+									"set" : false,
+									"valueConstant" : null
+								},
+								{
+									"typeString" : "System.Int32",
+									"name" : "Reputation.InterstellarExpeditions",
+									"value" : "-30",
+									"set" : false,
+									"valueConstant" : null
+								}
                             ],
                             "Actions" : null,
                             "ForceEvents" : null,
@@ -280,7 +350,7 @@
     ],
     "PublishState" : "PUBLISHED",
     "ValidationState" : "UNTESTED",
-    "EventType" : "NORMAL",
+    "EventType" : "UNSELECTABLE",
     "OneTimeEvent" : false,
     "Tags" : {
         "items" : [

@@ -1,0 +1,67 @@
+{
+    "Description" : {
+        "Id" : "fp_aCountryTooFar",
+        "Name" : "A Country Too Far",
+        "Details" : "An outer rim world is under threat from unknown raiders who might not be human.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_6.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "aCountryTooFar",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 5,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints",
+					"flashpoint_amarisLegacy_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_aCountryTooFar_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_hardcore"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"Kurita",
+    ],
+    "TargetFaction" : "YellowBird",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "MEDIUM",
+    "Repeatable" : false,
+    "MilestoneSetID" : "ms_fp_aCountryTooFar",
+    "UseAvailableTimeoutOverride" : true,
+    "AvailableTimeout" : 300,
+    "UseInProgressTimeoutOverride" : true,
+    "InProgressTimeout" : 300,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_aCountryTooFar",
+    "UnitDropTonnageHint" : "Light",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "Commander, I was attending a local festival of Kuritan kabuki cabaret theatre when local JumpShip issues caused me to become stranded in this system. Which caused unforeseen complications and now I can't leave the system due to unfinished business preventing me from leaving, so I require the services of a skilled mercenary company such as yours.",
+    "FlashpointDescriberCastDefId" : "castDef_KuritaRepDefault",
+    "Tags" : {
+        "items" : [
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "Description" : {
+        "Id" : "fp_paradiseCity",
+        "Name" : "Paradise City",
+        "Details" : "Uncle Chandy hires the company for a mission on the Magistracy's capital.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_8.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "paradiseCity",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 5,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints",
+					"flashpoint_amarisLegacy_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_paradiseCity_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_canopusiv",
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"Kurita"
+    ],
+    "TargetFaction" : "MagistracyOfCanopus",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "MEDIUM",
+    "Repeatable" : false,
+    "MilestoneSetID" : "ms_fp_paradiseCity",
+    "UseAvailableTimeoutOverride" : true,
+    "AvailableTimeout" : 300,
+    "UseInProgressTimeoutOverride" : true,
+    "InProgressTimeout" : 300,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_paradiseCity",
+    "UnitDropTonnageHint" : "Light",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "###########################################################################################################. ###########################################################################################################.",
+    "FlashpointDescriberCastDefId" : "castDef_SyrtisPirateLeaderDefault",
+    "Tags" : {
+        "items" : [
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

@@ -2,48 +2,40 @@
     "Description" : {
         "Id" : "event_co_letterOfMarque_Liao",
         "Name" : "Letter Of Marque Liao",
-        "Details" : "We have received a message from Victoria. It appears that the Capellans may be interested in issuing us a letter of marque so that we can perform contracts for them. They'll provide JumpShip access to Liao space and any special missions that might pop up.",
+        "Details" : "Darius comes smiling. \"We have received a interesting proposal from [[DM.BaseDescriptionDefs[LoreVictoria],Victoria]]. It appears that House Liao may be interested in issuing us a letter of marque so that we can perform supplemental contracts for the Capellan Confederation.\" \r\n\r\n\"You realize that means working for [[DM.BaseDescriptionDefs[LoreMaximillianLiao], 'Mad Max' Liao]] right? Or worse, we may end up getting into the internal affairs of the Liao family and working for one of his children. And I'd really hate to be on the losing faction\". Dr. Murad seems disgusted.\r\n\r\nDarius shrugs. \"They really have a bad family reputation but their mercenary affairs are usually soild. And they'll provide JumpShip access to Liao space and any flashpoints that they might be interested in. It's just a way for them to go around the official way for contracts.\"\r\n\r\n\"Considering what we know of Candace, Romano and Tormano thanks to Yang's stories, it seems the apples haven't fallen that far from the tree. Murad's mention of Maximillian Liao's children makes everyone in the bridge look down.\r\n\r\n\"It's gonna be a major sibling fight for the throne of the Capellan Confederation, but we'll cross that bridge if we reach it . On my opinion family power struggles aren't that different from what we've seen out here in the Periphery\" Darius continues.\r\n\r\n\"We can also contact either Steiner or Kurita's representatives and present them with this offer to see if they have an interest in our services. But we can't be sure which one will accept these terms and we won't get the travel access to Liao space\".",
         "Icon" : "uixTxrSpot_DailyBriefing.png"
     },
     "Scope" : "Company",
-    "Weight" : 10,
+    "Weight" : 100,
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {
             "tagSetSourceFile" : "",
-            "items" : null
-        },
-        "ExclusionTags" : {
-            "tagSetSourceFile" : "Tags/CompanyTags",
             "items" : [
-                "chain_plague_Vaccine",
-                "event_FluShip",
-                "MODIFIED_STAT_MedTechSkill"
+                "flashpoint_danseMacabre_complete"
             ]
         },
-        "RequirementComparisons" : [
-            {
-                "obj" : "MedTechSkill",
-                "op" : "GreaterThanOrEqual",
-                "val" : 2,
-                "valueConstant" : "2"
-            }
-        ]
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "",
+            "items" : [
+                "flashpoint_allianceLiao_complete",
+                "letterofmarque_davion",
+                "letterofmarque_liao",
+                "letterofmarque_marik"
+            ]
+        },
+        "RequirementComparisons" : []
     },
     "AdditionalRequirements" : [
         {
             "Scope" : "StarSystem",
             "RequirementTags" : {
                 "tagSetSourceFile" : "Tags/PlanetTags",
-                "items" : [
-                    "planet_faction_davion"
-                ]
+                "items" : []
             },
             "ExclusionTags" : {
                 "tagSetSourceFile" : "Tags/PlanetTags",
                 "items" : [
-                    "planet_pop_none",
-                    "planet_other_plague"
                 ]
             },
             "RequirementComparisons" : []
@@ -54,520 +46,17 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Stay out of it.",
-                "Details" : "Non-participation option",
-                "Icon" : ""
+                "Name" : "Accept Liao Letter of Marque.",
+                "Details" : "Become a privateer",
+                "Icon" : null
             },
             "RequirementList" : [],
             "ResultSets" : [
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "Nothing happens",
-                        "Details" : "With a tone that brooks no discussion, you say, \"We're not in the business of bailing out every wayward traveler. We need our medical supplies to get our MechWarriors back into the fight.\"\r\n\r\nDarius and Dr. Murad share a pointed look, but they keep any further thoughts to themselves and the daily briefing moves onto other topics.",
-                        "Icon" : ""
-                    },
-                    "Weight" : 50,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "event_FluShip"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
-                        }
-                    ]
-                },
-                {
-                    "Description" : {
-                        "Id" : "outcome_0_1",
-                        "Name" : "Lose morale",
-                        "Details" : "With a tone that brooks no discussion, you say, \"We're not in the business of bailing out every wayward traveler. We need medical supplies to get MechWarriors back into the fight.\"\r\n\r\nDarius and Dr. Murad share a pointed look, but they keep any further thoughts to themselves and the daily briefing moves onto other topics.\r\n\r\nOver the next several days, word trickles through the ship about your decision, leading to heated arguments on both sides.",
-                        "Icon" : ""
-                    },
-                    "Weight" : 50,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Morale",
-                                    "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "event_FluShip"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
-                        }
-                    ]
-                }
-            ],
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : null
-                },
-                "ExclusionTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : null
-                },
-                "RequirementComparisons" : []
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "outcome_1",
-                "Name" : "Sell them medical supplies for \u00A230,000.",
-                "Details" : "Money option",
-                "Icon" : ""
-            },
-            "RequirementList" : [],
-            "ResultSets" : [
-                {
-                    "Description" : {
-                        "Id" : "outcome_1_0",
-                        "Name" : "lose MedTech, gain Cbills",
-                        "Details" : "You nod at Darius. \"We're not a charity, but we can spare some of our medical supplies. Reach out and see if they're willing to pay.\"\r\n\r\nDarius gives Dr. Murad a pointed look, but they both keep any further thoughts to themselves and the daily briefing moves onto other topics.",
-                        "Icon" : ""
-                    },
-                    "Weight" : 75,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "MedTechSkill",
-                                    "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 14
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "30000",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "event_FluShip"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
-                        }
-                    ]
-                },
-                {
-                    "Description" : {
-                        "Id" : "outcome_1_1",
-                        "Name" : "lose MedTech, gain Cbills, lose Morale",
-                        "Details" : "You nod at Darius. \"We're not a charity, but we can spare some of our medical supplies. Reach out and see if they're willing to pay.\"\r\n\r\nDarius gives Dr. Murad a pointed look, but they both keep any further thoughts to themselves.\r\n\r\nOver the next several days, word trickles through the ship about your decision, leading to heated arguments on both side.",
-                        "Icon" : ""
-                    },
-                    "Weight" : 25,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "MedTechSkill",
-                                    "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 14
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "30000",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Morale",
-                                    "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "event_FluShip"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
-                        }
-                    ]
-                }
-            ],
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : null
-                },
-                "ExclusionTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : null
-                },
-                "RequirementComparisons" : []
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "outcome_2",
-                "Name" : "Give them some medical supplies.",
-                "Details" : "Reputation option",
-                "Icon" : ""
-            },
-            "RequirementList" : [],
-            "ResultSets" : [
-                {
-                    "Description" : {
-                        "Id" : "outcome_2_0",
-                        "Name" : "lose MedTech, gain Reputation",
-                        "Details" : "You nod at Dr. Murad. \"We're only one bad bug away from the same situation ourselves. Make arrangements for a transfer of supplies.\"\r\n\r\nSeveral days later, Sumire passes along a message of thanks from the planet's surface for resolving the situation favorably.",
-                        "Icon" : ""
-                    },
-                    "Weight" : 50,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "MedTechSkill",
-                                    "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 14
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Reputation.Davion",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : "[rep_gain_small]"
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "event_FluShip"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
-                        }
-                    ]
-                },
-                {
-                    "Description" : {
-                        "Id" : "outcome_2_1",
-                        "Name" : "lose MedTech, gain Rep, gain Morale",
-                        "Details" : "You nod at Dr. Murad. \"We're only one bad bug away from the same situation ourselves. Make arrangements for a transfer of supplies.\"\r\n\r\nOver the next several days, word trickles through the ship about your decision and the large contingent of lifelong spacers in the crew express their support.\r\n\r\nSumire also passes along a message of thanks from the planet's surface for resolving the situation favorably.",
-                        "Icon" : ""
-                    },
-                    "Weight" : 50,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "MedTechSkill",
-                                    "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 14
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Reputation.Davion",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : "[rep_gain_small]"
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Morale",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "event_FluShip"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
-                        }
-                    ]
-                }
-            ],
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : null
-                },
-                "ExclusionTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : null
-                },
-                "RequirementComparisons" : []
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "outcome_3",
-                "Name" : "Share the antivirals you've acquired.",
-                "Details" : "[Pox Antivirals]",
-                "Icon" : ""
-            },
-            "RequirementList" : [
-                {
-                    "Scope" : "Company",
-                    "RequirementTags" : {
-                        "tagSetSourceFile" : "Tags/CompanyTags",
-                        "items" : [
-                            "chain_plague_ShoreLeave1"
-                        ]
-                    },
-                    "ExclusionTags" : {
-                        "tagSetSourceFile" : "",
-                        "items" : null
-                    },
-                    "RequirementComparisons" : []
-                }
-            ],
-            "ResultSets" : [
-                {
-                    "Description" : {
-                        "Id" : "outcome_3_0",
-                        "Name" : "gain Morale, gain Rep",
-                        "Details" : "You nod at Dr. Murad. \"We've been here before, and we have a stash of antivirals in the MedBay to show for it. We have an obligation to pass on our good fortune. Make arrangements for a transfer of supplies.\"\r\n\r\nOver the next several days, word trickles through the ship about your decision. Between the large contingent of lifelong spacers in the crew and those MechWarriors who survived their own personal brush with the Periphery Pox, there's a wave of support.\r\n\r\nSumire also passes along a message of thanks from the planet's surface for resolving the situation favorably.",
+                        "Name" : "Accept Liao's offer",
+                        "Details" : "After considering it for several minutes, you came to a decision. \"The Capellan Confederation is one of the major power players in the area and their letter of marque will be most useful. Darius, please notify them that we accept their terms.",
                         "Icon" : ""
                     },
                     "Weight" : 100,
@@ -576,52 +65,30 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "letterofmarque_liao",
+                                    "map_travel_2",
+                                    "map_travel_2l"
+                                ]
                             },
                             "RemovedTags" : {
                                 "tagSetSourceFile" : "",
-                                "items" : null
+                                "items" : []
                             },
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Reputation.Davion",
+                                    "name" : "Reputation.Liao",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : "[rep_gain_small]"
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Morale",
-                                    "value" : "2",
-                                    "set" : false,
-                                    "valueConstant" : null
                                 }
                             ],
                             "Actions" : null,
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
                             "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "event_FluShip"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : null
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
                         }
                     ]
                 }
@@ -630,11 +97,203 @@
                 "Scope" : "Company",
                 "RequirementTags" : {
                     "tagSetSourceFile" : "",
-                    "items" : null
+                    "items" : []
                 },
                 "ExclusionTags" : {
                     "tagSetSourceFile" : "",
-                    "items" : null
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Contact Kurita Representative.",
+                "Details" : "Check with other factions",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Get Kurita Letter",
+                        "Details" : "You turn to Darius and Sumire. \"Contact Bob Yamaguchi and inform him that we're offering the same services as described on this letter of marque and see if he's interested.\"\r\n\r\nSeveral days later, Sumire passes along a message from the Kuritan representative agreeing to the terms.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "letterofmarque_kurita",
+                                    "map_travel_2"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Reputation.Kurita",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : "[rep_gain_small]"
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : [
+                        "letterofmarque_kurita"
+                    ]
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Check with House Steiner.",
+                "Details" : "Check with other factions",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Get Steiner Letter",
+                        "Details" : "You turn to Darius and Sumire. \"Contact Lord Stieglitz-Bradford and inform him that we're offering the same services as described on this letter of marque and see if he's interested.\"\r\n\r\nSeveral days later, Sumire passes along a message from the Steiner representative agreeing to the terms.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "letterofmarque_steiner",
+                                    "map_travel_2"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Reputation.Steiner",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : "[rep_gain_small]"
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : [
+                        "letterofmarque_steiner"
+                    ]
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_3",
+                "Name" : "Stick to the Periphery.",
+                "Details" : "Alternative flashpoints",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_3_0",
+                        "Name" : "Access Periphery flashpoints",
+                        "Details" : "You refuse the offer. \"Darius, we have enough to deal with, let's not get back to the Inner Sphere and its affairs right now\".\r\n\r\n\"Understood Commander. We may still get some additional contracts from Periphery sources. They'll be optional for us to take.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "company_dlc_flashpoints",
+                                    "map_travel_2"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Reputation.AuriganPirates",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : "[rep_gain_small]"
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : [
+                        "company_dlc_flashpoints"
+                    ]
                 },
                 "RequirementComparisons" : []
             }
@@ -645,9 +304,7 @@
     "EventType" : "NORMAL",
     "OneTimeEvent" : false,
     "Tags" : {
-        "items" : [
-			"BLACKLISTED"
-		],
-        "tagSetSourceFile" : "tags/EventTags"
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
     }
 }

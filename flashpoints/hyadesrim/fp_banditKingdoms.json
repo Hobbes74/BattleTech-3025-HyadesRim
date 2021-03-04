@@ -1,0 +1,67 @@
+{
+    "Description" : {
+        "Id" : "fp_banditKingdoms",
+        "Name" : "Petty Tyrants and Bandit Kingdoms",
+        "Details" : "A petty ruler hires the company to recover his paramour who escaped to a rival.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_14.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "banditKingdoms",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 5,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints",
+					"flashpoint_amarisLegacy_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_banditKingdoms_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_astrokaszy",
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"ShervanisCaliphate"
+    ],
+    "TargetFaction" : "Locals",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "MEDIUM",
+    "Repeatable" : false,
+    "MilestoneSetID" : "ms_fp_banditKingdoms",
+    "UseAvailableTimeoutOverride" : true,
+    "AvailableTimeout" : 300,
+    "UseInProgressTimeoutOverride" : true,
+    "InProgressTimeout" : 300,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_banditKingdoms",
+    "UnitDropTonnageHint" : "Light",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "###########################################################################################################. ###########################################################################################################.",
+    "FlashpointDescriberCastDefId" : "castDef_ShervanisCaliphateLeaderDefault",
+    "Tags" : {
+        "items" : [
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}
