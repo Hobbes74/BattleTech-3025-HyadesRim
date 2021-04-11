@@ -106,12 +106,22 @@
                     },
                     "Stats" : [],
                     "Actions" : [
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : true,
+							"additionalValues" : [
+								"Darius",
+								"Sumire",
+								"Farah",
+								"Yang"
+							]
+						},
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c355c0a359fda817524aec1",
+                            "value" : "9c52c8c1ae3da96ec457ccf7",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} I",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -169,17 +179,17 @@
                     "Actions" : [
 						{
 							"Type" : "Flashpoint_AddContract",
-							"value" : "mapGeneral_highPeak_iGlc",
+							"value" : "mapGeneral_icyOutpost_iGlc",
 							"valueConstant" : null,
 							"additionalValues" : [
 								"",
 								"",
-								"talesOf1001BattleMechs_1_captureBase",
+								"talesOf1001BattleMechs_1_threeWayBattle",
 								"SelfEmployed",
-								"ClusterPirates",
+								"GrimReapers",
 								"5",
 								"ms_fp_talesOf1001BattleMechs_004_Mission",
-								null,
+								"AuriganPirates",
 								null,
 								null,
 								null,
@@ -207,7 +217,7 @@
         {
             "Description" : {
                 "Id" : "ms_fp_talesOf1001BattleMechs_004_Mission",
-                "Name" : "Mission",
+                "Name" : "MissionSim",
                 "Details" : "The Second Mission.",
                 "Icon" : null
             },
@@ -239,15 +249,15 @@
                     "Stats" : null,
                     "Actions" : [
 						{
-							"Type" : "Flashpoint_StartContract",
+							"Type" : "Flashpoint_AddContract",
 							"value" : "mapGeneral_highPeak_iGlc",
 							"valueConstant" : null,
 							"additionalValues" : [
 								"",
 								"",
-								"talesOf1001BattleMechs_2_story",
-								"SelfEmployed",
-								"DeepRaiders",
+								"talesOf1001BattleMechs_2_captureBase",
+								"AuriganPirates",
+								"GrimReapers",
 								"5",
 								"ms_fp_talesOf1001BattleMechs_005_Talk",
 								null,
@@ -256,7 +266,15 @@
 								null,
 								null
 							]
-						}
+						},
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
                     ],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
@@ -301,9 +319,26 @@
                     },
                     "Stats" : [],
                     "Actions" : [
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : true,
+							"additionalValues" : [
+								"Darius",
+								"Sumire",
+								"Farah",
+								"Yang"
+							]
+						},
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : false,
+							"additionalValues" : [
+								"Yang"
+							]
+						},
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cc1a5c772b0a1ebef3e9d93",
+                            "value" : "9c52c8c1ae3da96ec457ccf8",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} II",
@@ -314,7 +349,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_talesOf1001BattleMechs_006_Complete",
+                            "value" : "ms_fp_talesOf1001BattleMechs_006_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -330,7 +365,70 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_talesOf1001BattleMechs_006_Complete",
+                "Id" : "ms_fp_talesOf1001BattleMechs_006_Mission",
+                "Name" : "Mission",
+                "Details" : "The Last Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+						{
+							"Type" : "Flashpoint_StartContract",
+							"value" : "mapGeneral_highPeak_iGlc",
+							"valueConstant" : null,
+							"additionalValues" : [
+								"",
+								"",
+								"talesOf1001BattleMechs_3_story",
+								"AuriganPirates",
+								"DeepRaiders",
+								"5",
+								"ms_fp_talesOf1001BattleMechs_007_Complete",
+								null,
+								null,
+								null,
+								null,
+								null
+							]
+						}
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_talesOf1001BattleMechs_007_Complete",
                 "Name" : "Complete",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -367,7 +465,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_talesOf1001BattleMechs_007_Reward",
+                            "value" : "ms_fp_talesOf1001BattleMechs_008_Reward",
                             "valueConstant" : "itemCollection_loot_fp_reward_talesOf1001BattleMechs",
                             "additionalValues" : null
                         }
@@ -383,7 +481,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_talesOf1001BattleMechs_007_Reward",
+                "Id" : "ms_fp_talesOf1001BattleMechs_008_Reward",
                 "Name" : "Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
@@ -418,12 +516,12 @@
                     "Stats" : [
                         {
                             "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "1000000",
+                            "name" : "Reputation.AuriganPirates",
+                            "value" : "10",
                             "set" : false,
                             "valueConstant" : null
                         }
-                    ],
+					],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0

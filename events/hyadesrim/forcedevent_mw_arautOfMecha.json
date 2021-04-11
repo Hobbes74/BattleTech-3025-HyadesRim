@@ -1,8 +1,8 @@
 {
     "Description" : {
         "Id" : "forcedevent_mw_arautOfMecha",
-        "Name" : "Araut of Mecha",
-        "Details" : "\"We have a situation with one or more of the MechWarriors\". Yang comes to you while Darius rolls his eyes. \"I already ordered them to restrict their leisure activities....\"\r\n\r\n\"No, it's worse than that. I have found some Autocracy propaganda in one of the waste bins. Now, I know all the astechs and I doubt that Araut of Mecha speech convinced any of them.\" Darius nods. \"Which means that one of our pilots might be compromised at this point.\"\r\n\r\n\"How do you want to handle this, Commander?\"",
+        "Name" : "Purge Protocol",
+        "Details" : "\"We have a situation with one or more of the MechWarriors\". Dr. Murad comes to you while Darius rolls his eyes. \"I already ordered them to restrict their leisure activities....\"\r\n\r\n\"No, this is worse than a couple of them passing out from being drunk . I've heard {TGT_MW.Callsign} talking about the [[DM.BaseDescriptionDefs[LoreAutocracyOfLeh],Autocracy]] and how they truly elevate MechWarriors to their proper standing\".\r\n\r\nSumire replies. \"We have a actual convert for those lunatics? Must be space, {TGT_MW.Callsign} got an extra dose of cosmic rays.\"\r\n\r\n\"Yeah, I have also found some Autocracy propaganda in one of the waste bins. Now, I know all the Mechtechs and I assumed that this was just garbage leftover from our time on Leh. But their talk got to {TGT_MW.Callsign} then {TGT_MW.Gender?Male:he|Female:she|NonBinary:they} might be trying to convince others.\" Yang scratches his artificial forearm.\r\n\r\nDr. Murad nods. \"Which turns this issue into something we can't ignore. Otherwise we risk a rebellion or worse if this kind of proselytizing activity continues.\"\r\n\r\nDarius finishes. \"How do you want to handle this, Commander?\"",
         "Icon" : "uixTxrSpot_DailyBriefing.png"
     },
     "Scope" : "MechWarrior",
@@ -37,16 +37,12 @@
                     "tagSetSourceFile" : ""
                 },
                 "ExclusionTags" : {
-                    "items" : [
-                        "pilot_honest",
-                        "pilot_dependable",
-                        "pilot_cautious"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "Tags/PilotTags"
                 },
                 "RequirementComparisons" : [
                     {
-                        "obj" : "Injuries",
+                        "obj" : "injuries",
                         "op" : "Equal",
                         "val" : 0,
                         "valueConstant" : "0"
@@ -59,9 +55,9 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Release {TGT_MW.Callsign} from {TGT_MW.Det} contract.",
-                "Details" : "[\u00A25,000]",
-                "Icon" : ""
+                "Name" : "Warn [[TGT_MW,{TGT_MW.Callsign}]].",
+                "Details" : "",
+                "Icon" : null
             },
             "RequirementList" : [
                 {
@@ -74,23 +70,16 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "RequirementComparisons" : [
-                        {
-                            "obj" : "Funds",
-                            "op" : "GreaterThan",
-                            "val" : 5000,
-                            "valueConstant" : "5000"
-                        }
-                    ]
+                    "RequirementComparisons" : []
                 }
             ],
             "ResultSets" : [
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "Gain morale, pay severance",
-                        "Details" : "The rest of the room sits in stunned silence before voicing half-hearted protestations. Only Darius nods, accepting that your decision is final.\r\n\r\nThat evening, [[TGT_MW,{TGT_MW.Callsign}]] arrives in your office. \"The XO said you wanted to see me?\" As {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:enter|Default:enters} the room, a bulb overhead flutters and winks out. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:cringe|Default:cringes}.\r\n\r\nYou say, \"While I don't personally believe in jinxes, I have to be sensitive to the beliefs of my crew. Frightened spacers make mistakes, and mistakes on a DropShip can get people killed.\" You let out a sigh. \"\u2026And so, {TGT_MW.Callsign}, I'm afraid that I'm going to have to let you go. The XO will make arrangements for you, and the company will cover the rest of your month's pay. Best of luck in your future endeavors.\"",
-                        "Icon" : ""
+                        "Name" : "Verbal confrontation",
+                        "Details" : "[[TGT_MW,{TGT_MW.Callsign}]] arrives at your office and before you even say anything, the MechWarrior drops a resignation letter in front of you.\r\n\r\n\"You already decided to leave us? For the Autocracy?\"\r\n\r\n\"Yes, Commander {COMMANDER.LastName}. There is a better path for all of us but now I see that I'm alone in this DropShip. It is best for all if I leave.\"",
+                        "Icon" : null
                     },
                     "Weight" : 100,
                     "Results" : [
@@ -109,14 +98,14 @@
                                 {
                                     "typeString" : "System.Int32",
                                     "name" : "Morale",
-                                    "value" : "1",
+                                    "value" : "-2",
                                     "set" : false,
                                     "valueConstant" : null
                                 },
                                 {
                                     "typeString" : "System.Int32",
                                     "name" : "Funds",
-                                    "value" : "-5000",
+                                    "value" : "5000",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
@@ -169,20 +158,20 @@
         {
             "Description" : {
                 "Id" : "outcome_1",
-                "Name" : "Confine {TGT_MW.OBJ} to the Barracks.",
-                "Details" : "Lose morale option",
-                "Icon" : ""
+                "Name" : "Fire [[TGT_MW,{TGT_MW.Callsign}]].",
+                "Details" : "na",
+                "Icon" : null
             },
             "RequirementList" : [],
             "ResultSets" : [
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "Lose morale, SCN-MW in brig",
-                        "Details" : "Later in the week, Darius delivers an update on the situation.\r\n\r\nWhile confining [[TGT_MW,{TGT_MW.Callsign}]] to the barracks has kept {TGT_MW.OBJ} out of the hair of the senior staff, it's done nothing to endear {TGT_MW.OBJ} to {TGT_MW.DET} fellow MechWarriors.\r\n\r\n\"Yesterday, there was an\u2026 incident. Fortunately, I was nearby to intervene before things got out of hand. I had to assign [[SCN_MW,{SCN_MW.CALLSIGN}]] to kitchen duty for a few days. I think that diffused the situation. For now.\"",
-                        "Icon" : ""
+                        "Name" : "Lose morale, SCN-MW unavailable",
+                        "Details" : "\"[[TGT_MW,{TGT_MW.Callsign}]] has left the <i>Hystheria</i> but now [[SCN_MW,{SCN_MW.CALLSIGN}]] voiced openly on the mess that {TGT_MW.Gender?Male:he|Female:she|NonBinary:they} was being prosecuted unfairly to his beliefs.\"\r\n\r\n\"It's more personal on this case. Both of them were friends and [[SCN_MW,{SCN_MW.CALLSIGN}]] is also upset about {TGT_MW.Gender?Male:him|Female:her|NonBinary:their} leaving the company\".\r\n\r\n\"Let's give {SCN_MW.Gender?Male:him|Female:her|NonBinary:their} some time to cool it off\".",
+                        "Icon" : null
                     },
-                    "Weight" : 50,
+                    "Weight" : 100,
                     "Results" : [
                         {
                             "Scope" : "Company",
@@ -199,7 +188,7 @@
                                 {
                                     "typeString" : "System.Int32",
                                     "name" : "Morale",
-                                    "value" : "-2",
+                                    "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
@@ -236,93 +225,6 @@
                             "ResultDuration" : 0
                         }
                     ]
-                },
-                {
-                    "Description" : {
-                        "Id" : "outcome_1_1",
-                        "Name" : "Lose morale, TGT-MW injured, SCN-MW in brig",
-                        "Details" : "Later in the week, Darius delivers an update on the situation.\r\n\r\nWhile confining [[TGT_MW,{TGT_MW.Callsign}]] to the barracks has kept {TGT_MW.OBJ} out of the hair of the senior staff, it's done nothing to endear {TGT_MW.OBJ} to {TGT_MW.DET} fellow MechWarriors.\r\n\r\n\"Yesterday, there was an\u2026 incident. Unfortunately, by the time I arrived, things had already gotten out of hand. {TGT_MW.CALLSIGN} is laid up in the MedBay, and I assigned [[SCN_MW,{SCN_MW.CALLSIGN}]] to kitchen duty for the next week. I think that diffused the situation. For now.\"",
-                        "Icon" : ""
-                    },
-                    "Weight" : 50,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Morale",
-                                    "value" : "-2",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "SecondaryMechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [
-                                    "pilot_rebellious"
-                                ],
-                                "tagSetSourceFile" : "Tags/PilotTags"
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : null,
-                            "Actions" : [
-                                {
-                                    "Type" : "MechWarrior_SetTimeout",
-                                    "value" : "7",
-                                    "valueConstant" : null,
-                                    "additionalValues" : null
-                                }
-                            ],
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "MechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Injuries",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        }
-                    ]
                 }
             ],
             "Requirements" : {
@@ -341,129 +243,8 @@
         {
             "Description" : {
                 "Id" : "outcome_2",
-                "Name" : "Build temporary quarters in an unfinished part of the <i>Argo</i>.",
-                "Details" : "not locked",
-                "Icon" : ""
-            },
-            "RequirementList" : [],
-            "ResultSets" : [
-                {
-                    "Description" : {
-                        "Id" : "outcome_2_0",
-                        "Name" : "Pilot Low morale",
-                        "Details" : "Later in the week, Darius delivers an update on the situation.\r\n\r\nWhile relocating [[TGT_MW,{TGT_MW.Callsign}]] to the undeveloped Gamma pod has kept {TGT_MW.OBJ} out of the hair of the senior staff and {TGT_MW.DET} fellow MechWarriors, it's been hard on the lonely MechWarrior.\r\n\r\n\"Commander, I don't know how much more {TGT_MW.SUBJ} can take. But Dr. Murad and I have been monitoring things and the strange electrical behavior in that part of the ship has subsided in the past 24 hours. I suggest we keep an eye on things, and let {TGT_MW.CALLSIGN} move back to quarters in a week or two.\"",
-                        "Icon" : ""
-                    },
-                    "Weight" : 75,
-                    "Results" : [
-                        {
-                            "Scope" : "MechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [
-                                    "pilot_morale_high"
-                                ],
-                                "tagSetSourceFile" : "Tags/PilotTags"
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "MechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [
-                                    "pilot_morale_low"
-                                ],
-                                "tagSetSourceFile" : "Tags/PilotTags"
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 30
-                        }
-                    ]
-                },
-                {
-                    "Description" : {
-                        "Id" : "outcome_2_1",
-                        "Name" : "Pilot High morale",
-                        "Details" : "Later in the week, Darius delivers an update on the situation.\r\n\r\nRelocating [[TGT_MW,{TGT_MW.Callsign}]] to the undeveloped Gamma pod has not only kept {TGT_MW.OBJ} out of the hair of the senior staff and {TGT_MW.DET} fellow MechWarriors, it's also given the unlucky MechWarrior the solitude {TGT_MW.SUBJ} craved.\r\n\r\n\"Commander, I don't know if you've gone to down there to visit, but it's kind of impressive what {TGT_MW.CALLSIGN} has managed to do with the space. It's almost\u2026 homey.\"\r\n\r\nDr. Murad adds, \"And the strange electrical behavior in that part of the ship has mostly subsided in the past 24 hours. I suggest we keep an eye on things, and let {TGT_MW.CALLSIGN} move back to quarters in a week or two. If {TGT_MW.Subj} even {TGT_MW.Gender?NonBinary:want|Default:wants} to.\"",
-                        "Icon" : ""
-                    },
-                    "Weight" : 25,
-                    "Results" : [
-                        {
-                            "Scope" : "MechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [
-                                    "pilot_morale_low"
-                                ],
-                                "tagSetSourceFile" : "Tags/PilotTags"
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "MechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [
-                                    "pilot_morale_high"
-                                ],
-                                "tagSetSourceFile" : "Tags/PilotTags"
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : null,
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 90
-                        }
-                    ]
-                }
-            ],
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : []
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "outcome_3",
-                "Name" : "Loan {TGT_MW.OBJ} out to pirates.",
-                "Details" : "[Liked by Aurigan Pirates]",
+                "Name" : "Apply purge protocol to [[TGT_MW,{TGT_MW.Callsign}]].",
+                "Details" : "",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -477,178 +258,21 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "RequirementComparisons" : [
-                        {
-                            "obj" : "Reputation.AuriganPirates",
-                            "op" : "GreaterThanOrEqual",
-                            "val" : 20,
-                            "valueConstant" : "[rep_liked_min]"
-                        }
-                    ]
+                    "RequirementComparisons" : []
                 }
             ],
             "ResultSets" : [
                 {
                     "Description" : {
-                        "Id" : "outcome_3_0",
-                        "Name" : "Make some money, Good XP",
-                        "Details" : "Darius nods. \"I know just who to call. We'll have [[TGT_MW,{TGT_MW.Callsign}]] out of our hair for a month, and I'll see about them covering {TGT_MW.Det} retainer.\"\r\n\r\nLater that week, Darius delivers an update in the morning briefing.\r\n\r\n\"So far, {TGT_MW.Callsign} is actually working out quite well for our mutual friends. Obviously, I wasn't completely upfront about any challenges they might run into, but it doesn't seem like {TGT_MW.DET} bad luck followed {TGT_MW.Obj} off the <i>Argo</i>.\"",
+                        "Id" : "outcome_2_0",
+                        "Name" : "Lose both MWs",
+                        "Details" : "Yang and Darius share a look and then both nod to you. In the next day, Yang comes with the news to the staff briefing. \r\n\r\n\"Apparently yesterday there was an airlock malfunction that resulted in a purge protocol being wrongly set while [[TGT_MW,{TGT_MW.Callsign}]] was inside. A preventable loss if we had more resources for DropShip maintenance.\" \r\n\r\n\"That's not all the bad news unfortunately.\" Darius continues. \"When [[SCN_MW,{SCN_MW.Callsign}]] heard the news, {SCN_MW.Gender?Male:he|Female:she|NonBinary:they} decided to abandon the company and managed to transfer to a nearby starship.\"\r\n\r\n\"If [[SCN_MW,{SCN_MW.Callsign}]] decided to jump the boat and to do it so fast, then it's likely there was more than one conspirator among us\". This way we likely got rid of all\". Sumire concludes.",
                         "Icon" : null
                     },
-                    "Weight" : 50,
+                    "Weight" : 100,
                     "Results" : [
                         {
-                            "Scope" : "MechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "ExperienceUnspent",
-                                    "value" : "1000",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : [
-                                {
-                                    "Type" : "MechWarrior_SetTimeout",
-                                    "value" : "30",
-                                    "valueConstant" : null,
-                                    "additionalValues" : null
-                                }
-                            ],
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "10000",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Reputation.AuriganPirates",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : "[rep_gain_small]"
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        }
-                    ]
-                },
-                {
-                    "Description" : {
-                        "Id" : "outcome_3_1",
-                        "Name" : "Make some money, Bad XP",
-                        "Details" : "Darius nods. \"I know just who to call. We'll have [[TGT_MW,{TGT_MW.Callsign}]] out of our hair for a month, and I'll see about them covering {TGT_MW.Det} retainer.\"\r\n\r\nLater that week, Darius delivers an update in the morning briefing.\r\n\r\n\"It sounds like {TGT_MW.Callsign}'s bad luck has followed {TGT_MW.Obj} off the <i>Argo</i>. Our mutual friends are none too pleased. Sounds like {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} going to get limited work, but they're going to stick to the arrangement for the full month.\"",
-                        "Icon" : null
-                    },
-                    "Weight" : 25,
-                    "Results" : [
-                        {
-                            "Scope" : "MechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "ExperienceUnspent",
-                                    "value" : "200",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : [
-                                {
-                                    "Type" : "MechWarrior_SetTimeout",
-                                    "value" : "30",
-                                    "valueConstant" : null,
-                                    "additionalValues" : null
-                                }
-                            ],
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : "Tags/CompanyTags"
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "10000",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Reputation.AuriganPirates",
-                                    "value" : "-2",
-                                    "set" : false,
-                                    "valueConstant" : "[rep_loss_medium]"
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        }
-                    ]
-                },
-                {
-                    "Description" : {
-                        "Id" : "outcome_3_2",
-                        "Name" : "Make some money, lose the MW",
-                        "Details" : "Darius nods. \"I know just who to call. We'll have [[TGT_MW,{TGT_MW.Callsign}]] out of our hair for a month, and I'll see about them covering {TGT_MW.Det} retainer.\"\r\n\r\nLater that week, Darius delivers an update in the morning briefing.\r\n\r\n\"I have some mixed news. {TGT_MW.Callsign} is working out quite well for our mutual friends. So well, in fact, that they've decided to keep {TGT_MW.Obj}! They've sent over double the arranged C-Bills, as a way off buying off the contract. They didn't really ask for our blessing in the matter.\"\r\n\r\nYang leans back in his chair, laughing. \"I'll give that arrangement two weeks before they're begging us to take {TGT_MW.Obj} back.\"",
-                        "Icon" : null
-                    },
-                    "Weight" : 25,
-                    "Results" : [
-                        {
-                            "Scope" : "MechWarrior",
+                            "Scope" : "SecondaryMechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
                                 "items" : [],
@@ -672,6 +296,32 @@
                             "ResultDuration" : 0
                         },
                         {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "executed as a spy and traitor"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
@@ -682,22 +332,7 @@
                                 "items" : [],
                                 "tagSetSourceFile" : ""
                             },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "20000",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Reputation.AuriganPirates",
-                                    "value" : "2",
-                                    "set" : false,
-                                    "valueConstant" : "[rep_gain_medium]"
-                                }
-                            ],
+                            "Stats" : [],
                             "Actions" : null,
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
@@ -723,11 +358,11 @@
     "PublishState" : "PUBLISHED",
     "ValidationState" : "UNTESTED",
     "EventType" : "UNSELECTABLE",
-    "OneTimeEvent" : false,
+    "OneTimeEvent" : true,
     "Tags" : {
         "items" : [
-			"BLACKLISTED"
-		],
+            "BLACKLISTED"
+        ],
         "tagSetSourceFile" : "tags/EventTags"
     }
 }

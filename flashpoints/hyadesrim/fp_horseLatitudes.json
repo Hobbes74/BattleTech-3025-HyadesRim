@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fp_horseLatitudes",
         "Name" : "Horse Latitudes",
-        "Details" : "A rediscovered world on the Periphery may hold the cure to the Death's Mask virus.",
+        "Details" : "A rediscovered world on the Deep Periphery may hold the cure to the Death's Mask virus. Part four of Redoubt arc.",
         "Icon" : "uixTxrSpot_fp_HyadesRim_Background_15.png"
     },
     "Weight" : 10,
@@ -14,14 +14,14 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"company_story_flashpoints",
-					"flashpoint_horseLatitudes_complete"
+					"flashpoint_nagayanValley_complete",
+					"company_story_flashpoints"
 				],
                 "tagSetSourceFile" : "Tags/CompanyTags"
             },
             "ExclusionTags" : {
                 "items" : [
-					"flashpoint_aCountryTooFar_complete"
+					"flashpoint_horseLatitudes_complete"
 				],
                 "tagSetSourceFile" : ""
             },
@@ -43,17 +43,17 @@
         "RequirementComparisons" : []
     },
     "PotentialEmployers" : [
-		"TaurianConcordat"
+		"SelfEmployed_Farah"
     ],
-    "TargetFaction" : "MagistracyOfCanopus",
+    "TargetFaction" : "GrimReapers",
     "AllowRefitTime" : false,
     "FlashpointLength" : "MEDIUM",
-    "Repeatable" : false,
+    "Repeatable" : true,
     "MilestoneSetID" : "ms_fp_horseLatitudes",
-    "UseAvailableTimeoutOverride" : true,
-    "AvailableTimeout" : 300,
-    "UseInProgressTimeoutOverride" : true,
-    "InProgressTimeout" : 300,
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
     "RewardCollectionID" : "itemCollection_loot_fp_reward_horseLatitudes",
     "UnitDropTonnageHint" : "Light",
     "LanceDropTonnageHint" : "None",
@@ -61,6 +61,7 @@
     "FlashpointDescriberCastDefId" : "castDef_TaurianRepDefault",
     "Tags" : {
         "items" : [
+			"BLACKLISTED"
         ],
         "tagSetSourceFile" : "tags/FlashpointTags"
     }

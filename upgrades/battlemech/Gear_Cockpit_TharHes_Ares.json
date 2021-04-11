@@ -1,0 +1,63 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "TharHes",
+        "Model" : "",
+        "UIName" : "TharHes Ares",
+        "Id" : "Gear_Cockpit_TharHes_Ares",
+        "Name" : "TharHes Ares",
+        "Details" : "The TharHes Ares tracking system improves the reliablity of Called Shots executed by the Marauder pilot.",
+        "Icon" : "uixSvgIcon_special_Equipment"
+    },
+    "BonusValueA" : "+ Called Shot",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" :
+            {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "StatusEffect-LCM-CalledShotBonus",
+                "Name" : "LANCE COMMAND MODULE",
+                "Details" : "Called Shots executed by this unit are more reliable.",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "statisticData" : 
+            {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "CalledShotBonusMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "2.4",
+                "modType" : "System.Single"
+            },
+            "nature" : "Buff"
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+			"BUILT-IN",
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

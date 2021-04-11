@@ -2,7 +2,7 @@
     "ID" : "amarisLegacy_3_simpleBattle",
     "contractName" : "Amaris Legacy III",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
+    "difficulty" : 3,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -11,26 +11,20 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We have the location of Sister Rebecca and her forces on the planet and Captain Kamea has ordered us to bring the cultists down. It's time we pay the Autocracy a lesson, after all that they did to us.",
-    "longDescription" : "Randis, Leh, not much different from one another, and we just turned into judges and executioners.",
+    "shortDescription" : "We have the location of Sister Rebecca and her forces on the planet and Captain Kamea is dropping alone to bring the cultists down. Most of the crew believes it's time we pay the Autocracy a lesson, after all that they did to us but it strikes me as a really bad idea for her to go by herself.",
+    "longDescription" : "Randis, Leh, not much different from one another, and we just turned also into judges and executioners. At this point we're down to being vigilantes.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
     "encounterPlayStyle" : "SinglePlayer",
-    "maxNumberOfPlayerUnits" : 4,
+    "maxNumberOfPlayerUnits" : 1,
     "lanceMinTonnage" : -1,
     "lanceMaxTonnage" : -1,
     "mechMinTonnages" : [
-        -1,
-        -1,
-        -1,
         -1
     ],
     "mechMaxTonnages" : [
-        -1,
-        -1,
-        -1,
         -1
     ],
     "mapMood" : null,
@@ -40,7 +34,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy Enemy Forces",
+            "title" : "Kill Arauts Of Mecha",
             "description" : "Destroy all enemy forces you encounter.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +49,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Kill Arauts Of Mecha",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +61,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Reinforcements",
+            "title" : "Survive Reinforcements",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -144,7 +138,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You've arrived at the location our employer specified, Commander.",
+                    "words" : "Captain Kamea, I must repeat again that this is a terrible idea.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -160,7 +154,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move forward, acquire a target lance and light them up.",
+                    "words" : "The Autocracy's Arauts may pilot powered down 'Mechs on Leh but here the rules might be different.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -176,14 +170,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep an eye out for reinforcements. I get the impression these folks are a bit twitchy.",
+                    "words" : "And going solo against a lance or more isn't rational... what are you trying to prove, Kamea?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Understood XO, I'm moving to engage. Everyone, stay off the radio until the fight is over.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -201,14 +211,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Excellent work, Commander. That should send the appropriate message.",
+                    "words" : "All Arauts have been defeated. We're done here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -226,7 +236,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We may have kicked a hornet's nest, Commander. Time to pull out.",
+                    "words" : "Captain, answer me. She's down, Commander, we need to withdrawal and regroup.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -251,7 +261,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "A primary target is damaged, Commander! Keep it up!",
+                    "words" : "Captain Arano, there are more targets waiting for you!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -274,15 +284,15 @@
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 0,
+    "negotiatedSalvage" : 0,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -335,7 +345,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_story_kamea",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

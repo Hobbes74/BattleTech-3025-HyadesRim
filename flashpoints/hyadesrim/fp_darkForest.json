@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fp_darkForest",
         "Name" : "Dark Forest",
-        "Details" : "A lost SLDF base is discovered to still be operational after centuries.",
+        "Details" : "A lost SLDF base is discovered to still be operational after centuries. Part three of Redoubt arc.",
         "Icon" : "uixTxrSpot_fp_HyadesRim_Background_5.png"
     },
     "Weight" : 10,
@@ -14,8 +14,8 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"company_story_flashpoints",
-					"flashpoint_amarisLegacy_complete"
+					"flashpoint_nagayanValley_complete",
+					"company_story_flashpoints"
 				],
                 "tagSetSourceFile" : "Tags/CompanyTags"
             },
@@ -32,7 +32,7 @@
         "Scope" : "StarSystem",
         "RequirementTags" : {
             "items" : [
-				"planet_name_mcevedysfolly",
+				"planet_name_mcevedysfolly"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
@@ -45,15 +45,15 @@
     "PotentialEmployers" : [
 		"SelfEmployed"
     ],
-    "TargetFaction" : "RimPirates",
+    "TargetFaction" : "GrimReapers",
     "AllowRefitTime" : false,
     "FlashpointLength" : "MEDIUM",
-    "Repeatable" : false,
+    "Repeatable" : true,
     "MilestoneSetID" : "ms_fp_darkForest",
-    "UseAvailableTimeoutOverride" : true,
-    "AvailableTimeout" : 300,
-    "UseInProgressTimeoutOverride" : true,
-    "InProgressTimeout" : 300,
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
     "RewardCollectionID" : "itemCollection_loot_fp_reward_darkForest",
     "UnitDropTonnageHint" : "Light",
     "LanceDropTonnageHint" : "None",
@@ -61,6 +61,7 @@
     "FlashpointDescriberCastDefId" : "castDef_KameaDefault",
     "Tags" : {
         "items" : [
+			"BLACKLISTED"
         ],
         "tagSetSourceFile" : "tags/FlashpointTags"
     }

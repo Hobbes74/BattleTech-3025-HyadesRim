@@ -12,38 +12,6 @@
             "Requirements" : [],
             "Results" : [
                 {
-                    "Scope" : "Flashpoint",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [
-                            "fp_choice_a",
-                            "fp_choice_b",
-                            "fp_choice_cancel"
-                        ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "Stats" : null,
-                    "Actions" : null,
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
                     "Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
@@ -118,11 +86,22 @@
                     "Stats" : [],
                     "Actions" : [
                         {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "true",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+								"Darius",
+								"Sumire",
+                                "Yang",
+								"Farah"
+                            ]
+                        },
+                        {
                             "Type" : "System_StartConversation",
                             "value" : "9c49381c9e7f61df9a946d37",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} I",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -180,7 +159,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_lostWorld_vJung",
+                            "value" : "mapGeneral_lushIsthmus_vJung",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
@@ -189,7 +168,7 @@
                                 "InterstellarExpeditions",
                                 "BrotherhoodOfRandis",
                                 "5",
-                                "ms_fp_amarisLegacy_004_TalkChoice",
+                                "ms_fp_amarisLegacy_004_Talk",
                                 null,
                                 null,
                                 null
@@ -215,7 +194,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_004_TalkChoice",
+                "Id" : "ms_fp_amarisLegacy_004_Talk",
                 "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -248,19 +227,27 @@
                     "Stats" : null,
                     "Actions" : [
                         {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "false",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Yang"
+                            ]
+                        },
+                        {
                             "Type" : "System_StartConversation",
-                            "value" : "9cc2e3e4cdc92f0541d952c3",
+                            "value" : "9c49381c9e7f61df9a946d38",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
-                                "Conference",
+                                "Staff Briefing",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_amarisLegacy_005_Branch",
+                            "value" : "ms_fp_amarisLegacy_005_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -276,8 +263,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_005_Branch",
-                "Name" : "Branch",
+                "Id" : "ms_fp_amarisLegacy_005_Talk",
+                "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
@@ -287,11 +274,9 @@
                 {
                     "Scope" : "Company",
                     "Requirements" : {
-                        "Scope" : "Flashpoint",
+                        "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_a"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -308,90 +293,27 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : null,
                     "Actions" : [
                         {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c49381c9e7f61df9a946d39",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Emergency Meeting",
+                                null
+                            ]
+                        },
+                        {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_amarisLegacy_100_A-Mission",
+                            "value" : "ms_fp_amarisLegacy_006_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
                     ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Flashpoint",
-                        "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_b"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_amarisLegacy_200_B-Mission",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Flashpoint",
-                        "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_cancel"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_amarisLegacy_300_Cancel-Complete",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
+                    "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -402,8 +324,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_100_A-Mission",
-                "Name" : "A-Mission",
+                "Id" : "ms_fp_amarisLegacy_006_Mission",
+                "Name" : "Mission",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
@@ -436,16 +358,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_lostWorld_vJung",
+                            "value" : "mapGeneral_boulderField_vLow",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "",
                                 "",
-                                "amarisLegacy_2a_rescue",
+                                "amarisLegacy_2_captureBase",
                                 "InterstellarExpeditions",
                                 "BrotherhoodOfRandis",
                                 "5",
-                                "ms_fp_amarisLegacy_101_B-Mission",
+                                "ms_fp_amarisLegacy_007_Mission",
                                 null,
                                 null
                             ]
@@ -470,8 +392,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_101_B-Mission",
-                "Name" : "B-Mission",
+                "Id" : "ms_fp_amarisLegacy_007_Mission",
+                "Name" : "Mission",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
@@ -500,9 +422,9 @@
                                 "",
                                 "amarisLegacy_3_simpleBattle",
                                 "InterstellarExpeditions",
-                                "BrotherhoodOfRandis",
-                                "5",
-                                "ms_fp_amarisLegacy_102_A-Talk",
+                                "AutocracyOfLeh",
+                                "3",
+                                "ms_fp_amarisLegacy_009_Complete",
                                 null,
                                 null
                             ]
@@ -527,69 +449,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_102_A-Talk",
-                "Name" : "A-Talk",
-                "Details" : "flashpoint",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "System_StartConversation",
-                            "value" : "9cfd7dbcda32e92639900e37",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
-                                "Conference",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_amarisLegacy_103_A-Complete",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_amarisLegacy_103_A-Complete",
-                "Name" : "A-Complete",
+                "Id" : "ms_fp_amarisLegacy_009_Complete",
+                "Name" : "Complete",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
@@ -624,7 +485,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_amarisLegacy_104_A-Reward",
+                            "value" : "ms_fp_amarisLegacy_010_Reward",
                             "valueConstant" : "itemCollection_loot_fp_reward_amarisLegacy",
                             "additionalValues" : null
                         }
@@ -640,8 +501,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_104_A-Reward",
-                "Name" : "A-Reward",
+                "Id" : "ms_fp_amarisLegacy_010_Reward",
+                "Name" : "Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
             },
@@ -658,366 +519,23 @@
                     "RemovedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_amarisLegacy_200_B-Mission",
-                "Name" : "B-Mission",
-                "Details" : "flashpoint",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_lostWorld_vJung",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "",
-                                "",
-                                "amarisLegacy_2b_captureBase",
-                                "InterstellarExpeditions",
-                                "BrotherhoodOfRandis",
-                                "5",
-                                "ms_fp_amarisLegacy_201_Talk",
-                                null,
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_amarisLegacy_201_Talk",
-                "Name" : "Talk",
-                "Details" : "Closing Conversation.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "System_StartConversation",
-                            "value" : "9cfd7dbcda32e92639900e37",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
-                                "Conference",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_amarisLegacy_202_Complete",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_amarisLegacy_202_Complete",
-                "Name" : "Complete",
-                "Details" : "Flashpoint completion.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [
-                            "flashpoint_amarisLegacy_complete"
-                        ],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_amarisLegacy_203_B-Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "itemCollection_loot_fp_reward_amarisLegacy",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_amarisLegacy_203_B-Reward",
-                "Name" : "B-Reward",
-                "Details" : "B Branch rewards",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [
                         {
                             "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "2000000",
+                            "name" : "Reputation.InterstellarExpeditions",
+                            "value" : "-20",
                             "set" : false,
                             "valueConstant" : null
                         },
                         {
                             "typeString" : "System.Int32",
-                            "name" : "Reputation.BrotherhoodOfRandis",
-                            "value" : "-30",
+                            "name" : "Reputation.AuriganPirates",
+                            "value" : "20",
                             "set" : false,
                             "valueConstant" : null
                         }
                     ],
-                    "Actions" : [],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "Stats" : null,
-                    "Actions" : null,
-                    "ForceEvents" : null,
-                    "TemporaryResult" : true,
-                    "ResultDuration" : 666
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_amarisLegacy_300_Cancel-Complete",
-                "Name" : "Cancel-Complete",
-                "Details" : "flashpoint",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [
-                            "flashpoint_amarisLegacy_complete",
-                            "flashpoint_amarisLegacy_cancel"
-                        ],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_amarisLegacy_301_Cancel-Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_amarisLegacy_301_Cancel-Reward",
-                "Name" : "Cancel-Reward",
-                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
                     "Actions" : [],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,

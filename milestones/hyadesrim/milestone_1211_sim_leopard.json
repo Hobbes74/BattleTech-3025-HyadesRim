@@ -35,11 +35,26 @@
             "Scope" : "Company",
             "Requirements" : null,
             "AddedTags" : {
-				"items" : [
+			    "items" : [
+					"company_story_sixMonthsBefore"
 				],
                 "tagSetSourceFile" : ""
 			},
-            "RemovedTags" : {},
+            "RemovedTags" : {
+			    "items" : [
+					"company_dlc_flashpoints",
+					"letterofmarque_davion",
+					"letterofmarque_kurita",
+					"letterofmarque_liao",
+					"letterofmarque_marik",
+					"letterofmarque_steiner",
+                    "map_travel_2",
+                    "map_travel_2d",
+                    "map_travel_2l",
+                    "map_travel_2m"
+				],
+                "tagSetSourceFile" : ""
+			},
             "Stats" : [
                 {
                     "typeString" : "System.Int32",
@@ -50,18 +65,13 @@
                 }
 			],
             "Actions" : [
-				{
-					"Type" : "System_SimGameCharacterVisible",
-					"value" : true,
-					"additionalValues" : [
-						"Kamea",
-						"Darius",
-						"Sumire",
-						"Farah",
-						"Yang"
-					]
-				}
+                {
+                    "Type" : "System_SetDropship",
+                    "value" : "Leopard",
+                    "valueConstant" : null
+                },
             ],
+            "ForceEvents" : [],
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

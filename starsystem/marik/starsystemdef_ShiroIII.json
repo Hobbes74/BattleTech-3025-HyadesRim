@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_ShiroIII",
 		"Name": "Shiro III",
-		"Details": "<i>Here might be Mariks.</i>",
+		"Details": "One of the worlds settled on the first waves of colonization from Terra, Shiro III joined the nascent Sian Commonwealth in 2366 and conquered by House Marik during the Third Succession War, Shiro III contains a BattleMech factory operated by Irian Technologies and is home to the Third Defenders of Andurien, who maintain permanent detachments guarding it and the planetary capital, Shimgata.",
 		"Icon": ""
 	},
 	"Position": {
@@ -15,8 +15,17 @@
 			"planet_name_shiroiii",
 			"planet_size_medium",
 			"planet_climate_terran",
-			"planet_pop_medium",
+			"planet_pop_large",
+			"planet_industry_manufacturing",
+			"planet_industry_mining",
+			"planet_civ_innersphere",
+			"planet_industry_electronics",
+			"planet_industry_chemicals",
+			"planet_industry_rich",
+			"planet_other_hub",
+			"planet_other_megacity",
 			"planet_faction_marik",
+			"planet_feature_rings",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
@@ -42,7 +51,7 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
+	"JumpDistance": 15,
 	"ownerID": "Marik",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
@@ -110,7 +119,7 @@
 			"Scope": "Company",
 			"RequirementTags": {
 			"items": [
-					"map_travel_4"
+					"map_travel_2m"
 				],
 				"tagSetSourceFile": ""
 			},
@@ -122,14 +131,18 @@
 		}
 	],
 	"StarPosition": null,
-	"StarType": "K",
+	"StarType": "F",
 	"Depletable": false,
 	"UseSystemRoninHiringChance": false,
 	"RoninHiringChance": 0,
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Marik"
+		"itemCollection_major_Marik",
+		"itemCollection_shop_manufacturingProgression",
+		"itemCollection_shop_chemicalsProgression",
+		"itemCollection_shop_electronicsProgression",
+		"itemCollection_shop_starleagueProgression"
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
@@ -140,9 +153,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": -1,
+	"DefaultDifficulty": 2,
 	"DifficultyList": [
-		-1,
+		2,
 		9
 	],
 	"DifficultyModes": [
@@ -150,6 +163,8 @@
 		"CAREER"
 	],
 	"ContractEmployerIDs": [
+		"IrianTechnologies",
+		"DuchyOfAndurien",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",
@@ -157,6 +172,8 @@
 		"MagistracyOfCanopus"
 	],
 	"ContractTargetIDs": [
+		"IrianTechnologies",
+		"DuchyOfAndurien",
 		"Steiner",
 		"AuriganPirates",
 		"Marik",

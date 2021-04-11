@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Drienfontein",
 		"Name": "Drienfontein",
-		"Details": "Drienfontein was colonized during the initial centuries of the Federated Suns by settlers of Terra's southern Africa region.",
+		"Details": "Drienfontein was colonized during the initial centuries of the Federated Suns by settlers of Terra's southern Africa region, who mine the extensive asteroid fields for precious metals.",
 		"Icon": ""
 	},
 	"Position": {
@@ -14,24 +14,24 @@
 		"items": [
 			"planet_name_drienfontein",
 			"planet_size_medium",
-			"planet_climate_terran",
+			"planet_climate_rocky",
+			"planet_civ_innersphere",
 			"planet_pop_small",
 			"planet_faction_davion",
+			"planet_industry_mining",
+			"planet_other_prison",
+			"planet_other_boreholes",
+			"planet_feature_asteroids",
 			"planet_progress_3"
 		],
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"lowlandsSpring",
-		"lowlandsFall",
-		"highlandsSpring",
-		"highlandsFall",
-		"desertParched",
-		"badlandsParched",
-		"polarFrozen",
-		"tundraFrozen",
-		"jungleTropical",
-		"urbanHighTech"
+        "highlandsSpring",
+        "highlandsFall",
+        "badlandsParched",
+        "tundraFrozen",
+        "martianVacuum"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -110,7 +110,7 @@
 			"Scope": "Company",
 			"RequirementTags": {
 				"items": [
-					"map_travel_4"
+					"map_travel_2d"
 				],
 				"tagSetSourceFile": ""
 			},
@@ -129,7 +129,8 @@
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Davion"
+		"itemCollection_major_Davion",
+		"itemCollection_shop_miningProgression"
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
@@ -140,9 +141,9 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": -1,
+	"DefaultDifficulty": 0,
 	"DifficultyList": [
-		-1,
+		0,
 		9
 	],
 	"DifficultyModes": [

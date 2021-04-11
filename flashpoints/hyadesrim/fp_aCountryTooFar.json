@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fp_aCountryTooFar",
         "Name" : "A Country Too Far",
-        "Details" : "An outer rim world is under threat from unknown raiders who might not be human.",
+        "Details" : "An outer rim world is under threat from unknown raiders who might not be human. Part two of Uncle Chandy's arc.",
         "Icon" : "uixTxrSpot_fp_HyadesRim_Background_6.png"
     },
     "Weight" : 10,
@@ -14,8 +14,8 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"company_story_flashpoints",
-					"flashpoint_amarisLegacy_complete"
+					"flashpoint_puttingOutAFire_complete",
+					"company_story_flashpoints"
 				],
                 "tagSetSourceFile" : "Tags/CompanyTags"
             },
@@ -32,7 +32,7 @@
         "Scope" : "StarSystem",
         "RequirementTags" : {
             "items" : [
-				"planet_name_hardcore"
+				"planet_name_luxani"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
@@ -43,24 +43,25 @@
         "RequirementComparisons" : []
     },
     "PotentialEmployers" : [
-		"Kurita",
+		"UncleChandy"
     ],
     "TargetFaction" : "YellowBird",
     "AllowRefitTime" : false,
     "FlashpointLength" : "MEDIUM",
-    "Repeatable" : false,
+    "Repeatable" : true,
     "MilestoneSetID" : "ms_fp_aCountryTooFar",
-    "UseAvailableTimeoutOverride" : true,
-    "AvailableTimeout" : 300,
-    "UseInProgressTimeoutOverride" : true,
-    "InProgressTimeout" : 300,
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
     "RewardCollectionID" : "itemCollection_loot_fp_reward_aCountryTooFar",
     "UnitDropTonnageHint" : "Light",
     "LanceDropTonnageHint" : "None",
-    "FlashpointShortDescription" : "Commander, I was attending a local festival of Kuritan kabuki cabaret theatre when local JumpShip issues caused me to become stranded in this system. Which caused unforeseen complications and now I can't leave the system due to unfinished business preventing me from leaving, so I require the services of a skilled mercenary company such as yours.",
-    "FlashpointDescriberCastDefId" : "castDef_KuritaRepDefault",
+    "FlashpointShortDescription" : "Commander, I was attending a local festival of Kuritan kabuki cabaret theatre when local JumpShip issues caused me to become stranded in this system. This has caused all sorts of unforeseen complications and now I can't leave the system due to unfinished business preventing me from leaving, so I require the services of a skilled mercenary company such as yours.",
+    "FlashpointDescriberCastDefId" : "castDef_UncleChandyDefault",
     "Tags" : {
         "items" : [
+			"BLACKLISTED"
         ],
         "tagSetSourceFile" : "tags/FlashpointTags"
     }

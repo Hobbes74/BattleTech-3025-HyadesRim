@@ -8,7 +8,7 @@
         "UIName": "Zeus",
         "Id": "chassisdef_zeus_ZEU-Q",
         "Name": "Zeus",
-        "Details": "The ZEU-Q Zeus variant is relatively fast and sturdy, with an energy-focused weapon loadout and added heatsinks.",
+        "Details": "This Zeus pirate variant is more focused on energy weapons, with the addition of several lasers while removing the missile launcher.",
         "Icon": "uixTxrIcon_zeus"
     },
     "MovementCapDefID": "movedef_zeus_ZEU-6T",
@@ -60,7 +60,15 @@
             "Location": "LeftArm",
             "Hardpoints": [
                 {
-                    "WeaponMount": "Energy",
+                    "WeaponMount": "Missile",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "Missile",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "Missile",
                     "Omni": false
                 }
             ],
@@ -108,7 +116,20 @@
         },
         {
             "Location": "RightTorso",
-            "Hardpoints": [],
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                }
+            ],
             "Tonnage": 0,
             "InventorySlots": 10,
             "MaxArmor": 170,
@@ -119,15 +140,11 @@
             "Location": "RightArm",
             "Hardpoints": [
                 {
-                    "WeaponMount": "Missile",
+                    "WeaponMount": "Energy",
                     "Omni": false
                 },
                 {
-                    "WeaponMount": "Missile",
-                    "Omni": false
-                },
-                {
-                    "WeaponMount": "Missile",
+                    "WeaponMount": "Energy",
                     "Omni": false
                 }
             ],
@@ -206,5 +223,5 @@
         "tagSetSourceFile": ""
     },
     "StockRole": "Fire Support & Ranged Assault",
-    "YangsThoughts": "The ZEU-Q Zeus variant is relatively fast and sturdy, with an energy-focused weapon loadout and added heatsinks."
+    "YangsThoughts": "This Zeus pirate variant is more focused on energy weapons, with the addition of several lasers while removing the missile launcher."
 }

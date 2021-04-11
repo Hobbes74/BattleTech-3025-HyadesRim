@@ -1,17 +1,18 @@
 {
     "ID" : "Story_4_DanseMacabre",
     "contractName" : "Danse Macabre",
-    "contractDisplayStyle" : "BaseCampaignStory",
-    "difficulty" : 5,
+    "contractDisplayStyle" : "BaseFlashpoint",
+    "difficulty" : 4,
+    "difficultyUIModifier" : 1,
     "weight" : 1,
     "scope" : "STANDARD",
-    "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
-    "missionSuccessStatementOverride" : null,
+    "finalDifficulty" : 5,
+    "representativeCastDefIDOverride" : "castDef_KameaPirate",
+    "missionSuccessStatementOverride" : "That went very well, we'll make a profit from selling the refined rare metals and the Taurians were stopped.",
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "To get to our first target we'll need to take down the main conduits that supply power to the planetary capital of Hel to cause a major blackout. That will catch the attention of the Taurian garrison and distract them away from the ATC's facility.",
-    "longDescription" : "Proceed to Itrom to protect its people from the Taurians. The latest intel recommends a lance that balances speed and firepower, but can deal with Itrom\u2019s searing heat. Further details will be provided upon your arrival.",
+    "shortDescription" : "Taking control of the refinery will be easy with our 'Mechs, allowing for Captain Arano and the ground crew to secure the refinery but we'll need to deal with any possible Taurian defenders.",
+    "longDescription" : "As the name indicates, Purgatory has extreme conditions for even 'Mechs to withstand, but the Concordat's Cuirassers sometimes drop a patrol in the area for training proposes.",
     "salvagePotential" : 20,
     "requirementList" : [
         
@@ -36,9 +37,9 @@
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1223,
-					"set" : true,
-                    "valueConstant" : null
+                    "value" : "1",
+                    "set" : false,
+                    "valueConstant" : ""
                 }
             ],
             "Actions" : [
@@ -79,11 +80,11 @@
             "Actions" : [
 				{
                     "Type" : "System_AddContract",
-                    "value" : "Story_5_DanseMacabre",
+                    "value" : "trav_story_4_danseMacabre",
                     "valueConstant" : null,
 					"additionalValues" : [
-						"AlphardTradingCompany",
-						"AuriganPirates",
+						"PinardProtectorateLimited",
+						"SelfEmployed",
 						"starsystemdef_Perdition"
 					]
                 }
@@ -99,7 +100,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : 220,
+    "lanceMaxTonnage" : 210,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -119,7 +120,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "8d7e4513-f6c4-4914-a08f-d7baa89672be"
             },
-            "title" : "Escort Gallas combat engineers to collapse the tunnels",
+            "title" : "Escort ground crews",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -134,7 +135,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "de10fde9-376f-4ca0-b2ee-2c3c5b9b37f5"
             },
-            "title" : "Hold out against waves of Taurian attackers",
+            "title" : "Hold out against Taurian responders",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -146,7 +147,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "5d6d1056-be43-400b-a6a8-fec48d3b65e0"
             },
-            "title" : "Protect the primary refinery facility",
+            "title" : "Protect the refinery",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -174,7 +175,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d0486b79-d5d3-403a-bcfe-7e18b086f28a"
             },
-            "title" : "Protect Sappers En Route to Pass Alpha",
+            "title" : "Protect Banshee One crew",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -188,7 +189,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "8a1010fb-e064-456c-bbd6-1bab74f1e33e"
             },
-            "title" : "Protect Sappers En Route to Pass Bravo",
+            "title" : "Protect Banshee Two crew",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -216,7 +217,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "cf4337f3-2b9d-4750-9f1b-4a1f066c1662"
             },
-            "title" : "Destroy Tunnel Alpha",
+            "title" : "Destroy Banshee One tunnel",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -256,7 +257,7 @@
                         {
                             "typeString" : "System.Single",
                             "name" : "ContractBonusRewardPct",
-                            "value" : "0.4",
+                            "value" : "0.1",
                             "set" : false,
                             "valueConstant" : ""
                         }
@@ -279,11 +280,60 @@
             "objective" : {
                 "EncounterObjectGuid" : "90a9fad6-231b-470b-99e5-e6f6999c8b3d"
             },
-            "title" : "Destroy Tunnel Bravo",
+            "title" : "Destroy Banshee Two tunnel",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
-                
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [
+                                
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [
+                                
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [
+                            
+                        ]
+                    },
+                    "AddedTags" : {
+                        "items" : [
+                            
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [
+                            
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.1",
+                            "set" : false,
+                            "valueConstant" : ""
+                        }
+                    ],
+                    "Actions" : [
+                        
+                    ],
+                    "ForceEvents" : [
+                        
+                    ],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }                
             ],
             "OnFailureResults" : [
                 
@@ -307,7 +357,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "8d02bbc5-75f5-4255-8e19-ddc806e4287f"
             },
-            "title" : "Destroy all Hostiles",
+            "title" : "Destroy the Cuirasseurs",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -339,56 +389,7 @@
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [
-                                
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [
-                                
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : [
-                            
-                        ]
-                    },
-                    "AddedTags" : {
-                        "items" : [
-                            
-                        ],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [
-                            
-                        ],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.4",
-                            "set" : false,
-                            "valueConstant" : ""
-                        }
-                    ],
-                    "Actions" : [
-                        
-                    ],
-                    "ForceEvents" : [
-                        
-                    ],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
+                
             ],
             "OnFailureResults" : [
                 
@@ -730,14 +731,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The Taurians have been going after fuel processors and refineries throughout the badlands, Commander. The fission plants that power our cities rely on the materials that are produced and refined here\u2014uranium, deuterium for heavy water, you name it.",
+                    "words" : "Our crews have secured the refinery and Yang is already working in the vaults. It would have been faster to ask for one of your BattleMechs to bust it but you're needed for the other part of the plan.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -746,14 +747,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Your main objective is the defense of the facility's primary refinery. If the Taurians manage to destroy it, it's only a matter of time before Itrom's entire power grid goes down. And if that happens, people will die.",
+                    "words" : "We have detected a Taurian force approaching the facility and they won't negotiate or care for hostages. They'll come blazing and we need time down here to load up our loot and you to protect us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaArano01",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "689c8102-1ba0-4ff5-a478-3e954c44ea25",
@@ -762,14 +763,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Long-range scans provided to us by House Gallas show Taurian forces converging on this location along three separate vectors.",
+                    "words" : "Now, one of the reasons why this was chosen for a target for the Aurigan warbook is because there are three possible routes for a reaction force.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -778,14 +779,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "One group is moving along the main approach\u2026",
+                    "words" : "The main one is through clear ground and we'll need you to do deal with any Taurians that come through here, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "c843a5a4-da5c-4c64-954e-fd44830d8a63",
@@ -794,14 +795,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "\u2026And two more are coming in through these tunnels, labeled Alpha\u2026",
+                    "words" : "And the other two are through tunnels, Banshee One here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "5fad75f9-2b3a-4059-9939-33fc8e12d327",
@@ -810,14 +811,14 @@
                     "revealRadius" : 100
                 },
                 {
-                    "words" : "\u2026And Bravo. Collapsing the tunnels will force them to backtrack out of the mountain passes and use the main approach instead. This will give you an advantage in positioning, and will buy you valuable time.\n",
+                    "words" : "And Banshee Two at this location. Now, both these tunnels can be collapsed with explosives which will delay additional Taurian forces attempting to stop us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "6deac590-0071-421f-a30b-e6d7852e16f9",
@@ -826,14 +827,30 @@
                     "revealRadius" : 100
                 },
                 {
-                    "words" : "Our friends in the Gallas Royal Guard have provided us with combat engineers to collapse the passes, but Taurian units in the area will destroy them if they get the chance. Go in with guns blazing and attract their attention. Any enemies that you fail to engage will make short work of our engineers.",
+                    "words" : "The crews also have orders to record as many footage as possible, of the blast and the engagement with the Taurians, as part of the Jinxie ruse.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Medium",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We have two vehicles on their way to do so, so protect them or we risk being overwhelmed. Captain Arano is out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "07b2eb42-60b8-4b08-be12-7e153b2bc360",
@@ -851,14 +868,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander! You've driven the Taurians away and prevented the collapse of Itrom's power grid.",
+                    "words" : "Congratulations, Commander! The Taurians were stopped and we were able to recover substantial loot from the refinery, good work!.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -867,7 +884,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "And you've walked even <i>more</i> radioactive sand into the Leopard's Mech Bay. [sigh] C'mon, Commander\u2026 let's get you home.",
+                    "words" : "And it looks our vehicle crews also got some excellent footage of the whole encounter.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -891,7 +908,22 @@
             "name" : "MissionFailureDialogue",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
-                
+                {
+                    "words" : "We need to retreat and rethink this whole plan, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaPirate",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }                
             ]
         },
         {
@@ -902,16 +934,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'll leave you to it, Commander. Show the Taurians that the Restoration <i>protects</i> its people\u2014no matter what.",
+                    "words" : "Stop the Taurians and in the process we'll make believe that Jinxie and the Banshees were behind this raid.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
-                    "audioName" : "rm040_110_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -927,14 +959,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "While the Taurians won't suffer the same communications or sensory difficulties that the Directorate did, we still have the environment of the badlands working in our favor.",
+                    "words" : "Sumire has made several fake transmissions to hide our identity.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -943,14 +975,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "There are many hazards out here that can damage a BattleMech: radioactive sandstorms, corrosive vapors, rivers of hydrofluoric acid\u2026 and over the course of their campaign, the Taurians have been exposed to them all.",
+                    "words" : "The war pigs are coming, with their murderous horns full of blood! <loud music>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -959,14 +991,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Any Taurian 'Mechs that you encounter are likely to enter battle in a damaged state. If our sappers do their jobs and collapse the tunnels, those that are forced to reroute will be even worse for wear.",
+                    "words" : "Might sound a little eccentric but it will also fire up the Taurians, so be prepared!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -984,16 +1016,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "They've pushed their luck by staying in the badlands too long. Make them understand the severity of their mistake.",
+                    "words" : "The Taurians are about to walk into our trap, let's make them regret it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
-                    "audioName" : "rm040_120_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -1009,14 +1041,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Sappers are outbound for Tunnel Alpha, Commander. Keep the bad guys off of us, and we'll do our part.\n",
+                    "words" : "Crew is heading for Banshee One, Commander. Keep the Taurians off of us, and we'll do our part.\n",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "07b2eb42-60b8-4b08-be12-7e153b2bc360",
@@ -1025,14 +1057,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Transport waypoint data uploaded.",
+                    "words" : "<loud music> Scream now as you'll finally meet your punishers!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Computer",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3a26da77-6276-476b-a06f-f0f98ba02da0",
@@ -1041,14 +1073,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Sappers outbound for Tunnel Bravo. You get us there in one piece, and we'll blow that tunnel to hell.",
+                    "words" : "Banshee Two crew ready. Cover our vehicle, and we'll blow that tunnel.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "e09105c1-aae0-4c07-8222-c1d5179a09e3",
@@ -1057,14 +1089,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Transport waypoint data uploaded.",
+                    "words" : "The Periphery shall rise again! <drums solo>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Computer",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0132a293-d4e8-40c8-8e82-148bba682429",
@@ -1082,14 +1114,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Sapper Alpha reporting in. I am halfway to my destination and moving at full throttle.",
+                    "words" : "Banshee One reporting in. I am halfway to my destination and moving at full throttle.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3b56c91d-8e9a-4523-9aa4-e3c0348c73b7",
@@ -1098,14 +1130,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Don't let them get ahead of you, Commander\u2014keep that vehicle protected!",
+                    "words" : "Don't let Banshee One get ahead of you, Commander\u2014keep that crew covered!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1123,14 +1155,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is Sapper Bravo. I'm halfway to my objective and movin' fast!",
+                    "words" : "This is Banshee Two. I'm halfway to my objective and movin' fast!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a480fb4e-20b7-4e3f-b0f1-28239bf5c7a7",
@@ -1139,14 +1171,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep on that vehicle, Commander. They won't stand a chance without your protection.",
+                    "words" : "Stick to Banshee Two, Commander. They need closer shots of your 'Mechs.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1164,14 +1196,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is Sapper Alpha. I'm making my final approach.",
+                    "words" : "This is Banshee One. We're getting ready to add some more violence to the show.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "4cfc5933-8a16-4dcb-82fd-8bd1c59f15f7",
@@ -1189,14 +1221,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Sapper Bravo here. I'm heading into the pass.",
+                    "words" : "Banshee Two. We're even getting the blast recorded.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "938d435b-b915-4d7a-b224-5fcbb34da62f",
@@ -1221,7 +1253,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "c843a5a4-da5c-4c64-954e-fd44830d8a63",
@@ -1230,14 +1262,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "To the refinery! Go! Raze it to the ground and leave nothing standing!",
+                    "words" : "Cuirassers, take down that refinery before the pirates can steal anything from it!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_TaurianMWDefault",
+                    "selectedCastDefId" : "castDef_OstergaardDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1255,14 +1287,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Tunnel Alpha is toast, Commander.",
+                    "words" : "Banshee One tunnel is busted, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "5fad75f9-2b3a-4059-9939-33fc8e12d327",
@@ -1280,14 +1312,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Tunnel Bravo has been collapsed! Ain't nothin' coming through here anytime soon!",
+                    "words" : "Banshee Two has been collapsed! Any Taurians inside are hurting right now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_GallasSapperDefault",
+                    "selectedCastDefId" : "castDef_DropShipCrewDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "6deac590-0071-421f-a30b-e6d7852e16f9",
@@ -1305,14 +1337,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've got multiple hostiles inbound! Take up defensive positions and protect that refinery!",
+                    "words" : "The Cuirassers are coming! Defend the refinery!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "689c8102-1ba0-4ff5-a478-3e954c44ea25",
@@ -1330,14 +1362,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Hostiles on the main approach, Commander.",
+                    "words" : "The Concordat Cuirasseurs are on the main approach, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "c843a5a4-da5c-4c64-954e-fd44830d8a63",
@@ -1346,14 +1378,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "To the refinery! Go! Raze it to the ground and leave nothing standing!",
+                    "words" : "All units, we have pirates holding the refinery! Engage at will, bring those bastards down!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RE_Itrom_TaurianMWDefault",
+                    "selectedCastDefId" : "castDef_OstergaardDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "c843a5a4-da5c-4c64-954e-fd44830d8a63",
@@ -1371,14 +1403,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Hostiles incoming through Tunnel Alpha! Take them out!\r\n",
+                    "words" : "Hostiles incoming through Banshee One! Take them out!\r\n",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "5fad75f9-2b3a-4059-9939-33fc8e12d327",
@@ -1396,14 +1428,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Hostiles incoming through a side canyon! Looks like they had to backtrack from Tunnel Alpha\u2026 they're looking pretty chewed up.",
+                    "words" : "Hostiles incoming through a side canyon! Looks like they had to backtrack from Banshee One\u2026 they're looking pretty banged up.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "c95bf5e3-66c6-4b86-aa44-da146ea45c62",
@@ -1421,14 +1453,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've got hostiles inbound, coming through Tunnel Bravo! Go get them!\r\n",
+                    "words" : "We've got hostiles inbound, coming through Banshee Two! Go get them!\r\n",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "6deac590-0071-421f-a30b-e6d7852e16f9",
@@ -1446,14 +1478,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm seeing Taurian units coming in through a side canyon. They look damaged\u2026 the trip back from what's left of Tunnel Bravo seems to have taken its toll.",
+                    "words" : "I'm seeing Taurian units coming in through a side canyon. They look damaged\u2026 the trip back from what's left of Banshee Two seems to have taken its toll.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "6deac590-0071-421f-a30b-e6d7852e16f9",
@@ -1471,16 +1503,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's both passes blocked! Nicely done, Commander\u2014you've derailed their attack plan. Now go capitalize on it!",
+                    "words" : "That's both tunnels blown! Now they'll have to come through the main approach.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
-                    "audioName" : "rm040_130_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -1489,17 +1521,18 @@
             ]
         }
     ],
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
-    "contractRewardOverride" : 2360000,
+    "contractRewardOverride" : 5360000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 1,
+    "negotiatedSalvage" : 1,
+    "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
             "EncounterObjectGuid" : "9659a6cf-0324-4d25-ae02-85662c401f50"
@@ -1731,7 +1764,7 @@
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "Employer",
-        "faction" : "AuriganRestoration",
+        "faction" : "AuriganPirates",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -2262,7 +2295,7 @@
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "Target",
-        "faction" : "AuriganDirectorate",
+        "faction" : "TaurianConcordat",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -2285,7 +2318,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_50"
+                        "spawn_poorly_maintained_25"
                     ],
                     "tagSetSourceFile" : "Tags/SpawnEffectTags"
                 },
@@ -2300,7 +2333,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_shadowhawk_SHD-2H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -2346,7 +2379,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_cicada_CDA-3C",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -2392,7 +2425,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
@@ -2437,7 +2470,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_firestarter_FS9-H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_heavy",
@@ -2497,7 +2530,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_50"
+                        "spawn_poorly_maintained_25"
                     ],
                     "tagSetSourceFile" : "Tags/SpawnEffectTags"
                 },
@@ -2512,7 +2545,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_dragon_DRG-1N",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_indirectFire",
@@ -2559,7 +2592,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -2605,7 +2638,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_griffin_GRF-4N",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
@@ -2650,7 +2683,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_commando_COM-2D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_light"
@@ -2709,7 +2742,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_25"
+					
                     ],
                     "tagSetSourceFile" : "Tags/SpawnEffectTags"
                 },
@@ -2724,7 +2757,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_locust_LCT-1S",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -2769,7 +2802,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_panther_PNT-9R",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -2814,7 +2847,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_spider_SDR-5V",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_lance_assassin",
@@ -2858,7 +2891,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_commando_COM-1B",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -2918,7 +2951,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_25"
+					
                     ],
                     "tagSetSourceFile" : "Tags/SpawnEffectTags"
                 },
@@ -2933,7 +2966,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_locust_LCT-1M",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -2978,7 +3011,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -3023,7 +3056,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_spider_SDR-5V",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_lance_assassin",
@@ -3067,7 +3100,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_firestarter_FS9-H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -3127,7 +3160,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_25"
+					
                     ],
                     "tagSetSourceFile" : "Tags/SpawnEffectTags"
                 },
@@ -3142,7 +3175,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_hunchback_HBK-4G",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_indirectFire",
@@ -3188,7 +3221,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_enforcer_ENF-4R",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -3233,7 +3266,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_quickdraw_QKD-4G",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech"
@@ -3276,7 +3309,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_centurion_CN9-AS",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_heavy",
@@ -3336,7 +3369,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_50"
+                        "spawn_poorly_maintained_25"
                     ],
                     "tagSetSourceFile" : "Tags/SpawnEffectTags"
                 },
@@ -3351,7 +3384,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_shadowhawk_SHD-2H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_indirectFire",
@@ -3398,7 +3431,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_cicada_CDA-3C",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
@@ -3444,7 +3477,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
@@ -3489,7 +3522,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_firestarter_FS9-H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_heavy",
@@ -3565,11 +3598,10 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_dragon_DRG-1N",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_jumpOK",
-                                "unit_light",
                                 "unit_mech",
                                 "unit_medium"
                             ],
@@ -3612,7 +3644,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_light",
@@ -3657,7 +3689,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_griffin_GRF-4N",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_light",
@@ -3702,7 +3734,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_commando_COM-2D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_heavy",

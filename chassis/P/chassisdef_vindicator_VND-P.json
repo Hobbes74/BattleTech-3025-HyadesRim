@@ -8,7 +8,7 @@
         "UIName" : "Vindicator",
         "Id" : "chassisdef_vindicator_VND-P",
         "Name" : "Vindicator",
-        "Details" : "The VND-1AA carries only half the armor of the more common VND-1R, but uses the saved weight to upgrade the engine. The finished design is a very mobile medium 'Mech suitable for skirmishing and 'shoot and scoot' sniping.",
+        "Details": "The pirate who designed this Vindicator version seems to have been left-handed since all its main weapons are carried on its left side. Instead of a PPC and long-range missiles, it carries instead an AC/5 autocannon, an SRM-6 rack plus a second medium laser and three machine guns.",
         "Icon" : "uixTxrIcon_vindicator"
     },
     "MovementCapDefID" : "movedef_vindicator_VND-1AA",
@@ -16,9 +16,6 @@
     "HardpointDataDefID" : "hardpointdatadef_vindicator",
     "PrefabIdentifier" : "chrPrfMech_vindicatorBase-001",
     "PrefabBase" : "vindicator",
-    "VariantName" : "VND-UNK",
-    "StockRole" : "Skirmisher & Sniper",
-    "YangsThoughts" : "The 'Avenging Angel' only has 4.5 tons of armor, and tries to make up for that with greater speed and jump capability. I'm not sure its test pilots were all that happy with the results, but the VND-1AA is still a fast way to move a PPC and a few LRMs around the edge of a fight.",
     "Tonnage" : 45,
     "InitialTonnage" : 20.5,
     "weightClass" : "MEDIUM",
@@ -77,8 +74,8 @@
             "Location" : "LeftArm",
             "Hardpoints" : [
                 {
-                    "WeaponMount" : "Energy",
-                    "Omni" : false
+                    "WeaponMount": "Ballistic",
+                    "Omni": false
                 },
                 {
                     "WeaponMount" : "AntiPersonnel",
@@ -96,6 +93,10 @@
             "Hardpoints" : [
                 {
                     "WeaponMount" : "Missile",
+                    "Omni" : false
+                },
+                {
+                    "WeaponMount" : "AntiPersonnel",
                     "Omni" : false
                 }
             ],
@@ -135,7 +136,7 @@
                     "Omni" : false
                 },
                 {
-                    "WeaponMount" : "Energy",
+                    "WeaponMount" : "AntiPersonnel",
                     "Omni" : false
                 }
             ],
@@ -212,5 +213,8 @@
             "z" : 0
         }
     ],
+    "VariantName" : "VND-UNK",
+    "StockRole" : "Skirmisher & Sniper",
+    "YangsThoughts" : "The pirate who designed this Vindicator version seems to have been left-handed since all its main weapons are carried on its left side. Instead of a PPC and long-range missiles, it carries instead an AC/5 autocannon, an SRM-6 rack plus a second medium laser and three machine guns.",
     "FixedEquipment" : null
 }

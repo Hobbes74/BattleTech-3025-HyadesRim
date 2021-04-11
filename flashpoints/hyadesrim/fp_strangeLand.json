@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fp_strangeLand",
         "Name" : "Stranger In A Strange Land",
-        "Details" : "The Niops Association workers are staging a strike against their totalitarian masters, inspired by Jinxie and the Banshees music.",
+        "Details" : "The Niops Association workers are staging a strike against their totalitarian masters, inspired by Jinxie and the Banshees music. Final part of Jinxie arc.",
         "Icon" : "uixTxrSpot_fp_HyadesRim_Background_8.png"
     },
     "Weight" : 10,
@@ -14,8 +14,8 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"company_story_flashpoints",
-					"flashpoint_strangeLand_complete"
+					"flashpoint_paradiseCity_complete",
+					"company_story_flashpoints"
 				],
                 "tagSetSourceFile" : "Tags/CompanyTags"
             },
@@ -48,12 +48,12 @@
     "TargetFaction" : "Locals",
     "AllowRefitTime" : false,
     "FlashpointLength" : "MEDIUM",
-    "Repeatable" : false,
+    "Repeatable" : true,
     "MilestoneSetID" : "ms_fp_strangeLand",
-    "UseAvailableTimeoutOverride" : true,
-    "AvailableTimeout" : 300,
-    "UseInProgressTimeoutOverride" : true,
-    "InProgressTimeout" : 300,
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
     "RewardCollectionID" : "itemCollection_loot_fp_reward_strangeLand",
     "UnitDropTonnageHint" : "Light",
     "LanceDropTonnageHint" : "None",
@@ -61,6 +61,7 @@
     "FlashpointDescriberCastDefId" : "castDef_NiopsAssociationLeaderDefault",
     "Tags" : {
         "items" : [
+			"BLACKLISTED"
         ],
         "tagSetSourceFile" : "tags/FlashpointTags"
     }

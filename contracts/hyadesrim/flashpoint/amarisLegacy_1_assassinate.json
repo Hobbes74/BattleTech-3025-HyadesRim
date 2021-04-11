@@ -2,7 +2,7 @@
     "ID" : "amarisLegacy_1_assassinate",
     "contractName" : "Amaris Legacy I",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
+    "difficulty" : 4,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Thanks to IE's contact in the planet, we have the location of the Brotherhood of Randis' secret warehouse and the access codes but we'll need to distract their forces first to make it a quick and silent operation.  We have intel on their patrol routes so it will be a matter of hitting one of their patrols away from the warehouse, then Dr. Murad can quietly search it while the Brotherhood is responding to the first attack. Take down the patrol leader - it should get their attention.",
+    "shortDescription" : "Thanks to IE's contact in the planet, we have the location of the Brotherhood of Randis' secret warehouse and the access codes but we'll need to distract their forces first to make it a quick and silent operation. We have intel on their patrol routes so it will be a matter of hitting one of their patrols away from the warehouse, then Dr. Murad can quietly search it while the Brotherhood is responding to the first attack. Take down the patrol leader - it should get their attention.",
     "longDescription" : "Reports indicate that the Brotherhood has access to Star League 'Mechs, so watch out.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -20,7 +20,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : -1,
+    "lanceMaxTonnage" : 210,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "edafecaf-4d24-4304-98b1-9e645898c6ee"
             },
-            "title" : "Destroy the Brotherhood of Randis Patrol",
+            "title" : "Destroy the Patrol Leader",
             "description" : "Destroy the Target, clear area of additional forces Enemies, and Escape",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -58,7 +58,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "650245ff-89b6-4c0f-9b72-31db69cf109c"
             },
-            "title" : "Destroy Supporting Enemy Forces",
+            "title" : "Neutralize Brotherhood Patrol",
             "description" : "The secondary objective to destroy an additional lance supporting the assassination target.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -97,7 +97,7 @@
                 "EncounterObjectGuid" : "ef887928-31f2-4001-a1d8-44f8dc5f5bf8"
             },
             "title" : "Eliminate Ambushers",
-            "description" : "Destroy enemy Ambushers before extraction",
+            "description" : "Destroy Brotherhood ambushers before extraction",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Noble",
+            "title" : "Destroy the Patrol Leader",
             "description" : "The objective to destroy the Assassination Target.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -170,7 +170,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Keep the {TEAM_TAR.FactionDef.Demonym} Noble from Escaping",
+            "title" : "Prevent the Patrol Leader from Escaping",
             "description" : "The objective to stop the assassination target for escaping, the player will fail if the target escapes.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -349,7 +349,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "One less SLDF 'Mech destroyed forever.",
+                    "words" : "Another SLDF 'Mech destroyed forever.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -399,7 +399,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Less one patrol leader. Sumire, how are we for extraction.",
+                    "words" : "Less one patrol leader. Sumire, how are we for extraction?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1088,12 +1088,15 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "6cd3107e-0f9d-4809-ab8c-fb30faf4cd80"
                         },
-                        "customUnitName" : "Noble",
+                        "customUnitName" : "Patrol Leader",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_cicada_CDA-2A",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
-                            "items" : [],
+                            "items" : [
+								"unit_heavy",
+								"unit_indirectFire"
+							],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -1104,106 +1107,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d7_pilot",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : "",
-                        "selectedPilotDefId" : ""
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "32a78eeb-e3ee-4f2c-96ce-3f2aa6aefa6b"
-                        },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
-                        "unitTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : "",
-                        "selectedPilotDefId" : ""
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "fd6cffb3-edef-4892-8495-d1a5943869cf"
-                        },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
-                        "unitTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : "",
-                        "selectedPilotDefId" : ""
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "f9d76bd8-5c43-41c2-85d6-be237d2ca505"
-                        },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
-                        "unitTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilot_d9_sharpshooter",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

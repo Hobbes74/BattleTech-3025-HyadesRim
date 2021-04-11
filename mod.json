@@ -1,7 +1,7 @@
 {
     "Name": "Hyades Rim",
     "Enabled": true,
-    "Version": "6.2.7",
+    "Version": "6.5.0",
     "Description": "Adds the Hyades Rim expansion to the base game. Includes new 'unofficial' version of Arano campaign.",	
     "Author": "Hobbes",
 	"Website": "https://www.nexusmods.com/battletech/mods/473",
@@ -11,7 +11,8 @@
     "ConflictsWith": [ "Z_Sab_JK_RarityTables", "JK_SUCKos", "JK_VariantsCampaign", "JK_VariantsDLC", "BT_Extended_3025_PlusVee", "BT Advanced Core", "BT_Extended_3025", "BTR-Core", "RogueTech Core", "The Periphery Is A Harsh Mistress", "Galaxy at War", "HMFlashpointFix", "Flashpoints worthwhile rewards", "Flashpoint Spawn Adjustments", "Flashpoint_the_Cache", "Flashpoint_The_Raid" ],
 	
 	"DataAddendumEntries":[ 
-        { "name":"BattleTech.FactionEnumeration", "path":"enums/Faction.json" }
+        { "name":"BattleTech.FactionEnumeration", "path":"enums/Faction.json" },
+        { "name":"BattleTech.ContractTypeEnumeration", "path":"enums/ContractType.json" }
 	],
 	"Manifest": [
         { "Type": "CastDef", "Path": "cast" },
@@ -19,6 +20,7 @@
 		{ "Type": "ChassisDef", "Path": "chassis/B" },
 		{ "Type": "ChassisDef", "Path": "chassis/C" },
 		{ "Type": "ChassisDef", "Path": "chassis/I" },
+		{ "Type": "ChassisDef", "Path": "chassis/J" },
 		{ "Type": "ChassisDef", "Path": "chassis/M" },
 		{ "Type": "ChassisDef", "Path": "chassis/P" },
 		{ "Type": "ChassisDef", "Path": "chassis/Q" },
@@ -56,8 +58,10 @@
 		{ "Type": "FlashpointDef", "Path": "flashpoints/dlc_merge", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "FlashpointDef", "Path": "flashpoints/hyadesrim" },
         { "Type": "HeraldryDef", "Path": "heraldry" },
-		{ "Type": "ItemCollectionDef", "Path": "itemcollections/starting" },	
+		{ "Type": "ItemCollectionDef", "Path": "itemcollections/starting" },		
+		{ "Type": "ItemCollectionDef", "Path": "itemcollections/stores", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "ItemCollectionDef", "Path": "itemcollections/flashpoint" },
+		{ "Type": "JumpJetDef", "Path": "jumpjets" },
 		{ "Type": "LanceDef", "Path": "lance/base", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "LanceDef", "Path": "lance/hyadesrim", "AddToDB": true },
         { "Type": "BaseDescriptionDef", "Path": "descriptions/characters" },
@@ -72,6 +76,7 @@
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/B" },
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/C" },
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/I" },
+		{ "Type": "MechDef", "Path": "mech/hyadesrim/J" },
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/M" },
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/P" },
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/Q" },
@@ -80,7 +85,6 @@
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/V" },
 		{ "Type": "MechDef", "Path": "mech/hyadesrim/X" },
 		{ "Type": "MovementCapabilitiesDef", "Path": "movement" },
-        { "Type": "PilotDef", "Path": "pilot/base", "ShouldMergeJSON": true, "AddToDB": false },
         { "Type": "PilotDef", "Path": "pilot/hyadesrim", "AddToDB": true },
 		{ "Type": "SimGameConversations", "Path": "simGameConversations" },
 		{ "Type": "SimGameMilestoneDef", "Path": "milestones/base", "ShouldMergeJSON": true, "AddToDB": false },
@@ -110,6 +114,7 @@
 		{ "Type": "StarSystemDef", "Path": "starsystem/rimwardperiphery", "AddToDB": true },
 		{ "Type": "StarSystemDef", "Path": "starsystem/taurian", "AddToDB": true },
         { "Type": "Texture2D", "Path": "sprites" },
+		{ "Type": "CustomTag", "Path": "tags" },
 		{ "Type": "TurretDef", "Path": "turrets/base", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "UpgradeDef", "Path": "upgrades/battlemech" },
 		{ "Type": "UpgradeDef", "Path": "upgrades/disabled_inert" },

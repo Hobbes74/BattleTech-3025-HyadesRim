@@ -3,12 +3,10 @@
         "items": [
             "unit_mech",
             "unit_assault",
-            "unit_lance_support",
-            "unit_role_brawler",
+            "unit_role_sniper",
+            "unit_range_long",
             "unit_release",
-			"unit_range_long",
 			"unit_indirectFire",
-			"unit_jumpOK",
 			"unit_speed_low",
 			"unit_armor_high",
 			"ClusterPirates",
@@ -20,7 +18,7 @@
         ],
         "tagSetSourceFile": ""
     },
-    "ChassisID": "chassisdef_highlander_HGN-733P",
+    "ChassisID": "chassisdef_highlander_HGN-Q",
     "HeraldryID": null,
     "Description": {
         "Cost": 11150000,
@@ -31,7 +29,7 @@
         "UIName": "Highlander HGN-UNK",
         "Id": "mechdef_highlander_HGN-Q",
         "Name": "Highlander",
-        "Details": "The Highlander 733P is a variant of the 733 model that removes its Autocannon and replaces it with a PPC. It also handles heat buildup better.",
+        "Details": "This pirate Highlander carries two LRM-20s and four Medium Lasers, in addition to two Small Lasers.",
         "Icon": "uixTxrIcon_highlander"
     },
     "simGameMechPartCost": 1120000,
@@ -113,10 +111,10 @@
     "inventory": [
         {
             "MountedLocation": "LeftArm",
-            "ComponentDefID": "Weapon_SRM_SRM6_0-STOCK",
+            "ComponentDefID": "Weapon_Laser_SmallLaser_0-STOCK",
             "SimGameUID": null,
             "ComponentDefType": "Weapon",
-            "HardpointSlot": 0,
+            "HardpointSlot": 1,
             "GUID": null,
             "DamageLevel": "Functional",
             "prefabName": null,
@@ -124,7 +122,40 @@
         },
         {
             "MountedLocation": "LeftArm",
-            "ComponentDefID": "Ammo_AmmunitionBox_Generic_SRM",
+            "ComponentDefID": "Weapon_Laser_SmallLaser_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "LeftArm",
+            "ComponentDefID": "Weapon_Laser_MediumLaser_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "LeftArm",
+            "ComponentDefID": "Weapon_Laser_MediumLaser_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "LeftTorso",
+            "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
             "SimGameUID": null,
             "ComponentDefType": "AmmunitionBox",
             "HardpointSlot": -1,
@@ -134,18 +165,7 @@
             "hasPrefabName": false
         },
         {
-            "MountedLocation": "LeftArm",
-            "ComponentDefID": "Ammo_AmmunitionBox_Generic_SRM",
-            "SimGameUID": null,
-            "ComponentDefType": "AmmunitionBox",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "LeftArm",
+            "MountedLocation": "LeftTorso",
             "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
             "SimGameUID": null,
             "ComponentDefType": "AmmunitionBox",
@@ -178,11 +198,11 @@
             "hasPrefabName": false
         },
         {
-            "MountedLocation": "LeftLeg",
-            "ComponentDefID": "Gear_JumpJet_Generic_Assault",
+            "MountedLocation": "LeftTorso",
+            "ComponentDefID": "Weapon_LRM_LRM20_0-STOCK",
             "SimGameUID": null,
-            "ComponentDefType": "JumpJet",
-            "HardpointSlot": -1,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 0,
             "GUID": null,
             "DamageLevel": "Functional",
             "prefabName": null,
@@ -204,17 +224,6 @@
             "ComponentDefID": "Gear_HeatSink_Generic_Standard",
             "SimGameUID": null,
             "ComponentDefType": "HeatSink",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "CenterTorso",
-            "ComponentDefID": "Gear_JumpJet_Generic_Assault",
-            "SimGameUID": null,
-            "ComponentDefType": "JumpJet",
             "HardpointSlot": -1,
             "GUID": null,
             "DamageLevel": "Functional",
@@ -303,17 +312,6 @@
             "ComponentDefID": "Gear_HeatSink_Generic_Standard",
             "SimGameUID": null,
             "ComponentDefType": "HeatSink",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "RightLeg",
-            "ComponentDefID": "Gear_JumpJet_Generic_Assault",
-            "SimGameUID": null,
-            "ComponentDefType": "JumpJet",
             "HardpointSlot": -1,
             "GUID": null,
             "DamageLevel": "Functional",

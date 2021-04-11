@@ -1,0 +1,118 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Irian",
+        "Model" : "",
+        "UIName" : "Comms/Tracking",
+        "Id" : "Gear_Cockpit_Irian_EAR",
+        "Name" : "Irian_E.A.R.",
+        "Details" : "The Irian E.A.R. is a powerful communication system that both increases the range at which targets can be visually acquired for direct targeting or spotting for support fire and provides improved targeting and superb defense against incoming attacks for the entire Lance.",
+        "Icon" : "UixSvgIcon_specialEquip_System"
+    },
+    "BonusValueA" : "+ 100m View Dist.",
+    "BonusValueB" : "+ 1 Acc. (All)",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-RangefinderSuite-Spotting_Gain",
+                "Name" : "Comms/Rangefinder System",
+                "Details" : "Increases spotting distance by [AMT]m, and reduces long range and recoil penalties by 2.",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "SpotterDistanceAbsolute",
+                "operation" : "Float_Add",
+                "modValue" : "100.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        },
+        {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "AllLanceMates",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-ACM-ToHit",
+                "Name" : "ADVANCED COMMAND MODULE",
+                "Details" : "Attacks from units in this lance weapon have their hit improved by [AMT].",
+                "Icon" : "uixSvgIcon_special_Equipment"
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "AccuracyModifier",
+                "operation" : "Float_Add",
+                "modValue" : "-1.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "nature" : "Buff"
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+			"BUILT-IN",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}
