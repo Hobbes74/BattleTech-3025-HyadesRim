@@ -1,0 +1,78 @@
+{
+    "Description" : {
+        "Cost" : 3460000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Newhart",
+        "Model" : "StarLink 955G",
+        "UIName" : "Rangefinder + + + +",
+        "Id" : "Gear_Cockpit_StarLink_955G",
+        "Name" : "StarLink 955G Rangefinder",
+        "Details" : "The StarLink 955G Rangefinder takes into account the propulsion and control during jumpjet flight, increasing the damage dealt by any shots fired.",
+        "Icon" : "uixSvgIcon_equipment_Rangefinder"
+    },
+    "BonusValueA" : "+ 20% Dmg. After Jump",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Jump-DamageBoost",
+                "Name" : "VECTORED THRUST KIT",
+                "Details" : "Increases damage dealt after jumping by 20%.",
+                "Icon" : "uixSvgIcon_action_jump"
+            },
+            "nature" : "Buff",
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "JumpingWeaponDamageModifier",
+                "operation" : "Float_Add",
+                "modValue" : "0.2",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_lostech",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

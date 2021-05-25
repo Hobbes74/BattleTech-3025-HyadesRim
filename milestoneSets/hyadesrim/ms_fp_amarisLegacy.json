@@ -101,7 +101,7 @@
                             "value" : "9c49381c9e7f61df9a946d37",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} I",
+                                "{TGT_FLASHPOINT.Def.Description.Name}",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -357,7 +357,7 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_boulderField_vLow",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -367,17 +367,9 @@
                                 "InterstellarExpeditions",
                                 "BrotherhoodOfRandis",
                                 "5",
-                                "ms_fp_amarisLegacy_007_Mission",
+                                "ms_fp_amarisLegacy_007_Event",
                                 null,
                                 null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -392,7 +384,137 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_007_Mission",
+                "Id" : "ms_fp_amarisLegacy_007_Event",
+                "Name" : "Mission",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_amarisLegacy_008_Event",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [
+						{
+							"Scope" : "Company",
+							"EventID" : "forcedevent_co_mechWarriorStrike",
+							"MinDaysWait" : 0,
+							"MaxDaysWait" : 0,
+							"Probability" : 100
+						}
+					],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_amarisLegacy_008_Event",
+                "Name" : "Mission",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "true",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Yang"
+                            ]
+                        },
+						{
+							"Type" : "MechWarrior_AddRoster",
+							"value" : "pilot_story_kamea",
+							"valueConstant" : null,
+							"additionalValues" : null
+						},
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_amarisLegacy_009_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [
+						{
+							"Scope" : "Company",
+							"EventID" : "forcedevent_co_commandersDayOff",
+							"MinDaysWait" : 0,
+							"MaxDaysWait" : 0,
+							"Probability" : 100
+						}
+					],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_amarisLegacy_009_Mission",
                 "Name" : "Mission",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -414,7 +536,7 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_ruggedAtoll_vJung",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -422,19 +544,11 @@
                                 "",
                                 "amarisLegacy_3_simpleBattle",
                                 "InterstellarExpeditions",
-                                "AutocracyOfLeh",
+                                "ArautsOfMecha",
                                 "3",
-                                "ms_fp_amarisLegacy_009_Complete",
+                                "ms_fp_amarisLegacy_010_Complete",
                                 null,
                                 null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -449,7 +563,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_009_Complete",
+                "Id" : "ms_fp_amarisLegacy_010_Complete",
                 "Name" : "Complete",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -483,9 +597,15 @@
                     },
                     "Stats" : null,
                     "Actions" : [
+						{
+							"Type" : "MechWarrior_Fire",
+							"value" : "pilot_story_kamea",
+							"valueConstant" : null,
+							"additionalValues" : null
+						},
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_amarisLegacy_010_Reward",
+                            "value" : "ms_fp_amarisLegacy_011_Reward",
                             "valueConstant" : "itemCollection_loot_fp_reward_amarisLegacy",
                             "additionalValues" : null
                         }
@@ -501,7 +621,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_010_Reward",
+                "Id" : "ms_fp_amarisLegacy_011_Reward",
                 "Name" : "Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null

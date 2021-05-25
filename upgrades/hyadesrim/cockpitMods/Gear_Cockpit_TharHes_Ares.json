@@ -1,0 +1,65 @@
+{
+    "Description" : {
+        "Cost" : 3460000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "TharHes",
+        "Model" : "Ares",
+        "UIName" : "Rangefinder + + + +",
+        "Id" : "Gear_Cockpit_TharHes_Ares",
+        "Name" : "TharHes Ares Rangefinder",
+        "Details" : "The TharHes Ares rangefinder system improves the reliablity of Called Shots executed by the pilot.",
+        "Icon" : "uixSvgIcon_equipment_Rangefinder"
+    },
+    "BonusValueA" : "+ Called Shot",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" :
+            {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "StatusEffect-LCM-CalledShotBonus",
+                "Name" : "LANCE COMMAND MODULE",
+                "Details" : "Called Shots executed by this unit are more reliable.",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "statisticData" : 
+            {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "CalledShotBonusMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "1.5",
+                "modType" : "System.Single"
+            },
+            "nature" : "Buff"
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_lostech",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "Description" : {
+        "Cost" : 3000000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Ceres Metals",
+        "Model" : "Stabilized",
+        "UIName" : "Cockpit Mod + + + +",
+        "Id" : "Gear_Cockpit_Ceres_Metals_Stabilized",
+        "Name" : "Ceres Metals Stabilized Cockpit Mod",
+        "Details" : "This cockpit mod uses an electronic system to increase the BattleMech's maximum stability.",
+        "Icon" : "uixSvgIcon_equipment_Cockpit"
+    },
+    "BonusValueA" : "+ 40 Max Stability",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-BSC-MaxStabilityBoost",
+                "Name" : "MAX STABILITY INCREASED",
+                "Details" : "Increases the maximum stability rating of this unit by [AMT].",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "MaxStability",
+                "operation" : "Float_Add",
+                "modValue" : "40.0",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "nature" : "Buff"
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_lostech",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

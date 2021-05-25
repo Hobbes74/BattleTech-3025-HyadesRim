@@ -1,0 +1,66 @@
+{
+    "Description" : {
+        "Cost" : 3460000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Kong",
+        "Model" : "TransComm",
+        "UIName" : "Comms System + + + +",
+        "Id" : "Gear_Cockpit_Kong_TransComm",
+        "Name" : "Kong TransComm Comms System",
+        "Details" : "The Kong TransComm suite integrates both communication and tracking abilities to decrease a lance's damage.",
+        "Icon" : "uixSvgIcon_equipment_Comms"
+    },
+    "BonusValueA" : "- 10% Dmg. (Lance)",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Victoria-Aura2",
+                "Name" : "NOTHING TO LOSE",
+                "Details" : "This unit fights with an unstoppable drive, taking [AMT] less damage.",
+                "Icon" : "uixSvgIcon_statusCrit"
+            },
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "AllLanceMates",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.8",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_lostech",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}
