@@ -3,7 +3,7 @@
     "contractName" : "Putting Out A Fire II",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 6,
-    "difficultyUIModifier" : 1,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
@@ -12,7 +12,7 @@
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
     "shortDescription" : "The Kurita compound that we're striking is owned by a New Samarkand company known to be a front for the ISF. Unfortunately, it is also a fortress so I have hired some local DropShip support to blast it to oblivion. That should either remove the ISF agents or convince them that they need to reconsider their orders.",
-    "longDescription" : "The time-frame on this is tight, since we need the artillery strike to hit while the {TEAM_EMP.FactionDef.Demonym} representative has everyone looking in the right direction. And Commander, I wouldn't take any bets on that military base actually being abandoned.",
+    "longDescription" : "Bob has a local friend called MC with pleasure ride called 'Hammer Time' apparently has an artillery piece. Our job is to mark the ISF fortress for them to level the place.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -64,8 +64,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "b666957c-c0f2-4ea2-959b-33165d490ba5"
             },
-            "title" : "Place Beacon Alpha for Artillery Designation",
-            "description" : "Place Beacon Alpha for Artillery Designation",
+            "title" : "Place Beacon Earl for Artillery Designation",
+            "description" : "Place Beacon Earl for Artillery Designation",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -76,8 +76,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "82e56617-5098-4baf-bbb9-ce5dc4ce470f"
             },
-            "title" : "Place Beacon Bravo for Artillery Designation",
-            "description" : "Place Beacon Bravo for Artillery Designation",
+            "title" : "Place Beacon Duchess for Artillery Designation",
+            "description" : "Place Beacon Duchess for Artillery Designation",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -88,8 +88,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "92415cd8-d751-455b-8496-b11a09c8d7cd"
             },
-            "title" : "Place Beacon Charlie for Artillery Designation",
-            "description" : "Place Beacon Charlie for Artillery Designation",
+            "title" : "Place Beacon Marquis for Artillery Designation",
+            "description" : "Place Beacon Marquis for Artillery Designation",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -100,8 +100,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "9faf9350-fec3-4377-a544-7a3610028ce8"
             },
-            "title" : "Await Further Instructions",
-            "description" : "Await Further Instructions",
+            "title" : "Enjoy Pleasure Ride",
+            "description" : "Enjoy Pleasure Ride",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -124,7 +124,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9090acb8-ca3d-4d15-abce-1c520aafe9c0"
             },
-            "title" : "Get Visual Confirmation of Artillery Effect",
+            "title" : "Confirm Hammer Time",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -160,8 +160,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "6512b05e-ea0d-4979-af5f-8a8c8d2e0195"
             },
-            "title" : "Destroy Enemy Garrison",
-            "description" : "Enemy Garrison Lance",
+            "title" : "Destroy ISF Force",
+            "description" : "ISF Force Lance",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -236,7 +236,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "6748d641-b9af-4279-a7bb-a85bbf26924d"
             },
-            "title" : "Destroy Additional Enemy Forces",
+            "title" : "Destroy Additional ISF Forces",
             "description" : "Enemy Supplemental 2 Lance",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -312,7 +312,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "b2e99a59-4be0-425e-ad3f-3ecdb8db26a7"
             },
-            "title" : "Enemy Reinforcements Inbound",
+            "title" : "ISF Reinforcements Inbound",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -529,7 +529,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "44bfa8ef-bc6d-4f29-adbf-10ad78fc8d4b"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -704,7 +704,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The client wants to put on a show. We're here to mark the target so that can happen.",
+                    "words" : "<i>Tai-i</i> Kerai and his DEST commandos must have already realized that they've been betrayed so we'll need to hit them fast.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -720,7 +720,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Three points make a triangle around the target base. Set up beacons at those points and we can go home.",
+                    "words" : "We have three beacons to deploy, Earl, Duchess and Marquis, so that 'Hammer Time' can blow it up with their pleasure rides.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -736,7 +736,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "That base is supposed to be abandoned and empty, but I don't trust that and neither should you.",
+                    "words" : "Once that Kuritan compound is blown apart, that should make the ISF captain to pause.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -752,7 +752,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Timing's important, here. This is a show of force, and if we miss our window, the right people won't be watching.",
+                    "words" : "We won't get a second shot at this, so let's use those hired guns as best as we can.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -777,7 +777,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The target is destroyed. Client's message is signed, sealed, and delivered.",
+                    "words" : "Hammer time?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Artillery rounds have levelled the compound permanently offline, ISF forces are disengaging.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -785,6 +801,102 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Well done, Commander. Now let's try to reason with this servant of the Dragon.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "If anyone is still alive after that pleasure ride... if we had a larger 'Mech bay, I know now what I would also get.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Tai-i</i> Kerai, I am Chandrasekhar Kurita, cousin to the Coordinator we all serve. The ISF has been fed false information about me and I will send an HPG message to Luthien to confirm this.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "*Noise* Kurita-<i>san</i>, I have direct orders from the ISF Director to kill you on sight. I will not allow you, or the treacherous <i>gaijin</i> mercenaries to escape under any pretenses.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_NinyuKeraiDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You have a greater duty to the Dragon, which I also represent. You have my word as a Kurita that I will not attempt to escape while we wait for Director Indrashar and my cousin Takashi's response. And if my death serves the Dragon, I will be honored if your blade fulfills that mission, Kerai-<i>san</i>.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Hai</i>. I will wait. But if I ever see you or those mercenaries again, that will be the last thing you will all see.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_NinyuKeraiDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -802,7 +914,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I am putting a stop to this, no way we pull this out of the fire. Abort Mission.",
+                    "words" : "Abort, abort! The DEST team is too strong, we can't break through their defenses.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -827,7 +939,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Observer Actual this is Fire Control: Target Locked. Firing for Effect. HE 30 rounds. Danger Close.",
+                    "words" : "MC's got the coordinates, right on. We always wanted to see this on a live target!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Stop! Hammer time.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -843,23 +971,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Observer Actual this is Fire Control: Shot Over. Splash in 30.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Computer",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Fire Control this is Observer Actual: Confirmed. Shot, out.",
+                    "words" : "Could you please ask your friend to turn down the music?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -867,6 +979,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Alright... have a drink and enjoy the show.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
@@ -884,7 +1012,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Alpha beacon deployed, Commander. Good work.",
+                    "words" : "Earl, beacon deployed, Commander. Good work.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -909,7 +1037,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Bravo beacon deployed, Commander.",
+                    "words" : "Duchess beacon deployed, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -934,7 +1062,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Charlie beacon deployed.",
+                    "words" : "Marquis beacon deployed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -959,14 +1087,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Attention! All {TEAM_TAR.FactionDef.Demonym} forces, focus fire on the 'Mechs placing beacons for Artillery Strike. Fire at will and bring them down!",
+                    "words" : "The <i>gaijin</i> mercenaries are planting artillery beacons! Kill them all!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Target",
+                    "selectedCastDefId" : "castDef_NinyuKeraiDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "e7acc01a-0514-468f-8b6c-7c8eeb68e1ff",
@@ -984,14 +1112,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All units, close distance on enemy forces. Send a short wave burst near them to disrupt enemy Artillery from locking on! Move quickly!",
+                    "words" : "No matter if you're successful, the Dragon will find you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Target",
+                    "selectedCastDefId" : "castDef_NinyuKeraiDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1000,14 +1128,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep the pressure on to prevent them a chance to place those beacons!",
+                    "words" : "You and Chandrasekhar will die for all of this!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Target",
+                    "selectedCastDefId" : "castDef_NinyuKeraiDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1025,14 +1153,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Fire Control this is Observer Actual: Good effect on target. Targets Destroyed.",
+                    "words" : "It's a hit! Hammer time!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
@@ -1264,7 +1392,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, our window of oppurtunity for this strike is closing. At least half of our time has expired. You'll need to move quickly if you're to accomplish this.",
+                    "words" : "Commander, our window of oppurtunity for this strike is closing. At least half of our time has expired. We need to move quickly if we are to destroy the ISF compound.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1355,7 +1483,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Warning: Incoming artillery fire.",
+                    "words" : "Stop! Hammer time!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1460,7 +1588,7 @@
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,

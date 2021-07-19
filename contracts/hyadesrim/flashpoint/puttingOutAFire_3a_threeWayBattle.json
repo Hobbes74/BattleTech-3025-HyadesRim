@@ -2,7 +2,7 @@
     "ID" : "puttingOutAFire_3a_threeWayBattle",
     "contractName" : "Putting Out A Fire III",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Our people took a beating in a recent engagement, Commander, and we lost an entire lance. One of our pilots was killed when their 'Mech fell over, and the last of the {TEAM_TAR.FactionDef.Demonym} survivors was able to get our 'Mech back on its feet. Now they're hoping to get it safely to their dropship and claim it for their own. We need you to stop their salvage attempt, and bring that 'Mech down. It's still an active battlefield down there, so no telling what you'll encounter.",
-    "longDescription" : "We've handled situations like this before, Commander, but I'd still advise caution. If they need a whole merc unit to take out one 'Mech, it must be a pretty serious 'Mech.",
+    "shortDescription" : "Captain Arano and Bob have reached the ComStar compound but they report a long line ahead with the local acolyte at the reception attributing it to unexpected overbooking, while others in the queue are loudly complaining of constant 'back dooraccess' by local celebrities to skip the line.",
+    "longDescription" : "While they send the message we'll still keep an eye for the DEST strike team - after that last fight it's clear that Bob has fled the <i>Frocked Flamingo</i> and that we've switched sides.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -1418,7 +1418,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "889ff9a0-067e-4fc5-bb85-99c2ee9e9e81"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Employer Forces Chunk Group"
             ],
@@ -1440,7 +1440,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "b5d81bde-22d8-46a6-afe7-44cfd6aadbe6"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Employer Ally Forces Chunk Group"
             ],
@@ -1632,7 +1632,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're looking for a single 'Mech out there, possibly already damaged.",
+                    "words" : "<i>A silver 'Mech as your glittering prize. Glittering prize.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sumire, can you please turn off your music, <i>again</i>? I understand it helps you focus while piloting but military protocol must be properly followed as professional mercenaries.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1648,14 +1664,78 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander, I've got a heat signature in this area.",
+                    "words" : "Why is this music coming off the speakers on the 'Mech bay?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>A hailstorm of vengeance unleashing itself apart.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, Bob has sent the HPG message to Luthien but he says that we'll still need to take on the DEST strike team when they arrive. What is this damned music?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Wait, I know this song. Sumire, this is 'Frazzled' isn't it?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, captain, I've got several 'Mechs powering up at the location of the song being transmitted...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
@@ -1664,7 +1744,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good odds that's our target; get eyes on it and confirm. Good hunting, Commander.",
+                    "words" : "<i>{COMPANY.CompanyName}, neon frazzle!</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JinxieDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What? Who are you?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1680,7 +1776,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "When you're ready to evac, Commander, I'll pick you up here.",
+                    "words" : "Darius, that's Jinxie. The Banshees are here!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1690,7 +1786,7 @@
                     "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "75580c14-0ed9-4576-91be-6ab0a8026d95",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1705,7 +1801,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's a wrap, Commander. We'll debrief back in orbit.",
+                    "words" : "That's the last of the Banshees and the DEST team.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1713,6 +1809,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{COMPANY.CompanyName}, you better watch your back, this isn't over yet.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JinxieDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1730,14 +1842,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That went sideways in a hurry. We'll debrief back in orbit, Commander.",
+                    "words" : "And down she went, and to their knees they fell...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_JinxieDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1755,7 +1867,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER. New contacts on sesnors, Commander. These units don't match {TEAM_TAR.FactionDef.ShortName} signatures. We've got a new player on the field.",
+                    "words" : "New contacts detected, it must be the DEST team after us and Bob.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2076,7 +2188,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Huh. What's-- Shit, Commander, I'm seeing a new contact, closing on your location. Looks like {TEAM_HOST.FactionDef.Demonym} markings.",
+                    "words" : "And here's the ISF, no doubt extra pissed at us for breaking the contract.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2092,7 +2204,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Language, Meyer. Commander, this falls under 'additional hostiles' in our contract. You don't have to take them out, but there's a bonus if you do. Your call.",
+                    "words" : "Let's hope the captain and Bob have finally sent that message, at least we might avoid reinforcements.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2108,14 +2220,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "My guess is they saw an easy target of opportunity in a solo damaged 'Mech and they're hoping for a quick payday. Unfortunate for them that we're already here.",
+                    "words" : "Make no mistake, these are DEST commandos... they won't need reinforcements!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2529,7 +2641,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER More {TEAM_EMP.FactionDef.Demonym} forces on the field. This is the Primary Objective Version.",
+                    "words" : "Second Banshee lance deployed!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2545,14 +2657,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to contract. If we want to get paid we need to take them out.",
+                    "words" : "That's Jinxie, she always likes to make a late entry.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "fddf5e8b-07c6-492b-861e-2d9c2bde80ee",
@@ -2660,7 +2772,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Huh. XO, were we expecting company? Cause I'm tracking a Leopard on radar, and it's moving really fast.",
+                    "words" : "Huh. XO, were we expecting company? Cause I'm tracking a <i>Leopard</i> on radar, and it's moving really fast towards our position.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2676,7 +2788,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Sounds like more trouble. Meyer, give the Commander the location of their likely LZ. I don't know who this is, but I'm betting they're not friendlies.",
+                    "words" : "Sounds like the ISF has joined this dance. Commander, this is the location of their likely LZ.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2701,14 +2813,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACHEHOLDER (Additional Target Forces Primary). In bound hostile Dropship detected, drop zone marked.",
+                    "words" : "The Banshees have called for reinforcements, expect an additional lance being dropped here!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a844b4c9-7a04-4675-af2a-95cfacf313f8",
@@ -3650,24 +3762,19 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_solo"
+                        "lance_type_cavalry"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
-                    "items" : [
-                        "lance_type_turret",
-                        "lance_type_convoy"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_75"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 3,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
@@ -3679,7 +3786,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_wolverine_WVR-TK",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3712,7 +3819,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_wolverine_WVR-TQ",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3745,7 +3852,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_wolverine_WVR-TP",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3778,7 +3885,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_wolverine_WVR-TG",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3811,11 +3918,9 @@
                     "EncounterObjectGuid" : "fddf5e8b-07c6-492b-861e-2d9c2bde80ee"
                 },
                 "name" : "DestroyLanceSpawner_Tarqet_AdditionalForces_Primary (Optional)",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_notallvehicles"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -3838,10 +3943,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "37634f3f-6855-4572-b526-1fa66e770831"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Jinxie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TO",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3854,7 +3959,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d9_outrider",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3871,10 +3976,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c2f52419-e1ba-43db-bb53-f2d21eba4f8c"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Zombie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TW",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3887,7 +3992,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_brawler",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3904,10 +4009,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "3ae6c2d2-470c-4c61-866a-1e2ff3cfb918"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Billie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TF",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3920,7 +4025,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_flanker",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3937,10 +4042,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "39045acd-b014-45d3-8bdd-6c0f3a91cb99"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Jamming",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TJ",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3953,7 +4058,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_gladiator",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -5158,7 +5263,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 2,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,

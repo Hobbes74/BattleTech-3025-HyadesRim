@@ -2,7 +2,7 @@
     "ID" : "puttingOutAFire_2a_threeWayBattle",
     "contractName" : "Putting Out A Fire II",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "We're tracking {TEAM_TAR.FactionDef.Demonym} units engaged in a secret military exercise in a remote portion of the planet's surface. This is an ideal time to strike, as they're likely damaged and exhausted from the operation, and we believe they're unaware of our presence. It isn't clear who the other party in the exercises is, but whoever it is, they're a potential witness, so we need you to eliminate them as well.",
-    "longDescription" : "Opponents whose identities we don't know give me heartburn, Commander.",
+    "shortDescription" : "Bob's vehicle is ready to roll, and Alexander reports that Roxetta, Bob's personal assistant and driver is some sort of 'cat people', whatever that means. Our opponents here are the Spartakian League, a criminal gang known to control the neighborhood. We'll need to push through them in order to reach the ComStar compound and send a message that will clear the name and hopefully the lives of all of us.",
+    "longDescription" : "I think Alexander might be already intoxicated from whatever fumes that pleasure ride is pumping, cat people are an old Periphery fairy tale.",
     "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "8d7e4513-f6c4-4914-a08f-d7baa89672be"
             },
-            "title" : "Escort the <i><Jade Dream/i>",
+            "title" : "Escort the <i>Jade Dream</i>",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -814,7 +814,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "51aa5837-b540-42be-b8be-26b37bfcf976"
             },
-            "title" : "Ensure {TEAM_EMP.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "Ensure <i>Jade Dream</i> survives.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -1429,7 +1429,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "50cd3833-4da1-41d1-a5cf-856611a55102"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Employer Ally Forces Chunk Group"
             ],
@@ -1632,7 +1632,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You're approaching the target area, Commander. There's definitely been fighting in this region; lots of low-intensity laser scoring.",
+                    "words" : "Well, Bob and the captain are about to join us on his personal APC, called the <i>Jade Dream</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1648,7 +1648,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Intel says the target lance should be in this area. Engage them, and keep your eyes open for that other lance.",
+                    "words" : "We'll need to clear a path through this area, which is dominated by a gang called the Spartakian League.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1664,7 +1664,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliviera out.",
+                    "words" : "While they should pose much of a threat, we'll need to protect the vehicle while dealing with them.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1689,7 +1689,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's all of them, Commander. Let's go home.",
+                    "words" : "Path is clear and the <i>Jade Dream</i> is safe. Let's head to the HPG compound.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1714,7 +1714,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I don't know what happened there, Commander, but our employer's not going to like it.",
+                    "words" : "I don't know what happened there, Commander, but Bob and the captain won't be satisfied.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1739,7 +1739,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER. New contacts on sesnors, Commander. These units don't match {TEAM_TAR.FactionDef.ShortName} signatures. We've got a new player on the field.",
+                    "words" : "New contacts on sensors, Commander. These units don't match {TEAM_TAR.FactionDef.ShortName} signatures.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1764,30 +1764,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Kilo 1-3 just got smoked! Suffering loses over here, Commander! We're still in the fight, but down one.",
+                    "words" : "That hurt us very badly! Help!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "PLACEHOLDER Grace under fire folks. Lay it on 'em!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1846,14 +1830,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER, The {TEAM_EMP.FactionDef.Demonym} has been destroyed.",
+                    "words" : "We're busted. Roxetta, everyone, evac!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1871,7 +1855,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER our employer's ally forces are lost commander.",
+                    "words" : "The <i>Jade Dream</i> has been destroyed, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1978,7 +1962,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Primary targets destroyed Commander.",
+                    "words" : "All of the Spartakians have been destroyed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1994,7 +1978,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER I'm inbound to the LZ Commander.",
+                    "words" : "I'll join you all at the LZ Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2101,14 +2085,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER All our objectives are complete, cover our withdraw Commander.",
+                    "words" : "Roxetta, it's time to leave now. Commander, cover our escape.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2167,14 +2151,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Thanks for the assist, we're clear.",
+                    "words" : "Commander, we're clear. Finish off those pirates.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_KameaPirate",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
@@ -2803,7 +2787,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Commander, our {TEAM_EMP.FactionDef.Demonym} friends have deployed forces to assist in our operation here. This is the Primary version.",
+                    "words" : "The <i>Jade Dream</i> with Bob and the captain has arrived.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2819,14 +2803,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER That's an affirmative, XO Olivera. We're on station and will provie support to achieve the primary objective. When it's destoryed we have orders to proceed to our Evac.",
+                    "words" : "Roxetta is waiting your orders, Commander. I will retire to the back of the <i>Jade Dream</i> due to my lack of tactical skills. Good luck.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
@@ -2835,7 +2819,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER. Understood Lance leader, glad to have you with us.",
+                    "words" : "He's gonna get drunk now isn't he? Where's the captain?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Understood, Bob. Enjoy your pleasure ride.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3065,7 +3065,7 @@
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -3269,16 +3269,11 @@
                 "name" : "Lance_Employer_Primary",
                 "lanceDefId" : "Manual",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_mech"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
-                    "items" : [
-                        "lance_type_convoy",
-                        "lance_type_turret"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
@@ -3297,7 +3292,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_GALLANT_Technical",
+                        "unitDefId" : "vehicledef_GALLANT_Chandy",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3310,7 +3305,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d9_sharpshooter",
+                        "pilotDefId" : "pilot_FP_puttingOutAFire",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3322,7 +3317,7 @@
                         "selectedUnitType" : "UNDEFINED",
                         "selectedUnitDefId" : "",
                         "selectedPilotDefId" : ""
-                    },
+                    }
                 ]
             },
             {
@@ -3519,9 +3514,7 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_50"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 3,
@@ -4666,9 +4659,7 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_50"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,

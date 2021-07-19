@@ -298,8 +298,8 @@
                                 "puttingOutAFire_1_destroyBase",
                                 "Kurita",
                                 "UncleChandy",
-                                "7",
-                                "ms_fp_puttingOutAFire_101_A-Mission",
+                                "6",
+                                "ms_fp_puttingOutAFire_004_TalkChoice",
                                 "FrockedFlamingo",
                                 null
                             ]
@@ -544,7 +544,7 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mapGeneral_cityCenter_uTech",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -552,11 +552,19 @@
                                 "",
                                 "puttingOutAFire_2a_threeWayBattle",
                                 "UncleChandy",
-                                "AntithesisCreed",
-                                "7",
+                                "ExpansesPirates",
+                                "6",
                                 "ms_fp_puttingOutAFire_101_A-Mission",
                                 null,
                                 null
+                            ]
+                        },
+						{
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -613,10 +621,13 @@
                                 "puttingOutAFire_3a_threeWayBattle",
                                 "UncleChandy",
                                 "CanopianPirates",
-                                "7",
+                                "6",
                                 "ms_fp_puttingOutAFire_102_A-Talk",
-                                "Kurita",
-                                null
+                                null,
+                                null,
+                                null,
+                                null,
+                                "Kurita"
                             ]
                         }
                     ],
@@ -665,7 +676,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cac9eebf573cbec449fbb51",
+                            "value" : "9cac9eebf573cbec449fbb53",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} III",
@@ -810,7 +821,7 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mapGeneral_bluffs_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -819,10 +830,18 @@
                                 "puttingOutAFire_2b_fireMission",
                                 "UncleChandy",
                                 "Kurita",
-                                "7",
+                                "6",
                                 "ms_fp_puttingOutAFire_201_B-Mission",
                                 null,
                                 null
+                            ]
+                        },
+						{
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -879,7 +898,7 @@
                                 "puttingOutAFire_3b_simpleBattle",
                                 "UncleChandy",
                                 "CanopianPirates",
-                                "7",
+                                "6",
                                 "ms_fp_puttingOutAFire_202_B-Talk",
                                 "Kurita",
                                 null
@@ -1030,7 +1049,15 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Reputation.Kurita",
+                            "value" : "10",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+					],
                     "Actions" : [],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
@@ -1056,7 +1083,6 @@
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_puttingOutAFire_complete",
                             "flashpoint_puttingOutAFire_cancel"
                         ],
                         "tagSetSourceFile" : ""

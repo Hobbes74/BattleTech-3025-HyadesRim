@@ -2,7 +2,7 @@
     "ID" : "puttingOutAFire_3b_simpleBattle",
     "contractName" : "Putting Out A Fire III",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "We're getting a number of reports from agents on the ground of a powerful 'Mech sporting {TEAM_TAR.FactionDef.Demonym} colors. A single 'Mech operating on its own, out in the middle of nowhere, sounds like a trap. Our plan is to spring this trap and see who comes to investigate. Engage the 'Mech, intercept the forces {TEAM_TAR.FactionDef.Name} sends to defend it, and destroy all of them.",
-    "longDescription" : "Forewarned is forearmed, sure, but it's still meant to be a trap. This could get dicey.",
+    "shortDescription" : "Captain Arano and Bob have reached the ComStar compound but they report a long line ahead with the local acolyte at the reception attributing it to unexpected overbooking, while others in the queue are loudly complaining of constant 'back dooraccess' by local celebrities to skip the line.",
+    "longDescription" : "Although the DEST strike team was neutralized, there will still be Canopian security forces after us until we clear our name through Luthien.",
     "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -84,7 +84,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "181d617b-02bc-4fd3-be25-d6d5cffb78de"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -118,7 +118,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're in the area where the {TEAM_TAR.FactionDef.Demonym} 'Mech was sighted.",
+                    "words" : "<i>A silver 'Mech as your glittering prize. Glittering prize.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sumire, can you please turn off your music, <i>again</i>? I understand it helps you focus while piloting but military protocol must be properly followed as professional mercenaries.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,7 +150,87 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move up and make contact; let's see what sort of trap this is.",
+                    "words" : "Darius, we are receiving this song on all civilian and military frequencies on the system.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Why is this music coming off the speakers on the 'Mech bay?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>A hailstorm of vengeance unleashing itself apart.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, Bob has sent the HPG message to Luthien... what is this damned music?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Wait, I know this song. Sumire, this is 'Frazzled' isn't it?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, captain, I've got several 'Mechs powering up at the location of the song being transmitted...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -150,7 +246,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Stay alert, Commander. Oliveira out.",
+                    "words" : "<i>{COMPANY.CompanyName}, neon frazzle!</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JinxieDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What? Who are you?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -158,6 +270,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Darius, that's Jinxie. The Banshees are here!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -175,7 +303,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's all of them, Commander. Good shooting.",
+                    "words" : "That's the last of the Banshees.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -183,6 +311,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{COMPANY.CompanyName}, the show ain't over yet...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JinxieDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -200,14 +344,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's enough; I'm pulling the plug on this operation, Commander.",
+                    "words" : "And down she went, and to their knees they fell...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_JinxieDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -459,10 +603,10 @@
                     "EncounterObjectGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf"
                 },
                 "name" : "Lance_Enemy_OpposingForce",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_mech"
+                        "lance_type_battle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -471,12 +615,10 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_75"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 3,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -484,10 +626,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "9e2d0fed-3d92-42ee-92d0-2cc595709f2a"
                         },
-                        "customUnitName" : null,
+                        "customUnitName" : "Jinxie",
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TO",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -500,7 +642,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d9_outrider",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -517,10 +659,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "e3e34fc2-c664-42ab-920b-6002c058ac55"
                         },
-                        "customUnitName" : null,
+                        "customUnitName" : "Zombie",
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_banshee_BNC-TW",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -533,7 +675,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_brawler",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -550,10 +692,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ab9e2bfb-f6c4-4b4b-b540-957dcfc48a27"
                         },
-                        "customUnitName" : null,
+                        "customUnitName" : "Billie",
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_banshee_BNC-TF",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -566,7 +708,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_flanker",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -583,10 +725,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "f46b3021-803a-41ed-87e0-1b8cb86663b8"
                         },
-                        "customUnitName" : null,
+                        "customUnitName" : "Jamming",
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_banshee_BNC-TJ",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -599,7 +741,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_gladiator",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
