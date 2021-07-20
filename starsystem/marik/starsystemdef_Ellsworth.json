@@ -1,29 +1,23 @@
 {
     "Description": {
-        "Id": "starsystemdef_SLSC01097",
-        "Name": "SLSC 01097",
-        "Details": "SLSC 01097 is a star system used as a Deep Periphery navigational waypoint. The systems listed in the Star League Star Catalog (SLSC) are also used for recharging Jumpships while in route and they usually contain planets and satellites, along with other intrastellar features.",
+        "Id": "starsystemdef_Ellsworth",
+        "Name": "Ellsworth",
+		"Details": "<i>Here might be Mariks.</i>",
         "Icon": ""
     },
     "Position": {
-		"x": -201.349,
-		"y": -583.124,
+        "x": -210.428,
+        "y": -239.708,
         "z": 0
     },
     "Tags": {
         "items": [
-			"planet_region_outerrim",
-			"planet_name_slsc01097",
-			"planet_faction_nofaction",
-			"planet_size_large",
-			"planet_other_unexplored",
-			"planet_other_tidallocked",
-			"planet_other_empty",
-			"planet_other_hurricanebelt",
-			"planet_feature_gasgiant",
-			"planet_feature_moon01",
-			"planet_climate_lunar",
-			"planet_progress_2"
+			"planet_name_ellsworth",
+			"planet_size_medium",
+			"planet_climate_terran",
+			"planet_pop_medium",
+			"planet_faction_marik",
+			"planet_progress_3"
         ],
         "tagSetSourceFile": ""
     },
@@ -32,9 +26,12 @@
         "lowlandsFall",
         "highlandsSpring",
         "highlandsFall",
+        "desertParched",
+        "badlandsParched",
         "polarFrozen",
         "tundraFrozen",
-        "jungleTropical"
+        "jungleTropical",
+        "urbanHighTech"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -45,11 +42,11 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 9,
-	"ownerID": "Unexplored",
+    "JumpDistance": 8,
+    "ownerID": "Marik",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
-    "ShopMaxSpecials": 0,
+    "ShopMaxSpecials": 9,
     "SystemInfluence": [
         {
             "FactionID": "NoFaction",
@@ -135,23 +132,33 @@
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
-    "CoreSystemID": "starsystemdef_SLSC01097",
+    "CoreSystemID": "starsystemdef_Ellsworth",
     "StartingSystemModes": [
         "KAMEA_CAMPAIGN",
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 0,
+    "DefaultDifficulty": 2,
     "DifficultyList": [
-        0,
-        0
+        2,
+        2
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "ContractEmployerIDs": [
-    ],
-    "ContractTargetIDs": [
-    ]
+	"ContractEmployerIDs": [
+		"Steiner",
+		"AuriganPirates",
+		"Marik",
+		"Liao",
+		"MagistracyOfCanopus"
+	],
+	"ContractTargetIDs": [
+		"Steiner",
+		"AuriganPirates",
+		"Marik",
+		"Liao",
+		"MagistracyOfCanopus"
+	]
 }
