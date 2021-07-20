@@ -1,0 +1,69 @@
+{
+    "Description" : {
+        "Id" : "milestone_1234_notify_puttingOutAFire",
+        "Name" : "sim",
+        "Details" : "pause notification",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1234,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+				"items" : [
+					"company_story_enterTheDragon"	
+				],
+                "tagSetSourceFile" : ""
+			},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [		
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Commander, once we decide to take the ISF contract we'll need to travel to Crawford's Delight, in the Magistracy of Canopus.",
+					"additionalValues" : [
+						"Flashpoint",
+						"castDef_SumireDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

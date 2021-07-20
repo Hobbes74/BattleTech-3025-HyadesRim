@@ -1,0 +1,93 @@
+{
+    "Description" : {
+        "Id" : "milestone_1230_talk_peripheryInFlames",
+        "Name" : "conversation",
+        "Details" : "Conversations",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_danseMacabre_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1230,
+                    "valueConstant" : null
+                },
+				{
+                    "obj" : "MissionsComplete",
+                    "op" : "GreaterThanOrEqual",
+                    "val" : 2,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+			    "items" : [
+				],
+                "tagSetSourceFile" : ""
+			},
+            "RemovedTags" : {},
+            "Stats" : [
+				{
+					"typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : null
+				}
+            ],
+            "Actions" : [
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Farah",
+						"Yang"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Kamea",
+						"Alexander",
+						"Darius",
+						"Sumire"
+					]
+				},
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9cf54229a0472a8d59d7a0f4",
+                    "additionalValues" : [
+						"PERIPHERY IN FLAMES",
+						"HPG Message"
+					]
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

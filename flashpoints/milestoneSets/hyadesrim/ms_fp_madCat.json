@@ -1,0 +1,1050 @@
+{
+    "StartingMilestoneID" : "ms_fp_madCat_001_Start",
+    "Milestones" : [
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_001_Start",
+                "Name" : "Start",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Flashpoint",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [
+                            "fp_choice_b",
+                            "fp_choice_a"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_madCat_002_Talk_Choice",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_002_Talk_Choice",
+                "Name" : "Talk_Choice",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c36927135500f15a908ce19",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_madCat_003_Branch",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_003_Branch",
+                "Name" : "Branch",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_a"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_madCat_100_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_b"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_madCat_200_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_100_MissionSim",
+                "Name" : "Mission Sim",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_crimsonValley_bMars",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "madCat_1a_captureEscort",
+                                "AlphardTradingCompany",
+                                "TortugaPirates",
+                                "5",
+                                "ms_fp_madCat_101_Mission",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_101_Mission",
+                "Name" : "Mission",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_craterField_bMars",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "madCat_2_ambushConvoy",
+                                "AlphardTradingCompany",
+                                "TortugaPirates",
+                                "5",
+                                "ms_fp_madCat_102_A-Mission",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_102_A-Mission",
+                "Name" : "A-Mission",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_crimsonValley_bMars",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "madCat_3_assassinate",
+                                "AlphardTradingCompany",
+                                "TortugaPirates",
+                                "5",
+                                "ms_fp_madCat_103_A-Talk",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_103_A-Talk",
+                "Name" : "A-Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c36927135500f15a908ce20",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_madCat_104_A-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_104_A-Complete",
+                "Name" : "A-Complete",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_madCat_complete",
+                            "flashpoint_madCat_a"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_madCat_105_A-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_madCat",
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [
+                        {
+                            "Scope" : "Company",
+                            "EventID" : "forcedevent_co_suspendedService",
+                            "MinDaysWait" : 14,
+                            "MaxDaysWait" : 21,
+                            "Probability" : 100,
+                            "RetainPilot" : false
+                        }
+					],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_105_A-Reward",
+                "Name" : "A-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Funds",
+                            "value" : "1000000",
+                            "set" : false,
+                            "valueConstant" : null
+                        },
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Reputation.TortugaPirates",
+                            "value" : "-20",
+                            "set" : false,
+                            "valueConstant" : null
+                        },
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Reputation.AlphardTradingCompany",
+                            "value" : "20",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : null,
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_200_MissionSim",
+                "Name" : "Mission Sim",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_craterField_bMars",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "madCat_1b_captureBase",
+                                "AlphardTradingCompany",
+                                "TortugaPirates",
+                                "5",
+                                "ms_fp_madCat_201_Mission",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_201_Mission",
+                "Name" : "Mission",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_MonsFoothills_bMars",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "madCat_2_ambushConvoy",
+                                "AlphardTradingCompany",
+                                "TortugaPirates",
+                                "5",
+                                "ms_fp_madCat_202_B-Mission",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_202_B-Mission",
+                "Name" : "B-Mission",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_craterField_bMars",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "madCat_3_assassinate",
+                                "AlphardTradingCompany",
+                                "TortugaPirates",
+                                "5",
+                                "ms_fp_madCat_203_B-Talk",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_203_B-Talk",
+                "Name" : "B-Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c36927135500f15a908ce20",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_madCat_204_B-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_204_B-Complete",
+                "Name" : "B-Complete",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_madCat_complete",
+                            "flashpoint_madCat_b"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_madCat_205_B-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_madCat",
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [
+                        {
+                            "Scope" : "Company",
+                            "EventID" : "forcedevent_co_suspendedService",
+                            "MinDaysWait" : 14,
+                            "MaxDaysWait" : 21,
+                            "Probability" : 100,
+                            "RetainPilot" : false
+                        }
+					],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_205_B-Reward",
+                "Name" : "B-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Funds",
+                            "value" : "1000000",
+                            "set" : false,
+                            "valueConstant" : null
+                        },
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Reputation.TortugaPirates",
+                            "value" : "20",
+                            "set" : false,
+                            "valueConstant" : null
+                        },
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Reputation.AlphardTradingCompany",
+                            "value" : "-20",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : null,
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_300_Cancel-Complete",
+                "Name" : "Cancel-Complete",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_madCat_301_Cancel-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_madCat_301_Cancel-Reward",
+                "Name" : "Cancel-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        }
+    ]
+}

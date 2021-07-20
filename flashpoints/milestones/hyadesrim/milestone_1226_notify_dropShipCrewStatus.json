@@ -1,0 +1,64 @@
+{
+    "Description" : {
+        "Id" : "milestone_1226_notify_dropShipCrewStatus",
+        "Name" : "sim",
+        "Details" : "pause notification",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1226,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "To keep the appearance that we're still a law-abiding merc company, Captain Arano and Mr. Madeira will stay away from the bridge during contract negotiations, unless their presence is really necessary.",
+					"additionalValues" : [
+						"Crew Status",
+						"castDef_DariusDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

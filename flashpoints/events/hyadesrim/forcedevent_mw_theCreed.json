@@ -1,0 +1,552 @@
+{
+    "Description" : {
+        "Id" : "forcedevent_mw_theCreed",
+        "Name" : "The Call Of The Creed",
+        "Details" : "Annoyed, Darius calls you on the comms to join him on the bridge.\r\n\r\n\"Commander, we need to talk about [[TGT_MW,{TGT_MW.Callsign}]]. I have had several complaints from other company members that {TGT_MW.Gender?Male:he has|Female:she has|NonBinary:they have} been actively trying to convert them to the [[DM.BaseDescriptionDefs[LoreAntithesisCreed],Creed]].\r\n\r\nIf we let this continue, we risk {TGT_MW.Gender?Male:him|Female:her|NonBinary:them} gaining more followers in the company. We could try to fire {TGT_MW.Gender?Male:him|Female:her|NonBinary:them} due to harassment, or we might just send a warning for crew members to avoid involving the company in political issues. \r\n\r\nIn any case, I'm not sure I feel comfortable with [[TGT_MW,{TGT_MW.Callsign}]]'s loyalties at this point.\"",
+        "Icon" : "uixTxrSpot_MechWarriorsTalking.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 10,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "pilot_criminal"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+                    "flashpoint_itCameFromTheRim_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"forcedevent_mw_theCreed"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [
+                    "planet_region_hyadesrim"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : "Tags/PilotTags"
+                },
+                "ExclusionTags" : {
+                    "items" : [
+                        "pilot_criminal"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Scope" : "TertiaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "TertiaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [
+                        "pilot_criminal"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Do nothing.",
+                "Details" : "Don't escalate the situation",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Creed Influence Grows",
+                        "Details" : "You turn to the XO. \"Darius, it's best not to make a big deal out of this. Each crew member is allowed to have political opinions as long as they don't influence their mercenary work. Let's give them the benefit of the doubt.\"\r\n\r\nDarius remains skeptical. \"Aye, aye, Commander.\"\r\n\r\nDuring the rest of the week a number of hot discussions flare onboard the <i>Hysteria</i> until [[TGT_MW,{TGT_MW.Callsign}]] is injured during a fist fight between Creed supporters and other crew members.\r\n\r\nAfterwards, the shipborne agitation subsides as a temporary truce is found between the Periphery and the Inner Sphere camps onboard the DropShip.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Injuries",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_mw_theCreed"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-3",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Tell {TGT_MW.Callsign} to stop.",
+                "Details" : "Discipline MechWarrior",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "[[TGT_MW,{TGT_MW.Callsign}]] agrees to your demands",
+                        "Details" : "\"Your political views are irrelevant to this mercenary company unless they happen to affect us on the battlefield, [[TGT_MW,{TGT_MW.Callsign}]]. Is that understood? Engaging in political activities onboard is strictly forbidden, those are the rules.\" \r\n\r\n [[TGT_MW,{TGT_MW.Callsign}]] remains non-chalant. \"You don't seem to mind all these noble birth Spheroids bossing us around. But I'll do as you say, Commander.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_low"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 21
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_mw_theCreed"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_1",
+                        "Name" : "Fire {TGT_MW.Callsign} for inacceptable mercenary behavior.",
+                        "Details" : "\"I have decided that for ethical and security concerns, your recent viewpoints are unacceptable to us. I'm releasing you from your contract.\"\r\n\r\n\"Of course, Commander, I can see why you would find me unacceptable but you can't deny the message of the Creed?\" {TGT_MW.Callsign}'s eyes sparkle with passion. You get up and signal Darius that the interview is over. \"Zealots are definitely not our line of business, good day and good luck with everything.\"\r\n\r\nAfter {TGT_MW.Callsign} is escorted off-ship by Darius after clearing out this personal belongings, some crew members shout out messages both of support and criticism. After the affair is done, the XO appears red faced. \"I apologize, {TGT_MW.Callsign}'s dismissal should have gone more quietly.\"\r\n\r\nYou consider it a bit. \"Don't worry too much XO. I think there was nothing you could have done to prevent this end.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_mw_theCreed"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal",
+                                    "pilot_morale_low"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 14
+                        },
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal",
+                                    "pilot_morale_low"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 21
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Censor discussions onboard the <i>Hysteria</i>.",
+                "Details" : "Restrictive option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Issue orders to limit public discussions",
+                        "Details" : "\"And so I remind everyone on board this DropShip that they will be required to follow standard military procedure and avoid discussing any political issues while onboard the <i>Hysteria</i> or performing your duties. What you do on your free time off ship should <i>not</i> be any of the company's concerns either.\"\r\n\r\nOver the next days, the morale drops but [[TGT_MW,{TGT_MW.Callsign}]]'s face shows no disappointment. \"I say [[TGT_MW,{TGT_MW.Callsign}]] saw an opportunity when this happened,\" Yang comments. \"You exert your authority as the CO and prove how the Inner Sphere mercenaries care little for the locals' needs.\"\r\n\r\nWhispers pass around and become silent as both of you pass through several crew members on your way to the 'Mech bays. \"There's one silver lining to this.\" Yang finally adds as you wonder. \"It's amazing how quiet the ship has become for a change.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_mw_theCreed"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-3",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_dishonest"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_rebellious"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

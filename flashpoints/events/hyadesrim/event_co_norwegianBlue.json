@@ -1,0 +1,355 @@
+{
+    "Description" : {
+        "Id" : "event_co_norwegianBlue",
+        "Name" : "The Norwegian Blue",
+        "Details" : "Yang looks around the BattleMech bay, \"We seem to have a bird problem. During our last planetary landing some of the local wildlife got inside the DropShip through one of the 'Mech bays' doors. \r\n\r\nI thought we had caught all of them before taking off, but there's this parrot who wasn't detected until after we left, and now it's adapted to zero gravity, making it impossible for the crew to capture.\" \r\n\r\nHe scans all the corners of the immense compartment. \"I'm also starting to suspect some of the crew might be secretely feeding it since it has been able to elude our traps for days. We can't risk it getting inside the 'Mechs and causing all sorts of trouble.\"",
+        "Icon" : "uixTxrSpot_MechBay.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 40,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "company_parrot"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [
+					"planet_region_hyadesrim"
+				],
+                "tagSetSourceFile" : "Tags/PlanetTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "planet_other_taintedair",
+                    "planet_climate_lunar",
+                    "planet_climate_mars"
+                ],
+                "tagSetSourceFile" : "Tags/PlanetTags"
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Say nothing to Darius.",
+                "Details" : "Let the crew decide.",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "parrot is adopted by the crew",
+                        "Details" : "Sumire cames to you with a smile. \"We have finally located Blue's nest and moved it to a better location in the 'Mech bays where it shouldn't disturb Yang anymore\". \r\n\r\n\"She seems to be learning quickly to avoid certain areas, and seems to show curiosity to the crew members who approach her in a friendly manner. Of course, that excludes Yang. She still can be quite noisy, but her vocalizations are still better than most noises while working on 'Mechs.\"\r\n\r\n\"Oh, and did I mention that Blue is nesting? I wonder if she'll actually lay eggs. And if they will hatch...\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_norwegianblue",
+                                    "company_parrot"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "MechTechSkill",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 14
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Tell Yang to ignore the bird.",
+                "Details" : "Nature is calling.",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "parrot is dead",
+                        "Details" : "Yang calls you. \"That parrot is dead\". You look at the burned bird corpse on the deck of the 'Mech Bay while Sumire looks away in horror. \"The damn thing decided to make a nest inside one of the BattleMechs and started chewing on the electric insulation inside to gather material.\"\r\n\r\n\"When the 'Mech's reactor came online the damage short-circuited the system and sent a massive electrical discharge that fried the parrot. We're still cleaning up the mess this bird has caused.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_norwegianblue"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "MechTechSkill",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 7
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Ask for someone with zero-g experience.",
+                "Details" : "[{TGT_MW.Callsign}: Spacer]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "MechWarrior",
+                    "RequirementTags" : {
+                        "items" : [
+							"pilot_spacer"
+                        ],
+                        "tagSetSourceFile" : "Tags/PilotTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "parrot is captured",
+                        "Details" : "\"Close-off all access between both DropShip sections for a period of time while {TGT_MW.Callsign} attempts to capture it in zero gravity.\"\r\n\r\n\"Roger that, Commander.\" Darius grins in anticipation of the bird hunt.\r\n\r\nA few hours later, Yang comes back, unhappy. \"{TGT_MW.Callsign} got it but the damn bird bit me on my good arm while we were moving it from the net to a cage. We'll keep it alive onboard until we get to another world like its natural one and release it back to the wild.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_norwegianblue"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

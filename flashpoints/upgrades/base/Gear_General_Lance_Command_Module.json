@@ -1,0 +1,70 @@
+{
+    "statusEffects" : [
+        {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-LCM-DamageReduction",
+                "Name" : "VALIANT LAMELLOR ARMOR",
+                "Details" : "Unit takes [AMT] less damage.",
+                "Icon" : "uixSvgIcon_special_Equipment"
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.9",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "nature" : "Buff"
+        },
+        {
+            "durationData" :
+            {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" :
+            {
+                "Id" : "StatusEffect-LCM-CalledShotBonus",
+                "Name" : "LANCE COMMAND MODULE",
+                "Details" : "Called Shots executed by this unit are more reliable.",
+                "Icon" : "UixSvgIcon_specialEquip_System"
+            },
+            "statisticData" : 
+            {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "CalledShotBonusMultiplier",
+                "operation" : "Float_Multiply",
+                "modValue" : "1.5",
+                "targetWeaponCategory" : "Ballistic",
+                "modType" : "System.Single"
+            },
+            "nature" : "Buff"
+        }
+    ]
+}

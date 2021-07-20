@@ -1,0 +1,68 @@
+{
+    "Description" : {
+        "Id" : "fp_strangeLand",
+        "Name" : "Stranger In A Strange Land",
+        "Details" : "The Niops Association workers are staging a strike against their totalitarian masters, inspired by Jinxie and the Banshees music. Final part of Jinxie arc.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "strangeLand",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 5,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_paradiseCity_complete",
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_strangeLand_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_niops",
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"NiopsAssociation"
+    ],
+    "TargetFaction" : "Locals",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "MEDIUM",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_strangeLand",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_strangeLand",
+    "UnitDropTonnageHint" : "Light",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "Dissent has lately risen in our worker and technician classes against the scientific leadership, causing several illegal disruptions. We have identified and punished most of the underclass offenders with demotion and/or execution but they are receiving outside support.",
+    "FlashpointDescriberCastDefId" : "castDef_NiopsAssociationLeaderDefault",
+    "Tags" : {
+        "items" : [
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

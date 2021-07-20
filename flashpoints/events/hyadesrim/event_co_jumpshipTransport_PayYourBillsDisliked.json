@@ -1,0 +1,362 @@
+{
+    "Description" : {
+        "Id" : "event_co_jumpshipTransport_PayYourBillsDisliked",
+        "Name" : "Pay Your Bills",
+        "Details" : "As Darius enters the briefing room, he's ripping apart the comms log into little paper pieces.  \"Another message from the [[DM.BaseDescriptionDefs[LoreAlphardTradingCompany],Alphard Trading Company]]!\"\r\n\r\nSumire tries not to panic. \"Are we overdue on JumpShip payments again?\"\r\n\r\nThe XO puts the log in a waste bin. \"If we want to retain full access to all systems of the Hyades Rim, we'll have to advance more C-Bills since the ATC now claims we're an 'increased security risk' due to our past behavior.\"",
+        "Icon" : "uixTxrSpot_DailyBriefing.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 40,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "map_travel_2b",
+                "map_travel_2c"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+            ]
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Reputation.AlphardTradingCompany",
+                "op" : "LessThanOrEqual",
+                "val" : -20,
+                "valueConstant" : "[rep_disliked_max]"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Refuse to pay additional clauses.",
+                "Details" : "the no-money choice",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Lose membership",
+                        "Details" : "With a wave of your hand, you quiet the room. \"We won't support this monopoly extortion anymore.\"\r\n\r\nSumire rolls her eyes. \"We'll just have to make due without regular JumpShip travel to those systems, unless we can find a local employer who provides transport.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "map_travel_2b",
+                                    "map_travel_2c"
+                                ]
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Pay for the increased insurance clauses.",
+                "Details" : "[\u00A2500,000, Disliked by ATC]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "ExclusionTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 500000,
+                            "valueConstant" : "500000"
+                        },
+                        {
+                            "obj" : "Reputation.AlphardTradingCompany",
+                            "op" : "LessThanOrEqual",
+                            "val" : -20,
+                            "valueConstant" : "[rep_disliked_max]"
+                        },
+                        {
+                            "obj" : "Reputation.AlphardTradingCompany",
+                            "op" : "GreaterThanOrEqual",
+                            "val" : -39,
+                            "valueConstant" : "[rep_disliked_min]"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Membership",
+                        "Details" : "With a wave of your hand, you quiet the room. \"I feel like this is a robbery, but it's wild capitalism at its best. We need to pay up.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-500000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Pay for the abusive insurance clauses.",
+                "Details" : "[\u00A21,000,000, Hated by ATC]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "ExclusionTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 1000000,
+                            "valueConstant" : "1000000"
+                        },
+                        {
+                            "obj" : "Reputation.AlphardTradingCompany",
+                            "op" : "LessThanOrEqual",
+                            "val" : -40,
+                            "valueConstant" : "[rep_hated_max]"
+                        },
+                        {
+                            "obj" : "Reputation.AlphardTradingCompany",
+                            "op" : "GreaterThanOrEqual",
+                            "val" : -79,
+                            "valueConstant" : "[rep_hated_min]"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Membership",
+                        "Details" : "With a wave of your hand, you quiet the room. \"While bleeding us dry, the ATC board must be enjoying a sure profit these days.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-1000000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_3",
+                "Name" : "Pay for the extortion insurance clauses.",
+                "Details" : "[\u00A22,500,000, Loathed by ATC]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "ExclusionTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Reputation.AlphardTradingCompany",
+                            "op" : "LessThanOrEqual",
+                            "val" : -80,
+                            "valueConstant" : "[rep_loathed_max]"
+                        },
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 2500000,
+                            "valueConstant" : "2500000"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_3_0",
+                        "Name" : "Membership",
+                        "Details" : "With a wave of your hand, you quiet the room. \"Fine - but I wish they could just invent some easy way to travel in space, like space portals.\" Dr. Murad rolls her eyes.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-2500000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL"
+}

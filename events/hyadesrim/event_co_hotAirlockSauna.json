@@ -1,0 +1,269 @@
+{
+    "Description" : {
+        "Id" : "event_co_hotAirlockSauna",
+        "Name" : "Hot Airlock Sauna",
+        "Details" : "Well, we seem to have a potential crew issue among the crew, according to the latest gossip I just heard over breakfast. Kamea looks at you. Took you a while to get it, Commander. Last night [[TGT_MW,{TGT_MW.Callsign}]] walked into the sauna and caught [[TGT_SCN,{TGT_SCN.Callsign}]] and [[TGT_TRT,{TGT_TRT.Callsign}]] in the act, while a couple of weeks ago {TGT_MW.FirstName} and {TGT_SCN.FirstName} were seen spending a lot of time together. Things got heated but eventually Yang and Murad were able to defuse the situation and get everyone back to their quarters. But not before {TGT_MW.FirstName} threatened to give a hot airlock sauna to both {TGT_SCN.FirstName} and {TGT_TRT.FirstName}. Yup, I know how that ends, I have seen a spacer couple that ended their relationship that way, we need to intervene before the situation escalates.",
+        "Icon" : "uixTxrSpot_LowGPool.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 100,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+				"hysteria_sauna"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "event_co_hotAirlockSauna"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Get rid of troublemakers.",
+                "Details" : "One option",
+                "Icon" : ""
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Fire all three MechWarriors for breach of contract.",
+                        "Details" : "\"Look, I'm willing to pretend that I never saw this recording. We're all adults on this ship. To be honest, I'd rather have 'naked swim night' than clean up blood and teeth after another fight. If this is how they want to blow off steam, so be it. Outside of maybe posting a sign that says 'No Running While Wet', let's just erase it and get on with real business.\"\r\n\r\nYang and Sumire put on their serious faces and everybody nods. Darius hits a button. \"All done.\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_hotAirlockSauna"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Put the matter to the whole crew.",
+                "Details" : "Other option",
+                "Icon" : ""
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Morale boost",
+                        "Details" : "Your voice echoes through the <i>Argo</i>. \"Attention, all crew and MechWarriors, this is your Commander. The leadership staff is very excited that the Low-G pool is getting used so frequently. At all hours, even. We expected you would use the pool to keep in shape during system travel, but it's also been a boon to morale.\"\r\n\r\n\"To that end, I wish to point out that there is a camera in the hallway just outside the door to the pool. Please wear appropriate swimwear at all times.\"\r\n\r\nEchoing down the hallways and through the vent shafts comes a single mortified voice. \"Oh my God!\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 25,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_hotAirlockSauna"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_1",
+                        "Name" : "Mechwarrior decides to leave.",
+                        "Details" : "Your voice echoes through the <i>Argo</i>. \"Attention, all crew and MechWarriors, this is your Commander. The leadership staff is very excited that the Low-G pool is getting used so frequently. At all hours, even. We expected you would use the pool to keep in shape during system travel, but it's also been a boon to morale.\"\r\n\r\n\"To that end, I wish to point out that there is a camera in the hallway just outside the door to the pool. Please wear appropriate swimwear at all times.\"\r\n\r\nEchoing down the hallways and through the vent shafts comes a single mortified voice. \"Oh my God!\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 25,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_hotAirlockSauna"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_2",
+                        "Name" : "Both MechWarriors make up.",
+                        "Details" : "Your voice echoes through the <i>Argo</i>. \"Attention, all crew and MechWarriors, this is your Commander. The leadership staff is very excited that the Low-G pool is getting used so frequently. At all hours, even. We expected you would use the pool to keep in shape during system travel, but it's also been a boon to morale.\"\r\n\r\n\"To that end, I wish to point out that there is a camera in the hallway just outside the door to the pool. Please wear appropriate swimwear at all times.\"\r\n\r\nEchoing down the hallways and through the vent shafts comes a single mortified voice. \"Oh my God!\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 25,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_hotAirlockSauna"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_3",
+                        "Name" : "Mechwarrior decides to leave.",
+                        "Details" : "Your voice echoes through the <i>Argo</i>. \"Attention, all crew and MechWarriors, this is your Commander. The leadership staff is very excited that the Low-G pool is getting used so frequently. At all hours, even. We expected you would use the pool to keep in shape during system travel, but it's also been a boon to morale.\"\r\n\r\n\"To that end, I wish to point out that there is a camera in the hallway just outside the door to the pool. Please wear appropriate swimwear at all times.\"\r\n\r\nEchoing down the hallways and through the vent shafts comes a single mortified voice. \"Oh my God!\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 25,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_hotAirlockSauna"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL"
+}

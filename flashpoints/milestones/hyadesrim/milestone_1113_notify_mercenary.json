@@ -1,0 +1,64 @@
+{
+    "Description" : {
+        "Id" : "milestone_1113_notify_mercenary",
+        "Name" : "sim",
+        "Details" : "pause notification",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1113,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Our top priority right now needs to be finding work, so we can raise cash. None of the contracts here are good, but we can't really expect much considering the potential employers out here.",
+					"additionalValues" : [
+						"Mercenary Contracts",
+						"castDef_DariusDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

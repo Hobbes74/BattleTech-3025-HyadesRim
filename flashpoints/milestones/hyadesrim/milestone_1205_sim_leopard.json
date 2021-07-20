@@ -1,0 +1,172 @@
+{
+    "Description" : {
+        "Id" : "milestone_1205_sim_leopard",
+        "Name" : "sim",
+        "Details" : "Sim game phase",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1205,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+			    "items" : [
+					"SYSTEM_UseEvents",
+					"SYSTEM_UseFlashpoints",
+					"company_ie_contracts",
+					"company_story_flashpoints",
+					"map_travel_2c",
+					"map_travel_2a",
+					"map_travel_2b",
+					"company_leopard_loan_good",
+					"oc03_post_intro_kamea"
+				],
+                "tagSetSourceFile" : ""
+			},
+            "RemovedTags" : {
+				"items" : [
+					"company_leopard_loan_fair",
+					"AARCompleteNotificationsDisabled"	
+				],
+                "tagSetSourceFile" : ""
+			},
+            "Stats" : [
+				{
+					"typeString" : "System.Int32",
+					"name" : "Reputation.InterstellarExpeditions",
+					"value" : "20",
+					"set" : false,
+					"valueConstant" : null
+				},
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1210,
+					"set" : true,
+                    "valueConstant" : ""
+                },
+                {
+                    "typeString" : "System.Single",
+                    "name" : "Difficulty",
+                    "value" : 3,
+					"set" : true,
+                    "valueConstant" : ""
+                },
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "MissionsComplete",
+                    "value" : 0,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+			],
+            "Actions" : [
+                {
+                    "Type" : "System_SetContractScope",
+                    "value" : "EARLY_CAMPAIGN",
+                    "valueConstant" : null
+                },
+                {
+                    "Type" : "System_SetTargetBreadcrumbSystem",
+                    "value" : "starsystemdef_Perdition",
+                    "valueConstant" : null
+                },
+				{
+					"Type" : "System_ResetContracts",
+					"value" : "starsystemdef_Lastpost",
+                    "valueConstant" : null
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Darius",
+						"Sumire",
+						"Farah",
+						"Yang"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Alexander",
+						"Kamea"
+					]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Diik",
+					"additionalValues" : [ "starsystemdef_Diik_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Gaul",
+					"additionalValues" : [ "starsystemdef_Gaul_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Lastpost",
+					"additionalValues" : [ "starsystemdef_Lastpost_Career" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Oscar",
+					"additionalValues" : [ "starsystemdef_Oscar_Career" ]
+				}
+			],
+            "ForceEvents" : [
+				{
+					"Scope" : "Company",
+					"EventID" : "forcedevent_leopard_mechtechExpenses",
+					"MinDaysWait" : 3,
+					"MaxDaysWait" : 6,
+					"Probability" : 100
+				},
+				{
+					"Scope" : "MechWarrior",
+					"EventID" : "forcedevent_leopard_lastCup",
+					"MinDaysWait" : 24,
+					"MaxDaysWait" : 48,
+					"Probability" : 100
+				},
+				{
+					"Scope" : "Company",
+					"EventID" : "forcedevent_leopard_medicalExpenses",
+					"MinDaysWait" : 15,
+					"MaxDaysWait" : 45,
+					"Probability" : 100
+				}
+
+			],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

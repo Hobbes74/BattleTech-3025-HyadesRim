@@ -1,0 +1,66 @@
+{
+    "Description" : {
+        "Cost" : 3460000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Mitchell",
+        "Model" : "Domman Echo",
+        "UIName" : "Comms System + + + +",
+        "Id" : "Gear_Cockpit_Domman_Echo",
+        "Name" : "Domman Echo Comms System",
+        "Details" : "The Domman Echo suite integrates both communication and tracking abilities to increase a lance's critical chance.",
+        "Icon" : "uixSvgIcon_equipment_Comms"
+    },
+    "BonusValueA" : "+ Critical (All) ",
+    "BonusValueB" : "",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "NotSet",
+    "PrefabIdentifier" : "",
+    "InventorySize" : 1,
+    "Tonnage" : 0,
+    "AllowedLocations" : "Head",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        {
+            "Description" : {
+                "Id" : "StatusEffect-Victoria-Aura1",
+                "Name" : "NOTHING TO LOSE",
+                "Details" : "This unit fights with an unstoppable drive, having a much higher Critical Hit chance.",
+                "Icon" : "uixSvgIcon_statusCrit"
+            },
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : -1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "AllLanceMates",
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : false,
+                "hideApplicationFloatie" : false
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "statisticData" : {
+                "statName" : "CriticalChanceMultiplier",
+                "operation" : "Float_Add",
+                "modValue" : "1.50",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_lostech",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

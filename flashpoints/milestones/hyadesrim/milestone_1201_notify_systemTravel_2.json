@@ -1,0 +1,64 @@
+{
+    "Description" : {
+        "Id" : "milestone_1201_notify_systemTravel_2",
+        "Name" : "sim",
+        "Details" : "pause notification",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1201,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Lord Madeira has solved our disputes with the Alphard Trading Company and cleared our status with the MRB, using House Arano's stashed funds. But as part of our agreement with IE, our travel access is limited to the Hyades Rim.",
+					"additionalValues" : [
+						"Travel",
+						"castDef_SumireDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}
