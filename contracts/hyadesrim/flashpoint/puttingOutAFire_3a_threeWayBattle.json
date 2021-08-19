@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Captain Arano and Bob have reached the ComStar compound but they report a long line ahead with the local acolyte at the reception attributing it to unexpected overbooking, while others in the queue are loudly complaining of constant 'back dooraccess' by local celebrities to skip the line.",
-    "longDescription" : "While they send the message we'll still keep an eye for the DEST strike team - after that last fight it's clear that Bob has fled the <i>Frocked Flamingo</i> and that we've switched sides.",
+    "shortDescription" : "Captain Arano and Bob have reached the ComStar compound but they report a long line ahead with the local acolyte at the reception attributing it to unexpected overbooking, while others in the queue are loudly complaining of constant 'back door access' by local celebrities to skip the line.",
+    "longDescription" : "While they send the message we'll still keep an eye for the DEST strike team - after that last fight it's clear that Bob has fled the <i>Frocked Flamingo</i> and that we've switched sides so they'll be onto us.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -1249,7 +1249,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "8c5cfff4-066b-44be-9a28-c462461a757a"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Hostile to All Chunk Group"
             ],
@@ -1271,7 +1271,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "2cf7c676-93a5-416c-9f27-58f4d9493aff"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Target Additional Dropped Forces Chunk Group",
                 "Enemy Ally Additional Forces Chunk Group"
@@ -1632,6 +1632,22 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
+                    "words" : "Commander, Bob has sent the HPG message to Luthien but he says that we'll still need to take on the DEST strike team when they arrive. What is this damned static?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaPirate",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
                     "words" : "<i>A silver 'Mech as your glittering prize. Glittering prize.</i>",
                     "wordsColor" : {
                         "r" : 1,
@@ -1696,22 +1712,6 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander, Bob has sent the HPG message to Luthien but he says that we'll still need to take on the DEST strike team when they arrive. What is this damned music?",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
                     "words" : "Wait, I know this song. Sumire, this is 'Frazzled' isn't it?",
                     "wordsColor" : {
                         "r" : 1,
@@ -1728,7 +1728,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander, captain, I've got several 'Mechs powering up at the location of the song being transmitted...",
+                    "words" : "Commander, captain, I've got several 'Mechs powering up ahead... the DEST commandos are here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1760,23 +1760,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "What? Who are you?",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Darius, that's Jinxie. The Banshees are here!",
+                    "words" : "Darius, that's Jinxie. The Banshees must be nearby!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1867,7 +1851,151 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "New contacts detected, it must be the DEST team after us and Bob.",
+                    "words" : "<i>The stars that sing... and the 'Mechs that shrink.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sumire, can you please turn off your music, <i>again</i>? I understand it helps you focus while piloting but military protocol must be properly followed while in battle.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>In the face of deception... the heat sink pumps blood to your eyes</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Hey, who changed the sauna music? Not again... <sigh>.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>A silver 'Mech as your glittering prize. Glittering prize.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, Bob has sent the HPG message to Luthien... what is this damned music?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaPirate",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Wait, I know this song. Sumire, this is 'Frazzled' isn't it?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Whatever it is, it doesn't seen to be affecting the ISF.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaPirate",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>{COMPANY.CompanyName}, neon frazzle!</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JinxieDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What? Who are you?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1875,6 +2003,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Darius, that's Jinxie. The Banshees are here!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2147,7 +2291,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER The Hostile to All {TEAM_HOST.FactionDef.Demonym} lance has arrived! This is the Primary Version.",
+                    "words" : "<i>Playing Tikonov roulette with fate... the Dragon flies.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, the music is originating from these unknown incoming 'Mechs!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2163,17 +2323,33 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to the contract. If we want to get paid we need to take them out.",
+                    "words" : "They are not unknowns, we have seen them before. It's definitely Jinxie and the Banshees.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And they ended up tracking us the moment we stepped on their turf. You'll need to take them all down, Commander, along with the ISF.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaPirate",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -2188,7 +2364,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "And here's the ISF, no doubt extra pissed at us for breaking the contract.",
+                    "words" : "Oh... it's the <i>Banshees</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2204,7 +2380,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Let's hope the captain and Bob have finally sent that message, at least we might avoid reinforcements.",
+                    "words" : "Aren't we fighting them already?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2220,17 +2396,33 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Make no mistake, these are DEST commandos... they won't need reinforcements!",
+                    "words" : "Yes... no, these <i>Wolverines</i> must be piloted by the back-up crew. These are <i>Jinxie and the Banshees</i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" :  "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>A silver 'Mech as your glittering prize. Glittering prize.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JinxieDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -3918,7 +4110,7 @@
                     "EncounterObjectGuid" : "fddf5e8b-07c6-492b-861e-2d9c2bde80ee"
                 },
                 "name" : "DestroyLanceSpawner_Tarqet_AdditionalForces_Primary (Optional)",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -3943,10 +4135,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "37634f3f-6855-4572-b526-1fa66e770831"
                         },
-                        "customUnitName" : "Jinxie",
+                        "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_banshee_BNC-TO",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3959,7 +4151,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d9_outrider",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3976,10 +4168,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c2f52419-e1ba-43db-bb53-f2d21eba4f8c"
                         },
-                        "customUnitName" : "Zombie",
+                        "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_banshee_BNC-TW",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3992,7 +4184,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d8_brawler",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -4009,10 +4201,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "3ae6c2d2-470c-4c61-866a-1e2ff3cfb918"
                         },
-                        "customUnitName" : "Billie",
+                        "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_banshee_BNC-TF",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -4025,7 +4217,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d8_flanker",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -4042,10 +4234,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "39045acd-b014-45d3-8bdd-6c0f3a91cb99"
                         },
-                        "customUnitName" : "Jamming",
+                        "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_banshee_BNC-TJ",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -4058,7 +4250,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d8_gladiator",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -5263,7 +5455,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 2,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
@@ -5275,7 +5467,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_wolverine_WVR-TK",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5308,7 +5500,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_wolverine_WVR-TQ",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5341,7 +5533,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_wolverine_WVR-TG",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5374,7 +5566,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_wolverine_WVR-TP",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5407,7 +5599,7 @@
                     "EncounterObjectGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059"
                 },
                 "name" : "Lance_HostileAll_Secondary",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_dynamic_difficulty",
@@ -5426,7 +5618,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
@@ -5435,10 +5627,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d197294c-d865-4ccb-a74f-cd87234ccdb0"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Jinxie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TO",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5451,7 +5643,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d9_outrider",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -5468,10 +5660,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c726959b-b848-41ff-9cf6-13b23460cbc4"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Zombie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TW",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5484,7 +5676,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_brawler",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -5501,10 +5693,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "b12b7fda-63ed-4317-88ac-2c83a28d056e"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Billie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TF",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5517,7 +5709,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_flanker",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -5534,10 +5726,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "69c427bd-caf3-4ae7-b22b-1ce86b74f946"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Jamming",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TJ",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5550,7 +5742,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_gladiator",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

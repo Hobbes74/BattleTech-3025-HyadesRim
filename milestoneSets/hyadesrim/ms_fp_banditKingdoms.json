@@ -6,25 +6,14 @@
                 "Id" : "ms_fp_banditKingdoms_001_Start",
                 "Name" : "Start",
                 "Details" : "flashpoint",
-                "Icon" : null
+                "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
                 {
                     "Scope" : "Flashpoint",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
+                    "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -36,28 +25,17 @@
                             "fp_choice_c",
                             "fp_choice_cancel"
                         ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
-                    "Actions" : null,
-                    "ForceEvents" : null,
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
                 {
                     "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
+                    "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -66,16 +44,16 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
+                    "Stats" : [],
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_banditKingdoms_100_MissionSim",
+                            "value" : "ms_fp_banditKingdoms_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
                     ],
-                    "ForceEvents" : null,
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -86,28 +64,17 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_banditKingdoms_100_MissionSim",
-                "Name" : "MissionSim",
-                "Details" : "The 1st Mission.",
-                "Icon" : null
+                "Id" : "ms_fp_banditKingdoms_002_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
                 {
                     "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
+                    "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -116,21 +83,128 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef3",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_003_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_003_MissionSim",
+                "Name" : "Mission Sim",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_crimsonValley_bMars",
+                            "value" : "mapGeneral_sandyMesa_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_fp_banditKingdoms_1_destroyBase",
-                                "TaurianConcordat",
-                                "TortugaPirates",
-                                "2",
-                                "ms_fp_banditKingdoms_101_Mission",
+                                "banditKingdoms_1_captureBase",
+                                "ShervanisCaliphate",
+                                "BlackAngels",
+                                "5",
+                                "ms_fp_banditKingdoms_004_MissionSim",
                                 null,
+                                null,
+                                null
+                            ]
+                        },
+						{
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_004_MissionSim",
+                "Name" : "Mission Sim",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_paupersCanyon_aWst",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "banditKingdoms_2_defendBase",
+                                "ShervanisCaliphate",
+                                "BlackAngels",
+                                "5",
+                                "ms_fp_banditKingdoms_005_TalkChoice",
                                 null,
                                 null
                             ]
@@ -144,7 +218,7 @@
                             ]
                         }
                     ],
-                    "ForceEvents" : null,
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -155,28 +229,17 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_banditKingdoms_101_Mission",
-                "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
-                "Icon" : null
+                "Id" : "ms_fp_banditKingdoms_005_TalkChoice",
+                "Name" : "Talk Choice",
+                "Details" : "flashpoint",
+                "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
                 {
                     "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
+                    "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -185,149 +248,27 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_craterField_bMars",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "c_fp_banditKingdoms_2_ambushConvoy",
-                                "TaurianConcordat",
-                                "TortugaPirates",
-                                "3",
-                                "ms_fp_banditKingdoms_102-Mission",
-                                null,
-                                null,
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_banditKingdoms_102-Mission",
-                "Name" : "Mission",
-                "Details" : "The 3rd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_craterField_bMars",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "c_fp_banditKingdoms_3_assassinate",
-                                "TaurianConcordat",
-                                "TortugaPirates",
-                                "4",
-                                "ms_banditKingdoms_201-Talk",
-                                null,
-                                null,
-                                null,
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_banditKingdoms_201-Talk",
-                "Name" : "Talk",
-                "Details" : "Closing Conversation.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
+                    "Stats" : [],
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c8f27b2a3cbeb4c8817462b",
+                            "value" : "9cb2dc79abaf43e08d02aef4",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "Bad Kitten",
-                                "High Orbit",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_banditKingdoms_202-Complete",
+                            "value" : "ms_fp_banditKingdoms_006_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
                     ],
-                    "ForceEvents" : null,
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -338,10 +279,10 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_banditKingdoms_202-Complete",
-                "Name" : "Complete",
-                "Details" : "Flashpoint completion.",
-                "Icon" : null
+                "Id" : "ms_fp_banditKingdoms_006_Branch",
+                "Name" : "Branch",
+                "Details" : "flashpoint",
+                "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
@@ -349,9 +290,11 @@
                 {
                     "Scope" : "Company",
                     "Requirements" : {
-                        "Scope" : "Company",
+                        "Scope" : "Flashpoint",
                         "RequirementTags" : {
-                            "items" : [],
+                            "items" : [
+                                "fp_choice_a"
+                            ],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -361,45 +304,34 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                            "flashpoint_banditKingdoms_complete"
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
+                    "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_banditKingdoms_203-Reward",
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_100_A-Mission",
                             "valueConstant" : null,
-                            "additionalValues" : [
-                                "itemCollection_loot_fp_reward_banditKingdoms",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null
-                            ]
+                            "additionalValues" : null
                         }
                     ],
-                    "ForceEvents" : null,
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
                 {
                     "Scope" : "Company",
                     "Requirements" : {
-                        "Scope" : "Company",
+                        "Scope" : "Flashpoint",
                         "RequirementTags" : {
-                            "items" : [],
+                            "items" : [
+                                "fp_choice_b"
+                            ],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -416,11 +348,54 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_200_B-Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
                     ],
-                    "Actions" : null,
-                    "ForceEvents" : null,
-                    "TemporaryResult" : true,
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_c"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_300_C-Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
             ],
@@ -430,9 +405,156 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_banditKingdoms_203-Reward",
+                "Id" : "ms_fp_banditKingdoms_100_A-Mission",
+                "Name" : "A-Mission",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_desertDam_aDes",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "banditKingdoms_3a_assassinate",
+                                "BlackAngels",
+                                "ShervanisCaliphate",
+                                "5",
+                                "ms_fp_banditKingdoms_101_A-Talk",
+                                null,
+                                null
+                            ]
+                        },
+						{
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_101_A-Talk",
+                "Name" : "A-Talk",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef5",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_102_A-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_102_A-Complete",
+                "Name" : "A-Complete",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_banditKingdoms_complete",
+                            "flashpoint_banditKingdoms_a"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_banditKingdoms_103_A-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_103_A-Reward",
                 "Name" : "A-Reward",
-                "Details" : "A Branch rewards",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -440,54 +562,52 @@
             "Results" : [
                 {
                     "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
+                    "Requirements" : null,
                     "AddedTags" : {
-                        "items" : [
-                        ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "items" : [],
+                        "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "items" : [],
+                        "tagSetSourceFile" : ""
                     },
                     "Stats" : [
                         {
                             "typeString" : "System.Int32",
                             "name" : "Funds",
-                            "value" : "2000000",
-                            "set" : false,
-                            "valueConstant" : null
-                        },
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Reputation.TaurianConcordat",
-                            "value" : "-30",
+                            "value" : "1000000",
                             "set" : false,
                             "valueConstant" : null
                         }
                     ],
-                    "ForceEvents" : null,
+                    "Actions" : [],
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                },
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_200_B-Mission",
+                "Name" : "B-Mission",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
                 {
                     "Scope" : "Company",
                     "Requirements" : {
-                        "Scope" : "Company",
+                        "Scope" : "Flashpoint",
                         "RequirementTags" : {
-                            "items" : [],
+                            "items" : [
+                                "fp_choice_b"
+                            ],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -497,19 +617,365 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "items" : [],
+                        "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
                         "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
-                    "Actions" : null,
-                    "ForceEvents" : null,
-                    "TemporaryResult" : true,
-                    "ResultDuration" : 666
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_barterTown_aDes",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "banditKingdoms_3b_simpleBattle",
+                                "BlackAngels",
+                                "ShervanisCaliphate",
+                                "5",
+                                "ms_fp_banditKingdoms_201_B-Talk",
+                                null,
+                                null
+                            ]
+                        },
+						{
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_201_B-Talk",
+                "Name" : "B-Talk",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef5",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_202_B-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_202_B-Complete",
+                "Name" : "B-Complete",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_banditKingdoms_complete",
+                            "flashpoint_banditKingdoms_b"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_banditKingdoms_203_B-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_203_B-Reward",
+                "Name" : "B-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Funds",
+                            "value" : "1000000",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_300_C-Mission",
+                "Name" : "C-Mission",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_c"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_grandeRiver_aWst",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "banditKingdoms_3c_threeWayBattle",
+                                "SelfEmployed",
+                                "ShervanisCaliphate",
+                                "5",
+                                "ms_fp_banditKingdoms_301_C-Talk",
+                                null,
+                                "BlackAngels"
+                            ]
+                        },
+						{
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_301_C-Talk",
+                "Name" : "C-Talk",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef5",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_302_C-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_302_C-Complete",
+                "Name" : "C-Complete",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_banditKingdoms_complete",
+                            "flashpoint_banditKingdoms_c"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_banditKingdoms_303_C-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_303_C-Reward",
+                "Name" : "C-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,

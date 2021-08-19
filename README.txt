@@ -11,9 +11,8 @@ Requires all DLCs. The Hyades Rim is an expansion for the Battletech videogame f
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if link/HPG expires)
 
 Features
-* A new BattleTech story and Campaign mode, consisting of +20 planned new story missions and flashpoints, based on an alternative history of the Arano Restoration where Kamea is exiled rather than presumed killed and the company instead enters the employ of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita, while travelling and exploring the new star map.
-* Setting and technology levels follow the 3024 starting date, the end of the Third Succession War as the original game did until the release of the Heavy Metal DLC.
-* Fourteen original story missions and flashpoints released for the new campaign: You On The Run, Exodus, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre and Putting Out A Fire. More are planned for parts 3 and 4 of the new campaign.
+* A new BattleTech story and Campaign mode, consisting of +20 planned new story missions and flashpoints, based on an alternative history of the Arano Restoration where Kamea is exiled rather than presumed killed and the company instead enters the employ of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita, while travelling and exploring the new star map. 28 planned new story missions and flashpoints, based on an alternative history of the Arano Restoration where Kamea is exiled rather than presumed killed and the company instead enters the employ of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita.
+* Fourteen original story missions and flashpoints released (campaign only): You On The Run, Exodus, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre and Putting Out A Fire. 14 more are planned for parts 3 and 4 of the new campaign.
 * New story includes so far a total of 46 new contracts, 70 new crew conversations and 169 descriptions, and is divided into four parts. 
 * The vanilla FPs appear in the new Campaign as independent mini-campaigns, except for the Black Widow one which is removed (but still appears on Career mode).
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
@@ -27,15 +26,16 @@ Features
 * 77 canon variants of the vanilla 'Mechs, nearly all of the 3025 era and SLDF variants.
 * 24 new turrets, several equipped with artillery pieces.
 * 33 new BattleMech upgrades, all based on the 'Mech quirks of the Heavy Metal DLC.
-* Opfor pilots levels can vary, being possible to encounter pilots with a different skill levels than the contract's difficulty; 
+* Opfor pilots levels can vary, being possible to encounter pilots with a different skill levels than the contract's difficulty.
 * Pilot backgrounds now also include Kurita Noble, Steiner Noble, Marian, Circinus, Lothian, Illyrian and Deep Periphery.
 * More terrain variety - in the original game each contract (like One Man's Art) can only appear at a certain system difficulty. Those limitations have been removed, allowing for a greater terrain variety during contracts. 
 * Career mode has nearly everything from above available, except for the story missions/flashpoints.
 
 Balance and Story Changes
 * During the campaign you'll lose several pilots as a result of non-combat events. This high crew turnover is done for both storytelling and balance proposes, since you start as a third rate mercenary company operating at the end of civilized space and will be stuck to the Leopard until the last part of the campaign, which will last longer than the original one.
-* The new campaign flashpoints all have tonnage limits and usually have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations.
+* The new campaign flashpoints all have tonnage limits and many have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations. Many also have choices that can mitigate the number of consecutive deployments or allow you to use third-party 'Mechs.
 * The original flashpoints of the five Inner Sphere factions are now played sequentially, starting with the lowest difficulty FP.
+* On campaign, JumpShip access to the Inner Sphere is limited, and depends on you unlocking letters of marque from the Successor Lords (which also unlock their faction FPs).
 * The special equipment of the Marauder has been nerfed, with the Called Shot ability reduced from a 33% maximum to 25%, and the 10% damage reduction only applying to the Marauder, not the whole lance.
 * Stores/Black Markets have been changed to restore the appearance of LosTech to before the HM DLC was released.
 
@@ -63,10 +63,11 @@ Recommended Mods
 Warning: Use any other mods at your own risk - I only use these two mods together with the Hyades Rim and I do not provide support for third party mod integration! Check the other-mods channel of the Discord server for more information on compatibility with other mods.
 
 Future Plans
-* Finish the new Campaign with new contracts, missions and flashpoints (in progress).
+* Finish the new Campaign with new contracts, missions and flashpoints - release date Winter 2021.
 
 Credits
 * Additional writing: Camicon_Dachass (Liao systems);
+* Additional character artwork: DarkKhaos;
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75) and Ministry Of Bob (Hantta, SanchoPanzer and unclecid);
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer;
 * Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid;
@@ -76,6 +77,7 @@ Credits
 * Inner Sphere Map for the coordinates of most canon systems;
 * MegaMek for the coordinates of several connecting systems;
 * Banner images taken from the sourcebook The Periphery, 2nd Edition;
+* Flashpoint title images: original game videos;
 * Corporation logos taken and adapted from Sarna.net;
 * Sarna.net for being an amazing resource for all things BattleTech related;
 * Mordel.net for the stats used in the canon 'Mech variants;

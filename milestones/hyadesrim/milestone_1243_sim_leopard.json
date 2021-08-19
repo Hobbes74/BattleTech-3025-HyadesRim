@@ -13,12 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [
-					"flashpoint_aCountryTooFar_complete",
-					"flashpoint_banditKingdoms_complete",
-					"flashpoint_kissThemForMe_complete",
-					"flashpoint_paradiseCity_complete"
-				],
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -42,10 +37,16 @@
             "AddedTags" : {},
             "RemovedTags" : {},
             "Stats" : [
+				{
+					"typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+				},
                 {
                     "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : 1250,
+                    "name" : "MissionsComplete",
+                    "value" : 0,
 					"set" : true,
                     "valueConstant" : ""
                 }
@@ -53,15 +54,26 @@
             "Actions" : [	
 				{
 					"Type" : "System_SimGameCharacterVisible",
-					"value" : true,
+					"value" : false,
 					"additionalValues" : [
 						"Kamea",
-						"Alexander",
+						"Alexander"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
 						"Farah",
 						"Yang",
 						"Darius",
 						"Sumire"
 					]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Weldry",
+					"additionalValues" : [ "starsystemdef_Weldry_Flipped" ]
 				}
 			],
             "ForceEvents" : [],

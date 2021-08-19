@@ -70,7 +70,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_100_MissionSim",
+                            "value" : "ms_fp_nagayanValley_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -86,7 +86,79 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_100_MissionSim",
+                "Id" : "ms_fp_nagayanValley_002_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "true",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c3ad7332054ec34aa248176",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_nagayanValley_003_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_nagayanValley_003_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -129,7 +201,7 @@
                                 "TaurianConcordat",
                                 "TortugaPirates",
                                 "2",
-                                "ms_fp_nagayanValley_101_Mission",
+                                "ms_fp_nagayanValley_004_Talk",
                                 null,
                                 null,
                                 null
@@ -155,7 +227,76 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_101_Mission",
+                "Id" : "ms_fp_nagayanValley_004_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "false",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Yang"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c3ad7332054ec34aa248177",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_nagayanValley_005_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_nagayanValley_005_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -198,7 +339,7 @@
                                 "TaurianConcordat",
                                 "TortugaPirates",
                                 "3",
-                                "ms_fp_nagayanValley_102-Mission",
+                                "ms_fp_nagayanValley_006_Mission",
                                 null,
                                 null,
                                 null
@@ -216,7 +357,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_102-Mission",
+                "Id" : "ms_fp_nagayanValley_006_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -259,10 +400,10 @@
                                 "TaurianConcordat",
                                 "TortugaPirates",
                                 "4",
-                                "ms_nagayanValley_201-Talk",
+                                "ms_fp_nagayanValley_007_Talk",
                                 null,
                                 null,
-                                null,
+                                null
                             ]
                         }
                     ],
@@ -277,7 +418,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_201-Talk",
+                "Id" : "ms_fp_nagayanValley_007_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -311,18 +452,18 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c8f27b2a3cbeb4c8817462b",
+                            "value" : "9c3ad7332054ec34aa248178",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "Bad Kitten",
-                                "High Orbit",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_202-Complete",
+                            "value" : "ms_fp_nagayanValley_008_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -338,7 +479,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_202-Complete",
+                "Id" : "ms_fp_nagayanValley_008_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -374,7 +515,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_nagayanValley_203-Reward",
+                            "value" : "ms_fp_nagayanValley_009_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_nagayanValley",
@@ -416,8 +557,7 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
-                    ],
+                    "Stats" : [],
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
@@ -430,7 +570,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_203-Reward",
+                "Id" : "ms_fp_nagayanValley_009_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "A Branch rewards",
                 "Icon" : null
@@ -453,31 +593,23 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [
                         {
                             "typeString" : "System.Int32",
                             "name" : "Funds",
-                            "value" : "2000000",
-                            "set" : false,
-                            "valueConstant" : null
-                        },
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Reputation.TaurianConcordat",
-                            "value" : "-30",
+                            "value" : "1000000",
                             "set" : false,
                             "valueConstant" : null
                         }
                     ],
+                    "Actions" : [],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -497,8 +629,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
@@ -508,8 +639,8 @@
                     "Stats" : null,
                     "Actions" : null,
                     "ForceEvents" : null,
-                    "TemporaryResult" : true,
-                    "ResultDuration" : 666
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,

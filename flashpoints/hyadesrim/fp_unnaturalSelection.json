@@ -2,8 +2,8 @@
     "Description" : {
         "Id" : "fp_unnaturalSelection",
         "Name" : "Unnatural Selection",
-        "Details" : "A quest for forbidden knowledge ends. Part two of Redoubt arc.",
-        "Icon" : "uixTxrSpot_fp_HyadesRim.png"
+        "Details" : "Cat people ahoy!",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_7.png"
     },
     "Weight" : 10,
     "InternalName" : "unnaturalSelection",
@@ -14,15 +14,13 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"flashpoint_nagayanValley_complete",
+					"flashpoint_strangeLand_complete",
 					"company_story_flashpoints"
 				],
                 "tagSetSourceFile" : "Tags/CompanyTags"
             },
             "ExclusionTags" : {
-                "items" : [
-					"flashpoint_unnaturalSelection_complete"
-				],
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "RequirementComparisons" : []
@@ -32,7 +30,7 @@
         "Scope" : "StarSystem",
         "RequirementTags" : {
             "items" : [
-				"planet_name_frobisher"
+				"planet_name_zelmagiii"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
@@ -43,26 +41,24 @@
         "RequirementComparisons" : []
     },
     "PotentialEmployers" : [
-		"SelfEmployed_Sumire"
+		"UncleChandy"
     ],
-    "TargetFaction" : "DeepRaiders",
-    "AllowRefitTime" : false,
+    "TargetFaction" : "MarianPirates",
+    "AllowRefitTime" : true,
     "FlashpointLength" : "MEDIUM",
     "Repeatable" : true,
     "MilestoneSetID" : "ms_fp_unnaturalSelection",
+    "UnitDropTonnageHint" : "Light",
+    "LanceDropTonnageHint" : "Light",
     "UseAvailableTimeoutOverride" : false,
     "AvailableTimeout" : 0,
     "UseInProgressTimeoutOverride" : false,
     "InProgressTimeout" : 0,
     "RewardCollectionID" : "itemCollection_loot_fp_reward_unnaturalSelection",
-    "UnitDropTonnageHint" : "Light",
-    "LanceDropTonnageHint" : "None",
     "FlashpointShortDescription" : "###########################################################################################################. ###########################################################################################################.",
-    "FlashpointDescriberCastDefId" : "castDef_SumireDefault",
+    "FlashpointDescriberCastDefId" : "castDef_UncleChandyDefault",
     "Tags" : {
-        "items" : [
-			"BLACKLISTED"
-        ],
+        "items" : [],
         "tagSetSourceFile" : "tags/FlashpointTags"
     }
 }

@@ -12,13 +12,8 @@
     "Requirements" : [
         {
             "Scope" : "Company",
-            "RequirementTags" : {
-                "items" : [
-					"flashpoint_aCountryTooFar_complete",
-					"flashpoint_banditKingdoms_complete",
-					"flashpoint_kissThemForMe_complete",
-					"flashpoint_paradiseCity_complete"
-				],
+            "ExclusionTags" : {
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -33,11 +28,11 @@
                     "valueConstant" : null
                 },
 				{
-                    "obj" : "MissionsComplete",
-                    "op" : "GreaterThanOrEqual",
-                    "val" : 2,
-                    "valueConstant" : null
-                }
+					"obj" : "Travel",
+					"op" : "Equal",
+					"val" : 0,
+					"valueConstant" : "0"
+				}
             ]
         }
     ],
@@ -58,12 +53,24 @@
             "Actions" : [
                 {
                     "Type" : "System_StartConversation",
-                    "value" : "9cf54229a0472a8d59d7a1211",
+                    "value" : "9cf54229a0472a8d59d7a0f7",
                     "additionalValues" : [
 						"<i>LUSTFUL BALLAD</i>",
 						"HPG NEWS"
 					]
-                }
+                },
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Kamea",
+						"Alexander",
+						"Farah",
+						"Yang",
+						"Darius",
+						"Sumire"
+					]
+				}
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,
