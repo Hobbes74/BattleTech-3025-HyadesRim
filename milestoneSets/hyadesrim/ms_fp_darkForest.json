@@ -30,11 +30,7 @@
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [
-                            "fp_choice_a",
-                            "fp_choice_b",
-                            "fp_choice_cancel"
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : null,
@@ -69,7 +65,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_darkForest_002_Talk",
+                            "value" : "ms_fp_darkForest_006_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -117,6 +113,24 @@
                     },
                     "Stats" : [],
                     "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Yang",
+                                "Darius",
+                                "Sumire"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Farah"
+                            ]
+                        },
                         {
                             "Type" : "System_StartConversation",
                             "value" : "9df54229a0472a8d59d7a0ea",
@@ -185,15 +199,16 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "darkForest_1_threeWayBattle",
-                                "SelfEmployed",
+                                "darkForest_1_simpleBattle",
+                                "ComStar",
                                 "GrimReapers",
-                                "5",
-                                "ms_fp_darkForest_004_Talk",
+                                "6",
+                                "ms_fp_darkForest_004_MissionSim",
                                 null,
-                                "HarbingersOfDoom",
-                                "HarbingersOfDoom",
-                                "HarbingersOfDoom"
+                                "GrimReapers",
+                                "GrimReapers",
+                                "GrimReapers",
+                                "GrimReapers"
                             ]
                         },
                         {
@@ -216,7 +231,70 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_darkForest_004_Talk",
+                "Id" : "ms_fp_darkForest_004_MissionSim",
+                "Name" : "MissionSim",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_hiddenLagoon_vHigh",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "darkForest_2_threeWayBattle",
+                                "ComStar",
+                                "SlartysBlasters",
+                                "6",
+                                "ms_fp_darkForest_005_Talk",
+                                null,
+                                "GrimReapers",
+                                "GrimReapers",
+                                "GrimReapers",
+                                "GrimReapers"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_darkForest_005_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -253,7 +331,8 @@
                             "value" : "false",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "Yang"
+                                "Yang",
+                                "Farah"
                             ]
                         },
                         {
@@ -269,70 +348,9 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_darkForest_005_Mission",
+                            "value" : "ms_fp_darkForest_006_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_darkForest_005_Mission",
-                "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_bluffs_vHigh",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "darkForest_2_fireMission",
-                                "SelfEmployed",
-                                "GrimReapers",
-                                "5",
-                                "ms_fp_darkForest_006_Mission",
-                                null,
-                                null,
-                                null
-                            ]
                         }
                     ],
                     "ForceEvents" : null,
@@ -379,7 +397,7 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mapGeneral_bluffs_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -387,13 +405,22 @@
                                 null,
                                 "darkForest_3_story",
                                 "SelfEmployed",
-                                "GrimReapers",
-                                "5",
+                                "RimPirates",
+                                "6",
                                 "ms_fp_darkForest_007_Talk",
                                 null,
                                 "RimPirates",
                                 "RimPirates",
+                                "RimPirates",
                                 "RimPirates"
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -441,8 +468,18 @@
                     "Stats" : null,
                     "Actions" : [
                         {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Yang",
+                                "Darius",
+                                "Sumire"
+                            ]
+                        },
+                        {
                             "Type" : "System_StartConversation",
-                            "value" : "9df54229a0472a8d59d7a0ec",
+                            "value" : "9df54229a0472a8d59d7a0ed",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} III",
@@ -503,6 +540,17 @@
                     },
                     "Stats" : null,
                     "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+								"Farah",
+                                "Yang",
+                                "Darius",
+                                "Sumire"
+                            ]
+                        },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_darkForest_009_A-Reward",
@@ -590,15 +638,7 @@
                         "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "1000000",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
+                    "Stats" : [],
                     "Actions" : [],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,

@@ -1,8 +1,8 @@
 {
     "Description" : {
         "Id" : "event_mw_moonlighting_MedLaser",
-        "Name" : "Moonlighting with a PPC",
-        "Details" : "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} fiddling with a [[DM.WeaponDefs[Weapon_PPC_PPC_0-STOCK],stock PPC]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\"",
+        "Name" : "Moonlighting with a Medium Laser",
+        "Details" : "While pacing through the Mech Bay on a sleepless night, you stumble across [[TGT_MW,{TGT_MW.Callsign}]]. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:are|Default:is} fiddling with a [[DM.WeaponDefs[Weapon_Laser_MediumLaser_0-STOCK],stock Medium Laser]]. A jumbled pile of loose metal and wire litters the deck plating around {TGT_MW.Obj}.\r\n\r\nAs you approach, {TGT_MW.Callsign} looks up, a sheepish grin on {TGT_MW.Det} face. \"Uh. Hello, Commander. I was just trying to tune this beauty, maybe get a little more performance out of her. Could you do me a favor and keep this from the Chief, though? He's already shooed me out of here once this week.\"",
         "Icon" : "uixTxrSpot_MechBay.png"
     },
     "Scope" : "MechWarrior",
@@ -41,7 +41,7 @@
             },
             "RequirementComparisons" : [
                 {
-                    "obj" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                    "obj" : "Item.WeaponDef.Weapon_Laser_MediumLaser_0-STOCK",
                     "op" : "GreaterThanOrEqual",
                     "val" : 1,
                     "valueConstant" : "1"
@@ -136,14 +136,14 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
                                 },
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_1-Tiegart",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_1-ExoStar",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null
@@ -179,7 +179,7 @@
                     "Description" : {
                         "Id" : "outcome_1_1",
                         "Name" : "Success, Gets hurt",
-                        "Details" : "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. Just be careful. These weapons are meant to destroy 'Mechs, after all.\"\r\n\r\nLater that week, you get word that [[TGT_MW,{TGT_MW.Callsign}]] is in the MedBay. When you visit {TGT_MW.Obj}, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} grinning from ear to ear, despite the bandages.\r\n\r\n\"I did it, Commander! That Laser is purring like a kitten now. Well, a kitten that wants to kill 'Mechs. I even managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_PPC_PPC_1-Tiegart],{DM.WeaponDefs[Weapon_PPC_PPC_1-Tiegart].Description.Manufacturer} {DM.WeaponDefs[Weapon_PPC_PPC_1-Tiegart].Description.Model}]].\"",
+                        "Details" : "\"I suppose that was in storage for a reason, so we can afford to lose it if things go wrong. Just be careful. These weapons are meant to destroy 'Mechs, after all.\"\r\n\r\nLater that week, you get word that [[TGT_MW,{TGT_MW.Callsign}]] is in the MedBay. When you visit {TGT_MW.Obj}, {TGT_MW.Subj} {TGT_MW.Gender?NonBinary:are|Default:is} grinning from ear to ear, despite the bandages.\r\n\r\n\"I did it, Commander! That Laser is purring like a kitten now. Well, a kitten that wants to kill 'Mechs. I even managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_Laser_MediumLaser_1-ExoStar],{DM.WeaponDefs[Weapon_Laser_MediumLaser_1-ExoStar].Description.Manufacturer} {DM.WeaponDefs[Weapon_Laser_MediumLaser_1-ExoStar].Description.Model}]].\"",
                         "Icon" : ""
                     },
                     "Weight" : 25,
@@ -198,14 +198,14 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
                                 },
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_1-Tiegart",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_1-ExoStar",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null
@@ -285,7 +285,7 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
@@ -427,7 +427,7 @@
                     "Description" : {
                         "Id" : "outcome_2_0",
                         "Name" : "Success, wpn 1",
-                        "Details" : "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. But you seem pretty knowledgeable about these things, and you've already gutted the weapon. Explain to Yang what you were going for, and maybe he can finish what you started.\"\r\n\r\nLater that week, you catch [[TGT_MW,{TGT_MW.Callsign}]] in the hall.\r\n\r\n\"Chief Virtanen wanted me to pass along the good news. He investigated your suggestions and managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_Laser_MediumLaser_1-ExoStar],{DM.WeaponDefs[Weapon_Laser_MediumLaser_1-ExoStar].Description.Manufacturer} {DM.WeaponDefs[Weapon_Laser_MediumLaser_1-ExoStar].Description.Model}]].\"\r\n\r\n{TGT_MW.Callsign} basks in the glow of victory. \"I knew it would work! So\u2026 does that mean I'm riding out on the next contract? I feel like I should be the first to get to fire it!\"",
+                        "Details" : "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. But you seem pretty knowledgeable about these things, and you've already gutted the weapon. Explain to Yang what you were going for, and maybe he can finish what you started.\"\r\n\r\nLater that week, you catch [[TGT_MW,{TGT_MW.Callsign}]] in the hall.\r\n\r\n\"Chief Virtanen wanted me to pass along the good news. He investigated your suggestions and managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_Laser_MediumLaser_1-Intek],{DM.WeaponDefs[Weapon_Laser_MediumLaser_1-Intek].Description.Manufacturer} {DM.WeaponDefs[Weapon_Laser_MediumLaser_1-Intek].Description.Model}]].\"\r\n\r\n{TGT_MW.Callsign} basks in the glow of victory. \"I knew it would work! So\u2026 does that mean I'm riding out on the next contract? I feel like I should be the first to get to fire it!\"",
                         "Icon" : ""
                     },
                     "Weight" : 25,
@@ -446,14 +446,14 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
                                 },
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_1-Donal",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_1-Intek",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null
@@ -489,7 +489,7 @@
                     "Description" : {
                         "Id" : "outcome_2_1",
                         "Name" : "Success, wpn 2",
-                        "Details" : "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. But you seem pretty knowledgeable about these things, and you've already gutted the weapon. Explain to Yang what you were going for, and maybe he can finish what you started.\"\r\n\r\nLater that week, you catch [[TGT_MW,{TGT_MW.Callsign}]] in the hall.\r\n\r\n\"Chief Virtanen wanted me to pass along the good news. He investigated your suggestions and managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_PPC_PPC_1-Tiegart],{DM.WeaponDefs[Weapon_PPC_PPC_1-Tiegart].Description.Manufacturer} {DM.WeaponDefs[Weapon_PPC_PPC_1-Tiegart].Description.Model}]].\"\r\n\r\n{TGT_MW.Callsign} basks in the glow of victory. \"I knew it would work! So\u2026 does that mean I'm riding out on the next contract? I feel like I should be the first to get to fire it!\"",
+                        "Details" : "\"MechWarriors belong in the 'Mechs. Technicians belong in the Mech Bay. But you seem pretty knowledgeable about these things, and you've already gutted the weapon. Explain to Yang what you were going for, and maybe he can finish what you started.\"\r\n\r\nLater that week, you catch [[TGT_MW,{TGT_MW.Callsign}]] in the hall.\r\n\r\n\"Chief Virtanen wanted me to pass along the good news. He investigated your suggestions and managed to replicate the performance specs of the [[DM.WeaponDefs[Weapon_Laser_MediumLaser_1-Magna],{DM.WeaponDefs[Weapon_Laser_MediumLaser_1-Magna].Description.Manufacturer} {DM.WeaponDefs[Weapon_Laser_MediumLaser_1-Magna].Description.Model}]].\"\r\n\r\n{TGT_MW.Callsign} basks in the glow of victory. \"I knew it would work! So\u2026 does that mean I'm riding out on the next contract? I feel like I should be the first to get to fire it!\"",
                         "Icon" : ""
                     },
                     "Weight" : 25,
@@ -508,14 +508,14 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
                                 },
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_1-Tiegart",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_1-Magna",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null
@@ -570,7 +570,7 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
@@ -663,14 +663,14 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
                                 },
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_1-Ceres_Arms",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_1-Magna",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null
@@ -749,14 +749,14 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_0-STOCK",
+                                    "name" : "Item.Laser_MediumLaser_0-STOCK",
                                     "value" : "-1",
                                     "set" : false,
                                     "valueConstant" : null
                                 },
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Item.WeaponDef.Weapon_PPC_PPC_1-Donal",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_2-Diverse_Optics",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null

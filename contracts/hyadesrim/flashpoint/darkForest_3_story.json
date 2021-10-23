@@ -2,7 +2,7 @@
     "ID" : "darkForest_3_story",
     "contractName" : "Dark Forest III",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "The pirate crew manning the listening post have made their way to a hidden DropShip landing pad. This might be our last chance to stop them and learn the propose of why this SLDF facility is still operating more than 300 years after the fall of the Star League.",
-    "longDescription" : "Dr. Murad is going through the wreckage of the deep space observatory we've wrecked trying to find answers.",
+    "shortDescription" : "Sumire has detected DropShip landing pads on the moon's surface so those should be a prime spot to locate the <i>Perseus</i>. There hasn't been anymore HPG pulses, but it's more than likely that it's gone into listening mode, otherwise it would hardly be a covert operation. The question is still why this SLDF facility is still operating more than 300 years after the fall of the Star League and who is behind it.",
+    "longDescription" : "Finding the <i>Perseus</i> will give us some answers about what is happening here.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "6f5f8d17-70ed-44a8-acc0-ccf9258925aa"
             },
-            "title" : "Engage and destroy the pirate DropShip",
+            "title" : "Find the <i>Perseus</i>.",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -56,7 +56,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "28ca5ad8-479b-4b58-8ec5-afe0e13692aa"
             },
-            "title" : "Destroy the ship's security team",
+            "title" : "Secure the DropShip",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -68,7 +68,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bc0ed221-11fe-40c2-b4d9-bec7dda43878"
             },
-            "title" : "The pirates must not escape",
+            "title" : "Defend against the pirates.",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -98,7 +98,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3ac1476d-5ab0-436b-aa68-e1a5436e796f"
             },
-            "title" : "Destroy the DropShip Before it Escapes",
+            "title" : "Stop the DropShip",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -194,7 +194,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Destroy the Pirate Command Lance",
+            "title" : "Destroy the Unknown Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -210,7 +210,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "2ad6ed19-a782-455f-b51e-b3af9a1c2fb5"
             },
-            "title" : "Defeat Pirate Commander",
+            "title" : "Defeat Unknown Commander",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -352,46 +352,46 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's a lot of activity on the ground, Commander\u2026",
+                    "words" : "That's an old SLDF airbase... no wonder the Explorer Corps DropShip landed here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_010_darius",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : 10
                 },
                 {
-                    "words" : "\u2026it looks like the <i>Newgrange</i>is being prepped for launch. You're going to have a tight timetable to get in there and blow station's fuel reservoir before it lifts off.",
+                    "words" : "Those refueling tanks look like they are being currently used. The rest of the facility still has power, so look out for automated defenses.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_020_darius",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "839c56b4-2a1a-4bcd-945b-0e29541ebd88",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "High",
                     "revealRadius" : 150
                 },
                 {
-                    "words" : "I'm seeing turret emplacements and light BattleMech activity on the ground, but it appears that the security detail we were warned about is off-site\u2026 for now. Sumire will be monitoring her sensors for any sign of incoming DropShips.",
+                    "words" : "They know we are here. I'm detecting several BattleMechs moving to intercept us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -400,7 +400,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "She's got that right, Commander\u2014if I see anything, you'll be the first to know. And I'd advise you to be wary of this secondary landing pad, up here on the  ridge. If I were dropping a defensive lance, that's where I'd do it.",
+                    "words" : "I have worse news. That secondary pad has been recently used and there's damage on the <i>Union</i> hull. The pirates might be already here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -414,6 +414,38 @@
                     "cameraDistance" : "Medium",
                     "cameraHeight" : "Default",
                     "revealRadius" : 100
+                },
+                {
+                    "words" : "We can't be sure it's ComStar still in control of that DropShip.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Whatever the case, that DropShip will take off soon.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
                 }
             ]
         },
@@ -425,46 +457,46 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Mission successful, Commander\u2014nicely done. Dr. Murad, does the <i>Argo</i> have an empty storeroom that could serve as a makeshift brig?",
+                    "words" : "Last one down... there's definitely something familiar about these 'Mechs...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_040_darius",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm sure that something could be arranged, Lady Arano.",
+                    "words" : "We don't time to spare anymore around here, Yang.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_050_alexander",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : 0
                 },
                 {
-                    "words" : "Then arrange it, and get a lock on Lady Espinosa's ejection pod. She's coming with us.",
+                    "words" : "Wait too long and the next blown DropShip will be ours.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -492,19 +524,147 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Good hunting, Commander. I'll be running ops for you from here.",
+                    "words" : "How about we try the diplomatic approach?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_310_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Explorer Corps DropShip, we are a mercenary company that detected your transmission. Do you require assistance, over?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Mercenaries! Power down your weapons and surrender your BattleMechs to ComStar immediately!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Now don't be a donkey, we are here to rescue you dammit!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I don't know what trying to pull now Slarty, but I'm not a fool.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We're not Slarty's Blasters, they were destroyed by the same pirates...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Enough. You pirates will never take this DropShip.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "There goes the diplomatic approach.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, that DropShip is showing signs that it is being prepped for take-off. If we want stop them from leaving, we'll need to destroy those fuel tanks.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "839c56b4-2a1a-4bcd-945b-0e29541ebd88",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "High",
                     "revealRadius" : -1
                 }
             ]
@@ -517,7 +677,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I've got a Directorate Leopard moving in on your position, Commander. Judging by the markings, it's a House Espinosa ship.",
+                    "words" : "We have an incoming bogey, I estimate it will make a drop on that landing pad.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -526,27 +686,11 @@
                     },
                     "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_320_sumire",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "20d56ca9-ef1e-4f4d-927e-e92688575e39",
+                    "cameraDistance" : "Medium",
                     "cameraHeight" : "Default",
                     "revealRadius" : 0
-                },
-                {
-                    "words" : "That must be the defense force Lord Karosas warned us about. Be ready.\r",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_MadeiraDefault",
-                    "emote" : "Default",
-                    "audioName" : "m050_330_alexander",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
                 }
             ]
         },
@@ -558,16 +702,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The <i>Newgrange</i> is almost ready for takeoff. Destroy that ship before it's too late!",
+                    "words" : "We need to prevent the <i>Perseus</i> from self-destructing.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_340_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -583,14 +727,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is the captain of the <i>Newgrange</i>\u2014hold your fire, damn it! We are a <i>civilian</i> transport, not a military DropShip!",
+                    "words" : "Stop! You are not the previous pirates or the Blasters...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE05_ArmsDealerCaptain",
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -599,14 +743,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I know what you are. Power down your engines and surrender, or your ship will be destroyed.",
+                    "words" : "We are mercenaries on an exploration mission and we rescued Precentor Myncyk on the main planet, you idiot!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -615,14 +759,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I can't do that! I repeat, hold your fire\u2014there are unarmed people on this vessel! We've got a hold full of passengers, and you'll be murdering them if you destroy that tank!",
+                    "words" : "What? How is he? I want to talk to him!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE05_ArmsDealerCaptain",
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -631,14 +775,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I already know what your ship is carrying, and it <i>isn't</i> civilians. Captain, I'm giving you one last chance to surrender\u2014if you refuse, what happens next will be on <i>your</i> head, not mine. Listen to reason and power down. <i>NOW.</i>",
+                    "words" : "Unfortunately, he died hours ago on our MedBay from previous injuries. He kept repeating the expression 'dark forest', if that means anything to you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -647,7 +791,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "They've cut the comm feed, Lady Arano. I'm picking up increased activity on my sensors\u2014they're making a run for it.",
+                    "words" : "I think they cut-off the feed... by the nine hells, the <i>Union<i/>'s fusion engine power output has just increased drastically, they're gonna risk blowing the ship!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They'll take us along with them, unless we blow the <i>Perseus</i> first by destroying those fuel tanks!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -655,22 +815,6 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_SumireDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Then they've left us no choice. We're blowing the fuel reservoir.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -688,16 +832,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Let's do what we came here for, Commander. Take that DropShip out.",
+                    "words" : "Commander, we need to take down that DropShip out before it wipes out all of us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_350_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -713,68 +857,20 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "INCOMING TRANSMISSION.",
+                    "words" : "Unknown lance detected!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Computer",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "39045acd-b014-45d3-8bdd-6c0f3a91cb99",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : 120
-                },
-                {
-                    "words" : "{COMMANDER.Callsign}. I remember you well\u2014the late Raju Montgomery held you in <i>such</i> high esteem. And now I find you here, serving my exiled cousin. Where is she hiding, I wonder?",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "m050_100_victoria",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 0
-                },
-                {
-                    "words" : "Victoria. If I'd known that we'd find you here, I'd have taken the field myself.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
-                    "emote" : "Default",
-                    "audioName" : "m050_110_victoria",
-                    "cameraFocusGuid" : "39045acd-b014-45d3-8bdd-6c0f3a91cb99",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 0
-                },
-                {
-                    "words" : "A pity you didn't\u2014we could have ended this war here and now. I suppose I'll have to content myself with your prized mercenaries. Watch as I tear them to shreds.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
                 }
             ]
         },
@@ -786,16 +882,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Generators down, Commander! That should take their turrets off-line.",
+                    "words" : "And the turrets are gone!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_360_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -811,16 +907,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I will make you suffer before you die.",
+                    "words" : "I have bad news of the orbital kind... things will get hotter, if we don't finish this soon!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_370_victoria",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -836,16 +932,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I will kill you, mercenary.",
+                    "words" : "There's an eerie resemblance...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_380_victoria",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -861,16 +957,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You will <i>not</i> defeat us! I will <i>break</i> you, mercenary scum.",
+                    "words" : "Commander, those 'Mechs are running very cool on this hellish conditions.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_390_victoria",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -886,16 +982,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You swine! I'll tear your 'Mech in two!",
+                    "words" : "You damaged their leader, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_400_victoria",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -911,16 +1007,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "[static] No! It's not possible! I can still win this!",
+                    "words" : "[static] <i>gunshot<i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_410_victoria",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -936,23 +1032,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's done it\u2014the <i>Newgrange</i> is down! That should satisfy our obligation to Lord Karosas.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
-                    "emote" : "Default",
-                    "audioName" : "m050_170_darius",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 0
-                },
-                {
-                    "words" : "Heads up, Commander\u2014enemy DropShip coming in hot!",
+                    "words" : "We just blew up a ComStar DropShip... if anyone ever knows about this, we will be outcasts and outlaws.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -961,7 +1041,55 @@
                     },
                     "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_180_com",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : 0
+                },
+                {
+                    "words" : "They didn't give us any choice. Nor it looked like they had one with those pirates about to drop on them.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : 0
+                },
+                {
+                    "words" : "There might still be survivors inside.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : 0
+                },
+                {
+                    "words" : "Commander, that unknown DropShip is about to land!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "39045acd-b014-45d3-8bdd-6c0f3a91cb99",
                     "cameraDistance" : "Medium",
                     "cameraHeight" : "Default",
@@ -993,52 +1121,20 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You fool. Do you have any idea what you've just done?! You'll pay for that with your life, mercenary filth!",
+                    "words" : "They couldn't have this DropShip... and neither can you...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "20d56ca9-ef1e-4f4d-927e-e92688575e39",
                     "cameraDistance" : "Medium",
                     "cameraHeight" : "Default",
                     "revealRadius" : 75
-                },
-                {
-                    "words" : "Victoria. If I'd known you'd be here, I'd have taken the field myself.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "A pity you didn't\u2014we could have ended this war here and now. I suppose I'll have to content myself with your prized mercenaries. Watch as I tear them to shreds.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
                 }
             ]
         },
@@ -1050,20 +1146,36 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You fool. Do you have any idea what you've just done? You'll pay for that with your life, mercenary filth!",
+                    "words" : "INCOMING TRANSMISSION.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_Computer",
                     "emote" : "Default",
-                    "audioName" : "m050_430_victoria",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
-                    "revealRadius" : 0
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They couldn't have this DropShip... and neither can you...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ComStarAdeptSmithDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "20d56ca9-ef1e-4f4d-927e-e92688575e39",
+                    "cameraDistance" : "Medium",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : 75
                 }
             ]
         },
@@ -1075,16 +1187,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, that DropShip is about to take off! You <i>have to</i> stop it!",
+                    "words" : "Commander, unless we blow up the fuel tanks, the <i>Perseus</i> self-destruction will destroy us!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m050_440_kamea",
+                    "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -1098,15 +1210,15 @@
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 0,
+    "negotiatedSalvage" : 0,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -1340,7 +1452,7 @@
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "EmployerTeam",
-        "faction" : "AuriganRestoration",
+        "faction" : "SelfEmployed",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             
@@ -1352,7 +1464,7 @@
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "TargetTeam",
-        "faction" : "AuriganPirates",
+        "faction" : "RimPirates",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -1360,10 +1472,10 @@
                     "EncounterObjectGuid" : "40decd4d-427d-4f2e-8fc7-fc379ae4bbc2"
                 },
                 "name" : "Spawner_Turrets",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        
+                        "lance_type_turret"
                     ],
                     "tagSetSourceFile" : ""
                 },
@@ -1391,7 +1503,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Standard_LRM",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1410,7 +1522,7 @@
                             ],
                             "tagSetSourceFile" : "Tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [
                                 
@@ -1434,7 +1546,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Sniper",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1453,7 +1565,7 @@
                             ],
                             "tagSetSourceFile" : "Tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [
                                 
@@ -1477,7 +1589,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Laser",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1496,7 +1608,7 @@
                             ],
                             "tagSetSourceFile" : "Tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [
                                 
@@ -1520,7 +1632,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Shredder",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1539,7 +1651,7 @@
                             ],
                             "tagSetSourceFile" : "Tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [
                                 

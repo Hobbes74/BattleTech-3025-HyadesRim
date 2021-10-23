@@ -1,7 +1,7 @@
 {
     "Name": "Hyades Rim",
     "Enabled": true,
-    "Version": "7.0.0f",
+    "Version": "7.1.4",
     "Description": "Adds the Hyades Rim expansion to the base game. Includes new 'unofficial' version of Arano campaign.",	
     "Author": "Hobbes",
 	"Website": "",
@@ -11,14 +11,15 @@
     "ConflictsWith": [ "Z_Sab_JK_RarityTables", "JK_SUCKos", "JK_VariantsCampaign", "JK_VariantsDLC", "BT_Extended_3025_PlusVee", "BT Advanced Core", "BT_Extended_3025", "BTR-Core", "RogueTech Core", "The Periphery Is A Harsh Mistress", "Galaxy at War", "HMFlashpointFix", "Flashpoints worthwhile rewards", "Flashpoint Spawn Adjustments", "Flashpoint_the_Cache", "Flashpoint_The_Raid" ],
 	
 	"DataAddendumEntries":[ 
-        { "name":"BattleTech.FactionEnumeration", "path":"enums/Faction.json" },
-        { "name":"BattleTech.ContractTypeEnumeration", "path":"enums/ContractType.json" }
+        { "name": "BattleTech.FactionEnumeration", "path": "enums/Faction.json" },
+        { "name": "BattleTech.ContractTypeEnumeration", "path": "enums/ContractType.json" }
 	],
 	"Manifest": [
         { "Type": "AbilityDef", "Path": "abilities", "AddToDB": true },
         { "Type": "AmmunitionBoxDef", "Path": "ammunitionBox/dlc", "AddToDB": true },
         { "Type": "AmmunitionBoxDef", "Path": "ammunitionBox/dlc_merge", "ShouldMergeJSON": true, "AddToDB": false },
-        { "Type": "CastDef", "Path": "cast" },
+        { "Type": "CastDef", "Path": "cast/base", "ShouldMergeJSON": true, "AddToDB": false },
+        { "Type": "CastDef", "Path": "cast/hyadesrim" },
 		{ "Type": "ChassisDef", "Path": "chassis/A" },
 		{ "Type": "ChassisDef", "Path": "chassis/B" },
 		{ "Type": "ChassisDef", "Path": "chassis/C" },
