@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "event_mw_meleeMechBay_Steiner_Marik",
+        "Id" : "event_mw_meleeMechBay_War",
         "Name" : "Melee in the Mech Bay",
         "Details" : "You're speaking to Yang in the Mech Bay when the yelling starts. Across the Bay, a pair of your MechWarriors face off in front of a BattleMech. You get there just as [[TGT_MW,{TGT_MW.Callsign}]] pulls back to throw a punch at [[SCN_MW,{SCN_MW.Callsign}]].",
         "Icon" : "uixTxrSpot_Discipline.png"
@@ -11,7 +11,7 @@
         "Scope" : "MechWarrior",
         "RequirementTags" : {
 			"items" : [
-				"pilot_steiner"
+				"pilot_stressed"
 			],
 			"tagSetSourceFile" : "Tags/PilotTags"
         },
@@ -30,7 +30,22 @@
             }
         ]
     },
-    "AdditionalRequirements" : [],
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+                    "flashpoint_danseMacabre_complete"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
     "AdditionalObjects" : [
         {
             "Scope" : "SecondaryMechWarrior",
@@ -38,7 +53,7 @@
                 "Scope" : "SecondaryMechWarrior",
                 "RequirementTags" : {
                     "items" : [
-                        "pilot_marik"
+						"pilot_stressed"
                     ],
                     "tagSetSourceFile" : "Tags/PilotTags"
                 },
@@ -96,6 +111,26 @@
                             "ForceEvents" : null,
                             "TemporaryResult" : true,
                             "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "pilot_mutinous"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                ]
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
                         }
                     ]
                 }
@@ -159,6 +194,7 @@
                             },
                             "RemovedTags" : {
                                 "items" : [
+                                    "pilot_mutinous",
                                     "pilot_morale_low"
                                 ],
                                 "tagSetSourceFile" : "Tags/PilotTags"
@@ -300,6 +336,46 @@
                                     "additionalValues" : null
                                 }
                             ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "pilot_mutinous"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                ]
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "pilot_mutinous"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                ]
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
                             "ResultDuration" : 0

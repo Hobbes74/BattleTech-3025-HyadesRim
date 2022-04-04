@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1142_sim_leopard",
-        "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Id" : "milestone_1206_talk_evilEye",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1142,
+                    "val" : 1210,
                     "valueConstant" : null
                 }
             ]
@@ -37,16 +37,40 @@
             "AddedTags" : {},
             "RemovedTags" : {},
             "Stats" : [
-                {
-                    "typeString" : "System.Int32",
+				{
+					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : "1",
-                    "set" : false,
+                    "value" : 1,
                     "valueConstant" : ""
+				}
+            ],
+            "Actions" : [
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Sumire",
+						"Darius",
+						"Yang"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Farah"
+					]
+				},
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9c647bbab99e458082f293c7",
+                    "additionalValues" : [
+						"EVIL EYE",
+						"High Orbit — Zelski II"
+					]
                 }
-			],
-            "Actions" : [],
-            "ForceEvents" : [],
+            ],
+            "ForceEvents" : null,
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

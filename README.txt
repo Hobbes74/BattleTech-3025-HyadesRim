@@ -2,6 +2,8 @@ Hyades Rim - a BattleTech videogame mod
 
 BattleTech 1.9.X compatible - requires all DLCs.
 
+Like J'oral would say: you're in the Magistracy now darlings. Better step up your game. - Dee J'oral.
+“Force and fraud are in war the two cardinal virtues.” - Thomas Hobbes, On The Social Contract.
 Slavish adherence to a formal ritual is a sign that one has nothing better to think about. - Natasha Kerensky, Blood Legacy.
 
 New Campaign Mode! Pirates. Infernos. Phantom 'Mechs. Kittens. Bandit Kingdoms. Pay your C-Bills and pray the space birds don't get you. Explore the mysteries of the Periphery at the Hyades Rim. BattleTech version 1.9 compatible. Work in progress.
@@ -11,12 +13,12 @@ Requires all DLCs. The Hyades Rim is an expansion for the Battletech videogame f
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if link/HPG expires)
 
 Features
-* A new BattleTech story and Campaign mode, consisting of +20 planned new story missions and flashpoints, based on an alternative history of the Arano Restoration where Kamea is exiled rather than presumed killed and the company instead enters the employ of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita, while travelling and exploring the new star map. 28 planned new story missions and flashpoints, based on an alternative history of the Arano Restoration where Kamea is exiled rather than presumed killed and the company instead enters the employ of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita.
-* Fourteen original story missions and flashpoints released (campaign only): You On The Run, Exodus, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre and Putting Out A Fire. 14 more are planned for parts 3 and 4 of the new campaign.
-* New story includes so far a total of 46 new contracts, 70 new crew conversations and 169 descriptions, and is divided into four parts. 
+* A new BattleTech story and Campaign mode, consisting of 28 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed. 
+* Sixteen original story missions and flashpoints released (campaign only): You On The Run, Exodus, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, Backdoor Man and Dark Forest. 12 more are planned for parts 3 and 4 of the new campaign.
+* New story includes so far a total of 87 new contracts, 116 new crew conversations and 186 descriptions, and is divided into four parts.
 * The vanilla FPs appear in the new Campaign as independent mini-campaigns, except for the Black Widow one which is removed (but still appears on Career mode).
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
-* 32 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities.
+* 88 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
 * 52+ original factions, canon and new, with their own leaders, allies/enemies, contracts and 'Mech/vehicle variants. Ally/fight pirate gangs, corporations, regional powers and bandit kingdoms in both campaign and system contracts.
 * 600+ new contracts and variants added, including pirate, IE and Periphery flavored.
 * 700+ new BattleMech variants added to fight as Opfor, can appear equipped with Infernos, ECM, plus other LosTech surprises.
@@ -32,9 +34,10 @@ Features
 * Career mode has nearly everything from above available, except for the story missions/flashpoints.
 
 Balance and Story Changes
-* During the campaign you'll lose several pilots as a result of non-combat events. This high crew turnover is done for both storytelling and balance proposes, since you start as a third rate mercenary company operating at the end of civilized space and will be stuck to the Leopard until the last part of the campaign, which will last longer than the original one.
+* During the campaign you'll lose several pilots as a result of non-combat events. This high crew turnover is done for both storytelling and balance proposes, since you start as a third rate mercenary company operating at the end of civilized space.
+* For most of the campaign you'll use the Hysteria (Leopard), and only get the Argo at the end of part 3, with the Golden Path flashpoint. 
 * The new campaign flashpoints all have tonnage limits and many have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations. Many also have choices that can mitigate the number of consecutive deployments or allow you to use third-party 'Mechs.
-* The original flashpoints of the five Inner Sphere factions are now played sequentially, starting with the lowest difficulty FP.
+* The original flashpoints of the five Inner Sphere factions are now played sequentially, starting with the lowest difficulty FP. They've been also integrated in the storyline as related to the start of the 4th Succession War.
 * On campaign, JumpShip access to the Inner Sphere is limited, and depends on you unlocking letters of marque from the Successor Lords (which also unlock their faction FPs).
 * The special equipment of the Marauder has been nerfed, with the Called Shot ability reduced from a 33% maximum to 25%, and the 10% damage reduction only applying to the Marauder, not the whole lance.
 * Stores/Black Markets have been changed to restore the appearance of LosTech to before the HM DLC was released.
