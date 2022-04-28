@@ -15,13 +15,26 @@
     "longDescription" : "This seems straightforward, Commander. If things get out of hand, remember you can just blow up the buildings and make a run for it.",
     "salvagePotential" : 20,
     "requirementList" : [
-		{
-			"obj" : "Employer.InterstellarExpeditions",
-			"op" : "Equal",
-			"val" : 0,
-			"valueConstant" : null
-		}
-	],
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+				{
+					"obj" : "Employer.InterstellarExpeditions",
+					"op" : "Equal",
+					"val" : 0,
+					"valueConstant" : null
+				}
+            ]
+        }
+    ],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
     "encounterPlayStyle" : "SinglePlayer",

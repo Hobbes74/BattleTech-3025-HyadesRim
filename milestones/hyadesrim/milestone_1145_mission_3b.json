@@ -1,0 +1,57 @@
+{
+    "Description" : {
+        "Id" : "milestone_1145_mission_3b",
+        "Name" : "mission",
+        "Details" : "Mission 3b",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1145,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [],
+            "Actions" : [		
+                {
+                    "Type" : "System_StartContract",
+                    "value" : "exodus_2_rescue",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"ClusterPirates",
+						"InterstellarExpeditions"
+					]
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : true
+}

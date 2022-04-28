@@ -1,0 +1,81 @@
+{
+    "Description" : {
+        "Id" : "milestone_1144_notify_consecutiveDeployments",
+        "Name" : "sim",
+        "Details" : "pause notification",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1144,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Darius",
+						"Sumire",
+						"Yang",
+						"Farah"
+					]
+				},
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "These consecutive contracts can take their toll on BattleMechs and MechWarriors. We'll need to carefully balance our Mech Bay loadout and the battle damage since we can expect more of these kind of deployments in the future, Commander.",
+					"additionalValues" : [
+						"Priority Mission",
+						"castDef_DariusDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

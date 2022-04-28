@@ -15,19 +15,32 @@
     "longDescription" : "The message seems to be at least as important as the cargo. If we clean up the escorts to ensure their salvage crew's safety, there's a bonus in it for us.",
     "salvagePotential" : 12,
     "requirementList" : [
-		{
-			"obj" : "Employer.InterstellarExpeditions",
-			"op" : "Equal",
-			"val" : 0,
-			"valueConstant" : null
-		},
-		{
-			"obj" : "Target.RimPirates",
-			"op" : "Equal",
-			"val" : 0,
-			"valueConstant" : null
-		}
-	],
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+				{
+					"obj" : "Employer.InterstellarExpeditions",
+					"op" : "Equal",
+					"val" : 0,
+					"valueConstant" : null
+				},
+				{
+					"obj" : "Target.RimPirates",
+					"op" : "Equal",
+					"val" : 0,
+					"valueConstant" : null
+				}
+            ]
+        }
+    ],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
     "encounterPlayStyle" : "SinglePlayer",
