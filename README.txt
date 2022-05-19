@@ -58,6 +58,7 @@ Known Issues (none are gamebreaking just inconveniences):
 * When playing FPs on the Leopard, there's a visual glitch after any conversations with the DropShip's bridge and other areas. This can be solved by saving and reloading the game.
 * On the Amaris Legacy FP, one of the events displays a yellow 'ERROR' message in the middle of the text.
 * A saved star map won't update when new mod versions are released that change it, so system tags and black market markers might become inaccurate with future mod updates.
+* Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This is because of incompatibilities between the flashpoint and campaign game systems.  
 
 Recommended Mods
 * Navigation Computer by mpstark - makes travel easier
