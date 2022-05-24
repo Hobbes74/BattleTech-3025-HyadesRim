@@ -1,0 +1,621 @@
+{
+  "idRef": {
+    "id": "9cf54229a0472a8d59d7a0e1"
+  },
+  "ui_name": "HYR_102_youOnTheRun_1",
+  "nodes": [
+    {
+      "idRef": {
+        "id": "59b95ec6623035ac14005042"
+      },
+      "index": 0,
+      "text": "Dr. Murad just reported that Kamea will recover fine, but she needs rest after that encounter with [[DM.BaseDescriptionDefs[LoreGrayNoton],Gray Noton]]. \n\nFor all it's worth I hope that I've convinced the doctor to stay with us, now that the Aurigans are leaving the company, since we can use both her medical and engineering expertise.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 1,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:59dbfa79623035dc22006844"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_200_IN_EXILE",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": "Audio Event: GConv-BeginMusic-GC_111_RENT_TO_OWN, Fade In, Set Viewscreen: Lost Signal"
+    },
+    {
+      "idRef": {
+        "id": "59dbfa79623035dc22006847"
+      },
+      "index": 1,
+      "text": "God speed to all of them. I still don't agree with keeping Kamea on board as an [[DM.BaseDescriptionDefs[LoreAstech],astech]], even if she won't be piloting 'Mechs anymore in this company. \n\nAs long as she's on board this DropShip, we're at risk from the [[DM.BaseDescriptionDefs[LoreAuriganDirectorate],Directorate]]'s assassins and bounty hunters.",
+      "branches": [
+        {
+          "responseText": "I guess I'm a loyal dog. She was my liege in the Reach, and she needs help starting a new life.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 2,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:5a7e395762303510120029cc"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "5a7e395762303510120029cf"
+      },
+      "index": 2,
+      "text": "What was this, the fifth attempt on her life since Kamea and the Aurigans joined the company? \n\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 3,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:5a7e3aa56230351012002a49"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "5a7e3aa56230351012002a4c"
+      },
+      "index": 3,
+      "text": "Sixth. You're forgetting the bomb a year ago that someone smuggled into one of the <i>Hysteria</i>'s 'Mech bays.\n\nIf we hadn't detected and disabled it, the explosion would have taken out Kamea while she was on the cockpit of her <i>Kintaro</i> and opened a hole the size of a house in the side of the DropShip. \n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:5a7e24776230351012001d69"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "5a7e24776230351012001d6c"
+      },
+      "index": 4,
+      "text": "It was worse when we were operating closer to Aurigan territory, Yang. It's been more than six months since the last attempt. \n\nNoton likely got tipped while that we were in this area. But now that Kamea will be working as a technician, she'll be a less exposed. Things are bound to improve now. ",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:5a7e1c846230351012001cda"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": "Hub"
+    },
+    {
+      "idRef": {
+        "id": "9c53abff826b611e3fe33492"
+      },
+      "index": -1,
+      "text": "",
+      "branches": [],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c55213a03ef512d28493b25"
+      },
+      "index": -1,
+      "text": "",
+      "branches": [],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8e6b735dba94aa066be68b"
+      },
+      "index": -1,
+      "text": "",
+      "branches": [],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "5a7e1c846230351012001cdd"
+      },
+      "index": 8,
+      "text": "How? We're still owned by the [[DM.BaseDescriptionDefs[LoreAlphardTradingCompany],Alphard Trading Company]] until we repay our debt in JumpShip fees and we're stuck in the ass end of the Periphery. \n\nIt would have been better if we tried our luck in [[DM.BaseDescriptionDefs[LoreMagistracyOfCanopus],Canopian]] space but they won't allow Kamea into their territory, so now we're almost broke in the middle of nowhere.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:59b95ed9623035ac14005049"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "59b95ed9623035ac1400504c"
+      },
+      "index": 9,
+      "text": "Kamea personally dismissed the Aurigan survivors herself, and gave her BattleMech for them to take, becoming [[DM.BaseDescriptionDefs[LoreDispossessed],Dispossessed]] willingly, in order not to endanger the company. \n\nThat's not something we should ignore. Eventually her pursuers may forget about her, since she's out of public view, and we should be safer.",
+      "branches": [
+        {
+          "responseText": "Dropping from royal heir to spaceship crew is quite a fall.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:59b95ee1623035ac1400504e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "59b95ee7623035ac14005051"
+      },
+      "index": 10,
+      "text": "I pray that fall doesn't cost me my good arm or another original body part since she'll be working close to me. I still get shivers thinking about that bomb. \n\nAnd the former princess is about to get into hard and dirty work. I'm not sure she's aware or capable of what she signed up for; but then a lot of astechs start the same way.\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:59b95ef2623035ac14005053"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "59b95ef2623035ac14005056"
+      },
+      "index": 11,
+      "text": "It's either that, or we'll go our separate ways and leave her at whatever system she wants. ",
+      "branches": [
+        {
+          "responseText": "Exactly, Darius.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:59b95f02623035ac14005058"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "59b95f02623035ac1400505b"
+      },
+      "index": 12,
+      "text": "And about our financial situation? We need to raise more money so that we can pay our debt to the ATC as fast as possible and get out of this backyard. I can't wait to get to a place where most people shower daily.\n\nAnd if Noton learned Kamea's current location, then we can assume there are others with that information. We need to move as soon as possible.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:5a7a243e6230351819000774"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "5a7a24816230351819000777"
+      },
+      "index": 13,
+      "text": "Sumire is right, if we keep moving that will make it harder for Kamea to be tracked and hunted.\n\nCommander {COMMANDER.LastName}, with your permission, I'll start looking for additional contracts, although we can't expect much out here. ",
+      "branches": [
+        {
+          "responseText": "Do it, Darius.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:5a7a26e46230351819000899"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "5a7a26e4623035181900089c"
+      },
+      "index": 14,
+      "text": "We need a lucky break, but out here in the [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]], those are as few and distant as the stars.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": false,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "59b95c7d623035ac1400503a:5a7a25bc62303518190007c5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "59b95c7d623035ac1400503a:5a7a25ba62303518190007c3"
+      },
+      "index": 15,
+      "text": "I just hope that we aren't carrying an albatross instead, considering how the past two years have been.",
+      "branches": [
+        {
+          "responseText": "The albatross only brought bad luck after the crew killed it, Yang.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3b9755d8866d4d71963e48"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": "Audio Event: GC_END"
+    }
+  ],
+  "roots": [
+    {
+      "responseText": "",
+      "conditions": null,
+      "actions": null,
+      "nextNodeIndex": 0,
+      "hideIfUnavailable": false,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "59b95c7d623035ac1400503a:59b95c7d623035ac1400503e"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
+    }
+  ],
+  "default_speaker_id": "",
+  "default_speaker_override": null,
+  "persistent_conversation": false,
+  "speaker_override_id": ""
+}
