@@ -33,7 +33,6 @@ Features
 * Career mode has nearly everything from above available, except for the story missions/flashpoints.
 
 Balance and Story Changes
-* During the campaign you'll lose several pilots as a result of non-combat events. This high crew turnover is done for both storytelling and balance proposes, since you start as a third rate mercenary company operating at the end of civilized space.
 * For most of the campaign you'll use the Hysteria (Leopard), and only get the Argo at the end of part 3, with the Golden Path flashpoint. 
 * The many new campaign flashpoints have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations. Many also have choices that can mitigate the number of consecutive deployments or allow you to use third-party 'Mechs.
 * The original flashpoints of the five Inner Sphere factions are now played sequentially, starting with the lowest difficulty FP. They've been also integrated in the storyline as related to the start of the 4th Succession War.
