@@ -1,0 +1,66 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_itCameFromTheRim",
+        "Name" : "It Came From The Rim",
+        "Details" : "An archeological expedition reveals a surprising find. Mini-campaign.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_2.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "itCameFromTheRim",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 4,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints",
+					"flashpoint_evilEye_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_itCameFromTheRim_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_johnsonsreef",
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"InterstellarExpeditions"
+    ],
+    "TargetFaction" : "AntithesisCreed",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "MEDIUM",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_itCameFromTheRim",
+    "UnitDropTonnageHint" : "",
+    "LanceDropTonnageHint" : "",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_itCameFromTheRim",
+    "FlashpointShortDescription" : "Commander, one of Interstellar Expedition's collaborators has disappeared without a trace in Johnson's Reef while on a sensitive archeological survey. We require a medium lance to extract him from his current captors.",
+    "FlashpointDescriberCastDefId" : "castDef_InterstellarExpeditionsLeaderDefault",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

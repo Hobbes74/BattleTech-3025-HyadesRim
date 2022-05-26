@@ -8,14 +8,14 @@ Slavish adherence to a formal ritual is a sign that one has nothing better to th
 
 New Campaign Mode! Pirates. Infernos. Phantom 'Mechs. Kittens. Bandit Kingdoms. Pay your C-Bills and pray the space birds don't get you. Explore the mysteries of the Periphery at the Hyades Rim. BattleTech version 1.9 compatible. Work in progress.
 
-Requires all DLCs. The Hyades Rim is an expansion for the Battletech videogame focused on the canonical region of the Periphery and the 3025 era. (they know! they are coming!)
+The Hyades Rim is an expansion for the Battletech videogame focused on the canonical region of the Periphery and the 3025 era. (they know! they are coming!)
 
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if link/HPG expires)
 
 Features
 * A new BattleTech story and Campaign mode, consisting of 28 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed. 
 * Sixteen original story missions and flashpoints released (campaign only): You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, Backdoor Man and Dark Forest. 12 more are planned for parts 3 and 4 of the new campaign.
-* New story includes so far a total of 87 new contracts, 116 new crew conversations and 186 descriptions, and is divided into four parts.
+* New story includes so far a total of 87 new contracts, 116 new crew conversations and 186 descriptions, and is divided into three parts.
 * The vanilla FPs appear in the new Campaign as independent mini-campaigns, except for the Black Widow one which is removed (but still appears on Career mode).
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
 * 88 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
@@ -59,23 +59,25 @@ Known Issues (none are gamebreaking just inconveniences):
 * Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This is because of incompatibilities between the flashpoint and campaign game systems.  
 
 Recommended Mods
-* Navigation Computer by mpstark - makes travel easier
-* BattleTechPerformanceFix by m22spencer - reduces the time to generate new contracts
+* Navigation Computer by mpstark, makes travel easier, https://github.com/NavigationComputer
+* BattleTechPerformanceFix by m22spencer, https://github.com/BattleTechPerformanceFix
+* ColorfulFlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
 
-Warning: Use any other mods at your own risk - I only use these two mods together with the Hyades Rim and I do not provide support for third party mod integration! Check the other-mods channel of the Discord server for more information on compatibility with other mods.
+Warning: Use any other mods at your own risk - I only use these three mods together with the Hyades Rim and I do not provide support for third party mod integration! Check the other-mods channel of the Discord server for more information on compatibility with other mods.
 
 Future Plans
 * Finish the new Campaign with new contracts, missions and flashpoints - release date Winter 2021.
 
 Credits
+* Story and lead developer: Hobbes
 * Additional writing: Camicon_Dachass (Liao systems);
 * Additional character artwork: DarkKhaos;
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75) and Ministry Of Bob (Hantta, SanchoPanzer and unclecid);
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer;
 * Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele;
-* ModTek, by several authors, for allowing BattleTech modding;
-* Logo Replacement mod by Mpstark;
-* ConverseTek, by CWolf, for allowing to create/edit the game conversions;
+* ModTek, by several authors, https://github.com/BattletechModders/ModTek
+* Logo Replacement, mod by Mpstark, https://github.com/BattletechModders/LogoReplacement
+* ConverseTek, conversation editor by CWolf, https://github.com/CWolfs/ConverseTek
 * Inner Sphere Map for the coordinates of most canon systems;
 * MegaMek for the coordinates of several connecting systems;
 * Banner images taken from the sourcebook The Periphery, 2nd Edition;
@@ -84,5 +86,3 @@ Credits
 * Sarna.net for being an amazing resource for all things BattleTech related;
 * Mordel.net for the stats used in the canon 'Mech variants;
 * All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer and the whole BattleTech modding community.
-
-© 2021 Hobbes
