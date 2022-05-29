@@ -1,0 +1,71 @@
+{
+    "Description" : {
+        "Id" : "milestone_1322_talk_aranoRestoration_2",
+        "Name" : "conversation",
+        "Details" : "Conversations",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1322,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [			
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1330,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+			],
+            "Actions" : [
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Kamea"
+					]
+				},
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9cf7e455ae29c08231a72545",
+                    "additionalValues" : [
+						"BARBARIANS AT THE GATES",
+						"In Orbit - Fairuza"
+					]
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

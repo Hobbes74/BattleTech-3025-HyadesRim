@@ -1,19 +1,15 @@
-Hyades Rim - a BattleTech videogame mod
+BattleTech 3025 Hyades Rim
 
-BattleTech 1.9.X compatible - requires all DLCs.
+BattleTech 1.9.X compatible - requires all DLCs. Work in progress.
 
-Like J'oral would say: you're in the Magistracy now darlings. Better step up your game. - Dee J'oral.
-“Force and fraud are in war the two cardinal virtues.” - Thomas Hobbes, On The Social Contract.
 Slavish adherence to a formal ritual is a sign that one has nothing better to think about. - Natasha Kerensky, Blood Legacy.
 
-New Campaign Mode! Pirates. Infernos. Phantom 'Mechs. Kittens. Bandit Kingdoms. Pay your C-Bills and pray the space birds don't get you. Explore the mysteries of the Periphery at the Hyades Rim. BattleTech version 1.9 compatible. Work in progress.
-
-The Hyades Rim is an expansion for the Battletech videogame focused on the canonical region of the Periphery and the 3025 era. (they know! they are coming!)
+It is 3024 and Lady Kamea Arano has been exiled after being rescued by the survivors of Markham's Marauders during House Espinosa's coup. Her remaining forces have joined with the company in search for mercenary work in the Deep Periphery. But as the 4th Succession War approaches, powerful forces are now threatening to destroy the entire Aurigan Reach unless Kamea can save her realm and reclaim her throne.
 
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if link/HPG expires)
 
 Features
-* A new BattleTech story and Campaign mode, consisting of 28 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed. 
+* A new BattleTech story and Campaign mode, consisting of 28 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed and the vanilla story is a cover-up made for propaganda purposes. 
 * Sixteen original story missions and flashpoints released (campaign only): You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, Backdoor Man and Dark Forest. 12 more are planned for parts 3 and 4 of the new campaign.
 * New story includes so far a total of 87 new contracts, 116 new crew conversations and 186 descriptions, and is divided into three parts.
 * The vanilla FPs appear in the new Campaign as independent mini-campaigns, except for the Black Widow one which is removed (but still appears on Career mode).
@@ -86,3 +82,5 @@ Credits
 * Sarna.net for being an amazing resource for all things BattleTech related;
 * Mordel.net for the stats used in the canon 'Mech variants;
 * All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer and the whole BattleTech modding community.
+
+This mod is released under a Creative Commons CC BY-NC-ND 4.0 license, see the included LICENSE file for additional details.

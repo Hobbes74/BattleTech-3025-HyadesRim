@@ -1,0 +1,64 @@
+{
+    "Description" : {
+        "Id" : "milestone_1700a_update",
+        "Name" : "sim",
+        "Details" : "adds post-campaign Flashpoint support",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"story_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items": null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1400,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+			"AddedTags": {
+				"items": [
+					"SYSTEM_UseFlashpoints"
+				],
+                "tagSetSourceFile": ""
+            },
+            "RemovedTags" : {
+				"items" : [],
+                "tagSetSourceFile" : ""
+			},
+            "Stats" : [
+			    {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+			],
+            "Actions" : [],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

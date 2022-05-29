@@ -1,0 +1,57 @@
+{
+    "Description" : {
+        "Id" : "milestone_1313_mission_aranoRestoration_2",
+        "Name" : "mission",
+        "Details" : "Restoration Mission: arano restoration 2",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1313,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [],
+            "Actions" : [
+                {
+                    "Type" : "System_StartContract",
+					"value" : "aranoRestoration_2_story",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"AuriganDirectorate",
+						"AuriganRestoration"
+					]
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : true
+}

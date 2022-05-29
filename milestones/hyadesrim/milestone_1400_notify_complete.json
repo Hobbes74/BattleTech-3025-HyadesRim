@@ -1,0 +1,125 @@
+{
+    "Description" : {
+        "Id" : "milestone_1400_notify_complete",
+        "Name" : "sim",
+        "Details" : "notify story victory",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items": null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1400,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+			"AddedTags": {
+				"items": [
+					"story_complete",
+					"map_travel_3",
+					"oc15_post_epilogue"
+				],
+                "tagSetSourceFile": ""
+            },
+            "RemovedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
+            "Stats" : [
+                {
+                    "typeString" : "System.Single",
+                    "name" : "Difficulty",
+                    "value" : 8,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+			],
+            "Actions" : [			
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea"
+					]
+				},
+                {
+                    "Type" : "System_ToggleIgnoredContractTargets",
+                    "value" : true,
+					"additionalValues" : [ "AuriganDirectorate" ]
+                },
+                {
+                    "Type" : "System_SetContractScope",
+                    "value" : "POST_CAMPAIGN",
+                    "valueConstant" : null
+                },
+                {
+                    "Type" : "System_SetTargetBreadcrumbSystem",
+                    "value" : "starsystemdef_TortugaPrime",
+                    "valueConstant" : null
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Coromodir",
+					"additionalValues" : [ "starsystemdef_Coromodir_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Aea",
+					"additionalValues" : [ "starsystemdef_Aea_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Qalzi",
+					"additionalValues" : [ "starsystemdef_Qalzi_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_RegisRoost",
+					"additionalValues" : [ "starsystemdef_RegisRoost_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Katinka",
+					"additionalValues" : [ "starsystemdef_Katinka_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Artru",
+					"additionalValues" : [ "starsystemdef_Artru_Flipped" ]
+                },
+				{
+					"Type" : "System_ResetContracts",
+					"value" : "",
+                    "valueConstant" : null
+				}
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

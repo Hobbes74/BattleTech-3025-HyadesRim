@@ -1,0 +1,89 @@
+{
+    "Description" : {
+        "Id" : "milestone_1285_notify_mechs",
+        "Name" : "sim",
+        "Details" : "pause notification",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1285,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1300,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [				
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Boss... we just found an entire lance of BattleMechs on Mech Bay Two and Dr. Murad says the whole section is still operational but had been left unpowered. They are all SLDF grade material but the pirates didn't put them into use, which is strange. Captain Arano has claimed them to the Restoration since they were inside the <i>Argo</i> and has ordered them to be brought online, so you might want to come down and have a look at these beauties. The crew is already discussing nicknames for them.",
+					"additionalValues" : [
+						"SLDF Lance",
+						"castDef_YangDefault"
+					],
+                    "valueConstant" : null
+                },
+				{
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_archer_ARC-2Rb",
+					"valueConstant" : null,
+					"additionalValues" : null
+				},
+				{
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_wolverine_ii_WVR-7H",
+					"valueConstant" : null,
+					"additionalValues" : null
+				},
+				{
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_griffin_GRF-4N",
+					"valueConstant" : null,
+					"additionalValues" : null
+				},
+				{
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_blackknight_BL-6b-KNT",
+					"valueConstant" : null,
+					"additionalValues" : null
+				}
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

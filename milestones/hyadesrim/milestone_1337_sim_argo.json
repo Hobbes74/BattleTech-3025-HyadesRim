@@ -1,0 +1,95 @@
+{
+    "Description" : {
+        "Id" : "milestone_1337_sim_argo",
+        "Name" : "sim",
+        "Details" : "Sim game phase",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1337,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+				"items" : [
+					"oc06_post_smithon_attack"
+				],
+                "tagSetSourceFile" : ""
+			},
+            "RemovedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""			
+			},
+            "Stats" : [],
+            "Actions" : [
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea"
+					]
+				},			
+				{
+                    "Type" : "System_AddContract",
+                    "value" : "trav_story_9_redoubt",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"RimPirates",
+						"AuriganRestoration",
+						"starsystemdef_Smithon"
+					]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Smithon",
+					"additionalValues" : [ "starsystemdef_Smithon_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Umgard",
+					"additionalValues" : [ "starsystemdef_Umgard_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Enkra",
+					"additionalValues" : [ "starsystemdef_Enkra_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Zangul",
+					"additionalValues" : [ "starsystemdef_Zangul_Flipped" ]
+                }
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}
