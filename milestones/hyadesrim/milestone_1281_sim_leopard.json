@@ -13,9 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [
-					"flashpoint_auriganRestoration_complete"
-				],
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -43,16 +41,29 @@
 					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
                     "value" : 1,
-                    "valueConstant" : null
-				}
+                    "valueConstant" : ""
+				},
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "MissionsComplete",
+                    "value" : 0,
+					"set" : true,
+                    "valueConstant" : ""
+                }
 			],
             "Actions" : [	
 				{
 					"Type" : "System_SimGameCharacterVisible",
-					"value" : true,
+					"value" : false,
 					"additionalValues" : [
 						"Kamea",
-						"Alexander",
+						"Alexander"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
 						"Farah",
 						"Yang",
 						"Darius",
@@ -61,8 +72,43 @@
 				},
 				{
 					"Type" : "StarSystem_SetActiveDef",
-					"value" : "starsystemdef_Skyfog",
-					"additionalValues" : [ "starsystemdef_Skyfog_Flipped" ]
+					"value" : "starsystemdef_Fjaldr",
+					"additionalValues" : [ "starsystemdef_Fjaldr_Flipped" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Ichlangis",
+					"additionalValues" : [ "starsystemdef_Ichlangis_Flipped" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Bringdam",
+					"additionalValues" : [ "starsystemdef_Bringdam_Flipped" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_RyansFate",
+					"additionalValues" : [ "starsystemdef_RyansFate_Flipped" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Smithon",
+					"additionalValues" : [ "starsystemdef_Smithon_Flipped" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Zangul",
+					"additionalValues" : [ "starsystemdef_Zangul_Flipped" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Enkra",
+					"additionalValues" : [ "starsystemdef_Enkra_Flipped" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Umgard",
+					"additionalValues" : [ "starsystemdef_Umgard_Flipped" ]
 				}
 			],
             "ForceEvents" : [],

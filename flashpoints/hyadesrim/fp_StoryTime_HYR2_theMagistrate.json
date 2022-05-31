@@ -1,0 +1,68 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR2_theMagistrate",
+        "Name" : "The Magistrate",
+        "Details" : "Caesar Marcus O'Reilly is the victim of an attempted coup by Senate members with Illyrian backing.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_16.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "theMagistrate",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 5,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_kissThemForMe_complete",
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_theMagistrate_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_alphard",
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"MagistracyOfCanopus"
+    ],
+    "TargetFaction" : "MarianHegemony",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "MEDIUM",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_theMagistrate",
+    "UnitDropTonnageHint" : "",
+    "LanceDropTonnageHint" : "",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_theMagistrate",
+    "FlashpointShortDescription" : "Commander, our Lothian allies have provided us with an opportunity to change the Marian's Hegemony balance of power and hopefully bring a change to their expansionist policies. Travel to Alphard to receive more details.",
+    "FlashpointDescriberCastDefId" : "castDef_CentrellaDefault",
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}
