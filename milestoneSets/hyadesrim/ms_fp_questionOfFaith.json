@@ -119,7 +119,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c22d325e989dc45335f7df6",
+                            "value" : "9c07d6fe2d35176429ebcb52",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name}",
@@ -130,7 +130,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_questionOfFaith_003_MissionSim",
+                            "value" : "ms_fp_questionOfFaith_003_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -146,137 +146,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_003_MissionSim",
-                "Name" : "MissionSim",
-                "Details" : "The 1st Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_bigCrater_bMoon",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "questionOfFaith_1_captureEscort",
-                                "TortugaPirates",
-                                "GrimReapers",
-                                "7",
-                                "ms_fp_questionOfFaith_004_Talk",
-                                null,
-                                null,
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_questionOfFaith_004_Talk",
-                "Name" : "Talk",
-                "Details" : "flashpoint",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "System_StartConversation",
-                            "value" : "9c22d325e989dc45335f7df7",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
-                                "Conference",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_questionOfFaith_005_Branch",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_questionOfFaith_005_Branch",
+                "Id" : "ms_fp_questionOfFaith_003_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -367,7 +237,7 @@
             "Description" : {
                 "Id" : "ms_fp_questionOfFaith_100_A-Mission",
                 "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
+                "Details" : "The 1st Mission.",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -399,15 +269,15 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_mountainHold_bMoon",
+                            "value" : "mapGeneral_bigCrater_bMoon",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "questionOfFaith_2a_destroyBase",
+                                "questionOfFaith_1a_simpleBattle",
+                                "SelfEmployed",
                                 "TortugaPirates",
-                                "HarbingersOfDoom",
-                                "6",
+                                "7",
                                 "ms_fp_questionOfFaith_101_A-Mission",
                                 null,
                                 null,
@@ -435,6 +305,67 @@
         {
             "Description" : {
                 "Id" : "ms_fp_questionOfFaith_101_A-Mission",
+                "Name" : "Mission",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_mountainHold_bMoon",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "questionOfFaith_2a_destroyBase",
+                                "TortugaPirates",
+                                "HarbingersOfDoom",
+                                "7",
+                                "ms_fp_questionOfFaith_102_A-Mission",
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_questionOfFaith_102_A-Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -476,8 +407,8 @@
                                 "questionOfFaith_3a_ambushConvoy",
                                 "TortugaPirates",
                                 "HarbingersOfDoom",
-                                "6",
-                                "ms_fp_questionOfFaith_102_A-Talk",
+                                "7",
+                                "ms_fp_questionOfFaith_103_A-Talk",
                                 null,
                                 null,
                                 null
@@ -495,7 +426,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_102_A-Talk",
+                "Id" : "ms_fp_questionOfFaith_103_A-Talk",
                 "Name" : "Talk",
                 "Details" : "Another Conversation.",
                 "Icon" : null
@@ -529,10 +460,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c22d325e989dc45335f7df8",
+                            "value" : "9c07d6fe2d35176429ebcb53",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -540,7 +471,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_questionOfFaith_103_A-Mission",
+                            "value" : "ms_fp_questionOfFaith_104_A-Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -556,7 +487,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_103_A-Mission",
+                "Id" : "ms_fp_questionOfFaith_104_A-Mission",
                 "Name" : "Mission",
                 "Details" : "The 4th Mission.",
                 "Icon" : null
@@ -595,11 +526,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "questionOfFaith_4_story",
+                                "questionOfFaith_4a_story",
                                 "SelfEmployed",
                                 "HarbingersOfDoom",
                                 "7",
-                                "ms_fp_questionOfFaith_104_A-Talk",
+                                "ms_fp_questionOfFaith_105_A-Talk",
                                 null,
                                 null,
                                 null
@@ -625,7 +556,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_104_A-Talk",
+                "Id" : "ms_fp_questionOfFaith_105_A-Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -659,10 +590,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c22d325e989dc45335f7df9",
+                            "value" : "9c07d6fe2d35176429ebcb55",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Crew Council",
                                 null
@@ -670,7 +601,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_questionOfFaith_105_A-Complete",
+                            "value" : "ms_fp_questionOfFaith_106_A-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -686,7 +617,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_105_A-Complete",
+                "Id" : "ms_fp_questionOfFaith_106_A-Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -722,7 +653,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_questionOfFaith_106_A-Reward",
+                            "value" : "ms_fp_questionOfFaith_107_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_questionOfFaith",
@@ -777,7 +708,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_106_A-Reward",
+                "Id" : "ms_fp_questionOfFaith_107_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "A Branch rewards",
                 "Icon" : null
@@ -858,7 +789,7 @@
             "Description" : {
                 "Id" : "ms_fp_questionOfFaith_200_B-Mission",
                 "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
+                "Details" : "The 1st Mission.",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -890,15 +821,15 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_mountainHold_bMoon",
+                            "value" : "mapGeneral_bigCrater_bMoon",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "questionOfFaith_2b_threeWayBattle",
+                                "questionOfFaith_1b_captureEscort",
                                 "TortugaPirates",
-                                "RimPirates",
-                                "6",
+                                "HarbingersOfDoom",
+                                "7",
                                 "ms_fp_questionOfFaith_201_B-Mission",
                                 null,
                                 null,
@@ -926,6 +857,67 @@
         {
             "Description" : {
                 "Id" : "ms_fp_questionOfFaith_201_B-Mission",
+                "Name" : "Mission",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_bigCrater_bMoon",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "questionOfFaith_2b_attackDefend",
+                                "TortugaPirates",
+                                "HarbingersOfDoom",
+                                "7",
+                                "ms_fp_questionOfFaith_202_B-Mission",
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_questionOfFaith_202_B-Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -966,9 +958,9 @@
                                 null,
                                 "questionOfFaith_3b_ambushConvoy",
                                 "TortugaPirates",
-                                "RimPirates",
-                                "6",
-                                "ms_fp_questionOfFaith_202_B-Talk",
+                                "HarbingersOfDoom",
+                                "7",
+                                "ms_fp_questionOfFaith_203_B-Talk",
                                 null,
                                 null,
                                 null
@@ -986,7 +978,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_202_B-Talk",
+                "Id" : "ms_fp_questionOfFaith_203_B-Talk",
                 "Name" : "Talk",
                 "Details" : "Another Conversation.",
                 "Icon" : null
@@ -1020,10 +1012,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c22d325e989dc45335f7df8",
+                            "value" : "9c07d6fe2d35176429ebcb54",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -1031,7 +1023,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_questionOfFaith_203_B-Mission",
+                            "value" : "ms_fp_questionOfFaith_204_B-Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1047,7 +1039,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_203_B-Mission",
+                "Id" : "ms_fp_questionOfFaith_204_B-Mission",
                 "Name" : "Mission",
                 "Details" : "The 4th Mission.",
                 "Icon" : null
@@ -1086,11 +1078,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "questionOfFaith_4_story",
+                                "questionOfFaith_4b_story",
                                 "SelfEmployed",
                                 "HarbingersOfDoom",
                                 "7",
-                                "ms_fp_questionOfFaith_204_B-Talk",
+                                "ms_fp_questionOfFaith_205_B-Talk",
                                 null,
                                 null,
                                 null
@@ -1116,7 +1108,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_204_B-Talk",
+                "Id" : "ms_fp_questionOfFaith_205_B-Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -1150,10 +1142,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c22d325e989dc45335f7df9",
+                            "value" : "9c07d6fe2d35176429ebcb55",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Crew Council",
                                 null
@@ -1161,7 +1153,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_questionOfFaith_205_B-Complete",
+                            "value" : "ms_fp_questionOfFaith_206_B-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1177,7 +1169,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_205_B-Complete",
+                "Id" : "ms_fp_questionOfFaith_206_B-Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -1213,7 +1205,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_questionOfFaith_206_B-Reward",
+                            "value" : "ms_fp_questionOfFaith_207_B-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_questionOfFaith",
@@ -1268,7 +1260,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_questionOfFaith_206_B-Reward",
+                "Id" : "ms_fp_questionOfFaith_207_B-Reward",
                 "Name" : "B-Reward",
                 "Details" : "B Branch rewards",
                 "Icon" : null
