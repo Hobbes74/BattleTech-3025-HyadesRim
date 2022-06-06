@@ -65,7 +65,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_darkHorse_100_MissionSim",
+                            "value" : "ms_fp_darkHorse_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -81,7 +81,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_darkHorse_100_MissionSim",
+                "Id" : "ms_fp_darkHorse_002_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb772d927863af145f6047b",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "HPG Tranmission",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_darkHorse_003_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_darkHorse_003_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -115,19 +176,20 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_crimsonValley_bMars",
+                            "value" : "mapGeneral_icyOutpost_iGlc",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "darkHorse_1_story",
+                                "darkHorse_1_threeWayBattle",
                                 "Locals",
                                 "Locals",
-                                "2",
-                                "ms_fp_darkHorse_101_Mission",
-                                null,
-                                null,
-                                null
+                                "6",
+                                "ms_fp_darkHorse_004_Talk",
+                                "Locals",
+                                "Locals",
+                                "Locals",
+                                "Locals"
                             ]
                         },
                         {
@@ -150,7 +212,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_darkHorse_101_Mission",
+                "Id" : "ms_fp_darkHorse_004_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf54229a0472a8d59d7a0ff",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "HPG Tranmission",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_darkHorse_005_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_darkHorse_005_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -192,8 +315,8 @@
                                 "darkHorse_2_story",
                                 "Locals",
                                 "Locals",
-                                "2",
-                                "ms_fp_darkHorse_101_Mission",
+                                "6",
+                                "ms_fp_darkHorse_006_Talk",
                                 null,
                                 null,
                                 null
@@ -211,7 +334,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_darkHorse_102-Mission",
+                "Id" : "ms_fp_darkHorse_006_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf54229a0472a8d59d7a100",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "HPG Tranmission",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_darkHorse_007_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_darkHorse_007_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -250,11 +434,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "darkHorse_1_story",
+                                "darkHorse_3_story",
                                 "Locals",
                                 "Locals",
-                                "2",
-                                "ms_fp_darkHorse_101_Mission",
+                                "6",
+                                "ms_fp_darkHorse_008_Talk",
                                 null,
                                 null,
                                 null
@@ -272,7 +456,129 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_darkHorse_201-Talk",
+                "Id" : "ms_fp_darkHorse_008_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf54229a0472a8d59d7a101",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "HPG Tranmission",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_darkHorse_009_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_darkHorse_009_Mission",
+                "Name" : "Mission",
+                "Details" : "The 4th Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_craterField_bMars",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "darkHorse_4_story",
+                                "Locals",
+                                "Locals",
+                                "6",
+                                "ms_fp_darkHorse_010_Talk",
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_darkHorse_010_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -306,18 +612,18 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cb772d927863af145f6047b",
+                            "value" : "9cf54229a0472a8d59d7a102",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "Bad Kitten",
-                                "High Orbit",
-                                "Conference",
+                                "{TGT_FLASHPOINT.Def.Description.Name} V",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "HPG Tranmission",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_darkHorse_202-Complete",
+                            "value" : "ms_fp_darkHorse_011_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -333,7 +639,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_darkHorse_202-Complete",
+                "Id" : "ms_fp_darkHorse_011_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -369,7 +675,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_darkHorse_203-Reward",
+                            "value" : "ms_fp_darkHorse_012_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_darkHorse",
@@ -411,8 +717,7 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
-                    ],
+                    "Stats" : [],
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
@@ -425,7 +730,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_darkHorse_203-Reward",
+                "Id" : "ms_fp_darkHorse_012_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "A Branch rewards",
                 "Icon" : null
@@ -448,13 +753,11 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [
@@ -464,15 +767,9 @@
                             "value" : "2000000",
                             "set" : false,
                             "valueConstant" : null
-                        },
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Reputation.TaurianConcordat",
-                            "value" : "-30",
-                            "set" : false,
-                            "valueConstant" : null
                         }
                     ],
+                    "Actions" : [],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -492,8 +789,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
@@ -504,7 +800,7 @@
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
-                    "ResultDuration" : 666
+                    "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,

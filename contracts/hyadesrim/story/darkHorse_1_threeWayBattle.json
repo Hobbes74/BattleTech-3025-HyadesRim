@@ -3,7 +3,7 @@
     "contractName" : "Dark Horse",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 7,
-    "difficultyUIModifier" : 2,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
@@ -15,8 +15,85 @@
     "longDescription" : "With the exception of essential personnel, everyone in the company is currently watching the live holovid feed. Good luck, Captain!",
     "salvagePotential" : 0,
     "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
+    "OnContractSuccessResults" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : "1",
+                    "set" : false,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [
+                
+            ],
+            "ForceEvents" : [
+                
+            ],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "OnContractFailureResults" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : "1271",
+                    "set" : true,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [
+				{
+                    "Type" : "System_AddContract",
+                    "value" : "trav_story_6_hardcore",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"Locals",
+						"SelfEmployed_Kamea",
+						"starsystemdef_Hardcore"
+					]
+                }
+            ],
+            "ForceEvents" : [
+                
+            ],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
@@ -27,7 +104,7 @@
     "mechMaxTonnages" : [
         -1
     ],
-    "mapMood" : "",
+    "mapMood" : "UrbanDaySmoggy",
     "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
@@ -3105,11 +3182,11 @@
     ],
     "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
-    "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableNegotations" : true,
+    "disableLanceConfiguration" : true,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
-    "contractRewardOverride" : -1,
+    "contractRewardOverride" : 100000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
@@ -3155,8 +3232,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_kintaro_KTO-P",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3169,7 +3246,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_story_kamea_end",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3188,8 +3265,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3221,8 +3298,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3254,8 +3331,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3401,39 +3478,6 @@
                     {
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c4b4e072-864a-4158-8daf-2d35deee61ec"
-                        },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
-                        "unitTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "pilotDef_InheritLance",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : "",
-                        "selectedPilotDefId" : ""
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "83c28f4a-e44d-4d82-8c0f-f66dbe5abbe9"
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",

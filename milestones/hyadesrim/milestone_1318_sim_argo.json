@@ -36,7 +36,7 @@
             "Requirements" : null,
             "AddedTags" : {
 				"items" : [
-					"oc05_post_panzyr_attack"
+					"flashpoint_aranoRestoration_complete"
 				],
                 "tagSetSourceFile" : ""
 			},
@@ -53,51 +53,44 @@
                     "value" : 1320,
 					"set" : true,
                     "valueConstant" : ""
-                },
-                {
-                    "typeString" : "System.Int32",
-                    "name" : "MissionsComplete",
-                    "value" : 0,
-					"set" : true,
-                    "valueConstant" : ""
                 }
             ],
             "Actions" : [
 				{
-					"Type" : "System_SimGameCharacterVisible",
-					"value" : false,
-					"additionalValues" : [
-						"Kamea"
-					]
-				},
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Tyrlon",
+					"additionalValues" : [ "starsystemdef_Tyrlon_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Guldra",
+					"additionalValues" : [ "starsystemdef_Guldra_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Heliat",
+					"additionalValues" : [ "starsystemdef_Heliat_Flipped" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Gangtok",
+					"additionalValues" : [ "starsystemdef_Gangtok_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Coromodir",
+					"additionalValues" : [ "starsystemdef_Coromodir_Flipped" ]
+                },	
 				{
                     "Type" : "StarSystem_SetActiveDef",
                     "value" : "starsystemdef_Panzyr",
 					"additionalValues" : [ "starsystemdef_Panzyr_Flipped" ]
-                },
+                },	
 				{
                     "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Bringdam",
-					"additionalValues" : [ "starsystemdef_Bringdam_Flipped" ]
-                },
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_RyansFate",
-					"additionalValues" : [ "starsystemdef_RyansFate_Flipped" ]
-                },
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Mechdur",
-					"additionalValues" : [ "starsystemdef_Mechdur_Flipped" ]
-                },
-				{
-					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_304_theEyesOfTruth",
-					"valueConstant" : null,
-					"additionalValues" : [
-						"Fairuza"
-					]
-				}
+                    "value" : "starsystemdef_Itrom",
+					"additionalValues" : [ "starsystemdef_Itrom_Flipped" ]
+                }
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

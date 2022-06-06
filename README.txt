@@ -10,12 +10,14 @@ Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel -
 
 Features
 * A new BattleTech story and Campaign mode, consisting of 28 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed and the vanilla story is a cover-up made for propaganda purposes. 
-* Sixteen original story missions and flashpoints released (campaign only): You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, Backdoor Man and Dark Forest. 12 more are planned for parts 3 and 4 of the new campaign.
-* New story includes so far a total of 87 new contracts, 116 new crew conversations and 186 descriptions, and is divided into three parts.
-* The vanilla FPs appear in the new Campaign as independent mini-campaigns, except for the Black Widow one which is removed (but still appears on Career mode).
-* 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
-* 88 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
-* 52+ original factions, canon and new, with their own leaders, allies/enemies, contracts and 'Mech/vehicle variants. Ally/fight pirate gangs, corporations, regional powers and bandit kingdoms in both campaign and system contracts.
+* Seventeen original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, Backdoor Man and Dark Forest.
+* Fifteen more campaign flashpoints are being written for parts 2 and 3 of the new campaign: A Country Too Far, Paradise City, Kiss Them For Me, Flesh For Fantasy, The Magistrate, Petty Tyrants and Bandit Kingdoms, Dreams of Nagayan Valley, Horse Latitudes, Dark Horse, Question Of Faith, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
+* New story includes so far a total of 111 new contracts, 134 new crew conversations and 212 lore descriptions, and is divided into three parts, each with its own subarcs.
+* The vanilla FPs are included in the new Campaign as independent mini-campaigns, except for the Black Widow mini-campaign but still appears on Career mode.
+* 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems, as well as other Periphery realms. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
+* 87 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
+* 55+ original factions, canon and new, with their own leaders, allies/enemies, contracts and 'Mech/vehicle variants. Ally/fight pirate gangs, corporations, regional powers and bandit kingdoms in both campaign and system contracts.
+* 66 new cast characters, several with new artwork.
 * 600+ new contracts and variants added, including pirate, IE and Periphery flavored.
 * 700+ new BattleMech variants added to fight as Opfor, can appear equipped with Infernos, ECM, plus other LosTech surprises.
 * All the 'Mech quirks of the Heavy Metal DLC can now appear on any 'Mech model (only certain factions will use them).
@@ -23,18 +25,18 @@ Features
 * 77 canon variants of the vanilla 'Mechs, nearly all of the 3025 era and SLDF variants.
 * 24 new turrets, several equipped with artillery pieces.
 * 33 new BattleMech upgrades, all based on the 'Mech quirks of the Heavy Metal DLC.
-* Opfor pilots levels can vary, being possible to encounter pilots with a different skill levels than the contract's difficulty.
 * Pilot backgrounds now also include Kurita Noble, Steiner Noble, Marian, Circinus, Lothian, Illyrian and Deep Periphery.
-* More terrain variety - in the original game each contract (like One Man's Art) can only appear at a certain system difficulty. Those limitations have been removed, allowing for a greater terrain variety during contracts. 
 * Career mode has nearly everything from above available, except for the story missions/flashpoints.
 
 Balance and Story Changes
-* For most of the campaign you'll use the Hysteria (Leopard), and only get the Argo at the end of part 3, with the Golden Path flashpoint. 
-* The many new campaign flashpoints have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations. Many also have choices that can mitigate the number of consecutive deployments or allow you to use third-party 'Mechs.
-* The original flashpoints of the five Inner Sphere factions are now played sequentially, starting with the lowest difficulty FP. They've been also integrated in the storyline as related to the start of the 4th Succession War.
+* More terrain variety - in the original game each contract (like One Man's Art) can only appear at a certain system difficulty and certain campaign milestones. Those limitations have been removed, allowing for a greater terrain variety during contracts. 
+* For most of the campaign you'll use the Hysteria (Leopard), and only get the Argo at the end of part 2, with the Question Of Faith campaign flashpoint. 
+* Several of the new campaign flashpoints have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations. Many also have choices that can mitigate the number of consecutive deployments or allow you to use third-party 'Mechs.
+* The original flashpoints of the five Inner Sphere factions are now played sequentially, starting with the lowest difficulty FP. They've been also integrated in the campaign as related to the start of the 4th Succession War.
 * On campaign, JumpShip access to the Inner Sphere is limited, and depends on you unlocking letters of marque from the Successor Lords (which also unlock their faction FPs).
 * The special equipment of the Marauder has been nerfed, with the Called Shot ability reduced from a 33% maximum to 25%, and the 10% damage reduction only applying to the Marauder, not the whole lance.
 * Stores/Black Markets have been changed to restore the appearance of LosTech to before the HM DLC was released.
+* Opfor pilots levels can vary, being possible to encounter pilots with a different skill levels than the contract's difficulty.
 
 Disclaimer
 * The objective of this mod is not a total overhaul of the base game, but the opposite: to keep it as unchanged as possible while expanding it with new and original material.
@@ -48,16 +50,16 @@ Requirements﻿
 Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
 
-Known Issues (none are gamebreaking just inconveniences):
-* When playing FPs on the Leopard, there's a visual glitch after any conversations with the DropShip's bridge and other areas. This can be solved by saving and reloading the game.
-* On the Amaris Legacy FP, one of the events displays a yellow 'ERROR' message in the middle of the text.
-* A saved star map won't update when new mod versions are released that change it, so system tags and black market markers might become inaccurate with future mod updates.
-* Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This is because of incompatibilities between the flashpoint and campaign game systems.  
-
 Recommended Mods
 * Navigation Computer by mpstark, makes travel easier, https://github.com/NavigationComputer
 * BattleTechPerformanceFix by m22spencer, https://github.com/BattleTechPerformanceFix
 * ColorfulFlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
+
+Known Issues
+* When playing FPs on the Leopard, there's a visual glitch after any conversations with the DropShip's bridge and other areas. This can be solved by saving and reloading the game.
+* On the Amaris Legacy FP, one of the events displays a yellow 'ERROR' message in the middle of the text.
+* A saved star map won't update when new mod versions are released that change it, so system tags and black market markers might become inaccurate with future mod updates.
+* Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This is because of incompatibilities between the flashpoint and campaign game systems, for safety always end the month if you're on its last day before starting the flashpoint.  
 
 Warning: Use any other mods at your own risk - I only use these three mods together with the Hyades Rim and I do not provide support for third party mod integration! Check the other-mods channel of the Discord server for more information on compatibility with other mods.
 

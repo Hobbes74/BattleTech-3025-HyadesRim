@@ -13,9 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [
-					"flashpoint_darkForest_complete"
-				],
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -26,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1273
+                    "val" : 1273,
                     "valueConstant" : null
                 },
 				{
@@ -53,26 +51,32 @@
 				}
             ],
             "Actions" : [
-                {
-                    "Type" : "System_StartConversation",
-                    "value" : "9cf54229a0472a8d59d7a0ff",
-                    "additionalValues" : [
-						"<i>DARK HORSE</i>",
-						"HPG NEWS"
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea"
 					]
-                },
+				},
 				{
 					"Type" : "System_SimGameCharacterVisible",
 					"value" : true,
 					"additionalValues" : [
-						"Kamea",
 						"Alexander",
 						"Farah",
 						"Yang",
 						"Darius",
 						"Sumire"
 					]
-				}
+				},
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9cb772d927863af145f6047b",
+                    "additionalValues" : [
+						"<i>DARK HORSE</i>",
+						"HPG NEWS"
+					]
+                }
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

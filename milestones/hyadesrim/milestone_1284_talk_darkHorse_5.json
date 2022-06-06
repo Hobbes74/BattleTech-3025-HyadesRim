@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1292_notify_libraUmbrella",
-        "Name" : "sim",
-        "Details" : "pause notification",
+        "Id" : "milestone_1284_talk_darkHorse_5",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1292,
+                    "val" : 1284,
                     "valueConstant" : null
                 }
             ]
@@ -44,15 +44,14 @@
                     "valueConstant" : null
 				}
             ],
-            "Actions" : [			
+            "Actions" : [
                 {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Commander, you are to recover me at Hardcore. But before we head out to the Reach and join the Restoration, there is still one Project UMBRELLA location left to check.",
-					"additionalValues" : [
-						"Libra UMBRELLA",
-						"castDef_KameaDefault"
-					],
-                    "valueConstant" : null
+                    "Type" : "System_StartConversation",
+                    "value" : "9cf54229a0472a8d59d7a102",
+                    "additionalValues" : [
+						"<i>DARK HORSE IV</i>",
+						"HPG NEWS"
+					]
                 }
             ],
             "ForceEvents" : null,

@@ -34,7 +34,12 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+			    "items" : [
+					"flashpoint_darkHorse_complete",
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
             "Stats" : [
 				{
@@ -51,40 +56,17 @@
                     "valueConstant" : ""
                 }
 			],
-            "Actions" : [	
+            "Actions" : [			
 				{
-					"Type" : "System_SimGameCharacterVisible",
-					"value" : false,
+                    "Type" : "System_AddContract",
+                    "value" : "trav_story_7_libraUmbrella",
+                    "valueConstant" : null,
 					"additionalValues" : [
-						"Kamea",
-						"Alexander"
+						"Locals",
+						"SelfEmployed",
+						"starsystemdef_Hardcore"
 					]
-				},
-				{
-					"Type" : "System_SimGameCharacterVisible",
-					"value" : true,
-					"additionalValues" : [
-						"Farah",
-						"Yang",
-						"Darius",
-						"Sumire"
-					]
-				},
-				{
-					"Type" : "StarSystem_SetActiveDef",
-					"value" : "starsystemdef_Weldry",
-					"additionalValues" : [ "starsystemdef_Weldry_Flipped" ]
-				},
-				{
-					"Type" : "StarSystem_SetActiveDef",
-					"value" : "starsystemdef_Ithrom",
-					"additionalValues" : [ "starsystemdef_Ithrom_Flipped" ]
-				},
-				{
-					"Type" : "StarSystem_SetActiveDef",
-					"value" : "starsystemdef_Mangzhangdian",
-					"additionalValues" : [ "starsystemdef_Mangzhangdian_Flipped" ]
-				}
+                }
 			],
             "ForceEvents" : [],
             "TemporaryResult" : false,

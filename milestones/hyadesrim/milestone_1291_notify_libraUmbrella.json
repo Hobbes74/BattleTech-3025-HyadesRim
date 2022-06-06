@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_700a_update",
+        "Id" : "milestone_1291_notify_libraUmbrella",
         "Name" : "sim",
-        "Details" : "update for 1.3 - adds post-campaign Flashpoint support",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,20 +13,18 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [
-					"story_complete"
-				],
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
-                "items": null,
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "RequirementComparisons" : [
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 700,
+                    "val" : 1291,
                     "valueConstant" : null
                 }
             ]
@@ -36,26 +34,20 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-			"AddedTags": {
-				"items": [
-					"SYSTEM_UseFlashpoints",
-					"company_dlc_flashpoints"
-				],
-                "tagSetSourceFile": ""
-            },
-            "RemovedTags" : {
-				"items" : [],
-                "tagSetSourceFile" : ""
-			},
-            "Stats" : [
-			    {
-                    "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : 1,
-                    "valueConstant" : ""
+            "AddedTags" : {},
+            "RemovedTags" : {},
+            "Stats" : [],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Commander, you are to recover me at Hardcore. But before we head out to the Reach and join the Restoration, there is still one Project UMBRELLA location left to check.",
+					"additionalValues" : [
+						"Libra UMBRELLA",
+						"castDef_KameaDefault"
+					],
+                    "valueConstant" : null
                 }
-			],
-            "Actions" : [],
+            ],
             "ForceEvents" : null,
             "TemporaryResult" : false,
             "ResultDuration" : 0
