@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1294_notify_headOverHeels",
-        "Name" : "sim",
-        "Details" : "pause notification",
+        "Id" : "milestone_1110_mission_youOnTheRun_1",
+        "Name" : "mission",
+        "Details" : "Mission 2",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1294,
+                    "val" : 1110,
                     "valueConstant" : null
                 }
             ]
@@ -36,23 +36,16 @@
             "Requirements" : null,
             "AddedTags" : {},
             "RemovedTags" : {},
-            "Stats" : [
-                {
-                    "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : 1,
-                    "valueConstant" : ""
-                }
-            ],
-            "Actions" : [			
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Commander, the star map display on this DropShip uses a different orientation than normal and the system data is completely outdated. I've uploaded Project UMBRELLA's files but the map files are hardwired and nearly impossible to replace.",
+            "Stats" : [],
+            "Actions" : [
+				{
+                    "Type" : "System_StartContract",
+                    "value" : "youOnTheRun_1_story",
+                    "valueConstant" : null,
 					"additionalValues" : [
-						"Head Over Heels",
-						"castDef_FarahDefault"
-					],
-                    "valueConstant" : null
+						"Locals",
+						"AuriganMercenaries"
+					]
                 }
             ],
             "ForceEvents" : null,
@@ -60,5 +53,5 @@
             "ResultDuration" : 0
         }
     ],
-    "Repeatable" : false
+    "Repeatable" : true
 }

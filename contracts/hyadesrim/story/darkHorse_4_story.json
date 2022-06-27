@@ -2,11 +2,12 @@
     "ID" : "darkHorse_4_story",
     "contractName" : "Dark Horse IV",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 7,
-    "difficultyUIModifier" : 2,
+    "difficulty" : 6,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
+    "representativeCastDefIDOverride" : "castDef_DeeJoralDefault",
     "shortDescription" : "The fourth and last round of the Hardcore games has begun! Captain Kamea Arano will be facing ???? ",
     "longDescription" : "With the exception of essential personnel, everyone in the company is currently watching the live holovid feed. Good luck, Captain!",
     "salvagePotential" : 0,
@@ -47,7 +48,37 @@
         }
     ],
     "OnContractFailureResults" : [
-        
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [],
+            "Actions" : [		
+                {
+                    "Type" : "System_StartContract",
+                    "value" : "darkHorse_4_story",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"Locals",
+						"SelfEmployed_Kamea"
+					]
+                }
+            ],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
     ],
     "contractType" : "Story_9_Downfall",
     "encounterPlayStyle" : "SinglePlayer",
@@ -59,7 +90,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Fight and win the last round.",
+            "title" : "Win the Hardcore games",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -67,18 +98,6 @@
                 "d111d351-a666-4852-8e4b-a300d0cccc2d",
                 "6cbd0f23-5d3c-4550-b749-40fc33fc0afb",
                 "e6dad48b-93ff-46a1-bad0-f780e124e3cc"
-            ]
-        },
-        {
-            "contractObjective" : {
-                "EncounterObjectGuid" : "81a1f860-123d-431d-a7c4-b2d0dd8699fb"
-            },
-            "title" : "Recover Lord Alexander Madeira",
-            "description" : "",
-            "isPrimary" : true,
-            "forPlayer" : "Player1",
-            "objectiveGuids" : [
-                
             ]
         },
         {
@@ -859,16 +878,16 @@
         }
     ],
     "disableNegotations" : true,
-    "disableLanceConfiguration" : false,
+    "disableLanceConfiguration" : true,
     "disableCancelButton" : true,
-    "disableAfterAction" : false,
+    "disableAfterAction" : true,
     "contractRewardOverride" : 1000000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 1,
+    "negotiatedSalvage" : 0,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {

@@ -2,7 +2,7 @@
     "ID" : "darkHorse_1_threeWayBattle",
     "contractName" : "Dark Horse",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -111,7 +111,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "8d7e4513-f6c4-4914-a08f-d7baa89672be"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Enemy Lance",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -137,7 +137,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Lance",
+            "title" : "Destroy Enemy Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -787,7 +787,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "699fc05a-9514-4058-ba39-7a366a09acbf"
             },
-            "title" : "Unit one of {COMPANY.CompanyName} must survive",
+            "title" : "Kamea must survive",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -799,7 +799,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ef1d7752-73cf-40bc-9382-d398e80d1e49"
             },
-            "title" : "Unit one of {COMPANY.CompanyName} must survive",
+            "title" : "Kamea must survive",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -885,7 +885,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "51aa5837-b540-42be-b8be-26b37bfcf976"
             },
-            "title" : "Ensure {TEAM_EMP.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "Ensure Rest of Lance safely evacs.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -959,7 +959,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ac4199e4-c42e-4a41-ae0e-cf10f7dfcf8a"
             },
-            "title" : "Ensure {TEAM_EMP.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "Ensure Rest of Lance safely evacs.",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -1478,7 +1478,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "1c3ad7ab-e81f-46af-a926-96b42fd171bd"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Employer Forces Chunk Group"
             ],
@@ -1489,7 +1489,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "889ff9a0-067e-4fc5-bb85-99c2ee9e9e81"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Employer Forces Chunk Group"
             ],
@@ -1703,14 +1703,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Intel says the target lance should be in this area. Engage them, and keep your eyes open for that other lance.",
+                    "words" : "Gamma lance has been deployed. Delta lance currently deploying, J'oral sees.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
@@ -1719,7 +1719,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliviera out.",
+                    "words" : "Sumire, can you turn off the audio and just leave the video?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We can't talk to the captain and we still have to listen to that woman. Great!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1729,7 +1745,39 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Speaking of which, the rest of the Captain's lance hasn't deployed yet. I wonder what's taking them so long?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They're finally switching the audio for the contestant channel.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1819,30 +1867,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Kilo 1-3 just got smoked! Suffering loses over here, Commander! We're still in the fight, but down one.",
+                    "words" : "Delta lance needs to close ranks now!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "PLACEHOLDER Grace under fire folks. Lay it on 'em!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2156,14 +2188,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER All our objectives are complete, cover our withdraw Commander.",
+                    "words" : "Looks like we've defeated them, Captain Arano. See you at the evac area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_ContestantMercenaryDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2222,14 +2254,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Thanks for the assist, we're clear.",
+                    "words" : "Delta lance seems secured and ready to leave.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
@@ -2865,7 +2897,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE05_ArmsDealerCaptain",
+                    "selectedCastDefId" : "castDef_ContestantMercenaryDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
@@ -2881,7 +2913,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE03_PirateLeaderDefault",
+                    "selectedCastDefId" : "castDef_ContestantPirateDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
@@ -2897,7 +2929,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE02_EmployerDefault",
+                    "selectedCastDefId" : "castDef_ContestantTaurianDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
@@ -2913,7 +2945,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE03_PirateLeaderDefault",
+                    "selectedCastDefId" : "castDef_ContestantPirateDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
@@ -2929,7 +2961,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE02_EmployerDefault",
+                    "selectedCastDefId" : "castDef_ContestantMercenaryDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
@@ -2962,6 +2994,54 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Ain't she cute... an almost complete unknown but her manners sound better than that guy from the Oberon Confederation.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ContestantMercenaryDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Get ready, your highness. You're riding point on this one since you're the fucking new guy around here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ContestantPirateDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Let's move and engage, remember at least two of us need to survive and reach evac zone in order to win.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ContestantMercenaryDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -3193,7 +3273,7 @@
     "expirationTimeOverride" : -1,
     "negotiatedSalary" : 1,
     "negotiatedSalvage" : 0,
-    "excludedFromProceduralGeneration" : false,
+    "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
             "EncounterObjectGuid" : "964883ec-5a9c-49fa-8268-9f2d4c047dd9"

@@ -2,7 +2,7 @@
     "ID" : "redoubt_5_story",
     "contractName" : "Redoubt V",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 1,
+    "difficulty" : 10,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -10,9 +10,7 @@
     "shortDescription" : "",
     "longDescription" : "",
     "salvagePotential" : 0,
-    "requirementList" : [
-        
-    ],
+    "requirementList" : [],
     "OnContractSuccessResults" : [
         {
             "Scope" : "Company",
@@ -38,19 +36,8 @@
                     "valueConstant" : ""
                 }
             ],
-            "Actions" : [
-                {
-                    "Type" : "Contract_IgnoreMissionResults",
-                    "value" : "",
-                    "valueConstant" : "",
-                    "additionalValues" : [
-                        
-                    ]
-                }
-            ],
-            "ForceEvents" : [
-                
-            ],
+            "Actions" : [],
+            "ForceEvents" : [],
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }
@@ -76,11 +63,13 @@
             ],
             "Actions" : [
                 {
-                    "Type" : "Contract_IgnoreMissionResults",
-                    "value" : "",
+                    "Type" : "System_AddContract",
+                    "value" : "redoubt_5_story",
                     "valueConstant" : "",
                     "additionalValues" : [
-                        
+						"RimPirates",
+						"AuriganRestoration",
+						"starsystemdef_Coromodir"
                     ]
                 }
             ],

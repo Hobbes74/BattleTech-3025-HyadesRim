@@ -2,17 +2,15 @@
     "ID" : "darkHorse_2_story",
     "contractName" : "Dark Horse II",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 7,
-    "difficultyUIModifier" : 2,
+    "difficulty" : 6,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "shortDescription" : "Victoria has Lord Madeira, and she will never stand down. What she did on Perdition has broken her. And now we're going to end this, in the way that it so nearly began: a duel. I will face off against my cousin in the Arano tourney grounds, and we will fight until one of us is dead.",
-    "longDescription" : "Lady Arano said it all, {COMMANDER.FirstName}. Go get justice for Raju Montgomery, and Commander Markham, and everyone else who died at the hands of House Espinosa. We'll be watching you from here.",
-    "salvagePotential" : 36,
-    "requirementList" : [
-        
-    ],
+    "shortDescription" : "The second round of the Hardcore games has begun! The best classified MechWarriors from the first round will now fight in pairs against themselves, with the victors moving forward to the semifinals.",
+    "longDescription" : "I wouldn't trust much Captain Arano's fighting partner but some of the other pairings look way worse. Should be an interesting round to watch.",
+    "salvagePotential" : 0,
+    "requirementList" : [],
     "OnContractSuccessResults" : [
         {
             "Scope" : "Company",
@@ -38,9 +36,7 @@
                     "valueConstant" : ""
                 }
             ],
-            "Actions" : [
-                
-            ],
+            "Actions" : [],
             "ForceEvents" : [
                 
             ],
@@ -49,7 +45,39 @@
         }
     ],
     "OnContractFailureResults" : [
-        
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : [
+                    
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [],
+            "Actions" : [		
+                {
+                    "Type" : "System_StartContract",
+                    "value" : "darkHorse_2_story",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"Locals",
+						"SelfEmployed_Kamea"
+					]
+                }
+            ],
+            "ForceEvents" : [
+                
+            ],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
     ],
     "contractType" : "Story_9_Downfall",
     "encounterPlayStyle" : "SinglePlayer",
@@ -61,7 +89,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Fight and win the second round.",
+            "title" : "Fight and win the second round",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -69,18 +97,6 @@
                 "d111d351-a666-4852-8e4b-a300d0cccc2d",
                 "6cbd0f23-5d3c-4550-b749-40fc33fc0afb",
                 "e6dad48b-93ff-46a1-bad0-f780e124e3cc"
-            ]
-        },
-        {
-            "contractObjective" : {
-                "EncounterObjectGuid" : "81a1f860-123d-431d-a7c4-b2d0dd8699fb"
-            },
-            "title" : "Recover Lord Alexander Madeira",
-            "description" : "",
-            "isPrimary" : true,
-            "forPlayer" : "Player1",
-            "objectiveGuids" : [
-                
             ]
         },
         {
@@ -861,16 +877,16 @@
         }
     ],
     "disableNegotations" : true,
-    "disableLanceConfiguration" : false,
+    "disableLanceConfiguration" : true,
     "disableCancelButton" : true,
-    "disableAfterAction" : false,
-    "contractRewardOverride" : 1000000,
+    "disableAfterAction" : true,
+    "contractRewardOverride" : 250000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 1,
+    "negotiatedSalvage" : 0,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {

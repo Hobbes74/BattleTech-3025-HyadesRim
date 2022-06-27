@@ -2,17 +2,15 @@
     "ID" : "redoubt_4_story",
     "contractName" : "Redoubt IV",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 7,
-    "difficultyUIModifier" : 2,
+    "difficulty" : 10,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
     "shortDescription" : "No one in the company is easy going with the idea of going Taurian but the atrocities committed by the raiders at Coromodir so far have turned everyone with a need for revenge that I doubt anyone could stop it at this point. But for this to happen we need to regain control of the orbital batteries defending Coromodir, in order to lure the raiders and give the <i>Leonidas</i> a chance to take down at least one of their DropShips. The question on anyone's heads is, will it stop there and unfortunately I know how this ends, Commander.",
     "longDescription" : "This is gonna be a hell of a drop, {COMMANDER.FirstName}. Our entire plan revolves around a science experiment gone wrong\u2026 but I have faith in Doc Murad, and a powerful desire to see Ostergaard dealt with. Permanently.",
     "salvagePotential" : 36,
-    "requirementList" : [
-        
-    ],
+    "requirementList" : [],
     "OnContractSuccessResults" : [
         {
             "Scope" : "Company",
@@ -64,24 +62,16 @@
                 ],
                 "tagSetSourceFile" : ""
             },
-            "Stats" : [
-                {
-                    "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : "622",
-                    "set" : true,
-                    "valueConstant" : ""
-                }
-            ],
+            "Stats" : [],
             "Actions" : [
                 {
                     "Type" : "System_AddContract",
-                    "value" : "trav_story_8_coromodir",
+                    "value" : "redoubt_2_defense",
                     "valueConstant" : "",
                     "additionalValues" : [
-                        "AuriganDirectorate",
-                        "AuriganRestoration",
-                        "starsystemdef_Coromodir"
+						"RimPirates",
+						"AuriganRestoration",
+						"starsystemdef_Coromodir"
                     ]
                 }
             ],

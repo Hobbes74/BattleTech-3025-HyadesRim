@@ -2,17 +2,15 @@
     "ID" : "redoubt_1_attack",
     "contractName" : "Redoubt",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 4,
+    "difficulty" : 10,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
     "shortDescription" : "The ComStar facility has reported raider DropShips dropping on their position before going off-air and we have reports of fighting take place around the area. We need to retake control of the facility and the transmitter, otherwise the invaders will be in control of HPG traffic around Coromodir. Their defenses were deliberately targeted during the initial bombardment but if we can give ComStar time, they will bring them back online.",
     "longDescription" : "This planet's debris field is a real oddity, and a holdover from the Amaris Civil War. It's a nightmare to navigate without ground support, but don't worry\u2014Sumire will get you to the surface in one piece.",
-    "salvagePotential" : 30,
-    "requirementList" : [
-        
-    ],
+    "salvagePotential" : 0,
+    "requirementList" : [],
     "OnContractSuccessResults" : [
         {
             "Scope" : "Company",
@@ -68,7 +66,7 @@
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : "311",
+                    "value" : "1337",
                     "set" : true,
                     "valueConstant" : ""
                 }
@@ -76,12 +74,12 @@
             "Actions" : [
                 {
                     "Type" : "System_AddContract",
-                    "value" : "trav_restoration_1_panzyrAttack",
-                    "valueConstant" : "",
-                    "additionalValues" : [
-                        "AuriganDirectorate",
-                        "AuriganRestoration",
-                        "starsystemdef_Panzyr"
+                    "value" : "trav_story_10_redoubt",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"RimPirates",
+						"AuriganRestoration",
+						"starsystemdef_Coromodir"
                     ]
                 }
             ],

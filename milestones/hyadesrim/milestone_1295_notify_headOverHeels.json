@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1145_mission_3b",
-        "Name" : "mission",
-        "Details" : "Mission 3b",
+        "Id" : "milestone_1295_notify_headOverHeels",
+        "Name" : "sim",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [],
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1145,
+                    "val" : 1295,
                     "valueConstant" : null
                 }
             ]
@@ -36,16 +36,23 @@
             "Requirements" : null,
             "AddedTags" : {},
             "RemovedTags" : {},
-            "Stats" : [],
-            "Actions" : [		
+            "Stats" : [
                 {
-                    "Type" : "System_StartContract",
-                    "value" : "exodus_2_rescue",
-                    "valueConstant" : null,
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Commander, the star map display on this DropShip uses a different orientation than normal and the system data is completely outdated. I've uploaded Project UMBRELLA's files but the map files are hardwired and nearly impossible to replace.",
 					"additionalValues" : [
-						"ClusterPirates",
-						"InterstellarExpeditions"
-					]
+						"Head Over Heels",
+						"castDef_FarahDefault"
+					],
+                    "valueConstant" : null
                 }
             ],
             "ForceEvents" : null,
@@ -53,5 +60,5 @@
             "ResultDuration" : 0
         }
     ],
-    "Repeatable" : true
+    "Repeatable" : false
 }

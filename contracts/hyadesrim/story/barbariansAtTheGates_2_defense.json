@@ -1,8 +1,8 @@
 {
-    "ID" : "Smithon_Defense_Default",
-    "contractName" : "Defense: Smithon",
+    "ID" : "barbariansAtTheGates_2_defense",
+    "contractName" : "Barbarians At The Gates II",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 6,
+    "difficulty" : 9,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -10,9 +10,7 @@
     "shortDescription" : "Lady Arano has ordered a general evacuation from the system, despite Murray's desire to hold on to the system. The threat from the Taurians and the Directorate members loyal to House Espinosa on Coromodir are pressing the Restoration's forces thin, with little support available to defend Coromodir. We need to help the Kittens defend the star port and recover whatever forces we can from this system.",
     "longDescription" : "If Ostergaard were pulling this anywhere but the Reach, the whole Inner Sphere would be screaming about war crimes. We can't let the Taurians get away with what they're doing here, Commander. Punish them for it.",
     "salvagePotential" : 30,
-    "requirementList" : [
-        
-    ],
+    "requirementList" : [],
     "OnContractSuccessResults" : [
         {
             "Scope" : "Company",
@@ -64,25 +62,16 @@
                 ],
                 "tagSetSourceFile" : ""
             },
-            "Stats" : [
-                {
-                    "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : "502",
-                    "set" : true,
-                    "valueConstant" : ""
-                }
-            ],
+            "Stats" : [],
             "Actions" : [
                 {
-                    "Type" : "System_AddContract",
-                    "value" : "trav_restoration_3_smithonDefense",
-                    "valueConstant" : "",
-                    "additionalValues" : [
-                        "TaurianConcordat",
-                        "AuriganRestoration",
-                        "starsystemdef_Smithon"
-                    ]
+                    "Type" : "System_StartContract",
+					"value" : "barbariansAtTheGates_2_defense",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"AuriganDirectorate",
+						"AuriganRestoration"
+					]
                 }
             ],
             "ForceEvents" : [
