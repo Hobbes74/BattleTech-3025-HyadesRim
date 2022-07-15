@@ -20,6 +20,7 @@ Features
 * 66 new cast characters, several with new artwork.
 * 600+ new contracts and variants added, including pirate, IE and Periphery flavored.
 * 700+ new BattleMech variants added to fight as Opfor, can appear equipped with Infernos, ECM, plus other LosTech surprises.
+* Optional - Community Asset Bundle integration, currently adding the Charger, Clint, Crusader, Dervish, Falcon, Firebee, Firefly, Marauder II, Mongoose, Ostroc, Ostsol, Ostwar, Stinger, Talos, Thug, Toro, Valkyrie, Wasp and Wolfhound BattleMech models.
 * All the 'Mech quirks of the Heavy Metal DLC can now appear on any 'Mech model (only certain factions will use them).
 * 23 new vehicle variants, called 'technicals', only used by pirate factions.
 * 77 canon variants of the vanilla 'Mechs, nearly all of the 3025 era and SLDF variants.
@@ -51,6 +52,7 @@ Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
 
 Recommended Mods
+* Community Asset Bundle - requires both the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) AND the Hyades Rim CAB 3025 add-on (https://github.com/Hobbes74/Battletech-3025-HyadesRim)
 * Navigation Computer by mpstark, makes travel easier, https://github.com/NavigationComputer
 * BattleTechPerformanceFix by m22spencer, https://github.com/BattleTechPerformanceFix
 * ColorfulFlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
