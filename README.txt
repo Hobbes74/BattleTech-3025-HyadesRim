@@ -52,9 +52,9 @@ Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
 
 Recommended Mods
-* Community Asset Bundle - requires both the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) AND the Hyades Rim CAB 3025 add-on (https://github.com/Hobbes74/Battletech-3025-HyadesRim)
-* Navigation Computer by mpstark, makes travel easier, https://github.com/NavigationComputer
-* BattleTechPerformanceFix by m22spencer, https://github.com/BattleTechPerformanceFix
+* Community Asset Bundle - requires both the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) AND the Hyades Rim CAB 3025 add-on (https://github.com/Hobbes74/HYR-CAB-3025/archive/refs/tags/release.zip). Install both at your /Mods folder and select them on the game's mod screen.
+* Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
+* BattleTechPerformanceFix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix
 * ColorfulFlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
 
 Known Issues

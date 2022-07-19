@@ -65,16 +65,12 @@
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1,
+                    "value" : 1000,
+                    "set" : "true",
                     "valueConstant" : ""
                 }
             ],
             "Actions" : [
-				{
-                    "Type" : "System_PlayVideo",
-                    "value" : "1A-prologue.bk2",
-                    "valueConstant" : null
-                },
                 {
                     "Type" : "System_SetContractScope",
                     "value" : "TUTORIAL",
@@ -94,6 +90,11 @@
                     "Type" : "StarSystem_SetCurBreadcrumbOverride",
                     "value" : 1,
 					"additionalValues" : [ "starsystemdef_Diik" ]
+                },
+                {
+                    "Type" : "System_CreateCommander",
+                    "value" : null,
+                    "valueConstant" : null
                 }
             ],
             "ForceEvents" : null,
