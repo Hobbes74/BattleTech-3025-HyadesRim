@@ -10,8 +10,8 @@ Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel -
 
 Features
 * A new BattleTech story and Campaign mode, consisting of 28 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed and the vanilla story is a cover-up made for propaganda purposes. 
-* Seventeen original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, Backdoor Man and Dark Forest.
-* Fifteen more campaign flashpoints are being written for parts 2 and 3 of the new campaign: A Country Too Far, Paradise City, Kiss Them For Me, Flesh For Fantasy, The Magistrate, Petty Tyrants and Bandit Kingdoms, Dreams of Nagayan Valley, Horse Latitudes, Dark Horse, Question Of Faith, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
+* Seventeen original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, Backdoor Man, Dark Forest and Dark Horse.
+* Fifteen more campaign flashpoints are being written for parts 2 and 3 of the new campaign: A Country Too Far, Paradise City, Kiss Them For Me, Flesh For Fantasy, The Magistrate, Petty Tyrants and Bandit Kingdoms, Dreams of Nagayan Valley, Horse Latitudes, Question Of Faith, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
 * New story includes so far a total of 111 new contracts, 134 new crew conversations and 212 lore descriptions, and is divided into three parts, each with its own subarcs.
 * The vanilla FPs are included in the new Campaign as independent mini-campaigns, except for the Black Widow mini-campaign but still appears on Career mode.
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems, as well as other Periphery realms. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
@@ -66,12 +66,12 @@ Known Issues
 Warning: Use any other mods at your own risk - I only use these three mods together with the Hyades Rim and I do not provide support for third party mod integration! Check the other-mods channel of the Discord server for more information on compatibility with other mods.
 
 Future Plans
-* Finish the new Campaign with new contracts, missions and flashpoints - release date Winter 2021.
+* Finish the new Campaign with new contracts, missions and flashpoints - release date Winter 2021 (delayed).
 
 Credits
 * Story and lead developer: Hobbes
-* Additional writing: Camicon_Dachass (Liao systems);
 * Additional character artwork: DarkKhaos;
+* Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75) and Ministry Of Bob (Hantta, SanchoPanzer and unclecid);
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer;
 * Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele;

@@ -2,11 +2,12 @@
     "ID" : "darkHorse_2_simpleBattle",
     "contractName" : "Dark Horse II",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 6,
+    "difficulty" : 8,
     "difficultyUIModifier" : 0,
     "weight" : 1,
-    "scope" : "STANDARD",
-    "finalDifficulty" : 0,
+    "scope" : "MID_CAMPAIGN",
+    "finalDifficulty" : 8,
+    "representativeCastDefIDOverride" : "",
     "shortDescription" : "The second round of the Hardcore games has begun! The best classified MechWarriors from the first round will now fight in pairs against themselves, with the victors moving forward to the semifinals.",
     "longDescription" : "I wouldn't trust much Captain Arano's fighting partner but some of the other pairings look way worse. Should be an interesting round to watch.",
     "salvagePotential" : 0,
@@ -60,15 +61,24 @@
                 ],
                 "tagSetSourceFile" : ""
             },
-            "Stats" : [],
-            "Actions" : [		
+            "Stats" : [
                 {
-                    "Type" : "System_StartContract",
-                    "value" : "darkHorse_2_simpleBattle",
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : "1271",
+                    "set" : true,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [
+				{
+                    "Type" : "System_AddContract",
+                    "value" : "trav_story_6_hardcore",
                     "valueConstant" : null,
 					"additionalValues" : [
 						"Locals",
-						"SelfEmployed_Kamea"
+						"SelfEmployed_Kamea",
+						"starsystemdef_Hardcore"
 					]
                 }
             ],
@@ -80,18 +90,14 @@
         }
     ],
     "encounterPlayStyle" : "SinglePlayer",
-    "maxNumberOfPlayerUnits" : 4,
+    "maxNumberOfPlayerUnits" : 2,
     "lanceMinTonnage" : -1,
     "lanceMaxTonnage" : -1,
     "mechMinTonnages" : [
         -1,
-        -1,
-        -1,
         -1
     ],
     "mechMaxTonnages" : [
-        -1,
-        -1,
         -1,
         -1
     ],
@@ -324,7 +330,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I will already because you're clearly the superior fighter here, but I think you have me confused someone else.",
+                    "words" : "I would already because you're clearly the superior fighter here, but I think you have me confused with someone else.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -424,7 +430,7 @@
     "disableLanceConfiguration" : true,
     "disableCancelButton" : true,
     "disableAfterAction" : false,
-    "contractRewardOverride" : 200000,
+    "contractRewardOverride" : 500000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
@@ -470,7 +476,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_kintaro_KTO-18",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -483,7 +489,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_story_kamea_end",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -500,10 +506,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ebc06b6a-c5a8-4165-95ce-480bcf335570"
                         },
-                        "customUnitName" : null,
-                        "customHeraldryDefId" : null,
+                        "customUnitName" : "Grim Sybil",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "mechdef_quickdraw_QKD-4G",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -516,7 +522,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_FP_darkHorse_2",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -637,7 +643,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_battle",
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -647,7 +653,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_50"
+	
                     ],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
@@ -691,72 +697,6 @@
                     {
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "e3e34fc2-c664-42ab-920b-6002c058ac55"
-                        },
-                        "customUnitName" : null,
-                        "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
-                        "unitTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "pilotDef_InheritLance",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "ab9e2bfb-f6c4-4b4b-b540-957dcfc48a27"
-                        },
-                        "customUnitName" : null,
-                        "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
-                        "unitTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "pilotDef_InheritLance",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "f46b3021-803a-41ed-87e0-1b8cb86663b8"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,

@@ -42,16 +42,27 @@
                     "name" : "NextStoryMilestone",
                     "value" : 1,
                     "valueConstant" : ""
-				},
-                {
-                    "typeString" : "System.Int32",
-                    "name" : "MissionsComplete",
-                    "value" : 0,
-					"set" : true,
-                    "valueConstant" : ""
-                }
+				}
 			],
             "Actions" : [	
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Alexander",
+						"Farah",
+						"Yang",
+						"Darius",
+						"Sumire"
+					]
+				},
 				{
 					"Type" : "StarSystem_SetActiveDef",
 					"value" : "starsystemdef_Aea",

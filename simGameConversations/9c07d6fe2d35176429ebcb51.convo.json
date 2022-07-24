@@ -9,7 +9,7 @@
         "id": "9ceaf9ceb1353bc404b30269"
       },
       "index": 0,
-      "text": "OK, at this point and with the limited computer systems we have aboard the <i>Hysteria</i> I've finished recovering and decoding the Star League database we recovered from Niops.\n\nFrom my analysis, the sets of files we recovered once belonged to a former SLDF officer who fought in the Amaris Civil War but later decided to remain in the Inner Sphere after General Kerensky left. ",
+      "text": "Captain, everyone, I'm ready to begin.\n\nOK, at this point and with the limited [[DM.BaseDescriptionDefs[LoreWindows95],computer system]] we have available aboard the <i>Hysteria</i> I've finished recovering and decoding the Star League database we recovered from [[DM.BaseDescriptionDefs[LoreNiops],Niops]].",
       "branches": [
         {
           "responseText": "",
@@ -35,8 +35,70 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_141_AXYLUS",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -44,7 +106,7 @@
         "id": "9cc97afef25d19d056c06b0a"
       },
       "index": 1,
-      "text": "I also suspect that the Niopians got the original hard drive and were able to recover the data from it, including files that were either damaged or deliberately deleted.\n\nThey likely examined the data for what was useful but failed to notice the relevance of the Project UMBRELLA records.",
+      "text": "From my analysis, the sets of files we recovered once belonged to a former [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] officer who fought in the [[DM.BaseDescriptionDefs[LoreAmarisCivilWar],Amaris Civil War]].\n\nThe officer later decided to remain in the Inner Sphere after General Kerensky [[DM.BaseDescriptionDefs[LoreOperationExodus],left]] the Inner Sphere. ",
       "branches": [
         {
           "responseText": "",
@@ -70,7 +132,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -79,10 +141,10 @@
         "id": "9c37656349f2692905e141d0"
       },
       "index": 2,
-      "text": "ALEX It took Interstellar Expeditions decades of research and field trips to learn about that project.\n\nAnd we beat them by hacking the Association's computers, which by itself is a feat unrivaled by IE or anyone else.",
+      "text": "I also suspect that the Niopians got the original hard drive and were able to recover the data from it, including files that were either damaged or deliberately deleted.\n\nThey likely examined the data for what was useful but failed to notice the relevance of the [[DM.BaseDescriptionDefs[LoreProjectUMBRELLA],Project UMBRELLA]] records.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "We had a key piece of information they didn't.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 3,
@@ -105,7 +167,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -114,7 +176,7 @@
         "id": "9cba67e50cf7226c5ea4db46"
       },
       "index": 3,
-      "text": "YANG But what are we going to find down there this time?\n\nAnd I don't just mean salvage but the likely possibility that someone else might be down there since it's obvious that others have that data.",
+      "text": "Yes, it took [[DM.BaseDescriptionDefs[LoreInterstellarExpeditions],Interstellar Expeditions]] decades of research and field trips to learn about that project.\n\nAnd we beat them by hacking the [[DM.Factions[faction_NiopsAssociation],Association]]'s computers, which by itself is a feat unrivaled by IE or anyone else.",
       "branches": [
         {
           "responseText": "",
@@ -140,7 +202,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -149,7 +211,7 @@
         "id": "9ce64e4abb978734401d5754"
       },
       "index": 4,
-      "text": "ALEX Yang, statistically the likelihood of anyone having access to all of the data in our possession is very small, although we should always be prepared.",
+      "text": "But what are we going to find down there this time?\n\nAnd I don't just mean salvage but the likely possibility that someone else might be down there since it's obvious that others have that data.",
       "branches": [
         {
           "responseText": "",
@@ -175,7 +237,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -184,7 +246,7 @@
         "id": "9c3b923ad3a5cd69da03b5b1"
       },
       "index": 5,
-      "text": "SUMIRE Alex, statistically two of those locations had hostiles in a row, which is already quite challenging regarding odds.\n\nAnd as for salvage, those worlds so far have been also related to creepy things going on here in the Periphery.",
+      "text": "Yang, statistically the likelihood of anyone having access to all of the data in our possession is very small, although we should always be prepared.\n\nThis better be something that will help us against the Directorate, otherwise it isn't worth our time.",
       "branches": [
         {
           "responseText": "",
@@ -210,7 +272,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -219,7 +281,7 @@
         "id": "9cdc0d02db35e382fadd877d"
       },
       "index": 6,
-      "text": "",
+      "text": "Alex, statistically two of those locations had hostiles in a row, which is already quite challenging regarding odds.\n\nAnd as for salvage, those worlds so far have been also related to creepy things going on here at the [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]].",
       "branches": [
         {
           "responseText": "",
@@ -245,7 +307,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -254,7 +316,7 @@
         "id": "9c0655aa80da21552186a6ae"
       },
       "index": 7,
-      "text": "",
+      "text": "Wait, aren't we getting ourselves ahead?\n\nDr. Murad, what are exactly we going to find down there that is worth for the Captain and her Restoration such a detour from [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigan]] space?",
       "branches": [
         {
           "responseText": "",
@@ -280,7 +342,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -289,10 +351,10 @@
         "id": "9c66e4b4eff76ed45af0fd9a"
       },
       "index": 8,
-      "text": "And I couldn't believe it myself Farah, otherwise we wouldn't be making this diversion before heading off to Aurigan space.\n\nAre you sure we might find the <i>Argo</i> down there?\n",
+      "text": "Captain Arano, do you want to do the honor?",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "What honor?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 9,
@@ -315,7 +377,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -324,7 +386,7 @@
         "id": "9c45cca36c6df5faf34e650c"
       },
       "index": 9,
-      "text": "The <i>Argo</i>? You might as well had asked me first Farah, I would have replied that no one has been able to find that DropShip in nearly two centuries of searches.",
+      "text": "{COMMANDER.FirstName}, Darius, Yang, Sumire, Alexander... how would you all like to have a new DropShip?\n\nFarah could you please bring up the <i>Argo</i>?",
       "branches": [
         {
           "responseText": "",
@@ -350,7 +412,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -359,7 +421,7 @@
         "id": "9c05478ed1346de1d8076082"
       },
       "index": 10,
-      "text": "And that's exactly why I didn't tell anyone other than the Captain, Alexander.\n\nI doubt the rest of the crew would have taken this seriously except for Kamea. But it's there on Project UMBRELLA's data, the reference to it being deployed to this system around 2779.",
+      "text": "[Screen switches to DropShip image.]",
       "branches": [
         {
           "responseText": "",
@@ -385,8 +447,37 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "argo",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -394,7 +485,7 @@
         "id": "9c4fef7ce7505e5fe9f15e07"
       },
       "index": 11,
-      "text": "And right after the end of the Periphery Uprising, after General Kerensky had left the region for his assault on the Rim Worlds Republic, which is widely accepted by IE as the last alleged sighting of a DropShip similar in size and configuration.\n\nBut even if that information is correct, that doesn't mean it hasn't moved in the past two hundred and fifty years to another location.",
+      "text": "The <i>Argo</i>?!?!?!\n\nNo one has been able to find that DropShip in nearly two centuries of searches.",
       "branches": [
         {
           "responseText": "",
@@ -420,7 +511,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -429,7 +520,7 @@
         "id": "9cfcbbeba8275973e2287d6d"
       },
       "index": 12,
-      "text": "I hate to break it but Alexander does have a point, Farah. \n\nThe chances of us actually finding a DropShip here after that much time and possessing something useful for us to help the Aurigan Reach are... close to zero at this point?",
+      "text": "And I couldn't believe it myself Alexander, otherwise we wouldn't be making this diversion before heading off to Aurigan space.\n\nFarah, are you sure we might find the <i>Argo</i> down there?\n",
       "branches": [
         {
           "responseText": "",
@@ -455,7 +546,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -464,13 +555,13 @@
         "id": "9c5875e19fb3383131062432"
       },
       "index": 13,
-      "text": "This is impossible to believe Kamea... we've discussed this disappearance of this DropShip for years after I found a reference to it in House Madeira's historical archives.",
+      "text": "I didn't tell anyone other than you,  Captain because of the potential of this find and I doubt the rest of the crew would have taken this seriously except for you. \n\nBut it's there on Project UMBRELLA's data the reference to the <i>Argo</i> being deployed to this system around 2779.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 14,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -490,7 +581,287 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c23f36b766ecb0944f7a161"
+      },
+      "index": 14,
+      "text": "Yes, right after the end of the [[DM.BaseDescriptionDefs[LoreNewVandenburgUprising],Periphery Uprising]], after General Kerensky had left the region for his assault on the [[DM.BaseDescriptionDefs[LoreRimWorldsRepublic],Rim Worlds Republic]], which is widely accepted by IE as the last alleged sighting of a DropShip similar in size and configuration.\n\nBut even if that information is correct, that doesn't mean it hasn't moved in the past two hundred and fifty years to another location.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ced42bed91ed227321e92d2"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c85fefd8eacb6274ed0051f"
+      },
+      "index": 15,
+      "text": "I hate to break it but Alexander does have a point, Farah. \n\nThe chances of us actually finding a DropShip here after that much time and possessing something useful for us to help the Aurigan Reach are... close to zero at this point?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c11561f40b17c939dcd5fd2"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8695a1145cb020419d8fe8"
+      },
+      "index": 16,
+      "text": "Yes Sumire and this is impossible to believe Kamea... I remember we've discussed this disappearance of this DropShip for years after I found a reference to it in House Madeira's historical archives.\n\nYou can't possible be going after a childhood dream when we're needed back at the Reach... or maybe you can, after what I've seen lately.",
+      "branches": [
+        {
+          "responseText": "Perhaps she doesn't need to, Alex.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c44749e28527ba5729baaa9"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9b3e103d849480ac126545"
+      },
+      "index": 17,
+      "text": "{COMMANDER.Callsign} has a good point. \n\nAlexander and me need to meet the rest of the Arano loyalists at Panzyr and plan our first strike against the Directorate.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cea83050398ae2ccc38355c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c71d7d62bf3c936072b05e7"
+      },
+      "index": 18,
+      "text": "Captain, please don't tell me you're planning a strike against Espinosa and the Taurians already?\n\nWe might need some time to prepare for that.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca9ef5a10da857942bd647e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd36dbb63464ae3fe3b324e"
+      },
+      "index": 19,
+      "text": "It's time to get ready Yang, for when we meet again.\n\nFarah, how certain are you that we'll find the <i>Argo</i> down there?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9caa34e9ca092c4c8aa1cd87"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9e78df89d518d92f327820"
+      },
+      "index": 20,
+      "text": "I'd say it's a question of faith, Captain.\n\n[[DM.BaseDescriptionDefs[LoreInshallah],Inshallah]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 21,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7c1726e044c8cfa4804c67"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4422f792406707dc1da276"
+      },
+      "index": 21,
+      "text": "Faith is already nearly all the Restoration has at this point.\n\nBring me back the <i>Argo</i>, {COMMANDER.Callsign}, I need something more tangible.",
+      "branches": [
+        {
+          "responseText": "Orders received and understood, Captain.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4e6bf1758ee481475948d3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     }

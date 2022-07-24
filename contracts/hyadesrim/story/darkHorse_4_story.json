@@ -2,13 +2,13 @@
     "ID" : "darkHorse_4_story",
     "contractName" : "Dark Horse IV",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 6,
+    "difficulty" : 9,
     "difficultyUIModifier" : 0,
     "weight" : 1,
-    "scope" : "STANDARD",
-    "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : "castDef_DeeJoralDefault",
-    "shortDescription" : "And now ladies and gents, we're about to watch the final of the Hardcore games and the skirts have never been higher. J'oral is torn, undecided between these heroes that are about to embody in the arena the current Aurigan civil war, with Ostergaard's <i>Annihilator</i> making him everyone's favorite. What will happen? Who can tell J'oral or anyone else watching this broadcast?",
+    "scope" : "MID_CAMPAIGN",
+    "finalDifficulty" : 9,
+    "representativeCastDefIDOverride" : "",
+    "shortDescription" : "And now ladies and gents, we're about to watch the final of the Hardcore games and the skirts have never been higher. J'oral is torn, undecided between these heroes that are about to embody in the arena the current Aurigan civil war, with Ostergaard's new <i>Annihilator</i> making him everyone's favorite. What will happen? Who can tell J'oral or anyone else watching this broadcast?",
     "longDescription" : "Kamea's appeal of the Concordat's gift of the 'Annie' to Ostergaard was dismissed despite the clear attempt to manipulate the results. There's nothing else to do to improve the Captain's odds.",
     "salvagePotential" : 0,
     "requirementList" : [],
@@ -63,15 +63,24 @@
                 ],
                 "tagSetSourceFile" : ""
             },
-            "Stats" : [],
-            "Actions" : [		
+            "Stats" : [
                 {
-                    "Type" : "System_StartContract",
-                    "value" : "darkHorse_4_story",
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : "1271",
+                    "set" : true,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [
+				{
+                    "Type" : "System_AddContract",
+                    "value" : "trav_story_6_hardcore",
                     "valueConstant" : null,
 					"additionalValues" : [
 						"Locals",
-						"SelfEmployed_Kamea"
+						"SelfEmployed_Kamea",
+						"starsystemdef_Hardcore"
 					]
                 }
             ],
@@ -82,7 +91,13 @@
     ],
     "contractType" : "Story_9_Downfall",
     "encounterPlayStyle" : "SinglePlayer",
-    "maxNumberOfPlayerUnits" : 4,
+    "maxNumberOfPlayerUnits" : 1,
+    "mechMinTonnages" : [
+        -1
+    ],
+    "mechMaxTonnages" : [
+        -1
+    ],
     "mapMood" : "Mission9",
     "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
@@ -132,7 +147,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Victoria's Lance",
+            "title" : "Defeat Ostergaard",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -234,6 +249,114 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
+                    "words" : "And the grand finale of the Hardcore games begins!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Kamea Arano faces Samuel Ostergaard in a titanic duel.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Good luck MechWarriors, let the fun begin!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9"
+            },
+            "name" : "Dialogue_MissionSuccess",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
+            },
+            "name" : "Dialogue_MissionFailure",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "Captain Arano 'Mech seems to have been disabled and all communications are down... let's hope the best for her.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },			
+                {
+                    "words" : "Ostergaard wins, as predicted. J'oral is bored with these games.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "5f5c25b4-89d1-4cef-b64c-a78c93ff550c"
+            },
+            "name" : "Inter_VictoriaGreeting",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
                     "words" : "INCOMING TRANSMISSION.",
                     "wordsColor" : {
                         "r" : 1,
@@ -244,10 +367,10 @@
                     "selectedCastDefId" : "castDef_Computer",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
+                    "cameraFocusGuid" : "9e2d0fed-3d92-42ee-92d0-2cc595709f2a",
+                    "cameraDistance" : "Medium",
                     "cameraHeight" : "Default",
-                    "revealRadius" : -1
+                    "revealRadius" : 200
                 },
                 {
                     "words" : "Arano, this is over. Surrender now and I'll let you live. Your 'Mech doesn't have a chance against mine.",
@@ -276,7 +399,7 @@
                     "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -314,7 +437,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "That MechWarrior who failed was the now dead Grey Noton.",
+                    "words" : "That MechWarrior who failed was the now dead Gray Noton.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,7 +453,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Grey Noton???????",
+                    "words" : "The Gray Noton???????",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -381,153 +504,13 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9"
-            },
-            "name" : "Dialogue_MissionSuccess",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
-                
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
-            },
-            "name" : "Dialogue_MissionFailure",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
-                {
-                    "words" : "Captain Arano 'Mech seems to have been disabled and all communications are down... let's hope the best for her.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DeeJoralDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },			
-                {
-                    "words" : "Ostergaard wins, as predicted. DeeJoral is bored with these games.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DeeJoralDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "5f5c25b4-89d1-4cef-b64c-a78c93ff550c"
-            },
-            "name" : "Inter_VictoriaGreeting",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
-                {
-                    "words" : "It took you long enough, Kamea\u2026 I was beginning to wonder if you'd turned tail and run. It wouldn't have been the first time.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "9e2d0fed-3d92-42ee-92d0-2cc595709f2a",
-                    "cameraDistance" : "Medium",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 200
-                },
-                {
-                    "words" : "I'm here for <i>you</i>, Victoria. And the justice of House Arano rides with me.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaArano01",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "How poetic. I have no justice for you, Kamea. No flowery words. Only pain, and death, and humiliation, with Lord Madeira as your audience.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Let him go, Victoria. Now.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Quit wasting your breath. We've both waited for this long enough. Come to me, cousin\u2014let's finish this.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
                 "EncounterObjectGuid" : "fda22816-f013-4464-8e34-7ec3091c65e8"
             },
             "name" : "Inter_MidFight",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You're as much a victim as you are a murderer, Victoria. Your father raised you to kill in his name.",
+                    "words" : "You're not invulnerable, Ostergaard. Your father should have taught you that.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -543,14 +526,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "And <i>you</i> are a fool. Your father raised you to believe you were the hero of some ridiculous fairytale. And you <i>still</i> believe it, even now.",
+                    "words" : "Your talk won't change the inevitable outcome Arano.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_ContestantTaurianDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -559,7 +542,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I don't know what I believe anymore. But this madness must end, and if you won't stop it, I will.",
+                    "words" : "Arrogance is a poor substitute of skill, Ostergaard.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -584,16 +567,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Ha! A pathetic display!",
+                    "words" : "Oh la la la! How a miss now???",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_420_victoria",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -608,22 +591,7 @@
             "name" : "Async_VictoriaTaunt_LanceMateDown",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
-                {
-                    "words" : "A vision of your future, Kamea! You'll be joining them soon!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "m090_430_victoria",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
+
             ]
         },
         {
@@ -634,16 +602,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Your death closes in on you, cousin. The Arano bloodline ends today.",
+                    "words" : "My father ordered me not to let you walk out of this arena alive. So shall it be.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_ContestantTaurianDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_440_victoria",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -659,16 +627,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Come closer, dear cousin\u2026 come closer\u2026",
+                    "words" : "No, no, no, no... the Annie is getting ready to alpha strike!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_450_victoria",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -684,16 +652,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Send your lancemates to me, Kamea. And watch.",
+                    "words" : "What is she doing? J'oral can't see this anymore.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_460_victoria",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -709,16 +677,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I will <i>end</i> you, mercenary swine!",
+                    "words" : "OH!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_470_victoria",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -741,7 +709,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_ContestantTaurianDefault",
                     "emote" : "Default",
                     "audioName" : "",
                     "cameraFocusGuid" : "",
@@ -784,16 +752,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm coming for you, cousin! The Directorate dies today!",
+                    "words" : "The dark horse keeps riding! Go Kamea!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_500_kamea",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -809,7 +777,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Your father has already surrendered, Victoria. Your cause is lost.",
+                    "words" : "Your plot to kill me has failed. This is over.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -818,23 +786,23 @@
                     },
                     "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_510_kamea",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Then he is weak! <i>I</i> will <i>never</i> stand down!",
+                    "words" : "You'll still die by his hands.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_ContestantTaurianDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_520_victoria",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -850,23 +818,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "\u2026All of this death\u2026 [static] \u2026the coup, Perdition\u2026 Mastiff. All of it\u2026 for nothing.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "It was always for nothing, Victoria. The Directorate was never going to be the return to glory that your father promised.",
+                    "words" : "It's over, Ostergaard.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -882,14 +834,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "\u2026I know, cousin. I\u2026 I know. Our fathers lied to us. There is no future for the Reach. [wet coughing] You are the hero of nothing, cousin\u2026 nothing at all.",
+                    "words" : "You think this will bring you back your throne? <cough> My father will torch the Reach until he finds and kills you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
+                    "selectedCastDefId" : "castDef_ContestantTaurianDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Then he shall also face the sword of Restoration, as you have now!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -907,16 +875,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I\u2019m sorry, Victoria\u2026 you left me no choice. But make no mistake: <i>Justice</i> has been served here today. <i>I am</i> the Sword of Restoration. And Coromodir is free.",
+                    "words" : "J'oral is overwhelmed to announce that the winner of the 3028 Hardcore games is the dark horse that entered the competition, Lady Kamea Arano of the Aurigan Restoration!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
-                    "audioName" : "m090_540_kamea",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -929,7 +897,7 @@
     "disableLanceConfiguration" : true,
     "disableCancelButton" : true,
     "disableAfterAction" : true,
-    "contractRewardOverride" : 1000000,
+    "contractRewardOverride" : 2000000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
@@ -981,7 +949,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "heraldrydef_restoration",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_atlas_AS7-D-HT",
+                        "unitDefId" : "mechdef_kintaro_KTO-18",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1180,7 +1148,7 @@
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "Target",
-        "faction" : "AuriganDirectorate",
+        "faction" : "TaurianConcordat",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -1238,7 +1206,7 @@
                             ],
                             "tagSetSourceFile" : "Tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_story_VictoriaEnd",
+                        "pilotDefId" : "pilot_FP_darkHorse_3",
                         "pilotTagSet" : {
                             "items" : [
                                 
