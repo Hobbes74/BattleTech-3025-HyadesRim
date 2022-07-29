@@ -189,7 +189,7 @@
                                 "MarianHegemony",
                                 "MagistracyOfCanopus",
                                 "5",
-                                "ms_fp_kissThemForMe_004_Talk",
+                                "ms_fp_kissThemForMe_004_Mission",
                                 null,
                                 null,
                                 null
@@ -215,8 +215,69 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_kissThemForMe_004_Talk",
-                "Name" : "Talk",
+                "Id" : "ms_fp_kissThemForMe_004_Mission",
+                "Name" : "Mission",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_pocketLakes_vJung",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "kissThemForMe_2_captureEscort",
+                                "MarianHegemony",
+                                "MagistracyOfCanopus",
+                                "5",
+                                "ms_fp_kissThemForMe_005_Talk_Choice",
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_kissThemForMe_005_Talk_Choice",
+                "Name" : "Talk_Choice",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
@@ -260,7 +321,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_kissThemForMe_005_Mission",
+                            "value" : "ms_fp_kissThemForMe_006_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -276,9 +337,9 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_kissThemForMe_005_Mission",
-                "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
+                "Id" : "ms_fp_kissThemForMe_006_Branch",
+                "Name" : "Branch",
+                "Details" : "flashpoint",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -287,9 +348,11 @@
                 {
                     "Scope" : "Company",
                     "Requirements" : {
-                        "Scope" : "Company",
+                        "Scope" : "Flashpoint",
                         "RequirementTags" : {
-                            "items" : [],
+                            "items" : [
+                                "fp_choice_a"
+                            ],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -306,27 +369,53 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
+                    "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_pocketLakes_vJung",
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_kissThemForMe_100_A-Mission",
                             "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "kissThemForMe_2_captureEscort",
-                                "MarianHegemony",
-                                "MagistracyOfCanopus",
-                                "5",
-                                "ms_fp_kissThemForMe_006_Mission",
-                                null,
-                                null,
-                                null
-                            ]
+                            "additionalValues" : null
                         }
                     ],
-                    "ForceEvents" : null,
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_b"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_kissThemForMe_200_B-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -337,7 +426,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_kissThemForMe_006_Mission",
+                "Id" : "ms_fp_kissThemForMe_100_A-Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -376,13 +465,13 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "kissThemForMe_3_fireMission",
-                                "MarianHegemony",
-                                "CanopianPirates",
+                                "kissThemForMe_3a_fireMission",
+                                "Unknown",
+                                "MagistracyOfCanopus",
                                 "5",
-                                "ms_fp_kissThemForMe_007_Talk",
+                                "ms_fp_kissThemForMe_101_A-Talk",
                                 null,
-                                null,
+                                "CanopianPirates",
                                 null
                             ]
                         }
@@ -398,7 +487,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_kissThemForMe_007_Talk",
+                "Id" : "ms_fp_kissThemForMe_101_A-Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -443,7 +532,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_kissThemForMe_008_Complete",
+                            "value" : "ms_fp_kissThemForMe_102_A-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -459,7 +548,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_kissThemForMe_008_Complete",
+                "Id" : "ms_fp_kissThemForMe_102_A-Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -483,7 +572,8 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_kissThemForMe_complete"
+                            "flashpoint_kissThemForMe_complete",
+                            "flashpoint_kissThemForMe_a"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -495,7 +585,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_kissThemForMe_009_A-Reward",
+                            "value" : "ms_fp_kissThemForMe_103_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_kissThemForMe",
@@ -550,7 +640,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_kissThemForMe_009_A-Reward",
+                "Id" : "ms_fp_kissThemForMe_103_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "A Branch rewards",
                 "Icon" : null
@@ -619,6 +709,100 @@
                     "Stats" : null,
                     "Actions" : null,
                     "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_kissThemForMe_200_B-Complete",
+                "Name" : "B-Complete",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_kissThemForMe_complete",
+                            "flashpoint_kissThemForMe_b"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_kissThemForMe_201_B-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_kissThemForMe",
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_kissThemForMe_201_B-Reward",
+                "Name" : "B-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
