@@ -72,7 +72,7 @@ Credits
 * Story and lead developer: Hobbes
 * Additional character artwork: DarkKhaos;
 * Additional writing: Camicon_Dachass (Liao systems);
-* Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75) and Ministry Of Bob (Hantta, SanchoPanzer and unclecid);
+* Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer;
 * Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele;
 * ModTek, by several authors, https://github.com/BattletechModders/ModTek

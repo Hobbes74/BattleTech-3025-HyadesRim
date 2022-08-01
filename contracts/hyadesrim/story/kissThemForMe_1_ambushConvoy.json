@@ -70,7 +70,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy",
+            "title" : "Destroy the Convoy",
             "description" : "The objective for destroying the convoy units.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -82,9 +82,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Escorts",
+            "title" : "Destroy the Convoy Escorts",
             "description" : "The objective for destroying the units guarding the convoy.",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -156,7 +156,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9b0f9fdd-2033-469c-8327-4e519ef6c683"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Reinforcements",
+            "title" : "Destroy Magistracy Reinforcements",
             "description" : "The objective for killing the additional units that ambush you.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -257,7 +257,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "According to these survey maps, you should be able to see the convoy's route from this location.",
+                    "words" : "Marian intel has marked this location as ideal for a visual on the convoys the Canopians are using to transport cargo around Luxen.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -273,7 +273,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once you have eyes on them, destroy the vehicles. Any other units are at your discretion, but there shouldn't be much opposition.",
+                    "words" : "We'll need to take out both vehicles and their escorts, then we'll go through our next target while Dr. Murad and her team salvage whatever remains.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -289,7 +289,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Famous last words. Commander, when you're ready for pickup, I'll meet you at this LZ.",
+                    "words" : "I'll pick up at this LZ when it's time to move to our next target, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -314,32 +314,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Darius, we need to have a talk about what, exactly, you mean by 'not much opposition'.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SumireDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
-            },
-            "name" : "Dialogue_MissionFailure",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
-                {
-                    "words" : "This contract turned out to be quite a bit more exciting than we were led to believe.",
+                    "words" : "That was tighter than we were expecting. Still, good work everyone.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -358,13 +333,38 @@
         },
         {
             "dialogue" : {
+                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
+            },
+            "name" : "Dialogue_MissionFailure",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "One convoy... successfully escaped. We failed this one.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
                 "EncounterObjectGuid" : "2bc99c34-b9a1-4e6d-ad33-a64162819bd0"
             },
             "name" : "Dialogue_GoToComplete",
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_EyesOnTarget",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicles. They should be to your front. Engage and destroy, Commander.",
+                    "words" : "That's the vehicles we need to stop and check their cargo to look for the vaccines.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -389,7 +389,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That's got it, keep firing on those targets until they are neutralized. ",
+                    "words" : "Let them have it Commander, we'll sort through their remains. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -455,7 +455,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Boss, those vehicles are about to leave the AO. If we lose them, we don't get paid.",
+                    "words" : "The Magistracy convoy carrying the vaccine shipments is about to escape!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -480,7 +480,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "One down. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "One vehicle down. It seems to be carrying some sort of armored cases.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -488,6 +488,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Those must be carrying the vials. Let's hope they're strong enough.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -505,7 +521,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is finished, now get what mechs you have to the extraction point and we'll pull you out. Move quickly.",
+                    "words" : "We're done with this convoy. Better start moving to evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
