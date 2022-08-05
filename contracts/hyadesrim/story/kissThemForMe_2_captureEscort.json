@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Years ago, Marian intelligence identified one of the key Canopian researchers responsible for their biological warfare programs under the cover of Fiat Sana Pharmaceuticals, one of Luxen's major corporations. We kept track of her since we initially suspected that the Death's Mask might be a weapon deployed by Magistracy, either deliberately or by accident. So intercept her convoy, take care of any guards and then the Ordo Vigilis will make her share with us her knowledge of the location of their antivirals.",
+    "shortDescription" : "Years ago, Marian intelligence identified one of the key Canopian researchers responsible for their biological warfare programs under the cover of Fiat Sana Pharmaceuticals, one of Luxen's major corporations. We kept track of her since we initially suspected that the Death's Mask might be a weapon deployed by Magistracy, either deliberately or by accident. So intercept her convoy, take care of any guards and then the Ordo Vigilis operatives will drive the vehicles and their cargo to safety.",
     "longDescription" : "We'll be hitting one of their top executives, so we can expect a heavily armed convoy, likely with BattleMech escorts.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -344,7 +344,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Not seeing any 'Mech engine signatures. It doesn't seem like they're alerted to our presence yet, XO.",
+                    "words" : "Fiat Sana facility ahead and no enemy contacts yet.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -360,7 +360,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Perfect. Commander, the motor pool is in this area. Move up and occupy it, and we'll signal to the {TEAM_EMP.FactionDef.Demonym} agents to start their engines.",
+                    "words" : "Let's move quickly to capture the convoy.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -376,7 +376,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once they power those vehicles up, all hell is going to break loose, so be ready.",
+                    "words" : "My operatives are ready but once they start moving, the Canopians should respond quickly.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Just follow us Legatus and we'll clear a path for you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -386,7 +402,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -426,14 +442,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Pack it in, Commander. Nothing left to do here.",
+                    "words" : "Imperator O'Reilly will not be pleased that we failed to recover the vaccines.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MarianLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -451,7 +467,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Commander. The enemy had deployed reinforcements and they are inbound. Expect increased resistance. ",
+                    "words" : "They must really want the content of these vehicles, they're deploying reinforcements, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -476,7 +492,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I don't know who you are, but power down those vehicles and surrender or we'll turn them, and you, into scrap.",
+                    "words" : "This is the Magistracy of Canopus military. You have trespassed in government property. Power down your 'Mechs and surrender.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -492,14 +508,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep radio silence, people. And expect more company.",
+                    "words" : "Well, it didn't take much long for us to be discovered.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -517,7 +533,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_InPositionHoldOut",
             "dialogueContent" : [
                 {
-                    "words" : "You've reached the extraction point for the objective vehicles. Hold there are keep them safe until we can get them out.",
+                    "words" : "The Marian vehicles reached the extraction point. We need to protect them until they are extracted or we'll lose the cargo.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -542,7 +558,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Bravo squad, this is Argo actual. Are you ready to move?",
+                    "words" : "Legatus, are your people ready?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -558,14 +574,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Roger, Argo. The good news is that the Demolisher is armed. The bad news is that it needs some serious maintenance, and its armor is garbage.",
+                    "words" : "Affirmative, Mr. Oliveira. And it seems the vehicles are full of those armored crates we've seen before.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_MarianLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -574,7 +590,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "In other words, it's a glass cannon. Don't count on too much support from it, boss, and <i>definitely</i> don't let it take any fire.",
+                    "words" : "Tell them to wait before opening the presents, Senator.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -582,6 +598,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Your Chief Mech Tech is correct. We'll be waiting for your signal to move.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -599,14 +631,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_ObjSecured",
             "dialogueContent" : [
                 {
-                    "words" : "And they are away! The convoy is safely out of the AO. Good work, Commander. Now get your remaining forces to the second evac zone for extraction there. ",
+                    "words" : "We're safe, clearing the AO now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MarianLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",

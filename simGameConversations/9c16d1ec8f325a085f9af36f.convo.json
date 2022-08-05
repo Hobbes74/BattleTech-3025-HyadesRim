@@ -9,7 +9,7 @@
         "id": "9cd3276e4916637c783dc842"
       },
       "index": 0,
-      "text": "I've finished my check of Dr. Johannes and she's suffering from dehydration and is currently resting while taking fluids intravenously.\n\nShe will be joining us from the Med Bay in holovid because she wants to address all of us.",
+      "text": "Farah has completed her examination of Dr. Johannes and she's suffering from dehydration and is currently resting while taking fluids intravenously.\n\nShe will be joining us from the MedBay in holovid because she wants to address all of us.",
       "branches": [
         {
           "responseText": "",
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "nautilusmap",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -119,7 +119,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -128,7 +128,7 @@
         "id": "9ca184f254359f86d950f2e9"
       },
       "index": 2,
-      "text": "Someone must be using this world to test this technology... there were rumors before of some advanced myomer being researched by the great house.\n\nWe must have run into some kind of black operation.",
+      "text": "Someone must be using this world to test this technology... there were rumors before of some advanced [[DM.BaseDescriptionDefs[LoreMyomer],myomer]] being researched by the great house.\n\nWe must have run into some kind of black operation.",
       "branches": [
         {
           "responseText": "",
@@ -154,7 +154,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -163,7 +163,7 @@
         "id": "9cc36d298138c8fc9c984e46"
       },
       "index": 3,
-      "text": "That doesn't explain the mass abductions and executions. \n\nWhy anyone be testing this kind of technology against civilians? This goes completely against human decency.",
+      "text": "That doesn't explain the mass abductions and executions. \n\nWhy anyone be testing this kind of technology against civilians? This goes completely against human decency and the laws of war.",
       "branches": [
         {
           "responseText": "Dr. Johannes needs to start explaining. Sumire?",
@@ -189,7 +189,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -224,7 +224,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -259,8 +259,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "johannes",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -268,7 +284,7 @@
         "id": "9c24156feb6d145d423fc4f9"
       },
       "index": 6,
-      "text": "Commander, I hope this is the last time you ever rescue me again.\n\nGood job.",
+      "text": "Commander, I hope this is the last time you ever rescue me again.\n\nGood job to all of you.",
       "branches": [
         {
           "responseText": "Thank you. Now we have some questions about all of this.",
@@ -291,7 +307,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -303,7 +321,7 @@
         "id": "9cad55b9f12001e62eb0bd4e"
       },
       "index": 7,
-      "text": "I'm guessing you're seen first hand what the invaders are doing.",
+      "text": "You're seen first hand what the invaders are doing, what do you think?",
       "branches": [
         {
           "responseText": "",
@@ -326,7 +344,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -338,13 +358,13 @@
         "id": "9c4155b37cc13676573d155e"
       },
       "index": 8,
-      "text": "DARIUS Who are these attackers? Who were piloting those Cicada lances?",
+      "text": "Who are these attackers? Who were piloting those lances of <i>Cicadas</i>?",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 9,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -364,7 +384,801 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cac57ff69b6436968bfe242"
+      },
+      "index": 9,
+      "text": "And why are they rigged to self-destruct upon shutdown?\n\nWe failed to recover any single one of them. ",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4adc7ace685f4711cfe5c6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc4a49583c037d3f8db9662"
+      },
+      "index": 10,
+      "text": "Look... to put it short, have you all considered the the possibility of non-human sentient life?\n\nThat we have dealt here with an extraterrestrial incursion?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf6a7fdd2833857a6260e18"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
       "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "johannes",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c2cf36728bf80028979ec52"
+      },
+      "index": 11,
+      "text": "Oh bravo, Dr. Johannes, now we know that there was there worthwhile that IE is ready to spread that non-sense.\n\nIn more than a thousand years of space flight none a single encounter recorded and now you're claiming that aliens riding BattleMechs are invading?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c2920cecdffbae27aa1d04d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c7c1b8500b58c3804b39c1f"
+      },
+      "index": 12,
+      "text": "This has become too wild to consider... Dr. Johannes are you sure you aren't under the influence of some sort of native drug during your time in that planet?",
+      "branches": [
+        {
+          "responseText": "Dr. Murad, maybe you should retest our client.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c895742e4923369e06c4988"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "johannes",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd3bac69bc102421de9c364"
+      },
+      "index": 13,
+      "text": "Listen, and Bob can confirm this, IE and others know of several similar incidents to this one, happening for centuries all over human space.\n\nYou detected unusual electromagnetic signals when you jumped to your pirate point, correct?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c5d23890ecfbf1dbc0b91f1"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "johannes",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c160491f9a6b3aab23f554f"
+      },
+      "index": 14,
+      "text": "Yes but nothing unusual for this type of star and system characteristics.\n\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c58fd924a473f28685924e8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6a3b188e57f72e5746b7d3"
+      },
+      "index": 15,
+      "text": "Three months ago, a freak jump was detected at one of the system's jump points and a couple of weeks later several craft were detected entering the atmosphere and headed for the inhabited northern regions.\n\nNo space traffic was expected and no emergency transmissions were received but the local government organized a search and rescue party, assuming something had gone wrong and help was needed.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c716fa88c94abf08f48aa00"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc9a085e8e7be7dda14953b"
+      },
+      "index": 16,
+      "text": "When I arrived all contact had been lost with the party while at the same time a nearby colony reported an attack by 'bird people' and then also went offline.\n\nThen the unknown attackers continued to hit and destroy other settlements, with gruesome rumors starting to appear regarding those bodies you've seen.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c953215b843c6707372eeda"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd92db4abb974769ecfcb8e"
+      },
+      "index": 17,
+      "text": "At that point I sent a message back to IE requiring help while I made it to the wilderness to avoid capture.\n\nAnd that's when you mercenaries appeared, sent by Yamagushi, who was the one who informed me of the initial reports of electromagnetic disturbances felt by JumpShips passing this system.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca415f8fe8f660887e42d16"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca7f0ca72cd2ec24d2cfeca"
+      },
+      "index": 18,
+      "text": "Even if half of what you said is true, there are other saner explanations than cannibal English-speaking space birds that are raiding the Inner Sphere while riding BattleMechs and JumpShips .",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c840a525bd4205c0f7591c2"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c2e2fa6ee3b77d4b2689a7d"
+      },
+      "index": 19,
+      "text": "Where would they even get 'Mechs in the first place and why <i>Cicadas</i>?\n\nThat model isn't inspired by a bird but by an insect, like the <i>Locust</i>.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c231df2161d929c87e6a42a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf291e3af1c365ed64fb29e"
+      },
+      "index": 20,
+      "text": "There are several possible explanations for that, with the most likely being that a human expedition became stranded in their home world likely after a [[DM.BaseDescriptionDefs[LoreMisjump],misjump]].\n\nOr that they simply copied our designs to mimic their prey and they are far more advanced than us.\n\n",
+      "branches": [
+        {
+          "responseText": "I think we've heard enough, Dr. Johannes, and you need to rest.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 21,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c05a438940f7529fa101b0e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c213cd4bcb8d895662088e1"
+      },
+      "index": 21,
+      "text": "Commander, no matter how unrealistic this seems, I saw them personally while I was hiding. \n\nThe pilots of those 'Mechs had digitigrade legs... they were not human.",
+      "branches": [
+        {
+          "responseText": "Dr. Murad, please?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 22,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6ac64c95c1d302eef094ce"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6800d78c19fcdbd9b88415"
+      },
+      "index": 22,
+      "text": "Done.\n\nDr. Johannes will be taking a nice nap for the next twelve hours since she's clearly showing signs of exhaustion.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 23,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf5da2a221fe21255397c57"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c3df954619737d8b4b585dd"
+      },
+      "index": 23,
+      "text": "And so, what really happened here?\n\nDo I need to add 'giant space birds' to the list of my worries as DropShip pilot?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 24,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca9b993e4c52ec1dc3f9941"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c69b6d60ba7fdd8774e6b74"
+      },
+      "index": 24,
+      "text": "Someone must be making a false flag attack, such as a corporation wanting to get rid of noisy colonists but hiding it under other guise.\n\nThey had the idea of hiding their attacks under 'aliens' and IE felt for the deception after hearing the misjump reports from Bob.",
+      "branches": [
+        {
+          "responseText": "And let's not waste more time around here.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 25,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cdd2d963fa90a863b405607"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c15bcf0d1734d01a30b2755"
+      },
+      "index": 25,
+      "text": "Dr. Johannes story would make a great [[DM.BaseDescriptionDefs[LorePeripheryTales],Periphery Tales]] episode though.\n\nJust imagine: a military unit misjumps and ends in a Deep Periphery world full of aliens...",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 26,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf0a31c6df04004c8e99ceb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c761ef38ee342b131f108ab"
+      },
+      "index": 26,
+      "text": "The sad part Yang, is that IE is gonna take all of this and present it as 'proof' of their crazy theories.\n\nNow I'm wishing we had a 'thought removal' device as they claim to have existed during the [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 27,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cea4d5aa2b16914a1568dd7"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ceef283d8cac9f402b1195c"
+      },
+      "index": 27,
+      "text": "You mean like the ones that they have at [[DM.BaseDescriptionDefs[LoreNiops],Niops]], Dr. Murad?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 28,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc7b8791926e2e72aa7f1f3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ce7970fa9d02119e35525f2"
+      },
+      "index": 28,
+      "text": "And this conversation ends right here, I got a patient to attend to instead of be discussing nonsense. ",
+      "branches": [
+        {
+          "responseText": "Yes, let's get back to regular work.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3293b9068701517c841696"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
       "actions": null,
       "comment": ""
     }

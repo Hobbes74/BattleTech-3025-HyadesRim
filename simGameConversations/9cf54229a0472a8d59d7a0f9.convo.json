@@ -60,7 +60,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "joral06",
+                "string_value": "joral",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -108,7 +108,7 @@
         "id": "9c29b2fc16539579396d0d73"
       },
       "index": 1,
-      "text": "Meanwhile, the foreplay continues with the Aurigans... they were always a little shy, weren't they... out of public attention all this time?\n\nDirector Santiago Espinosa has ordered for all other houses to place their personal units under Directorate command, as a response to House Decimis joining rebel forces, and tensions have been reported as 'tense' between Lord Simon Karosas and the Director during yesterdays's Founding Council meeting.",
+      "text": "Meanwhile, the foreplay continues with the [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigans]]... they were always a little shy, weren't they... out of public attention all this time?\n\nWell, J'oral says they not so shy anymore, oh la la.",
       "branches": [
         {
           "responseText": "",
@@ -159,7 +159,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "espinosa",
+                "string_value": "aurigan",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -174,7 +174,7 @@
         "id": "9c60e67a7ad1a3977ad7ce03"
       },
       "index": 2,
-      "text": "And the absence of Marquis Decimis from the meeting was a great political bomb, after Pierre-Louis broadcast the successful conclusion of 'Operation Polaris' to secure and control the coreward worlds on the Liao and Taurian borders.\n\nWhat can J'oral say? Pierre-Louis got distracted during an interview with a certain foreign correspondent, according to J'oral's sources...",
+      "text": "Well not, Director Espinosa has ordered for all other houses to place their personal units under [[DM.Factions[faction_AuriganDirectorate],Directorate]] command, as a response to House [[DM.BaseDescriptionDefs[LoreHouseDecimis],Decimis]] joining the rebels.",
       "branches": [
         {
           "responseText": "",
@@ -212,7 +212,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "joral06",
+                "string_value": "espinosa",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -227,13 +227,13 @@
         "id": "9cad10f7534c244934f7d162"
       },
       "index": 3,
-      "text": "Oh my... sounds like a big cat fight, J'oral once had this scuffle in the middle of a pleasure pit off the Marik border...\n\nWhich shall not be named here for she gives no free publicity to such disappointments...",
+      "text": "The absence of Marquis Decimis from the meeting was not the biggest surprise though, after Pierre-Louis broadcast after the successful conclusion of 'Operation Polaris' to secure and control the coreward worlds on the Liao and Taurian borders for the [[DM.BaseDescriptionDefs[LoreAuriganRestoration],Restoration]].\n\nThat caught Director Espinosa and most of the Council by surprise.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 4,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -256,7 +256,233 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "decimis",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c7b2db3a0d107ada05e1276"
+      },
+      "index": 4,
+      "text": "And tensions have been reported to J'oral as 'tense' between Lord Simon Karosas and the Director during yesterdays's [[DM.BaseDescriptionDefs[LoreFoundingCouncil],Founding Council]] meeting.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 5,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf3df282978312a0705a1e3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "DeeJoralDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "karosas",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c91d0392fc1ae43906bf304"
+      },
+      "index": 5,
+      "text": "How does J'oral know? \n\nPierre-Louis got distracted during an interview with a certain foreign correspondent, according to J'oral's sources...",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca9e08636d7f8204e9174eb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "DeeJoralDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "joral",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca40190e3a3f101ddcc6b6f"
+      },
+      "index": 6,
+      "text": "Oh my... all this sounds like a big cat fight, J'oral once had this scuffle in the middle of a pleasure pit off the [[DM.Factions[faction_Marik],Marik]] border...\n\nWhich shall not be named here for she gives no free publicity to such disappointments...",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca974a23cd2fe4007d3306a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "DeeJoralDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "marik",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd91f24d1ed775d9a4471f5"
+      },
+      "index": 7,
+      "text": "[Holovid playback stopped.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c857083509f8cf21c838f24"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "The criminals calling themselves 'Plasma Addiction' that stole our secret capacitor technology has been detected by our agents operating in Canopus IV but we can't risk alerting the Magistracy military because they'd likely keep the tech for themselves. Your objective is to take down the robbers and then we'll recover whatever is left, rather than allowing anyone else access to our tech.",
-    "longDescription" : "Operating in the heart of the Magistracy has its risks, Commander.",
+    "shortDescription" : "The criminals calling themselves 'Plasma Addiction' that have stolen our 'goods' have been detected by our agents operating in Canopus IV but we can't risk alerting the Magistracy military because they'd confiscate the tech for themselves. Your objective is to take down the robbers and then we'll recover whatever is left, and everyone will then learn the cost of doublecrossing the Baumann Group. And if the Canopians interfere, show them a lesson too.",
+    "longDescription" : "Operating in the heart of the Magistracy has its risks but likely less than being on the Baumann Group's crosshairs",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "8d7e4513-f6c4-4914-a08f-d7baa89672be"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} and Unknown Hostile Lance",
+            "title" : "Destroy All Enemies",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -66,7 +66,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Lance",
+            "title" : "Destroy Plasma Addiction's Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -80,7 +80,7 @@
             },
             "title" : "Destroy Unknown Hostile Lance",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -1632,7 +1632,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You're approaching the interception point, Commander.",
+                    "words" : "Right, the Baumman Group's office is in this area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1648,7 +1648,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Our primary target, the {TEAM_TAR.FactionDef.Demonym} lance, is in this area.",
+                    "words" : "The Plasma Addiction lance has been spotted here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1664,7 +1664,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The unknown enemy force was last seen here.",
+                    "words" : "And we're seeing also unknown activity in this area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1680,7 +1680,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander. Oliviera out.",
+                    "words" : "That means the Canopians will also intervene. Be prepared for them.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1691,6 +1691,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Good luck, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1705,14 +1721,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Another successful mission in the bag, Commander. Let's debrief once you're back aboard.",
+                    "words" : "Mercenaries, I need to speak to your CO or employer and now!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1730,14 +1746,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's unfortunate. I'll let our employers know what happened.",
+                    "words" : "Next time, better leave the field before the professionals arrive.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1755,14 +1771,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we have confirmation on the unknown enemy lance. They're closing with the {TEAM_TAR.FactionDef.Demonym} forces.",
+                    "words" : "The Canopians are closing on your position, ETA imminent.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1994,7 +2010,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The primary targets are down. That's a wrap.",
+                    "words" : "We've gotten the pirates!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The contract says nothing about the Bounty Hunter so let's leave!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2010,7 +2042,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm inbound to the LZ, Commander. Get your people over there for pickup.",
+                    "words" : "Roger that XO, burning hot to the evac zone, see you there Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2076,14 +2108,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm seeing new heat signatures on the field, Commander. Our mystery tangoes, I'm guessing?",
+                    "words" : "Unknown mercenary lance, this is the Bounty Hunter and you are after my prey!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
@@ -2092,7 +2124,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "That's affirmative. The {TEAM_EMP.FactionDef.Demonym} rep has offered a bonus if we eliminate them, as well. Your call, Commander.",
+                    "words" : "Those 'Mechs are carrying stolen property! Leave at once or face destruction!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We have a valid contract!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2102,7 +2150,23 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Darius, the Bounty Hunter is off the channel.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -2592,7 +2656,7 @@
                 "EncounterObjectGuid" : "a24983cf-45fd-43de-ac4e-f2a641b3525d"
             },
             "name" : "Dialogue_Async_SumireEvacOpenBucket",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
+            "overrideDialogueBucketId" : "DialogBucketDef_paradiseCity_1_threeWayBattle",
             "dialogueContent" : []
         },
         {
@@ -2644,7 +2708,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACHEHOLDER (Hostile to All Secondary). In bound hostile Dropship detected, drop zone marked.",
+                    "words" : "I have detected an incoming DropShip, but it doesn't have Canopian ID.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "We have a situation here and we'd like your help. We've detected a joint task force of {TEAM_TAR.FactionDef.Demonym} and {TEAM_TAR_ALLY.FactionDef.Demonym} units operating openly on the planet. We need to hunt them down and turn them to scrap, but even if we do manage to find them, our own forces aren't up to the task of engaging that many enemies at once. We'd like you to send a lance to accompany our own team; the two of you can then engage the enemy together and negate their numerical advantage.",
-    "longDescription" : "I prefer to operate solo, but if they want us to play babysitter, I suppose that's what we'll do.",
+    "shortDescription" : "Fail to live up to my standards and your mercenaries might find yourselves with a very short life expectancy. Notker Baumann may overrate his importance outside of the Lyran Commonwealth but I have dealt before both with him and your kind of mercenaries. Don't worry you're only facing pirates and they're more likely to break and run than you. Just follow my orders and you'll do fine, unless you want to feel a pair of PPCs in your back.",
+    "longDescription" : "The Bounty Hunter's attitude is starting to get on my nerves, Commander.",
     "salvagePotential" : 0,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -66,7 +66,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Forces",
+            "title" : "Destroy Plasma Addiction Force",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -1145,7 +1145,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "8c5cfff4-066b-44be-9a28-c462461a757a"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Hostile to All Chunk Group"
             ],
@@ -1237,7 +1237,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "7f7e150a-d8e3-4587-9d79-3c2dfe928855"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Enemy Ally Landed Forces Chunk Group"
             ],
@@ -1528,14 +1528,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All right, Alpha Lance, the task force is up ahead; our intel puts them somewhere in this area.",
+                    "words" : "{COMPANY.CompanyName}, track the Plasma lance down for us and don't worry about the rest. Just get their attention until we reach your position.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TagTeam_Leader",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
@@ -1544,14 +1544,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once we've cleared the enemy lances, regroup at this location for extraction.",
+                    "words" : "After that first Plasma lance, we'll move to the next one.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TagTeam_Leader",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
@@ -1560,14 +1560,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Oh, right. Listen, <i>mercenaries</i>, do us all a favor and stay out of the way. Let the professionals work.",
+                    "words" : "Should be easy, otherwise try not no panic and remember I'll be behind you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TagTeam_Leader",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
@@ -1576,7 +1576,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Is this guy for real, boss? Shit, I say let 'em take all the enemy fire. Less overtime hours for my crew.",
+                    "words" : "I definitely didn't like the sound of that.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1592,14 +1592,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Just stick near them and keep them alive, Commander. Doesn't matter who gets the kills, as long as these <i>professionals</i> make it back more or less intact.",
+                    "words" : "Good.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1608,14 +1608,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Saddle up, Alpha; let's clear this AO and go home.",
+                    "words" : "Understood, let's take these Plasma addicts down, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TagTeam_Leader",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1674,14 +1674,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Kinda saw that one coming, boss. Sorry.",
+                    "words" : "You've proven yourselves quite the usual Periphery stock, <i>mercenaries</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1699,7 +1699,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER. New contacts on sesnors, Commander. These units don't match {TEAM_TAR.FactionDef.ShortName} signatures. We've got a new player on the field.",
+                    "words" : "It looks like the Canopians have arrived.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1707,6 +1707,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Keep them occupied.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1724,14 +1740,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Command, this is Alpha Lance; we're under heavy fire- [static]",
+                    "words" : "Bounty Hunter lance, regroup [static]",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TagTeam_Leader",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1740,7 +1756,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander, if these guys die, we don't get paid. No matter how much they might deserve it.",
+                    "words" : "You better help the Bounty Hunter or this deal is off",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_HM_CrimeBossDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Got it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1806,14 +1838,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Shit. That's the last of them. We've got to scrub the mission.",
+                    "words" : "Baumman, this isn't yet for any of you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1995,7 +2027,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER The Hostile to All {TEAM_HOST.FactionDef.Demonym} lance has arrived! This is the Primary Version.",
+                    "words" : "The Magistracy forces have deployed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2011,14 +2043,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to the contract. If we want to get paid we need to take them out.",
+                    "words" : "They're your responsability now, mercenary.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
@@ -2077,14 +2109,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's all our targets, people. Let's head to our evac point.",
+                    "words" : "We're done here, let's get to evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TagTeam_Leader",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
@@ -2093,14 +2125,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "As long as they're still in the AO, they're still at risk, Commander. Keep those idiots covered till they evac.",
+                    "words" : "You mercenaries can cover our evacuation then it's your turn to leave.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2159,14 +2191,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Our new friends are away and safe.",
+                    "words" : "Bounty Hunter lance secured and burning to orbit.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2175,14 +2207,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "What a bunch of <i>assholes</i>. Let's get out of here, boss.",
+                    "words" : "There's one final Plasma Addiction convoy we need to destroy. Baumann, get ready to deploy again.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_HM_BountyHunterDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Understood. Commander {COMMANDER.LastName}, prepare your mercenaries.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_HM_CrimeBossDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2643,7 +2691,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACHEHOLDER (Hostile to All Primary). In bound hostile Dropship detected, drop zone marked.",
+                    "words" : "The MAF has deployed to prevent additional damage to Avalon City.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

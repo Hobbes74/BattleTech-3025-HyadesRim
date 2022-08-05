@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We've tracked Bob Yamaguchi's location to a location near Lameth's northern pole. We are also picking several enemy units in the area, including BattleMechs, although they seemed to be rather moving together than spread out patrolling like Bob said they were. So either they found him already or they were looking for something else. Be careful Commander, we may be walking into a DEST or other Combine faction operating here.",
-    "longDescription" : "And whole question of who framed Bob will be answered although we might also be dealing with simple pirates here.",
-    "salvagePotential" : 16,
+    "shortDescription" : "Dr. Johannes last message to IE indicated she would be hiding in Coopertown's wilderness, along with the coordinates and recognition codes. We'll need to scout the area until we can make contact and extract her safely. This planet is a backwater world so assume any forces encountered will be the enemy she is hiding from.",
+    "longDescription" : "Likely another disgrunted mercenary company with IE, like us or the Ghost Riders. This shouldn't be too hard.",
+    "salvagePotential" : 0,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -41,7 +41,7 @@
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
             "title" : "Destroy Unknown Alpha Lance",
-            "description" : "Destroy the unknown enemies approaching Yamaguchi's position.",
+            "description" : "Destroy the unknown enemies approaching Johannes's position.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -57,7 +57,7 @@
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
             "title" : "Destroy Unknown Beta Lance",
-            "description" : "Destroy the unknown enemies approaching Yamaguchi's position.",
+            "description" : "Destroy the unknown enemies approaching Johannes's position.",
             "isPrimary" : false,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -144,7 +144,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Meet Dr. Johannes at evac",
+            "title" : "Go to the broadcast location",
             "description" : "The objective for the player units escaping and finishing the mission.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -257,23 +257,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's the {TEAM_TAR.FactionDef.Demonym} logistical convoy, Commander.",
+                    "words" : "This is odd, we're definitely picking some sort of convoy but the signatures movement suggests BattleMechs instead.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "audioevent_universal_hostilesInbound",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move up to a good vantage point, and let's find out what we're dealing with.",
+                    "words" : "We need to get a better look at what we're dealing with here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -289,7 +289,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once the convoy's destroyed, head for the evac point, or stick around to mop up the escorts.",
+                    "words" : "We'll also get a better signal there to contact Dr. Johannes.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "But we also need to intercept that convoy or lance and try to get some answers about what's happening.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -305,7 +321,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander. Oliveira out.",
+                    "words" : "Good luck, Commander. <i>Hysteria</i> is out for now .",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,7 +346,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's another one in the bag. Let's head home.",
+                    "words" : "And these <i>Cicadas</i> are gone!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -338,6 +354,86 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And I'm curious about their insides. Or what remained of them.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I'm already plotting our next destination, Yang.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Hysteria</i>, this is Dr. Johannes [static].",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_InterstellarExpeditionsLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Dr. Johannes, can you hear us? Dr. Johannes? Sumire?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We need to get to an orbital position for a better signal. Better strap in the safety belts.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,7 +451,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's a disappointing result, Commander.",
+                    "words" : "The convoy escaped and we haven't made contact with Dr. Johannes. We failed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -380,7 +476,39 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_EyesOnTarget",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicles. They should be to your front. Engage and destroy, Commander.",
+                    "words" : "We have multiple targets on sight. Sumire?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Dr. Johannes, please respond over. Nothing, Darius either she ain't here or she's afraid to contact us.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We have no choice then, we need to take out that convoy.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -405,7 +533,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That's got it, keep firing on those targets until they are neutralized. ",
+                    "words" : "Those vehicles won't last long. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -430,7 +558,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's all of the escorts, Commander. Good shooting.",
+                    "words" : "And that's all of those weird <i>Cicadas</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -438,6 +566,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Anyone else noticed the secondary cockpit explosions? And what's that green mist coming out?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -455,7 +599,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy's almost escaped, Commander. You need to step it up or we're going to miss the window of opportunity.",
+                    "words" : "We need to hurry or they'll escape!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -480,7 +624,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "One down. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "Vehicle obliterated, it's gonna be nearly impossible getting intel from that one.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -505,7 +649,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is finished, now get what mechs you have to the extraction point and we'll pull you out. Move quickly.",
+                    "words" : "I'm not sure we'll get any useful information out of this. Commander, we might consider bailing out other than fighting without a propose.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -530,7 +674,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Enemy Reinforcements, get ready for contact.",
+                    "words" : "More enemy 'Mechs inbound!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -550,8 +694,8 @@
     ],
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
-    "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
+    "overrideAutoCompleteDialogueId" : "DialogBucketDef_aCountryTooFar_1_ambushConvoy",
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,

@@ -60,7 +60,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "joral06",
+                "string_value": "joral",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -108,7 +108,7 @@
         "id": "9c87feb68ee5e53799d3f4c4"
       },
       "index": 1,
-      "text": "To calm the producers J'oral now reminds all you sweeties not to miss our special news reporting over the controversy raised by the latest cat people ring. \n\nAs planetary authorities in several worlds move to criminalize or heavily restrict its followers, the question remains: are J'oral and your personal liberties under threat?",
+      "text": "To calm the producers J'oral now reminds all you sweeties not to miss our special news reporting over the controversy raised by the latest [[DM.BaseDescriptionDefs[LoreCatPeople],cat people]] ring. \n\nAs planetary authorities in several worlds move to criminalize or heavily restrict its followers, the question remains: are J'oral and your personal liberties under threat?",
       "branches": [
         {
           "responseText": "",
@@ -145,7 +145,7 @@
         "id": "9c00897d3542d03db561ab7a"
       },
       "index": 2,
-      "text": "See, there's a storm coming and it's not the the <i>Lustful</i>'s production.\n\nWord is brewing with the upcoming royal marriage that will take place on Terra, and has J'oral been invited? \n\n",
+      "text": "And there's another storm coming and it's not the <i>Lustful</i>'s production, dears.\n\nWord is brewing with the upcoming royal marriage of [[DM.BaseDescriptionDefs[LoreHanseDavion],Goldenboy Hanse]] that will take place on [[DM.BaseDescriptionDefs[LoreTerra],Terra]], and J'oral hasn't been invited? \n\n",
       "branches": [
         {
           "responseText": "",
@@ -196,7 +196,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "joral06",
+                "string_value": "davion",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -240,7 +240,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "joral",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -248,7 +264,7 @@
         "id": "9cc9ea7cfebe579a19dce16d"
       },
       "index": 4,
-      "text": "Oh, and apparently there is some grim news in the Aurigan Civil War...\n\nRebel mercenaries secured Ithrom and its riches, but in Mangzhadian, Lady Victoria Santiago has personally executed the captured restoration leaders as 'traitors'. ",
+      "text": "Oh, and apparently there is some grim news in the [[DM.BaseDescriptionDefs[LoreAuriganCivilWar],Aurigan Civil War]]...\n\nRebel mercenaries secured Ithrom and its riches, but in [[DM.BaseDescriptionDefs[LoreMangzhadian],Mangzhadian]], Lady Victoria Santiago has personally executed the captured restoration leaders as 'traitors'. ",
       "branches": [
         {
           "responseText": "",
@@ -277,7 +293,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "victoria",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -322,13 +354,13 @@
         "id": "9c260d3fea924b5e465e42c6"
       },
       "index": 6,
-      "text": "As usual, MRB and ComStar declined to comment to J'oral on this matter... for now.",
+      "text": "As usual, the [[DM.Factions[faction_MagistracyOfCanopus],Magistracy]]'s government declined to comment to J'oral in this [[DM.BaseDescriptionDefs[LoreAuriganCivilWar],civil war]]... for now.\n\nJ'oral will see about loosing their tongues in the future... or their robes, she will see.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 7,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -351,7 +383,74 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "joral",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c57a91cc91f066ef74706b4"
+      },
+      "index": 7,
+      "text": "[Holovid playback paused.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd98886354feda9e2ee646c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

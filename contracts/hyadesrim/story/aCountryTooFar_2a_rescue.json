@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The scion of a {TEAM_EMP.FactionDef.Demonym} mercantile concern has been missing for months. We suspect a kidnapping by {TEAM_TAR.FactionDef.ShortName}, but there's been no ransom demand. A local group of sympathizers on {TGT_SYSTEM.name} recently picked up a garbled message from the scion indicating that she's being held in a {TEAM_TAR.FactionDef.Demonym} facility there. Our intel failed to trace her to {TGT_SYSTEM.name}, so any loyal mechs are several jumps away. We need your help to extract her.",
-    "longDescription" : "Looks like {TEAM_EMP.FactionDef.Name} is really over a barrel here. My kind of customer.",
-    "salvagePotential" : 16,
+    "shortDescription" : "Sometimes you hear horror stories while sharing a drink with a couple of strangers in a seedy Periphery bar. This is one of them, Commander, for what I've seen and heard has been completely off scale from my beliefs, even after all this years of having worked for IE.",
+    "longDescription" : "And I'm starting to worry whether we are taking orders from an employer who might be suffering from traumatic stress.",
+    "salvagePotential" : 0,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -40,8 +40,8 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Retrieve the {TEAM_EMP.FactionDef.Demonym} VIP and Escape",
-            "description" : "Locate the heir. She'll need to ride along in one of the mechs, so keep that mech safe until extraction.",
+            "title" : "Rescue the colonists",
+            "description" : "Locate the colonists and secure their locations.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -56,7 +56,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Recover the VIP by Securing the Designated Area",
+            "title" : "Recover the colonists",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -104,7 +104,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
             },
-            "title" : "Recover the VIP's assistant by securing the Secondary Designated Area",
+            "title" : "Secure the additional location",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -197,7 +197,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a4e9541a-082c-491f-bb80-2f1241b0c349"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -258,14 +258,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is a straightforward retrieval. Locate the VIP and get to the Evac Zone.",
+                    "words" : "I've contacted the location but I'm not receiving any reply.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -274,7 +274,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "First step. Find our target in the location of the last known signal...",
+                    "words" : "We need to check for survivors, to make sure there isn't anyone still alive out there.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -290,7 +290,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "... and extract safely. Keep the Mech carrying the VIP in one piece!",
+                    "words" : "Then we should get out of here as quickly as possible.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -306,7 +306,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Best of luck, Commander.",
+                    "words" : "There's also some activity nearby. Expect trouble.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -331,7 +331,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Excellent work, commander. The {TEAM_EMP.FactionDef.Demonym} VIP is on her way home.",
+                    "words" : "This was a waste, there were no survivors around.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -339,6 +339,86 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Only these guys who talk like if they're birds.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And who appear responsible for having massacred everyone on this settlement.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Hysteria</i>, you're late again. I've already moved out since everyone was dead.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_InterstellarExpeditionsLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We noticed. Care to explain who is this 'bird army' we're facing?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We do not have time for this right now because they'll be back. I'm sending the location of where I am right now and get here on time!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_InterstellarExpeditionsLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -356,14 +436,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Disappointing, Commander. I'll notify {TEAM_EMP.FactionDef.Name}.",
+                    "words" : "<i>Takodí! Takodí! Dâketo kapi!</i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YellowBirdLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -381,7 +461,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You're in the area of the last known signal. Hold position and give the VIP a chance to board one of the Mechs.",
+                    "words" : "Hold position and look for survivors.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -392,6 +472,54 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Darius, look at these figures in the ground... they're bodies.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Tádáka dêkó. Déko tâté.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YellowBirdLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What? What did that enemy pilot said?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -456,7 +584,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand",
             "dialogueContent" : [
                 {
-                    "words" : "[GENERIC VO] The asset has been recovered, Commander. Good work. ",
+                    "words" : "First site checked, it appears everyone is dead.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -464,6 +592,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Képódi dûtapi. Dâki tateta. Kâpetati.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YellowBirdLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Are they singing? What is that language?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -481,7 +641,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand-Sec",
             "dialogueContent" : [
                 {
-                    "words" : "[GENERIC VO] The secondary asset has been recovered, Commander.",
+                    "words" : "Second site checked, there seems to be no survivors here also.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -489,6 +649,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Takêpi! Tãkápi! Dakdô!</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YellowBirdLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yeah, screw you too and your jabbery.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -526,7 +718,7 @@
     ],
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
-    "overrideAutoCompleteDialogueId" : null,
+    "overrideAutoCompleteDialogueId" : "DialogBucketDef_aCountryTooFar_2a_rescue",
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : true,
@@ -764,7 +956,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TE",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -797,7 +989,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TE",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -830,7 +1022,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TA",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -863,7 +1055,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TAE",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -923,7 +1115,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TE",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -956,7 +1148,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TAE",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -989,7 +1181,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TAE",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1022,7 +1214,7 @@
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_cicada_CDA-TE",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

@@ -60,7 +60,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "joral06",
+                "string_value": "joral",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -108,7 +108,7 @@
         "id": "9c0aadd4136a04718da156de"
       },
       "index": 1,
-      "text": "In a daring moving to flank Directorate positions and secure the Taurian border, Decimis has struck at several spinward worlds. \n\nHowever, J'oral's sources have reported a somber mood at the Restoration headquarters at Mechdur after forces liberating the key world of Katinka were confirmed to be offline for several days.",
+      "text": "In a daring moving to flank [[DM.Factions[faction_AuriganDirectorate],Directorate]] positions and secure the Taurian border, Marquis Decimis has struck at several spinward worlds securing victories for the [[DM.Factions[faction_AuriganRestoration],Restoration]]. ",
       "branches": [
         {
           "responseText": "",
@@ -159,7 +159,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "espinosa",
+                "string_value": "aurigan",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -171,7 +171,7 @@
     },
     {
       "idRef": {
-        "id": "9c81633504d9730ec5834d83"
+        "id": "9c09546afb88dd2b78516e62"
       },
       "index": -1,
       "text": "",
@@ -194,7 +194,7 @@
         "id": "9c79e95209d4887e0502f7fb"
       },
       "index": 3,
-      "text": "Despite the cluster fuck the size of a Canopian water bed that took place in Katinka, the biggest prize for the Restoration however was the capture of Lady Victoria Santiago at Smithon, after her defeat at the hands of the mercenary company [[DM.BaseDescriptionDefs[LoreGhostRiders],Ghost Riders]] after a Directorate raid that cost the life of Lord Karosas's son. ",
+      "text": "However, J'oral's sources have reported a somber mood at the rebel headquarters at [[DM.BaseDescriptionDefs[LoreMechdur],Mechdur]] after forces liberating the key world of [[DM.BaseDescriptionDefs[LoreKatinka],Katinka]] were confirmed to be offline for several days.",
       "branches": [
         {
           "responseText": "",
@@ -231,13 +231,13 @@
         "id": "9c7655afc2017957bbe4a66a"
       },
       "index": 4,
-      "text": "While the loss of his heir casts a long shadow across House Karosas' future, the cause of the Restoration has swelled with the images of Director Espinosa's own heir in rebel propaganda.\n\nAnd if you're wondering how Lady Victoria looks in shackles... yes, J'oral is working on the exclusive... ",
+      "text": "Despite the cluster fuck the size of a Canopian water bed that took place in Katinka, the biggest prize for the Restoration however was the capture of Lady Victoria Santiago at [[DM.BaseDescriptionDefs[LoreSmithon],Smithon]].",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 5,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -260,7 +260,164 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "victoria",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c35652af88933d701688379"
+      },
+      "index": 5,
+      "text": "J'oral knows that she was defeated at the hands of the mercenary company [[DM.BaseDescriptionDefs[LoreGhostRiders],Ghost Riders]] after a Directorate raid at Smithon that cost the life of Lord Karosas's son. ",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd9eaf040df2b11c711194c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "DeeJoralDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "joral",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc5a18d04cccc40472f8ddb"
+      },
+      "index": 6,
+      "text": "While the loss of his heir casts a long shadow across [[DM.BaseDescriptionDefs[LoreHouseKarosas],House Karosas]]' future, the cause of the Restoration has swelled with the images of Director Espinosa's own heir printed all over rebel propaganda.\n\nAnd if you're wondering how Lady Victoria looks in shackles... yes, J'oral is working on the exclusive... ",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c0c9ad464000e7188c61301"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "DeeJoralDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
       "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c37ed287f4d7a7dd223e747"
+      },
+      "index": 7,
+      "text": "[Holovid playback stops.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7a61f62742be881f76e5b8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

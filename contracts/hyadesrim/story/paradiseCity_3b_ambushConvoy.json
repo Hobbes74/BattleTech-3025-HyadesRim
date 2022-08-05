@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Destroy the Guerrilla Convoy and Escape",
+            "title" : "Destroy the Plasma vehicles",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -56,7 +56,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
-            "title" : "Destroy the Convoy Guards",
+            "title" : "Destroy the Plasma Escort",
             "description" : "",
             "isPrimary" : false,
             "forPlayer" : "Player1",
@@ -70,7 +70,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Destroy the Guerrilla Supply Convoy",
+            "title" : "Destroy the Plasma Convoy",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -82,7 +82,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
             },
-            "title" : "Destroy the Convoy Escort",
+            "title" : "Destroy the Plasma Guards",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -132,7 +132,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "aa529050-2feb-4fbf-8838-afa2849caca6"
             },
-            "title" : "Intercept the Supply Convoy",
+            "title" : "Intercept the Plasma Convoy",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -156,7 +156,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9b0f9fdd-2033-469c-8327-4e519ef6c683"
             },
-            "title" : "Destroy Enemy Reinforcement Units",
+            "title" : "Destroy Plasma Reinforcements",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -199,7 +199,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "2e0d2e69-6335-49ae-b2bb-61ff3185306b"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -257,7 +257,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The {TEAM_TAR.FactionDef.Demonym} convoy is inbound, Commander.",
+                    "words" : "According to the Bounty Hunter, this is last of the Plasma forces.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -273,7 +273,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Let's get eyes on, and intercept the vehicles before they escape the trap.",
+                    "words" : "Once we take them out, the Baumann Group should leave us alone.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -289,7 +289,55 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Then we'll extract at our designated location.",
+                    "words" : "And if they don't?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "So far so good, so let's not jinx this contract about that.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I'd still be worried if I was Alexander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Let's focus on completing the mission then we'll extract and be done.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -305,7 +353,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander. Oliveira out.",
+                    "words" : "And hope that Notker Baumman is true to his word. Good luck, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,7 +378,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander. Let's debrief back in orbit.",
+                    "words" : "All Plasma forces have been defeated or destroyed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -338,6 +386,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Excellent. You mercenaries have fulfilled your part of the contract and I will do the same.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_HM_CrimeBossDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,14 +419,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a mess. Time to call this one off, Commander. I'm scrubbing the mission.",
+                    "words" : "This is what I get from hiring idiots!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_HM_CrimeBossDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -380,7 +444,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_EyesOnTarget",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicles. They should be to your front. Engage and destroy, Commander.",
+                    "words" : "Plasma vehicles spotted.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -405,7 +469,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That's got it, keep firing on those targets until they are neutralized. ",
+                    "words" : "That's a hit!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -430,7 +494,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Convoy guards are all down. Let's finish up and get out of here.",
+                    "words" : "The Plasma 'Mechs have been defeated. Let's get the rest!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -455,14 +519,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is reaching its escape point, Commander. We're running out of time. Step it up!",
+                    "words" : "Hey, the Plasma addicts are escaping!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -480,7 +544,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "One down. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "One down. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -505,7 +569,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is finished, now get what mechs you have to the extraction point and we'll pull you out. Move quickly.",
+                    "words" : "We're done with the convoy and that should be enough for Notker Baumann.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -530,7 +594,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Enemy Reinforcements, get ready for contact.",
+                    "words" : "Here comes the enemy cavalry.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

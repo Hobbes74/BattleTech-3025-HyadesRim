@@ -60,7 +60,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "joral06",
+                "string_value": "joral",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -159,7 +159,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "elena",
+                "string_value": "davion",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -174,7 +174,7 @@
         "id": "9c96a73e06b2efbce01266b3"
       },
       "index": 2,
-      "text": "While in the Aurigan civil war, the Taurian Hyades Light Infantry and Bannockburn's Bandits have invaded and devastated several Restoration owned worlds, with heavy rebel and civilian losses. \n\nLost worlds include Zangul, Enkra, Mechdur, Umgard, Ichlangis and Bringdam, while Directorate forces counterattack at Mangzhangdian and have inflicted heavy losses to the retreating Restoration forces.",
+      "text": "While in the Aurigan civil war, the Taurian Hyades Light Infantry and Bannockburn's Bandits have invaded and devastated several Restoration owned worlds, with heavy rebel and civilian losses. \n\nLost worlds include Zangul, Enkra, Mechdur, Umgard, Ichlangis and Bringdam, while the Directorate forces counterattack at Mangzhangdian is reported to have inflicted heavy losses to the retreating Restoration forces.",
       "branches": [
         {
           "responseText": "",
@@ -203,7 +203,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "taurian",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -211,13 +227,13 @@
         "id": "9c66a7b952493cefef1d1115"
       },
       "index": 3,
-      "text": "It is time these Aurigan criminals and terrorists are dealt summarily with, after their previous atrocities committed on Taurian worlds like Perdition.\n\nThe Concordat will always deal harshly with any attempts of aggression. ",
+      "text": "\"It is time these Aurigan criminals and terrorists are dealt summarily with, after their previous atrocities committed on Taurian worlds like Perdition. The Concordat will always deal harshly with any attempts of aggression.\"\n\nAs usual [[DM.BaseDescriptionDefs[LoreThomasCalderon],Horned Calderon]]  maintains his paranoia, J'oral sees.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 4,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -235,11 +251,46 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "EspinosaDefault"
+        "id": "DeeJoralDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1bce6e28ae82e59c9bd53e"
+      },
+      "index": 4,
+      "text": "[Holovid playback paused.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c81d2174446b800ce62b58f"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
       "actions": null,
       "comment": ""
     }
