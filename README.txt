@@ -4,7 +4,7 @@ BattleTech 1.9.X compatible - requires all DLCs. Work in progress.
 
 Slavish adherence to a formal ritual is a sign that one has nothing better to think about. - Natasha Kerensky, Blood Legacy.
 
-It is 3024 and Lady Kamea Arano has been exiled after being rescued by the survivors of Markham's Marauders during House Espinosa's coup. Her remaining forces have joined with the company in search for mercenary work in the Deep Periphery. But as the 4th Succession War approaches, powerful forces are now threatening to destroy the entire Aurigan Reach unless Kamea can save her realm and reclaim her throne.
+It is 3024 and Lady Kamea Arano has been exiled after being rescued by the survivors of Markham's Marauders during House Espinosa's coup. Her remaining forces have joined with the company in search for mercenary work in the Deep Periphery. But as the 4th Succession War approaches, powerful forces are now threatening to destroy the entire Aurigan Reach unless Kamea can save her realm and reclaim her throne. Work in progress.
 
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if link/HPG expires)
 
@@ -42,6 +42,7 @@ Balance and Story Changes
 Disclaimer
 * The objective of this mod is not a total overhaul of the base game, but the opposite: to keep it as unchanged as possible while expanding it with new and original material.
 * This is Work In Progress - expect bugs (and please report them on the Hyades Rim Discord - link above).
+* The story is fictional and contains vulgar language, including insults, slurs, sexual innuendo/references and several questionable morals or actions displayed by its characters, as well as bad non-native English. If you're offended by any of these, do not play this mod.
 
 Requirements﻿
 * ModTek 0.8.0.0 - https://github.com/BattletechModders/ModTek
