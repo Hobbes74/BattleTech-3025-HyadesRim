@@ -1,8 +1,8 @@
 {
-    "ID" : "theMagistrate_2_rescue",
+    "ID" : "theMagistrate_2_captureBase",
     "contractName" : "The Magistrate II",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,14 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "One of our VIPs is in a {TEAM_EMP.FactionDef.Demonym} facility on {TGT_SYSTEM.name}. We need to get her offworld, but the building is surrounded by {TEAM_TAR.FactionDef.Demonym} forces. You will sweep aside the opposition, recover our VIP, and transport her to a designated landing zone for extraction. Be prepared for opposition - the {TEAM_TAR.FactionDef.Demonym} units surrounding the embassy won't let you extract our personnel without a fight. Payment will be issued when you deliver our VIP alive and in one piece.",
-    "longDescription" : "The enemy has to be expecting an attempt to break their siege, so there will be significant resistance.",
+    "shortDescription" : "The Publius <i>villa</i> is now wide open for an attack if we move quickly. We need to secure the main complex, deal with any help they manage against us and then we'll force the senator out using his family if required. It's not going to be easy pressing that button, Commander, but Magestrix Kyalla personally wants Quintus Publius dead.",
+    "longDescription" : "And once we're done with this contract, maybe the Canopians will get off our necks. I mean, lessen the constant surveillance,that is.",
     "salvagePotential" : 12,
-    "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
-    "encounterPlayStyle" : "SinglePlayer",
-    "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
     "lanceMaxTonnage" : -1,
     "mechMinTonnages" : [
@@ -34,29 +29,33 @@
         -1
     ],
     "mapMood" : null,
-    "startingFogOfWarVisibility" : "Unknown",
+    "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Retrieve the VIP and Escape",
+            "title" : "Capture and kill Senator Quintus Publius",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
+                "caf2acf6-f7d4-43eb-8044-826b6180e2d6",
+                "c02cca7e-6e2c-4a3d-beb0-f9af713a466f",
                 "3a4192be-2a53-4383-94ac-19c08883ea5f",
-                "6f4ceb92-9eef-4765-b345-42ed8fe8e1b3",
-                "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
+                "7617cb28-c434-4a14-8698-a93ccfc3d750",
+                "08f55f37-3afa-4ba6-9e68-d2bdaca90407",
+                "cef5d321-a421-4c1d-a9d7-82fb0ce0551b",
+                "1e13d14a-9a12-4b6f-b567-8bde83e77275"
             ]
         }
     ],
     "objectiveList" : [
         {
             "objective" : {
-                "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
+                "EncounterObjectGuid" : "caf2acf6-f7d4-43eb-8044-826b6180e2d6"
             },
-            "title" : "Recover the VIP by Securing the Designated Area.",
+            "title" : "Scout the Villa",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -66,69 +65,9 @@
         },
         {
             "objective" : {
-                "EncounterObjectGuid" : "ebdc7896-2f3b-4d48-b676-b3b8d84015c8"
+                "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Hidden KILL OBJECTIVE for OpFor1",
-            "description" : "UNUSED KILL OBJECTIVE for AutoComplete",
-            "isPrimary" : false,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
-            "OnSuccessDialogueGUID" : null,
-            "OnFailureDialogueGUID" : null
-        },
-        {
-            "objective" : {
-                "EncounterObjectGuid" : "6f4ceb92-9eef-4765-b345-42ed8fe8e1b3"
-            },
-            "title" : "Get to the evac zone",
-            "description" : "",
-            "isPrimary" : true,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
-            "OnSuccessDialogueGUID" : null,
-            "OnFailureDialogueGUID" : null
-        },
-        {
-            "objective" : {
-                "EncounterObjectGuid" : "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
-            },
-            "title" : "The 'Mech carrying the VIP must survive",
-            "description" : "",
-            "isPrimary" : true,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
-            "OnSuccessDialogueGUID" : null,
-            "OnFailureDialogueGUID" : null
-        },
-        {
-            "objective" : {
-                "EncounterObjectGuid" : "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
-            },
-            "title" : "Secure Zone Bravo to recover the VIP's assistant",
-            "description" : "",
-            "isPrimary" : false,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
-            "OnSuccessDialogueGUID" : null,
-            "OnFailureDialogueGUID" : null
-        },
-        {
-            "objective" : {
-                "EncounterObjectGuid" : "5a848ea1-535c-42e2-b125-bb8d2a9d633d"
-            },
-            "title" : "Hidden KILL OBJECTIVE for OpFor2",
-            "description" : "Hidden KILL OBJECTIVE for autocomplete of mission",
-            "isPrimary" : false,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
-            "OnSuccessDialogueGUID" : null,
-            "OnFailureDialogueGUID" : null
-        },
-        {
-            "objective" : {
-                "EncounterObjectGuid" : "a9f1746b-e990-4c8f-90be-3c4f229da58f"
-            },
-            "title" : "The 'Mech carrying the VIP's assistant must survive",
+            "title" : "Destroy the Marian Forces",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -147,7 +86,93 @@
                         {
                             "typeString" : "System.Single",
                             "name" : "ContractBonusRewardPct",
-                            "value" : "0.25",
+                            "value" : "0.1",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
+            },
+            "title" : "Capture the Villa",
+            "description" : "",
+            "isPrimary" : true,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "cef5d321-a421-4c1d-a9d7-82fb0ce0551b"
+            },
+            "title" : "Defend the villa against reaction forces",
+            "description" : "Hidden",
+            "isPrimary" : true,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "1e13d14a-9a12-4b6f-b567-8bde83e77275"
+            },
+            "title" : "Pacify the Publius Estate",
+            "description" : "This is a general objective to indicate the player must keep playing and eliminate enemies as they come.",
+            "isPrimary" : true,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "7617cb28-c434-4a14-8698-a93ccfc3d750"
+            },
+            "title" : "Destroy Marian Reinforcements",
+            "description" : "",
+            "isPrimary" : true,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "08f55f37-3afa-4ba6-9e68-d2bdaca90407"
+            },
+            "title" : "Destroy Defensive Turrets",
+            "description" : "",
+            "isPrimary" : false,
+            "OnSuccessResults" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.1",
                             "set" : false,
                             "valueConstant" : null
                         }
@@ -167,18 +192,18 @@
     "buildingList" : [],
     "chunkList" : [
         {
-            "name" : "Chunk_OccupyRegion_2 (Bonus)",
+            "name" : "Chunk_DestroyLance_Defenders (Bonus)",
             "encounterChunk" : {
-                "EncounterObjectGuid" : "a4e9541a-082c-491f-bb80-2f1241b0c349"
+                "EncounterObjectGuid" : "a47386d9-3d67-4e83-ac45-ab438af31f4c"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
         {
-            "name" : "Chunk_EnsureSurvives_Objective (Bonus)",
+            "name" : "Chunk_BaseDefense_Turrets (Bonus)",
             "encounterChunk" : {
-                "EncounterObjectGuid" : "a9394ab3-13a6-4c6a-9a03-1b0b89127b17"
+                "EncounterObjectGuid" : "2ffe52ba-8dbe-4893-8161-4f33a01d4335"
             },
             "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
@@ -193,33 +218,45 @@
             }
         },
         {
-            "name" : "Lance_OpposingForce_1",
+            "name" : "Lance_Enemy_BaseDefenders",
+            "encounterObject" : {
+                "EncounterObjectGuid" : "3590aedb-bead-423d-afcf-3d98ca0f301a"
+            }
+        },
+        {
+            "name" : "Lance_Enemy_Reinforcements",
+            "encounterObject" : {
+                "EncounterObjectGuid" : "1ed1ecd2-449b-4df9-8ab5-29846b40c1ad"
+            }
+        },
+        {
+            "name" : "Lance_Enemy_BaseTurrets",
             "encounterObject" : {
                 "EncounterObjectGuid" : "9a1bfa77-fc82-4e20-be61-63ebe1d1949e"
             }
         },
         {
-            "name" : "Lance_Enemy_OpposingForce_2",
+            "name" : "Region_GoTo",
             "encounterObject" : {
-                "EncounterObjectGuid" : "31356694-7216-4a0b-985c-235e2a2d8bb4"
+                "EncounterObjectGuid" : "181efcdf-0e34-477b-8a06-39b0ead2d69e"
             }
         },
         {
-            "name" : "Region_Occupy_1",
+            "name" : "Region_Occupy",
             "encounterObject" : {
                 "EncounterObjectGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1"
             }
         },
         {
-            "name" : "Region_Escape",
+            "name" : "chrPrfVhcl_leopard-MANAGED",
             "encounterObject" : {
-                "EncounterObjectGuid" : "eba2ec63-eab0-4801-b1c5-90964855a7ca"
+                "EncounterObjectGuid" : "fa771906-ac63-4e43-b9b8-aa9c54b4620c"
             }
         },
         {
-            "name" : "Region_Occupy_2",
+            "name" : "chrPrfVhcl_union-MANAGED",
             "encounterObject" : {
-                "EncounterObjectGuid" : "ef65cf21-ed27-4d27-89eb-14aa4da61e93"
+                "EncounterObjectGuid" : "1ef40f50-870a-45a5-9f0f-e76916408d1d"
             }
         }
     ],
@@ -232,7 +269,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All right, this should be a straightforward retrieval mission: get in, acquire the VIP, and get back out again.",
+                    "words" : "Assuming the Lothian spies are correct, Senator Quintus Publius will be in his <i>villa</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -248,7 +285,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The target you're recovering is a {TEAM_EMP.FactionDef.Demonym} VIP. She's trapped in a building that's surrounded by {TEAM_TAR.FactionDef.Demonym} forces - you'll need to engage them to get her out.",
+                    "words" : "The Marians haven't detected us yet, so we can use this advantage to surprise them.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -258,29 +295,13 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraFocusGuid" : "181efcdf-0e34-477b-8a06-39b0ead2d69e",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once you have the VIP in hand, get her to the designated landing zone for extraction.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "eba2ec63-eab0-4801-b1c5-90964855a7ca",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Good hunting, Commander. Oliveira out.",
+                    "words" : "Once you see the <i>villa</i>, take out any defenders, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -305,7 +326,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The VIP is secure, Commander - well done.",
+                    "words" : "The <i>villa</i> is under our control.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -313,6 +334,118 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I, senator Quintus Marius Publius, surrender to you mercenaries.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianSenatorDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Just tell that old geezer to stop hiding from behind his pint of Lothian ale.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Oh, you want <i>him</i>? You're looking for Senator Quintus Publius, not Senator Quintus Marius Publius, you fools!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianSenatorDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What? The intel we've got say that he would be at this location.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "This is the <i>villa>/i> of the true <i>Publii</i> family! We are not related at all to such upstart plebs whom the Imperator chose to reward for their service nor is their presence here welcome!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianSenatorDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Very well, we'll still verify to see if our target is there and we'll leave.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Do as you wish. Meanwhile, I have guests to attend after the failed assassination of this year's <i>baccanalia</i>.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianSenatorDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -330,7 +463,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Scratch one VIP. We're done here, Commander. The client isn't going to be happy.",
+                    "words" : "We failed to capture the <i>villa</i>, Commander. We'll have to retry it some time later.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -349,13 +482,13 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "bcbee1e2-4d86-4ddb-89ec-c59295cae62d"
+                "EncounterObjectGuid" : "692713e2-ddc8-4e4e-963b-81163f2fc598"
             },
-            "name" : "Dialogue_Interrupt_OccupyRegionStarted",
-            "overrideDialogueBucketId" : "",
+            "name" : "Dialogue_EnemiesSpotted",
+            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "You're in the designated area; hold position there and recover our VIP!",
+                    "words" : "We're detecting a single Marian maniple of four.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -363,24 +496,188 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The commander must be still at the Publius' party.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "9071057f-44c7-44ee-a23e-10bc7bab3e00"
+            },
+            "name" : "Dialogue_GoToComplete_EnemiesRemain",
+            "overrideDialogueBucketId" : "DialogBucketDef_CaptureBase_AreaNotClear",
+            "dialogueContent" : [
+                {
+                    "words" : "We need to clear the area before capturing the base.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "774f075d-acb4-43d0-aeb2-607292ecd3db"
+            },
+            "name" : "Dialogue_EnemiesComplete_GoToRemain",
+            "overrideDialogueBucketId" : "DialogBucketDef_CaptureBase_GoToNextObj",
+            "dialogueContent" : [
+                {
+                    "words" : "No more Marians detected, let's move to capture the main buildings.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "d61f12a3-f820-4026-b7ca-9d263d1525fa"
+            },
+            "name" : "Dialogue_Interrupt_DropshipLanding",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "<i>Hysteria</i> inbound. Once we land and the site is secure, we can sort the buildings and look for the senator.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "9193a080-418b-4e46-aeb0-f8ac55fb63b5"
+            },
+            "name" : "Dialogue_Interrupt_TurretWarning",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "Boss, I'm seeing turrets getting online around the <i>villa</i>.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9a1bfa77-fc82-4e20-be61-63ebe1d1949e",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And no 'Mechs so far. These turrets won't be too hard to take down.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "37173dfd-65d9-40dc-b498-906086595931"
+            },
+            "name" : "Dialogue_Interrupt_GoToComplete",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "Friends, welcome to our modest <i>baccanalia</i>! You must taste the stuffed giravaca necks, they're simply divinal!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianSenatorDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "9d5b076d-c29f-4d82-ae0c-8ff57b0af60e"
-            },
-            "name" : "Dialogue_RecoveringUnitDamaged1",
-            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetUnderFire",
-            "dialogueContent" : [
+                },
                 {
-                    "words" : "[GENERIC VO] The asset is sustaining damage, Commander!",
+                    "words" : "Giravaca? I once tried it at a Marik restaurant.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We need to speak to senator Quintus Publius immediately to demand his surrender.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -394,18 +691,25 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "62f3ce2e-81e0-4082-952c-63d174c82d96"
-            },
-            "name" : "Dialogue_RecoveringUnitDamaged2",
-            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetUnderFire-Sec",
-            "dialogueContent" : [
+                },
                 {
-                    "words" : "[GENERIC VO] The secondary asset is sustaining damage, Commander!",
+                    "words" : "You are speaking to senator Quintus Marius Publius, if this is about the Illyrian slaves, let me talk to your commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianSenatorDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "No, you're definitely not him and this is not about slaves.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -419,68 +723,41 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "5cfa1621-2a66-4321-a749-9649c9632db0"
-            },
-            "name" : "Dialogue_RecoveredTarget1",
-            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand",
-            "dialogueContent" : [
+                },
                 {
-                    "words" : "[GENERIC VO] The asset has been recovered, Commander. Good work. ",
+                    "words" : "An assassination! Excellent, I wonder which of my close Senate friends is attempting it!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MarianSenatorDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "8b2c266f-ac37-4f07-acd2-290228af6e04"
-            },
-            "name" : "Dialogue_RecoveredTarget2",
-            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand-Sec",
-            "dialogueContent" : [
+                },
                 {
-                    "words" : "[GENERIC VO] The secondary asset has been recovered, Commander.",
+                    "words" : "Darius, are you sure we're hitting the right target?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "fdf5b937-45a0-4448-a0ba-03f8df083863"
-            },
-            "name" : "Dialogue_Interrupt_RecoveringUnitDestroyed2",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
+                },
                 {
-                    "words" : "The 'Mech that was carrying our VIP's assistant is gone, Commander! That objective is failed - focus on the Primary!",
+                    "words" : "It looks like the <i>villa</i> just went to full alert. Let's capture it, then we'll sort this confusion.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -501,7 +778,7 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : true,
+    "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
@@ -515,7 +792,7 @@
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
+            "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "bf40fd39-ccf9-47c4-94a6-061809681140",
         "teamName" : "Player 1",
@@ -682,7 +959,7 @@
     },
     "player2Team" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
+            "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "757173dd-b4e1-4bb5-9bee-d78e623cc867",
         "teamName" : "Player 2",
@@ -692,7 +969,7 @@
     },
     "employerTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
+            "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "Employer",
@@ -702,7 +979,7 @@
     },
     "targetTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
+            "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "Target",
@@ -711,13 +988,14 @@
         "lanceOverrideList" : [
             {
                 "lanceSpawner" : {
-                    "EncounterObjectGuid" : "9a1bfa77-fc82-4e20-be61-63ebe1d1949e"
+                    "EncounterObjectGuid" : "3590aedb-bead-423d-afcf-3d98ca0f301a"
                 },
-                "name" : "Lance_OpposingForce_1",
+                "name" : "Lance_Enemy_BaseDefenders",
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_recon"
+                        "lance_type_recon",
+                        "lance_type_notallvehicles"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -726,16 +1004,18 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [],
+                    "items" : [
+                        "spawn_poorly_maintained_50"
+                    ],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 2,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "250eaaa4-6cbf-4ae2-bf23-dd8ab2fa0883"
+                            "EncounterObjectGuid" : "9ebcd9b3-cdbe-41c5-9304-076e0b41be75"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -768,7 +1048,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "3033608e-9551-4c83-96d5-74946b8e4ea8"
+                            "EncounterObjectGuid" : "617fe41f-463c-4f6a-9089-a4701d1fca3b"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -801,7 +1081,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "420c7662-0f08-4687-ad60-9134038f9ca6"
+                            "EncounterObjectGuid" : "71ba6f5e-9d80-4fa2-9ecf-9b7e2d1f3f74"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -834,7 +1114,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "6e366cb6-fb37-44d5-94f1-8ca595d1e8aa"
+                            "EncounterObjectGuid" : "6058ef06-7093-4e92-a65c-4e903ff241a6"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -869,13 +1149,174 @@
             },
             {
                 "lanceSpawner" : {
-                    "EncounterObjectGuid" : "31356694-7216-4a0b-985c-235e2a2d8bb4"
+                    "EncounterObjectGuid" : "1ed1ecd2-449b-4df9-8ab5-29846b40c1ad"
                 },
-                "name" : "Lance_Enemy_OpposingForce_2",
+                "name" : "Lance_Enemy_Reinforcements",
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_recon"
+                        "lance_type_battle",
+                        "lance_type_mech"
+                    ],
+                    "tagSetSourceFile" : "tags/LanceTags"
+                },
+                "lanceExcludedTagSet" : {
+                    "items" : [],
+                    "tagSetSourceFile" : "tags/LanceTags"
+                },
+                "spawnEffectTags" : {
+                    "items" : [
+                        "spawn_poorly_maintained_50"
+                    ],
+                    "tagSetSourceFile" : "tags/SpawnEffectTags"
+                },
+                "lanceDifficultyAdjustment" : 0,
+                "selectedLanceDefId" : null,
+                "selectedLanceDifficulty" : 0,
+                "unitSpawnPointOverrideList" : [
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "2d8b623b-049d-4dd1-b50f-742b47844399"
+                        },
+                        "customUnitName" : null,
+                        "customHeraldryDefId" : null,
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : null,
+                        "selectedPilotDefId" : null
+                    },
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "08f8295b-f403-498f-adad-bc52b180df92"
+                        },
+                        "customUnitName" : null,
+                        "customHeraldryDefId" : null,
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : null,
+                        "selectedPilotDefId" : null
+                    },
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "60946406-ace9-4816-93c8-7edec76f60c6"
+                        },
+                        "customUnitName" : null,
+                        "customHeraldryDefId" : null,
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : null,
+                        "selectedPilotDefId" : null
+                    },
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "63300bf5-d443-4258-b78a-e4914f2e7dd3"
+                        },
+                        "customUnitName" : null,
+                        "customHeraldryDefId" : null,
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : null,
+                        "selectedPilotDefId" : null
+                    }
+                ]
+            },
+            {
+                "lanceSpawner" : {
+                    "EncounterObjectGuid" : "9a1bfa77-fc82-4e20-be61-63ebe1d1949e"
+                },
+                "name" : "Lance_Enemy_BaseTurrets",
+                "lanceDefId" : "Tagged",
+                "lanceTagSet" : {
+                    "items" : [
+                        "lance_type_turret"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -893,11 +1334,11 @@
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "34c6b3c4-c466-47d4-af9c-2804a6e57fb5"
+                            "EncounterObjectGuid" : "250eaaa4-6cbf-4ae2-bf23-dd8ab2fa0883"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
+                        "unitType" : "Turret",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
@@ -926,11 +1367,11 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "d086cbbd-6a84-4452-9ac1-fc8536531959"
+                            "EncounterObjectGuid" : "3033608e-9551-4c83-96d5-74946b8e4ea8"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
+                        "unitType" : "Turret",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
@@ -959,11 +1400,11 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "ce16d609-ecb3-448a-a887-cc1b1544cc2b"
+                            "EncounterObjectGuid" : "420c7662-0f08-4687-ad60-9134038f9ca6"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
+                        "unitType" : "Turret",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
@@ -992,11 +1433,11 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "0e94c058-66e2-461b-aaf2-d23345bc2a7f"
+                            "EncounterObjectGuid" : "6e366cb6-fb37-44d5-94f1-8ca595d1e8aa"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
+                        "unitType" : "Turret",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
@@ -1029,7 +1470,7 @@
     },
     "targetsAllyTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
+            "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
         "teamName" : "Target's Ally",
@@ -1039,7 +1480,7 @@
     },
     "neutralToAllTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
+            "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "61612bb3-abf9-4586-952a-0559fa9dcd75",
         "teamName" : "Neutral to All",
@@ -1049,7 +1490,7 @@
     },
     "hostileToAllTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
+            "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "3c9f3a20-ab03-4bcb-8ab6-b1ef0442bbf0",
         "teamName" : "Hostile to All",
@@ -1065,6 +1506,6 @@
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : []
     },
-    "contractType" : "Rescue",
-    "contractTypeID" : "Rescue"
+    "contractType" : "CaptureBase",
+    "contractTypeID" : "CaptureBase"
 }

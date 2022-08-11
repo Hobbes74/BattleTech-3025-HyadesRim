@@ -1286,7 +1286,7 @@
       "text": "That's a tough call but since Captain Arano isn't here, Commander NAME will have to make the choice.",
       "branches": [
         {
-          "responseText": "[Accept Murray's terms.] I don't really trust her but she's in control of the situation.",
+          "responseText": "<color=#85DBF6FF>[Story Decision: refuse Murray's terms.] It looks like we'll have to take the <i>Argo</i> from the Satan's Kittens.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 36,
@@ -1300,7 +1300,7 @@
           "comment": ""
         },
         {
-          "responseText": "[Refuse Murray's terms.] It looks like we have a combat drop against the Satan's Kittens.",
+          "responseText": "<color=#85DBF6FF>[Story Decision: accept Murray's terms.] I don't really trust her but she's in control of the situation.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 37,
@@ -1332,7 +1332,7 @@
         "id": "9c0140dfd3177a3e4c7526ac"
       },
       "index": 36,
-      "text": "Aye, aye, Commander. \n\nI'll reply to the <i>Bad Kitty</i> once they contact us again.",
+      "text": "She'll know that we'll be coming and it won't be easy. Aye, aye, Commander.",
       "branches": [
         {
           "responseText": "",
@@ -1359,7 +1359,79 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Tag",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameAddRemove",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameScope",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 3,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "fp_choice_a",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -1367,7 +1439,7 @@
         "id": "9c40febd78d02524f07b14ae"
       },
       "index": 37,
-      "text": "She'll know that we'll be coming. It won't be easy.",
+      "text": "Aye, aye, Commander, although trusting her will be quite a question of faith.\n\nI'll reply to the <i>Bad Kitty</i> once they contact us again.",
       "branches": [
         {
           "responseText": "",
@@ -1394,7 +1466,92 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Tag",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameAddRemove",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameScope",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 3,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "fp_choice_b",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

@@ -1,8 +1,8 @@
 {
-    "ID" : "theMagistrate_3_battle",
+    "ID" : "theMagistrate_3b_rescue",
     "contractName" : "The Magistrate III",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,9 +11,10 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "A lance of {TEAM_TAR.FactionDef.Demonym} BattleMechs has been rampaging in {TEAM_EMP.FactionDef.Demonym} territory on {TGT_SYSTEM.name}. They've been razing population centers, burning fields and refineries, looting storage facilities. They're clearly doing everything they can think of to drive our people out. This is terrorism, pure and simple. We need you to find them and destroy them - no escape, and no prisoners.",
-    "longDescription" : "Not much to say, Commander. Shoot to kill.",
-    "salvagePotential" : 8,
+    "shortDescription" : "The Publius <i>villa</i> is now wide open for an attack.",
+    "shortDescription" : "With the heavy security around the main ATC facility in Alphard, we'll need instead to use a secondary link to access their records using Alexander's Interstellar Expeditions codes. Once Farah is inside she'll also to a sweep to determine the true identity of Senator Quintus Publius, unless the Lothian spies' completely got their intel wrong.",
+    "longDescription" : "Even their secondary site has substantial ATC security.",
+    "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -38,24 +39,25 @@
     "contractObjectiveList" : [
         {
             "contractObjective" : {
-                "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
+                "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Retrieve the VIP and Escape",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
-                "d111d351-a666-4852-8e4b-a300d0cccc2d",
-                "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
+                "3a4192be-2a53-4383-94ac-19c08883ea5f",
+                "6f4ceb92-9eef-4765-b345-42ed8fe8e1b3",
+                "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
             ]
         }
     ],
     "objectiveList" : [
         {
             "objective" : {
-                "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
+                "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Recover the VIP by Securing the Designated Area.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -65,12 +67,98 @@
         },
         {
             "objective" : {
-                "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
+                "EncounterObjectGuid" : "ebdc7896-2f3b-4d48-b676-b3b8d84015c8"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Hidden KILL OBJECTIVE for OpFor1",
+            "description" : "UNUSED KILL OBJECTIVE for AutoComplete",
+            "isPrimary" : false,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "6f4ceb92-9eef-4765-b345-42ed8fe8e1b3"
+            },
+            "title" : "Get to the evac zone",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
+            },
+            "title" : "The 'Mech carrying the VIP must survive",
+            "description" : "",
+            "isPrimary" : true,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
+            },
+            "title" : "Secure Zone Bravo to recover the VIP's assistant",
+            "description" : "",
+            "isPrimary" : false,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "5a848ea1-535c-42e2-b125-bb8d2a9d633d"
+            },
+            "title" : "Hidden KILL OBJECTIVE for OpFor2",
+            "description" : "Hidden KILL OBJECTIVE for autocomplete of mission",
+            "isPrimary" : false,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "a9f1746b-e990-4c8f-90be-3c4f229da58f"
+            },
+            "title" : "The 'Mech carrying the VIP's assistant must survive",
+            "description" : "",
+            "isPrimary" : false,
+            "OnSuccessResults" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.25",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
@@ -80,9 +168,18 @@
     "buildingList" : [],
     "chunkList" : [
         {
-            "name" : "Chunk_Ambush (Bonus)",
+            "name" : "Chunk_OccupyRegion_2 (Bonus)",
             "encounterChunk" : {
-                "EncounterObjectGuid" : "181d617b-02bc-4fd3-be25-d6d5cffb78de"
+                "EncounterObjectGuid" : "a4e9541a-082c-491f-bb80-2f1241b0c349"
+            },
+            "enableChunkFromContract" : true,
+            "controlledByContractChunkGroupList" : [],
+            "requirementList" : []
+        },
+        {
+            "name" : "Chunk_EnsureSurvives_Objective (Bonus)",
+            "encounterChunk" : {
+                "EncounterObjectGuid" : "a9394ab3-13a6-4c6a-9a03-1b0b89127b17"
             },
             "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
@@ -97,15 +194,33 @@
             }
         },
         {
-            "name" : "Lance_Enemy_OpposingForce",
+            "name" : "Lance_OpposingForce_1",
             "encounterObject" : {
-                "EncounterObjectGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf"
+                "EncounterObjectGuid" : "9a1bfa77-fc82-4e20-be61-63ebe1d1949e"
             }
         },
         {
-            "name" : "Lance_Enemy_Ambushers",
+            "name" : "Lance_Enemy_OpposingForce_2",
             "encounterObject" : {
-                "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
+                "EncounterObjectGuid" : "31356694-7216-4a0b-985c-235e2a2d8bb4"
+            }
+        },
+        {
+            "name" : "Region_Occupy_1",
+            "encounterObject" : {
+                "EncounterObjectGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1"
+            }
+        },
+        {
+            "name" : "Region_Escape",
+            "encounterObject" : {
+                "EncounterObjectGuid" : "eba2ec63-eab0-4801-b1c5-90964855a7ca"
+            }
+        },
+        {
+            "name" : "Region_Occupy_2",
+            "encounterObject" : {
+                "EncounterObjectGuid" : "ef65cf21-ed27-4d27-89eb-14aa4da61e93"
             }
         }
     ],
@@ -118,7 +233,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is going to be a stand-up fight, Commander - your lance against the opposing force's.",
+                    "words" : "All right, this should be a straightforward retrieval mission: get in, acquire the VIP, and get back out again.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,7 +249,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Intel says that they're near your current location. Move in and clear them out.",
+                    "words" : "The target you're recovering is a {TEAM_EMP.FactionDef.Demonym} VIP. She's trapped in a building that's surrounded by {TEAM_TAR.FactionDef.Demonym} forces - you'll need to engage them to get her out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -144,7 +259,23 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
+                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Once you have the VIP in hand, get her to the designated landing zone for extraction.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "eba2ec63-eab0-4801-b1c5-90964855a7ca",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -160,7 +291,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -175,7 +306,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Targets down, Commander! Let's get you home and collect our pay.",
+                    "words" : "The VIP is secure, Commander - well done.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -200,7 +331,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Yeah, this is bad. I'm scrubbing this and bringing you home.",
+                    "words" : "Scratch one VIP. We're done here, Commander. The client isn't going to be happy.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -219,13 +350,138 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "33166b96-5af2-4724-b970-7884ec41ffd0"
+                "EncounterObjectGuid" : "bcbee1e2-4d86-4ddb-89ec-c59295cae62d"
             },
-            "name" : "Dialogue_AmbushWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
+            "name" : "Dialogue_Interrupt_OccupyRegionStarted",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "A primary target is damaged, Commander! Keep it up!",
+                    "words" : "You're in the designated area; hold position there and recover our VIP!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "9d5b076d-c29f-4d82-ae0c-8ff57b0af60e"
+            },
+            "name" : "Dialogue_RecoveringUnitDamaged1",
+            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetUnderFire",
+            "dialogueContent" : [
+                {
+                    "words" : "[GENERIC VO] The asset is sustaining damage, Commander!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "62f3ce2e-81e0-4082-952c-63d174c82d96"
+            },
+            "name" : "Dialogue_RecoveringUnitDamaged2",
+            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetUnderFire-Sec",
+            "dialogueContent" : [
+                {
+                    "words" : "[GENERIC VO] The secondary asset is sustaining damage, Commander!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "5cfa1621-2a66-4321-a749-9649c9632db0"
+            },
+            "name" : "Dialogue_RecoveredTarget1",
+            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand",
+            "dialogueContent" : [
+                {
+                    "words" : "[GENERIC VO] The asset has been recovered, Commander. Good work. ",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "8b2c266f-ac37-4f07-acd2-290228af6e04"
+            },
+            "name" : "Dialogue_RecoveredTarget2",
+            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand-Sec",
+            "dialogueContent" : [
+                {
+                    "words" : "[GENERIC VO] The secondary asset has been recovered, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "fdf5b937-45a0-4448-a0ba-03f8df083863"
+            },
+            "name" : "Dialogue_Interrupt_RecoveringUnitDestroyed2",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "The 'Mech that was carrying our VIP's assistant is gone, Commander! That objective is failed - focus on the Primary!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -248,7 +504,7 @@
     "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -260,7 +516,7 @@
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
         },
         "teamGuid" : "bf40fd39-ccf9-47c4-94a6-061809681140",
         "teamName" : "Player 1",
@@ -295,8 +551,8 @@
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "UNDEFINED",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -328,8 +584,8 @@
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "UNDEFINED",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -361,8 +617,8 @@
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "UNDEFINED",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -394,8 +650,8 @@
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "UNDEFINED",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -427,7 +683,7 @@
     },
     "player2Team" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
         },
         "teamGuid" : "757173dd-b4e1-4bb5-9bee-d78e623cc867",
         "teamName" : "Player 2",
@@ -437,7 +693,7 @@
     },
     "employerTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "Employer",
@@ -447,7 +703,7 @@
     },
     "targetTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "Target",
@@ -456,14 +712,13 @@
         "lanceOverrideList" : [
             {
                 "lanceSpawner" : {
-                    "EncounterObjectGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf"
+                    "EncounterObjectGuid" : "9a1bfa77-fc82-4e20-be61-63ebe1d1949e"
                 },
-                "name" : "Lance_Enemy_OpposingForce",
+                "name" : "Lance_OpposingForce_1",
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_fire",
-                        "lance_type_mech"
+                        "lance_type_recon"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -475,13 +730,13 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 2,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "9e2d0fed-3d92-42ee-92d0-2cc595709f2a"
+                            "EncounterObjectGuid" : "250eaaa4-6cbf-4ae2-bf23-dd8ab2fa0883"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -514,7 +769,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "e3e34fc2-c664-42ab-920b-6002c058ac55"
+                            "EncounterObjectGuid" : "3033608e-9551-4c83-96d5-74946b8e4ea8"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -547,7 +802,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "ab9e2bfb-f6c4-4b4b-b540-957dcfc48a27"
+                            "EncounterObjectGuid" : "420c7662-0f08-4687-ad60-9134038f9ca6"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -580,7 +835,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "f46b3021-803a-41ed-87e0-1b8cb86663b8"
+                            "EncounterObjectGuid" : "6e366cb6-fb37-44d5-94f1-8ca595d1e8aa"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -615,9 +870,9 @@
             },
             {
                 "lanceSpawner" : {
-                    "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
+                    "EncounterObjectGuid" : "31356694-7216-4a0b-985c-235e2a2d8bb4"
                 },
-                "name" : "Lance_Enemy_Ambushers",
+                "name" : "Lance_Enemy_OpposingForce_2",
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
@@ -633,13 +888,13 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 2,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
+                            "EncounterObjectGuid" : "34c6b3c4-c466-47d4-af9c-2804a6e57fb5"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -672,7 +927,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "bdb37cd1-dff5-4740-b361-d5d1aebfd452"
+                            "EncounterObjectGuid" : "d086cbbd-6a84-4452-9ac1-fc8536531959"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -705,7 +960,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "5a7f08f5-3ceb-467e-b857-b3fc1874d016"
+                            "EncounterObjectGuid" : "ce16d609-ecb3-448a-a887-cc1b1544cc2b"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -738,7 +993,7 @@
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "938ab06b-304b-4f45-ba86-abcaa0fe01c5"
+                            "EncounterObjectGuid" : "0e94c058-66e2-461b-aaf2-d23345bc2a7f"
                         },
                         "customUnitName" : null,
                         "customHeraldryDefId" : null,
@@ -775,7 +1030,7 @@
     },
     "targetsAllyTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
         },
         "teamGuid" : "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
         "teamName" : "Target's Ally",
@@ -785,7 +1040,7 @@
     },
     "neutralToAllTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
         },
         "teamGuid" : "61612bb3-abf9-4586-952a-0559fa9dcd75",
         "teamName" : "Neutral to All",
@@ -795,7 +1050,7 @@
     },
     "hostileToAllTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"
+            "EncounterObjectGuid" : "6e35a974-504f-4997-b224-01d07737e560"
         },
         "teamGuid" : "3c9f3a20-ab03-4bcb-8ab6-b1ef0442bbf0",
         "teamName" : "Hostile to All",
@@ -811,6 +1066,6 @@
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : []
     },
-    "contractType" : "SimpleBattle",
-    "contractTypeID" : "SimpleBattle"
+    "contractType" : "Rescue",
+    "contractTypeID" : "Rescue"
 }
