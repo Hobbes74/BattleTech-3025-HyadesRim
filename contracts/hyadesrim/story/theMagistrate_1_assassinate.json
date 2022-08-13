@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We have an opportunity to eliminate a key figure in the {TEAM_TAR.FactionDef.Demonym} hierarchy in this system, which will leave their organization in chaos and ensure safety for {TEAM_EMP.FactionDef.Demonym} operations. The target will be relatively unguarded and vulnerable, and we'd like you to strike in this window of opportunity.",
-    "longDescription" : "Sounds like we'll be hitting a middle manager. Not much glory, but it pays. The target won't be alone, Commander, and there's a bonus if we clean up the escorting units. Still, if things get too hot, we can always hit and run.",
-    "salvagePotential" : 4,
+    "shortDescription" : "Senator Quintus Publius's family <i>villa</i> is located in the outskirts of the capital Nova Roma and despite being a large farm estate, it is also heavily guarded due to their patrician status. So we'll need to create a feint first for the Marians to respond before we move to take down the senator.",
+    "longDescription" : "Taking down a couple of their lances should call their attention.",
+    "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "edafecaf-4d24-4304-98b1-9e645898c6ee"
             },
-            "title" : "Destroy the Target and Escape",
+            "title" : "Destroy Marian Century and Escape",
             "description" : "Destroy the Target, clear area of additional enemies, and escape",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -58,9 +58,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "650245ff-89b6-4c0f-9b72-31db69cf109c"
             },
-            "title" : "Destroy Supporting Enemy Forces",
+            "title" : "Destroy Marian Century",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -96,7 +96,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ef887928-31f2-4001-a1d8-44f8dc5f5bf8"
             },
-            "title" : "Eliminate Ambushers",
+            "title" : "Eliminate Marian Reinforcements",
             "description" : "Destroy enemy Ambushers before extraction",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Destroy Target Unit",
+            "title" : "Destroy Century Leader",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -170,7 +170,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Stop the Target from Escaping",
+            "title" : "Stop the Centurion from Escaping",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -260,7 +260,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, our intel was right; the target is in the AO and only lightly guarded.",
+                    "words" : "There's a Marian century operating nearby. Unlike regular lances, they contain five 'Mechs and they're led by an officer named 'centurion'.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -276,7 +276,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We're seeing a lot of {TEAM_TAR.FactionDef.Demonym} activity in the vicinity of the target.",
+                    "words" : "So, that's five targets that you'll need to take down, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -292,7 +292,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Take them out, get to the evac zone, and then we get paid.",
+                    "words" : "If they bite the feint, they'll drop reinforcements but destroying them is secondary to us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -303,6 +303,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "49c80ae9-df2d-4788-a56e-3b21cf381691",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Good luck, Commander. Oliveira out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -317,7 +333,39 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The target is down, Commander. Well done. We'll debrief back in orbit.",
+                    "words" : "We took out the century and the centurion and they've responded to it.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We are going uprank in our target list by moving to magistrate.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yes, Sumire. We should be able to break into Senator's Publius <i>villa</i> now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -342,14 +390,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm scrubbing the mission, Commander. What a disaster.",
+                    "words" : "The Space Romans got us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -367,7 +415,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's a confirmed kill, Commander. We can evac whenever you're ready.",
+                    "words" : "We've killed the century and its leader.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -392,14 +440,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_KillConfirmed",
             "dialogueContent" : [
                 {
-                    "words" : "Readings indicate the ambushing units are out of commission. The employer will be pleased. ",
+                    "words" : "And we trashed the Space Roman reinforcements. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -417,7 +465,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That is our target, sustain fire on that unit!",
+                    "words" : "Marian centurion, I mean 'Mech is damaged.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -442,14 +490,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_AmbushWarning",
             "dialogueContent" : [
                 {
-                    "words" : "Sensors are showing enemy movement beyond our initial count. Be advised you might meet with increased resistance.",
+                    "words" : "Warning, the Marians have just responded to our ambush. Appear to be only four enemy units.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -467,7 +515,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TargetFleeing",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, the target is bugging out! Eliminate them before they escape.",
+                    "words" : "The Marian leader is attempting to escape.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -481,13 +529,29 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
+                },
+                {
+                    "words" : "Space centurion on the run.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
                 }
             ]
         }
     ],
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : false,
-    "overrideAutoCompleteDialogueId" : "",
+    "overrideAutoCompleteDialogueId" : "DialogBucketDef_theMagistrate_1_assassinate",
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
