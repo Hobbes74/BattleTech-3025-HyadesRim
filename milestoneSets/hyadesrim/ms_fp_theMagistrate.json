@@ -33,8 +33,7 @@
                         "items" : [
                             "fp_choice_a",
                             "fp_choice_b",
-                            "fp_choice_c",
-                            "fp_choice_d"
+                            "fp_choice_c"
                         ],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
@@ -258,7 +257,7 @@
                                 "theMagistrate_2_captureBase",
                                 "MagistracyOfCanopus",
                                 "MarianHegemony",
-                                "5",
+                                "6",
                                 "ms_fp_theMagistrate_005_TalkChoice",
                                 null,
                                 null,
@@ -449,43 +448,6 @@
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_theMagistrate_300_Mission",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Flashpoint",
-                        "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_d"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_theMagistrate_400_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -713,7 +675,14 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [],
+						"items" : [
+							"map_travel_2",
+							"map_travel_2b",
+							"map_travel_2c",
+							"map_travel_2d",
+							"map_travel_2l",
+							"map_travel_2m"
+						],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
@@ -767,12 +736,12 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_sandyMesa_aDes",
+                            "value" : "mapGeneral_alpineCathedral_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "theMagistrate_3b_rescue",
+                                "theMagistrate_3a_battle",
                                 "MagistracyOfCanopus",
                                 "MarianHegemony",
                                 "6",
@@ -1014,7 +983,14 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [],
+						"items" : [
+							"map_travel_2",
+							"map_travel_2b",
+							"map_travel_2c",
+							"map_travel_2d",
+							"map_travel_2l",
+							"map_travel_2m"
+						],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
@@ -1068,14 +1044,14 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_alpineCathedral_iTnd",
+                            "value" : "mapGeneral_sandyMesa_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "theMagistrate_3c_battle",
-                                "MagistracyOfCanopus",
-                                "MarianHegemony",
+                                "theMagistrate_3b_rescue",
+                                "SelfEmployed_Farah",
+                                "AlphardTradingCompany",
                                 "6",
                                 "ms_fp_theMagistrate_301_Talk",
                                 null,
@@ -1315,239 +1291,14 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "Stats" : null,
-                    "Actions" : null,
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_theMagistrate_400_Talk",
-                "Name" : "Talk",
-                "Details" : "flashpoint",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_StartConversation",
-                            "value" : "9c836157858165b062777188",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
-                                "Conference",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_theMagistrate_401_Complete",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_theMagistrate_401_Complete",
-                "Name" : "Complete",
-                "Details" : "Flashpoint completion.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [
-                            "flashpoint_theMagistrate_complete",
-                            "flashpoint_theMagistrate_d"
-                        ],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_theMagistrate_402_D-Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "itemCollection_loot_fp_reward_theMagistrate",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : null,
-                    "ForceEvents" : null,
-                    "TemporaryResult" : true,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_theMagistrate_402_D-Reward",
-                "Name" : "D-Reward",
-                "Details" : "D Branch rewards",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "1000000",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
+						"items" : [
+							"map_travel_2",
+							"map_travel_2b",
+							"map_travel_2c",
+							"map_travel_2d",
+							"map_travel_2l",
+							"map_travel_2m"
+						],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
