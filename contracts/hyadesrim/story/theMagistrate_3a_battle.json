@@ -1,5 +1,5 @@
 {
-    "ID" : "theMagistrate_3c_battle",
+    "ID" : "theMagistrate_3a_battle",
     "contractName" : "The Magistrate III",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 6,
@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "A lance of {TEAM_TAR.FactionDef.Demonym} BattleMechs has been rampaging in {TEAM_EMP.FactionDef.Demonym} territory on {TGT_SYSTEM.name}. They've been razing population centers, burning fields and refineries, looting storage facilities. They're clearly doing everything they can think of to drive our people out. This is terrorism, pure and simple. We need you to find them and destroy them - no escape, and no prisoners.",
+    "shortDescription" : "I've given to your pilot the contact inside the ATC so you can conduct whatever business you have. As for the Legatus, he has been coordinating military patrols outside Nova Roma, so it should be a straight forward affair to dispose of him.",
     "longDescription" : "Not much to say, Commander. Shoot to kill.",
     "salvagePotential" : 8,
     "requirementList" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Marian Units",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Marian Units",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Marian Reinforcements",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -118,7 +118,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is going to be a stand-up fight, Commander - your lance against the opposing force's.",
+                    "words" : "The senator's intel shows that the Legatus maniple is right ahead.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,14 +134,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Intel says that they're near your current location. Move in and clear them out.",
+                    "words" : "It should be relevant that I'm detecting only four signatures instead of the expected five.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
@@ -150,7 +150,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliveira out.",
+                    "words" : "Something is no right here. Proceed with caution, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -175,7 +175,39 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Targets down, Commander! Let's get you home and collect our pay.",
+                    "words" : "Both Marian maniples, sorry, lances are down.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Oh, and Commander? We now have full JumpShip access to the entire Rimward Periphery.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "That's great news, Sumire. Even though we didn't get our target, this was still a very worthwhile trip.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -200,14 +232,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Yeah, this is bad. I'm scrubbing this and bringing you home.",
+                    "words" : "Sorry, Commander. That pint of Lothian ale will have to be postponed for some other time.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MarianLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -225,7 +257,39 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "A primary target is damaged, Commander! Keep it up!",
+                    "words" : "Mercenaries! My nephew warned me at the last minute, leave for I am no longer within reach.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MarianLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "He betrayed us, senator Quintus!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Very well, let's finish these 'Mechs to be sure we complete our contract.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -248,7 +312,7 @@
     "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,

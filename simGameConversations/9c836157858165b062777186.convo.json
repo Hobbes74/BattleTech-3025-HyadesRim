@@ -9,7 +9,7 @@
         "id": "9c617cdd85b372514b4bb8ea"
       },
       "index": 0,
-      "text": "Despite the recent events that took place at Luxen, I am glad to see you again under the Magistracy's service, Commander.\n\nSpeaking unofficially, I will add that Captain Arano's work with the Aurigan refugees also removed some of the worries with the Magestrix's regarding her and the civil war.",
+      "text": "Despite the recent events that took place at [[DM.BaseDescriptionDefs[LoreLuxen],Luxen]], I am glad to see you again under the Magistracy's service, Commander.\n\nSpeaking unofficially, I will add that Captain Arano's work with the Aurigan refugees also removed some of the worries with the [[DM.BaseDescriptionDefs[LoreMagestrix],Magestrix]]'s regarding her and the civil war.",
       "branches": [
         {
           "responseText": "Allows everyone to focus in more important work.",
@@ -93,7 +93,7 @@
         "id": "9c8d5290ebb1949573b0b78f"
       },
       "index": 1,
-      "text": "Yes and considering the events taking place at Terra with the Steiner-Davion marriage, the Magestrix can ill-afford additional distractions.\n\nWhich brings us to the objective of this contract.",
+      "text": "Yes and considering the events taking place at [[DM.BaseDescriptionDefs[LoreTerra],Terra]] with the [[DM.BaseDescriptionDefs[LoreFedComAccords],Steiner-Davion]] marriage, the Magestrix can ill-afford additional distractions.\n\nWhich brings us to the objective of this contract.",
       "branches": [
         {
           "responseText": "Very well, Lady Ana Maria.",
@@ -128,7 +128,7 @@
         "id": "9c84097004620fad78df533a"
       },
       "index": 2,
-      "text": "MIM received a tip from Lothian intelligence about the supply chains being used by the Marians to continue their aggression against the League and its neighbors.\n\nDespite their propaganda, the Hegemony continues to conduct raids extending to Marik space, as the Captain-General's is presently at Terra to attend the wedding. ",
+      "text": "[[DM.BaseDescriptionDefs[LoreMIM],MIM]] received a tip from [[DM.Factions[faction_LothianLeague],Lothian]] intelligence about the supply chains being used by the [[DM.Factions[faction_MarianHegemony],Marians]] to continue their aggression against the League and its neighbors.\n\nDespite their propaganda, the Hegemony continues to conduct raids extending to [[DM.Factions[faction_Marik],Marik]] space, as the [[DM.BaseDescriptionDefs[LoreJanosMarik],Captain-General]]'s is presently at Terra to attend the wedding. ",
       "branches": [
         {
           "responseText": "",
@@ -163,7 +163,7 @@
         "id": "9c465c20f890eba9c560b319"
       },
       "index": 3,
-      "text": "In order to keep its legions supplied and with transport, the Marians are using a series of shadow companies legally owned by the local branch of the Alphard Trading Company.\n\nIn reality their administrators and policies are determined by Imperator O'Reilly and the Senate to secretly purchase sanctioned items all over the Inner Sphere and avoid trade blockades.",
+      "text": "In order to keep its legions supplied and with transport, the Marians are using a series of shadow companies legally owned by the local branch of the [[DM.Factions[faction_AlphardTradingCompany],Alphard Trading Company]].\n\nIn reality their administrators and policies are determined by Imperator [[DM.BaseDescriptionDefs[LoreMariusOReilly],O'Reilly]] and the Senate to secretly purchase sanctioned items all over the Inner Sphere and avoid trade blockades.",
       "branches": [
         {
           "responseText": "They already control most of the independent space travel in the Rimward Periphery. ",
@@ -198,7 +198,7 @@
         "id": "9c204aa300cca831006f2259"
       },
       "index": 4,
-      "text": "Yes, Magestrix Kyalla isn't pleased at their attitude but the Magistracy also depends on their JumpShip services, so we can't take any direct action against the ATC that threatens our interstellar economy.\n\nHowever, the Marians are fair game and the information we received from the Lothian League has identified one key figure in the Martian Senate responsible for the whole operation.",
+      "text": "Yes, Magestrix [[DM.BaseDescriptionDefs[LoreKyallaCentrella],Kyalla]] isn't pleased at their attitude but the Magistracy also depends on their [[DM.BaseDescriptionDefs[LoreJumpShip],JumpShip]] services, so we can't take any direct action against the ATC that threatens our interstellar economy.\n\nHowever, the Marians are fair game and the information we received from the [[DM.Factions[faction_LothianLeague],Lothian League]] has identified one key figure in the Martian Senate responsible for the whole operation.",
       "branches": [
         {
           "responseText": "",
@@ -233,7 +233,7 @@
         "id": "9cb38c2ed66b56241f9b8ab7"
       },
       "index": 5,
-      "text": "Senator Quintus Publius, which MIM already suspected to be associated with the Ordo Vigilis, was identified by the Lothians as the liaison between the ATC and the Senate that is running the Marian smuggling operations. ",
+      "text": "Senator Quintus Publius, which MIM already suspected to be associated with the [[DM.BaseDescriptionDefs[LoreOrdoVigilis],Ordo Vigilis]], was identified by the Lothians as the liaison between the ATC and the Senate that is running the Marian smuggling operations. ",
       "branches": [
         {
           "responseText": "The Legatus?",
@@ -260,7 +260,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59b97d11623035ac14005365",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "quintus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -268,7 +284,7 @@
         "id": "9ccac79c517d7f623672bf0a"
       },
       "index": 6,
-      "text": "Yes Commander, the same one senator that offered you the contract to raid our vaccine supplies at Luxen.\n\nThe Magestrix wants you to send a very special message to Imperator O'Reilly to serve as a lesson by assassinating him.",
+      "text": "Yes Commander {COMMANDER.LastName}, the same one senator that offered you the contract to raid our vaccine supplies at Luxen.\n\nMagestrix Kyalla wants you to send a very special message to [[DM.BaseDescriptionDefs[LoreImperator],Imperator]] O'Reilly to serve as a lesson by assassinating his '[[DM.BaseDescriptionDefs[LoreLegatus],magistrate]]'.",
       "branches": [
         {
           "responseText": "You could have used your operatives or someone else, why us?",
@@ -303,7 +319,7 @@
         "id": "9cd8be2450ea5ab839f12cf1"
       },
       "index": 7,
-      "text": "Let's just say that the Magestrix also wants to send you and your company a message, Commander.",
+      "text": "Let's just say that the Magestrix also wants to send you and your company a message, Commander {COMMANDER.LastName}.",
       "branches": [
         {
           "responseText": "Understood, Lady Ana Maria.",
@@ -330,7 +346,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59b97d11623035ac14005365",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "centrella",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -529,7 +561,7 @@
         "id": "9c4d2089ed60100dc88a1c01"
       },
       "index": 13,
-      "text": "About the ATC, I remember Alexander mentioning that he had access to their office at Alphard by using his former Interstellar Expeditions connections, I'm wondering if that could be of use.",
+      "text": "About the ATC, I remember Alexander mentioning that he had access to their office at [[DM.BaseDescriptionDefs[LoreAlphard],Alphard]] by using his former [[DM.Factions[faction_InterstellarExpeditions],Interstellar Expeditions]] connections, I'm wondering if that could be of use.",
       "branches": [
         {
           "responseText": "Sumire, please get in touch in him as quickly as possible.",
@@ -599,7 +631,7 @@
         "id": "9c42d75dfec6da4ec426a9a1"
       },
       "index": 15,
-      "text": "Perhaps drink a pint of Lothian ale in his honor later?\n\nHe did quite mention it a lot...",
+      "text": "Perhaps drink a pint of [[DM.BaseDescriptionDefs[LoreLothianAle],Lothian ale]] in his honor later?\n\nHe did quite mention it a lot...",
       "branches": [
         {
           "responseText": "",
