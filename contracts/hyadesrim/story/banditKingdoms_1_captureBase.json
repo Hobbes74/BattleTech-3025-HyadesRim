@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We've been monitoring communications traffic on {TGT_SYSTEM.name}, and discerned a pattern. There's a well-defended {TEAM_TAR.FactionDef.Demonym} base that we suspect of being a secure data storage facility. We'd like your team to land, capture the base, and take a complete image of the contents of their databases. Once the {TEAM_TAR.FactionDef.Demonym} forces realize what we're doing, they'll launch a counteroffensive, so we'll need you to stay in the field until the download is complete.",
-    "longDescription" : "This shouldn't be all that difficult, but we'll need Dr. Murad on the ground to do the actual data hacking. She's already agreed to go in with your team.",
+    "shortDescription" : "Shervanis has identified the location to where his wife was taken as belonging to the Hawkeye desert tribe. We aren't sure of the presence of the Black Angels in the area, but we're definitely detecting activity in the area. Meanwhile, nearly all of the Caliph's 'Mechs have been sabotaged by an unknown party in the past days, so he has required Yang's services so that he can excuse our company after he's done. ",
+    "longDescription" : "Don't worry, Commander. I've struck additional payment from Yang's skills, and I'll be going down to keep a watch on his back while we are in Shervanis' palace.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -33,14 +33,14 @@
         -1,
         -1
     ],
-    "mapMood" : "",
+    "mapMood" : "AridDayWindy",
     "startingFogOfWarVisibility" : "Unknown",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Capture the {TEAM_TAR.FactionDef.Demonym} data storage facility",
+            "title" : "Capture the Hawkeye tribe settlement",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -60,7 +60,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "caf2acf6-f7d4-43eb-8044-826b6180e2d6"
             },
-            "title" : "Scout the Facility",
+            "title" : "Scout the settlement",
             "description" : "The objective to scout the base that is being captured. Must be completed before the actual capture of the base.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -72,7 +72,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Defenders",
+            "title" : "Destroy the Hawkeye Defenders",
             "description" : "The objective to optionally destroy the defenders of the base.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "1e13d14a-9a12-4b6f-b567-8bde83e77275"
             },
-            "title" : "Pacify the Area around the Base",
+            "title" : "Pacify the Area around the Settlement",
             "description" : "This is a general objective to indicate the player must keep playing and eliminate enemies as they come.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -146,7 +146,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7617cb28-c434-4a14-8698-a93ccfc3d750"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Reinforcements",
+            "title" : "Destroy the Hawkeye Reinforcements",
             "description" : "The primary objective to destroy the force that tries to remove the player from the captured base.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -158,7 +158,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "08f55f37-3afa-4ba6-9e68-d2bdaca90407"
             },
-            "title" : "Eliminate Base Turrets",
+            "title" : "Eliminate Hawkeye Turrets",
             "description" : "The chunk controlled objective to destroy the turrets for the base, if the chunk is active.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -274,7 +274,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, once you reach the base I'll be able to start extracting the data. It shouldn't take very long; I can't imagine their data security is very sophisticated.",
+                    "words" : "Once one of our 'Mechs reaches the settlement, Shervanis people can start searching for his wife.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "That's quite the euphemism for her situation, Darius.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -290,7 +306,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Physical security, on the other hand... I'm seeing what looks like turrets around the facility.",
+                    "words" : "I'm not paid to be versed in marriage laws, doctor.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "On the other hand, you're paid to know about crew bonuses, XO.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -306,7 +338,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We should get eyes on that base before we charge in shooting. This should be a good vantage point.",
+                    "words" : "You two can be quite something.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yes, back to the mission. Commander, this looks like a prime spot to have a look at the settlement.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -317,6 +365,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "181efcdf-0e34-477b-8a06-39b0ead2d69e",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Let's move there and see what the Hawkeye tribe has readied for us.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -331,7 +395,55 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Aaaand... done. That's all the data, Commander. I'm ready for extraction.",
+                    "words" : "Shervanis assault troops have recovered his wife already. The desert tribe was quick to give her up once their defenses were destroyed.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And there's still no signal of the Black Angels so far. I'm keeping a close watch at the sensors though.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Meanwhile, I'll use the journey to bring her back to Shervanis palace to join Yang.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "No one here envies either of you, Darius. Just get the job done and get both back.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -356,14 +468,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Damn! Commander, I didn't get the download.",
+                    "words" : "Abort, abort.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -381,7 +493,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Bogeys on sensors!",
+                    "words" : "And here they came! Enemy lance ahead.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -406,7 +518,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_CaptureBase_AreaNotClear",
             "dialogueContent" : [
                 {
-                    "words" : "[GENERIC VO] Area is not clear, Commander. Eliminate the hostiles before continuing to the next Objective.",
+                    "words" : "There are still Hawkeye tribe defenders around, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -431,7 +543,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_CaptureBase_GoToNextObj",
             "dialogueContent" : [
                 {
-                    "words" : "[GENERIC VO] Sensors are clear, proceed to the next objective.",
+                    "words" : "All Hawkeye units cleared, proceed to settlement.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -456,14 +568,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Dropship inbound for landing! We're going to get in and out quick!",
+                    "words" : "I'm about to land, you better have cleared the LZ!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -481,7 +593,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Oh hey, just like I said. Turrets. Watch yourself, Commander.",
+                    "words" : "The Hawkeye tribe seems to have a lot of turrets.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -506,7 +618,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's the facility, Commander. That's-- There weren't supposed to be any units in the base, Commander.",
+                    "words" : "There's the settlement... but no Black Angels detected so far.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -522,7 +634,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Sounds like our employers have their own data security problems.",
+                    "words" : "That might be a problem later.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -538,7 +650,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Uh, folks? I just spotted more engine signatures -- 'Mechs powering up. More bad guys are on their way to you, boss.",
+                    "words" : "It might be a problem now, 'Mech fusion signatures coming online.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -554,14 +666,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Just like that time on Axylus, hm? Don't worry; I work well under pressure.",
+                    "words" : "Time to do our work, Commander {COMMANDER.LastName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -575,7 +687,7 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : true,
+    "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
@@ -584,8 +696,8 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 1,
+    "negotiatedSalvage" : 1,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -779,7 +891,7 @@
             "EncounterObjectGuid" : "d11cae27-a850-4dd9-b97e-19ed63e966fb"
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
-        "teamName" : "Target",
+        "teamName" : "Hawkeye Tribe",
         "faction" : "INVALID_UNSET",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
