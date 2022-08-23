@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Commander, this mission should be simple. A {TEAM_TAR.FactionDef.Demonym} noble is participating in a patrol, as a show of support for the troops. She's insisted on using her ancestral family 'Mech, which is a Grasshopper. This should make eliminating her quite easy. Recognizing the danger, her handlers have sent along an extremely heavy supporting lance. If you're quick, and aggressive, you should be able to destroy her little Cicada before her escorts can react.",
-    "longDescription" : "A hit-and-run operation should be straightforward enough, Commander. Just remember that if you get bogged down in fighting the escorts, escape is always an option.",
+    "shortDescription" : "Shervanis's <i>vizir</i> is leading the chase of the Black Angels but so far they've failed to keep up with the mercs' faster 'Mechs and are straggling behind. If we take him down, the Caliph will lose his right-hand man and most of his military forces, so he'll have to release Darius and Yang.",
+    "longDescription" : "Commander, His excellency has again asked me to forward you with an excellent permanent proposal for the company, to which I give my full recommendation.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -33,14 +33,14 @@
         -1,
         -1
     ],
-    "mapMood" : "",
+    "mapMood" : "AridSunsetFoggy",
     "startingFogOfWarVisibility" : "Unknown",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "edafecaf-4d24-4304-98b1-9e645898c6ee"
             },
-            "title" : "Destroy the Target and Escape",
+            "title" : "Destroy the vizir's BattleMech",
             "description" : "Destroy the Target, clear area of additional forces Enemies, and Escape",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -58,7 +58,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "650245ff-89b6-4c0f-9b72-31db69cf109c"
             },
-            "title" : "Destroy Supporting Enemy Forces",
+            "title" : "Destroy Escorts",
             "description" : "The secondary objective to destroy an additional lance supporting the assassination target.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -96,7 +96,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ef887928-31f2-4001-a1d8-44f8dc5f5bf8"
             },
-            "title" : "Eliminate Ambushers",
+            "title" : "Eliminate Additional Enemies",
             "description" : "Destroy enemy Ambushers before extraction",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Noble",
+            "title" : "Destroy the Vizir's Mech",
             "description" : "The objective to destroy the Assassination Target.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -170,7 +170,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Keep the {TEAM_TAR.FactionDef.Demonym} Noble from Escaping",
+            "title" : "Prevent the Shervanis Vizir from Escaping",
             "description" : "The objective to stop the assassination target for escaping, the player will fail if the target escapes.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -260,14 +260,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "If you ask me, boss, anyone who sends their VIPs out in a CDA-2A is asking to be shot.",
+                    "words" : "We've detected the <i>vizir</i> and he's in a large 'Mech, likely assault class.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -276,14 +276,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Do you have anything helpful to offer, Yang?",
+                    "words" : "Let's assume it's an assault, Farah.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -292,14 +292,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "These little bastards are fast, so watch for the VIP to make a run for it.",
+                    "words" : "Once we attack him, he's likely going to try escaping back to the palace.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64",
@@ -308,14 +308,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Noted. Commander, remember that we're expecting a very heavy escort, so it might be wiser to hit the target and run for the LZ, here.",
+                    "words" : "He's also with a heavy task force, so after you take him down you can head back to the evac zone, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a25a4728-0069-41cc-ac38-19b1f49023e7",
@@ -324,14 +324,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck and good hunting.",
+                    "words" : "Good hunting, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -349,14 +349,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "See? Once you get 'em pinned down, Grasshoppers aren't that dangerous.",
+                    "words" : "The <i>vizir</i> is down and the remaining Shervanis forces are leaderless.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>Hysteria</i>, the Caliph has already excused our services after news of what happened to his <i>vizir</i>. Me and Yang are ready to leave, {COMMANDER.Callsign}.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -374,14 +390,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Time to make a withdrawal. No way of pulling this one out of the fire.",
+                    "words" : "I can't believe this is happening. Withdrawal!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -399,14 +415,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's our target destroyed, Commander. Meyer, are you ready for the pickup?",
+                    "words" : "The <i>vizir</i> is down. {COMMANDER.FirstName}, we can evacuate now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -415,7 +431,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm on station. Head for this LZ and I'll get you out of there.",
+                    "words" : "Head to this location and I'll pick you up.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -437,17 +453,17 @@
                 "EncounterObjectGuid" : "cbb7a848-5367-478a-82f2-256bb94080e6"
             },
             "name" : "Dialogue_AmbushDestroyed",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_KillConfirmed",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Readings indicate the ambushing units are out of commission. The employer will be pleased. ",
+                    "words" : "The Caliph's second lance has been destroyed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -462,17 +478,17 @@
                 "EncounterObjectGuid" : "cc82de54-d0b5-4227-bb23-dc845ea88833"
             },
             "name" : "Dialogue_TargetDamaged",
-            "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TarDamaged",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That is our target, sustain fire on that unit!",
+                    "words" : "The 'Mech piloted by the <i>vizir</i> is damaged!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -487,17 +503,17 @@
                 "EncounterObjectGuid" : "4a6a16e6-15ea-4c14-8075-a77089825af7"
             },
             "name" : "Dialogue_AmbushWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_AmbushWarning",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Sensors are showing enemy movement beyond our initial count. Be advised you might meet with increased resistance.",
+                    "words" : "The second Shervanis lance is approaching our position, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -512,17 +528,17 @@
                 "EncounterObjectGuid" : "9fb497e2-e3cf-410a-92c6-8943c6e09533"
             },
             "name" : "Dialogue_TargetFleeing",
-            "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TargetFleeing",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, the target is bugging out! Eliminate them before they escape.",
+                    "words" : "The <i>vizir</i> is attempting to flee!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -538,15 +554,15 @@
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 1,
+    "negotiatedSalvage" : 1,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -1091,7 +1107,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_catapult_CPLT-J",
+                        "unitDefId" : "mechdef_atlas_AS7-D",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1104,7 +1120,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d7_pilot",
+                        "pilotDefId" : "pilot_d8_sentinel",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
