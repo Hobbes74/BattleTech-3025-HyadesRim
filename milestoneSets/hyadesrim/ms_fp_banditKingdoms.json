@@ -164,9 +164,9 @@
                                 null,
                                 "banditKingdoms_1_captureBase",
                                 "ShervanisCaliphate",
-                                "BlackAngels",
+                                "AuriganPirates",
                                 "5",
-                                "ms_fp_banditKingdoms_004_MissionSim",
+                                "ms_fp_banditKingdoms_004_Talk",
                                 null,
                                 null,
                                 null
@@ -192,7 +192,77 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_banditKingdoms_004_MissionSim",
+                "Id" : "ms_fp_banditKingdoms_004_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Yang",
+                                "Kamea",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Farah",
+                                "Sumire"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef4",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_banditKingdoms_005_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_banditKingdoms_005_MissionSim",
                 "Name" : "Mission Sim",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -224,7 +294,7 @@
                                 "ShervanisCaliphate",
                                 "BlackAngels",
                                 "5",
-                                "ms_fp_banditKingdoms_005_TalkChoice",
+                                "ms_fp_banditKingdoms_006_TalkChoice",
                                 null,
                                 null
                             ]
@@ -249,7 +319,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_banditKingdoms_005_TalkChoice",
+                "Id" : "ms_fp_banditKingdoms_006_TalkChoice",
                 "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -272,10 +342,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cb2dc79abaf43e08d02aef6",
+                            "value" : "9cb2dc79abaf43e08d02aef5",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -283,7 +353,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_banditKingdoms_006_Branch",
+                            "value" : "ms_fp_banditKingdoms_007_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -299,7 +369,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_banditKingdoms_006_Branch",
+                "Id" : "ms_fp_banditKingdoms_007_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -447,27 +517,19 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_desertDam_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "banditKingdoms_3a_assassinate",
-                                "BlackAngels",
+                                "SelfEmployed_Farah",
                                 "ShervanisCaliphate",
                                 "5",
                                 "ms_fp_banditKingdoms_101_A-Talk",
                                 null,
                                 null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -504,11 +566,31 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "System_StartConversation",
-                            "value" : "9cb2dc79abaf43e08d02aef5",
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Kamea",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Yang",
+                                "Farah",
+                                "Sumire"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef6",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
@@ -591,11 +673,11 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
+                    "Stats" : [			
                         {
                             "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "1000000",
+                            "name" : "Reputation.ShervanisCaliphate",
+                            "value" : "-20",
                             "set" : false,
                             "valueConstant" : null
                         }
@@ -647,27 +729,19 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_barterTown_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "banditKingdoms_3b_simpleBattle",
-                                "BlackAngels",
                                 "ShervanisCaliphate",
+                                "BlackAngels",
                                 "5",
                                 "ms_fp_banditKingdoms_201_B-Talk",
                                 null,
                                 null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -704,11 +778,31 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "System_StartConversation",
-                            "value" : "9cb2dc79abaf43e08d02aef5",
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Kamea",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Yang",
+                                "Farah",
+                                "Sumire"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef6",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
@@ -847,14 +941,14 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_grandeRiver_aWst",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "banditKingdoms_3c_threeWayBattle",
-                                "SelfEmployed",
+                                "SelfEmployed_Sumire",
                                 "ShervanisCaliphate",
                                 "5",
                                 "ms_fp_banditKingdoms_301_C-Talk",
@@ -863,14 +957,6 @@
                                 null,
                                 null,
                                 "BlackAngels"
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -907,11 +993,31 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "System_StartConversation",
-                            "value" : "9cb2dc79abaf43e08d02aef5",
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Kamea",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Yang",
+                                "Farah",
+                                "Sumire"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb2dc79abaf43e08d02aef6",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
@@ -994,7 +1100,15 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : [					
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Reputation.ShervanisCaliphate",
+                            "value" : "-20",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+					],
                     "Actions" : [],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,

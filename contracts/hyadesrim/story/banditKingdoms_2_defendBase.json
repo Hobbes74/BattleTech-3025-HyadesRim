@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We have an urgent assignment that we'd like your assistance with, Commander. We have a secret listening post here on {TGT_SYSTEM.name}, and we've just learned that {TEAM_TAR.FactionDef.Demonym} agents have discovered the base's location. We need time to transmit all the data we've gathered to a DropShip in orbit, but they're already advancing on the facility. Worse, we're detecting an engine signature from an assault-class 'Mech closing on the base's location. We need you to drop immediately and protect that base until we can get the data transmitted.",
-    "longDescription" : "We're going to keep an <i>assault 'Mech</i> from destroying a facility, without any ground intel. This seems like a really terrible idea, Commander.",
+    "shortDescription" : "There something big coming in our direction and  it looks like the Black Angels brought the biggest 'Mech they could find to assault the Shervanis palace. We're going to need to stop that assault beast, otherwise it risks leveling the place and we still have both Darius and Yang inside it. According to the Caliph's <i>vizir</i>, the former mercenaries have some sort of Lostech that enabled them to jump and outmaneuver Shervanis's 'Mechs.",
+    "longDescription" : "Yang is working as fast as possible but we need to give him time until Shervanis can deploy his own BattleMechs.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -33,14 +33,14 @@
         -1,
         -1
     ],
-    "mapMood" : "",
-    "startingFogOfWarVisibility" : "Unknown",
+    "mapMood" : "AridNightFoggy",
+    "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "6f5f8d17-70ed-44a8-acc0-ccf9258925aa"
             },
-            "title" : "Defend Listening Post",
+            "title" : "Defend Shervanis' Palace",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -59,7 +59,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ca677a4d-19c8-4d0c-9c5e-3ed712081336"
             },
-            "title" : "Defend Target Buildings",
+            "title" : "Defend Palace Buildings",
             "description" : "Defend Targeted Base Structures from Attackers",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -71,7 +71,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e4ac925-d95a-4019-aeb0-0aa553830f46"
             },
-            "title" : "Destroy the Enemy Vanguard",
+            "title" : "Destroy the Black Angels",
             "description" : "Destroy the enemy vanguard force, the first wave.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -109,7 +109,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "240577eb-b4b0-43b7-b2af-a94d692a022a"
             },
-            "title" : "All target buildings must survive",
+            "title" : "All palace buildings must survive",
             "description" : "Optional objective to keep ALL target structures intact.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -147,7 +147,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4bfadebf-a277-4ddb-8a36-f70ab7c0c68c"
             },
-            "title" : "Hold Out for Reinforcements",
+            "title" : "Shervanis 'Mechs coming online",
             "description" : "Objective for tracking the time left in the mission. While the player it told to Hold Out for Reinforcements",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -291,14 +291,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Meyer, are you picking up that assault 'Mech they said would be here?",
+                    "words" : "I keep trying to contact Darius but there has been no replies, they're likely taking cover.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -307,7 +307,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "No, I'm-- wait, there it is. Shit, that's big. How the hell are we supposed to keep <i>that</i> from blowing shit up?",
+                    "words" : "Sensors definitely indicate an incoming company of 'Mechs, including an assault, commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -323,23 +323,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Engage it and keep it--",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Uh, Darius? You're not gonna like this. I'm detecting <i>two</i> assault engine signatures.",
+                    "words" : "Farah, you need to man the tactical station, I'm needed for piloting this ship.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -355,14 +339,46 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You gotta be kidding me.",
+                    "words" : "Ok, commander, from the looks of it... oh, there's two very large signatures approaching?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Two? Let me see that screen again, Farah.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, it's possible but might be also a glitch. I'm running diagnostics, meanwhile good luck.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -380,7 +396,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Holy <i>shit</i>, Commander. Let's not do that again any time soon?",
+                    "words" : "The Black Angels really wanted this palace and Servanis' slave concubine.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I'm hoping Yang... Darius and everyone else is safe. Good job, boss.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -396,14 +428,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "It worked out in the end. Somehow.",
+                    "words" : "I can't raise the Caliph or anyone at Shervanis' palace, they simply refuse to answer.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -421,14 +453,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a damn disaster. Let's debrief back in orbit.",
+                    "words" : "Abort. My first time as XO and this just happened.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -446,14 +478,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Argo, my engineers are powering the turrets up now. The APCs will scatter and provide support.",
+                    "words" : "<i>Hysteria</i> my engineers are powering the turrets up now. The APCs will scatter and provide support.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_ShervanisCaliphateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
@@ -469,7 +501,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
@@ -484,17 +516,17 @@
                 "EncounterObjectGuid" : "d7184f62-0021-41af-a5a4-34a585aa9d39"
             },
             "name" : "Dialogue_ReinforcementWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Warning commander, sensors are reading multiple contacts approaching from multiple vectors. Looks like the attacking force has brought reinforcements. ",
+                    "words" : "More contacts approaching from multiple directions!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -509,17 +541,17 @@
                 "EncounterObjectGuid" : "d382339d-0cc4-483f-b64d-4a93f3009f7e"
             },
             "name" : "Dialogue_BuildingDamaged",
-            "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyStruct-Damaged",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Be advised, some of the target buildings are sustaining damage. Your mission is to keep them standing. ",
+                    "words" : "Mercenary, my palace is under attack!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_ShervanisCaliphateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -534,17 +566,17 @@
                 "EncounterObjectGuid" : "56262d64-510a-45a1-9a7a-cdadd02a27ec"
             },
             "name" : "Dialogue_BuildingDestroyed",
-            "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyStruct-Destroyed",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, a target building has been demolished. Ensure the integrity of the remaining buildings.",
+                    "words" : "Commander, don't make me regret hiring you. You'll regret it as well.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_ShervanisCaliphateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -562,14 +594,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, there's only one target structure left. If we lose it, we've blown the contract. You have to draw their fire somehow.",
+                    "words" : "Shervanis has gone offline. If the angels take down that last building, they're all dead.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -587,14 +619,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyReinforcements",
             "dialogueContent" : [
                 {
-                    "words" : "Mercenary Commander, we've received word of the assault on your position. Reinforcements are incoming, they are about halfway there. Maintain position and you will be relieved and reinforced shortly. ",
+                    "words" : "{COMPANY.CompanyName}, my MechWarriors are doing the final preparations to deploy. Keep the Black Angels away until they deploy.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_ShervanisCaliphateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -612,14 +644,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Argo, this is {TEAM_EMP.FactionDef.Demonym} local command. Our turrets have been disabled by sabotage.",
+                    "words" : "<i>Hysteria</i>, this is Caliph Shervanis. Our turrets have been disabled by angel sabotage.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_ShervanisCaliphateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -635,7 +667,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -651,7 +683,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -667,7 +699,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_ShervanisCaliphateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e",
@@ -683,7 +715,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
@@ -697,7 +729,7 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : true,
+    "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
@@ -706,8 +738,8 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
+    "negotiatedSalary" : 1,
+    "negotiatedSalvage" : 1,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
