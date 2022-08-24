@@ -1,14 +1,14 @@
 {
     "Description" : {
-        "Id" : "fp_StoryTime_HYR_304_unnaturalSelection",
-        "Name" : "Unnatural Selection",
-        "Details" : "Ostergaard and the Iberia are continuing Taurian aggression against the Reach until the sudden appearance of the Black JumpShip changes the tide. Part three of Arano Restoration arc.",
-        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_7.png"
+        "Id" : "fp_StoryTime_HYR_221_headsWillRoll",
+        "Name" : "Heads Will Roll",
+        "Details" : "The Magistracy of Canopus issues a bounty contract for Jinxie and the Banshees.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_50.png"
     },
     "Weight" : 10,
-    "InternalName" : "unnaturalSelection",
+    "InternalName" : "headsWillRoll",
     "PublishState" : "PUBLISHED",
-    "Difficulty" : 8,
+    "Difficulty" : 6,
     "Requirements" : [
         {
             "Scope" : "Company",
@@ -21,7 +21,7 @@
             },
             "ExclusionTags" : {
                 "items" : [
-					"flashpoint_unnaturalSelection_complete"
+					"flashpoint_headsWillRoll_complete"
 				],
                 "tagSetSourceFile" : ""
             },
@@ -32,7 +32,7 @@
         "Scope" : "StarSystem",
         "RequirementTags" : {
             "items" : [
-				"planet_name_artru",
+				"planet_name_helios"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
@@ -43,24 +43,26 @@
         "RequirementComparisons" : []
     },
     "PotentialEmployers" : [
-		"AuriganRestoration"
+		"MagistracyOfCanopus"
     ],
-    "TargetFaction" : "TaurianConcordat",
-    "AllowRefitTime" : true,
+    "TargetFaction" : "CanopianPirates",
+    "AllowRefitTime" : false,
     "FlashpointLength" : "MEDIUM",
     "Repeatable" : true,
-    "MilestoneSetID" : "ms_fp_unnaturalSelection",
-    "UnitDropTonnageHint" : "",
-    "LanceDropTonnageHint" : "",
+    "MilestoneSetID" : "ms_fp_headsWillRoll",
     "UseAvailableTimeoutOverride" : false,
     "AvailableTimeout" : 0,
     "UseInProgressTimeoutOverride" : false,
     "InProgressTimeout" : 0,
-    "RewardCollectionID" : "itemCollection_loot_fp_reward_unnaturalSelection",
-    "FlashpointShortDescription" : "The Taurians are threatning my home, Commander and Lady Arano has ordered us to stop their aggression.",
-    "FlashpointDescriberCastDefId" : "castDef_DariusDefault",
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_headsWillRoll",
+    "UnitDropTonnageHint" : "",
+    "LanceDropTonnageHint" : "",
+    "FlashpointShortDescription" : "Commander, despite the many rumors regarding Jinxie and the Banshees, the Magistracy has zero tolerance for criminal actions perpetrated by anyone, including those so called 'music celebrities. We have tracked them to ",
+    "FlashpointDescriberCastDefId" : "castDef_MagistracyRepDefault",
     "Tags" : {
-        "items" : [],
+        "items" : [
+            "BLACKLISTED"
+        ],
         "tagSetSourceFile" : "tags/FlashpointTags"
     }
 }
