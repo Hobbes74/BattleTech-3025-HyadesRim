@@ -2,13 +2,13 @@
     "ID" : "headsWillRoll_1_destroyBase",
     "contractName" : "Heads Will Roll",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 2,
+    "difficulty" : 7,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
-    "shortDescription" : "The Satan's Kittens have a small outpost in this area that is used to communicate with their space assets. If we take down their equipment and sensors we'll be able to control the spaceport. The Taurians know the codes used by merchants so we'll be able to drop close. Once you secure the location, capture any pirate survivors that attempt to escape before they have a chance to regroup.",
-    "longDescription" : "This seems risky, Commander. If things get out of hand, remember you can just blow up the buildings and make a run for it.",
+    "shortDescription" : "The Canopian intel included in the contract indicates that the Banshees have set their base of operations away from the currently disputed areas between the Pure Virgins and their opponents, which is less one potential headache to worry about. Once we take down that complex, they'll lose their support facilities and any survivors <i>should</i> be easier targets. However our 'employer' has also informed us that we might encounter other pirate bands down there and some might be allied with Jinxie.",
+    "longDescription" : "Considering our target, Commander, I wonder whatever more surprises might be down there for us.",
     "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -30,8 +30,8 @@
         -1,
         -1
     ],
-    "mapMood" : "AridNightFoggy",
-    "startingFogOfWarVisibility" : "Surveyed",
+    "mapMood" : "ArcticNightFoggy",
+    "startingFogOfWarVisibility" : "Unknown",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
@@ -527,7 +527,7 @@
             ]
         }
     ],
-    "overrideAutoCompleteDialogueId" : "DialogBucketDef_c_fp_pirateChallenge_1_destroyBase",
+    "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
@@ -733,7 +733,7 @@
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "Target",
-        "faction" : "INVALID_UNSET",
+        "faction" : "LothianPirates",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -741,7 +741,7 @@
                     "EncounterObjectGuid" : "5a1b1a4a-0325-4a6d-b021-d9ba167e2ac8"
                 },
                 "name" : "Lance_Enemy_OpposingForce",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
 
@@ -765,9 +765,9 @@
                             "EncounterObjectGuid" : "63ad3b03-b392-49b8-ac26-1ad827b010b4"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_clint_CLNT-1-2P",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -780,7 +780,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d3_scout",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -798,9 +798,9 @@
                             "EncounterObjectGuid" : "74a1e790-8882-4e72-844f-26b1a3804231"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_locust_LCT-1T",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -813,7 +813,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_brawler",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -831,9 +831,9 @@
                             "EncounterObjectGuid" : "b7eb8d4e-6b3d-4670-a48a-baf2757e024a"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_firestarter_FS9-H",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -846,7 +846,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d2_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -864,9 +864,9 @@
                             "EncounterObjectGuid" : "74c2e448-9cc6-44bf-9c23-6442756067bf"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_urbanmech_UM-R60X",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -879,7 +879,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d4_sentinel",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -899,7 +899,7 @@
                     "EncounterObjectGuid" : "40decd4d-427d-4f2e-8fc7-fc379ae4bbc2"
                 },
                 "name" : "Lance_Enemy_BaseTurrets",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
 
@@ -925,7 +925,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Heavy_Sniper",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -938,7 +938,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -958,7 +958,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Heavy_Sniper",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -971,7 +971,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -991,7 +991,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Heavy_LRM",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1004,7 +1004,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d7_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1024,7 +1024,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Heavy_LRM",
+                        "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1037,7 +1037,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d7_turret",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1075,7 +1075,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -5,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -1084,9 +1084,9 @@
                             "EncounterObjectGuid" : "6a902689-eca8-469b-9b45-32a1dcd904c6"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1099,7 +1099,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d3_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1117,9 +1117,9 @@
                             "EncounterObjectGuid" : "4ad6002d-6d87-42c8-a99d-ffeb35d62723"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1132,7 +1132,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1150,9 +1150,9 @@
                             "EncounterObjectGuid" : "98f65ba4-c2dc-4435-959b-fb5a2e30a889"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1165,7 +1165,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d2_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1183,9 +1183,9 @@
                             "EncounterObjectGuid" : "3839b098-fae1-429f-b0fc-276b115894f8"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_tortugapirates",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1198,7 +1198,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
