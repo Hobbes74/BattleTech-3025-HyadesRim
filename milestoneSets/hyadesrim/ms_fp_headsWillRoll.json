@@ -129,7 +129,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_headsWillRoll_003_Mission",
+                            "value" : "ms_fp_headsWillRoll_003_MissionSim",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -145,7 +145,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_headsWillRoll_003_Mission",
+                "Id" : "ms_fp_headsWillRoll_003_MissionSimSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -397,7 +397,7 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_CentralMound_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -405,20 +405,12 @@
                                 null,
                                 "headsWillRoll_2a_ambushConvoy",
                                 "MagistracyOfCanopus",
-                                "CanopianPirates",
+                                "LothianPirates",
                                 "6",
                                 "ms_fp_headsWillRoll_101_Mission",
                                 null,
                                 null,
                                 null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -467,7 +459,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_icyOutpost_iGlc",
+                            "value" : "mapGeneral_borealForest_iGlc",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
@@ -649,44 +641,17 @@
                         "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
-                    "Stats" : [
+                    "Stats" : null,
+                    "Actions" : [
                         {
-                            "typeString" : "System.Int32",
-                            "name" : "Reputation.MagistracyOfCanopus",
-                            "value" : "-10",
-                            "set" : false,
-                            "valueConstant" : null
+                            "Type" : "System_ToggleIgnoredContractEmployers",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "CanopianPirates"
+                            ]
                         }
                     ],
-                    "Actions" : [],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "Stats" : null,
-                    "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -731,7 +696,7 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mapGeneral_borealForest_iGlc",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -741,10 +706,18 @@
                                 "MagistracyOfCanopus",
                                 "MarianPirates",
                                 "7",
-                                "ms_fp_headsWillRoll_201_Complete",
+                                "ms_fp_headsWillRoll_201_Talk",
                                 null,
                                 null,
                                 null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -759,7 +732,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_headsWillRoll_201_Complete",
+                "Id" : "ms_fp_headsWillRoll_201_Talk",
+                "Name" : "Talk",
+                "Details" : "Closing Conversation.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb772d927863af145f6047e",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_headsWillRoll_202_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_headsWillRoll_202_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -796,7 +830,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_headsWillRoll_202_B-Reward",
+                            "value" : "ms_fp_headsWillRoll_203_B-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_headsWillRoll",
@@ -823,7 +857,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_headsWillRoll_202_B-Reward",
+                "Id" : "ms_fp_headsWillRoll_203_B-Reward",
                 "Name" : "B-Reward",
                 "Details" : "B Branch rewards",
                 "Icon" : null
@@ -853,44 +887,17 @@
                         "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
-                    "Stats" : [
+                    "Stats" : null,
+                    "Actions" : [
                         {
-                            "typeString" : "System.Int32",
-                            "name" : "Reputation.MagistracyOfCanopus",
-                            "value" : "10",
-                            "set" : false,
-                            "valueConstant" : null
+                            "Type" : "System_ToggleIgnoredContractEmployers",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "CanopianPirates"
+                            ]
                         }
                     ],
-                    "Actions" : [],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "Stats" : null,
-                    "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0

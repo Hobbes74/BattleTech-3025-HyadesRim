@@ -1,5 +1,5 @@
 {
-    "ID" : "headsWillRoll_2_ambushConvoy",
+    "ID" : "headsWillRoll_2a_ambushConvoy",
     "contractName" : "Heads Will Roll II",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
@@ -7,7 +7,7 @@
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
-    "shortDescription" : "The remaining pirates are attempting to escape and have organized a convoy that has left the outpost we just destroyed. Eliminate those survivors while me and my people proceed to interrogate the Plasma Addiction prisioners captured. Since Jinxie and her Banshees weren't present in the outpost, we can assume that the survivors are attempting to link with them, so stop them right now.",
+    "shortDescription" : "The remaining pirates have organized a convoy that has left the outpost we just destroyed. Eliminate those survivors while me and my people proceed to interrogate the Plasma Addiction prisioners captured. Since Jinxie and her Banshees weren't present at the site, we can assume that the survivors are attempting to link with them, so stop them right now before they can bolster her forces.",
     "longDescription" : "And another extended deployment. Let's finish this one up.",
     "salvagePotential" : 20,
     "requirementList" : [],
@@ -37,7 +37,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy and Escape",
+            "title" : "Destroy the Plasma Convoy and Escape",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -53,7 +53,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
-            "title" : "Defeat any Escort Units",
+            "title" : "Defeat any Plasma Escorts",
             "description" : "",
             "isPrimary" : false,
             "forPlayer" : "Player1",
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy",
+            "title" : "Destroy the Plasma Convoy",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -77,7 +77,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy Escorts",
+            "title" : "Destroy the Plasma Escorts",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -123,7 +123,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "aa529050-2feb-4fbf-8838-afa2849caca6"
             },
-            "title" : "Intercept {TEAM_TAR.FactionDef.Demonym} Convoy",
+            "title" : "Intercept Plasma Convoy",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -143,7 +143,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9b0f9fdd-2033-469c-8327-4e519ef6c683"
             },
-            "title" : "Destroy Enemy Reinforcement Units",
+            "title" : "Destroy Plasma Reinforcements",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -241,14 +241,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Yer DropShip pilot was able to catch'em on the last leg. We could use a hot shot like her in the Goons. Good huntin'",
+                    "words" : "The Plasma convoy is burning a lot of diesel to get away as fast as they can.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_MercenariesDefaultCommander",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -273,14 +273,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once you're done, we'll have the Leopard on station, ready for a pickup.",
+                    "words" : "Once you're done, we'll have the Leopard on station, ready for a pickup, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -314,14 +314,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "MAYDAY! MAYDAY! The Argo is under attack!",
+                    "words" : "That's finished! Now we just need to find Jinxie and the Banshees.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -330,14 +330,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm taking heavy losses at the spaceport, I can't divert my DropShip to assist.",
+                    "words" : "And I have their location, now. Prepare the company for another deployment, Mr. Oliveira.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_MercenariesDefaultCommander",
+                    "selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -346,48 +346,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm heading back at top speed.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SumireDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-				{
-                    "words" : "The 'Mech bays have been hit, Yang is taking fire. Darius has everyone arming for a counter-attack. Get back now!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_FarahDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
-            },
-            "name" : "Dialogue_MissionFailure",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
-                {
-                    "words" : "What a mess. Aborting mission, Commander.",
+                    "words" : "We're not actually taking orders from you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -406,13 +365,38 @@
         },
         {
             "dialogue" : {
+                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
+            },
+            "name" : "Dialogue_MissionFailure",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "Yeah, that was a monumental failure.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
                 "EncounterObjectGuid" : "2bc99c34-b9a1-4e6d-ad33-a64162819bd0"
             },
             "name" : "Dialogue_GoToComplete",
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_EyesOnTarget",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicles. They should be to your front. Engage and destroy, Commander.",
+                    "words" : "We're catching to that convoy, they should be right ahead.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -437,7 +421,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That's got it, keep firing on those targets until they are neutralized. ",
+                    "words" : "Keep firing, we need to neutralize all vehicles.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -462,7 +446,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's the last of the escorts. Should make {TEAM_EMP.FactionDef.Name} happy.",
+                    "words" : "That's the last of the Plasma convoy escorts.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -487,14 +471,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've got a convoy vehicle escaping, Commander. We need to pick up the pace or we're going to lose them.",
+                    "words" : "Hey, those vehicles are nearly escaping. There's an incoming DropShip to pick them.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -512,7 +496,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_KillConfirmed",
             "dialogueContent" : [
                 {
-                    "words" : "One down. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "First vehicle destroyed, move to take down the rest.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -537,7 +521,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is finished, now get what mechs you have to the extraction point and we'll pull you out. Move quickly.",
+                    "words" : "The convoy is finished, now get the 'Mechs to the extraction point and we'll pull you out. Move quickly.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -562,14 +546,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Enemy Reinforcements on your six, get ready for contact.",
+                    "words" : "More Plasma units joining the field.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -580,18 +564,20 @@
             ]
         }
     ],
+    "extractionOverrideList" : [],
+    "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-	"negotiatedSalary" : 0.50,
-	"negotiatedSalvage" : 0.50,
+	"negotiatedSalary" : 0.5,
+	"negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -797,7 +783,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-
+                        "lance_type_vehicle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },

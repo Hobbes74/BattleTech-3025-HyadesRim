@@ -1,5 +1,5 @@
 {
-    "ID" : "headsWillRoll_3_assassinate",
+    "ID" : "headsWillRoll_2b_assassinate",
     "contractName" : "Heads Will Roll II",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
@@ -7,7 +7,7 @@
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
-    "shortDescription" : "Jinxie has given us the location of one of the pirate groups currently harassing the Pythians, along with enough footage of her death to make it credible that we have killed her and destroyed the Banshees. Once we take down the Legion of the Damned, it will be a matter of 'dressing up' the wreckage for the Canopians to believe we fulfilled their contract and they can restart their lives elsewhere in the Inner Sphere with a clean sheet.",
+    "shortDescription" : "Jinxie has given us the location of one of the pirate groups currently harassing the Pythians, along with DNA and footage of her death to make it credible that we have killed her and destroyed the Banshees. Once we take down the Legion of the Damned, it will be a matter of 'dressing up' the wreckage for the Canopians to believe we fulfilled their contract and they can restart their lives elsewhere in the Inner Sphere with a clean sheet.",
     "longDescription" : "Considering with whom they'll be leaving, I sure hope they never set foot on the Rimward Periphery again.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -37,7 +37,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "edafecaf-4d24-4304-98b1-9e645898c6ee"
             },
-            "title" : "Destroy the Target and Escape",
+            "title" : "Kill the Legion of the Damned",
             "description" : "Destroy the target, clear area of additional enemy forces, and reach the evac zone with all surviving 'Mechs.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "650245ff-89b6-4c0f-9b72-31db69cf109c"
             },
-            "title" : "Destroy Supporting Enemy Forces",
+            "title" : "Destroy Legion of the Damned",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -91,7 +91,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ef887928-31f2-4001-a1d8-44f8dc5f5bf8"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Legionnaire Reinforcements",
             "description" : "Destroy enemy reinforcements before extraction",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -127,7 +127,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Destroy The Muscle",
+            "title" : "Kill The Legion's Leader",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -157,7 +157,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Stop the Target from Escaping",
+            "title" : "Stop the Leader from Escaping",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -167,7 +167,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "1bd16613-2bbe-4bd7-bb7a-240ddb055ac0"
             },
-            "title" : "Armor Breached",
+            "title" : "Leader Armor Breached",
             "description" : "Armor of the Target is breached.",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -182,7 +182,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "19e8fa2a-f850-42f0-a067-15fcafcc8123"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "requirementList" : []
         },
         {
@@ -190,7 +190,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "9a27ee75-f33f-45ac-b0d3-ebc321ae7ffc"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "requirementList" : []
         }
     ],
@@ -241,7 +241,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "These are the coordinates that {TEAM_EMP.FactionDef.ShortName} provided, so she should be in the area.",
+                    "words" : "This is the location of the Legion of the Damned's pirates.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -257,7 +257,7 @@
                     "revealRadius" : 0
                 },
                 {
-                    "words" : "Approach carefully. The Kittens are known for their ambushes.",
+                    "words" : "According to Jinxie, they're using this area as their base of operations.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -273,7 +273,7 @@
                     "revealRadius" : 0
                 },
                 {
-                    "words" : "Once she's down, head to the evac point for your pickup.",
+                    "words" : "Once you take them and their leader down, you can safely evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -298,7 +298,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander. This kitten has been declawed.",
+                    "words" : "That's the last of the legionnaries.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -306,6 +306,70 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Good work. We'll start fabricating the evidence you need for Jinxie's death.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Would there be any chance that you would require my services down there?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sumire, we can't spare you from your current duties because you want to personally meet Jinxie.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We could use her, Commander. Your pilot knows exactly how everything should look. We'll be waiting for her down here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -323,7 +387,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is a disaster. Commander, Laura Murray is too strong.",
+                    "words" : "Abort! Abort! We botched up this one.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -373,7 +437,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_KillConfirmed",
             "dialogueContent" : [
                 {
-                    "words" : "Readings indicate all ambushing units are disabled.",
+                    "words" : "All legion reinforcements have been destroyed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -398,7 +462,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "Get her before she escapes!",
+                    "words" : "You've damaged their leader's 'Mech!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -423,14 +487,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_AmbushWarning",
             "dialogueContent" : [
                 {
-                    "words" : "It appears their lance was training with additional forces.",
+                    "words" : "The damned legionnaries have additional forces.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -448,14 +512,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TargetFleeing",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, the target is bugging out! Eliminate them before they escape.",
+                    "words" : "Commander, you can't let their leader escape!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -466,8 +530,10 @@
             ]
         }
     ],
+    "extractionOverrideList" : [],
+    "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
@@ -476,8 +542,8 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-	"negotiatedSalary" : 0.50,
-	"negotiatedSalvage" : 0.50,
+	"negotiatedSalary" : 0.5,
+	"negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -683,7 +749,8 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-
+                        "lance_type_battle",
+                        "lance_type_dynamic_difficulty"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -841,7 +908,8 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_cavalry"
+                        "lance_type_cavalry",
+                        "lance_type_dynamic_difficulty"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },

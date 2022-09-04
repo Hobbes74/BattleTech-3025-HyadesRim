@@ -2,7 +2,7 @@
     "ID" : "headsWillRoll_3a_threeWayBattle",
     "contractName" : "Heads Will Roll III",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 6,
+    "difficulty" : 7,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "As I said, it was merely a matter of applying the right persuasion tools before the captured Plasma Addiction pirates revealed the location of Jinxie, once we took our the Banshees' lair. Since you refused the deal you proposed to her, you can expect Jinxie to use every trick and song in the Banshees' book.",
-    "longDescription" : "I wonder what would have been his decision, if we had asked his opinion? Too late for that now.",
+    "shortDescription" : "As I said, it was merely a matter of applying the right persuasion tools before the captured Plasma Addiction pirates revealed the location of Jinxie, once we took out the Banshees' lair. Since you refused the deal you proposed to her, you can expect Jinxie to use every trick and song in the Banshees' book.",
+    "longDescription" : "I wonder what would have been his decision regarding Jinxie's offer?",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -174,7 +174,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Destroy Additional Enemy Forces",
+            "title" : "Destroy Jinxie and her Banshees",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -462,7 +462,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7b5ce847-7978-459b-97ee-3bf90ef951fb"
             },
-            "title" : "Destroy the Enemy Allied Forces",
+            "title" : "Destroy the Plasma Forces",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -933,7 +933,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "2cf7c676-93a5-416c-9f27-58f4d9493aff"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Target Additional Dropped Forces Chunk Group",
                 "Enemy Ally Additional Forces Chunk Group"
@@ -1003,7 +1003,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "7f7e150a-d8e3-4587-9d79-3c2dfe928855"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Enemy Ally Landed Forces Chunk Group"
             ],
@@ -1014,7 +1014,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "86c5484f-388c-4e37-ab02-a06e3f9acff6"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Enemy Ally Landed Forces Chunk Group"
             ],
@@ -1294,14 +1294,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've got them, Commander. Right out in the open.",
+                    "words" : "Seems like Jinxie's Periphery tour is finally over.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1310,14 +1310,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "These guys are amateurs. Get eyes on them, take them out.",
+                    "words" : "If it's really the Banshees they'll have some surprise for us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
@@ -1326,7 +1326,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliveira out.",
+                    "words" : "We seemed to have her boxed, so it's time we end this.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1351,14 +1351,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I've contacted our {TEAM_EMP.FactionDef.Demonym} rep to find out why we weren't told about the extra lance. Let's debrief in orbit, Commander.",
+                    "words" : "<i>Saraba</i>, Jinxie-<i>san</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "All enemy 'Mechs have been disabled or destroyed. The Banshees are no more.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1376,7 +1392,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I've contacted our {TEAM_EMP.FactionDef.Demonym} rep to find out why we weren't told about the extra lance. Let's debrief in orbit, Commander.",
+                    "words" : "And Jinxie bested us again.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1384,6 +1400,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Perhaps next time, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1615,7 +1647,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER, Hark {COMMANDER.Name} here are unexpected {TEAM_TAR_ALLY.FactionDef.Demonym} bad guys  are here too. Don't that beat it all. This is the secondary objective version.",
+                    "words" : "More Plasma 'Mechs?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1631,14 +1663,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to contract as a bonus. If we want to make some extra C-bills we can take them out if we want.",
+                    "words" : "Don't worry about them, just get Jinxie and her Banshees, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1656,14 +1688,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Primary targets destroyed Commander.",
+                    "words" : "Congratulations, you've destroyed Jinxie and the Banshees.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1672,7 +1704,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER I'm inbound to the LZ Commander.",
+                    "words" : "Don't expect me to brag about it. You're clear to evac, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2175,7 +2207,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER More {TEAM_EMP.FactionDef.Demonym} forces on the field. This is the Primary Objective Version.",
+                    "words" : "<i>The 'Mechs got out, the 'Mechs got out... the Banshees got out, oh no!</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JinxieDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "fddf5e8b-07c6-492b-861e-2d9c2bde80ee",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And we have finally catched up with Jinxie.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2191,14 +2239,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to contract. If we want to get paid we need to take them out.",
+                    "words" : "Or has she caught up with us?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "fddf5e8b-07c6-492b-861e-2d9c2bde80ee",
@@ -2331,7 +2379,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACHEHOLDER (Additional Target Forces Primary). In bound hostile Dropship detected, drop zone marked.",
+                    "words" : "And we have an incoming DropShip here. Anyone wanna guess who that might be?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a844b4c9-7a04-4675-af2a-95cfacf313f8",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "A DropShip??? Weren't the Banshees supposed to be trapped?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2339,6 +2403,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a844b4c9-7a04-4675-af2a-95cfacf313f8",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You can't reasonably expect me to know or predict everything, can you?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a844b4c9-7a04-4675-af2a-95cfacf313f8",
@@ -2739,7 +2819,7 @@
             }
         }
     ],
-    "overwriteMissionCompleteWhenAutoComplete" : true,
+    "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
@@ -3283,6 +3363,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
+						"lance_type_recon",
                         "lance_type_battle",
                         "lance_type_dynamic_difficulty"
                     ],
@@ -3446,7 +3527,8 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_notallvehicles"
+                        "lance_type_cavalry",
+                        "lance_type_dynamic_difficulty"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -3470,10 +3552,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "37634f3f-6855-4572-b526-1fa66e770831"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Jinxie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_banshee_BNC-TO",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3486,7 +3568,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d9_outrider",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3503,8 +3585,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c2f52419-e1ba-43db-bb53-f2d21eba4f8c"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Zombie",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -3519,7 +3601,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_brawler",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3536,7 +3618,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "3ae6c2d2-470c-4c61-866a-1e2ff3cfb918"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Billie",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -3552,7 +3634,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_flanker",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3569,8 +3651,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "39045acd-b014-45d3-8bdd-6c0f3a91cb99"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Jamming",
+                        "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -3585,7 +3667,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d8_gladiator",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

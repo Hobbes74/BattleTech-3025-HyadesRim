@@ -7,7 +7,7 @@
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
-    "shortDescription" : "The Canopian intel included in the contract indicates that the Banshees have set their base of operations away from the currently disputed areas between the Pure Virgins and their opponents, which is less one potential headache to worry about. Once we take down that complex, they'll lose their support facilities and any survivors <i>should</i> be easier targets. However our 'employer' has also informed us that we might encounter other pirate bands down there and some might be allied with Jinxie.",
+    "shortDescription" : "The Canopian intel included in the contract indicates that the Banshees have set their base of operations away from the main settlements in the planet, which is less one potential headache to worry about. Once we take down that complex, they'll lose their support facilities and any survivors <i>should</i> be easier targets. However our 'employer' has also informed us that we might encounter other pirate bands down there and some might be allied with Jinxie.",
     "longDescription" : "Considering our target, Commander, I wonder whatever more surprises might be down there for us.",
     "salvagePotential" : 20,
     "requirementList" : [],
@@ -54,7 +54,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3ac1476d-5ab0-436b-aa68-e1a5436e796f"
             },
-            "title" : "Destroy Structures in the Base",
+            "title" : "Destroy Pirate Outpost",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -64,7 +64,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "979864d1-7d84-4797-b032-696a157deed8"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Garrison",
+            "title" : "Destroy Pirate Defenders",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -136,7 +136,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ea4504c3-8dcc-4049-bff2-784c423f0aa8"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Plasma Reinforcements",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -270,14 +270,30 @@
                     "revealRadius" : -1
                 },
 				{
-                    "words" : "We're seeing fixed defenses powering up, Commander. Turrets are such a pain in the ass.",
+                    "words" : "That sounded familiar though.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+				{
+                    "words" : "That broadcast came from this direction.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "40decd4d-427d-4f2e-8fc7-fc379ae4bbc2",
@@ -286,7 +302,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "There will be a garrison, so keep your eyes open for it. Oliveira out.",
+                    "words" : "All right, let's expect significant opposition ahead. We're ready to move, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -311,7 +327,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's everything, Commander. Good job.",
+                    "words" : "We got them all, but no Jinxie or Banshees on this outpost.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -319,54 +335,6 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-		{
-		    "words" : "Stand fast Commander {COMMANDER.LastName}!",
-		    "wordsColor" : {
-			"r" : 1,
-			"g" : 1,
-			"b" : 1,
-			"a" : 1
-		    },
-		    "selectedCastDefId" : "castDef_TaurianRepDefault",
-		    "emote" : "Default",
-		    "audioName" : "NONE",
-		    "cameraFocusGuid" : "40decd4d-427d-4f2e-8fc7-fc379ae4bbc2",
-		    "cameraDistance" : "Far",
-		    "cameraHeight" : "Default",
-		    "revealRadius" : -1
-		},
-		{
-		    "words" : "There are several pirate vehicles attempting to leave the outpost rather that fight.",
-		    "wordsColor" : {
-			"r" : 1,
-			"g" : 1,
-			"b" : 1,
-			"a" : 1
-		    },
-		    "selectedCastDefId" : "castDef_TaurianRepDefault",
-		    "emote" : "Default",
-		    "audioName" : "NONE",
-		    "cameraFocusGuid" : "",
-		    "cameraDistance" : "Far",
-		    "cameraHeight" : "Default",
-		    "revealRadius" : -1
-		},
-		{
-                    "words" : "After you destroy the base, hunt down these bandits.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_LocalsDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -375,21 +343,69 @@
                     "revealRadius" : -1
                 },
 				{
-                    "words" : "Sure. Sumire, get a track on their bearing and speed.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
+					"words" : "Commander {COMMANDER.LastName}, it seems we were tricked.",
+					"wordsColor" : {
+					"r" : 1,
+					"g" : 1,
+					"b" : 1,
+					"a" : 1
+					},
+					"selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
+					"emote" : "Default",
+					"audioName" : "NONE",
+					"cameraFocusGuid" : "40decd4d-427d-4f2e-8fc7-fc379ae4bbc2",
+					"cameraDistance" : "Far",
+					"cameraHeight" : "Default",
+					"revealRadius" : -1
+				},
+				{
+					"words" : "I'm detecting several pirate vehicles escaping the remains of outpost.",
+					"wordsColor" : {
+					"r" : 1,
+					"g" : 1,
+					"b" : 1,
+					"a" : 1
+					},
+					"selectedCastDefId" : "castDef_SumireDefault",
+					"emote" : "Default",
+					"audioName" : "NONE",
+					"cameraFocusGuid" : "",
+					"cameraDistance" : "Far",
+					"cameraHeight" : "Default",
+					"revealRadius" : -1
+				},
+				{
+					"words" : "We'll need to hunt down these bandits to understand what happened.",
+					"wordsColor" : {
+						"r" : 1,
+						"g" : 1,
+						"b" : 1,
+						"a" : 1
+					},
+					"selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
+					"emote" : "Default",
+					"audioName" : "NONE",
+					"cameraFocusGuid" : "",
+					"cameraDistance" : "Far",
+					"cameraHeight" : "Default",
+					"revealRadius" : -1
+				},
+				{
+					"words" : "Sumire, get a track on their bearing and speed, once we get back to orbit.",
+					"wordsColor" : {
+						"r" : 1,
+						"g" : 1,
+						"b" : 1,
+						"a" : 1
+					},
+					"selectedCastDefId" : "castDef_DariusDefault",
+					"emote" : "Default",
+					"audioName" : "NONE",
+					"cameraFocusGuid" : "",
+					"cameraDistance" : "Far",
+					"cameraHeight" : "Default",
+					"revealRadius" : -1					
+				}
             ]
         },
         {
@@ -400,14 +416,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a disaster. We'll debrief back at the ship.",
+                    "words" : "And Jinxie has outsmarted us this time.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+					"selectedCastDefId" : "castDef_FP_shadowOrg_ContactDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -425,7 +441,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I read another Lance inbound, careful not to get caught in an ambush.",
+                    "words" : "Another lance detected, it could be the Banshees.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -433,6 +449,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Don't get too eager, Darius. They seem to also have Plasma Addiction markings.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -450,7 +482,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
             "dialogueContent" : [
                 {
-                    "words" : "We've demolished the objective buildings. No need to loiter, get to the evac zone. ",
+                    "words" : "We've neutralized the outpost, it's time to leave this site.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -472,10 +504,9 @@
                 "EncounterObjectGuid" : "719d08e9-5bf9-4dc0-a13b-ad86bac4a65d"
             },
             "name" : "Dialogue_TargetBuildingDamaged",
-            "overrideDialogueBucketId" : "DialogBucketDef_DestroyBase_EnemyStruct-Damaged",
             "dialogueContent" : [
                 {
-                    "words" : "Good shots, Commander! You scored a solid hit on one of the target structures, keep it up. ",
+                    "words" : "We're reading massive structural damage, a couple more shots and it will go down!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -497,17 +528,16 @@
                 "EncounterObjectGuid" : "e882f006-f7fd-4048-9c29-56553a5b5698"
             },
             "name" : "Dialogue_TargetBuildingDestroyed",
-            "overrideDialogueBucketId" : "DialogBucketDef_DestroyBase_EnemyStruct-Destroyed",
             "dialogueContent" : [
                 {
-                    "words" : "Target building destroyed, good work commander, stay at it and we'll be done in no time. ",
+                    "words" : "Demolitions, Incorporated.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -522,10 +552,25 @@
                 "EncounterObjectGuid" : "aeff78ff-42fd-430a-8785-2aad29f83326"
             },
             "name" : "Dialogue_TargetGarrisonDestroyed",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_KillConfirmed",
             "dialogueContent" : [
                 {
-                    "words" : "Bkt_KillConfirmed: The garrison is destroyed. Good Work.",
+                    "words" : "The first lance has been eliminated.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "But there seems to be more than a lance operating.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -543,6 +588,8 @@
             ]
         }
     ],
+    "extractionOverrideList" : [],
+    "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
