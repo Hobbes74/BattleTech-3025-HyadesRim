@@ -1,0 +1,85 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_301_comancheMoon",
+        "Name" : "Comanche Moon",
+        "Details" : "Commodore Ostergaard and the Black Angels strike preemptively at the company before they meet Lady Arano.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_39.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "comancheMoon",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 7,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_darkHorse_complete",
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_comancheMoon_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Injuries",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_cygnus"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"GhostRiders"
+    ],
+    "TargetFaction" : "TaurianConcordat",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "MEDIUM",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_comancheMoon",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_comancheMoon",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "Commander, before you meet me at Aurigan space you need to meet with the survivors of the Ghost Riders mercenary company, who have agreed to rejoin the Restoration and fight under my name. Since I can't be present, you'll need to deploy individually because they will trust no one else. Bring these warriors to me, I'll need them in the the future.",
+    "FlashpointDescriberCastDefId" : "castDef_KameaPirate",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

@@ -10,8 +10,8 @@ Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel -
 
 Features
 * A new BattleTech story/campaign mode, consisting of 32 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as in the original campaign. Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed and the vanilla story is a cover-up made for propaganda and political purposes. 
-* Twenty-four original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Petty Tyrants and Bandit Kingdoms, The Magistrate, Heads Will Roll, Backdoor Man, Dark Forest and Dark Horse.
-* Eight/nine more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Flesh For Fantasy, Dreams of Nagayan Valley, Horse Latitudes, Question Of Faith, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
+* Twenty-five original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Petty Tyrants and Bandit Kingdoms, The Magistrate, Heads Will Roll, Backdoor Man, Dark Forest, Dark Horse and Comanche Moon.
+* Eight/ten more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Flesh For Fantasy, Dreams of Nagayan Valley, Horse Latitudes, Question Of Faith, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
 * New story includes so far a total of 111 new contracts, 134 new crew conversations and 212 lore descriptions, and is divided into three parts, each with its own subarcs.
 * The vanilla FPs are included in the new Campaign as independent mini-campaigns, except for the Black Widow mini-campaign but still appears on Career mode.
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems, as well as other Periphery realms. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
@@ -52,7 +52,7 @@ Requirements﻿
 Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
 
-Recommended Mods
+Recommended Additional Mods
 * Community Asset Bundle - requires both the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) AND the Hyades Rim CAB 3025 add-on (https://github.com/Hobbes74/HYR-CAB-3025/archive/refs/tags/release.zip). Install both at your /Mods folder and select them on the game's mod screen.
 * Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
 * BattleTechPerformanceFix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix
@@ -60,9 +60,10 @@ Recommended Mods
 
 Known Issues
 * When playing FPs on the Leopard, there's a visual glitch after any conversations with the DropShip's bridge and other areas. This can be solved by saving and reloading the game.
-* On the Amaris Legacy FP, one of the events displays a yellow 'ERROR' message in the middle of the text.
+* On the Amaris Legacy FP, one of the events displays a yellow 'ERROR' message at the end of the text that can be ignored by the player and continue playing the mod.
 * A saved star map won't update when new mod versions are released that change it, so system tags and black market markers might become inaccurate with future mod updates.
-* Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This is because of incompatibilities between the flashpoint and campaign game systems, for safety always end the month if you're on its last day before starting the flashpoint.  
+* Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This is because of incompatibilities between the flashpoint and campaign game systems, for safety always end the month if you're on its last day before starting the flashpoint.
+* BattleTechPerformanceFix has a known bug that sometimes prevents a mission to be completed - it can be overriden by enabling debug mode and using it to end the contract;
 
 Warning: Use any other mods at your own risk - I only use these three mods together with the Hyades Rim and I do not provide support for third party mod integration! Check the other-mods channel of the Discord server for more information on compatibility with other mods.
 
