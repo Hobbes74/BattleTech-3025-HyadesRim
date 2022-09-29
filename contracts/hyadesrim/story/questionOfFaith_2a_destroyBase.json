@@ -12,7 +12,7 @@
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
     "shortDescription" : "It's impossible to reach the <i>Argo</i>'s position by land unless we take out the Harbinger outpost that is guarding the crash site. But once we attack it, we'll need to prevent any defenders from escaping and alerting the rest from our presence, although our attack on the Kittens might have been already detected by them.",
-    "longDescription" : "This seems straightforward, Commander. If things get out of hand, remember you can just blow up the buildings and make a run for it.",
+    "longDescription" : "As long as we destroy those buildings, that should keep the Harbingers in disarray, allowing for us to capture our main objective.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "6f5f8d17-70ed-44a8-acc0-ccf9258925aa"
             },
-            "title" : "Destroy Enemy Structures and Escape",
+            "title" : "Destroy Harbinger Structures and Escape",
             "description" : "Destroy Enemy Structures",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -69,7 +69,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "979864d1-7d84-4797-b032-696a157deed8"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Garrison",
+            "title" : "Destroy Harbinger Garrison",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -145,7 +145,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ea4504c3-8dcc-4049-bff2-784c423f0aa8"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Harbinger Reinforcements",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -200,7 +200,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a5257151-5269-4222-9a0d-31001a70fe22"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -252,7 +252,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're seeing fixed defenses powering up, Commander. Turrets are such a pain in the ass.",
+                    "words" : "The Harbinger garrison has just powered their turrets.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -268,7 +268,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Take them out, and start doing some damage.",
+                    "words" : "Watch out for those defenses because they can pack a punch.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -284,7 +284,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "There will be a garrison, so keep your eyes open for it. Oliveira out.",
+                    "words" : "We're also detecting a lance up ahead, and it's likely there are more Harbingers nearby.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -295,6 +295,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dafd0d98-c88a-4f90-b137-4fe5ed94ebbb",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "So watch your six and good luck, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -309,7 +325,39 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's everything, Commander. Good job.",
+                    "words" : "Harbinger base taken down, good job, {COMMANDER.FirstName}.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sorry for the spoiler, but I'm still detecting enemy units operating close to your location.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Must be Murray and her Kittens. We need to deal with her before we move to the DropShip site.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -334,14 +382,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a disaster. We'll debrief back at the ship.",
+                    "words" : "That was a catastrophic failure.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -359,14 +407,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "They've got multiple units protecting this facility, careful not to get caught in an ambush.",
+                    "words" : "More Harbingers approaching your position, boss.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -480,9 +528,9 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,

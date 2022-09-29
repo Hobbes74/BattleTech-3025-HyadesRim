@@ -269,15 +269,15 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_bigCrater_bMoon",
+                            "value" : "mapGeneral_mountainHold_bMoon",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "questionOfFaith_1a_simpleBattle",
-                                "SelfEmployed",
+                                "SelfEmployed_Farah",
                                 "TortugaPirates",
-                                "7",
+                                "6",
                                 "ms_fp_questionOfFaith_101_Mission",
                                 null,
                                 null,
@@ -344,7 +344,7 @@
                                 null,
                                 null,
                                 "questionOfFaith_2a_destroyBase",
-                                "TortugaPirates",
+                                "SelfEmployed_Farah",
                                 "HarbingersOfDoom",
                                 "7",
                                 "ms_fp_questionOfFaith_102_Mission",
@@ -399,14 +399,14 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_mountainHold_bMoon",
+                            "value" : "mapGeneral_bigCrater_bMoon",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "questionOfFaith_3a_ambushConvoy",
+                                "SelfEmployed_Farah",
                                 "TortugaPirates",
-                                "HarbingersOfDoom",
                                 "7",
                                 "ms_fp_questionOfFaith_103_Talk",
                                 null,
@@ -527,8 +527,8 @@
                                 null,
                                 null,
                                 "questionOfFaith_4a_story",
-                                "SelfEmployed",
-                                "HarbingersOfDoom",
+                                "SelfEmployed_Farah",
+                                "TortugaPirates",
                                 "7",
                                 "ms_fp_questionOfFaith_105_Talk",
                                 null,
@@ -536,6 +536,22 @@
                                 null
                             ]
                         },
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : true,
+							"additionalValues" : [
+								"Yang",
+								"Darius",
+								"Sumire"
+							]
+						},
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : false,
+							"additionalValues" : [
+								"Farah"
+							]
+						},
                         {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Contract",
@@ -590,7 +606,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c07d6fe2d35176429ebcb55",
+                            "value" : "9c07d6fe2d35176429ebcb54",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} III",
@@ -641,7 +657,8 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_questionOfFaith_complete"
+                            "flashpoint_questionOfFaith_complete",
+                            "flashpoint_questionOfFaith_a"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -651,6 +668,11 @@
                     },
                     "Stats" : null,
                     "Actions" : [
+						{
+							"Type" : "System_PlayVideo",
+							"value" : "3-argo.bk2",
+							"valueConstant" : null
+						},
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_questionOfFaith_107_A-Reward",
@@ -747,7 +769,25 @@
                             "valueConstant" : null
                         }
                     ],
-                    "Actions" : [],
+                    "Actions" : [
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : true,
+							"additionalValues" : [
+								"Kamea",
+								"Alexander",
+								"Farah",
+								"Yang",
+								"Darius",
+								"Sumire"
+							]
+						},
+						{
+							"Type" : "System_SetDropship",
+							"value" : "Argo",
+							"valueConstant" : null
+						}
+					],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -829,7 +869,7 @@
                                 "questionOfFaith_1b_captureEscort",
                                 "TortugaPirates",
                                 "HarbingersOfDoom",
-                                "7",
+                                "6",
                                 "ms_fp_questionOfFaith_201_Mission",
                                 null,
                                 null,
@@ -890,7 +930,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_bigCrater_bMoon",
+                            "value" : "mapGeneral_mountainHold_bMoon",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
@@ -901,7 +941,7 @@
                                 "7",
                                 "ms_fp_questionOfFaith_202_Mission",
                                 null,
-                                null,
+                                "RimPirates",
                                 null
                             ]
                         }
@@ -951,7 +991,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_bigCrater_bMoon",
+                            "value" : "mapGeneral_mountainHold_bMoon",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
@@ -1012,7 +1052,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c07d6fe2d35176429ebcb54",
+                            "value" : "9c07d6fe2d35176429ebcb53",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} II",
@@ -1079,7 +1119,7 @@
                                 null,
                                 null,
                                 "questionOfFaith_4b_story",
-                                "SelfEmployed",
+                                "SelfEmployed_Farah",
                                 "HarbingersOfDoom",
                                 "7",
                                 "ms_fp_questionOfFaith_205_Talk",
@@ -1088,6 +1128,22 @@
                                 null
                             ]
                         },
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : true,
+							"additionalValues" : [
+								"Yang",
+								"Darius",
+								"Sumire"
+							]
+						},
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : false,
+							"additionalValues" : [
+								"Farah"
+							]
+						},
                         {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Contract",
@@ -1142,7 +1198,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c07d6fe2d35176429ebcb55",
+                            "value" : "9c07d6fe2d35176429ebcb54",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} III",
@@ -1193,7 +1249,8 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_questionOfFaith_complete"
+                            "flashpoint_questionOfFaith_complete",
+                            "flashpoint_questionOfFaith_b"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -1203,6 +1260,11 @@
                     },
                     "Stats" : null,
                     "Actions" : [
+						{
+							"Type" : "System_PlayVideo",
+							"value" : "3-argo.bk2",
+							"valueConstant" : null
+						},
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_questionOfFaith_207_B-Reward",
@@ -1290,16 +1352,26 @@
                         "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "1000000",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
+                    "Stats" : [],
+                    "Actions" : [
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : true,
+							"additionalValues" : [
+								"Kamea",
+								"Alexander",
+								"Farah",
+								"Yang",
+								"Darius",
+								"Sumire"
+							]
+						},
+						{
+							"Type" : "System_SetDropship",
+							"value" : "Argo",
+							"valueConstant" : null
+						}
+					],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0

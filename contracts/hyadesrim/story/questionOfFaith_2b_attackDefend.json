@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "It's impossible to reach the <i>Argo</i>'s position by land unless you take out the Harbinger outpost that is guarding the crash site. But once we attack it, we'll need to prevent any defenders from escaping and alerting the rest from our presence, although your attack on me might have been already detected by them.",
-    "longDescription" : "Commander, this mission is... insane. And I don't say that lightly. We're going to take a serious beating on this one.",
+    "shortDescription" : "It's impossible to reach the <i>Argo</i>'s position by land unless you take out the Harbinger outpost that is guarding the crash site. But once we attack it, we'll need to prevent any defenders from escaping and reinforcing the ones at the crash site. We'll drop together, my Kittens will keep the Harbingers warm and cozy for you to take down. But before we go and get your lady her DropShip, I have a couple special needs to attend at this location.",
+    "longDescription" : "Commander, this mission already sounds insane. 'Special needs to attend'? What is Murray up to now?.",
     "salvagePotential" : 32,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "411d4077-b39c-4c85-a73e-89ed06f20dd2"
             },
-            "title" : "Defend {TEAM_EMP.FactionDef.Demonym} Base and Destroy {TEAM_TAR.FactionDef.Demonym} Base",
+            "title" : "Defend Captured Outpost and Destroy {TEAM_TAR.FactionDef.Demonym} Base",
             "description" : "Attack and Defend",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -1101,7 +1101,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "69597849-d745-4750-bb0f-01e4df493c6d"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -1183,7 +1183,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "12414939-53eb-4d35-b0ca-08d88fceff00"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Hostile To All Chunk Group"
             ],
@@ -1205,7 +1205,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "7a5b1610-d725-4057-8cea-aa010de93a20"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Enemy Ally Chunk Group"
             ],
@@ -1225,7 +1225,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a6abe383-33ba-44d9-bd60-0f39e4c4bc5a"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -1234,7 +1234,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "01a3f91d-ee85-4871-8aa1-b227f4e906b9"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -1490,7 +1490,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're expecting the {TEAM_TAR.FactionDef.Demonym} forces to begin their assault on this facility at any moment. If they destroy it, our employers lose their eyes on the operational area; they'll scrub the mission at that point.",
+                    "words" : "Kitten Actual, the Harbingers are up ahead. What are you still doing inside that outpost?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1506,14 +1506,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "So here's the plan. We're going to hold the {TEAM_TAR.FactionDef.Demonym} force and keep them busy, and well away from the friendly facility. Meanwhile, a {TEAM_HOST.FactionDef.Demonym} strike force will be inbound to the AO.",
+                    "words" : "<i>Blyad</i>! I need more time, <i>Hysteria</i> Actual.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Just keep those Harbingers off my back until we're done here!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a4f2f476-5c52-4835-9842-024c55d1a09f",
@@ -1522,14 +1538,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once they land, they'll engage everyone -- friendly and hostile -- and generally stir up trouble. The goal is to get them to take the brunt of the enemy fire; we move in and clean up the mess afterwards.",
+                    "words" : "My Kittens will move to help you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "b7c4af34-c713-446f-9039-db2515064124",
@@ -1538,14 +1554,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The number one priority is to destroy that base. Once it's gone, the {TEAM_TAR.FactionDef.Demonym} brass will call off the assault, and we'll be clear to evac. Questions?",
+                    "words" : "And you need to take down the Harbinger base, otherwise they'll keep bringing reinforcements.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "cf8a8a02-0689-4753-87a5-dec1d3ecec8b",
@@ -1554,14 +1570,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Yeah, whose bullshit idea was this, anyway?",
+                    "words" : "Wait a minute, why are we doing all the hard lifting around here?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1570,14 +1586,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Not helpful, Meyer. Stay on station to make the pickup once the base is down. Commander... good luck.",
+                    "words" : "Complain to your boss, Mech Tech.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We'll be ready to leave once you destroy their base. Kitten Actual out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -1595,14 +1627,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Oh thank God. Commander, that's the friendly reinforcements. We can leave whenever you're ready.",
+                    "words" : "<i>Hysteria</i> Actual, we are ready to leave. Start heading towards your evac area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1611,7 +1643,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'll pick you up at the designated LZ.",
+                    "words" : "Commander, I'll be ready at the designated area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1636,14 +1668,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This was always going to be a long shot. Let's get clear of this, Commander.",
+                    "words" : "Oh boy... Captain <I>Kloun</i>'s circus has arrived to town.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1661,7 +1693,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Boss, I'm seeing turrets powering up. Big ones. Holy shit.",
+                    "words" : "Warning, I'm detecting turrets at the Harbinger facility.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1727,14 +1759,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The opfor's holding forces back at the captured base, presumably to cover their intel teams. They're optional targets, Commander.",
+                    "words" : "Your objective are the buildings, you can ignore these BattleMechs if necessary.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "6011aa41-189c-4091-bd0d-b5146857b990",
@@ -1752,14 +1784,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Good kill, Commander.",
+                    "words" : "Still several left, <i>Hysteria</i> Actual.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1777,14 +1809,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The friendly facility is under fire, Commander. If we lose it, the mission is scrubbed.",
+                    "words" : "<i>Tvo yoo mat</i>! Where is defense!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1802,14 +1834,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Hey, guys? What was that flash I just saw from the friendly base?",
+                    "words" : "The outpost captured by the Kittens has been hit badly",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1818,14 +1850,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "They took out one of the facility's structures. Commander, you need to draw those hostiles off our base.",
+                    "words" : "I just cut off Kitten Actual's transmission... she isn't pleased at all.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1843,14 +1875,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we lose another building, this mission is over.",
+                    "words" : "<i>Kloun</i>! Lose this building and you can forget about that DropShip!.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1868,7 +1900,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's it, Commander. The enemy base has been destroyed.",
+                    "words" : "Well done, the Harbinger base has been destroyed, Commander {COMMANDER.LastName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1893,7 +1925,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we've completed all the primary objectives and you're clear to extract.",
+                    "words" : "Finally... <i>Hysteria</i>, we have what we needed from here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We, or you got what you needed, Kitten Actual?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1909,14 +1957,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm on station to pick you up here whenever you're ready, boss.",
+                    "words" : "Move your asses from the destroyed base to the evac zone.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -1925,7 +1973,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "As long as you're still in the AO, Commander, you'll need to keep the {TEAM_EMP.FactionDef.Demonym} base secure.",
+                    "words" : "And as long as you're still here, you need to cover my Kittens.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Understood, no witnesses to whatever you're doing. We better leave, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2623,9 +2687,9 @@
     ],
     "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -2850,10 +2914,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4dbbdd6c-7d27-4a93-8410-5c4aea4f933c"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Mad Cat",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_marauder_MAD-MC",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -2866,7 +2930,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_FP_MadCat",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

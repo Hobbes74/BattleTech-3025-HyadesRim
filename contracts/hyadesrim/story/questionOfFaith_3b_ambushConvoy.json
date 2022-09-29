@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Commander, my Kittens have detected a group of Harbinger survivors that have escaped in vehicles and are heading towards your prize. I already have what I needed from this base, so I suggest you take them out quickly, otherwise they'll alert the Harbinger salvage team that you're on your way. Good luck, Commander.",
-    "longDescription" : "Damn, like Laura Murray said. She did had some excellent recon work for us to thank for.",
+    "shortDescription" : "<i>Hysteria</i> Actual, Kitten Two has detected survivors that have escaped in vehicles and are heading towards our prize. We're finishing off the remaining Harbingers hiding in the ruins, so you're in charge of taking them out quickly, otherwise they'll alert the Harbinger salvage team that you're on your way to the crash site. This time don't try to make it last longer... you're obviously a failure at that.",
+    "longDescription" : "Commander {COMMANDER.LastName}, this pirate sometimes completely gets out of control.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Destroy the Weapon Convoy and Escape",
+            "title" : "Destroy the Harbinger Survivors",
             "description" : "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -56,7 +56,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
-            "title" : "Destroy the Convoy Guards",
+            "title" : "Destroy the Harbinger Responders",
             "description" : "Send a message by not only destroy the convoy, but eliminte their escorts as well.",
             "isPrimary" : false,
             "forPlayer" : "Player1",
@@ -70,7 +70,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy",
+            "title" : "Destroy the Harbinger Survivors",
             "description" : "The objective for destroying the convoy units.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -82,7 +82,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Escorts",
+            "title" : "Destroy the Harbinger Responders",
             "description" : "The objective for destroying the units guarding the convoy.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -120,7 +120,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4da99cf7-4950-4447-b55b-fcc2986adf75"
             },
-            "title" : "Stop Convoy from Escaping",
+            "title" : "Stop Harbingers from Escaping",
             "description" : "The objective for preventing the enemy from reaching their escape point, if this happens the player will lose.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -132,7 +132,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "aa529050-2feb-4fbf-8838-afa2849caca6"
             },
-            "title" : "Recon the Convoy's Route",
+            "title" : "Recon the Survivors' Route",
             "description" : "The objective for the player to intercept/observe the enemy convoy.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -156,7 +156,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9b0f9fdd-2033-469c-8327-4e519ef6c683"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Reinforcements",
+            "title" : "Destroy Harbinger Reinforcements",
             "description" : "The objective for killing the additional units that ambush you.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -199,7 +199,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "2e0d2e69-6335-49ae-b2bb-61ff3185306b"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -257,23 +257,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've picked up vehicle sounds, Commander; this is it.",
+                    "words" : "Our sensors have detected the Harbinger vehicles.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "audioevent_universal_hostilesInbound",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We need to move up and make contact with the enemy, to verify they're the bad guys. Then we burn them down.",
+                    "words" : "We need to move and make contact as quickly as possible.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -289,14 +289,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once the targets are destroyed, head for the evac zone. Our employer will handle any radioactive material left behind.",
+                    "words" : "Once you're done, you know the drill, Commander. I'll be waiting for you here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -305,7 +305,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander.",
+                    "words" : "Good luck, Commander. <i>Hysteria</i> Actual out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,7 +330,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander, and we're picking up minimal ionizing radiation.",
+                    "words" : "And... you perfomed close to expected.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Is that a compliment, Kitten Actual?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -338,6 +354,70 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You got a frisky XO, Commander {COMMANDER.LastName}. I already have what I need from that base, so the <i>Argo</i> is yours.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Oh, and I already have what I need from that base, so the <i>Argo</i> is yours. If you can take it from the Harbingers.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "WHAT? Murray, you're just going to jump on us after we take it, aren't you?!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Enjoy your big, fast monstrosity. Kitten Actual out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,14 +435,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a disaster. I just hope those nukes get intercepted elsewhere.",
+                    "words" : "You couldn't take such an easy task? Never failed to disappoint me...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -430,7 +510,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Escorts are down, Commander.",
+                    "words" : "Harbinger escorts are down, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -455,14 +535,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy's almost escaped, Commander. If you don't stop them, those nukes make it off-planet.",
+                    "words" : "The Harbingers are about to escape.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",

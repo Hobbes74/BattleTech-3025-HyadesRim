@@ -1,0 +1,530 @@
+{
+  "idRef": {
+    "id": "9cb7628b881b347492607ffe"
+  },
+  "ui_name": "HYR_304_speakOfTheDevil_2",
+  "nodes": [
+    {
+      "idRef": {
+        "id": "9cf0a48c22b217da2069ccc4"
+      },
+      "index": 0,
+      "text": "Incoming holovid... frequency matches those used by the [[DM.Factions[faction_BlackAngels],Black Angels]].\n\nPerhaps Commander Watts has survived.",
+      "branches": [
+        {
+          "responseText": "Let's hear what she has to say.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ccd6a91be469a1b36063c7d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "nautilusmap",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cfa6212890caf18fd35c4a4"
+      },
+      "index": 1,
+      "text": "[Holovid link established.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 2,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd10aa4d029b59253e60a4d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb4e050c85234e87dcdd322"
+      },
+      "index": 2,
+      "text": "{COMPANY.CompanyName}, this is Sergeant King, acting CO of the Black Angels after Commander Watts was killed during your attack.\n\nWith her death we consider our contract with the Taurian Concordat to be finished, as well as any animosity towards your company or Lady Arano.",
+      "branches": [
+        {
+          "responseText": "Understood, Sergeant King. Nice to be talking to a professional.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 3,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c42c939e36d44db5d582962"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "mwmerc",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c0e098f2f1d7fd20211b6d1"
+      },
+      "index": 3,
+      "text": "I've been in contact with your Chief [[DM.BaseDescriptionDefs[LoreMechTech],Mech Tech]], who has told me that you are looking for evidence about who gave us your location at [[DM.BaseDescriptionDefs[LoreCygnus],Cygnus]].\n\nI am able to provide Lady Arano with that information, for the right price, of course.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cb49866362366c55791fe64"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "BlackAngelsSergeantDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c68d04c1ac372234ec33db8"
+      },
+      "index": 4,
+      "text": "Sergeant, your offer will be relayed.\n\nWould you be willing to grant us [[DM.BaseDescriptionDefs[LoreSafe Passage],safe passage]] to your location to further discuss this matter?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 5,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c2057783c8df0b931f3218b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cbdeb90f463e88ee92144e6"
+      },
+      "index": 5,
+      "text": "Sure, I'll leave our coordinates with your Mech Tech after we leave this location.\n\nWe'll be waiting to hear from you again, {COMPANY.CompanyName}.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd193cddc12f25cf84832a9"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "BlackAngelsSergeantDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c35dea94a4462cc41c54339"
+      },
+      "index": 6,
+      "text": "[Signal disconnected.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c348580def1d21514487dfd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ceecf9401aad8b25c0389e2"
+      },
+      "index": 7,
+      "text": "Looks like Yang has made a new friend down there.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c2df69d3f958c1d5ccd642e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1f18bf7ffb26aa87b31a01"
+      },
+      "index": 8,
+      "text": "Speaking of the devil, let's hope he remembers his own advice and doesn't get his arm caught into a [[DM.BaseDescriptionDefs[LoreHoneyPot],honey pot]] while he's at the surface.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c40a67450aea0af4d39df8d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cea7c9beab376e72dd63ffc"
+      },
+      "index": 9,
+      "text": "Does anyone know where the Captain or Alexander are?\n\nI can't get them to respond using the <i>Argo</i>'s comms.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cbc840ed4db1b6cbfbc7a37"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "argo",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ce1e2102051010b020339e0"
+      },
+      "index": 10,
+      "text": "They're probably in one of the sections where power hasn't been repaired yet.\n\nDarius, I'll get them and tell the good news about the Angels.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c2b892aa307bb3b1e63e9c8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    }
+  ],
+  "roots": [
+    {
+      "responseText": "",
+      "conditions": null,
+      "actions": null,
+      "nextNodeIndex": 0,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9c1f0559a23439a8decfaf63"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
+    }
+  ],
+  "default_speaker_id": "",
+  "default_speaker_override": null,
+  "persistent_conversation": false,
+  "speaker_override_id": ""
+}

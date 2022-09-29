@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1301_notify_aranoRestoration",
-        "Name" : "sim",
-        "Details" : "pause notification",
+        "Id" : "milestone_1294_talk_argonauts",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1301,
+                    "val" : 1294,
                     "valueConstant" : null
                 }
             ]
@@ -37,23 +37,34 @@
             "AddedTags" : {},
             "RemovedTags" : {},
             "Stats" : [
-                {
-                    "typeString" : "System.Int32",
+				{
+					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
                     "value" : 1,
-                    "valueConstant" : ""
-                }
-            ],
-            "Actions" : [			
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Santiago Espinosa's rule is crumbling under the weight of the Taurian betrayal. We may be able to bring Directorate down with a precise strike that will end this civil war.",
-					"additionalValues" : [
-						"Campaign Flashpoint",
-						"castDef_KameaDefault"
-					],
                     "valueConstant" : null
-                }
+				}
+            ],
+            "Actions" : [
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9c07d6fe2d35176429ebcb55",
+                    "additionalValues" : [
+						"ARGONAUTS",
+						"Crew Council"
+					]
+                },
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Kamea",
+						"Alexander",
+						"Farah",
+						"Yang",
+						"Darius",
+						"Sumire"
+					]
+				}
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

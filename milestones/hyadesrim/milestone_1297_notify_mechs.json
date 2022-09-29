@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "milestone_1294_notify_argoUpgrades",
+        "Id" : "milestone_1297_notify_mechs",
         "Name" : "sim",
         "Details" : "pause notification",
         "Icon" : "",
@@ -13,9 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [
-					"flashpoint_questionOfFaith_complete"
-				],
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -26,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1294,
+                    "val" : 1297,
                     "valueConstant" : null
                 }
             ]
@@ -47,63 +45,40 @@
                     "valueConstant" : ""
                 }
             ],
-            "Actions" : [			
+            "Actions" : [				
                 {
-                    "Type" : "System_SetDropship",
-                    "value" : "Argo",
+                    "Type" : "System_PauseNotification",
+                    "value" : "Boss... we just found an entire lance of BattleMechs on Mech Bay Two and Dr. Murad says the whole section is still operational but had been left unpowered. They are all SLDF grade material but the pirates didn't put them into use, which is strange. Captain Arano has claimed them to the Restoration since they were inside the <i>Argo</i> and has ordered them to be brought online, so you might want to come down and have a look at these beauties. The crew is already discussing nicknames for them.",
+					"additionalValues" : [
+						"SLDF Lance",
+						"castDef_YangDefault"
+					],
                     "valueConstant" : null
                 },
 				{
-					"Type" : "Ship_AddUpgrade",
-					"value" : "argoUpgrade_power1",
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_archer_ARC-2Rb",
 					"valueConstant" : null,
 					"additionalValues" : null
 				},
 				{
-					"Type" : "Ship_AddUpgrade",
-					"value" : "argoUpgrade_power2",
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_battlemaster_BLR-1GB",
 					"valueConstant" : null,
 					"additionalValues" : null
 				},
 				{
-					"Type" : "Ship_AddUpgrade",
-					"value" : "argoUpgrade_mechBay2",
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_griffin_GRF-4N",
 					"valueConstant" : null,
 					"additionalValues" : null
 				},
 				{
-					"Type" : "Ship_AddUpgrade",
-					"value" : "argoUpgrade_drive1",
+					"Type" : "Mech_AddRoster",
+					"value" : "mechdef_blackknight_BL-6b-KNT",
 					"valueConstant" : null,
 					"additionalValues" : null
-				},
-				{
-					"Type" : "Ship_AddUpgrade",
-					"value" : "argoUpgrade_pod2",
-					"valueConstant" : null,
-					"additionalValues" : null
-				},
-				{
-					"Type" : "Ship_AddUpgrade",
-					"value" : "argoUpgrade_structure1",
-					"valueConstant" : null,
-					"additionalValues" : null
-				},
-				{
-					"Type" : "Ship_AddUpgrade",
-					"value" : "argoUpgrade_medBay2",
-					"valueConstant" : null,
-					"additionalValues" : null
-				},
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "The <i>Argo</i>'s basic systems have been restored by the raiders to a working state but other that basic BattleMech and personnel support there isn't much else working at this stage. The good news is that the structure and power have been fully restored but the rest will take time and money, plus I could use Yang's expertise and manpower. I'll be down on Engineering if you want to know more.",
-					"additionalValues" : [
-						"Argo Upgrades",
-						"castDef_FarahDefault"
-					],
-                    "valueConstant" : null
-                }		
+				}
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

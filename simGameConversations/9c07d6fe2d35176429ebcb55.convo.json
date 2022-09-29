@@ -2,17 +2,17 @@
   "idRef": {
     "id": "9c07d6fe2d35176429ebcb55"
   },
-  "ui_name": "HYR_302_questionOfFaith_3",
+  "ui_name": "HYR_303_argonauts",
   "nodes": [
     {
       "idRef": {
         "id": "9c0feb07a6c1a643ed82e300"
       },
       "index": 0,
-      "text": "Question of Faith 4",
+      "text": "Commander {COMMANDER.LastName}, everyone, it's good to see you all again.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Welcome back, Lady Arano and Alexander. This was a surprise.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 1,
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "argo",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -83,6 +83,19 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_141_AXYLUS",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -93,7 +106,7 @@
         "id": "9cbee5a596abe3037f62f777"
       },
       "index": 1,
-      "text": "So Laura Murray is back? And she let you have the <i>Argo</i>?\n\nI can't tell which one is more unbelievable.",
+      "text": "So was your ambush and the presence of a traitor in the [[DM.BaseDescriptionDefs[LoreFoundingCouncil],Council]], Commander.  \n\nThis turned the [[DM.Factions[faction_AuriganRestoration],Restoration]] meeting at Panzyr an unacceptable security risk, and it's likely that Directorate or Taurian forces are already preparing to attack the world.",
       "branches": [
         {
           "responseText": "",
@@ -119,7 +132,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -128,10 +141,10 @@
         "id": "9c90bb4015afddfbdb83c462"
       },
       "index": 2,
-      "text": "That woman and her gang of pirates seem to have a strange link with this particular band of raiders.\n\nShe's clearly obsessed towards these Deep Periphery marauders and her methods are of a vigilante nature. ",
+      "text": "So we decided to quit our travel plans and instead rejoin all of you, along with the <i>[[DM.BaseDescriptionDefs[LoreDelfinas],Delfinas]]</i> and my Royal Guard members.\n\nWe got here too late but we have also detected an [[DM.BaseDescriptionDefs[LoreUnion],Union]] leaving orbit that looked familiar.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "The Bad Kitty.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 3,
@@ -154,7 +167,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -163,7 +176,7 @@
         "id": "9cc3994781cb51b7b65b8545"
       },
       "index": 3,
-      "text": "That's three times we've encountered them so far and all of them related to her.\n\n",
+      "text": "So Laura Murray is back? And she let you have the <i>[[DM.BaseDescriptionDefs[LoreArgo],Argo]]</i>?\n\nI can't tell which one is more unbelievable.",
       "branches": [
         {
           "responseText": "",
@@ -189,7 +202,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -198,7 +211,7 @@
         "id": "9c0d1a5afdfd0c74e3430b9d"
       },
       "index": 4,
-      "text": "She also implied that she was using the <i>Argo</i> as bait, so we can assume that the SLDF depot we encountered at the Deep Periphery also served a similar function.\n\nAnd she also made a dire warning about those raiders... and the outcome of the civil war.",
+      "text": "Kamea, that woman and her gang of [[DM.Factions[faction_TortugaPirates],pirates]] seem to have a strange link with the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]] and the Deep Periphery [[DM.Factions[faction_DeepRaiders],marauders]] we've encountered before.\n\nThat's three times so far we've encountered these raiders and all of them related to her.",
       "branches": [
         {
           "responseText": "",
@@ -224,7 +237,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -233,7 +246,7 @@
         "id": "9c07ad0f819765d0c2dfd8d7"
       },
       "index": 5,
-      "text": "That's nothing new about her... the question is why we let ourselves get trapped on her motivations.",
+      "text": "She also implied that she was using the <i>Argo</i> as bait, so we can assume that the SLDF depot we encountered at [[DM.BaseDescriptionDefs[LoreCooperland],Cooperland]] also served a similar function to her at one point.\n\nAnd she also made a dire warning about those raiders, that they are ready to attack the [[DM.BaseDescriptionDefs[LoreAuriganReach],Reach]], taking advantage of the civil war distracting everyone.",
       "branches": [
         {
           "responseText": "",
@@ -259,7 +272,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -268,7 +281,7 @@
         "id": "9ccb1e775496d487fd596832"
       },
       "index": 6,
-      "text": "",
+      "text": "We have the <i>Argo</i> and she is not our concern anymore neither are those Deep Periphery raiders unless they present a clear threat to the Reach.\n\nUntil that happens, we have more pressing affairs related to the civil war.",
       "branches": [
         {
           "responseText": "",
@@ -294,7 +307,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -303,7 +316,7 @@
         "id": "9c102133b084017ae1fb3d63"
       },
       "index": 7,
-      "text": "She is not our concern anymore neither are those Deep Periphery raiders unless they present a clear threat to the Reach",
+      "text": "Her worries are nothing new... the question is if we let ourselves get trapped on her plots and motivations.\n\nShe clearly has an agenda of her own that she isn't sharing.",
       "branches": [
         {
           "responseText": "",
@@ -329,7 +342,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -338,7 +351,7 @@
         "id": "9cbf11d03bbed446088db5d1"
       },
       "index": 8,
-      "text": "It's not just her, Captain. ComStar and the major shipping companies aren't publicly commenting but everyone is afraid that the current war is causing pirate activity to spike on the Rimward Periphery. ",
+      "text": "It's not just her, Captain Arano. \n\n[[DM.Factions[faction_ComStar],ComStar]], the [[DM.Factions[faction_AlphardTradingCompany],ATC]] and other shipping companies aren't publicly commenting but nearly all JumpShip captains are complaining of pirate activity spiking across the [[DM.BaseDescriptionDefs[LoreRimwardPeriphery],Rimward Periphery]]. ",
       "branches": [
         {
           "responseText": "",
@@ -364,7 +377,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -373,7 +386,7 @@
         "id": "9c758fec489f9f458a7a4c98"
       },
       "index": 9,
-      "text": "The piranhas are coming to feast after the sharks are done.\n\nNo one in the Inner Sphere really cares actually, for most it will just be regular news from the border worlds.",
+      "text": "The piranhas are coming to feast after the sharks are done, this is not surprising both with the Fourth Succession War and our own [[DM.BaseDescriptionDefs[LoreAuriganCivilWar],civil war]] both taking place.\n\nAnd even if all of this is true, then there isn't anything we can do than to wait for them to arrive, since no one knows or cares.",
       "branches": [
         {
           "responseText": "",
@@ -399,7 +412,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -408,7 +421,7 @@
         "id": "9c36b6587bc0e732688ed23f"
       },
       "index": 10,
-      "text": "Which bring us back to the Taurians and their current occupation of Aurigan worlds. \n\nLord Pierre Decimis has vowed never to surrender to them and he's willing to pledge his allegiance to me. The rest of the Restoration should follow him, specially now that we have the <i>Argo</i>.",
+      "text": "Which bring us back to the [[DM.Factions[faction_TaurianConcordat],Taurians]] and their current invasion of Aurigan worlds. \n\nUnless we end the civil war and unify the Reach, it will be impossible to stop them, or these Periphery raiders.",
       "branches": [
         {
           "responseText": "",
@@ -434,7 +447,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -443,7 +456,7 @@
         "id": "9c7a747bd21354a9b2479254"
       },
       "index": 11,
-      "text": "That still leaves us pretty bare to try to stop even the Directorate from moving on Panzyr and finishing off the Restoration by eliminating House Decimis.\n\nAnd we can't take the Taurians on our own as well, although there are a few worlds like Ithrom were our presence could tip the battle.",
+      "text": "Lord Pierre Decimis has already vowed never to surrender to them and pledged his allegiance to me. \n\nThe rest of the Restoration should follow him, specially now that we have the <i>Argo</i>.",
       "branches": [
         {
           "responseText": "",
@@ -469,7 +482,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -478,7 +491,7 @@
         "id": "9cb155686028f8ba7b89d737"
       },
       "index": 12,
-      "text": "With the <i>Argo</i> there is only one world that we need to worry about. \n\nTyrlon.",
+      "text": "Captain, that still leaves us pretty bare to try to stop even the Directorate from moving on Panzyr by eliminating House [[DM.BaseDescriptionDefs[LoreHouseDecimis],Decimis]], as we already expect them to.\n\nAnd we can't take the Taurians on our own as well, although there are a few worlds like [[DM.BaseDescriptionDefs[LoreItrom],Itrom]] were our presence could tip the battle.",
       "branches": [
         {
           "responseText": "",
@@ -504,7 +517,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -513,10 +526,10 @@
         "id": "9c0117f28c5733dde0287c4e"
       },
       "index": 13,
-      "text": "I've met covertly with one of Lord Parata's family members through J'oral's connections and we've exchanged personal messages.\n\nHe might be willing to support us if we stage a coup against the Directorate. ",
+      "text": "Mr. Oliveira, now that we have there <i>Argo</i>, there is only one world that we need to worry about. \n\n[[DM.BaseDescriptionDefs[LoreTyrlon],Tyrlon]].",
       "branches": [
         {
-          "responseText": "And you trust him on his word, Lady Arano?",
+          "responseText": "Tyrlon? Not Panzyr?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 14,
@@ -539,7 +552,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -548,10 +561,10 @@
         "id": "9c466bf825bffc57745297d2"
       },
       "index": 14,
-      "text": "It's a question of faith, COMMANDER.\n\nBut after what you've achieved with recovering the <i>Argo</i>, believing is half the answer.",
+      "text": "I've met covertly with one of House [[DM.BaseDescriptionDefs[LoreHouseParata],Parata]]'s members through [[DM.BaseDescriptionDefs[LoreDeeJoral],J'oral]]'s connections and we've exchanged personal messages.\n\nThe Prime Minister might be willing to support us if we stage a decisive strike against the [[DM.Factions[faction_AuriganDirectorate],Directorate]] at Tyrlon.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "And you trust him on his word, Lady Arano?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 15,
@@ -574,7 +587,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -583,7 +596,7 @@
         "id": "9c7202fbef02b2d342fb012a"
       },
       "index": 15,
-      "text": "It's better be more than faith because Prime Minister Parata is a very pragmatic person.\n\nBy the time you arrive at Tyrlon, he might have changed his mind about the whole matter. ",
+      "text": "No, Commander {COMMANDER.LastName}, I expect him to be the traitor, although I can't decisively prove it yet.\n\nSo, before we leave for Tyrlon, there's still one mission for you, to track down the [[DM.Factions[faction_BlackAngels],Black Angels]] and recover any evidence of whom betrayed you and the Restoration.",
       "branches": [
         {
           "responseText": "",
@@ -609,7 +622,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -618,7 +631,7 @@
         "id": "9ccfe4496f2b1e45568acd68"
       },
       "index": 16,
-      "text": "Your concern is noted, although that's also why the <i>Argo</i> is important. It will be the symbol of the Restoration for House Parata and the other Directorate supporters.\n\nOf what we can achieve together when united. ",
+      "text": "When we have the evidence we need about the traitor, me and Kamea believe we can use it to turn House Parata against Director [[DM.BaseDescriptionDefs[LoreHouseEspinosa],Espinosa]].",
       "branches": [
         {
           "responseText": "",
@@ -644,7 +657,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -653,7 +666,7 @@
         "id": "9cf863325c2a11797abdb11f"
       },
       "index": 17,
-      "text": "With the current strategic situation, unless you are also able to take down the Directorate's military leadership, it won't be sufficient to stop them.\n\nIf you fail, we'll be prolonging our self-destruction.",
+      "text": "And Tyrlon is the gate to the Aurigan core worlds.\n\nOnce it is in Restoration control, the Directorate's power will vanish, and then I'll deal with the rest of the threats to my nation.",
       "branches": [
         {
           "responseText": "",
@@ -679,96 +692,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c83c0dffff599e6a431a8ab"
+        "id": "9cc1736e29d055d1e647d698"
       },
       "index": 18,
-      "text": "",
+      "text": "So Alexander, Darius and Sumire, you will use their connections to find out any trace of the Black Angels.\n\nMeanwhile, {COMMANDER.FirstName}, Yang and Farah, your job is to get this DropShip, pilots and 'Mechs ready for war.",
       "branches": [
         {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 19,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9c79c07dc4709aea29f87ebc"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9c9523b921ac01131e9c7272"
-      },
-      "index": 19,
-      "text": "While I can't offer anymore help than releasing to your service the Arano house troops that had joined the Restoration after you dismissed them.\n\nFrom what I've seen, they'll serve you even better. Good luck, Lady Arano.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 20,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9cf7c8b0cbe524e71d31a2b4"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9c5fde705bddad594ee1b9d9"
-      },
-      "index": 20,
-      "text": "Thank you Pierre-Louis.",
-      "branches": [
-        {
-          "responseText": "",
+          "responseText": "Your heard Lady Kamea, let's get active.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": -1,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c72d7a2f16182913572ac70"
+            "id": "9cf91788df7ae38662d3adc6"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -784,7 +727,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     }

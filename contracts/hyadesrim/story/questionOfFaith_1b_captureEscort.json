@@ -2,7 +2,7 @@
     "ID" : "questionOfFaith_1b_captureEscort",
     "contractName" : "Question Of Faith",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Commander, glad you decided to join my Kittens... although some were quite eager for some Inferno practice with your 'Mechs. Since your presence here will cause the Harbingers to react, I need to move sooner than I had planned for. That means you need to retrieve me and my lance, since we were keeping a look at the crash site using vehicles to stay undetected. Once we're safe, we'll deal with the Harbingers together in order to get your Captain her precious DropShip.",
-    "longDescription" : "I'm not so sure of what dealing with them together will mean other than it involving charging madly, like Murray has done in the past.",
+    "shortDescription" : "Commander, glad you decided to join my Kittens... although some were quite eager for some Inferno practice with your 'Mechs. Since your presence here will cause the Harbingers to react, I need to move sooner than I had planned for. That means you need to retrieve my spotters that were keeping a look at the crash site using vehicles to stay undetected. Once they're safe, we'll join forces to deal with our next Harbinger target.",
+    "longDescription" : "Joining forces with the Kittens should involve charging madly, like Murray has done in the past.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "7db60871-d4ae-423d-9c82-fb40ca083372"
             },
-            "title" : "Escort Convoy to Safety and Escape",
+            "title" : "Escort Kitten Scouts",
             "description" : "Capture Convoy Rally Point and Escort Convoy to Safety",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -62,8 +62,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "acf88d1b-d09f-4db7-b7ea-9f48a426075c"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Blocking Force",
-            "description" : "The objective to destroy the force of enemies which will try andstop the player from reaching the rally point.",
+            "title" : "Destroy Harbinger Interceptors",
+            "description" : "The objective to destroy the force of enemies which will try and stop the player from reaching the rally point.",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -100,7 +100,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "5f01500a-5087-4a6f-86d8-9e0450bc93eb"
             },
-            "title" : "Secure the Convoy Rally Point",
+            "title" : "Meet Scouts at Rally Point",
             "description" : "Secure the Convoy Rally Point",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -112,7 +112,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "371c6027-0869-4e03-8d70-192a8f441d70"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Reinforcements",
+            "title" : "Destroy Harbinger Reinforcements",
             "description" : "The objective to destroy enemy units which will attempt to block the convoy from reaching its destination.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -150,7 +150,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d4d20990-fbeb-4f6e-81b7-7e94bba6a2c5"
             },
-            "title" : "Escort Convoy to Destination",
+            "title" : "Escort Scouts to Destination",
             "description" : "Escort Friendly units to their Destination",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -162,7 +162,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7da17c55-5d39-4a36-836c-69219a8ddeab"
             },
-            "title" : "Ensure All Convoy Units Survive",
+            "title" : "Ensure All Scouts Survive",
             "description" : "Protect the all units in Convoy during Extraction, suffering no losses.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -344,7 +344,39 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The research base is just up ahead, Commander.",
+                    "words" : "The Harbingers are deployed in two locations: the crash site, where they have been conducting repairs on the DropShip for some time; and at a facility several kilometers, where they have their main camp.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Both are heavily fortified and you can't assault the DropShip without destroying first the other garrison, otherwise they'll be all over you after you land at the crash site.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "So what's our plan?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -360,14 +392,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm getting a report from Sumire of hostiles moving in the area. We need to punch through and secure the base.",
+                    "words" : "My original plan involved assaulting that DropShip before it could leave. But now that you've busted that idea, I'll need to improvise.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "First, we need to get my scouts out of the area, since your arrival spooked the Harbingers and their position has been compromised, plus they'll have valuable intel I can use.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
@@ -376,14 +424,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once we've got the, uh, 'employees' underway, we need to keep up with them and protect them. Good luck, Commander.",
+                    "words" : "<i>Hysteria</i> actual, once they join your lance, escort them to the evac zone. Kitten actual, out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
@@ -401,7 +449,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The scientists are in custody, Commander. Well done.",
+                    "words" : "That went better than I expected.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You're welcome, Kitten Actual.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -409,6 +473,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "If you're already thanking me, <i>Hysteria</i> Actual, you're way too early for me.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -426,14 +506,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That was a slaughterhouse. Let's head home, Commander.",
+                    "words" : "You mercenaries are always quick to disappoint me. Never fails.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -448,17 +528,17 @@
                 "EncounterObjectGuid" : "6c8a5135-f5b5-4c1f-b142-d3c20f51be67"
             },
             "name" : "Dialogue_ReinforcementWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander. The enemy had deployed reinforcements and they are inbound. Expect increased resistance. ",
+                    "words" : "The more of them, the better. Take those Harbingers down!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -476,14 +556,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "More contacts on the sensors, Commander. I guess {TEAM_TAR.FactionDef.Name} isn't happy with their people changing jobs?",
+                    "words" : "Captain Murray, I'm seeing more enemy units approaching our position.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -526,14 +606,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I've got the convoy leader on comms, Commander. They're underway. Keep up with them and keep them safe.",
+                    "words" : "Kitten Actual, good to see you again. We're ready to move on your orders.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLieutenantDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -542,14 +622,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep in mind that the convoy will try to stay near you for protection. Continue advancing to get them to the extract point!",
+                    "words" : "Just follow the mercenaries lead, Kitten Two. We'll debrief later.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -564,17 +644,33 @@
                 "EncounterObjectGuid" : "e8895550-a34c-4545-aa0b-27d4dfd21eeb"
             },
             "name" : "Dialogue_ConvoyExtractSuccessEscapeInstruction",
-            "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_ObjSecured",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "And they are away! The convoy is safely out of the AO. Good work, Commander. Now get your remaining forces to the second evac zone for extraction there. ",
+                    "words" : "Kitten Two is clear.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLieutenantDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Report to the bridge immediately. <i>Hysteria</i> Actual, the fight is yours.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -590,13 +686,30 @@
             },
             "name" : "Dialogue_EscortProximity",
             "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_EscortProximity",
-            "dialogueContent" : []
+            "dialogueContent" : [			
+                {
+                    "words" : "Shouldn't you mercs know what 'escort' means?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLieutenantDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+			]
         }
     ],
     "extractionOverrideList" : [
         {
             "name" : "Chunk_Dropship_Extraction",
-            "extractViaDropship" : true,
+            "extractViaDropship" : false,
             "extractionGameLogic" : {
                 "EncounterObjectGuid" : "be73d7b7-ba12-4917-afb9-6d4066010617"
             }

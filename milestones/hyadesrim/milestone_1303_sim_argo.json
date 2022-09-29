@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1295_notify_headOverHeels",
+        "Id" : "milestone_1303_sim_argo",
         "Name" : "sim",
-        "Details" : "pause notification",
+        "Details" : "Sim game phase",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1295,
+                    "val" : 1303,
                     "valueConstant" : null
                 }
             ]
@@ -34,28 +34,32 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+			    "items" : [
+					"map_travel_5"
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
-            "Stats" : [
-                {
-                    "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : 1,
-                    "valueConstant" : ""
-                }
-            ],
+            "Stats" : [],
             "Actions" : [			
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Commander, the star map display on this DropShip uses a different orientation than normal and the system data is completely outdated. I've uploaded Project UMBRELLA's files but the map files are hardwired and nearly impossible to replace.",
+				{
+                    "Type" : "System_AddContract",
+                    "value" : "trav_story_8_aranoRestoration",
+                    "valueConstant" : null,
 					"additionalValues" : [
-						"Head Over Heels",
-						"castDef_FarahDefault"
-					],
-                    "valueConstant" : null
+						"AuriganDirectorate",
+						"AuriganRestoration",
+						"starsystemdef_Tyrlon"
+					]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Tyrlon",
+					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
                 }
             ],
-            "ForceEvents" : null,
+            "ForceEvents" : [],
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

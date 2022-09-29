@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1302_sim_argo",
+        "Id" : "milestone_1302_notify_aranoRestoration",
         "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,10 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+                "items" : [
+					"flashpoint_aranoRestoration_complete",
+					
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -34,32 +37,28 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-			    "items" : [
-					"map_travel_5"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
             "RemovedTags" : {},
-            "Stats" : [],
-            "Actions" : [			
-				{
-                    "Type" : "System_AddContract",
-                    "value" : "trav_story_8_aranoRestoration",
-                    "valueConstant" : null,
-					"additionalValues" : [
-						"AuriganDirectorate",
-						"AuriganRestoration",
-						"starsystemdef_Tyrlon"
-					]
-                },	
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Tyrlon",
-					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
                 }
             ],
-            "ForceEvents" : [],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Santiago Espinosa's rule is crumbling under the weight of the Taurian betrayal. We may be able to bring Directorate down with a precise strike that will end this civil war.",
+					"additionalValues" : [
+						"Campaign Flashpoint",
+						"castDef_KameaDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

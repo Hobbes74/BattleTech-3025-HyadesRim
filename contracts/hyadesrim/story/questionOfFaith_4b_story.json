@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "According to the Project UMBRELLA files the experimental DropShip down on that moon's surface dates back to the Star League. Captain Arano and the Aurigan Reach need that DropShip, Commander.",
-    "longDescription" : "And whatever is down there, the pirates will have it well guarded {COMMANDER.FirstName}.",
+    "shortDescription" : "Now that we took care of the Harbingers, we can assault the crash site. According to the Project UMBRELLA files the experimental DropShip down on that moon's surface dates back to the Star League. Lady Arano and the Aurigan Reach need that DropShip, Commander.",
+    "longDescription" : "And whatever is down there, the Harbingers will have it well guarded {COMMANDER.FirstName}.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Destroy the radar towers to bring down Grim Sybil's antiaircraft guns",
+            "title" : "Destroy the radar towers to deactivate Air Defenses",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -162,7 +162,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "cf46b363-43a9-49ba-9a00-ad729aab406b"
             },
-            "title" : "Defend against the Pirate Reinforcements",
+            "title" : "Defend against the Harbinger Reinforcements",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -299,7 +299,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Welcome to Axylus, Commander. It's every bit as charming as you'd expect a pirate-occupied moon to be.",
+                    "words" : "Welcome to Skyfog, Commander. It's every bit as charming as you'd expect a pirate-occupied moon to be.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -315,7 +315,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You'll find Grim Sybil's radar stations just ahead. Defenses appear to be limited to turrets and ground vehicles\u2014for the time being, at least. We know that Grim Sibil has at least one lance of BattleMechs, so be ready for anything.",
+                    "words" : "You'll find the Harbinger radar stations just ahead. Defenses appear to be limited to turrets and ground vehicles\u2014for the time being, at least. We know that they have at least one lance of 'Mechs, so be ready for anything.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -331,7 +331,7 @@
                     "revealRadius" : 100
                 },
                 {
-                    "words" : "Be careful of the pirates' turrets as you make your way into the base. They pack a nasty punch, and they can also sensor lock your 'Mechs. Aim for the turret generator\u2014that'll be the fastest way to neutralize the threat.",
+                    "words" : "Be careful of the Harbinger' turrets as you make your way into the base. They pack a nasty punch, and they can also sensor lock your 'Mechs. Aim for the turret generator\u2014that'll be the fastest way to neutralize the threat.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -347,7 +347,7 @@
                     "revealRadius" : 50
                 },
                 {
-                    "words" : "After the pirates' radar stations are down, you'll be clear to proceed to the <i>Argo</i>. Good hunting, Commander\u2026 knock out their radar cover, crush any pirate resistance, and secure us that derelict.",
+                    "words" : "After the Harbinger' radar stations are down, you'll be clear to proceed to the <i>Argo</i>. Good hunting, Commander\u2026 knock out their radar cover, crush any Harbinger resistance, and secure us that derelict.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -417,6 +417,54 @@
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
+                    "revealR,adius" : -1
+                },
+                {
+                    "words" : "I hope your lady enjoys her prize.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Kitten Actual, what do you want now?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "A word, if that thing doesn't explode when you try to fly it. Hope to see you soon.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
                     "revealRadius" : -1
                 }
             ]
@@ -449,16 +497,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "They've knocked out HALF of our DAMNED RADAR COVER! You'd better get those LRMs online NOW, or you're gonna learn what a bellyful of laser fire feels like!",
+                    "words" : "That's one radar dish down, destroy the second one so that I can land Dr. Murad and her crew.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE03_PirateLeaderDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m030_070_pirate",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -499,52 +547,20 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "[static] Is no one else seeing this?! Wake up, you [static] \u2014iots, we've got company! [static]",
+                    "words" : "Commander, I'm picking several contacts moving to intercept us. Better hurry up.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE03_PirateLeaderDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
-                    "audioName" : "m030_090_pirate",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : 0
-                },
-                {
-                    "words" : "They're driving... <i>giant</i>... BattleMechs. We can't fight against\u2014 [gunshot]",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SE03_PirateLackeyDefault",
-                    "emote" : "Default",
-                    "audioName" : "m030_092_pirate_2",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Any more objections? Good. Then get out there and FIGHT!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SE03_PirateLeaderDefault",
-                    "emote" : "Default",
-                    "audioName" : "m030_094_pirate",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
                 }
             ]
         },
@@ -597,7 +613,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The package is delivered, XO. I'm taking the Leopard to a safe distance before the pirates can get their guns running again.",
+                    "words" : "The package is delivered, XO. I'm taking the Leopard to a safe distance before the Harbingers can get their guns running again.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -613,7 +629,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Roger that, Meyer. Dr. Murad, your team is clear to enter the derelict.",
+                    "words" : "Roger that, Meyer. Dr. Murad, your team is clear to enter the <i>Argo</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -629,7 +645,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I hear you, Mr. Oliveira! We're making our way inside now!",
+                    "words" : "I hear you, XO! We're making our way inside now!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -668,22 +684,6 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : 0
-                },
-                {
-                    "words" : "With pleasure, Dr. Murad.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SE03_CanopianMarineDefault",
-                    "emote" : "Default",
-                    "audioName" : "m030_150_guardsman",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 0
                 }
             ]
         },
@@ -695,23 +695,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You think you're gonna steal my ship, you miserable little scrub?! NOBODY steals from Grim Sybil! I'm gonna CARVE you like a ROASTED PIG!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SE03_PirateLeaderDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "b7f28958-b122-4515-b7b1-ded84931303d",
-                    "cameraDistance" : "Close",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 50
-                },
-                {
-                    "words" : "That's a big 'Mech.",
+                    "words" : "That's a big 'Mech. Must be the enemy commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -727,7 +711,7 @@
                     "revealRadius" : 50
                 },
                 {
-                    "words" : "Yeah, but it's in terrible condition. Concentrate your fire, and you should be able to take it.",
+                    "words" : "I have a weird feeling about that one, boss. Watch out!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -751,22 +735,6 @@
             "name" : "Async_Farah_MarinesFightingPirates",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
-                {
-                    "words" : "[burst of gunfire] [screaming] Engineering room clear, Dr. Murad. We're pushing forward.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SE03_CanopianMarineDefault",
-                    "emote" : "Default",
-                    "audioName" : "m030_170_guardsman",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 0
-                },
                 {
                     "words" : "Do it! Mechanics, engineers\u2014to your stations, you know the drill! \u2026And mind the pools of blood.",
                     "wordsColor" : {
@@ -793,32 +761,16 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "[static] Dr. Murad, the pirates have Alpha Squad pinned down in the <i>Argo</i>'s main hallway. Bravo Squad... Bravo Squad is holding the door to Engineering, but you'd better hurry up!",
+                    "words" : "Dr. Murad, how's it going down there?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE03_CanopianMarineDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
-                    "audioName" : "m030_190_guardsman",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : 0
-                },
-                {
-                    "words" : "Sergeant? Talk to me!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_FarahDefault",
-                    "emote" : "Default",
-                    "audioName" : "m030_200_farah",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -832,7 +784,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE03_CanopianMarineDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "m030_210_guardsman",
                     "cameraFocusGuid" : "",
@@ -948,16 +900,32 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "No! This moon is MINE, you CAN'T\u2014 [static] [scream] [static]",
+                    "words" : "Again the same result. Congratulations <i>Hysteria</i>, the DropShip is yours.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SE03_PirateLeaderDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
-                    "audioName" : "m030_300_enemycaptain",
+                    "audioName" : "",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "After you get Lady Arano's prize to fly, meet me at orbit before you leave. Kitten Actual out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -971,7 +939,7 @@
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -1212,7 +1180,7 @@
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "EmployerTeam",
-        "faction" : "MagistracyCentrella",
+        "faction" : "SelfEmployed_Farah",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             
@@ -1390,7 +1358,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_STRIKER",
+                        "unitDefId" : "vehicledef_MANTICORE",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1433,7 +1401,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_SCORPION",
+                        "unitDefId" : "vehicledef_CARRIER_LRM",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1751,7 +1719,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Laser",
+                        "unitDefId" : "turretdef_Heavy_Support",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1794,7 +1762,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Laser",
+                        "unitDefId" : "turretdef_Heavy_Energy",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1857,7 +1825,7 @@
                     ],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -2011,7 +1979,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "Tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

@@ -2,16 +2,16 @@
     "ID" : "questionOfFaith_1a_simpleBattle",
     "contractName" : "Question Of Faith",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
+    "representativeCastDefIDOverride" : "castDef_TortugaPirateLeaderDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "So Commander, you and your crew tried not to shit themselves in your pants and have come after me instead first? Very well, I accept your challenge. Since you were silent for quite a bit, I figured out that your <i>buraq</i> band were going after me instead, so I took the liberty of getting to our BattleMechs to prepare for your arrival party. And please don't be late, since once I deal with your lot, I might as well get the <i>Argo</i> for myself... might sell it as a retirement yacht for a rich Spheroid.",
+    "shortDescription" : "So Captain <i>Kloun</i> tried not to shit in {Commander.Gender?Male:his|Female:her|NonBinary:their} pants and have come after me instead first? Very well, I accept your challenge. Since you were silent, I figured out that your <i>buraq</i> band were going after me instead, so I took the liberty of deploying our BattleMechs to prepare for your arrival party. Please don't be late, since once I deal with your lot, I might as well get the <i>Argo</i> for myself... might sell it as a retirement yacht for a rich Spheroid.",
     "longDescription" : "I can't say I like this a bit, since we'll be walking into a Kittens' trap. Watch out, Commander!",
     "salvagePotential" : 16,
     "requirementList" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Find and Destroy {TEAM_TAR.FactionDef.Demonym} units",
+            "title" : "Find and Destroy Satan's Kittens",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Units",
+            "title" : "Destroy Kitten Units",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Kitten Reinforcements",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -144,7 +144,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Let's keep our eyes peeled, commander. This feels like a trap.",
+                    "words" : "I'm detecting a lot of radio transmissions from the direction of the DropShip site.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "So much for taking it by surprise... everyone is scrambling because Murray decided to move.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -160,7 +176,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We've got some unexpected readings from long-range surveillance, so we might have company.",
+                    "words" : "Whomever they are, there's clearly an enemy position between us and the crash site.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Understood, Sumire. First we'll need to deal with the Kittens, then with that position, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -176,7 +208,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Press the attack, but don't leave yourself exposed. Oliveira out.",
+                    "words" : "It's better to start moving, although Laura Murray must clearly have set some sort of an ambush here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -201,7 +233,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Fantastic work, commander. I'll signal our employers.",
+                    "words" : "That was odd that Murray only sent those two lances against us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -215,7 +247,55 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
+                },
+                {
+                    "words" : "Yeah, everyone was waiting for an ambush... so where is her?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sensors show no other enemy units nearby, only at the position close to the crash site.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Then that's our next target. Sumire, take us down there.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
             ]
         },
         {
@@ -226,7 +306,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well, that certainly could have gone better.",
+                    "words" : "That woman sometimes really gets on my nerves... abort, abort!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -501,7 +581,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 2,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

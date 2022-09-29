@@ -9,7 +9,7 @@
         "id": "9c881b7c455c2290b5748ce8"
       },
       "index": 0,
-      "text": "Skyfog's innermost moon has been scanned and the results look promising so far.\n\nFarah, I think we found Libra UMBRELLA.",
+      "text": "[[DM.BaseDescriptionDefs[LoreSkyfog],Skyfog]]'s innermost moon has been scanned and the results look promising so far.\n\nFarah, I think we found [[DM.BaseDescriptionDefs[LoreProjectUMBRELLA],Libra UMBRELLA]].",
       "branches": [
         {
           "responseText": "",
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "axylus",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -83,6 +83,19 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_141_AXYLUS",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -93,7 +106,7 @@
         "id": "9ced7b02bdede1beef4dbaa7"
       },
       "index": 1,
-      "text": "[A grainy map of a barren moon fills your viewscreen. A section of the image has been highlighted in white.]",
+      "text": "[A grainy amplification of the moon's surface fills the viewscreen. A large structure fills the screen, looking like a dead whale washed in the shore.]",
       "branches": [
         {
           "responseText": "",
@@ -119,8 +132,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "derelictargo",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -128,7 +157,7 @@
         "id": "9cc4106d97f1aa8454e8c10c"
       },
       "index": 2,
-      "text": "The <i>Argo</i>... and from the looks of it nearly intact after almost three hundred years being left down there.\n\nI just wish Alexander and Kamea were here to see this, it is exactly as they described it.",
+      "text": "The [[DM.BaseDescriptionDefs[LoreArgo],Argo]]... and nearly intact after almost three hundred years being left down there?\n\nI just wish Kamea and Alexander were here to see this, it is exactly as they talked about it.",
       "branches": [
         {
           "responseText": "",
@@ -154,7 +183,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -163,7 +192,7 @@
         "id": "9cf6a2b32410e2c17d723449"
       },
       "index": 3,
-      "text": "And from the looks of it, it could be the game changer the Restoration needs.",
+      "text": "And from the looks of it, it could be the game changer the [[DM.Factions[faction_AuriganRestoration],Restoration]] needs.\n\nLook at the hull size... I wonder how many [[DM.BaseDescriptionDefs[LoreBattleMech],'Mechs]] it can hold.",
       "branches": [
         {
           "responseText": "",
@@ -189,7 +218,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -198,7 +227,7 @@
         "id": "9c722e6cd0bb7541327cb0bd"
       },
       "index": 4,
-      "text": "That's... quite a big DropShip. \n\nAnd it does look a lot better than I would have expected if it's sitting there for centuries.",
+      "text": "That's quite a big [[DM.BaseDescriptionDefs[LoreDropShip],DropShip]] to land, I'd assume it crashed.\n\nAlthough it does look a lot better than I would have expected if it has been sitting there for centuries.",
       "branches": [
         {
           "responseText": "Dr. Murad, what's your estimation of that ship's condition?",
@@ -224,7 +253,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -233,7 +262,7 @@
         "id": "9c1da38f3546fcea4fdbb750"
       },
       "index": 5,
-      "text": "This is nearly impossible to believe... all signs indicate that the ship was in a maintained condition before it crashed... Sumire, do you think they could have landed that DropShip deliberately?",
+      "text": "This is nearly impossible to believe... all sensors indicate that the ship is operational or most systems are, despite the crash....\n\nSumire, is it possible the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] landed the DropShip deliberately on this moon?",
       "branches": [
         {
           "responseText": "",
@@ -259,7 +288,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -268,7 +297,7 @@
         "id": "9cd9d9e17dbdabfe94ec5e60"
       },
       "index": 6,
-      "text": "That DropShip wasn't designed for planetary landings but I'm guessing you would just have to find a pilot desperate or crazy enough to attempt it.\n\nWait... there is something else down there!",
+      "text": "If that DropShip wasn't designed for planetary landings, you would just have to find a pilot desperate or crazy enough to attempt such a maneuver.\n\nWait... there is something else down there!",
       "branches": [
         {
           "responseText": "",
@@ -294,7 +323,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -329,8 +358,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "axylus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -338,7 +383,7 @@
         "id": "9c43b8db5edd0ad0e1f6f5c1"
       },
       "index": 8,
-      "text": "That's a company of BattleMechs parked down there... that just lowers our chances greatly of being able to salvage that prize.\n\nSensors have already picked up radar towers and we can't land nearby until we deal with those.",
+      "text": "That's a company of BattleMechs parked down there... that just lowers our chances greatly of being able to salvage that prize.\n\nSensors have already picked up radar towers and we can't land nearby until we deal with whatever air defense they have down there.",
       "branches": [
         {
           "responseText": "",
@@ -364,7 +409,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -373,10 +418,10 @@
         "id": "9c9c11c885c5594f57401577"
       },
       "index": 9,
-      "text": "We can't just leave that treasure down there.\n\nThat DropShip is the key to the survival of the Reach and its people.",
+      "text": "We can't just leave that treasure down there.\n\nThat nearly intact DropShip is the key for Kamea to save the Reach and its people from the [[DM.Factions[faction_AuriganDirectorate],Directorate]] and the [[DM.Factions[faction_TaurianConcordat],Taurians]].",
       "branches": [
         {
-          "responseText": "You heard the Captain, we need to come up with a solution.",
+          "responseText": "You all know Lady Arano's orders, we need to come up with a solution.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 10,
@@ -399,7 +444,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -408,7 +453,7 @@
         "id": "9cac58cd211180983c0bf477"
       },
       "index": 10,
-      "text": "And potential bad news... incoming transmission, tight beam.",
+      "text": "I knew our luck wouldn't last long.\n\nIncoming tight beam transmission, they know we're here.",
       "branches": [
         {
           "responseText": "",
@@ -434,8 +479,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "nautilusmap",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -469,7 +530,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -478,7 +539,7 @@
         "id": "9c1b17e64a7103d53c33d353"
       },
       "index": 12,
-      "text": "Negative XO.\n\nPutting it to main screen now.",
+      "text": "Negative XO, it's orbital, they're likely hiding somewhere.\n\nPutting it to main screen now.",
       "branches": [
         {
           "responseText": "",
@@ -504,7 +565,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -513,7 +574,7 @@
         "id": "9c95901a0740a072afba6f1a"
       },
       "index": 13,
-      "text": "[Holovid changes to incoming video transmission.]",
+      "text": "[Holovid switches to incoming video transmission.]",
       "branches": [
         {
           "responseText": "",
@@ -539,8 +600,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -548,7 +625,7 @@
         "id": "9c661ac27787e474b76d71b7"
       },
       "index": 14,
-      "text": "<i>Hysteria</i> actual, you can't imagine how glad I am to see you again.\n\nA bit surprised that you've appeared here though. Tell me who exactly gave you these coordinates, and I might not blow you up?",
+      "text": "<i>Hysteria</i>, <i>tvo yoo mat</i>! \n\nWhy are you here?",
       "branches": [
         {
           "responseText": "",
@@ -571,11 +648,29 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "kitten",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -583,10 +678,10 @@
         "id": "9c81519b55ded311931dee95"
       },
       "index": 15,
-      "text": "Captain Murray, it seems we've encountered one another again.\n\nI could ask as well why you are doing here. Or better yet, what do you want for that DropShip because I need it to urgent matters regarding my realm.",
+      "text": "Tell me exactly who gave you these coordinates, and I might not blow you up right now with the <i>[[DM.BaseDescriptionDefs[LoreBadKitty],Bad Kitty]]</i>'s guns!",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Captain Murray, we're here on orders of Lady Arano...",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 16,
@@ -606,7 +701,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -618,10 +715,10 @@
         "id": "9c53bf373b8188166d9e3925"
       },
       "index": 16,
-      "text": "Oh, Lady Arano it is now? Or should I continue to call you Captain?\n\nWhat makes you think that you can win the war with that DropShip?",
+      "text": "Oh, it's <i>lady</i> Arano now, <i>da</i>?\n\nSo Commander, have you been promoted to Captain <i>Kloun</i> as well?",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "[Say nothing.]",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 17,
@@ -629,6 +726,20 @@
           "onlyOnce": false,
           "idRef": {
             "id": "9c8cb36f3ac3eb0bd34cb41b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        },
+        {
+          "responseText": "Fuck off, Murray!",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 39,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9ce466cb7dde30006ffc13"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -641,7 +752,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -653,7 +766,7 @@
         "id": "9c1d7e456bc71fd4c50ce0e8"
       },
       "index": 17,
-      "text": "Captain Murray, I am Alexander Madeira and adviser to Captain Kamea. \n\nI believe a generous financial compromise could be arranged in exchange for the use of your services in securing that DropShip to the Restoration. ",
+      "text": "Captain Murray, I'm sure a generous financial compromise could be arranged with Lady Arano in exchange for the use of your [[DM.Factions[faction_TortugaPirates],Satan's Kittens]] in securing that DropShip to the Restoration. ",
       "branches": [
         {
           "responseText": "",
@@ -679,7 +792,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -688,7 +801,7 @@
         "id": "9c704b2c6e430d118080defd"
       },
       "index": 18,
-      "text": "And you are are the <i>kloun</i> this unit picked up on the way?\n\nMost likely the reason why you found your way all out here to Skyfog, some LosTech treasure hunt again?",
+      "text": "I apologize, I didn't remember that the XO was the <i>kloun</i> in your circus and your Commander {COMMANDER.LastName} is just a tamed puppy jumping around at Arano's orders.\n\nSo, all of you <i>klouns</i> can leave now before my kittens get angry!",
       "branches": [
         {
           "responseText": "",
@@ -711,7 +824,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -723,7 +838,7 @@
         "id": "9c7bea1a1bd1623183673cc8"
       },
       "index": 19,
-      "text": "It's interesting, Captain Murray that this is the first time I'm hearing your voice to you with this clarity and I can't recognize your accent from nearby space.\n",
+      "text": "Captain Murray, after hearing your voice so many times, I still can't recognize your accent from anywhere in nearby space.\n\nAnd even more interesting, after a search I couldn't find any historical records of you or the Satan's Kittens and or any evidence that links you to the [[DM.Factions[faction_TortugaDominion],Tortuga Dominion]]. \n",
       "branches": [
         {
           "responseText": "",
@@ -749,7 +864,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -758,7 +873,7 @@
         "id": "9ca3bfc649ac01ed46bb2709"
       },
       "index": 20,
-      "text": "But then I couldn't find any historical records of you or your company and not even a single piece of evidence that links you to the Tortuga Dominions. \n\nWhy would that be? I wonder if Lady Paula Trevaline could clear this for us?\n",
+      "text": "Why would that be, Kitten Actual? \n\nI wonder if Lady [[DM.BaseDescriptionDefs[LoreLadyDeath],Paula Trevaline]] could clear this for us if we sent an [[DM.BaseDescriptionDefs[LoreHPG],HPG]] to her.",
       "branches": [
         {
           "responseText": "",
@@ -784,7 +899,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -793,7 +908,7 @@
         "id": "9cf29abe6521eadc493957c5"
       },
       "index": 21,
-      "text": "Lady Death has no time to lose with fools like you and neither have I.\n\nPrepare to surrender your company and DropShip because I have no desire to kill your Captain or any of you.",
+      "text": "Lady Death has no time to lose with fools like you and neither have I.\n\nI'm guessing the Doctor is the reason why <i>lady</i> Arano decided to send you all on your little [[DM.BaseDescriptionDefs[LoreLosTech],LosTech]] quest to this moon?",
       "branches": [
         {
           "responseText": "",
@@ -816,7 +931,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -828,10 +945,10 @@
         "id": "9c3d48f35bd988a0942a39fe"
       },
       "index": 22,
-      "text": "So much figured and since Tortuga Prime doesn't have a working HPG transmitter, I decided to send a message by JumpShip courier all the way to the Dominions for one of my pirate contacts while I was still in IE.\n\nAre you still sure you'll want to fire on us if you don't follow your orders, Captain?",
+      "text": "Captain Murray, the <i>Bad Kitty</i> is too far to catch us unless you want to risk alerting the attention of those unknown forces down there.\n\nWhich is unlikely to be your decision, considering that your location allows your [[DM.BaseDescriptionDefs[LoreUnion],Union]]'s sensors to stay undetected while keeping an eye on the planet and how you want us to leave.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Captain Murray, what are your intentions here?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 23,
@@ -854,7 +971,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -863,10 +980,10 @@
         "id": "9c2a11ec041df0f9862824af"
       },
       "index": 23,
-      "text": "Captain Murray, what are your intentions here and toward us?\n\nPerhaps it's enough time toying around to try to squeeze information?",
+      "text": "Aren't you all just cute all of a sudden?\n\nVery well, you can take down the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]] if you want them but I will repeat: that DropShip is off the table.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Lady Arano has ordered us to fight to recover it.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 24,
@@ -886,7 +1003,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -898,7 +1017,7 @@
         "id": "9c74231978af9059172e70b7"
       },
       "index": 24,
-      "text": "I don't care about the lies your spies brought you back from the Dominions about me.\n\nAs to my intentions... *laughter*.\n\n\n\n",
+      "text": "Captain <i>Kloun</i>, I couldn't care less of what your mistress wants.\n\nAs to my intentions... *laughter*.\n\n\n\n",
       "branches": [
         {
           "responseText": "",
@@ -921,7 +1040,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -933,10 +1054,10 @@
         "id": "9c7121ba5d7db7f50160a102"
       },
       "index": 25,
-      "text": "Very well, the <i>Argo</i> might be yours for a price.",
+      "text": "Very well, the DropShip can be yours to take to your <i>lady</i> for you assisting me with clearing the Harbingers off that moon.",
       "branches": [
         {
-          "responseText": "What would that be, Captain Murray?",
+          "responseText": "What? Are you even serious?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 26,
@@ -956,7 +1077,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -968,7 +1091,7 @@
         "id": "9cd3178ec122a319be3bdd1a"
       },
       "index": 26,
-      "text": "Commander {COMMANDER.LastName} you've also joined the party.\n\nThat you keep my involvement and whatever Mr. Oliveira heard from Tortuga as a personal secret to yourselves. And a hand with some pressing matters regarding those BattleMechs on the surface of that moon.",
+      "text": "Captain <i>Kloun</i>, your arrival put an end to several months of mindless boredom while waiting for my real prey to arrive.\n\nIt also forces me to play my hand against the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]] now.",
       "branches": [
         {
           "responseText": "",
@@ -991,7 +1114,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -1003,7 +1128,7 @@
         "id": "9c04092b1ecb7b37d3476cdc"
       },
       "index": 27,
-      "text": "You're letting go of an nearly intact DropShip of that size as payment for mercenary work???\n\nWhat is down there, or who is down there that is worth that much?",
+      "text": "Murray, you're honestly letting go of an nearly intact DropShip of that size as payment for mercenary work???\n\nWhat is down there that is worth that much to you?",
       "branches": [
         {
           "responseText": "",
@@ -1029,7 +1154,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -1038,7 +1163,7 @@
         "id": "9c0f1988c49a9ed2978afcaf"
       },
       "index": 28,
-      "text": "Captain Murray, tell me something... is this your own personal story?",
+      "text": "Something in here clearly doesn't add up, Captain Murray, as the XO said.\n\nWhat are your real motives behind your presence here?",
       "branches": [
         {
           "responseText": "",
@@ -1064,7 +1189,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -1073,10 +1198,10 @@
         "id": "9c9b40519554c2bc104258a7"
       },
       "index": 29,
-      "text": "Captain Arano, this is way beyond my story... or yours.\n\nYou can take that DropShip by yourself and go try rescue your realm if you want. You'll fail at both.",
+      "text": "Mr. Oliveira, Dr. Murad, either we take that crash site together or you can try to take it alone and you will fail.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "You know we can defeat you.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 30,
@@ -1096,7 +1221,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -1108,7 +1235,7 @@
         "id": "9ca3a5159fea6b0a420e35c9"
       },
       "index": 30,
-      "text": "I'm done talking, <i>Hysteria</i> actual. \n\nTime to burn stuff, try not to get on the way or you might get burned.",
+      "text": "Boring... I'm done talking to you, Captain <i>Kloun</i>. \n\nTime to burn stuff, try not to get on the way or you will get burned, <i>capiche</i>?",
       "branches": [
         {
           "responseText": "",
@@ -1131,7 +1258,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -1169,8 +1298,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -1178,7 +1323,7 @@
         "id": "9c552376a1c43b48b720ff24"
       },
       "index": 32,
-      "text": "Well, we should have known that it wasn't going to be that easy but adding Laura Murray into the mix?",
+      "text": "Well, we should have known that it wasn't going to be that easy but adding Laura Murray into the mix?\n\nThat just made this contract go down in flames.",
       "branches": [
         {
           "responseText": "",
@@ -1204,7 +1349,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -1213,7 +1358,7 @@
         "id": "9c4f25115c023289cae6966b"
       },
       "index": 33,
-      "text": "At least this time she is giving us a choice. \n\nEither we join with her against the Harbingers or we try to take that DropShip from her.",
+      "text": "At least this time she is giving us kinda of a better choice. \n\nEither we join with her against the Harbingers or we try to take the <i>Argo</i> from whomever is left standing.",
       "branches": [
         {
           "responseText": "",
@@ -1239,7 +1384,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -1248,7 +1393,7 @@
         "id": "9cea42a9c4bef76b538aa21a"
       },
       "index": 34,
-      "text": "And you trust she'll actually consider giving the <i>Argo</i> to the Restoration after she's done using us to recover it for her?",
+      "text": "Darius, and you trust she'll actually consider giving the <i>Argo</i> to the Restoration after she's done using us to recover it for her?\n\nI'm glad I won't be the one having to explain Lady Arano if she changes her mind again, once we're done with the Harbingers.",
       "branches": [
         {
           "responseText": "",
@@ -1274,7 +1419,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -1283,10 +1428,10 @@
         "id": "9c2d4b6b412526bee92f0fe4"
       },
       "index": 35,
-      "text": "That's a tough call but since Captain Arano isn't here, Commander NAME will have to make the choice.",
+      "text": "Right now trusting her is a question of faith because the <i>Bad Kitty</i> just ignited its fusion engines.\n\nNo pressure, but what do you want me to do, boss?",
       "branches": [
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: refuse Murray's terms.] It looks like we'll have to take the <i>Argo</i> from the Satan's Kittens.",
+          "responseText": "<color=#85DBF6FF>[Story Decision: Refuse Murray's terms.]</color> It looks like we'll have to take the <i>Argo</i> from the Satan's Kittens.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 36,
@@ -1300,7 +1445,7 @@
           "comment": ""
         },
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: accept Murray's terms.] I don't really trust her but she's in control of the situation.",
+          "responseText": "<color=#85DBF6FF>[Story Decision: Accept Murray's terms.]</color> I don't really trust her but she's in control of the situation.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 37,
@@ -1323,8 +1468,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "nautilusmap",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -1332,13 +1493,13 @@
         "id": "9c0140dfd3177a3e4c7526ac"
       },
       "index": 36,
-      "text": "She'll know that we'll be coming and it won't be easy. Aye, aye, Commander.",
+      "text": "We'll have to engage both the Kittens and the Harbingers and she's might get to the crash site first than us.\n",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 38,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -1358,7 +1519,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": {
         "ops": [
           {
@@ -1439,13 +1600,13 @@
         "id": "9c40febd78d02524f07b14ae"
       },
       "index": 37,
-      "text": "Aye, aye, Commander, although trusting her will be quite a question of faith.\n\nI'll reply to the <i>Bad Kitty</i> once they contact us again.",
+      "text": "Aye, aye, Commander, although trusting her will be quite a question of faith.\n\nI'll reply to the <i>Bad Kitty</i> while they're still in range.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 40,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -1465,7 +1626,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": {
         "ops": [
           {
@@ -1552,6 +1713,113 @@
           }
         ]
       },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca7816faeddb2bbcd324d92"
+      },
+      "index": 38,
+      "text": "Against her and the Harbingers we'd better start believing we can achieve this.\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c23f10cda222eaa2612adcc"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9caf26299a481f61612e70d0"
+      },
+      "index": 39,
+      "text": "Not very professional, are you, Commander {COMMANDER.LastName}?\n\nI guess that should be expected... you better leave before I give you my reply...",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c993483d0fc4e9f46e2c0f5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9079f125efc35ffa389729"
+      },
+      "index": 40,
+      "text": "The bigger mistake would be to allow the Harbingers or her to obtain this ship and use it for their proposes.\n\nLet's not forget about that while we're fighting alongside her.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c33bcf366b32dcf88fa8753"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
       "comment": ""
     }
   ],
