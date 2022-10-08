@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The {TEAM_TAR.FactionDef.Demonym} control of this world is nearly absolute. We've identified a point of vulnerability, however: they move supplies and weapons by convoy, and those convoys are lightly defended by a single lance of 'Mechs. If we destroy enough of their supply convoys, their other operations will be weakened enough for our forces to move in and take advantage of their fragility. We don't want to tip our hand, however, so we'd like you to engage in a little guerilla warfare on our behalf.",
-    "longDescription" : "It's a solid plan, Commander, as long as they're right about the defenses being light.",
+    "shortDescription" : "Our orbital scans haven't revealed the location of the vault, yet, but Darius has noticed in one of the surveys what appears to be track marks close to one of the sites, consistent with vehicles. These indicate some heavy activity in the past, so it should be our first objective.\r\n\r\nScout the path where we tracked the markings on the ground and see if you can find more clues.",
+    "longDescription" : "Or something is going on right now on this area, Commander, because these tracks can well be recent.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Destroy the Supply Convoy and Escape",
+            "title" : "Investigate Unknown Tracks",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -56,7 +56,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
-            "title" : "Destroy the Convoy Guards",
+            "title" : "Neutralize any Hostiles",
             "description" : "",
             "isPrimary" : false,
             "forPlayer" : "Player1",
@@ -70,7 +70,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy",
+            "title" : "Locate and destroy unknown signatures",
             "description" : "The objective for destroying the convoy units.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -82,7 +82,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Escorts",
+            "title" : "Destroy the Escorts",
             "description" : "The objective for destroying the units guarding the convoy.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -120,7 +120,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4da99cf7-4950-4447-b55b-fcc2986adf75"
             },
-            "title" : "Stop Convoy from Escaping",
+            "title" : "Stop Unknown Vehicles",
             "description" : "The objective for preventing the enemy from reaching their escape point, if this happens the player will lose.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -132,7 +132,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "aa529050-2feb-4fbf-8838-afa2849caca6"
             },
-            "title" : "Recon the Convoy's Route",
+            "title" : "Recon the Tracks Location",
             "description" : "The objective for the player to intercept/observe the enemy convoy.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -257,7 +257,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is as close as I can get you without tripping every early warning system in the area. If you move up to here, you should be able to see the targets.",
+                    "words" : "That road up ahead shows signs of heavy traffic.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -273,7 +273,39 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The escorts are optional targets, Commander, but knocking them out would make our employers happy, and we'll get a bonus.",
+                    "words" : "But we'll need to get closer to find out for sure.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "cb50e1e4-aa0c-49b2-bd2e-5339c78dafb5",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Farah, I meant the whole place is littered with active contacts already!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "cb50e1e4-aa0c-49b2-bd2e-5339c78dafb5",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And they must have already detected us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -283,13 +315,45 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "cb50e1e4-aa0c-49b2-bd2e-5339c78dafb5",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once you've wrapped this up, I'll pick your lance up at-- uh, Darius? Do you see those engine signatures?",
+                    "words" : "And they're not responding to my calls!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Let's engage them, Commander. We can't let these unknowns escape and not know why there here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And I'm also detecting more of them. Once you're done, I'll evac you from this area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -305,7 +369,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Affirmative, Meyer. Commander, be warned; there may be additional enemy forces in the field. Dammit.",
+                    "words" : "Commander, watch out, there might be more of them out here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,7 +394,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well, despite the unexpected second lance, that was straightforward and successful.",
+                    "words" : "That second IE lance made things challenging but good work, everyone.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -338,6 +402,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Now it's time for the gruesome work of going through the wreckage and bodies.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Glad you're the expert on the bioweapons, because I'll stick to the 'Mech parts instead.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,7 +451,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I don't know what happened, but the unexpected second lance was not helping matters. Let's debrief back in orbit.",
+                    "words" : "We failed, the IE convoy has escaped. We'll need to rethink our tactics.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -380,7 +476,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_EyesOnTarget",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicles. They should be to your front. Engage and destroy, Commander.",
+                    "words" : "We have a visual on the vehicles and they have Interstellar Expeditions markings.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -388,6 +484,54 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Could have been worse but what are they doing here???",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Aren't they friendlies now? Shouldn't we break off or something?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Markings are not a confirmation of their identity... we can't risk them escaping.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -430,23 +574,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's the escorts down, Commander.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SumireDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "That bonus is ours, assuming we take out the convoy.",
+                    "words" : "The last of the IE escorts is down.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -471,14 +599,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Boss, those vehicles are about to leave the AO. If we lose them, we don't get paid.",
+                    "words" : "Commander, you must hurry, the IE vehicles are about to escape.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
@@ -521,7 +649,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is finished, now get what mechs you have to the extraction point and we'll pull you out. Move quickly.",
+                    "words" : "The convoy is finished, now get what 'Mechs you have to the extraction point and we'll pull you out. Move quickly.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

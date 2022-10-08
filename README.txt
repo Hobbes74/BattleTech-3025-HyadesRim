@@ -9,10 +9,10 @@ It is 3024 and Lady Kamea Arano has been exiled after being rescued by the survi
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if link/HPG expires)
 
 Features
-* A new BattleTech story/campaign mode, consisting of 32 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as in the original campaign. Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed and the vanilla story is a cover-up made for propaganda and political purposes. 
-* Twenty-seven original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Heads Will Roll, Backdoor Man, Dark Forest, Dark Horse, Comanche Moon, Question Of Faith and Speak Of The Devil.
-* Eight more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Flesh For Fantasy, Dreams of Nagayan Valley, Horse Latitudes, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
-* New story includes so far a total of 111 new contracts, 134 new crew conversations and 212 lore descriptions, and is divided into three parts, each with its own subarcs.
+* * A new BattleTech story and Campaign mode, consisting of 35 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
+* Twenty-eight original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Dark Horse, Comanche Moon, Question Of Faith and Speak Of The Devil.
+* Seven more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Flesh For Fantasy, Dreams of Nagayan Valley, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
+* New story includes a total of 114 new contracts, 129 new crew conversations and 295 lore descriptions, and is divided into three parts, each with its own subarcs.
 * The vanilla FPs are included in the new Campaign as independent mini-campaigns, except for the Black Widow mini-campaign but still appears on Career mode.
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems, as well as other Periphery realms. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
 * 87 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
@@ -42,7 +42,7 @@ Balance and Story Changes
 Disclaimer
 * The objective of this mod is not a total overhaul of the base game, but the opposite: to keep it as unchanged as possible while expanding it with new and original material.
 * This is Work In Progress - expect bugs (and please report them on the Hyades Rim Discord - link above).
-* The story is fiction and the writing contains vulgar language, including personal insults, fictional slurs, drug/alcohol consumption, sexual references and several questionable morals or actions displayed by the mod's characters. If you're offended by any of these, do not play this mod.
+* The story and its characters are a mixture of both BattleTech canon and fan fiction and the writing contains vulgar language, personal insults, fictional slurs, drug/alcohol consumption, sexual references, lack of morals and physical violence. If you're underage and/or offended by any of these, do not play any of the BattleTech games or this mod.
 
 Requirements﻿
 * ModTek 0.8.0.0 or 2.0.X - https://github.com/BattletechModders/ModTek
@@ -76,7 +76,7 @@ Credits
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann;
 * ModTek, by several authors, https://github.com/BattletechModders/ModTek
 * Logo Replacement, mod by Mpstark, https://github.com/BattletechModders/LogoReplacement
 * ConverseTek, conversation editor by CWolf, https://github.com/CWolfs/ConverseTek
