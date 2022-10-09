@@ -9,7 +9,7 @@ It is 3024 and Lady Kamea Arano has been exiled after being rescued by the survi
 Hyper Pulse Generator (feedback) - https://discord.gg/zgeQrnV (Discord channel - send message if link/HPG expires)
 
 Features
-* * A new BattleTech story and Campaign mode, consisting of 35 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
+* A new BattleTech story and Campaign mode, consisting of 35 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 * Twenty-eight original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Dark Horse, Comanche Moon, Question Of Faith and Speak Of The Devil.
 * Seven more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Flesh For Fantasy, Dreams of Nagayan Valley, Arano Restoration, The Eyes Of Truth, Unnatural Selection, Barbarians At The Gates and Redoubt.
 * New story includes a total of 114 new contracts, 129 new crew conversations and 295 lore descriptions, and is divided into three parts, each with its own subarcs.
@@ -20,7 +20,7 @@ Features
 * 66 new cast characters, several with new artwork.
 * 600+ new contracts and variants added, including pirate, IE and Periphery flavored.
 * 700+ new BattleMech variants added to fight as Opfor, can appear equipped with Infernos, ECM, plus other LosTech surprises.
-* Optional - Community Asset Bundle integration, currently adding the Charger, Clint, Crusader, Dervish, Falcon, Firebee, Firefly, Marauder II, Mongoose, Ostroc, Ostsol, Ostwar, Stinger, Talos, Thug, Toro, Valkyrie, Wasp and Wolfhound BattleMech models.
+* Optional - Community Asset Bundle integration, currently adding the Charger, Clint, Crusader, Dervish, Falcon, Firebee, Firefly, Marauder II, Mongoose, Ostroc, Ostsol, Ostwar, Stinger, Talos, Thug, Toro, Valkyrie, Wasp and Wolfhound 'Mech models.
 * All the 'Mech quirks of the Heavy Metal DLC can now appear on any 'Mech model (only certain factions will use them).
 * 23 new vehicle variants, called 'technicals', only used by pirate factions.
 * 77 canon variants of the vanilla 'Mechs, nearly all of the 3025 era and SLDF variants.
@@ -30,14 +30,14 @@ Features
 * Career mode has nearly everything from above available, except for the story missions/flashpoints.
 
 Balance and Story Changes
-* More terrain variety - in the original game each contract (like One Man's Art) can only appear at a certain system difficulty and certain campaign milestones. Those limitations have been removed, allowing for a greater terrain variety during contracts. 
 * For most of the campaign you'll use the Hysteria (Leopard), and only get the Argo at the end of part 2, with the Question Of Faith campaign flashpoint. 
-* Several of the new campaign flashpoints have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations. Many also have choices that can mitigate the number of consecutive deployments or allow you to use third-party 'Mechs.
-* The original flashpoints of the five Inner Sphere factions are now played sequentially, starting with the lowest difficulty FP. They've been also integrated in the campaign as related to the start of the 4th Succession War.
+* Several of the new campaign flashpoints have consecutive deployments. This is done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, since the story of the flashpoint involves fast operations. Certain flashpoint choices can reduce the number of consecutive deployments or allow you to use third-party 'Mechs.
+* The original flashpoints of the five Inner Sphere factions are optional to play during the campaign, and will immediately precede the 4th Succession War. They're also played sequentially, starting from the lowest difficulty.
 * On campaign, JumpShip access to the Inner Sphere is limited, and depends on you unlocking letters of marque from the Successor Lords (which also unlock their faction FPs).
+* More terrain variety - in the original game each contract (like One Man's Art) can only appear at a certain system difficulty and certain campaign milestones. Those limitations have been removed, allowing for a greater terrain variety during contracts. 
 * The special equipment of the Marauder has been nerfed, with the Called Shot ability reduced from a 33% maximum to 25%, and the 10% damage reduction only applying to the Marauder, not the whole lance.
 * Stores/Black Markets have been changed to restore the appearance of LosTech to before the HM DLC was released.
-* Opfor pilots levels can vary, being possible to encounter pilots with a different skill levels than the contract's difficulty.
+* Opfor pilots levels can vary, being possible to encounter pilots with a different skill levels than the contract's difficulty; there's also a chance some of them will be immune to headshots (to balance the Called Shot ability).
 
 Disclaimer
 * The objective of this mod is not a total overhaul of the base game, but the opposite: to keep it as unchanged as possible while expanding it with new and original material.
@@ -45,9 +45,8 @@ Disclaimer
 * The story and its characters are a mixture of both BattleTech canon and fan fiction and the writing contains vulgar language, personal insults, fictional slurs, drug/alcohol consumption, sexual references, lack of morals and physical violence. If you're underage and/or offended by any of these, do not play any of the BattleTech games or this mod.
 
 Requirements﻿
-* ModTek 0.8.0.0 or 2.0.X - https://github.com/BattletechModders/ModTek
-* All DLCs (Flashpoint, Urban Warfare and Heavy Metal)
-* No other mods are required
+* ModTek 0.8.0.0 or 2.0.0.X - https://github.com/BattletechModders/ModTek
+* Flashpoint, Urban Warfare and Heavy Metal DLCs
 
 Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
@@ -71,19 +70,21 @@ Future Plans
 * Finish the new Campaign with new contracts, missions and flashpoints - release date Winter 2021 (delayed).
 
 Credits
-* Story and lead developer: Hobbes
+* Story and lead developer: Hobbes;
 * Additional character artwork: DarkKhaos;
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear;
+
+Contributors
+* BattleTech videogame: Harebrained Studios (HBS);
 * ModTek, by several authors, https://github.com/BattletechModders/ModTek
 * Logo Replacement, mod by Mpstark, https://github.com/BattletechModders/LogoReplacement
 * ConverseTek, conversation editor by CWolf, https://github.com/CWolfs/ConverseTek
 * Inner Sphere Map for the coordinates of most canon systems;
 * MegaMek for the coordinates of several connecting systems;
 * Banner images taken from the sourcebook The Periphery, 2nd Edition;
-* Flashpoint title images: original game videos;
 * Corporation logos taken and adapted from Sarna.net;
 * Sarna.net for being an amazing resource for all things BattleTech related;
 * Mordel.net for the stats used in the canon 'Mech variants;
