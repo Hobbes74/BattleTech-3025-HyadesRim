@@ -8,7 +8,7 @@
         "UIName" : "Gyro + + + +",
         "Id" : "Gear_Gyro_Hermes_Energy",
         "Name" : "Hermes Energy Gyro",
-        "Details" : "Gyros counteract the massive amounts of momentum generated from 'Mech engines and allow for precision targeting. All 'Mechs come equipped with a stock Gyro, which can be upgraded for improved performance.",
+        "Details" : "Gyros counteract the massive amounts of momentum generated from 'Mech engines and allow for precision targeting. All 'Mechs come equipped with a stock Gyro, which can be upgraded for improved performance, but is highly unstable and can explode if damaged by weapons fire.",
         "Icon" : "uixSvgIcon_equipment_Gyro"
     },
     "BonusValueA" : "+ 20% Energy Dmg.",
@@ -17,7 +17,7 @@
     "ComponentSubType" : "NotSet",
     "PrefabIdentifier" : "",
     "BattleValue" : 0,
-    "InventorySize" : 3,
+    "InventorySize" : 2,
     "Tonnage" : 0,
     "CanExplode" : true,
     "AllowedLocations" : "CenterTorso",
@@ -59,9 +59,14 @@
             "nature" : "Buff"
         }
     ],
+    "RequiredToSpawnCompanyTags" : {
+        "items" : [
+            "flashpoint_puttingOutAFire_complete"
+        ],
+        "tagSetSourceFile" : ""
+    },
     "ComponentTags" : {
         "items" : [
-			"BUILT-IN",
         ],
         "tagSetSourceFile" : ""
     }

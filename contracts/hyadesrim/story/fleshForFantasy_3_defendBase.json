@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Our covert operatives on the planet have located a secret {TEAM_TAR.FactionDef.Demonym} facility that's been abandoned. We have a team inbound to this planet to strip the facility of everything valuable, but our people on the surface tripped some sort of alarm, which means the original owners are probably on their way to level the place and ensure we can't salvage anything. We need you and your people to occupy that base and keep it intact until our team arrives.",
-    "longDescription" : "This all seems straightforward enough, Commander. There will likely be significant opposition, but nothing we haven't handled in the past.",
-    "salvagePotential" : 12,
+    "shortDescription" : "Hostile {TEAM_TAR.FactionDef.Demonym} forces have been making increasingly bold incursions toward one of our processing facilities on {TGT_SYSTEM.name}. This facility represents a substantial cash investment for {TEAM_EMP.FactionDef.ShortName}, and its destruction would be both politically and financially disastrous. We need a capable mercenary company to defend the site. Payment will be remitted upon the repulsion of all hostile {TEAM_TAR.FactionDef.Demonym} units.",
+    "longDescription" : "The {TEAM_EMP.FactionDef.Demonym} facility must be running on incredibly narrow margins if they can't afford to protect it themselves. Anyway, Commander, this should be very straightforward.",
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -33,14 +33,14 @@
         -1,
         -1
     ],
-    "mapMood" : "",
-    "startingFogOfWarVisibility" : "Unknown",
+    "mapMood" : null,
+    "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "6f5f8d17-70ed-44a8-acc0-ccf9258925aa"
             },
-            "title" : "Defend Occupied Base",
+            "title" : "Defend Processing Facility",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -59,8 +59,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "ca677a4d-19c8-4d0c-9c5e-3ed712081336"
             },
-            "title" : "Defend Target Buildings",
-            "description" : "Defend Targeted Base Structures from Attackers",
+            "title" : "Defend Base from {TEAM_TAR.FactionDef.Demonym} Attackers",
+            "description" : "Defend Base from Attackers",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -72,7 +72,7 @@
                 "EncounterObjectGuid" : "0e4ac925-d95a-4019-aeb0-0aa553830f46"
             },
             "title" : "Destroy the Enemy Vanguard",
-            "description" : "Destroy the enemy vanguard force, the first wave.",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -109,8 +109,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "240577eb-b4b0-43b7-b2af-a94d692a022a"
             },
-            "title" : "All target buildings must survive",
-            "description" : "Optional objective to keep ALL target structures intact.",
+            "title" : "Ensure All Buildings Survive",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -148,7 +148,7 @@
                 "EncounterObjectGuid" : "4bfadebf-a277-4ddb-8a36-f70ab7c0c68c"
             },
             "title" : "Hold Out for Reinforcements",
-            "description" : "Objective for tracking the time left in the mission. While the player it told to Hold Out for Reinforcements",
+            "description" : "Hold Out for Reinforcements",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -162,7 +162,33 @@
             "title" : "Escort Engineer APCs to Base Defenses",
             "description" : "Escort Engineer APCs to Base Defenses in order to take control of them.",
             "isPrimary" : false,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.1",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -171,8 +197,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "46d1c317-2344-4e53-aa9f-d9769edbb89d"
             },
-            "title" : "Hidden Objective: Destroy the Second Lance",
-            "description" : "Hidden Objective: Destroy the Second Lance",
+            "title" : "Hostile Units Inbound",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -221,7 +247,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "5dca4e7f-ea4c-4582-8a4c-bb531e2c0754"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -291,23 +317,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's something I still don't get, XO. Why did they abandon this place if it's full of stuff valuable enough that they're willing to flatten the place to keep it out of {TEAM_EMP.FactionDef.Demonym} hands?",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SumireDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "No clue. At a guess? It's a trap, and we're springing it.",
+                    "words" : "All right, Commander, we've been tasked with defending this installation.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -323,39 +333,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "One moment; if we know it's a trap, why are we walking into it?",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_FarahDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Hah! Because they're <i>paying us</i> to.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_YangDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Got it in one, Yang. We're going to turn a handful of 'Mechs into scrap and loot the remains; the specific details aren't really our problem.",
+                    "words" : "We have scattered reports of incoming hostiles from multiple directions.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -365,7 +343,23 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "4d39e72c-4f99-4cc6-8fe0-d4d18cad0063",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They'll be targeting the structures; intercept them before they bring any down. Good luck.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "dafd0d98-c88a-4f90-b137-4fe5ed94ebbb",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -380,30 +374,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I hope whatever they found in there was worth it.",
+                    "words" : "Excellent work, Commander - the hostiles are clear and our facility is secure.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "No kidding. That was a <i>lot</i> of metal on the field, boss.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -421,7 +399,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a damn disaster. Let's debrief back in orbit.",
+                    "words" : "No good, Commander. Stand by for extraction and we'll get you out of there.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -446,14 +424,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're in position! All engineers have disembarked from the Personal carriers. The APCs will scatter and support you, keep the Turrets online and we'll keep firing.",
+                    "words" : "We're in position! All engineers have disembarked from the Personal carriers. The APCs will scatter and support you, keep the Turrets online and we'll keep firing!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -546,7 +524,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, there's only one target structure left. If we lose it, we've blown the contract. You have to draw their fire somehow.",
+                    "words" : "Commander, we're down to just one building left. If they bring it down, this mission is over.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -622,7 +600,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "02048097-1c04-45e5-bbe5-be481a8dc864",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -638,7 +616,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -654,7 +632,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -663,9 +641,9 @@
         }
     ],
     "extractionOverrideList" : [],
-    "overwriteMissionCompleteWhenAutoComplete" : false,
-    "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : true,
+    "overwriteMissionCompleteWhenAutoComplete" : true,
+    "overrideAutoCompleteDialogueId" : "",
+    "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
@@ -674,9 +652,9 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.5,
-    "negotiatedSalvage" : 0.5,
-    "excludedFromProceduralGeneration" : true,
+    "negotiatedSalary" : 1,
+    "negotiatedSalvage" : 0,
+    "excludedFromProceduralGeneration" : false,
     "player1Team" : {
         "encounterLayerData" : {
             "EncounterObjectGuid" : "8b14e146-86c5-4221-b5c7-63632376a7db"
@@ -714,8 +692,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -728,7 +706,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -747,8 +725,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -761,7 +739,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -780,8 +758,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -794,7 +772,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -813,8 +791,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -827,7 +805,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -916,8 +894,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -949,8 +927,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -998,7 +976,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_recon",
-                        "lance_type_dynamic_difficulty"
+                        "lance_type_notallvehicles"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -1021,7 +999,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1054,7 +1032,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1087,7 +1065,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1120,7 +1098,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1156,8 +1134,8 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_cavalry",
-                        "lance_type_dynamic_difficulty"
+                        "lance_type_battle",
+                        "lance_type_notallvehicles"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -1169,7 +1147,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -1180,7 +1158,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1213,7 +1191,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1246,7 +1224,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1279,7 +1257,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1316,7 +1294,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_support",
-                        "lance_type_dynamic_difficulty"
+                        "lance_type_notallvehicles"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -1339,7 +1317,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1372,7 +1350,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1405,7 +1383,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1438,7 +1416,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1492,7 +1470,7 @@
                     "EncounterObjectGuid" : "f11631eb-034f-4d16-8f4f-2599481976ff"
                 },
                 "name" : "Lance_Neutral_BaseTurrets",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_turret"
@@ -1518,7 +1496,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1551,7 +1529,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1584,7 +1562,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1617,7 +1595,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1650,7 +1628,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1683,7 +1661,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1716,7 +1694,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

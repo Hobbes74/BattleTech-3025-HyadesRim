@@ -1,0 +1,392 @@
+{
+    "Description" : {
+        "Id" : "forcedevent_co_HYR_107_arautOfMecha",
+        "Name" : "Purge Protocol",
+        "Details" : "\"We have a situation with one or more of the MechWarriors\". Dr. Murad comes to you while Darius rolls his eyes. \"I already ordered them to restrict their leisure activities....\"\r\n\r\n\"No, this is worse than a couple of them passing out from being drunk. I've heard {TGT_MW.Callsign} talking about the [[DM.BaseDescriptionDefs[LoreAutocracyOfLeh],Autocracy]] and how they truly elevate MechWarriors to their proper standing\".\r\n\r\nSumire replies. \"We have an actual convert for those lunatics? Must be space, {TGT_MW.Callsign} got an extra dose of cosmic rays.\"\r\n\r\n\"Yeah, I have also found some Autocracy propaganda in one of the waste bins. Now, I know all the Mechtechs and I assumed that this was just garbage leftover from our time on Leh. But if their talk got to {TGT_MW.Callsign} then {TGT_MW.Gender?Male:he|Female:she|NonBinary:they} might be trying to convince others.\" Yang scratches his artificial forearm.\r\n\r\nDr. Murad nods. \"Which turns this issue into something we can't ignore. Otherwise we risk a rebellion or worse if this kind of proselytizing activity continues.\"\r\n\r\nDarius finishes. \"How do you want to handle this, Commander?\"",
+        "Icon" : "uixTxrSpot_DailyBriefing.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 10,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+			"items" : null,
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "ExclusionTags" : {
+			"items" : null,
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Injuries",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : "0"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+					"items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+					"items" : null,
+                    "tagSetSourceFile" : "Tags/PilotTags"
+                },
+                "RequirementComparisons" : [
+                    {
+                        "obj" : "injuries",
+                        "op" : "Equal",
+                        "val" : 0,
+                        "valueConstant" : "0"
+                    }
+                ]
+            }
+        }
+    ],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Warn [[TGT_MW,{TGT_MW.Callsign}]].",
+                "Details" : "",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : null,
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : null,
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Verbal confrontation",
+                        "Details" : "[[TGT_MW,{TGT_MW.Callsign}]] arrives at your office and before you even say anything, the MechWarrior drops a resignation letter in front of you.\r\n\r\n\"You already decided to leave us? For the Autocracy?\"\r\n\r\n\"Yes, Commander {COMMANDER.LastName}. There is a better path for all of us but now I see that I'm alone in this DropShip. It is best for all if I leave.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "5000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Fire [[TGT_MW,{TGT_MW.Callsign}]].",
+                "Details" : "na",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Lose morale, SCN-MW unavailable",
+                        "Details" : "\"[[TGT_MW,{TGT_MW.Callsign}]] has left the <i>Hysteria</i> but now [[SCN_MW,{SCN_MW.CALLSIGN}]] has voiced openly that {TGT_MW.Gender?Male:he was|Female:she was|NonBinary:they were} being persecuted unfairly for {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} beliefs.\"\r\n\r\n\"It's more personal in this case. Both of them were friends and [[SCN_MW,{SCN_MW.CALLSIGN}]] is also upset about {TGT_MW.Gender?Male:him|Female:her|NonBinary:their} leaving the company\".\r\n\r\n\"Let's give {SCN_MW.Gender?Male:him|Female:her|NonBinary:their} some time to cool it off\".",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_rebellious"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_SetTimeout",
+                                    "value" : "7",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Apply purge protocol to [[TGT_MW,{TGT_MW.Callsign}]].",
+                "Details" : "",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : null,
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : null,
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Lose both MWs",
+                        "Details" : "Yang and Darius share a look and then both nod to you. In the next day, Yang comes with the news to the staff briefing. \r\n\r\n\"Yesterday there was an airlock malfunction that resulted in a purge protocol being wrongly set while [[TGT_MW,{TGT_MW.Callsign}]] was inside. A preventable loss if we had more resources for DropShip maintenance.\" \r\n\r\n\"That's not all the bad news, unfortunately.\" Darius continues. \"When [[SCN_MW,{SCN_MW.Callsign}]] heard the news, {SCN_MW.Gender?Male:he|Female:she|NonBinary:they} decided to abandon the company and managed to transfer to a nearby starship.\"\r\n\r\n\"If [[SCN_MW,{SCN_MW.Callsign}]] decided to jump the boat and to do it so fast, then it's likely there was more than one conspirator among us. This way we likely got rid of them all\". Sumire concludes.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "executed as a spy and traitor"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

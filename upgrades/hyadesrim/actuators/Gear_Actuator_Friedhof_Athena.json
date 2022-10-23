@@ -14,8 +14,8 @@
         "Details" : "The Athena is an industrial size battle fist affixed permanently to the 'Mech's hand. It may be damaged and disabled, but it can be repaired.",
         "Icon" : "UixSvgIcon_specialEquip_Melee"
     },
-    "BonusValueA" : "+ 20 Melee Dmg.",
-    "BonusValueB" : "+ 20 Melee Stb.Dmg.",
+    "BonusValueA" : "+ 50 Melee Stb.Dmg.",
+    "BonusValueB" : "",
     "ComponentType" : "Upgrade",
     "ComponentSubType" : "NotSet",
     "PrefabIdentifier" : "",
@@ -27,42 +27,55 @@
     "CriticalComponent" : false,
     "statusEffects" : [
         {
-            "Description" : {
-                "Id" : "StatusEffect-BWCL-WidowsKissWalkSpeed",
-                "Name" : "RESOLVE REDUCED",
-                "Details" : "The Athena's attacks reduce resolve gain by 50%.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
-            },
-            "effectType" : "StatisticEffect",
-            "nature" : "Debuff",
             "durationData" : {
-                "duration" : 1,
-                "ticksOnActivations" : true,
-                "useActivationsOfTarget" : true,
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : 1,
+                "stackLimit" : -1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
-                "effectTriggerType" : "OnHit",
-                "effectTargetType" : "SingleTarget",
-                "showInTargetPreview" : true,
-                "showInStatusPanel" : true,
-                "hideApplicationFloatie" : false
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
             },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-Attack_DamageStabMelee-T1",
+                "Name" : "MELEE STABILITY DAMAGE INCREASED",
+                "Details" : "Melee attacks deal [AMT] more stability damage.",
+                "Icon" : "uixSvgIcon_equipment_ActuatorArm"
+            },
+            "nature" : "Buff",
             "statisticData" : {
-                "statName" : "MoraleBonusGain",
-                "operation" : "Float_Multiply",
-                "modValue" : "0.5",
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "Instability",
+                "operation" : "Float_Add",
+                "modValue" : "50.0",
                 "modType" : "System.Single",
                 "additionalRules" : "NotSet",
-                "targetCollection" : "NotSet",
+                "targetCollection" : "Weapon",
                 "targetWeaponCategory" : "NotSet",
                 "targetWeaponType" : "NotSet",
                 "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            }
+                "targetWeaponSubType" : "Melee"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
         }
     ],
     "ComponentTags" : {

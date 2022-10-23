@@ -30,11 +30,7 @@
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [
-                            "fp_choice_a",
-                            "fp_choice_b",
-                            "fp_choice_cancel"
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : null,
@@ -180,12 +176,12 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_sunkenHills_iTnd",
+                            "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "fleshForFantasy_1_captureBase",
+                                "fleshForFantasy_1_rescue",
                                 "UncleChandy",
                                 "MarianPirates",
                                 "6",
@@ -310,16 +306,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_lostCanyon_aBad",
+                            "value" : "mapGeneral_toxicMire_aBad",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "fleshForFantasy_2_attackDefend",
+                                "fleshForFantasy_2_captureEscort",
                                 "UncleChandy",
                                 "DevilsDisciples",
                                 "6",
-                                "ms_fp_fleshForFantasy_006_Mission",
+                                "ms_fp_fleshForFantasy_006_Talk",
                                 null,
                                 null,
                                 null
@@ -345,70 +341,9 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_fleshForFantasy_006_Mission",
-                "Name" : "Mission",
-                "Details" : "The 3rd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_grandeRiver_aWst",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "fleshForFantasy_3_defendBase",
-                                "UncleChandy",
-                                "ExpansesPirates",
-                                "6",
-                                "ms_fp_fleshForFantasy_007_Talk",
-                                null,
-                                null,
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_fleshForFantasy_007_Talk",
+                "Id" : "ms_fp_fleshForFantasy_006_Talk",
                 "Name" : "Talk",
-                "Details" : "Closing Conversation.",
+                "Details" : "flashpoint",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -443,7 +378,7 @@
                             "value" : "9c2afa36ea74cfa9768ff098",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -451,7 +386,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_fleshForFantasy_008_Complete",
+                            "value" : "ms_fp_fleshForFantasy_007_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -467,7 +402,129 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_fleshForFantasy_008_Complete",
+                "Id" : "ms_fp_fleshForFantasy_007_Mission",
+                "Name" : "Mission",
+                "Details" : "The 3rd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mmapGeneral_toxicMire_aBad",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "fleshForFantasy_3_defendBase",
+                                "UncleChandy",
+                                "ExpansesPirates",
+                                "6",
+                                "ms_fp_fleshForFantasy_008_Talk",
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_fleshForFantasy_008_Talk",
+                "Name" : "Talk",
+                "Details" : "Closing Conversation.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c2afa36ea74cfa9768ff099",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_fleshForFantasy_009_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_fleshForFantasy_009_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -503,7 +560,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_fleshForFantasy_009_A-Reward",
+                            "value" : "ms_fp_fleshForFantasy_010_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_fleshForFantasy",
@@ -558,7 +615,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_fleshForFantasy_009_A-Reward",
+                "Id" : "ms_fp_fleshForFantasy_010_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "A Branch rewards",
                 "Icon" : null

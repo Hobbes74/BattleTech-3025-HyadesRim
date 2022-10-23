@@ -28,7 +28,29 @@
             }
         ]
     },
-    "AdditionalRequirements" : [],
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_puttingOutAFire_complete"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Morale",
+                    "op" : "LessThan",
+                    "val" : 10,
+                    "valueConstant" : "10"
+                }
+            ]
+        }
+    ],
     "AdditionalObjects" : [
         {
             "Scope" : "SecondaryMechWarrior",

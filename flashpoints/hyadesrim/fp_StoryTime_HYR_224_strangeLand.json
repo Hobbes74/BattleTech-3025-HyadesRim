@@ -1,0 +1,66 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_224_strangeLand",
+        "Name" : "Stranger In A Strange Land",
+        "Details" : "Cat people ahoy! Bob Kurita/Dee J'oral FP. Final part of Uncle Chandy's arc.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_54.png"
+    },
+    "Weight" : 10,
+    "InternalName" : "strangeLand",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 6,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_backdoorMan_complete",
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_strangeLand_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_frobisher",
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"UncleChandy"
+    ],
+    "TargetFaction" : "RegulanPirates",
+    "AllowRefitTime" : false,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_strangeLand",
+    "UnitDropTonnageHint" : "",
+    "LanceDropTonnageHint" : "",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_strangeLand",
+    "FlashpointShortDescription" : "Commander {COMMANDER.LastName}, I've received a message from my journalist 'friend'. She has been able to track down a member of Alibaba's Thieves who saw the genetic labs herself in a world located in the nearby Deep Periphery. While I believe this to be a waste of your time and my money, J'oral is adamant that I repay her for what happened at Candiear so I'm sending the coordinates for you to investigate.",
+    "FlashpointDescriberCastDefId" : "castDef_UncleChandyDefault",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}
