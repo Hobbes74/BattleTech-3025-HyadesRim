@@ -2,14 +2,14 @@
   "idRef": {
     "id": "9cf54229a0472a8d59d7a0e9"
   },
-  "ui_name": "HYR_109_severalMonthsBefore",
+  "ui_name": "HYR_108_evilEye_2",
   "nodes": [
     {
       "idRef": {
-        "id": "9c3143d2d6a4860b5ef3f091"
+        "id": "9cd8cb7691048a04ab154553"
       },
       "index": 0,
-      "text": "<i>Hysteria</i>, what's so damn important that you forgot to say? I'm about to take a long zero-g bath after all those Infernos...\n\nWhere's Commander {COMMANDER.LastName} or the pilot? What do <i>you</i> want?",
+      "text": "Your mercenary company disobeyed direct orders and acted in gross violation of their contract, Mr. Oliveira.\n\nThis is not going to go unpunished, not this time.",
       "branches": [
         {
           "responseText": "",
@@ -19,7 +19,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c791cc59ab0dff82dd00523"
+            "id": "9c7c1ead33c78eb4e9628736"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -33,7 +33,7 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
+        "id": "InterstellarExpeditionsLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
@@ -41,13 +41,13 @@
       "actions": {
         "ops": [
           {
-            "functionName": "Play BattleTech Audio Event",
+            "functionName": "Set BattleTech Viewscreen Image",
             "args": [
               {
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "GConv-BeginMusic-GC_200_IN_EXILE",
+                "string_value": "nautilusmap",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -87,13 +87,13 @@
             ]
           },
           {
-            "functionName": "Set BattleTech Viewscreen Image",
+            "functionName": "Play BattleTech Audio Event",
             "args": [
               {
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "kitten",
+                "string_value": "GConv-BeginMusic-GC_130_BENEFACTOR",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -101,14 +101,14 @@
           }
         ]
       },
-      "comment": ""
+      "comment": "GConv-BeginMusic-GC_130_BENEFACTOR"
     },
     {
       "idRef": {
-        "id": "9c4d3a1a4636a6eb6db28ac8"
+        "id": "9ca817a4bdd933f4e322ab3c"
       },
       "index": 1,
-      "text": "Captain Murray, I'm alone on the bridge and I've come to collect your debt.\n\n If it wasn't for my help, you'd never have been able to escape alive from [[DM.BaseDescriptionDefs[LoreFieryPlains],Fiery Plains]] after the company captured you.",
+      "text": "Dr. Johannes, your heavy treatment of mercenaries is well known and you were also responsible for choosing that specific contract, with the no salvage and referring specifically to the [[DM.Factions[faction_EvilEye],Eye]].\n\nThe [[DM.Factions[faction_GhostRiders],Ghost Riders]] saw an opportunity to get payback and took what you wanted from the Eye.",
       "branches": [
         {
           "responseText": "",
@@ -118,7 +118,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c999ced1413d29b864b6f22"
+            "id": "9c4e02150e2451d0ea70e3c4"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -134,16 +134,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b2d120623035d017000034",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c6bac066786290024ba7cd5"
+        "id": "9cec4e92bb693ea226332eca"
       },
       "index": 2,
-      "text": "You're here to collect <i>what</i>??? Is this a joke?\n\n<i>Svolotsch</i>, spare me from your begging. I never asked for your help and didn't need it. I owe you nothing dear lady.",
+      "text": "What are you accusing me from, Mr. Oliveira?\n\nI'd be very careful in choosing your next words.",
       "branches": [
         {
           "responseText": "",
@@ -153,7 +153,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c6496a93a7697b51b123e03"
+            "id": "9cc14d1c7e6d034e854f1fd7"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -167,7 +167,7 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
+        "id": "InterstellarExpeditionsLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
@@ -177,10 +177,10 @@
     },
     {
       "idRef": {
-        "id": "9c7b3683633350903a94b55b"
+        "id": "9c5261e3918a6af03099b027"
       },
       "index": 3,
-      "text": "I say House Marik would have gotten you otherwise if it wasn't for my help. \n\nDr. Murad didn't remember seeing you among the rest of the kittens inside the ComStar facility at the [[DM.BaseDescriptionDefs[LoreTheTwins],Twins]], but I did notice you back then and kept quiet. Which might have made Commander {COMMANDER.LastName} decide differently on whether to turn you over to Marik or not.",
+      "text": "I've seen the survey results, the hyperbolic object mentioned in the contract has been left alone since it was first discovered by [[DM.Factions[faction_InterstellarExpeditions],Interstellar Expeditions]] decades ago.\n\nAnd while its interstellar origin and materials were judged as 'scientifically interesting', the same could be said of thousands of such other reports gathered by IE.",
       "branches": [
         {
           "responseText": "",
@@ -190,7 +190,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cc018c70d0b8427978a5cc6"
+            "id": "9c579e1e89eea8091d42b70f"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -206,16 +206,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b2d120623035d017000034",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9ca952d10c2674ed4a17abdc"
+        "id": "9cfc9e5d9e76acc9ca4f5e5f"
       },
       "index": 4,
-      "text": "Oh, but I do quite understand, <i>Lady Arano</i>. \n\nSee your Highness, one of my kittens is of [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigan]] origin and he also recognized you when we captured and held hostage the doctor's team at the ComStar facility. ",
+      "text": "So that was clearly just the relevant cover for whatever your dealings down there concerning the Eye.\n\nAnd I also seem to recall seeing lately some new faces at the [[DM.BaseDescriptionDefs[LoreDumassas],Dumassas]] office, on their way to meet with you.",
       "branches": [
         {
           "responseText": "",
@@ -225,7 +225,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ce5efb04e447c92acfb42e9"
+            "id": "9cbf2c82c41ddd12866c32ac"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -238,21 +238,19 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
-      },
+      "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c87cbbedae69e06f2cbbc7a"
+        "id": "9c97840fe27b36ecc1f1ec00"
       },
       "index": 5,
-      "text": "But since I was more interested in your commander cooperating, I chose not to reveal this knowledge with anyone else... until now. \n\nEven though I hear the bounty on your lovely head is still quite big... any leads on you would be well paid. So, who's actually in debt on this exchange <i>pizdets</i>... hm?",
+      "text": "Enough of your baseless speculation, or I'll have it reported to the board of directors.\n\nAnd unless you have proof of your claims, you're looking at a probation at the minimum as reprimand.",
       "branches": [
         {
           "responseText": "",
@@ -262,7 +260,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ca5778e7d16e1a020863783"
+            "id": "9cd5545176d49b5ccf64a82f"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -276,7 +274,7 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
+        "id": "InterstellarExpeditionsLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
@@ -286,10 +284,10 @@
     },
     {
       "idRef": {
-        "id": "9c41d4cd0c43c0f64297faa1"
+        "id": "9c39e60cf7f03b835ef864fb"
       },
       "index": 6,
-      "text": "Then that makes you even more suited for what I'm going to propose. \n\nI need to get out of this company. There's nothing left here for me. Take me into your [[DM.BaseDescriptionDefs[LoreTortugaPirates],Kittens]]. You know that it is impossible to keep a MechWarrior caged as I've been for months. I'll repay you if necessary.",
+      "text": "And your mercenaries might escape the board's judgment but I'm still IE's Rimward coordinator, so you can be assured that there's going to be payback involved.\n\nGoodbye, Mr. Madeira. ",
       "branches": [
         {
           "responseText": "",
@@ -299,7 +297,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cda39b6d49410eba679f31e"
+            "id": "9c7e409bca0f26d4abe210fc"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -312,19 +310,21 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "InterstellarExpeditionsLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b2d120623035d017000034",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c0db97ac73f1bcb65264dd5"
+        "id": "9cc37be468b5f6834d86897b"
       },
       "index": 7,
-      "text": "<i>Da</i>, <i>da</i>, <i>da</i>, why shouldn't I just turn you to the [[DM.Factions[faction_AuriganDirectorate],Directorate]] once you join us? It would be easier for us to not have to deal with bounty hunters, yes?\n\nI also noticed that everytime you delivered my meals, while I was held captive in your DropShip, there would be a faint smell of booze in the air after you left. ",
+      "text": "[HPG link terminated.]",
       "branches": [
         {
           "responseText": "",
@@ -334,7 +334,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c52175048212194bc089c3c"
+            "id": "9c17409078f7b5a8c3b5c940"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -347,21 +347,19 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
-      },
+      "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59f8f0296230359c2100082c",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c9e3b4db1039c6d2b06f6e9"
+        "id": "9c77fb844f225adcd837feaf"
       },
       "index": 8,
-      "text": "Several of your crew were popping [[DM.BaseDescriptionDefs[LorePianPian],pianpians]] while guarding us. \n\nIs there a problem with my personal habits?",
+      "text": "[HPG link initiated.]",
       "branches": [
         {
           "responseText": "",
@@ -371,7 +369,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c745f59d0515704c9fb9136"
+            "id": "9c1ce950d2ecea87c6030868"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -387,16 +385,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b2d120623035d017000034",
+      "speaker_override_id": "59f8f0296230359c2100082c",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c7f15b492938b6fa69cf569"
+        "id": "9cb60b72c5a9ac3b2bf7a965"
       },
       "index": 9,
-      "text": "Just made me unhappy that you never bothered bringing me some as well... your antisocial skills are slightly above annoying.\n\nIf your current choice is between boredom or death... we Kittens aren't interested, <i>da</i>? Good, back to zero-g bath now...",
+      "text": "How did your conversation go, Mr. Madeira?",
       "branches": [
         {
           "responseText": "",
@@ -406,7 +404,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ca8db3f0a4b0ee09744afc1"
+            "id": "9cb7c9b43c235f1bc7173290"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -420,7 +418,7 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
+        "id": "GhostRidersLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
@@ -430,10 +428,10 @@
     },
     {
       "idRef": {
-        "id": "9c8a5ae180da951e7f7444e7"
+        "id": "9cf63e556fdb51563d8b903c"
       },
       "index": 10,
-      "text": "Others will come for you and we don't need the extra attention. \n\nAnd you're not exactly the type of pirate we're recruiting right now. We need something else other than good looks to go on a date together.",
+      "text": "As expected, Commander Johnson.\n\nDr. Johannes is mad at {COMPANY.CompanyName}, you and the Eye, and doesn't suspect me.",
       "branches": [
         {
           "responseText": "",
@@ -443,7 +441,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ca7e3a098f97b02b9acd396"
+            "id": "9cb94a275fb0d37d2beb6064"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -456,21 +454,19 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
-      },
+      "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cccd78091b168443e1b7d63"
+        "id": "9c0603a86bd4b4713d1cad0f"
       },
       "index": 11,
-      "text": "When faced between your choices, losers will quit and claim the [[DM.BaseDescriptionDefs[LoreFiveCardDrax],Drax]] deck was stacked.\n\nBut a true <i>MechWarrior</i> will find a different path.\n\n",
+      "text": "And the Ghost Riders are done getting pay back from Johannes and IE for good.\n\nThat was the whole point for us, and now that we've given you what you wanted from the Eye, we're even.\n",
       "branches": [
         {
           "responseText": "",
@@ -480,7 +476,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c4ee1218f38d20ccd08bebb"
+            "id": "9c1a3ef5b5bdb8712d0f2a76"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -494,7 +490,7 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
+        "id": "GhostRidersLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
@@ -504,10 +500,10 @@
     },
     {
       "idRef": {
-        "id": "9c005f635d48b8ce22261eca"
+        "id": "9cf399301c3a5bd1029f8a8f"
       },
       "index": 12,
-      "text": "You can have a different destiny, Kamea. \n\nBut to achieve it, you need to become a MechWarrior again first.",
+      "text": "Understood Commander Johnson, where will you go now?\n\nHas the [[DM.BaseDescriptionDefs[LoreMRB],MRB]] cleared you yet?",
       "branches": [
         {
           "responseText": "",
@@ -517,7 +513,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c10d6f4bfc20747b98de310"
+            "id": "9c09f9bd9f81dfc1bc659c8e"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -530,21 +526,19 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
-      },
+      "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cfeea0fef01c4cd9cf572bb"
+        "id": "9c91b48948b56a4708472b4b"
       },
       "index": 13,
-      "text": "A MechWarrior? I don't even have a BattleMech anymore.",
+      "text": "Yes they have, and we're going anywhere away from the [[DM.BaseDescriptionDefs[LoreHyadesRim],Hyades Rim]], Mr. Oliveira.\n\nWe've seen greed and violence before but there seems to be something cursed about this place. ",
       "branches": [
         {
           "responseText": "",
@@ -554,7 +548,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c7c9dd56f2ebd82ec68704a"
+            "id": "9c278927a6ad8c1511366106"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -567,19 +561,21 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "GhostRidersLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b2d120623035d017000034",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c0cbe7c3473d9527dc63d2f"
+        "id": "9c1bef57c6c88eee74c71820"
       },
       "index": 14,
-      "text": "It's more than a BattleMech that you need. \n\nYou need your personal tale. The one that you're remembered for.",
+      "text": "So we'll be returning closer to the Inner Sphere and try either [[DM.Factions[faction_Davion],Davion]] or [[DM.Factions[faction_Liao],Liao]], or even some of the wealthier [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]] worlds, just not the [[DM.Factions[faction_TaurianConcordat],Taurians]] after what we've seen them capable of.\n\nAnd if you need a mercenary unit again, just contact us Mr. Madeira.\n\n",
       "branches": [
         {
           "responseText": "",
@@ -589,7 +585,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ce976fbc5beb42c39bcb5eb"
+            "id": "9c5a4ac48dec7f0e1b7dc5d3"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -603,7 +599,7 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
+        "id": "GhostRidersLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
@@ -613,10 +609,10 @@
     },
     {
       "idRef": {
-        "id": "9c24184307a64c97201c6580"
+        "id": "9c23f61e79835f5925a5b9d4"
       },
       "index": 15,
-      "text": "Really? And would you like to tell me one of yours, Captain Murray?\n\nTo <i>inspire</i> me?",
+      "text": "Very well, thank you Commander Johnson and good luck with your travels.",
       "branches": [
         {
           "responseText": "",
@@ -626,7 +622,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c24ca56aa8808d5b5e9208c"
+            "id": "9c8f069ed26b8c3cc9223c62"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -642,90 +638,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b2d120623035d017000034",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c277bf5fade1a61d118e85c"
+        "id": "9c049b89a3e10a76fb474ae5"
       },
       "index": 16,
-      "text": "No, <i>svolotsch</i>, you'll need to find your own. \n\nBut I'll tell you one you'll be interested in and that might inspire you. ",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 17,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9c1de253e7132c955f2ccb65"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
-      },
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9cdc7ead68fb02becbe9ef9b"
-      },
-      "index": 17,
-      "text": "It's called a 'Tale of 1001 BattleMechs' from the [[DM.BaseDescriptionDefs[LoreTortugaDominion],Tortuga Dominion]]...",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 18,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9c7004fa73d47ccaa9b63b3b"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
-      },
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9cc74ed50101fbfab64b9fba"
-      },
-      "index": 18,
-      "text": "...and many have died shortly after listening to this tale.",
+      "text": "[HPG link terminated.]",
       "branches": [
         {
           "responseText": "",
@@ -735,7 +657,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c02c0b711a97357d284239f"
+            "id": "9c6cc11765e42b4354cd1f49"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -748,12 +670,10 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "TortugaPirateLeaderDefault"
-      },
+      "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59f8f0296230359c2100082c",
       "actions": null,
       "comment": ""
     }
@@ -767,7 +687,7 @@
       "hideIfUnavailable": true,
       "onlyOnce": false,
       "idRef": {
-        "id": "9cb87fcaa50bbc920b154dbc"
+        "id": "9c3b8cb68b4a4ab3d203f530"
       },
       "inputBypass": false,
       "auxiliaryLink": false,

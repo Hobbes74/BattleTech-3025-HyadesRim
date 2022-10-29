@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "We've got an interesting opportunity for you, Commander. We've recently detected a major engine signature on the planet, probably an assault-class 'Mech. We can't have an assault-class {TEAM_TAR.FactionDef.Demonym} 'Mech that big wandering around loose, and we'd like you to handle it. The interesting part is that we've also detected <i>another</i> assault power-up, and it's a different 'Mech entirely, and it's closing with the target. It's possible you can just swoop in and pick up the pieces. We're prepared to offer generous salvage terms.",
-    "longDescription" : "Taking down assault 'Mechs isn't going to be easy, Commander, but if we can play them off against each other, we might make out quite well on this one.",
-    "salvagePotential" : 20,
+    "shortDescription" : "There are clearly two different groups operating on this world and it looks as if they're about to get violent with one another. The most likely scenarios are that they've disagreed with the division of the profits or someone decided to backstab the other. Either way, this gives us an opportunity to bait them and learn who else is operating on Frobisher besides Ali Baba's Thieves.",
+    "longDescription" : "Sumire also says that there's at least one assault 'Mech down there, so be careful fighting the Yang's Giant 'Mech Bunny, as she called it.",
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "8d7e4513-f6c4-4914-a08f-d7baa89672be"
             },
-            "title" : "Destroy Enemy Forces",
+            "title" : "Destroy Pirate Forces",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -1294,14 +1294,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're near where the engine signature was detected, Commander.",
+                    "words" : "That's as closer as I can get you undetected to those 'Mech signatures, XO.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
@@ -1310,7 +1310,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The enemy unit should be in this area. Remember that this is a <i>big</i> 'Mech we're tangling with here, so be careful.",
+                    "words" : "Understood. Commander, the thieves should be around this area. Let's take them out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1335,7 +1335,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Good kill, Commander. Let's get out of here and see what we've recovered.",
+                    "words" : "We've taken down both Ali Baba's Thieves and the Spartakians.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1343,6 +1343,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The lab area also seems clear of contacts in the sensors.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "It's time we investigate the lab, we can't waste more time.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1665,14 +1697,62 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Our cat's paw is on the field, Commander. Let them take the brunt of the fire and we should be able to clean up whoever's left alive.",
+                    "words" : "Hey Ali, who are your friends? What's the meaning of this?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_ExpansesPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Was about to ask you the same question. What are you trying to pull?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_RegulanPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Someone at Candiear betrayed us to these mercs!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ExpansesPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They are attacking us! You must have brought them here!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_RegulanPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
@@ -2233,7 +2313,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's a dropship coming in fast and low, Commander. I'm seeing {TEAM_HOST.FactionDef.Demonym} markings.",
+                    "words" : "{COMPANY.CompanyName}, incoming DropShip detected! It's the Spartakians.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2249,7 +2329,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The other assault 'Mech, joining the party, I'm guessing. It's about to get hot down there.",
+                    "words" : "Crap, they saw us coming and are making a move.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2711,7 +2791,7 @@
     "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -3263,7 +3343,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
@@ -4752,7 +4832,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,

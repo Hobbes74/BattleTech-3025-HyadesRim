@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "A {TEAM_EMP.FactionDef.Demonym} DropShip went down on this empty rock, and shortly thereafter we detected a distress signal from the surface. By the time we arrived, the crew had been taken captive by a heavily armed {TEAM_TAR.FactionDef.Demonym} force. We don't have an in-system military presence large enough to mount a hostage rescue mission, so we're looking for a competent mercenary company to do it. We need you to reach the facility where the crew is being held, destroy the {TEAM_TAR.FactionDef.Demonym} units guarding them, and escort them to safety.",
-    "longDescription" : "Assuming the hostages are still alive, we're going to have a hell of a time keeping them that way.",
+    "shortDescription" : "The vehicles carrying Lord Yamaguchi and his companion have stopped at another tavern, it appears he somewhat convinced thore Disciples kidnappers to release them. Which wouldn't unseen before but it's also likely that the other Devil's Disciples will disagree with the idea, so you need to reach their location, help them board the vehicles and then escort Lord Yamaguchi and his date to safety.",
+    "longDescription" : "I'm wondering if we should even be intervening, since Bob seems to have things under control.",
     "salvagePotential" : 24,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "7db60871-d4ae-423d-9c82-fb40ca083372"
             },
-            "title" : "Escort Convoy to Safety and Escape",
+            "title" : "Escort Bob and J'oral to Safety",
             "description" : "Capture Convoy Rally Point and Escort Convoy to Safety",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -62,8 +62,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "acf88d1b-d09f-4db7-b7ea-9f48a426075c"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Blocking Force",
-            "description" : "The objective to destroy the force of enemies which will try andstop the player from reaching the rally point.",
+            "title" : "Destroy Rogue {TEAM_TAR.FactionDef.Demonym}s ",
+            "description" : "The objective to destroy the force of enemies which will try and stop the player from reaching the rally point.",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -100,7 +100,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "5f01500a-5087-4a6f-86d8-9e0450bc93eb"
             },
-            "title" : "Secure the Convoy Rally Point",
+            "title" : "Secure Bob's Convoy",
             "description" : "Secure the Convoy Rally Point",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -112,7 +112,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "371c6027-0869-4e03-8d70-192a8f441d70"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Disciples' Reinforcements",
             "description" : "The objective to destroy enemy units which will attempt to block the convoy from reaching its destination.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -150,7 +150,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d4d20990-fbeb-4f6e-81b7-7e94bba6a2c5"
             },
-            "title" : "Escort Convoy to Destination",
+            "title" : "Escort Bob's Convoy",
             "description" : "Escort Friendly units to their Destination",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -344,7 +344,87 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm getting radio chatter from the facility, Commander. It sounds like the crew has staged an uprising.",
+                    "words" : "<hic> Commander {COMMANDER.LastName}, glad you're here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KuritaRepDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I've just paid the check for all my new friends and we're ready to leave.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KuritaRepDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I've convinced these fellows but the rest of their company didn't accept the deal <hic>.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KuritaRepDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You did what?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Just convinced them that it was in their best interests to let us go. Well, she did actually...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KuritaRepDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Whatever you did, we'll take it. Get your vehicles ready to leave.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -360,7 +440,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We need to get to their location and secure the area so they can make their escape.",
+                    "words" : "Won't be that easy, XO. Several signatures are approaching the location.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -370,23 +450,23 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Expect serious resistance, now that {TEAM_TAR.FactionDef.Demonym} forces are alert for a rescue attempt.",
+                    "words" : "I guess some of them didn't like the deal...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KuritaRepDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -401,7 +481,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The crew is safely back in orbit, Commander. Well done.",
+                    "words" : "Bob and his date are safe.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Let's get them back to the <i>Jade Dream</i> and hopefully this whole affair will be over.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -426,14 +522,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Dammit. That fell apart in a hurry. Let's debrief back in orbit, Commander.",
+                    "words" : "Yamaguchi, you useless piece of crap!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -451,7 +547,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Commander. The enemy had deployed reinforcements and they are inbound. Expect increased resistance. ",
+                    "words" : "More Disciples detected!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -476,7 +572,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "More contacts on the sensors, Commander. They're moving to intercept the escaping hostages.",
+                    "words" : "Commander, we're detecting more contacts.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -484,6 +580,54 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They're on a bounty hunter contract for either dead or alive.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KuritaRepDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And how would you know this?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "His new friends told him Darius.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -526,14 +670,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Looks like the crew has seized some light vehicles to make their escape. We'll need to run interference for them till they reach their pickup point.",
+                    "words" : "Commander <hic>, we are ready to move on your order.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KuritaRepDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -542,14 +686,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep in mind that the convoy will try to stay near you for protection. Continue advancing to get them to the extract point!",
+                    "words" : "I don't think it's a good idea for Bob to get behind the wheel.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -611,9 +755,9 @@
     ],
     "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -999,7 +1143,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -2,
+                "lanceDifficultyAdjustment" : -1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -1317,7 +1461,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

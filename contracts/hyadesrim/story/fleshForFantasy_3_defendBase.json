@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Hostile {TEAM_TAR.FactionDef.Demonym} forces have been making increasingly bold incursions toward one of our processing facilities on {TGT_SYSTEM.name}. This facility represents a substantial cash investment for {TEAM_EMP.FactionDef.ShortName}, and its destruction would be both politically and financially disastrous. We need a capable mercenary company to defend the site. Payment will be remitted upon the repulsion of all hostile {TEAM_TAR.FactionDef.Demonym} units.",
-    "longDescription" : "The {TEAM_EMP.FactionDef.Demonym} facility must be running on incredibly narrow margins if they can't afford to protect it themselves. Anyway, Commander, this should be very straightforward.",
+    "shortDescription" : "J'oral and Bob checked in at a local mountain resort, then they gave an interview from it to the local media announcing the kidnapping attempt. We can assume that more of these bounty hunters will come look for them, so we'll need to protect Bob, she has already taken off to watch the defense from a safe location.",
+    "longDescription" : "According to Roxetta, it took about five minutes for the reporter to convince him to agree to be the bait.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -59,7 +59,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ca677a4d-19c8-4d0c-9c5e-3ed712081336"
             },
-            "title" : "Defend Base from {TEAM_TAR.FactionDef.Demonym} Attackers",
+            "title" : "Protect Bob from {TEAM_TAR.FactionDef.Demonym} Attackers",
             "description" : "Defend Base from Attackers",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -71,7 +71,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e4ac925-d95a-4019-aeb0-0aa553830f46"
             },
-            "title" : "Destroy the Enemy Vanguard",
+            "title" : "Destroy the Spartakian Vanguard",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -147,7 +147,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4bfadebf-a277-4ddb-8a36-f70ab7c0c68c"
             },
-            "title" : "Hold Out for Reinforcements",
+            "title" : "Hold Out Until Evac",
             "description" : "Hold Out for Reinforcements",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -197,7 +197,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "46d1c317-2344-4e53-aa9f-d9769edbb89d"
             },
-            "title" : "Hostile Units Inbound",
+            "title" : "Spartakian Units Inbound",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -317,7 +317,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All right, Commander, we've been tasked with defending this installation.",
+                    "words" : "Bob is hiding on the cellar of that resort.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -333,14 +333,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We have scattered reports of incoming hostiles from multiple directions.",
+                    "words" : "That figures. Although I'd be trying to leave this place right now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "4d39e72c-4f99-4cc6-8fe0-d4d18cad0063",
@@ -349,7 +349,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "They'll be targeting the structures; intercept them before they bring any down. Good luck.",
+                    "words" : "From the looks of it, either he or J'oral must have made someone very angry.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -360,6 +360,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dafd0d98-c88a-4f90-b137-4fe5ed94ebbb",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Hold out and protect Bob until she figures out who's behind this attack, then we can leave.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -374,7 +390,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Excellent work, Commander - the hostiles are clear and our facility is secure.",
+                    "words" : "Bob has exited the resort and is safe, we can now leave, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -399,14 +415,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "No good, Commander. Stand by for extraction and we'll get you out of there.",
+                    "words" : "Oh no!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -449,14 +465,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Warning commander, sensors are reading multiple contacts approaching from multiple vectors. Looks like the attacking force has brought reinforcements. ",
+                    "words" : "We're detecting more incoming contacts.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -471,17 +487,17 @@
                 "EncounterObjectGuid" : "d382339d-0cc4-483f-b64d-4a93f3009f7e"
             },
             "name" : "Dialogue_BuildingDamaged",
-            "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyStruct-Damaged",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Be advised, some of the target buildings are sustaining damage. Your mission is to keep them standing. ",
+                    "words" : "Commander, I thought you were supposed to prevent this?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -506,7 +522,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -524,14 +540,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we're down to just one building left. If they bring it down, this mission is over.",
+                    "words" : "Commander, I'm at the end here!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_UncleChandyDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -549,14 +565,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyReinforcements",
             "dialogueContent" : [
                 {
-                    "words" : "Mercenary Commander, we've received word of the assault on your position. Reinforcements are incoming, they are about halfway there. Maintain position and you will be relieved and reinforced shortly. ",
+                    "words" : "{COMPANY.CompanyName}, J'oral has hired help. Thank me later, now save Ronny.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_DeeJoralDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -652,9 +668,9 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 1,
-    "negotiatedSalvage" : 0,
-    "excludedFromProceduralGeneration" : false,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
+    "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
             "EncounterObjectGuid" : "8b14e146-86c5-4221-b5c7-63632376a7db"
@@ -988,7 +1004,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

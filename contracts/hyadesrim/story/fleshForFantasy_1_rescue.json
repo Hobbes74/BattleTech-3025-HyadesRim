@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Commander, there's been a complication involving one of Lord Yamaguchi's friends, whom you might have met already before during your stay at Crawford's Delight. This friend went for a meeting with the Legion of the Damned several days ago to follow a lead about the local cat people rings and hasn't returned. It is imperative that you find and rescue MC so that the Spreading The Glories Inc. documentary can continue as planned.",
-    "longDescription" : "And meanwhile Bob is around in what appears to be a major party. Typical, I guess.",
+    "shortDescription" : "Commander, there's been a complication involving one of Lord Yamaguchi's friends, whom you might have met already before during your stay at Crawford's Delight. This friend, Master Control, went for a meeting with the Legion of the Damned several days ago to follow a lead about the local cat people rings and hasn't returned. It is imperative that you find and rescue MC so that the Spreading The Glories Inc. documentary can continue as planned.",
+    "longDescription" : "And meanwhile Bob is attending what appears to be a mega party with that media celebrity. Typical, I guess.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -56,7 +56,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Recover the Agent by Securing the Facility",
+            "title" : "Investigate First Location",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -92,9 +92,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
             },
-            "title" : "The 'Mech Carrying the Operative Must Survive",
+            "title" : "The 'Mech Must Survive",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -104,9 +104,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
             },
-            "title" : "Recover the Data by Securing the Secondary Facility",
+            "title" : "Investigate Second Location",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -128,9 +128,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "a9f1746b-e990-4c8f-90be-3c4f229da58f"
             },
-            "title" : "The 'Mech carrying the data must survive",
+            "title" : "The 'Mech carrying MC must survive",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -232,7 +232,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're coming up on the target facility, Commander.",
+                    "words" : "Commander, there are two locations you need to check for MC.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -248,7 +248,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "There it is. Move up, secure the location, and pick up the agent.",
+                    "words" : "First, we'll need to check these buildings.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -264,7 +264,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Get her to the evac zone, and get the hell out of there.",
+                    "words" : "And the other one is this location. Once you have MC, move to evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -280,7 +280,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander. Oliveira out.",
+                    "words" : "Should be straight forward but considering Bob, you never know.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -305,7 +305,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The agent is away. Good work, Commander. Let's go get paid.",
+                    "words" : "Wazzup! Finally, time to leave this place!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MCDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "MC is safe. Let's get him back to the <i>Jade Dream</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,14 +346,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm pulling the plug, Commander. No way to salvage this mess.",
+                    "words" : "Lord Yamaguchi will not like to hear this, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_RoxettaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,7 +371,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The agent is on her way out. Hold position until she's safely aboard, and then get out of there.",
+                    "words" : "This area looks clear, no sign of MC on this location.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "He must be at the secondary location then, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -402,17 +434,17 @@
                 "EncounterObjectGuid" : "62f3ce2e-81e0-4082-952c-63d174c82d96"
             },
             "name" : "Dialogue_RecoveringUnitDamaged2",
-            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetUnderFire-Sec",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "[GENERIC VO] The secondary asset is sustaining damage, Commander!",
+                    "words" : "Oy, oy oy! I mean bad, bad, bad!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MCDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -427,10 +459,10 @@
                 "EncounterObjectGuid" : "5cfa1621-2a66-4321-a749-9649c9632db0"
             },
             "name" : "Dialogue_RecoveredTarget1",
-            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "[GENERIC VO] The asset has been recovered, Commander. Good work. ",
+                    "words" : "MC definitely must be at the secondary location.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -452,10 +484,10 @@
                 "EncounterObjectGuid" : "8b2c266f-ac37-4f07-acd2-290228af6e04"
             },
             "name" : "Dialogue_RecoveredTarget2",
-            "overrideDialogueBucketId" : "DialogBucketDef_Rescue_AssetInHand-Sec",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "[GENERIC VO] The secondary asset has been recovered, Commander.",
+                    "words" : "MC has been freed and he's boarding our 'Mech.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -480,7 +512,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've lost the data, Commander. We'll send in a recovery team later; for now, focus on getting that agent to safety.",
+                    "words" : "We've lost our 'Mech, Commander!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -731,7 +763,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,

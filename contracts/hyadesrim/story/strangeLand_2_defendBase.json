@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We have an urgent assignment that we'd like your assistance with, Commander. We have a secret listening post here on {TGT_SYSTEM.name}, and we've just learned that {TEAM_TAR.FactionDef.Demonym} agents have discovered the base's location. We need time to transmit all the data we've gathered to a DropShip in orbit, but they're already advancing on the facility. Worse, we're detecting an engine signature from an assault-class 'Mech closing on the base's location. We need you to drop immediately and protect that base until we can get the data transmitted.",
-    "longDescription" : "We're going to keep an <i>assault 'Mech</i> from destroying a facility, without any ground intel. This seems like a really terrible idea, Commander.",
-    "salvagePotential" : 20,
+    "shortDescription" : "After we've destroyed both enemy forces, Dr. Murad and her team are ready to deploy and investigate the genetic lab that Ali Baba Thieves seemed to be guarding. But we are already detecting additional 'Mechs approaching the site so we'll need to buy her time to find out what exactly the Star League was doing at that facility.",
+    "longDescription" : "Since the thieves are so interested in recovering this facility, something valuable must be down there.",
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -109,7 +109,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "240577eb-b4b0-43b7-b2af-a94d692a022a"
             },
-            "title" : "All target buildings must survive",
+            "title" : "All lab buildings must survive",
             "description" : "Optional objective to keep ALL target structures intact.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -387,7 +387,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander, they're coming. Prepare to defend Dr. Murad until she evacuates and you all can leave.",
+                    "words" : "Commander, they're big and they're coming. Prepare to defend Dr. Murad until she evacuates and you all can leave.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -412,7 +412,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Dr. Murad are you alright?",
+                    "words" : "Dr. Murad, are you alright?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -442,18 +442,41 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
-            },
-            "name" : "Dialog_MissionFailure",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
+                },
                 {
-                    "words" : "What a damn disaster. Let's debrief back in orbit.",
+                    "words" : "Farah, what have you found down there?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We should be alright but have Yang prepare a full level decontamination. We discovered a frozen human body used for testing.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You can give us the full details later. Let's take no risks on this one.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -472,13 +495,38 @@
         },
         {
             "dialogue" : {
+                "EncounterObjectGuid" : "d3d33d95-9ed7-4686-b9eb-954ebe51cc02"
+            },
+            "name" : "Dialog_MissionFailure",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "We barely made it out alive but lost everything. What a disaster!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
                 "EncounterObjectGuid" : "37095331-664a-4ccd-b09a-8693f0ea6653"
             },
             "name" : "Dialogue_Interrupt_CapturedTurrets",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Argo, my engineers are powering the turrets up now. The APCs will scatter and provide support.",
+                    "words" : "<i>Hysteria</i>, my engineers are powering the turrets up now. The APCs will scatter and provide support.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -519,14 +567,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Warning commander, sensors are reading multiple contacts approaching from multiple vectors. Looks like the attacking force has brought reinforcements. ",
+                    "words" : "Hey, there are more Spartakians coming our way. I mean, your way, Commander!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -551,7 +599,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -569,14 +617,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyStruct-Destroyed",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, a target building has been demolished. Ensure the integrity of the remaining buildings.",
+                    "words" : "Commander, one of the lab's building has been demolished. Ensure the integrity of the remaining buildings.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -594,7 +642,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, there's only one target structure left. If we lose it, we've blown the contract. You have to draw their fire somehow.",
+                    "words" : "Commander, we need to protect Dr. Murad. If we lose that last building, there will be nothing left of the lab.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -619,14 +667,30 @@
             "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyReinforcements",
             "dialogueContent" : [
                 {
-                    "words" : "Mercenary Commander, we've received word of the assault on your position. Reinforcements are incoming, they are about halfway there. Maintain position and you will be relieved and reinforced shortly. ",
+                    "words" : "Almost done, we're getting our stuff ready to leave.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Understood, Farah. We'll be ready to evac you all.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -644,7 +708,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Argo, this is {TEAM_EMP.FactionDef.Demonym} local command. Our turrets have been disabled by sabotage.",
+                    "words" : "<i>Hysteria</i>, this is {TEAM_EMP.FactionDef.Demonym} local command. Our turrets have been disabled by sabotage.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -729,9 +793,9 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,

@@ -83,10 +83,23 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_341_FAMILY_REUNION",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
-      "comment": ""
+      "comment": "GConv-BeginMusic-GC_341_FAMILY_REUNION"
     },
     {
       "idRef": {
@@ -583,13 +596,13 @@
         "id": "9c0ed7bc7aea6567d2b00381"
       },
       "index": 15,
-      "text": "Aye, aye, {COMMANDER.Callsign}.\n\nYang, start prepping our best lightest 'Mech ready for Commander {COMMANDER.LastName} to use.",
+      "text": "Aye, aye, {COMMANDER.Callsign}.\n\nYang, start prepping 'Mech Bay one, Commander {COMMANDER.LastName} can later choose which 'Mech to deploy.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 16,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -610,6 +623,41 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c7a96737c0bc9173ee1b322"
+      },
+      "index": 16,
+      "text": "Roger that, XO.\n\nCommander, we'll move your 'Mech to the first slot before contract starts, because all other bays will be offiline under maintenance.",
+      "branches": [
+        {
+          "responseText": "Understood Yang, will do that now.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c235e6ab7eeae8ddffbab04"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     }

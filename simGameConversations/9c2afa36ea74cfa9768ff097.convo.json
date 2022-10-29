@@ -12,7 +12,7 @@
       "text": "Wazzzzz uppp, Commander!\n\nHow's it kicking? Nice rescue back there, <i>to-sho</i>!",
       "branches": [
         {
-          "responseText": "\"To-sho'?",
+          "responseText": "'To-sho'?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 1,
@@ -85,10 +85,23 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_120_CONTACT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
-      "comment": ""
+      "comment": "GConv-BeginMusic-GC_120_CONTACT"
     },
     {
       "idRef": {
@@ -276,7 +289,7 @@
         "id": "9c32cacd84619d6139b420df"
       },
       "index": 6,
-      "text": "A Davion sympathizer of the Draconis Combine?\n\nThose family meetings must have gotten tense.",
+      "text": "A Davion sympathizer of the Draconis Combine?\n\nThose family gatherings must be fun.",
       "branches": [
         {
           "responseText": "",
@@ -311,7 +324,7 @@
         "id": "9c05e5d1ba14eca07dfe7651"
       },
       "index": 7,
-      "text": "MC, what were you doing exactly for this cat people holovid report that Lord Yamaguchi is doing?",
+      "text": "MC, what are you doing exactly for this cat people holovid report that Lord Yamaguchi is doing?",
       "branches": [
         {
           "responseText": "",
@@ -383,7 +396,7 @@
         "id": "9c6d8bf8e3e4b254df352711"
       },
       "index": 9,
-      "text": "Chandy had the idea of bringing in Dee J'oral to increase the credibility, although he hoped that she would be distracted by Candiear's night life rather than doing actual reporting on that 'cat people' nonsense.\n\nHowever, to his surprise she had actually a couple of leads, so I was ordered by him to investigate one.",
+      "text": "Chandy had the idea of bringing in [[DM.BaseDescriptionDefs[LoreDeeJoral],J'oral]] to increase the credibility, although he hoped that she would be distracted by Candiear's night life rather than doing actual reporting on that 'cat people' nonsense.\n\nHowever, to his surprise she had actually a couple of leads, so I was ordered by him to investigate one.",
       "branches": [
         {
           "responseText": "",
@@ -420,7 +433,7 @@
         "id": "9cfc9fafd25e3269f13bb472"
       },
       "index": 10,
-      "text": "Once I got there I discovered that Alibaba's Thieves had sold the information to the legionnaires, who wanted to kidnap J'oral for ransom.\n\n'Wazzup bros?' I said to them once they saw me.",
+      "text": "Once I got there I discovered that [[DM.Factions[faction_RegulanPirates],Ali Baba's Thieves]] had sold the information to the [[DM.Factions[faction_MarianPirates],legionnaires]], who wanted to kidnap J'oral for ransom.\n\n'Wazzup bros?' I said to them once they saw me.",
       "branches": [
         {
           "responseText": "",
@@ -457,7 +470,7 @@
         "id": "9c9c1c6a99372bc05d610507"
       },
       "index": 11,
-      "text": "So now that you've rescued me, I guess the party is still jamming <i>to-sho</i>?\n\nGot here some nice [[DM.BaseDescriptionDefs[LorePianPians],pian pians]], if anyone's interested.",
+      "text": "So now that you've rescued me, I guess the party is still jamming <i>to-sho</i>?\n\nGot here some nice [[DM.BaseDescriptionDefs[LorePianPian],pian pians]], if anyone's interested.",
       "branches": [
         {
           "responseText": "I'm losing my patience. Sumire, please contact Roxetta. ",
@@ -521,7 +534,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "598cd3a06230355c18000067",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "roxetta",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -552,7 +581,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "RoxettaDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -622,7 +653,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "RoxettaDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -634,7 +667,7 @@
         "id": "9c01b3e4d3d2b0e44040f7f6"
       },
       "index": 16,
-      "text": "If you know their direction it should be easy to intercept them and rescue Lord Yamaguchi and his 'friend'.",
+      "text": "If Roxetta knows their direction it should be easy to intercept them and rescue Lord Yamaguchi and his 'friend', Commander.",
       "branches": [
         {
           "responseText": "Get's get moving company, we need to save Bob.",

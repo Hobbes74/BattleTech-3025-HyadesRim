@@ -9,7 +9,7 @@
         "id": "9c9e7885398bcb5342e3945c"
       },
       "index": 0,
-      "text": "So where have we gotten ourselves now, Dr. Murad?\n\nBecause I'm hoping there's something more remarkable about this world other than the view of another [[DM.BaseDescriptionDefs[LoreTerran],Terra]] world.",
+      "text": "So where have we gotten ourselves now because of Bob, Dr. Murad?\n\nBecause I'm hoping there's something more remarkable about this world other than the view of another [[DM.BaseDescriptionDefs[LoreTerran],Terran]] world.",
       "branches": [
         {
           "responseText": "",
@@ -35,16 +35,78 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "nautilusmap",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_111_RENT_TO_OWN",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": "GConv-BeginMusic-GC_111_RENT_TO_OWN"
     },
     {
       "idRef": {
         "id": "9cd6a45598ffb7cb94f721ba"
       },
       "index": 1,
-      "text": "This is [[DM.BaseDescriptionDefs[LoreSLSC],SLSC]] 05002, also known as Frobisher during the days of the Star League.\n\nWhile records indicate that this world was once colonized, it seems it wasn't terraformed or even listed on the DoME database we recovered from Niops.",
+      "text": "This is [[DM.BaseDescriptionDefs[LoreStarLeagueStarCatalog],SLSC]] 05002, also known as [[DM.BaseDescriptionDefs[LoreFrobisher],Frobisher]] during the days of the [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]].\n\nWhile records indicate that this world was once colonized, it seems it wasn't terraformed or even listed on the [[DM.BaseDescriptionDefs[LoreDoME],DoME]] database we recovered from [[DM.BaseDescriptionDefs[LoreNiops],Niops]].",
       "branches": [
         {
           "responseText": "",
@@ -70,7 +132,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -79,7 +141,7 @@
         "id": "9cfe17bf5484f4ade7c2a8c8"
       },
       "index": 2,
-      "text": "So if it wasn't one of those experiments we're looking for, what are we doing here, Dr. Murad?\n\nAnd how did you learn of this system?",
+      "text": "So if it wasn't one of those experiments we're looking for, what are we doing here, Dr. Murad?\n\nAnd how did Bob learn of this system?",
       "branches": [
         {
           "responseText": "",
@@ -105,7 +167,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -114,7 +176,7 @@
         "id": "9c32085cfbbfd6a4e0eff1a7"
       },
       "index": 3,
-      "text": "'Bob' was contacted by that J'oral reporter, who seems to have an ability to scent leads. \n\nShe suspected there might be some truth to the 'cat people' rumors that lead behind her kidnapping attempt on Candiear.",
+      "text": "'Bob' was contacted by that [[DM.BaseDescriptionDefs[LoreDeeJoral],J'oral]] reporter, who seems to have an uncanny ability to scent leads. \n\nShe suspected there might be some truth to the '[[DM.BaseDescriptionDefs[LoreCatPeople],cat people]]' rumors that lead behind her kidnapping attempt on [[DM.BaseDescriptionDefs[LoreCandiear],Candiear]].",
       "branches": [
         {
           "responseText": "",
@@ -140,7 +202,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -149,7 +211,7 @@
         "id": "9cc1b53441abeee3ed75ffcf"
       },
       "index": 4,
-      "text": "Cat people again? I thought we were past that. ",
+      "text": "Not cat people again? \n\nI thought we were past that. ",
       "branches": [
         {
           "responseText": "",
@@ -175,7 +237,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -184,10 +246,10 @@
         "id": "9c1b4b8a78b2de141ef52454"
       },
       "index": 5,
-      "text": "",
+      "text": "So did I, but that J'oral woman discovered that [[DM.Factions[faction_RegulanPirates],Ali Baba's Thieves]] are running an illegal slavery operation claiming that they stumbled upon a world in the Deep Periphery that supposedly contains real 'cat people'.\n\nShe somehow got her hands on [[DM.BaseDescriptionDefs[LoreComStarExplorerCorps],Explorer Corps]] records and actually got the coordinates that match the description of her informer.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "So there are real cat people down there?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 6,
@@ -210,7 +272,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -219,7 +281,7 @@
         "id": "9c270b6ddd4c8b9a5cfd7652"
       },
       "index": 6,
-      "text": "",
+      "text": "Initially I considered the whole information to be a hoax, Commander.\n\nUntil I compared her evidence with our records recovered from Niops. There wasn't a match on the DoME records about [[DM.BaseDescriptionDefs[LoreProjectUMBRELLA],Project UMBRELLA]], but [[DM.BaseDescriptionDefs[LoreProjectREDOUBT],Project REDOUBT]] lists this world as hosting one of the UMBRELLA subprojects.",
       "branches": [
         {
           "responseText": "",
@@ -245,7 +307,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -254,13 +316,13 @@
         "id": "9c382afef4f39dda3469b78b"
       },
       "index": 7,
-      "text": "",
+      "text": "But this planet shows clear signs of terraforming, why isn't it mentioned by the Star League's Department of Mega-Engineering?\n\n",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "And what was Project UMBRELLA developing down there?",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 8,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -280,7 +342,303 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8b4bac4b89482dc7ebc1de"
+      },
+      "index": 8,
+      "text": "The answer to both is that this planet hosted a genetic warfare program called Pisces UMBRELLA, and it seems it was important enough that the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] High Command must have ordered all official public records sanitized from any reference to it, including DoME's Project UMBRELLA.\n\nBut Project REDOUBT's records kept the data.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c201e62b8e4d42f044b4610"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c673d72d7f08ba6d7d7189b"
+      },
+      "index": 9,
+      "text": "Could human-cat hybrids have been that important for them to hide this so deep?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c8cb66e5e4ee072ac4b970a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1eeb787d28ce96ea985cb6"
+      },
+      "index": 10,
+      "text": "More likely DNA bioweapons designed to kill or cripple certain genetic markers, or biological augmentation for supersoldiers, there's no further details on Project UMBRELLA's records other than its description.\n\nAs for what Pisces UMBRELLA really created, the answer is likely down below.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9caf4ac838f62c2404f5053d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "axylus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cbc9f5b5f27c24d58119218"
+      },
+      "index": 11,
+      "text": "The genetic lab is right at the coordinates given to by J'oral.\n\nBut there are also several 'Mech signatures in the area, so those must be Ali Baba's Thieves.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c2fd1d060720254e4e0ed12"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c44a5c8d27ec3038408c782"
+      },
+      "index": 12,
+      "text": "And some additional contacts... there seems to be two separate groups.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c505c13dc6a0276178074d1"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5fd976a43493a9e5b9bbf3"
+      },
+      "index": 13,
+      "text": "At least we're not fighting supersoldiers or a top secret [[DM.BaseDescriptionDefs[LoreGiantMechBunny],Giant 'Mech Bunny]] made by the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]].\n\nThat's pirates and thieves down there.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cbb7e2ffb726c1d1cbaab36"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5645b76ab293f6a39e78ff"
+      },
+      "index": 14,
+      "text": "We'll need to draw them out from nearby the genetic lab, so that I can have a look inside that facility, Commander.",
+      "branches": [
+        {
+          "responseText": "We'll engage them once at a time. XO?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3bb34892b2a3b5f688634a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8c49e0729820dee77e35e7"
+      },
+      "index": 15,
+      "text": "Understood, Commander {COMMANDER.LastName}.\n\nEveryone, let's prepare to deploy.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c621730746cd94680a24514"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     }

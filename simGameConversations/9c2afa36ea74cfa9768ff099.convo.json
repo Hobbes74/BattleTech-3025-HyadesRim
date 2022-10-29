@@ -32,7 +32,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "MCDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -83,10 +85,23 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_120_CONTACT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
-      "comment": ""
+      "comment": "GConv-BeginMusic-GC_120_CONTACT"
     },
     {
       "idRef": {
@@ -116,7 +131,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "MCDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -151,7 +168,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "MCDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -189,7 +208,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -198,7 +217,7 @@
         "id": "9cb089fdca5e0602bac7bb62"
       },
       "index": 4,
-      "text": "Oh nothing really new... another story about a Deep Periphery genetics lab.\n\nMost likely a scam made by pirates to attract travelers.",
+      "text": "<i>Na sa ke</i>... another crazy story about a [[DM.BaseDescriptionDefs[LoreDeepPeriphery],Deep Periphery]] genetics lab.\n\nMost likely a scam made by pirates to attract travelers.",
       "branches": [
         {
           "responseText": "",
@@ -221,7 +240,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "MCDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -233,10 +254,10 @@
         "id": "9ca859c1c56257d152993218"
       },
       "index": 5,
-      "text": "",
+      "text": "So, <i>to-shos</i>, Roxetta is ready to head for the space port, then we can also leave this system.\n\nKeep drilling, as they say around here.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Goodbye, MC.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 6,
@@ -256,7 +277,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "MCDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -268,7 +291,7 @@
         "id": "9c2b32e19fc78b98b5db8095"
       },
       "index": 6,
-      "text": "",
+      "text": "[Transmission ended.]",
       "branches": [
         {
           "responseText": "",
@@ -294,8 +317,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -303,13 +342,13 @@
         "id": "9c40208fd840a1d6e114f6ca"
       },
       "index": 7,
-      "text": "",
+      "text": "Well, that went as expected with Bob.\n\nI'm not sure it's such a good idea to keep having him as a sponsor, considering the talk about war. ",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 8,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -329,7 +368,287 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb15df2dfcc69b41fe09778"
+      },
+      "index": 8,
+      "text": "Don't let the facade trick you, Yang. \n\nUnderneath that drunken buffoon, there's a family member of the [[DM.Factions[faction_Kurita],Kuritan]] household, and one that personally knows the [[DM.BaseDescriptionDefs[LoreKuritaCoordinator],Coordinator]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c0c945727708e2ee1c9fdfd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c745996eae5c521a63bc4ce"
+      },
+      "index": 9,
+      "text": "The way he's running things now, it doesn't seem like [[DM.BaseDescriptionDefs[LoreChandrasekharKurita],Chandrasekhar]] cares about hiding that either.\n\nLooks more like he knows that his time here might be over... or simply that he doesn't care anything.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c677885fd199b820d35c131"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6af402428db468bc5f0de4"
+      },
+      "index": 10,
+      "text": "And being a Kurita, it's likely either of them, or neither.\n\nSome coordinators became known for their madness and his cousin [[DM.BaseDescriptionDefs[LoreTakashiKurita],Takashi]]'s anger is widely known.",
+      "branches": [
+        {
+          "responseText": "Ultimately, the decision is up to Captain Arano to keep trusting him.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c26dae0797c87291af9ecc6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cabc63783a6b70e4e0f5fc9"
+      },
+      "index": 11,
+      "text": "Indeed, {COMMANDER.FirstName}.\n\nMight be wetter to see what the future brings rather than to worry now.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cdf39321c008b1a837bf9fb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6e0ee028050e37cd1e264e"
+      },
+      "index": 12,
+      "text": "Dr. Murad, what about those rumors of Deep Periphery labs that MC mentioned?\n\nYou believe there's any truth to it?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c551e4a3043360523d75b7a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cad1b6a95ffeba14d789824"
+      },
+      "index": 13,
+      "text": "Mr. Virtanen, the [[DM.BaseDescriptionDefs[LoreCanopianRuins],Canopian Ruins]] are known to be full of [[DM.BaseDescriptionDefs[LoreReapersScore],dead and abandoned]] worlds dating back from even [[DM.BaseDescriptionDefs[LoreAgeOfWar],before]] the Star League.\n\nThat's the only correct answer.",
+      "branches": [
+        {
+          "responseText": "Along with a lot of unbelievable stories about cat people, it seems.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cb9accd4e43cc560e9b85b6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c57902c6e001fd8a090fc3f"
+      },
+      "index": 14,
+      "text": "Indeed, Commander {COMMANDER.LastName}.\n\nWhat's the next item, Sumire?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cbc929c71f4c9e5f4fff9fd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ce6a540ab543aeb944b1c6c"
+      },
+      "index": 15,
+      "text": "Final item in the agenda is the extended shore leave I've convinced Bob-<i>san</i> to offer us as a bonus.\n\nI will post at the mess hall an alternative tour of the most famous [[DM.BaseDescriptionDefs[LorePeripheryNeosynth],neosynth]] ones in Candiear, for those not interested in the [[DM.BaseDescriptionDefs[LorePleasurePit],pleasure pits]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c29f105f3292e41b4c456b0"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     }

@@ -1,0 +1,501 @@
+{
+    "Description" : {
+        "Id" : "forcedevent_co_HYR_112_pirateCode",
+        "Name" : "Pirate Code",
+        "Details" : "As you wake up from your bed upon sensing someone, you see Darius holding a pistol while gesturing you to quiet down. [[TGT_MW,{TGT_MW.Callsign}]] and {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} followers have gain control of the <i>Hysteria</i>'s bridge. We know that Sumire was there and that [[SCN_MW,{SCN_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] are also part of the mutiny but we can't be sure about anyone else. \"\u2026Commander,they have started demanding that a pirate council is formed and to name you as the Captain.\"\r\n\r\nDarius grimaces. \"And we told both groups to stand down but they refused to do so until you arrive and make a decision about the future of the company.\"\r\n\r\nYou hear Yang's voice from just outside your cabin as you are getting dressed. \"There's been a lot of grumbling later that we could be doing more, and for some pirate life may look like an viable option, but the risk is too great.\" \r\n\r\n\"Still, those pilots might also be responsive to a financial bonus to stand down.\" You finish putting on your spacer's boots as Darius hands you a Nakajima laser pistol. \"Just for safety, {COMMANDER.FirstName}\".\r\n\r\n\"It is possible to override the bridge's controls from one of the aft auxiliary control panels. This should allow us to disable the hatches and trap them inside, and if they don't surrender we can always drop their oxygen levels until they pass out.\"\r\n\r\nYang shouts from your cabin's door \"Don't keep us waiting on this one boss, because either we take action now or we'll be close to mutiny soon.\"",
+        "Icon" : "uixTxrSpot_CommandersQuarters"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 10,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "pilot_criminal"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Injuries",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : "0"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : "Tags/PilotTags"
+                },
+                "RequirementComparisons" : [
+                    {
+                        "obj" : "Injuries",
+                        "op" : "Equal",
+                        "val" : 0,
+                        "valueConstant" : "0"
+                    }
+                ]
+            }
+        },
+        {
+            "Scope" : "TertiaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "TertiaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : [
+                    {
+                        "obj" : "Injuries",
+                        "op" : "Equal",
+                        "val" : 0,
+                        "valueConstant" : "0"
+                    }
+                ]
+            }
+        }
+    ],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Bribe those MechWarriors with a bonus.",
+                "Details" : "[\u00A21.000,000]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 1000000,
+                            "valueConstant" : "1000000"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Gain morale, pay bribe",
+                        "Details" : "Darius heads to talk with to [[TGT_MW,{TGT_MW.Callsign}]] and {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} two confederates in the mutiny.\r\n\r\nA quarter of an hour passes before he comes back, clearly relieved and with Sumire in tow. \"They have accepted the bonus and have vacated the bridge. I'm unsure though if this incident will not incite others to seek additional compensation\".\r\n\r\n\"Well, let them try it next time. There's plenty of places at the crew stations to hide a couple blades. I could have taken down {TGT_MW.FirstName} or even [[SCN_MW,{SCN_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] if needed\". Sumire's words send a shock into your face.\r\n\r\n\"Don't worry, Commander {COMMANDER.LastName}. I'd make sure to check with you first, unless lives were being threatened.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-1000000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Take back the bridge.",
+                "Details" : "Lose morale option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "TGT-MW restrained",
+                        "Details" : "As Yang heads to the aft control center, you and Darius gather the rest of the crew and head for the corridor leading to the <i>Hysteria</i> bridge. \r\n\r\nAfter waiting minutes for the oxygen levels to drop, the main hatch suddenly is opened and you find most of the crew still conscious, with Sumire standing by the hatch. \"Once we started noticing the low oxygen levels, everyone went into hypoxia prevention, including our three 'visitors'. \r\n\r\nLater in the day, Darius delivers an update on the situation.\" [[TGT_MW,{TGT_MW.Callsign}]] is under disciplinary action and will be restrained to {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} cabin. I've assigned also [[SCN_MW,{SCN_MW.CALLSIGN}]] and [[TRN_MW,{TRN_MW.CALLSIGN}]] to limited rations for a few days. At least no one got injured with their stunt.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_SetTimeout",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_SetTimeout",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_SetTimeout",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_1",
+                        "Name" : "Pilots injured",
+                        "Details" : "As Yang heads to the aft control center, you and Darius gather the rest of the crew and head for the corridor leading to the <i>Hysteria</i> bridge. \r\n\r\nAfter waiting minutes for the oxygen levels to drop, the main hatch suddenly is opened and you find most of the crew still conscious, with Sumire standing by the hatch. \r\n\r\n\"Once we started noticing the low oxygen levels, everyone went into hypoxia prevention, but those three fools tried to escape and manually open the hatch. They quickly spent all the remaining oxygen at the bridge. They're lucky they're all alive.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_criminal"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Injuries",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Injuries",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Injuries",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Adopt the Code and become pirates.",
+                "Details" : "[Liked by Pirates]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Reputation.AuriganPirates",
+                            "op" : "GreaterThanOrEqual",
+                            "val" : 19,
+                            "valueConstant" : "[rep_neutral]"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Crew's new joke",
+                        "Details" : "Yang and Darius share a puzzled look between both of them as you walked between them and start heading out towards the bridge. \"Darius, Yang, I think there might an alternative way to solve this for everyone's gain.\r\n\r\nAfter a short exchange of words with [[TGT_MW,{TGT_MW.Callsign}]] as you reach the bridge, all three pilots decide to leave and drop their demands, while apologizing for any disturbances caused by their petition.\r\n\r\n\"What have you said to them, {COMMANDER.FirstName}?\" Yang and Darius wait next to you, impressed with the skillful way how you defused the situation.\r\n\r\n\"I gave them our local contact and said for them to check how the requirements to adapt the pirate code because the entire crew needs to be consulted, otherwise it isn't valid.\"\r\n\r\n\"And that was one of the finest bluff claims I've ever heard, Commander.\" Sumire joined in the conversation. \"But since none of those idiots knew exactly what they were doing, they felt along with the story.\" \r\n\r\n\"And the local contact replied asking if this was a joke on their part.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

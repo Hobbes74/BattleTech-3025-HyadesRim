@@ -378,7 +378,7 @@
                             "value" : "9c2afa36ea74cfa9768ff098",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -435,7 +435,7 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mmapGeneral_toxicMire_aBad",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -449,6 +449,14 @@
                                 null,
                                 null,
                                 null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -646,13 +654,13 @@
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "1000000",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
+						{
+							"typeString" : "System.Int32",
+							"name" : "Morale",
+							"value" : "1",
+							"set" : false,
+							"valueConstant" : null
+						}
                     ],
                     "Actions" : [],
                     "ForceEvents" : null,

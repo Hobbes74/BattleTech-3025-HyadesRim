@@ -85,17 +85,30 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_120_CONTACT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
-      "comment": ""
+      "comment": "GConv-BeginMusic-GC_120_CONTACT"
     },
     {
       "idRef": {
         "id": "9c9744a9e6d4b3106545aa46"
       },
       "index": 1,
-      "text": "<i>Cherie</i>, J'oral does not care to what the production thinks!\n\nYou promised her you had a lead about the genetic labs... you haven't lied to J'oral, have you?",
+      "text": "<i>Cherie</i>, J'oral does not care to what the production thinks!\n\nYou promised her you had a lead about the genetic labs... you haven't lied to [[DM.BaseDescriptionDefs[LoreDeeJoral],J'oral]], have you?",
       "branches": [
         {
           "responseText": "",
@@ -230,7 +243,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "joral",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -344,7 +373,7 @@
         "id": "9cd5a090edf0b11a24479017"
       },
       "index": 6,
-      "text": "You promised J'oral you had solid information about the 'cat people' rings and the secret Star League labs in the Deep Periphery!\n\nJ'oral is not pleased with you...",
+      "text": "You promised J'oral you had solid information about the 'cat people' rings and the secret [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] labs in the [[DM.BaseDescriptionDefs[LoreDeepPeriphery],Deep Periphery]]!\n\nJ'oral is not pleased with you...",
       "branches": [
         {
           "responseText": "",
@@ -589,7 +618,7 @@
         "id": "9c40667d25c1df3158bf661b"
       },
       "index": 11,
-      "text": "And Commander {COMMANDER.LastName}, J'oral hasn't forgotten about you, nor the ones who tried to kidnap her.\n\nJ'oral will deal with Reynauld separately after he fooled her, but oh la la, she now has a personal kidnapping story to follow.",
+      "text": "And Commander {COMMANDER.LastName}, J'oral hasn't forgotten about you, nor the ones who tried to kidnap her.\n\nJ'oral will deal with Reynauld separately after he fooled her, but oh la la, she now has a personal kidnapping story of her own.",
       "branches": [
         {
           "responseText": "What do you want to do exactly?",
@@ -642,7 +671,7 @@
         "id": "9c6a0437349408e05c27db73"
       },
       "index": 12,
-      "text": "Nothing, J'oral desires nothing other than all she can have.\n\nShe is going to take this drunken fool and we're getting a room somewhere, then let them try to come to J'oral.",
+      "text": "J'oral desires nothing other than everthing she can have.\n\nShe is going to take this drunken fool and we're getting a room somewhere, then let them try to come to J'oral.",
       "branches": [
         {
           "responseText": "",
@@ -705,7 +734,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -714,7 +743,7 @@
         "id": "9c9b82ea1dd0c850c8d1a072"
       },
       "index": 14,
-      "text": "J'oral has no plans of sticking around once the word is out.\n\nHowever, it will help to discover who has exactly betrayed her.",
+      "text": "J'oral has no plans of staying there once the word is out.\n\nHowever, it will help to discover who has exactly betrayed her.",
       "branches": [
         {
           "responseText": "Yamaguchi will never agree to being used as bait.",
@@ -751,7 +780,7 @@
         "id": "9c4d135c768100af7b8fc0ad"
       },
       "index": 15,
-      "text": "Oh, but J'oral can make 'Renny' very happy... or miserable if she wants.\n\nPrepare your war machines, Commander {COMMANDER.LastName}, because what J'oral wants, J'oral gets.",
+      "text": "Oh, but J'oral can make 'Renny' very happy... or miserable if she wants.\n\nPrepare your war machines, Commander {COMMANDER.LastName}, because what J'oral wants, J'oral <i>gets</i>.",
       "branches": [
         {
           "responseText": "",
