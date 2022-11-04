@@ -1,7 +1,7 @@
 {
     "Description" : {
-        "Id" : "milestone_1140_talk_exodus",
-        "Name" : "conversation",
+        "Id" : "milestone_1216_talk_theManComesAround_2",
+        "Name" : "conversation DEPRECATED",
         "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
@@ -13,7 +13,9 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+                "items" : [
+					"flashpoint_theManComesAround_complete"
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +26,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1140,
+                    "val" : 1216,
                     "valueConstant" : null
                 }
             ]
@@ -34,25 +36,42 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+				"items" : [
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
             "Stats" : [
-				{
-					"typeString" : "System.Int32",
+                {
+                    "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1,
+                    "value" : 1220,
+					"set" : true,
                     "valueConstant" : ""
-				}
+                }
             ],
             "Actions" : [
-                {
-                    "Type" : "System_StartConversation",
-                    "value" : "9cf54229a0472a8d59d7a0e4",
-                    "additionalValues" : [
-						"EXODUS",
-						"Farhome - Deep Periphery"
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Alexander",
+						"Kamea",
+						"Darius",
+						"Sumire",
+						"Farah",
+						"Yang"
 					]
-                }
+				},
+				{
+					"Type" : "System_StartConversation",
+					"value" : "9c355c0a359fda817524aec2",
+					"additionalValues" : [
+						"THE MAN COMES AROUND II",
+						"Pirate Council \u2014 Dumassas"
+					]
+				}
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

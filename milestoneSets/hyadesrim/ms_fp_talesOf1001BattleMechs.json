@@ -321,8 +321,7 @@
 							"additionalValues" : [
 								"Darius",
 								"Sumire",
-								"Farah",
-								"Yang"
+								"Farah"
 							]
 						},
 						{
@@ -404,7 +403,7 @@
 								"AuriganPirates",
                                 "RimPirates",
 								"5",
-								"ms_fp_talesOf1001BattleMechs_007_Complete",
+								"ms_fp_talesOf1001BattleMechs_007_Talk",
 								null,
 								null,
 								null,
@@ -424,7 +423,79 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_talesOf1001BattleMechs_007_Complete",
+                "Id" : "ms_fp_talesOf1001BattleMechs_007_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+						{
+							"Type" : "System_SimGameCharacterVisible",
+							"value" : true,
+							"additionalValues" : [
+								"Kamea",
+								"Darius",
+								"Sumire",
+								"Farah",
+								"Yang"
+							]
+						},
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c52c8c1ae3da96ec457ccf9",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_talesOf1001BattleMechs_008_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_talesOf1001BattleMechs_008_Complete",
                 "Name" : "Complete",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -461,10 +532,18 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_talesOf1001BattleMechs_008_Reward",
+                            "value" : "ms_fp_talesOf1001BattleMechs_009_Reward",
                             "valueConstant" : "itemCollection_loot_fp_reward_talesOf1001BattleMechs",
                             "additionalValues" : null
-                        }
+                        },
+						{
+							"Type" : "System_AddFlashpoint",
+							"value" : "fp_StoryTime_HYR_117_theManComesAround",
+							"valueConstant" : null,
+							"additionalValues" : [
+								"Dumassas"
+							]
+						}
                     ],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
@@ -477,7 +556,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_talesOf1001BattleMechs_008_Reward",
+                "Id" : "ms_fp_talesOf1001BattleMechs_009_Reward",
                 "Name" : "Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null

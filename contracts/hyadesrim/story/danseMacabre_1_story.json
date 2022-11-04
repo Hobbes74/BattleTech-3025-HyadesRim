@@ -5,7 +5,7 @@
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
     "weight" : 1,
-    "scope" : "MID_CAMPAIGN",
+    "scope" : "STANDARD",
     "finalDifficulty" : 5,
     "representativeCastDefIDOverride" : "castDef_KameaPirate",
     "missionSuccessStatementOverride" : "That went very well, we'll make a profit from selling the refined rare metals and the Taurians were stopped.",
@@ -15,76 +15,8 @@
     "longDescription" : "As the name indicates, Purgatory has extreme conditions for even 'Mechs to withstand, but the Concordat's Cuirasseurs sometimes drop a patrol in the area for training proposes.",
     "salvagePotential" : 20,
     "requirementList" : [],
-    "OnContractSuccessResults" : [
-        {
-            "Scope" : "Company",
-            "Requirements" : null,
-            "AddedTags" : {
-                "items" : [
-                    
-                ],
-                "tagSetSourceFile" : ""
-            },
-            "RemovedTags" : {
-                "items" : [
-                    
-                ],
-                "tagSetSourceFile" : ""
-            },
-            "Stats" : [
-                {
-                    "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : "1",
-                    "set" : false,
-                    "valueConstant" : ""
-                }
-            ],
-            "Actions" : [
-                
-            ],
-            "ForceEvents" : [
-                
-            ],
-            "TemporaryResult" : false,
-            "ResultDuration" : 0
-        }
-    ],
-    "OnContractFailureResults" : [
-        {
-            "Scope" : "Company",
-            "Requirements" : null,
-            "AddedTags" : {
-                "items" : [
-                    
-                ],
-                "tagSetSourceFile" : ""
-            },
-            "RemovedTags" : {
-                "items" : [
-                    
-                ],
-                "tagSetSourceFile" : ""
-            },
-            "Stats" : [],
-            "Actions" : [	
-                {
-                    "Type" : "System_StartContract",
-                    "value" : "danseMacabre_1_story",
-                    "valueConstant" : null,
-					"additionalValues" : [
-						"EvilEye",
-						"InterstellarExpeditions"
-					]
-                }
-            ],
-            "ForceEvents" : [
-                
-            ],
-            "TemporaryResult" : false,
-            "ResultDuration" : 0
-        }
-    ],
+    "OnContractSuccessResults" : [],
+    "OnContractFailureResults" : [],
     "contractType" : "Itrom_Defense",
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
@@ -1512,7 +1444,7 @@
     ],
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : 5360000,
     "travelOnly" : false,

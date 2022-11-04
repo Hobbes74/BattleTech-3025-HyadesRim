@@ -540,7 +540,7 @@
                                 "InterstellarExpeditions",
                                 "ArautsOfMecha",
                                 "3",
-                                "ms_fp_amarisLegacy_010_Complete",
+                                "ms_fp_amarisLegacy_010_Talk",
                                 null,
                                 null
                             ]
@@ -555,9 +555,83 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
+
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_010_Complete",
+                "Id" : "ms_fp_amarisLegacy_010_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "true",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+								"Kamea",
+								"Darius",
+								"Sumire",
+                                "Yang",
+								"Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c49381c9e7f61df9a946d37",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_amarisLegacy_011_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_amarisLegacy_011_Complete",
                 "Name" : "Complete",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -593,10 +667,18 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_amarisLegacy_011_Reward",
+                            "value" : "ms_fp_amarisLegacy_012_Reward",
                             "valueConstant" : "itemCollection_loot_fp_reward_amarisLegacy",
                             "additionalValues" : null
-                        }
+                        },
+						{
+							"Type" : "System_AddFlashpoint",
+							"value" : "fp_StoryTime_HYR_116_talesOf1001BattleMechs",
+							"valueConstant" : null,
+							"additionalValues" : [
+								"Cooperland"
+							]
+						}
                     ],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
@@ -609,7 +691,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_011_Reward",
+                "Id" : "ms_fp_amarisLegacy_012_Reward",
                 "Name" : "Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null

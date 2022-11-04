@@ -35,27 +35,36 @@
             "Scope" : "Company",
             "Requirements" : null,
             "AddedTags" : {
-				"items" : [],
+			    "items" : [
+					"SYSTEM_UseFlashpoints",
+					"company_story_flashpoints"
+				],
                 "tagSetSourceFile" : ""
 			},
             "RemovedTags" : {},
-            "Stats" : [],
+            "Stats" : [			
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1201,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+			],
             "Actions" : [
 				{
                     "Type" : "StarSystem_SetActiveDef",
                     "value" : "starsystemdef_Farhome",
 					"additionalValues" : [ "starsystemdef_Farhome_Flipped" ]
-                },	
+                },
 				{
-                    "Type" : "System_AddContract",
-                    "value" : "trav_story_2_exodus",
-                    "valueConstant" : null,
+					"Type" : "System_AddFlashpoint",
+					"value" : "fp_StoryTime_HYR_104_exodus",
+					"valueConstant" : null,
 					"additionalValues" : [
-						"NoFaction",
-						"InterstellarExpeditions",
-						"starsystemdef_Farhome"
+						"Farhome"
 					]
-                }
+				}
             ],
             "ForceEvents" : [
 				{

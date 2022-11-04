@@ -37,9 +37,7 @@
             "AddedTags" : {
 			    "items" : [
 					"SYSTEM_UseEvents",
-					"SYSTEM_UseFlashpoints",
 					"company_ie_contracts",
-					"company_story_flashpoints",
 					"map_travel_2c",
 					"map_travel_2a",
 					"map_travel_2b",
@@ -54,7 +52,14 @@
 				],
                 "tagSetSourceFile" : ""
 			},
-            "Stats" : [
+            "Stats" : [	
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1209,
+					"set" : true,
+                    "valueConstant" : ""
+                },
                 {
                     "typeString" : "System.Single",
                     "name" : "Difficulty",
@@ -125,15 +130,13 @@
 					"additionalValues" : [ "starsystemdef_Oscar_Career" ]
 				},
 				{
-                    "Type" : "System_AddContract",
-                    "value" : "trav_story_3_evilEye",
-                    "valueConstant" : null,
+					"Type" : "System_AddFlashpoint",
+					"value" : "fp_StoryTime_HYR_106_evilEye",
+					"valueConstant" : null,
 					"additionalValues" : [
-						"EvilEye",
-						"InterstellarExpeditions",
-						"starsystemdef_ZelskiII"
+						"ZelskiII"
 					]
-                }
+				}
 			],
             "ForceEvents" : [
 				{
