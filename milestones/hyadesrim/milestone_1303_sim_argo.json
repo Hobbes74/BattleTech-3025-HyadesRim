@@ -13,7 +13,10 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+                "items" : [
+					"flashpoint_otaku_complete",
+					"flashpoint_wilderness_complete"					
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -41,23 +44,29 @@
                 "tagSetSourceFile" : ""
 			},
             "RemovedTags" : {},
-            "Stats" : [],
-            "Actions" : [			
-				{
-                    "Type" : "System_AddContract",
-                    "value" : "trav_story_8_aranoRestoration",
-                    "valueConstant" : null,
-					"additionalValues" : [
-						"AuriganDirectorate",
-						"AuriganRestoration",
-						"starsystemdef_Tyrlon"
-					]
-                },	
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1317,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+			],
+            "Actions" : [	
 				{
                     "Type" : "StarSystem_SetActiveDef",
                     "value" : "starsystemdef_Tyrlon",
 					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
-                }
+                },
+				{
+					"Type" : "System_AddFlashpoint",
+					"value" : "fp_StoryTime_HYR_308_aranoRestoration",
+					"valueConstant" : null,
+					"additionalValues" : [
+						"Tyrlon"
+					]
+				}
             ],
             "ForceEvents" : [],
             "TemporaryResult" : false,
