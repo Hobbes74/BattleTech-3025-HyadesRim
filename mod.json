@@ -1,7 +1,7 @@
 {
     "Name": "Hyades Rim",
     "Enabled": true,
-    "Version": "9.0.1",
+    "Version": "9.0.2",
     "Description": "Adds the Hyades Rim alternative campaign.",	
     "Author": "Hobbes et al.",
 	"Website": "https://www.nexusmods.com/battletech/mods/473",
@@ -76,9 +76,7 @@
 		{ "Type": "FlashpointDef", "Path": "flashpoints/hyadesrim", "AddToDB": true  },
         { "Type": "HeraldryDef", "Path": "heraldry" },
 		{ "Type": "ItemCollectionDef", "Path": "itemcollections/base", "ShouldMergeJSON": true, "AddToDB": false },	
-		{ "Type": "ItemCollectionDef", "Path": "itemcollections/campaign" },
-		{ "Type": "ItemCollectionDef", "Path": "itemcollections/starting" },	
-		{ "Type": "ItemCollectionDef", "Path": "itemcollections/flashpoint" },
+		{ "Type": "ItemCollectionDef", "Path": "itemcollections/hyadesrim" },
 		{ "Type": "JumpJetDef", "Path": "jumpjets" },
 		{ "Type": "LanceDef", "Path": "lance/base", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "LanceDef", "Path": "lance/hyadesrim", "AddToDB": true },
@@ -150,7 +148,7 @@
 		{ "Type": "UpgradeDef", "Path": "upgrades/dlc_merge", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "UpgradeDef", "Path": "upgrades/hyadesrim/actuators" },
 		{ "Type": "UpgradeDef", "Path": "upgrades/hyadesrim/cockpitMods" },
-		{ "Type": "UpgradeDef", "Path": "upgrades/hyadesrim/disabled_inert" },
+		{ "Type": "UpgradeDef", "Path": "upgrades/hyadesrim/disabled" },
 		{ "Type": "UpgradeDef", "Path": "upgrades/hyadesrim/general" },
 		{ "Type": "UpgradeDef", "Path": "upgrades/hyadesrim/gyros" },
 		{ "Type": "UpgradeDef", "Path": "upgrades/hyadesrim/sensorTech" },
@@ -161,6 +159,9 @@
 		{ "Type": "VehicleDef", "Path": "vehicle/hyadesrim" },
 		{ "Type": "VehicleChassisDef", "Path": "vehicleChassis/dlc", "AddToDB": true },
 		{ "Type": "VehicleChassisDef", "Path": "vehicleChassis/hyadesrim", "AddToDB": true },
-		{ "Type": "WeaponDef", "Path": "weapon" }
+		{ "Type": "WeaponDef", "Path": "weapon/base", "ShouldMergeJSON": true, "AddToDB": false },
+		{ "Type": "WeaponDef", "Path": "weapon/dlc", "AddToDB": true },
+		{ "Type": "WeaponDef", "Path": "weapon/dlc_merge", "ShouldMergeJSON": true, "AddToDB": false },
+		{ "Type": "WeaponDef", "Path": "weapon/hyadesrim" }
     ]
 }

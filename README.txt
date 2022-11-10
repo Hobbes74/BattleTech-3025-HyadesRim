@@ -6,7 +6,7 @@ Slavish adherence to a formal ritual is a sign that one has nothing better to th
 
 It is 3024 and Lady Kamea Arano has been exiled after being rescued by the survivors of Markham's Marauders during House Espinosa's coup. Her remaining forces have joined with the company in search for mercenary work in the Deep Periphery. But as the 4th Succession War approaches, powerful forces are now threatening to destroy the entire Aurigan Reach unless Kamea can save her realm and reclaim her throne. Work in progress.
 
-Discord server (discussiona and feedback) - https://discord.gg/zgeQrnV
+Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 
 Features
 * A new BattleTech story and Campaign mode, consisting of 38 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
@@ -71,7 +71,7 @@ Credits
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus;
 
 Contributors
 * BattleTech videogame: Harebrained Studios (HBS);
