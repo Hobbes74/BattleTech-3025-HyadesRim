@@ -19,6 +19,7 @@
             "tagSetSourceFile" : "",
             "items" : [
                 "flashpoint_allianceMarik_complete",
+                "event_co_letterofmarque",
                 "letterofmarque_davion",
                 "letterofmarque_kurita",
                 "letterofmarque_liao",
@@ -49,6 +50,89 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
+                "Name" : "Stick to the Periphery. [Resumes Story]",
+                "Details" : "Alternative flashpoints",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Access Periphery flashpoints. [Resumes Story]",
+                        "Details" : "You refuse the offer. \"Darius, we have enough to deal with, let's not get back to the Inner Sphere and its affairs right now\".\r\n\r\n\"Understood Commander. We may still get some additional contracts from Periphery sources. They'll be optional for us to take.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "company_dlc_flashpoints",
+                                    "map_travel_2"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Reputation.AuriganPirates",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : "[rep_gain_small]"
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_letterOfMarque"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 90
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : [
+                        "company_dlc_flashpoints"
+                    ]
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
                 "Name" : "Accept Marik Letter of Marque. [Pauses Story]",
                 "Details" : "Become a privateer",
                 "Icon" : null
@@ -57,7 +141,7 @@
             "ResultSets" : [
                 {
                     "Description" : {
-                        "Id" : "outcome_0_0",
+                        "Id" : "outcome_1_0",
                         "Name" : "Accept Marik's offer. [Pauses Story]",
                         "Details" : "After considering it for several minutes, you came to a decision. \"The Duchy of Andurien is one of the major power players in the area and their letter of marque will be most useful. Darius, please notify them that we accept their terms.",
                         "Icon" : null
@@ -93,6 +177,25 @@
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
                             "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_letterOfMarque"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 90
                         }
                     ]
                 }
@@ -112,7 +215,7 @@
         },
         {
             "Description" : {
-                "Id" : "outcome_1",
+                "Id" : "outcome_2",
                 "Name" : "Contact Kurita Representative. [Pauses Story]",
                 "Details" : "Check with other factions",
                 "Icon" : null
@@ -121,7 +224,7 @@
             "ResultSets" : [
                 {
                     "Description" : {
-                        "Id" : "outcome_1_0",
+                        "Id" : "outcome_2_0",
                         "Name" : "Get Kurita Letter. [Pauses Story]",
                         "Details" : "You turn to Darius and Sumire. \"Contact Bob Yamaguchi and inform him that we're offering the same services as described on this letter of marque and see if he's interested.\"\r\n\r\nSeveral days later, Sumire passes along a message from the Kuritan representative agreeing to the terms.",
                         "Icon" : null
@@ -156,6 +259,25 @@
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
                             "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_letterOfMarque"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 90
                         }
                     ]
                 }
@@ -177,7 +299,7 @@
         },
         {
             "Description" : {
-                "Id" : "outcome_2",
+                "Id" : "outcome_3",
                 "Name" : "Check with House Steiner. [Pauses Story]",
                 "Details" : "Check with other factions",
                 "Icon" : null
@@ -186,7 +308,7 @@
             "ResultSets" : [
                 {
                     "Description" : {
-                        "Id" : "outcome_2_0",
+                        "Id" : "outcome_3_0",
                         "Name" : "Get Steiner Letter. [Pauses Story]",
                         "Details" : "You turn to Darius and Sumire. \"Contact Lord Stieglitz-Bradford and inform him that we're offering the same services as described on this letter of marque and see if he's interested.\"\r\n\r\nSeveral days later, Sumire passes along a message from the Steiner representative agreeing to the terms.",
                         "Icon" : null
@@ -221,6 +343,25 @@
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
                             "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_letterOfMarque"
+                                ],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 90
                         }
                     ]
                 }
@@ -235,70 +376,6 @@
                     "tagSetSourceFile" : "",
                     "items" : [
                         "letterofmarque_steiner"
-                    ]
-                },
-                "RequirementComparisons" : []
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "outcome_3",
-                "Name" : "Stick to the Periphery. [Resumes Story]",
-                "Details" : "Alternative flashpoints",
-                "Icon" : null
-            },
-            "RequirementList" : [],
-            "ResultSets" : [
-                {
-                    "Description" : {
-                        "Id" : "outcome_3_0",
-                        "Name" : "Access Periphery flashpoints. [Resumes Story]",
-                        "Details" : "You refuse the offer. \"Darius, we have enough to deal with, let's not get back to the Inner Sphere and its affairs right now\".\r\n\r\n\"Understood Commander. We may still get some additional contracts from Periphery sources. They'll be optional for us to take.",
-                        "Icon" : null
-                    },
-                    "Weight" : 100,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "Tags/CompanyTags",
-                                "items" : [
-                                    "company_dlc_flashpoints",
-                                    "map_travel_2"
-                                ]
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Reputation.AuriganPirates",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : "[rep_gain_small]"
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        }
-                    ]
-                }
-            ],
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : []
-                },
-                "ExclusionTags" : {
-                    "tagSetSourceFile" : "",
-                    "items" : [
-                        "company_dlc_flashpoints"
                     ]
                 },
                 "RequirementComparisons" : []

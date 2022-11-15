@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1251_cinematic_newgrange",
-        "Name" : "cinematic",
-        "Details" : "A cinematic for stuff",
+        "Id" : "milestone_1251_talk_lustfulBalladV",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -37,18 +37,21 @@
             "AddedTags" : {},
             "RemovedTags" : {},
             "Stats" : [
-                {
-                    "typeString" : "System.Int32",
+				{
+					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
                     "value" : 1,
-                    "valueConstant" : ""
-                }
+                    "valueConstant" : null
+				}
             ],
             "Actions" : [
                 {
-                    "Type" : "System_PlayVideo",
-                    "value" : "5-newgrange.bk2",
-                    "valueConstant" : null
+                    "Type" : "System_StartConversation",
+                    "value" : "9cf54229a0472a8d59d7a0fb",
+                    "additionalValues" : [
+						"<i>LUSTFUL BALLAD V</i>",
+						"HPG NEWS"
+					]
                 }
             ],
             "ForceEvents" : null,
