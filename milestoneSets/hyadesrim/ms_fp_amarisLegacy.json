@@ -90,10 +90,10 @@
                             "value" : "true",
                             "valueConstant" : null,
                             "additionalValues" : [
-								"Darius",
-								"Sumire",
+                                "Darius",
+                                "Sumire",
                                 "Yang",
-								"Farah"
+                                "Farah"
                             ]
                         },
                         {
@@ -168,7 +168,7 @@
                                 "InterstellarExpeditions",
                                 "BrotherhoodOfRandis",
                                 "5",
-                                "ms_fp_amarisLegacy_004_Talk",
+                                "ms_fp_amarisLegacy_004_TalkChoice",
                                 null,
                                 null,
                                 null
@@ -194,7 +194,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_amarisLegacy_004_Talk",
+                "Id" : "ms_fp_amarisLegacy_004_TalkChoice",
                 "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -424,14 +424,15 @@
                         }
                     ],
                     "ForceEvents" : [
-						{
-							"Scope" : "Company",
-							"EventID" : "forcedevent_co_HYR_113_mechWarriorStrike",
-							"MinDaysWait" : 0,
-							"MaxDaysWait" : 0,
-							"Probability" : 100
-						}
-					],
+                        {
+                            "Scope" : "Company",
+                            "EventID" : "forcedevent_co_HYR_113_mechWarriorStrike",
+                            "MinDaysWait" : 0,
+                            "MaxDaysWait" : 0,
+                            "Probability" : 100,
+                            "RetainPilot" : false
+                        }
+                    ],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -475,6 +476,12 @@
                     "Stats" : null,
                     "Actions" : [
                         {
+                            "Type" : "MechWarrior_AddRoster",
+                            "value" : "pilot_story_kamea",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        },
+                        {
                             "Type" : "System_SimGameCharacterVisible",
                             "value" : "true",
                             "valueConstant" : null,
@@ -490,14 +497,15 @@
                         }
                     ],
                     "ForceEvents" : [
-						{
-							"Scope" : "Commander",
-							"EventID" : "forcedevent_co_HYR_114_commandersDayOff",
-							"MinDaysWait" : 0,
-							"MaxDaysWait" : 0,
-							"Probability" : 100
-						}
-					],
+                        {
+                            "Scope" : "Commander",
+                            "EventID" : "forcedevent_co_HYR_114_commandersDayOff",
+                            "MinDaysWait" : 0,
+                            "MaxDaysWait" : 0,
+                            "Probability" : 100,
+                            "RetainPilot" : false
+                        }
+                    ],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -555,7 +563,6 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-
         {
             "Description" : {
                 "Id" : "ms_fp_amarisLegacy_010_Talk",
@@ -595,19 +602,19 @@
                             "value" : "true",
                             "valueConstant" : null,
                             "additionalValues" : [
-								"Kamea",
-								"Darius",
-								"Sumire",
+                                "Kamea",
+                                "Darius",
+                                "Sumire",
                                 "Yang",
-								"Farah"
+                                "Farah"
                             ]
                         },
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c49381c9e7f61df9a946d37",
+                            "value" : "9c49381c9e7f61df9a946d3a",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -666,19 +673,33 @@
                     "Stats" : null,
                     "Actions" : [
                         {
+                            "Type" : "MechWarrior_Fire",
+                            "value" : "pilot_story_kamea",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        },
+                        {
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_amarisLegacy_012_Reward",
                             "valueConstant" : "itemCollection_loot_fp_reward_amarisLegacy",
                             "additionalValues" : null
                         },
-						{
-							"Type" : "System_AddFlashpoint",
-							"value" : "fp_StoryTime_HYR_116_talesOf1001BattleMechs",
-							"valueConstant" : null,
-							"additionalValues" : [
-								"Cooperland"
-							]
-						}
+                        {
+                            "Type" : "System_AddFlashpoint",
+                            "value" : "fp_StoryTime_HYR_116_talesOf1001BattleMechs",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Cooperland"
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null
+                            ]
+                        }
                     ],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,

@@ -9,7 +9,7 @@
         "id": "9c013625edcc05480645e88d"
       },
       "index": 0,
-      "text": "No, as I have already told you, Lord Madeira is extremely busy at the moment. ",
+      "text": "No, as I have already told you, we are extremely busy at the moment, including Mr. Madeira. ",
       "branches": [
         {
           "responseText": "",
@@ -93,7 +93,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "kamea",
+                "string_value": "johannes",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -108,7 +108,7 @@
         "id": "9c1e748783bd1c3c87392730"
       },
       "index": 1,
-      "text": "And he has left precise instructions for the delivery of the item you have recovered, which I have already given to your pilot.\n\nSo once again I advise you to follow them, as you're contractually bound to.",
+      "text": "And he has left precise instructions for the delivery of the item you have recovered, which I have already given to your pilot.\n\nSo once again I advise you to follow them, as you're contractually bound to, <i>mercenary</i>!",
       "branches": [
         {
           "responseText": "Yes, but it's still important that I talk to him first...",
@@ -145,7 +145,7 @@
         "id": "9cfa5982128df5ddb76eef7b"
       },
       "index": 2,
-      "text": "They will be expecting your lance at our local office, Commander.\n\nHave a good day, [[DM.BaseDescriptionDefs[LoreInterstellarExpeditions],Interstellar Expeditions]] Out.",
+      "text": "As I told you, Mr. Madeira is expecting your lance to meet him at our local office, Commander.\n\n[[DM.BaseDescriptionDefs[LoreInterstellarExpeditions],Interstellar Expeditions]] is out!",
       "branches": [
         {
           "responseText": "",
@@ -209,7 +209,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -322,7 +338,7 @@
         "id": "9c2490d41b6eb29cff4bad3b"
       },
       "index": 7,
-      "text": "Kamea, are you still sure it's a good idea to do this?\n\nI'd like to know who betrayed us on Randis but we could just let it go.",
+      "text": "Captain Arano, are you still sure it's a good idea to do this?\n\nI'd like to know who betrayed us on [[DM.BaseDescriptionDefs[LoreRandisIV],Randis]] but we could just let it go.",
       "branches": [
         {
           "responseText": "",
@@ -357,7 +373,7 @@
         "id": "9cb453ef07da4f9efc331325"
       },
       "index": 8,
-      "text": "We still need to cut bonds with IE since we don't have the <i>Amaris Legacy</i>. \n\nAnd he already betrayed me once, so it's possible it was him but we'll need to confront him to find out.",
+      "text": "We still need to cut bonds with IE since we don't have the <i>[[DM.BaseDescriptionDefs[LoreAmarisLegacy],Amaris Legacy]]</i>. \n\nAnd he already betrayed me once, so it's possible it was him but we'll need to confront him to find out.",
       "branches": [
         {
           "responseText": "",
@@ -427,7 +443,7 @@
         "id": "9c305a4d0598f135d8d4d31a"
       },
       "index": 10,
-      "text": "Yes, {COMMANDER.FirstName}, a list of military and industrial targets to hit in case of war to downgrade either realm's military abilities. \n\nAnd I know Alexander has seen that report, so he's our access to that information. ",
+      "text": "Yes, {COMMANDER.FirstName}, the [[DM.BaseDescriptionDefs[LoreAuriganWarbook],Aurigan Warbook]], a list of military and industrial targets to hit in case of conflict to downgrade the invading realm's military abilities. \n\nAnd I know Alexander has seen that report, so he's our access to that information. ",
       "branches": [
         {
           "responseText": "",
@@ -497,7 +513,7 @@
         "id": "9c684be71aef55400ae25a8b"
       },
       "index": 12,
-      "text": "And we don't want to wage a full campaign against the Taurians or the Canopians which would be the equivalent of declaring war.\n\nWe would lose.",
+      "text": "And we don't want to wage a full campaign against the [[DM.Factions[faction_TaurianConcordat],Taurians]] or the [[DM.Factions[faction_MagistracyOfCanopus],Canopians]] which would be the equivalent of declaring war.\n\nWe would lose.",
       "branches": [
         {
           "responseText": "",
@@ -532,7 +548,7 @@
         "id": "9cfb87f19d4bc6991bce875a"
       },
       "index": 13,
-      "text": "That's something to consider for later. \n\n{COMMANDER.FirstName}, you may begin your drop and we'll meet outside the IE office.",
+      "text": "That's something to consider for later. \n\n{COMMANDER.FirstName}, you may begin your drop and we'll meet outside the Interstellar Expeditions' office.",
       "branches": [
         {
           "responseText": "And then, Captain?",

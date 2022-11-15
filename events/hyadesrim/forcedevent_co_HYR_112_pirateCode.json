@@ -14,9 +14,7 @@
             "tagSetSourceFile" : "Tags/PilotTags"
         },
         "ExclusionTags" : {
-            "items" : [
-                "pilot_criminal"
-            ],
+            "items" : [],
             "tagSetSourceFile" : "Tags/PilotTags"
         },
         "RequirementComparisons" : [
@@ -79,92 +77,6 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Bribe those MechWarriors with a bonus.",
-                "Details" : "[\u00A21.000,000]",
-                "Icon" : null
-            },
-            "RequirementList" : [
-                {
-                    "Scope" : "Company",
-                    "RequirementTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "ExclusionTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RequirementComparisons" : [
-                        {
-                            "obj" : "Funds",
-                            "op" : "GreaterThan",
-                            "val" : 1000000,
-                            "valueConstant" : "1000000"
-                        }
-                    ]
-                }
-            ],
-            "ResultSets" : [
-                {
-                    "Description" : {
-                        "Id" : "outcome_0_0",
-                        "Name" : "Gain morale, pay bribe",
-                        "Details" : "Darius heads to talk with to [[TGT_MW,{TGT_MW.Callsign}]] and {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} two confederates in the mutiny.\r\n\r\nA quarter of an hour passes before he comes back, clearly relieved and with Sumire in tow. \"They have accepted the bonus and have vacated the bridge. I'm unsure though if this incident will not incite others to seek additional compensation\".\r\n\r\n\"Well, let them try it next time. There's plenty of places at the crew stations to hide a couple blades. I could have taken down {TGT_MW.FirstName} or even [[SCN_MW,{SCN_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] if needed\". Sumire's words send a shock into your face.\r\n\r\n\"Don't worry, Commander {COMMANDER.LastName}. I'd make sure to check with you first, unless lives were being threatened.",
-                        "Icon" : null
-                    },
-                    "Weight" : 100,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Morale",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "-1000000",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        }
-                    ]
-                }
-            ],
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : []
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "outcome_1",
                 "Name" : "Take back the bridge.",
                 "Details" : "Lose morale option",
                 "Icon" : null
@@ -173,7 +85,7 @@
             "ResultSets" : [
                 {
                     "Description" : {
-                        "Id" : "outcome_1_0",
+                        "Id" : "outcome_0_0",
                         "Name" : "TGT-MW restrained",
                         "Details" : "As Yang heads to the aft control center, you and Darius gather the rest of the crew and head for the corridor leading to the <i>Hysteria</i> bridge. \r\n\r\nAfter waiting minutes for the oxygen levels to drop, the main hatch suddenly is opened and you find most of the crew still conscious, with Sumire standing by the hatch. \"Once we started noticing the low oxygen levels, everyone went into hypoxia prevention, including our three 'visitors'. \r\n\r\nLater in the day, Darius delivers an update on the situation.\" [[TGT_MW,{TGT_MW.Callsign}]] is under disciplinary action and will be restrained to {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} cabin. I've assigned also [[SCN_MW,{SCN_MW.CALLSIGN}]] and [[TRN_MW,{TRN_MW.CALLSIGN}]] to limited rations for a few days. At least no one got injured with their stunt.\"",
                         "Icon" : null
@@ -283,7 +195,7 @@
                 },
                 {
                     "Description" : {
-                        "Id" : "outcome_1_1",
+                        "Id" : "outcome_0_1",
                         "Name" : "Pilots injured",
                         "Details" : "As Yang heads to the aft control center, you and Darius gather the rest of the crew and head for the corridor leading to the <i>Hysteria</i> bridge. \r\n\r\nAfter waiting minutes for the oxygen levels to drop, the main hatch suddenly is opened and you find most of the crew still conscious, with Sumire standing by the hatch. \r\n\r\n\"Once we started noticing the low oxygen levels, everyone went into hypoxia prevention, but those three fools tried to escape and manually open the hatch. They quickly spent all the remaining oxygen at the bridge. They're lucky they're all alive.\"",
                         "Icon" : null
@@ -383,6 +295,93 @@
                                     "typeString" : "System.Int32",
                                     "name" : "Morale",
                                     "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Bribe those MechWarriors with a bonus.",
+                "Details" : "[\u00A21.000,000]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 1000000,
+                            "valueConstant" : "1000000"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Gain morale, pay bribe",
+                        "Details" : "Darius heads to talk with to [[TGT_MW,{TGT_MW.Callsign}]] and {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} two confederates in the mutiny.\r\n\r\nA quarter of an hour passes before he comes back, clearly relieved and with Sumire in tow. \"They have accepted the bonus and have vacated the bridge. I'm unsure though if this incident will not incite others to seek additional compensation\".\r\n\r\n\"Well, let them try it next time. There's plenty of places at the crew stations to hide a couple blades. I could have taken down {TGT_MW.FirstName} or even [[SCN_MW,{SCN_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] if needed\". Sumire's words send a shock into your face.\r\n\r\n\"Don't worry, Commander {COMMANDER.LastName}. I'd make sure to check with you first, unless lives were being threatened.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-1000000",
                                     "set" : false,
                                     "valueConstant" : null
                                 }

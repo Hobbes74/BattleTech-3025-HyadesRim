@@ -13,7 +13,18 @@
             "Results" : [
                 {
                     "Scope" : "Flashpoint",
-                    "Requirements" : {},
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -102,16 +113,25 @@
                     },
                     "Stats" : [],
                     "Actions" : [
-						{
-							"Type" : "System_SimGameCharacterVisible",
-							"value" : true,
-							"additionalValues" : [
-								"Darius",
-								"Sumire",
-								"Farah",
-								"Yang"
-							]
-						},
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Farah",
+                                "Yang"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+								"Kamea"
+                            ]
+                        },
                         {
                             "Type" : "System_StartConversation",
                             "value" : "9c52c8c1ae3da96ec457ccf7",
@@ -173,25 +193,25 @@
                     },
                     "Stats" : null,
                     "Actions" : [
-						{
-							"Type" : "Flashpoint_AddContract",
-							"value" : "mapGeneral_icyOutpost_iGlc",
-							"valueConstant" : null,
-							"additionalValues" : [
-								"",
-								"",
-								"talesOf1001BattleMechs_1_threeWayBattle",
-								"SelfEmployed",
-								"GrimReapers",
-								"5",
-								"ms_fp_talesOf1001BattleMechs_004_Mission",
-								"AuriganPirates",
-								null,
-								null,
-								null,
-								null
-							]
-						},
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_icyOutpost_iGlc",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "talesOf1001BattleMechs_1_threeWayBattle",
+                                "SelfEmployed",
+                                "GrimReapers",
+                                "5",
+                                "ms_fp_talesOf1001BattleMechs_004_MissionSim",
+                                "AuriganPirates",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        },
                         {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Contract",
@@ -212,7 +232,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_talesOf1001BattleMechs_004_Mission",
+                "Id" : "ms_fp_talesOf1001BattleMechs_004_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The Second Mission.",
                 "Icon" : null
@@ -244,25 +264,25 @@
                     },
                     "Stats" : null,
                     "Actions" : [
-						{
-							"Type" : "Flashpoint_AddContract",
-							"value" : "mapGeneral_highPeak_iGlc",
-							"valueConstant" : null,
-							"additionalValues" : [
-								"",
-								"",
-								"talesOf1001BattleMechs_2_captureBase",
-								"AuriganPirates",
-								"GrimReapers",
-								"5",
-								"ms_fp_talesOf1001BattleMechs_005_Talk",
-								null,
-								null,
-								null,
-								null,
-								null
-							]
-						},
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_highPeak_iGlc",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "talesOf1001BattleMechs_2_captureBase",
+                                "AuriganPirates",
+                                "GrimReapers",
+                                "5",
+                                "ms_fp_talesOf1001BattleMechs_005_Talk",
+                                null,
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        },
                         {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Contract",
@@ -315,22 +335,25 @@
                     },
                     "Stats" : [],
                     "Actions" : [
-						{
-							"Type" : "System_SimGameCharacterVisible",
-							"value" : true,
-							"additionalValues" : [
-								"Darius",
-								"Sumire",
-								"Farah"
-							]
-						},
-						{
-							"Type" : "System_SimGameCharacterVisible",
-							"value" : false,
-							"additionalValues" : [
-								"Yang"
-							]
-						},
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+								"Kamea",
+                                "Yang"
+                            ]
+                        },
                         {
                             "Type" : "System_StartConversation",
                             "value" : "9c52c8c1ae3da96ec457ccf8",
@@ -392,25 +415,25 @@
                     },
                     "Stats" : null,
                     "Actions" : [
-						{
-							"Type" : "Flashpoint_StartContract",
-							"value" : "mapGeneral_highPeak_iGlc",
-							"valueConstant" : null,
-							"additionalValues" : [
-								"",
-								"",
-								"talesOf1001BattleMechs_3_story",
-								"AuriganPirates",
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_highPeak_iGlc",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "talesOf1001BattleMechs_3_story",
+                                "AuriganPirates",
                                 "RimPirates",
-								"5",
-								"ms_fp_talesOf1001BattleMechs_007_Talk",
-								null,
-								null,
-								null,
-								null,
-								null
-							]
-						}
+                                "5",
+                                "ms_fp_talesOf1001BattleMechs_007_Talk",
+                                null,
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
                     ],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
@@ -455,17 +478,18 @@
                     },
                     "Stats" : [],
                     "Actions" : [
-						{
-							"Type" : "System_SimGameCharacterVisible",
-							"value" : true,
-							"additionalValues" : [
-								"Kamea",
-								"Darius",
-								"Sumire",
-								"Farah",
-								"Yang"
-							]
-						},
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea",
+                                "Darius",
+                                "Sumire",
+                                "Farah",
+                                "Yang"
+                            ]
+                        },
                         {
                             "Type" : "System_StartConversation",
                             "value" : "9c52c8c1ae3da96ec457ccf9",
@@ -524,8 +548,7 @@
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [],
@@ -543,9 +566,26 @@
 							"additionalValues" : [
 								"Dumassas"
 							]
-						}
+						},
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null
+                            ]
+                        }
                     ],
-                    "ForceEvents" : null,
+                    "ForceEvents" : [
+                        {
+                            "Scope" : "Company",
+                            "EventID" : "forcedevent_co_HYR_118_norwegianBlue",
+                            "MinDaysWait" : 3,
+                            "MaxDaysWait" : 7,
+                            "Probability" : 100,
+                            "RetainPilot" : false
+                        }
+					],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -579,13 +619,11 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [
@@ -596,7 +634,8 @@
                             "set" : false,
                             "valueConstant" : null
                         }
-					],
+                    ],
+                    "Actions" : [],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
