@@ -2,7 +2,7 @@
     "ID" : "comancheMoon_3_threeWayBattle",
     "contractName" : "Comanche Moon III",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Commander, Captain Johnson and the remaining Ghost Riders have reached their DropShip and will be joining you in their <i>Warhammer</i>, <i>Quickdraw</i>, <i>Hunchback</i> and <i>Jenner</i> to fight the remaining Taurians in the planet and the mercenary company that was hunting them. Once you're done, we have an orbital pass available to extract all you before Commodore Ostergaard and the <i>Iberia</i> can respond.",
-    "longDescription" : "Just one last contract and we can get you out, Commander. Get to that evac zone.",
+    "shortDescription" : "Commander, Captain Johnson and the remaining Ghost Riders have reached their DropShip and will be joining you in their BattleMechs to fight the remaining Taurians in the planet and the mercenary company that was hunting them. Once you're done, we have an orbital pass available to extract all you before Commodore Ostergaard and the <i>Iberia</i> can respond and intercept us.",
+    "longDescription" : "Just one last contract and we will have to get you out, Commander. Get to that evac zone.",
     "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -168,7 +168,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Destroy Additional Enemy Forces",
+            "title" : "Destroy Additional Taurian Forces",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -216,7 +216,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4becbae5-72de-451f-8b9b-028e2188fa89"
             },
-            "title" : "Destroy Additional Enemy Forces",
+            "title" : "Destroy Additional Taurian Forces",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -360,7 +360,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f55ef49e-4035-42eb-97fa-ba0063e1306b"
             },
-            "title" : "Destroy Additional Enemy Allied Reinforcements",
+            "title" : "Destroy Black Angels",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -408,7 +408,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "12270413-a963-4a1e-947b-9e1282270a5d"
             },
-            "title" : "Destroy Additional Enemy Allied Reinforcements",
+            "title" : "Destroy Black Angels",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -600,7 +600,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "51aa5837-b540-42be-b8be-26b37bfcf976"
             },
-            "title" : "Ensure {TEAM_EMP.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "Ensure Ghost Riders safely evac.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -648,7 +648,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ac4199e4-c42e-4a41-ae0e-cf10f7dfcf8a"
             },
-            "title" : "Ensure {TEAM_EMP.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "Ensure Ghost Riders safely evac.",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -1336,7 +1336,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "It seems we'll need to get out of this world the hard way.",
+                    "words" : "It seems we'll need to defeat the Taurians and get out of this world the hard way.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2405,7 +2405,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Ostergaard has figured us out. He's deploying his last ground forces since the <i>Iberia</i> can't intercept us.",
+                    "words" : "Ostergaard has figured us out. He's deploying his last ground forces since the <i>Iberia</i> can't intercept us before we evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2430,7 +2430,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Ostergaard has figured us out. He's deploying his last ground forces since the <i>Iberia</i> can't intercept us.",
+                    "words" : "Ostergaard has figured us out. He's deploying his last ground forces since the <i>Iberia</i> can't intercept us before we evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2676,7 +2676,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "{COMPANY.CompanyName}, we heard you guys could use some assistance?",
+                    "words" : "{COMPANY.CompanyName}, we heard you guys want to hunt Taurians?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2692,7 +2692,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Affirmative, Captain Johnson, {COMMANDER.Callsign} could use an escort to the evac zone.",
+                    "words" : "Affirmative, Captain Johnson, but {COMMANDER.Callsign} will need an escort afterwards to the evac zone.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2708,7 +2708,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Our pleasure, Mr. Oliveira. {COMMANDER.Callsign}, just follow us and we'll get you out safely.",
+                    "words" : "No problemo, Mr. Oliveira. {COMMANDER.Callsign}, let's kick the Taurians then we'll get you out safely.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2880,7 +2880,7 @@
     "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : true,
-    "disableLanceConfiguration" : true,
+    "disableLanceConfiguration" : false,
     "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
@@ -3101,7 +3101,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,

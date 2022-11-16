@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1254_cinematic_6C-ruin",
-        "Name" : "cinematic",
-        "Details" : "A cinematic for stuff",
+        "Id" : "milestone_1260_talk_lustfulBalladVIII",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +24,13 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1254,
+                    "val" : 1260,
+                    "valueConstant" : null
+                },
+				{
+                    "obj" : "MissionsComplete",
+                    "op" : "GreaterThanOrEqual",
+                    "val" : 3,
                     "valueConstant" : null
                 }
             ]
@@ -34,21 +40,29 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
             "Stats" : [
-                {
-                    "typeString" : "System.Int32",
+				{
+					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
                     "value" : 1,
-                    "valueConstant" : ""
-                }
+                    "valueConstant" : null
+				}
             ],
             "Actions" : [
                 {
-                    "Type" : "System_PlayVideo",
-                    "value" : "6C-ruin.bk2",
-                    "valueConstant" : null
+                    "Type" : "System_StartConversation",
+                    "value" : "9cf54229a0472a8d59d7a0fe",
+                    "additionalValues" : [
+						"<i>LUSTFUL BALLAD VIII</i>",
+						"HPG NEWS"
+					]
                 }
             ],
             "ForceEvents" : null,

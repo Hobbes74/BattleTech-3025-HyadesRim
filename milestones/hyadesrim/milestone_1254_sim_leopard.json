@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1270_talk_lustfulBalladVIII",
-        "Name" : "conversation",
-        "Details" : "Conversations",
+        "Id" : "milestone_1254_sim_leopard",
+        "Name" : "sim",
+        "Details" : "Sim game phase",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,13 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1270,
-                    "valueConstant" : null
-                },
-				{
-                    "obj" : "MissionsComplete",
-                    "op" : "GreaterThanOrEqual",
-                    "val" : 3,
+                    "val" : 1254,
                     "valueConstant" : null
                 }
             ]
@@ -47,32 +41,52 @@
 					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
                     "value" : 1,
-                    "valueConstant" : null
-				}
-            ],
-            "Actions" : [
+                    "valueConstant" : ""
+				},
                 {
-                    "Type" : "System_StartConversation",
-                    "value" : "9cf54229a0472a8d59d7a0fe",
-                    "additionalValues" : [
-						"<i>LUSTFUL BALLAD VIII</i>",
-						"HPG NEWS"
+                    "typeString" : "System.Int32",
+                    "name" : "MissionsComplete",
+                    "value" : 0,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+			],
+            "Actions" : [
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Kamea",
+						"Alexander"
 					]
-                },
+				},
 				{
 					"Type" : "System_SimGameCharacterVisible",
 					"value" : true,
 					"additionalValues" : [
-						"Kamea",
-						"Alexander",
 						"Farah",
 						"Yang",
 						"Darius",
 						"Sumire"
 					]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Smithon",
+					"additionalValues" : [ "starsystemdef_Smithon_Contested" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Aea",
+					"additionalValues" : [ "starsystemdef_Aea_Contested" ]
+				},
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Qalzi",
+					"additionalValues" : [ "starsystemdef_Qalzi_Contested" ]
 				}
-            ],
-            "ForceEvents" : null,
+			],
+            "ForceEvents" : [],
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

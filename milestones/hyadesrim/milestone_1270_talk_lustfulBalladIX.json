@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "milestone_1260_talk_lustfulBalladVII",
+        "Id" : "milestone_1270_talk_lustfulBalladIX",
         "Name" : "conversation",
         "Details" : "Conversations",
         "Icon" : "",
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1260,
+                    "val" : 1270,
                     "valueConstant" : null
                 },
 				{
@@ -40,7 +40,12 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
             "Stats" : [
 				{
@@ -53,12 +58,24 @@
             "Actions" : [
                 {
                     "Type" : "System_StartConversation",
-                    "value" : "9cf54229a0472a8d59d7a0fd",
+                    "value" : "9cf54229a0472a8d59d7a0ff",
                     "additionalValues" : [
-						"<i>LUSTFUL BALLAD VII</i>",
+						"<i>LUSTFUL BALLAD IX</i>",
 						"HPG NEWS"
 					]
-                }
+                },
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Kamea",
+						"Alexander",
+						"Farah",
+						"Yang",
+						"Darius",
+						"Sumire"
+					]
+				}
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,
