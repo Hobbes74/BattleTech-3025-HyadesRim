@@ -144,7 +144,7 @@
       "text": "So we decided to quit our travel plans and instead rejoin all of you, along with the <i>[[DM.BaseDescriptionDefs[LoreDelfinas],Delfinas]]</i> and my Royal Guard members.\n\nWe got here too late but we have also detected an [[DM.BaseDescriptionDefs[LoreUnion],Union]] leaving orbit that looked familiar.",
       "branches": [
         {
-          "responseText": "The Bad Kitty.",
+          "responseText": "The <i>Bad Kitty</i>.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 3,
@@ -386,7 +386,7 @@
         "id": "9c758fec489f9f458a7a4c98"
       },
       "index": 9,
-      "text": "The piranhas are coming to feast after the sharks are done, this is not surprising both with the Fourth Succession War and our own [[DM.BaseDescriptionDefs[LoreAuriganCivilWar],civil war]] both taking place.\n\nAnd even if all of this is true, then there isn't anything we can do than to wait for them to arrive, since no one knows or cares.",
+      "text": "The piranhas are coming to feast after the sharks are done, this is not surprising both with the Fourth Succession War and our own [[DM.BaseDescriptionDefs[LoreAuriganCivilWar],civil war]] both taking place.\n\nAnd even if all of this is true, then there isn't anything we can do than to wait for them to arrive, since no one outside knows or cares.",
       "branches": [
         {
           "responseText": "",
@@ -421,7 +421,7 @@
         "id": "9c36b6587bc0e732688ed23f"
       },
       "index": 10,
-      "text": "Which bring us back to the [[DM.Factions[faction_TaurianConcordat],Taurians]] and their current invasion of Aurigan worlds. \n\nUnless we end the civil war and unify the Reach, it will be impossible to stop them, or these Periphery raiders.",
+      "text": "Which bring us also to the [[DM.Factions[faction_TaurianConcordat],Taurians]] and their current invasion of Aurigan worlds. \n\nUnless we end the civil war and unify the Reach, it will be impossible to stop them, or these Periphery raiders.",
       "branches": [
         {
           "responseText": "",
@@ -447,7 +447,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b97f45623035ac140054ca",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -529,7 +529,7 @@
       "text": "Mr. Oliveira, now that we have there <i>Argo</i>, there is only one world that we need to worry about. \n\n[[DM.BaseDescriptionDefs[LoreTyrlon],Tyrlon]].",
       "branches": [
         {
-          "responseText": "Tyrlon? Not Panzyr?",
+          "responseText": "Tyrlon? Panzyr seems about to fall instead.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 14,
@@ -553,7 +553,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59baac916230356416000354",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "aurigan",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
