@@ -44,7 +44,15 @@
 				],
                 "tagSetSourceFile" : ""			
 			},
-            "Stats" : [],
+            "Stats" : [
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1351,
+					"set" : true,
+                    "valueConstant" : ""
+                }
+			],
             "Actions" : [
 				{
 					"Type" : "System_SimGameCharacterVisible",
@@ -59,35 +67,33 @@
 					]
 				},	
 				{
-                    "Type" : "System_AddContract",
-                    "value" : "trav_story_10_redoubt",
-                    "valueConstant" : null,
-					"additionalValues" : [
-						"RimPirates",
-						"AuriganRestoration",
-						"starsystemdef_Smithon"
-					]
-                },
-				{
                     "Type" : "StarSystem_SetActiveDef",
                     "value" : "starsystemdef_Smithon",
-					"additionalValues" : [ "starsystemdef_Smithon_Flipped" ]
+					"additionalValues" : [ "starsystemdef_Smithon_Career" ]
                 },
 				{
                     "Type" : "StarSystem_SetActiveDef",
                     "value" : "starsystemdef_Umgard",
-					"additionalValues" : [ "starsystemdef_Umgard_Flipped" ]
+					"additionalValues" : [ "starsystemdef_Umgard_Career" ]
                 },
 				{
                     "Type" : "StarSystem_SetActiveDef",
                     "value" : "starsystemdef_Enkra",
-					"additionalValues" : [ "starsystemdef_Enkra_Flipped" ]
+					"additionalValues" : [ "starsystemdef_Enkra_Career" ]
                 },
 				{
                     "Type" : "StarSystem_SetActiveDef",
                     "value" : "starsystemdef_Zangul",
-					"additionalValues" : [ "starsystemdef_Zangul_Flipped" ]
-                }
+					"additionalValues" : [ "starsystemdef_Zangul_Career" ]
+                },
+				{
+					"Type" : "System_AddFlashpoint",
+					"value" : "fp_StoryTime_HYR_315_atomic",
+					"valueConstant" : null,
+					"additionalValues" : [
+						"Guldra"
+					]
+				}
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

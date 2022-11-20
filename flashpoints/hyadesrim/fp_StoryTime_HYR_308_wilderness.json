@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "fp_StoryTime_HYR_307_wilderness",
+        "Id" : "fp_StoryTime_HYR_308_wilderness",
         "Name" : "Wilderness",
-        "Details" : "Kamea Arano orders the company to Mechdur to recapture the world from Taurian forces and stop them from moving against the last rebel holdout at Panzyr.",
+        "Details" : "Kamea travels to Panzyr to trigger an ambush by the traitor and defend the world from Taurian forces and stop them from capturing the last rebel holdout.",
         "Icon" : "uixTxrSpot_fp_HyadesRim_Background_43.png"
     },
     "Weight" : 10,
@@ -14,7 +14,9 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"flashpoint_questionOfFaith_complete",
+					"flashpoint_speakOfTheDevil_complete",
+					"flashpoint_nagayanValley_complete",
+					"flashpoint_otaku_complete",
 					"company_story_flashpoints"
 				],
                 "tagSetSourceFile" : "Tags/CompanyTags"
@@ -32,7 +34,7 @@
         "Scope" : "StarSystem",
         "RequirementTags" : {
             "items" : [
-				"planet_name_smithon"
+				"planet_name_mechdur"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
@@ -46,7 +48,7 @@
 		"AuriganRestoration"
     ],
     "TargetFaction" : "TaurianConcordat",
-    "AllowRefitTime" : true,
+    "AllowRefitTime" : false,
     "FlashpointLength" : "MEDIUM",
     "Repeatable" : true,
     "MilestoneSetID" : "ms_fp_wilderness",
