@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1321_sim_argo",
+        "Id" : "milestone_1338_notify_redoubt",
         "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1321,
+                    "val" : 1338,
                     "valueConstant" : null
                 }
             ]
@@ -34,18 +34,8 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-			    "items" : [
-					"company_story_harbingersOfDoom"
-				],
-                "tagSetSourceFile" : ""
-			},
-            "RemovedTags" : {
-				"items" : [
-					"AARCompleteNotificationsDisabled"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
+            "RemovedTags" : {},
             "Stats" : [
                 {
                     "typeString" : "System.Int32",
@@ -53,16 +43,17 @@
                     "value" : 1,
                     "valueConstant" : ""
                 }
-			],
-            "Actions" : [
-				{
-					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_312_unnaturalSelection",
-					"valueConstant" : null,
+            ],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Lady Kamea is turning Coromodir into a massive fortress. Once we return with the nuclear warheads, we'll be as ready as possible for the Harbingers to arrive.",
 					"additionalValues" : [
-						"Artru"
-					]
-				}
+						"Redoubt",
+						"castDef_MadeiraDefault"
+					],
+                    "valueConstant" : null
+                }
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1321_sim_argo",
+        "Id" : "milestone_1322_notify_coalitionTaskForce",
         "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,9 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+				"items" : [
+					"flashpoint_unnaturalSelection_complete"
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +26,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1321,
+                    "val" : 1322,
                     "valueConstant" : null
                 }
             ]
@@ -34,18 +36,8 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-			    "items" : [
-					"company_story_harbingersOfDoom"
-				],
-                "tagSetSourceFile" : ""
-			},
-            "RemovedTags" : {
-				"items" : [
-					"AARCompleteNotificationsDisabled"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
+            "RemovedTags" : {},
             "Stats" : [
                 {
                     "typeString" : "System.Int32",
@@ -53,16 +45,17 @@
                     "value" : 1,
                     "valueConstant" : ""
                 }
-			],
-            "Actions" : [
-				{
-					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_312_unnaturalSelection",
-					"valueConstant" : null,
+            ],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "I've assembled several units together to strike the Harbingers at Fairuza, but we still need your company, <i>capiche</i>?.",
 					"additionalValues" : [
-						"Artru"
-					]
-				}
+						"Coalition Task Force",
+						"castDef_TortugaPirateLeaderDefault"
+					],
+                    "valueConstant" : null
+                }
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,

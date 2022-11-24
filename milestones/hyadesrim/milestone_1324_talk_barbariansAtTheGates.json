@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1337_sim_argo",
-        "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Id" : "milestone_1324_talk_barbariansAtTheGates",
+        "Name" : "conversation DEPRECATED",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1337,
+                    "val" : 1323,
                     "valueConstant" : null
                 }
             ]
@@ -35,22 +35,18 @@
             "Scope" : "Company",
             "Requirements" : null,
             "AddedTags" : {
-			    "items" : [
-					"company_story_redoubt"
-				],
-                "tagSetSourceFile" : ""
-			},
-            "RemovedTags" : {
 				"items" : [
 					"AARCompleteNotificationsDisabled"
 				],
-                "tagSetSourceFile" : ""			
+                "tagSetSourceFile" : ""
 			},
-            "Stats" : [
+            "RemovedTags" : {},
+            "Stats" : [			
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1,
+                    "value" : 1330,
+					"set" : true,
                     "valueConstant" : ""
                 }
 			],
@@ -64,35 +60,15 @@
 						"Darius",
 						"Sumire"
 					]
-				},	
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Smithon",
-					"additionalValues" : [ "starsystemdef_Smithon_Career" ]
-                },
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Umgard",
-					"additionalValues" : [ "starsystemdef_Umgard_Career" ]
-                },
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Enkra",
-					"additionalValues" : [ "starsystemdef_Enkra_Career" ]
-                },
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Zangul",
-					"additionalValues" : [ "starsystemdef_Zangul_Career" ]
-                },
-				{
-					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_316_atomic",
-					"valueConstant" : null,
-					"additionalValues" : [
-						"Guldra"
+				},
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9c12b69786c08013ec537375",
+                    "additionalValues" : [
+						"BARBARIANS AT THE GATES",
+						"In Orbit - Fairuza"
 					]
-				}
+                }
             ],
             "ForceEvents" : null,
             "TemporaryResult" : false,
