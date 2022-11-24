@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1341_mission_redoubt",
-        "Name" : "mission",
-        "Details" : "Mission redoubt",
+        "Id" : "milestone_1320_notify_ragingBulls",
+        "Name" : "sim",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,10 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+				"items" : [
+					"flashpoint_theEyesOfTruth_complete",
+					"flashpoint_unnaturalSelection_complete"
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +27,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1341,
+                    "val" : 1320,
                     "valueConstant" : null
                 }
             ]
@@ -36,16 +39,23 @@
             "Requirements" : null,
             "AddedTags" : {},
             "RemovedTags" : {},
-            "Stats" : [],
-            "Actions" : [
+            "Stats" : [
                 {
-                    "Type" : "System_StartContract",
-                    "value" : "redoubt_1_attack",
-                    "valueConstant" : null,
+                    "typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+                }
+            ],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Commander, we've just received news. The Taurians are attacking my homeworld, Artru, and Lady Arano has ordered us to stop them.",
 					"additionalValues" : [
-						"RimPirates",
-						"AuriganRestoration"
-					]
+						"Raging Bulls",
+						"castDef_DariusDefault"
+					],
+                    "valueConstant" : null
                 }
             ],
             "ForceEvents" : null,
@@ -53,5 +63,5 @@
             "ResultDuration" : 0
         }
     ],
-    "Repeatable" : true
+    "Repeatable" : false
 }

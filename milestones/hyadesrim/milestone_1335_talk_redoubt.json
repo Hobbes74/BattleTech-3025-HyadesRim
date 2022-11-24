@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1348_mission_redoubt_4",
-        "Name" : "mission",
-        "Details" : "Mission redoubt 4",
+        "Id" : "milestone_1335_talk_redoubt",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,9 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+				"items" : [
+					"flashpoint_barbariansAtTheGates_complete"
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +26,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1348,
+                    "val" : 1335,
                     "valueConstant" : null
                 }
             ]
@@ -34,17 +36,28 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
-            "Stats" : [],
+            "Stats" : [
+				{
+					"typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+				}
+            ],
             "Actions" : [
                 {
-                    "Type" : "System_StartContract",
-                    "value" : "redoubt_4_story",
-                    "valueConstant" : null,
-					"additionalValues" : [
-						"RimPirates",
-						"AuriganRestoration"
+                    "Type" : "System_StartConversation",
+                    "value" : "9c3247bc116cc75065b8c301",
+                    "additionalValues" : [
+						"REDOUBT",
+						"Emergency HPG"
 					]
                 }
             ],
@@ -53,5 +66,5 @@
             "ResultDuration" : 0
         }
     ],
-    "Repeatable" : true
+    "Repeatable" : false
 }

@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1336_notify_redoubt",
-        "Name" : "sim",
-        "Details" : "pause notification",
+        "Id" : "milestone_1347_talk_theEyesOfTruth_4",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1336,
+                    "val" : 1347,
                     "valueConstant" : null
                 }
             ]
@@ -34,25 +34,29 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
             "Stats" : [
-                {
-                    "typeString" : "System.Int32",
+				{
+					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
                     "value" : 1,
                     "valueConstant" : ""
-                }
+				}
             ],
-            "Actions" : [			
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "The contract to destroy the <i>Newgrange</i> for Lord Karosas is ready for review in the Command Center. We should follow up when you think we're ready.",
-					"additionalValues" : [
-						"Campaign Flashpoint",
-						"castDef_DariusDefault"
-					],
-                    "valueConstant" : null
+            "Actions" : [
+				{
+                    "Type" : "System_StartConversation",
+                    "value" : "9cef24f1d52acb39f8d75553",
+                    "additionalValues" : [
+						"THE EYES OF TRUTH IV",
+						"In Orbit — Coromodir"
+					]
                 }
             ],
             "ForceEvents" : null,
@@ -60,5 +64,5 @@
             "ResultDuration" : 0
         }
     ],
-    "Repeatable" : false
+    "Repeatable" : true
 }

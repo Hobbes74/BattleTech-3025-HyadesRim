@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1350_mission_redoubt_5",
-        "Name" : "mission",
-        "Details" : "Mission redoubt 5",
+        "Id" : "milestone_1340_talk_theEyesOfTruth",
+        "Name" : "conversation",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1350,
+                    "val" : 1340,
                     "valueConstant" : null
                 }
             ]
@@ -34,17 +34,28 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
+            "AddedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
             "RemovedTags" : {},
-            "Stats" : [],
+            "Stats" : [
+				{
+					"typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : ""
+				}
+            ],
             "Actions" : [
-                {
-                    "Type" : "System_StartContract",
-                    "value" : "redoubt_5_story",
-                    "valueConstant" : null,
-					"additionalValues" : [
-						"RimPirates",
-						"AuriganRestoration"
+				{
+                    "Type" : "System_StartConversation",
+                    "value" : "9cef24f1d52acb39f8d75550",
+                    "additionalValues" : [
+						"THE EYES OF TRUTH",
+						"In Orbit — Coromodir"
 					]
                 }
             ],

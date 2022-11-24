@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1335_talk_generalRetreat",
-        "Name" : "conversation",
-        "Details" : "Conversations",
+        "Id" : "milestone_1336_notify_generalRetreat",
+        "Name" : "sim",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -22,15 +22,9 @@
             },
             "RequirementComparisons" : [
                 {
-                    "obj" : "Travel",
-					"op" : "GreaterThan",
-                    "val" : 0,
-                    "valueConstant" : "0"
-                },
-                {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1335,
+                    "val" : 1336,
                     "valueConstant" : null
                 }
             ]
@@ -40,29 +34,25 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-				"items" : [
-					"AARCompleteNotificationsDisabled"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
             "RemovedTags" : {},
             "Stats" : [
-				{
-					"typeString" : "System.Int32",
+                {
+                    "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
                     "value" : 1,
                     "valueConstant" : ""
-				}
+                }
             ],
-            "Actions" : [
+            "Actions" : [			
                 {
-                    "Type" : "System_StartConversation",
-                    "value" : "9c3247bc116cc75065b8c301",
-                    "additionalValues" : [
-						"GENERAL RETREAT",
-						"Emergency HPG"
-					]
+                    "Type" : "System_PauseNotification",
+                    "value" : "All Aurigan forces have been ordered to retreat to Coromodir, where we'll make our last stand against the Harbingers and stop their destruction.",
+					"additionalValues" : [
+						"General Retreat",
+						"castDef_KameaDefault"
+					],
+                    "valueConstant" : null
                 }
             ],
             "ForceEvents" : null,

@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1320_notify_barbariansAtTheGates",
-        "Name" : "sim",
-        "Details" : "pause notification",
+        "Id" : "milestone_1343_mission_theEyesOfTruth_2",
+        "Name" : "mission",
+        "Details" : "Mission The Eyes Of Truth 2",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,10 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-				"items" : [
-					"flashpoint_theEyesOfTruth_complete",
-					"flashpoint_unnaturalSelection_complete"
-				],
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -27,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1320,
+                    "val" : 1343,
                     "valueConstant" : null
                 }
             ]
@@ -39,23 +36,16 @@
             "Requirements" : null,
             "AddedTags" : {},
             "RemovedTags" : {},
-            "Stats" : [
+            "Stats" : [],
+            "Actions" : [
                 {
-                    "typeString" : "System.Int32",
-                    "name" : "NextStoryMilestone",
-                    "value" : 1,
-                    "valueConstant" : ""
-                }
-            ],
-            "Actions" : [			
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Lady Arano's contract to liberate House Karosas is ready for review in the Command Center. We should follow up when you think we're ready.",
+                    "Type" : "System_StartContract",
+                    "value" : "theEyesOfTruth_2_defense",
+                    "valueConstant" : null,
 					"additionalValues" : [
-						"Campaign Flashpoint",
-						"castDef_DariusDefault"
-					],
-                    "valueConstant" : null
+						"RimPirates",
+						"AuriganRestoration"
+					]
                 }
             ],
             "ForceEvents" : null,
@@ -63,5 +53,5 @@
             "ResultDuration" : 0
         }
     ],
-    "Repeatable" : false
+    "Repeatable" : true
 }

@@ -1,0 +1,125 @@
+{
+  "idRef": {
+    "id": "9cde02b8a909c6ac19896a24"
+  },
+  "ui_name": "HYR_309_vortex_1",
+  "nodes": [
+    {
+      "idRef": {
+        "id": "9c9fcf7b984b37a7045029ca"
+      },
+      "index": 0,
+      "text": "Vortex 1",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c983f9987fcd2118800503c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "nautilusmap",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_440_ARMISTICE",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": "GConv-BeginMusic-GC_440_ARMISTICE"
+    }
+  ],
+  "roots": [
+    {
+      "responseText": "",
+      "conditions": null,
+      "actions": null,
+      "nextNodeIndex": 0,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9c09a3eec4b2101c3681b0d3"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
+    }
+  ],
+  "default_speaker_id": "",
+  "default_speaker_override": null,
+  "persistent_conversation": false,
+  "speaker_override_id": ""
+}
