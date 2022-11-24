@@ -30,12 +30,7 @@
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [
-                            "fp_choice_a",
-                            "fp_choice_b",
-                            "fp_choice_c",
-                            "fp_choice_cancel"
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : null,
@@ -131,7 +126,7 @@
                         },
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cef24f1d52acb39f8d75550",
+                            "value" : "9cf7e455ae29c08231a72545",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name}",
@@ -260,16 +255,8 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "System_SimGameCharacterVisible",
-                            "value" : "false",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "Yang"
-                            ]
-                        },
-                        {
                             "Type" : "System_StartConversation",
-                            "value" : "9cef24f1d52acb39f8d75551",
+                            "value" : "9cf7e455ae29c08231a72546",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} II",
@@ -339,7 +326,7 @@
                                 "TortugaPirates",
                                 "RimPirates",
                                 "6",
-                                "ms_fp_ghostRiders_006_Mission",
+                                "ms_fp_ghostRiders_006_Talk",
                                 null,
                                 null,
                                 null
@@ -357,7 +344,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_006_Mission",
+                "Id" : "ms_fp_ghostRiders_006_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf7e455ae29c08231a72547",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_007_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_007_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -400,7 +448,7 @@
                                 "TortugaPirates",
                                 "RimPirates",
                                 "7",
-                                "ms_fp_ghostRiders_007_Talk",
+                                "ms_fp_ghostRiders_008_Talk",
                                 null,
                                 null,
                                 null
@@ -418,7 +466,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_007_Talk",
+                "Id" : "ms_fp_ghostRiders_008_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -452,10 +500,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cef24f1d52acb39f8d75552",
+                            "value" : "9cf7e455ae29c08231a72545",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -463,7 +511,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_ghostRiders_008_Complete",
+                            "value" : "ms_fp_ghostRiders_009_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -479,7 +527,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_008_Complete",
+                "Id" : "ms_fp_ghostRiders_009_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -515,7 +563,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_ghostRiders_009_Reward",
+                            "value" : "ms_fp_ghostRiders_010_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_ghostRiders",
@@ -542,7 +590,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_009_Reward",
+                "Id" : "ms_fp_ghostRiders_010_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null

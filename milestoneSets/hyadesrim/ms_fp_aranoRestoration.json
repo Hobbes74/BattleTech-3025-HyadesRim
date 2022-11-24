@@ -30,10 +30,7 @@
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [
-                            "fp_choice_a",
-                            "fp_choice_b"
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : null,
@@ -68,7 +65,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_aranoRestoration_100_MissionSim",
+                            "value" : "ms_fp_aranoRestoration_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -84,7 +81,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_aranoRestoration_100_MissionSim",
+                "Id" : "ms_fp_aranoRestoration_002_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c7886ffd05d4eb490f4463a",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_aranoRestoration_003_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_aranoRestoration_003_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -127,7 +185,7 @@
                                 "AuriganRestoration",
                                 "AuriganDirectorate",
                                 "6",
-                                "ms_fp_aranoRestoration_101_Mission",
+                                "ms_fp_aranoRestoration_004_Talk",
                                 null,
                                 null,
                                 null
@@ -153,7 +211,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_aranoRestoration_101_Mission",
+                "Id" : "ms_fp_aranoRestoration_004_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c7886ffd05d4eb490f4463b",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_aranoRestoration_005_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_aranoRestoration_005_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -196,7 +315,7 @@
                                 "AuriganRestoration",
                                 "AuriganDirectorate",
                                 "6",
-                                "ms_fp_aranoRestoration_102-Mission",
+                                "ms_fp_aranoRestoration_006_Talk",
                                 null,
                                 null,
                                 null
@@ -214,7 +333,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_aranoRestoration_102-Mission",
+                "Id" : "ms_fp_aranoRestoration_006_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c7886ffd05d4eb490f4463c",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_aranoRestoration_007_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_aranoRestoration_007_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -257,10 +437,10 @@
                                 "AuriganRestoration",
                                 "AuriganDirectorate",
                                 "7",
-                                "ms_aranoRestoration_201-Talk",
+                                "ms_fp_aranoRestoration_008_Talk",
                                 null,
                                 null,
-                                null,
+                                null
                             ]
                         }
                     ],
@@ -275,7 +455,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_aranoRestoration_201-Talk",
+                "Id" : "ms_fp_aranoRestoration_008_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -309,18 +489,18 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c7886ffd05d4eb490f4463a",
+                            "value" : "9c7886ffd05d4eb490f4463d",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
-                                "Crew Council",
+                                "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_aranoRestoration_202-Complete",
+                            "value" : "ms_fp_aranoRestoration_009_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -336,7 +516,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_aranoRestoration_202-Complete",
+                "Id" : "ms_fp_aranoRestoration_009_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -372,7 +552,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_aranoRestoration_203-Reward",
+                            "value" : "ms_fp_aranoRestoration_010_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_aranoRestoration",
@@ -414,8 +594,7 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
-                    ],
+                    "Stats" : [],
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
@@ -428,7 +607,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_aranoRestoration_203-Reward",
+                "Id" : "ms_fp_aranoRestoration_010_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null
@@ -451,13 +630,11 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [
@@ -476,35 +653,7 @@
                             "valueConstant" : null
                         }
                     ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [
-                        ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
-                    },
-                    "Stats" : null,
-                    "Actions" : null,
+                    "Actions" : [],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0

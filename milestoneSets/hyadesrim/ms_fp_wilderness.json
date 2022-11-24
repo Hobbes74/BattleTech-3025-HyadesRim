@@ -129,7 +129,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_wilderness_003_MissionSim",
+                            "value" : "ms_fp_wilderness_003_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -145,7 +145,96 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_003_MissionSim",
+                "Id" : "ms_fp_wilderness_003_Branch",
+                "Name" : "Branch",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_a"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_wilderness_100_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_b"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_wilderness_200_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_wilderness_100_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -184,11 +273,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "wilderness_1_captureBase",
+                                "wilderness_1a_captureBase",
                                 "AuriganRestoration",
                                 "TaurianConcordat",
                                 "6",
-                                "ms_fp_wilderness_004_Talk",
+                                "ms_fp_wilderness_101_Mission",
                                 null,
                                 null,
                                 null
@@ -214,9 +303,70 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_004_Talk",
+                "Id" : "ms_fp_wilderness_101_Mission",
+                "Name" : "Mission",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_grandeRiver_aWst",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "wilderness_2a_defendBase",
+                                "AuriganRestoration",
+                                "TaurianConcordat",
+                                "6",
+                                "ms_fp_wilderness_102_Talk",
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_wilderness_102_Talk",
                 "Name" : "Talk",
-                "Details" : "flashpoint",
+                "Details" : "Closing Conversation.",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -259,7 +409,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_wilderness_005_Mission",
+                            "value" : "ms_fp_wilderness_103_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -275,7 +425,191 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_005_Mission",
+                "Id" : "ms_fp_wilderness_103_Complete",
+                "Name" : "Complete",
+                "Details" : "Flashpoint completion.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_wilderness_complete",
+                            "flashpoint_wilderness_a"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_wilderness_104_A-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_wilderness",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_wilderness_104_A-Reward",
+                "Name" : "A-Reward",
+                "Details" : "Rewards",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Funds",
+                            "value" : "1000000",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_wilderness_200_Mission",
+                "Name" : "Mission",
+                "Details" : "The 1st Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_rockyMesas_aDes",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "wilderness_1b_rescue",
+                                "AuriganRestoration",
+                                "TaurianConcordat",
+                                "6",
+                                "ms_fp_wilderness_201_Mission",
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_wilderness_201_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -308,86 +642,17 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_theMine_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "wilderness_2_captureEscort",
+                                "wilderness_2b_captureEscort",
                                 "AuriganRestoration",
                                 "TaurianConcordat",
                                 "6",
-                                "ms_fp_wilderness_006_Mission",
-                                null,
-                                null,
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_wilderness_006_Mission",
-                "Name" : "Mission",
-                "Details" : "The 3rd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_grandeRiver_aWst",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "wilderness_3_defendBase",
-                                "AuriganRestoration",
-                                "TaurianConcordat",
-                                "6",
-                                "ms_fp_wilderness_007_Talk",
+                                "ms_fp_wilderness_202_Talk",
                                 null,
                                 null,
                                 null
@@ -405,7 +670,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_007_Talk",
+                "Id" : "ms_fp_wilderness_202_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -439,10 +704,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c72e9d9cd89b08484d4f2c9",
+                            "value" : "9c72e9d9cd89b08484d4f2c8",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -450,7 +715,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_wilderness_008_Complete",
+                            "value" : "ms_fp_wilderness_203_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -466,7 +731,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_008_Complete",
+                "Id" : "ms_fp_wilderness_203_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -490,7 +755,8 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_wilderness_complete"
+                            "flashpoint_wilderness_complete",
+                            "flashpoint_wilderness_b"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -502,7 +768,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_wilderness_009_A-Reward",
+                            "value" : "ms_fp_wilderness_204_B-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_wilderness",
@@ -521,34 +787,6 @@
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : null,
-                    "ForceEvents" : null,
-                    "TemporaryResult" : true,
-                    "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,
@@ -557,8 +795,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_009_Reward",
-                "Name" : "Reward",
+                "Id" : "ms_fp_wilderness_204_B-Reward",
+                "Name" : "B-Reward",
                 "Details" : "Rewards",
                 "Icon" : null
             },
