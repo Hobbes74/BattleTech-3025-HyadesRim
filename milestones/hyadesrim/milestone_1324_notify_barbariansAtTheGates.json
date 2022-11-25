@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1324_talk_barbariansAtTheGates",
-        "Name" : "conversation DEPRECATED",
-        "Details" : "Conversations",
+        "Id" : "milestone_1324_notify_coalitionTaskForce",
+        "Name" : "sim",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,9 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+				"items" : [
+					"flashpoint_ghostRiders_complete"
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +26,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1323,
+                    "val" : 1324,
                     "valueConstant" : null
                 }
             ]
@@ -34,40 +36,25 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-				"items" : [
-					"AARCompleteNotificationsDisabled"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
             "RemovedTags" : {},
-            "Stats" : [			
+            "Stats" : [
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1330,
-					"set" : true,
+                    "value" : 1,
                     "valueConstant" : ""
                 }
-			],
-            "Actions" : [
-				{
-					"Type" : "System_SimGameCharacterVisible",
-					"value" : true,
-					"additionalValues" : [
-						"Farah",
-						"Yang",
-						"Darius",
-						"Sumire"
-					]
-				},
+            ],
+            "Actions" : [			
                 {
-                    "Type" : "System_StartConversation",
-                    "value" : "9c12b69786c08013ec537375",
-                    "additionalValues" : [
-						"BARBARIANS AT THE GATES",
-						"In Orbit - Fairuza"
-					]
+                    "Type" : "System_PauseNotification",
+                    "value" : "Just when I was starting to enjoy the dance, we're being split apart. Your lady is a fool trying to fight them this way, but we're all dead anyways, so let's go down in flames.",
+					"additionalValues" : [
+						"Barbarians At The Gates",
+						"castDef_TortugaPirateLeaderDefault"
+					],
+                    "valueConstant" : null
                 }
             ],
             "ForceEvents" : null,
