@@ -1,7 +1,7 @@
 {
     "Name": "Hyades Rim",
     "Enabled": true,
-    "Version": "9.0.8",
+    "Version": "9.0.9",
     "Description": "Adds the Hyades Rim alternative campaign.",	
     "Author": "Hobbes et al.",
 	"Website": "https://www.nexusmods.com/battletech/mods/473",
@@ -10,7 +10,7 @@
 	
 	"DependsOn": [ "ExtendedConversations" ],
 	
-    "ConflictsWith": [ "Z_Sab_JK_RarityTables", "JK_SUCKos", "JK_VariantsCampaign", "JK_VariantsDLC", "BT_Extended_3025_PlusVee", "BT Advanced Core", "BT_Extended_3025", "BTR-Core", "RogueTech Core", "The Periphery Is A Harsh Mistress", "Galaxy at War", "HMFlashpointFix", "Flashpoints worthwhile rewards", "Flashpoint Spawn Adjustments", "Flashpoint_the_Cache", "Flashpoint_The_Raid", "Skip to Leopard", "XAI" ],	
+    "ConflictsWith": [ "HMFlashpointFix", "Flashpoints worthwhile rewards", "Flashpoint Spawn Adjustments", "Flashpoint_the_Cache", "Flashpoint_The_Raid", "Skip to Leopard" ],	
 	
 	"DataAddendumEntries":[ 
         { "name": "BattleTech.FactionEnumeration", "path": "enums/Faction.json" },
@@ -80,7 +80,9 @@
         { "Type": "HeraldryDef", "Path": "heraldry" },
 		{ "Type": "ItemCollectionDef", "Path": "itemcollections/base", "ShouldMergeJSON": true, "AddToDB": false },	
 		{ "Type": "ItemCollectionDef", "Path": "itemcollections/hyadesrim" },
-		{ "Type": "JumpJetDef", "Path": "jumpjets" },
+		{ "Type": "JumpJetDef", "Path": "jumpjets/dlc", "AddToDB": true },
+		{ "Type": "JumpJetDef", "Path": "jumpjets/dlc_merge", "ShouldMergeJSON": true, "AddToDB": false },
+		{ "Type": "JumpJetDef", "Path": "jumpjets/hyadesrim", "AddToDB": true },
 		{ "Type": "LanceDef", "Path": "lance/base", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "LanceDef", "Path": "lance/hyadesrim", "AddToDB": true },
 		{ "Type": "LifepathNodeDef", "Path": "lifepathNode", "AddToDB": true },

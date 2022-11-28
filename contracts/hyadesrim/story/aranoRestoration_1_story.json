@@ -7,7 +7,7 @@
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "shortDescription" : "Tyrlon is being used by the Directorate as their main military headquarters but several of its key garrison forces have been redeployed corewards to fight the Restoration and the Taurians, giving us the perfect opportunity for a surprise blow. To begin we need to gain core of the main spaceport and negate the DropShips to prevent any escape. But the orbital batteries defending the spaceport need to be disabled before we attempt to land, {COMMANDER.Callsign}. Your mission is to take them down before our invasion fleet can lay siege to this world.",
+    "shortDescription" : "Tyrlon is being used by the Directorate as their main military headquarters but several of its key garrison forces have been redeployed corewards to fight the Restoration and the Taurians, giving us the perfect opportunity for a surprise blow. To begin we need to gain control of the main spaceport and negate the DropShips to prevent any escape. But the orbital batteries defending the spaceport need to be disabled before we attempt to land, {COMMANDER.Callsign}. Your mission is to take them down before our invasion fleet can lay siege to this world.",
     "longDescription" : "The batteries are being controlled from ground generators. Once we take those out, the Restoration forces can begin disembarking and securing our beachhead.",
     "salvagePotential" : 34,
     "requirementList" : [],
@@ -1749,7 +1749,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we're making a push on the Directorate's primary shipyard. If our attack is successful, what's left of my uncle's fleet will be rendered useless\u2026 but we're going to need your help.",
+                    "words" : "Commander, we're making a push on the Directorate's primary shipyard. If our attack is successful, we'll gain control of my uncle's JumpShip fleet, but the first part of our plan depends on you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1838,7 +1838,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Nicely done, Commander\u2014the enemy has been vanquished, and Tyrlon is ours. Now there's nothing left between us and Coromodir.",
+                    "words" : "Nicely done, Commander\u2014the enemy has been vanquished, and Tyrlon is ours. We now control all close systems, including Coromodir.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1854,14 +1854,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'll drink to that\u2014hell, we all will. I've got a keg of Timbiqui Dark waiting in the <i>Argo's</i> galley, and this feels like as good a time as any to crack it open. When we get back home, we're celebrating, and drinks are on me!",
+                    "words" : "Now we need to make sure that Prime Minister Parata sticks to his part of the plan.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_MadeiraDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2922,11 +2922,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_quickdraw_QKD-5A",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
-                                "unit_light"
+                                "unit_heavy"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -2966,11 +2966,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
-                                "unit_heavy"
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -3010,10 +3010,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_STRIKER",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_vehicle",
+                                "unit_heavy"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -3053,10 +3054,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_STRIKER",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_vehicle",
+                                "unit_heavy"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -3285,11 +3287,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jagermech_JM6-A",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
-                                "unit_light"
+                                "unit_heavy"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -3329,11 +3331,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_vindicator_VND-1R",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
-                                "unit_light"
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -3373,11 +3375,11 @@
                         "customUnitName" : "Spotter",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_spider_SDR-5V",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_mech",
-                                "unit_heavy"
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -3417,7 +3419,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_trebuchet_TBT-5N",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
                                 "unit_medium",
@@ -3491,10 +3493,12 @@
                         "customUnitName" : "Spotter",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_spider_SDR-5V",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_medium",
+								"unit_jumpOK",
+                                "unit_mech"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -3564,10 +3568,12 @@
                         "customUnitName" : "Spotter",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_spider_SDR-5V",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_medium",
+								"unit_jumpOK",
+                                "unit_mech"
                             ],
                             "tagSetSourceFile" : ""
                         },

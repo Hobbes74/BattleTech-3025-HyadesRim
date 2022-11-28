@@ -2,7 +2,7 @@
     "ID" : "otaku_1_simpleBattle",
     "contractName" : "Otaku",
     "contractDisplayStyle" : "BaseCampaignNormal",
-    "difficulty" : 8,
+    "difficulty" : 6,
     "difficultyUIModifier" : 1,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -11,36 +11,10 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Commander, {TEAM_EMP.FactionDef.Name} is tracking an extremely heavy 'Mech with {TEAM_TAR.FactionDef.Demonym} heraldry. This provocation is almost certainly bait for a trap; we'd like you to spring this trap. Engage the heavy 'Mech, intercept the forces {TEAM_TAR.FactionDef.Name} sends to defend it, and destroy all of them.",
-    "longDescription" : "I'm not comfortable with how little information we have about the enemy forces, Commander.",
+    "shortDescription" : "Commander, the entire Davion smuggling operation in Lyreton is being run by Lazlo Kort, a local arms merchant who moved into Lyreton years ago. And Mr. Kort's security is ensured by a Davion lance masquerading as mercenaries, so before I can have a long personal conversation with him, I need you to remove his bodyguards first.",
+    "longDescription" : "These guys must be regular house troops, so they won't be easy.",
     "salvagePotential" : 12,
-    "requirementList" : [
-        {
-            "Scope" : "StarSystem",
-            "RequirementTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "ExclusionTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "RequirementComparisons" : [
-                {
-                    "obj" : "Employer.AuriganRestoration",
-                    "op" : "Equal",
-                    "val" : 0,
-                    "valueConstant" : null
-                },
-                {
-                    "obj" : "Employer.AuriganPirates",
-                    "op" : "Equal",
-                    "val" : 0,
-                    "valueConstant" : null
-                }
-            ]
-        }
-    ],
+    "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
     "encounterPlayStyle" : "SinglePlayer",
@@ -66,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Davion Bodyguards",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -81,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Davion Bodyguards",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -93,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Davion Reinforcements",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -110,7 +84,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "181d617b-02bc-4fd3-be25-d6d5cffb78de"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -144,7 +118,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're in the area where the hostile 'Mech was sighted.",
+                    "words" : "According to Bob, the bodyguard lance should be operating in this area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -160,14 +134,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move up and try to flush it out; let's see what sort of trap this is.",
+                    "words" : "And the chances of this being a trap are...?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -176,14 +150,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Stay alert, Commander. Oliveira out.",
+                    "words" : "Fairly high, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -201,7 +175,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All targets down, Commander. Good shooting.",
+                    "words" : "That's the last of the Davion 'Mechs.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -209,6 +183,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sumire, contact Lord Kurita and inform him of the result.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Aye, aye, captain.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -226,7 +232,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're not going to be able to pull a win out of this one, Commander.",
+                    "words" : "Abort, Bob needs to get better intel!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -272,18 +278,18 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 1,
-    "negotiatedSalvage" : 0,
-    "excludedFromProceduralGeneration" : false,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
+    "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
             "EncounterObjectGuid" : "c1dd76b9-5f5f-46f1-b5a2-d1f22dd4991b"

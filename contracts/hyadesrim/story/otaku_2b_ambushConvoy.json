@@ -2,7 +2,7 @@
     "ID" : "otaku_2b_ambushConvoy",
     "contractName" : "Otaku II",
     "contractDisplayStyle" : "BaseCampaignNormal",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 1,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We're tracking a regular {TEAM_TAR.FactionDef.Demonym} logistical convoy through this area, and believe the convoy is carrying critical supplies for an unknown number of military units. We'd like you to destroy the convoy and any supplies it might be hauling. We have no information on what defenses the convoy is likely to have, so assume at least one lance escorting. If so, there is a bonus in it for you if you eliminate that escort lance.",
-    "longDescription" : "When I hear 'unknown number of military units', I get nervous. This could be tough, Commander.",
+    "shortDescription" : "Once we hit one of the convoys we can assume that Hasek-Davion will cease his operation, so this is our only opportunity to have a look at what exactly the Duke of New Syrtis is covertly smuggling to House Liao. Stop the vehicles before they reaches their final destination and then we will sort it oufrom the salvage.",
+    "longDescription" : "According to Mr. Kort, we can also expect tougher opposition protecting these convoys.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Destroy the Supply Convoy and Escape",
+            "title" : "Destroy the Davion Convoy and Escape",
             "description" : "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -56,7 +56,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
-            "title" : "Destroy the Convoy Guards",
+            "title" : "Destroy the Davion Guards",
             "description" : "Send a message by not only destroy the convoy, but eliminte their escorts as well.",
             "isPrimary" : false,
             "forPlayer" : "Player1",
@@ -156,7 +156,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9b0f9fdd-2033-469c-8327-4e519ef6c683"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Reinforcements",
+            "title" : "Destroy Liao Liaison Lance",
             "description" : "The objective for killing the additional units that ambush you.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -257,14 +257,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's the {TEAM_TAR.FactionDef.Demonym} logistical convoy, Commander.",
+                    "words" : "I believe I've located the Davion convoy by the river delta.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "audioevent_universal_hostilesInbound",
                     "cameraFocusGuid" : "",
@@ -273,7 +273,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move up to a good vantage point, and let's find out what we're dealing with.",
+                    "words" : "We need to get a better position, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -289,14 +289,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once the convoy's destroyed, head for the evac point, or stick around to mop up the escorts.",
+                    "words" : "Destroy the vehicles, Commander, but you may ignore the escorts. We don't need unnecessary damage.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -305,7 +305,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander. Oliveira out.",
+                    "words" : "Roger that, Lady Arano. Here's the evac point for when you're done, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,7 +330,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's another one in the bag. Let's head home.",
+                    "words" : "Excellent work everyone. We have what we came for.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -338,6 +338,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And more than that, XO. I wasn't expecting to engage House Liao 'Mechs.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,14 +371,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's a disappointing result, Commander.",
+                    "words" : "Commander, I will expecting more from you the future, if I am going to win back my throne.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -530,7 +546,23 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Enemy Reinforcements, get ready for contact.",
+                    "words" : "Additional hostiles detected!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They appear to be House Liao troops! Lady Arano, should we engage?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -544,6 +576,22 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
+                },
+                {
+                    "words" : "These must be Duke Michael's Capellan liaisons. Take them down too, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
                 }
             ]
         }
@@ -551,18 +599,18 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : "",
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 1,
-    "negotiatedSalvage" : 0,
-    "excludedFromProceduralGeneration" : false,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
+    "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
             "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
@@ -938,7 +986,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : -1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -1106,7 +1154,7 @@
                             "EncounterObjectGuid" : "ab47e469-5887-4a9e-89f2-055d174462c1"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customHeraldryDefId" : "heraldrydef_liao",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -1139,7 +1187,7 @@
                             "EncounterObjectGuid" : "923f0c0d-8266-480a-8d34-8e7c8b12e1d6"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customHeraldryDefId" : "heraldrydef_liao",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -1172,7 +1220,7 @@
                             "EncounterObjectGuid" : "f7fcc4f1-3f3f-4da3-909d-54098143cef1"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customHeraldryDefId" : "heraldrydef_liao",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
@@ -1205,7 +1253,7 @@
                             "EncounterObjectGuid" : "4db659d0-49a5-4b7a-88aa-561538730982"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customHeraldryDefId" : "heraldrydef_liao",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_None",
                         "unitTagSet" : {

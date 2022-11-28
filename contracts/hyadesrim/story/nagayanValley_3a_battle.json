@@ -1,6 +1,6 @@
 {
-    "ID" : "nagayanValley_2_battle",
-    "contractName" : "Nagayan Valley II",
+    "ID" : "nagayanValley_3a_battle",
+    "contractName" : "Nagayan Valley III",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We have intel that {TEAM_TAR.FactionDef.Name} is conducting military exercises on this backwater world. This is an opportunity to covertly advance {TEAM_EMP.FactionDef.Demonym} interests in the region. We need a deniable force to intercept their drills and provide them with some live-fire exercises instead. We believe there is a primary lance of 'Mechs and a supporting lance of vehicles; only the 'Mechs are important, but if possible, eliminating the vehicles would be valuable.",
-    "longDescription" : "They pick these empty worlds for conducting exercises in hopes of keeping it a secret. Too bad for them, I suppose.",
-    "salvagePotential" : 12,
+    "shortDescription" : "A family associated with {TEAM_TAR.FactionDef.Name} has been threatening military action against their {TEAM_EMP.FactionDef.Demonym} neighbors on {TGT_SYSTEM.Name}. Neither of us has any legal claim in this system, but as our allied nobles have requested help and protection, we're willing to intervene. We need a deniable force to step in and destroy the {TEAM_TAR.FactionDef.Demonym} threat.",
+    "longDescription" : "Commander, as soon as you make contact, expect any nearby enemy forces to close on your position.",
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -40,8 +40,8 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Interrupt the military exercises",
-            "description" : "",
+            "title" : "Eliminate a Local Family's 'Mechs",
+            "description" : "Invade the noble's territory, seek out her forces and eliminate them.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -56,7 +56,7 @@
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
             "title" : "Destroy Enemy Units",
-            "description" : "The primary objective to destroy the enemy lance.",
+            "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -68,7 +68,7 @@
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
             "title" : "Destroy Enemy Reinforcements",
-            "description" : "An OPTIONAL primary objective to destroy the second enemy lance.",
+            "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -118,7 +118,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've picked up fusion engine signatures and weapons fire, Commander.",
+                    "words" : "Commander, you've reached the {TEAM_TAR.FactionDef.Demonym} family's territory.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,7 +134,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Looks like our targets are in this area.",
+                    "words" : "Be on the lookout for reinforcements. We'll need to eliminate all enemy forces that take the field.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -144,13 +144,13 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move up, make contact, and wipe them out.",
+                    "words" : "Don't be complacent if the 'Mechs look a little worse for wear; they can still kill you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -175,7 +175,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander. I've alerted our employers; let's get out of here.",
+                    "words" : "Good job, Commander. Let's get out of here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -200,7 +200,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm not sure what went wrong, Commander, but we need to withdraw before we suffer any more losses.",
+                    "words" : "This family is going to have to fend for themselves. We're pulling out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -293,7 +293,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_None",
@@ -326,7 +326,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ebc06b6a-c5a8-4165-95ce-480bcf335570"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_None",
@@ -359,7 +359,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d50f1e9d-0a0b-4dc8-9a06-a33233aaa8a1"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_None",
@@ -392,7 +392,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "461141c2-f956-49a5-b2c6-6f951b957a94"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_None",
@@ -462,7 +462,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_mech"
+                        "lance_type_battle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -474,7 +474,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -482,7 +482,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "9e2d0fed-3d92-42ee-92d0-2cc595709f2a"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -515,7 +515,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "e3e34fc2-c664-42ab-920b-6002c058ac55"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -548,7 +548,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ab9e2bfb-f6c4-4b4b-b540-957dcfc48a27"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -581,7 +581,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "f46b3021-803a-41ed-87e0-1b8cb86663b8"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -620,7 +620,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_vehicle"
+                        "lance_type_support"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -632,7 +632,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -640,7 +640,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -673,7 +673,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "bdb37cd1-dff5-4740-b361-d5d1aebfd452"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -706,7 +706,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "5a7f08f5-3ceb-467e-b857-b3fc1874d016"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -739,7 +739,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "938ab06b-304b-4f45-ba86-abcaa0fe01c5"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : null,
                         "customHeraldryDefId" : null,
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
