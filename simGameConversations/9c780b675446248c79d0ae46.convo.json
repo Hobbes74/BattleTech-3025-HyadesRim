@@ -1,25 +1,25 @@
 {
   "idRef": {
-    "id": "9c3247bc116cc75065b8c301"
+    "id": "9c780b675446248c79d0ae46"
   },
-  "ui_name": "HYR_315_redoubt",
+  "ui_name": "HYR_316_atomic_3",
   "nodes": [
     {
       "idRef": {
-        "id": "9c2e8e8975e4b9e4e96eba81"
+        "id": "9cf6e94ab5521d852b816813"
       },
       "index": 0,
-      "text": "Redoubt",
+      "text": "Atomic 3",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 1,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c35febd3f5fdb3dd2602d54"
+            "id": "9c49f7a306c7f0685a599756"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -39,13 +39,26 @@
       "actions": {
         "ops": [
           {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_512_DESPERATION_PLAY",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
             "functionName": "Set BattleTech Viewscreen Image",
             "args": [
               {
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "nautilusmap",
+                "string_value": "axylus",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -83,23 +96,30 @@
                 "variableref_value": null
               }
             ]
-          },
-          {
-            "functionName": "Play BattleTech Audio Event",
-            "args": [
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "GConv-BeginMusic-GC_510_PARLAY",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
           }
         ]
       },
-      "comment": "GConv-BeginMusic-GC_510_PARLAY"
+      "comment": "GConv-BeginMusic-GC_512_DESPERATION_PLAY"
+    },
+    {
+      "idRef": {
+        "id": "9cc85727296018dde30b893b"
+      },
+      "index": 1,
+      "text": "",
+      "branches": [],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
     }
   ],
   "roots": [
@@ -111,7 +131,7 @@
       "hideIfUnavailable": true,
       "onlyOnce": false,
       "idRef": {
-        "id": "9c1ced5d9863ed360b205761"
+        "id": "9c8a00cbd4eb55950b1d58bd"
       },
       "inputBypass": false,
       "auxiliaryLink": false,
