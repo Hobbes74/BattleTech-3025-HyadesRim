@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We periodically survey 'empty' worlds just to be certain there's no unexpected activity on them. This time, we got lucky. A {TEAM_EMP.FactionDef.Demonym} surveillance team picked up {TEAM_TAR.FactionDef.Demonym} signals from the surface of {TGT_SYSTEM.Name} that correspond to a very heavy 'Mech running through a test-fire sequence. We suspect the enemy is taking the 'Mech out for proving trials, figuring the planet is uninhabited. If we can locate and intercept this 'Mech, we can keep a powerful piece of hardware out of enemy hands.",
-    "longDescription" : "Buckle up, Commander. This sounds like an extremely tough fight. You know something this valuable is going to be escorted.",
+    "shortDescription" : "Using Sergeant King's intel and the <i>Argo</i>'s sensors we have tracked the remaining Black Angels and identified Commander Watts and her 'Mech. Sumire already did the calculations for a flight trajectory that will allow us and the <i>Hysteria</i> to have an opportunity at her before the rest of the Angels can respond. According to the sergeant we should escape after taking Watts down before a couple of them decide to get their own personal payback.",
+    "longDescription" : "This time we'll be doing the headhunting, Commander, instead of them hunting you.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "edafecaf-4d24-4304-98b1-9e645898c6ee"
             },
-            "title" : "Destroy the 'Mech and Escape",
+            "title" : "Kill Commander Watts and Escape",
             "description" : "Destroy the Target, clear area of additional forces Enemies, and Escape",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -58,7 +58,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "650245ff-89b6-4c0f-9b72-31db69cf109c"
             },
-            "title" : "Destroy Enemy Escort",
+            "title" : "Destroy Angels' Lance",
             "description" : "The secondary objective to destroy an additional lance supporting the assassination target.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -96,7 +96,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ef887928-31f2-4001-a1d8-44f8dc5f5bf8"
             },
-            "title" : "Destroy Ambushers",
+            "title" : "Destroy Watts' Bodyguards",
             "description" : "Destroy enemy Ambushers before extraction",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Destroy 'Mech",
+            "title" : "Kill Commander Watts",
             "description" : "The objective to destroy the Assassination Target.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -170,7 +170,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Stop the 'Mech from Escaping",
+            "title" : "Stop Watts from Escaping",
             "description" : "The objective to stop the assassination target for escaping, the player will fail if the target escapes.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -208,7 +208,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "9a27ee75-f33f-45ac-b0d3-ebc321ae7ffc"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -260,7 +260,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're picking up live fire from the surface, Commander.",
+                    "words" : "This is it, time we end this menace once and for all.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -276,14 +276,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We've got a lock on the target 'Mech's position. Engage it and take it down.",
+                    "words" : "Bullet to the head and collect the pay.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander Watts 'Mech is up ahead, she's all yours, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64",
@@ -292,14 +308,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We're seeing comm chatter nearby, so there may be reinforcements. Be careful. Oliveira out.",
+                    "words" : "And better hurry, Commander {COMMANDER.LastName}, I'm picking multiple contacts responding to our combat drop.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "49c80ae9-df2d-4788-a56e-3b21cf381691",
@@ -317,7 +333,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander. You made that look easy.",
+                    "words" : "Commander Watts is either dead or badly injured, there's no cockpit activity.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -325,6 +341,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Should we go back and make sure?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "That's a negative, <i>Hysteria</i>, get back to orbit, we have what we need.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -342,7 +390,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We were outgunned and outnumbered. Not a good showing, Commander.",
+                    "words" : "Damn, the Black Angels got the drop on us again!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -367,7 +415,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That was a hell of a fight. Head for the designated LZ and let's get out of here.",
+                    "words" : "Black Angel actual is down! Good work, commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -392,7 +440,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_KillConfirmed",
             "dialogueContent" : [
                 {
-                    "words" : "Readings indicate the ambushing units are out of commission. The employer will be pleased. ",
+                    "words" : "The second Angels lance has been defeated.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -417,7 +465,23 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That is our target, sustain fire on that unit!",
+                    "words" : "{COMMANDER.LastName} are you even down there? Face me, one on one, and let's decide this.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BlackAngelsLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, Angel actual is damaged! Take Commander Watts down.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -425,6 +489,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Once I'm done with you, I'll watch and let the Taurians pick the rest.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BlackAngelsLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -442,7 +522,23 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_AmbushWarning",
             "dialogueContent" : [
                 {
-                    "words" : "Sensors are showing enemy movement beyond our initial count. Be advised you might meet with increased resistance.",
+                    "words" : "Darius, we're running out of time.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Our lance is almost done, get the DropShip ready.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -450,6 +546,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Darius, the rest of the Angels are about to hit us on the ground!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -467,7 +579,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TargetFleeing",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, the target is bugging out! Eliminate them before they escape.",
+                    "words" : "This ain't over yet... it was only a matter of time until someone revealed my position.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -862,8 +974,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_cavalry",
-                        "lance_type_notallvehicles"
+                        "lance_type_cavalry"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -1033,7 +1144,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 2,
+                "lanceDifficultyAdjustment" : 3,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

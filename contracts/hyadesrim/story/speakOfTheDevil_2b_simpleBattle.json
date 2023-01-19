@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Within the last three months, {TEAM_TAR.FactionDef.Name} has struck our facilities, personnel, and supply convoys over half a dozen times. My superiors in the {TEAM_EMP.FactionDef.Government} leadership would like to even the score. We'd like to hire you to find a {TEAM_TAR.FactionDef.Demonym} lance and destroy it, to demonstrate we are not without military resources on {TGT_SYSTEM.Name}.",
-    "longDescription" : "If they want to show military strength here in {TGT_SYSTEM.Name}, we can do that for them.",
+    "shortDescription" : "The <i>Argo</i>'s sensors have zeroed in Commander Watts' and the remaining Black Angels. They appear to be regrouping after we destroyed their home base, so hitting them now will remove them permanently from our threat list, although we'll still have plenty of others later to worry about.",
+    "longDescription" : "And according to Lady Arano, Yang's team found what they needed at their base about the traitor inside the Restoration, so this will be a double win for all of us.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy Enemy Forces",
+            "title" : "Destroy Black Angels",
             "description" : "Destroy all enemy forces you encounter.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Black Angels",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Reinforcements",
+            "title" : "Destroy Command Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -144,7 +144,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You've arrived at the location our employer specified, Commander.",
+                    "words" : "Black Angels up ahead and ready to be sent back to their paradise.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I would rather send them all to hell, after the trouble they've caused.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -160,14 +176,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move forward, acquire a target lance and light them up.",
+                    "words" : "I'm not tracking Commander Watts but her command lance must be out here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -176,7 +192,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep an eye out for reinforcements. I get the impression these folks are a bit twitchy.",
+                    "words" : "Let's keep our eyes and sensors sharp, she'll show up soon.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -201,7 +217,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Excellent work, Commander. That should send the appropriate message.",
+                    "words" : "Well done, Commander, you've eliminated the Black Angels.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -209,6 +225,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Time to pick up Yang and the rest of the ground crew and leave this place.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -226,7 +258,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We may have kicked a hornet's nest, Commander. Time to pull out.",
+                    "words" : "Shit, these guys are still nasty even when they're almost defeated. Abort!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -251,7 +283,23 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "A primary target is damaged, Commander! Keep it up!",
+                    "words" : "{COMPANY.CompanyName}, come and get me!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BlackAngelsLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And here is Commander Watts. Let's end this crusade of hers now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -488,8 +536,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_recon",
-                        "lance_type_notallvehicles"
+                        "lance_type_battle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -647,8 +694,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_support",
-                        "lance_type_notallvehicles"
+                        "lance_type_cavalry"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -660,7 +706,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -684,7 +730,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_HYR_Angel",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
