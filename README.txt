@@ -13,9 +13,9 @@ Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 Features
 * A new BattleTech story and Campaign mode, consisting of 40 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Thirty original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate,  Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Comanche Moon, Question Of Faith and Speak Of The Devil.
+* Thirty-one original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate,  Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Comanche Moon, Question Of Faith, Speak Of The Devil and Otaku.
 
-* Ten more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Otaku, Wilderness, Dreams of Nagayan Valley, Vortex, Arano Restoration, Ghost Riders In The Sky, Unnatural Selection, Barbarians At The Gates, Atomic and The Eyes Of Truth.
+* Nine more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Wilderness, Dreams of Nagayan Valley, Vortex, Arano Restoration, Ghost Riders In The Sky, Unnatural Selection, Barbarians At The Gates, Atomic and The Eyes Of Truth.
 
 * New story includes a total of 114 new contracts rewritten from the originals, 145 original crew conversations and 295 additional lore descriptions, and is divided into three parts, each with its own subarcs.
 
@@ -85,7 +85,7 @@ Requirements﻿
 Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
 
-Recommended Additional Mods
+Recommended Additional Mods (not required)
 * Community Asset Bundle - requires both the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) AND the Hyades Rim CAB 3025 add-on (https://github.com/Hobbes74/HYR-CAB-3025/archive/refs/tags/release.zip). Install both at your /Mods folder and select them on the game's mod screen.
 * Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
 * BattleTechPerformanceFix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix
@@ -119,4 +119,4 @@ Contributions/Tools:
 * Mordel.net for the stats used in the canon 'Mech variants;
 * All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer and the whole BattleTech modding community.
 
-This mod is released under a GNU GPL v.3.0 license, see the included LICENSE file for additional details.
+This mod is released under a Creative Commons CC BY-NC-ND 4.0 license, see the included LICENSE file for additional details.

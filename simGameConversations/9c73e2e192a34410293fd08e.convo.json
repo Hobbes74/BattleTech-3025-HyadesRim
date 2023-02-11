@@ -429,7 +429,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59baac916230356416000354",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -547,7 +547,7 @@
         "id": "9c5036797cd18dd69f356816"
       },
       "index": 12,
-      "text": "Very well, just one final question then, do you consider your {COMPANY.CompanyName} mercenaries to be your ace card?\n\nOr Commander {COMMANDER.LastName}, for that matter?",
+      "text": "Oh and one final question, do you consider your {COMPANY.CompanyName} mercenaries to be your ace card?\n\nOr Commander {COMMANDER.LastName}, for that matter?",
       "branches": [
         {
           "responseText": "",
@@ -619,7 +619,7 @@
         "id": "9c8fba33c8f36e8e1aa096dd"
       },
       "index": 14,
-      "text": "Deflecting the question is a sufficient answer, Lady Arano.\n\nI'm just curious if you'll release them once your Restoration is over... I find Commander {COMMANDER.FirstName} to be quite a character with his colorful [[DM.BaseDescriptionDefs[LoreCommanderBackground],story]].",
+      "text": "Deflecting the question is a sufficient answer, Lady Arano.\n\nI'm just curious if you'll release them once your Restoration is over... I find Commander {COMMANDER.FirstName} to be quite a character with {COMMANDER.Gender?Male:his|Female:her|NonBinary:their} colorful [[DM.BaseDescriptionDefs[LoreCommanderBackground],story]].",
       "branches": [
         {
           "responseText": "",
@@ -656,7 +656,7 @@
         "id": "9ce868173d7729d6251a1311"
       },
       "index": 15,
-      "text": "Because I have a parting gift for you.\n\nOnce a traitor, always one, so look within the [[DM.Factions[faction_AuriganDirectorate],Directorate]].",
+      "text": "And now I have a parting gift for you.\n\nOnce a traitor, always one, so look within the [[DM.Factions[faction_AuriganDirectorate],Directorate]].",
       "branches": [
         {
           "responseText": "",
@@ -792,7 +792,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],
