@@ -1,9 +1,9 @@
 {
-    "StartingMilestoneID" : "ms_fp_nagayanValley_001_Start",
+    "StartingMilestoneID" : "ms_fp_nagayanMountains_001_Start",
     "Milestones" : [
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_001_Start",
+                "Id" : "ms_fp_nagayanMountains_001_Start",
                 "Name" : "Start",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -70,7 +70,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_002_Talk",
+                            "value" : "ms_fp_nagayanMountains_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -86,7 +86,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_002_Talk",
+                "Id" : "ms_fp_nagayanMountains_002_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -129,19 +129,29 @@
                             ]
                         },
                         {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Alexander",
+                                "Farah",
+                                "Yang"
+                            ]
+                        },
+                        {
                             "Type" : "System_StartConversation",
                             "value" : "9c9bff86d70e0241979e7b52",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name}",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Low Orbit \u2014 Zenopia",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_003_MissionSim",
+                            "value" : "ms_fp_nagayanMountains_003_MissionSim",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -157,7 +167,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_003_MissionSim",
+                "Id" : "ms_fp_nagayanMountains_003_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -191,16 +201,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_rockyCliffs_vHigh",
+                            "value" : "mapGeneral_hiddenLagoon_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "nagayanValley_1_simpleBattle",
-                                "SelfEmployed_Farah",
+                                "nagayanMountains_1_simpleBattle",
+                                "SelfEmployed",
                                 "EvilEye",
                                 "6",
-                                "ms_fp_nagayanValley_004_Talk",
+                                "ms_fp_nagayanMountains_004_Talk",
                                 null,
                                 null,
                                 null
@@ -226,7 +236,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_004_Talk",
+                "Id" : "ms_fp_nagayanMountains_004_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -264,14 +274,14 @@
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} II",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Low Orbit \u2014 Zenopia",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_005_Branch",
+                            "value" : "ms_fp_nagayanMountains_005_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -287,7 +297,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_005_Branch",
+                "Id" : "ms_fp_nagayanMountains_005_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -323,7 +333,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_100_Mission",
+                            "value" : "ms_fp_nagayanMountains_100_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -360,7 +370,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_500_Complete",
+                            "value" : "ms_fp_nagayanMountains_500_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -376,70 +386,9 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_100_Mission",
+                "Id" : "ms_fp_nagayanMountains_100_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_rawCliffsides_vHigh",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "nagayanValley_2_simpleBattle",
-                                "SelfEmployed_Farah",
-                                "EvilEye",
-                                "6",
-                                "ms_fp_nagayanValley_101_Mission",
-                                null,
-                                null,
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_nagayanValley_101_Mission",
-                "Name" : "Mission",
-                "Details" : "The 3rd Mission.",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -476,11 +425,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "nagayanValley_3_simpleBattle",
-                                "SelfEmployed_Farah",
-                                "ComStar",
+                                "nagayanMountains_2a_simpleBattle",
+                                "SelfEmployed",
+                                "EvilEye",
                                 "6",
-                                "ms_fp_nagayanValley_102_Talk",
+                                "ms_fp_nagayanMountains_101_Mission",
                                 null,
                                 null,
                                 null
@@ -498,7 +447,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_102_Talk",
+                "Id" : "ms_fp_nagayanMountains_101_Mission",
+                "Name" : "Mission",
+                "Details" : "The 3rd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_rawCliffsides_vHigh",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "nagayanMountains_3a_simpleBattle",
+                                "SelfEmployed",
+                                "EvilEye",
+                                "6",
+                                "ms_fp_nagayanMountains_102_Talk",
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_nagayanMountains_102_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -536,14 +546,14 @@
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} III",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Low Orbit \u2014 Zenopia",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_103_Branch",
+                            "value" : "ms_fp_nagayanMountains_103_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -559,7 +569,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_103_Branch",
+                "Id" : "ms_fp_nagayanMountains_103_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -595,7 +605,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_200_Mission",
+                            "value" : "ms_fp_nagayanMountains_200_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -632,7 +642,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_300_Complete",
+                            "value" : "ms_fp_nagayanMountains_300_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -648,7 +658,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_200_Mission",
+                "Id" : "ms_fp_nagayanMountains_200_Mission",
                 "Name" : "Mission",
                 "Details" : "The 4th Mission.",
                 "Icon" : null
@@ -681,20 +691,22 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_boggyRocks_vLow",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "nagayanValley_4a_threeWayBattle",
-                                "SelfEmployed_Farah",
-                                "ComStar",
+                                "nagayanMountains_4a_threeWayBattle",
+                                "SelfEmployed_Kamea",
+                                "EvilEye",
                                 "6",
-                                "ms_fp_nagayanValley_201_Talk",
+                                "ms_fp_nagayanMountains_201_Talk",
+                                null,
+                                "ComStar",
                                 null,
                                 null,
-                                null
+                                "ComStar"
                             ]
                         }
                     ],
@@ -709,7 +721,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_201_Talk",
+                "Id" : "ms_fp_nagayanMountains_201_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -742,19 +754,39 @@
                     "Stats" : null,
                     "Actions" : [
                         {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea",
+                                "Darius"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Sumire",
+                                "Alexander",
+                                "Farah",
+                                "Yang"
+                            ]
+                        },
+                        {
                             "Type" : "System_StartConversation",
                             "value" : "9c9bff86d70e0241979e7b55",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} IV",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Low Orbit \u2014 Zenopia",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_nagayanValley_202_Complete",
+                            "value" : "ms_fp_nagayanMountains_202_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -770,7 +802,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_202_Complete",
+                "Id" : "ms_fp_nagayanMountains_202_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -794,8 +826,8 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_nagayanValley_complete",
-                            "flashpoint_nagayanValley_a"
+                            "flashpoint_nagayanMountains_complete",
+                            "flashpoint_nagayanMountains_a"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -807,11 +839,24 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_nagayanValley_203_A-Reward",
+                            "value" : "ms_fp_nagayanMountains_203_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "itemCollection_loot_fp_reward_nagayanValley",
+                                "itemCollection_loot_fp_reward_a_nagayanMountains",
                                 null
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea",
+                                "Darius",
+                                "Sumire",
+                                "Alexander",
+                                "Farah",
+                                "Yang"
                             ]
                         },
                         {
@@ -834,7 +879,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_203_A-Reward",
+                "Id" : "ms_fp_nagayanMountains_203_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "A-Reward",
                 "Icon" : null
@@ -885,7 +930,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_300_Complete",
+                "Id" : "ms_fp_nagayanMountains_300_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -909,8 +954,8 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_nagayanValley_complete",
-                            "flashpoint_nagayanValley_b"
+                            "flashpoint_nagayanMountains_complete",
+                            "flashpoint_nagayanMountains_b"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -921,11 +966,24 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_nagayanValley_301_C-Reward",
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "itemCollection_loot_fp_reward_nagayanValley",
+                                "Kamea",
+                                "Darius",
+                                "Sumire",
+                                "Alexander",
+                                "Farah",
+                                "Yang"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_nagayanMountains_301_C-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_b_nagayanMountains",
                                 null
                             ]
                         },
@@ -949,7 +1007,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_301_C-Reward",
+                "Id" : "ms_fp_nagayanMountains_301_C-Reward",
                 "Name" : "C-Reward",
                 "Details" : "C-Reward",
                 "Icon" : null
@@ -1000,7 +1058,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_500_Complete",
+                "Id" : "ms_fp_nagayanMountains_500_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -1024,8 +1082,8 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_nagayanValley_complete",
-                            "flashpoint_nagayanValley_b"
+                            "flashpoint_nagayanMountains_complete",
+                            "flashpoint_nagayanMountains_b"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -1036,11 +1094,24 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_nagayanValley_501_C-Reward",
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "itemCollection_loot_fp_reward_nagayanValley",
+                                "Kamea",
+                                "Darius",
+                                "Sumire",
+                                "Alexander",
+                                "Farah",
+                                "Yang"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_nagayanMountains_501_C-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_c_nagayanMountains",
                                 null
                             ]
                         },
@@ -1064,7 +1135,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_nagayanValley_501_C-Reward",
+                "Id" : "ms_fp_nagayanMountains_501_C-Reward",
                 "Name" : "C-Reward",
                 "Details" : "C-Reward",
                 "Icon" : null

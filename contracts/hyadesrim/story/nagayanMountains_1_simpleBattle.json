@@ -1,19 +1,19 @@
 {
-    "ID" : "nagayanValley_3a_battle",
-    "contractName" : "Nagayan Valley III",
+    "ID" : "nagayanMountains_1_simpleBattle",
+    "contractName" : "Dreams Of Nagayan Mountains",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
+    "representativeCastDefIDOverride" : "castDef_KameaDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "A family associated with {TEAM_TAR.FactionDef.Name} has been threatening military action against their {TEAM_EMP.FactionDef.Demonym} neighbors on {TGT_SYSTEM.Name}. Neither of us has any legal claim in this system, but as our allied nobles have requested help and protection, we're willing to intervene. We need a deniable force to step in and destroy the {TEAM_TAR.FactionDef.Demonym} threat.",
-    "longDescription" : "Commander, as soon as you make contact, expect any nearby enemy forces to close on your position.",
-    "salvagePotential" : 16,
+    "shortDescription" : "There are three separate task forces approaching the SLDF complex from different directions, and it seems that they're aggressively probing for our location. But whomever designed this base placed it in a perfect spot to ambush any attackers. But the longer we keep hitting them, we risk them eventually figuring our location.",
+    "longDescription" : "The first group shouldn't be too hard, but we won't have time to perform repairs between missions.",
+    "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -34,14 +34,14 @@
         -1
     ],
     "mapMood" : null,
-    "startingFogOfWarVisibility" : "Surveyed",
+    "startingFogOfWarVisibility" : "Unknown",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Eliminate a Local Family's 'Mechs",
-            "description" : "Invade the noble's territory, seek out her forces and eliminate them.",
+            "title" : "Destroy Recon Elements",
+            "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy First Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Second Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -118,7 +118,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, you've reached the {TEAM_TAR.FactionDef.Demonym} family's territory.",
+                    "words" : "So, we have different groups approaching the SLDF site.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,7 +134,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Be on the lookout for reinforcements. We'll need to eliminate all enemy forces that take the field.",
+                    "words" : "With three possible entry points to these mountains.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Their fastest elements are racing towards this gap, so we need to take them ASAP.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -150,14 +166,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Don't be complacent if the 'Mechs look a little worse for wear; they can still kill you.",
+                    "words" : "Afterwards, we'll retrieve the ground party.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Good luck, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -175,7 +207,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Good job, Commander. Let's get out of here.",
+                    "words" : "The Eye lead elements have been destroyed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -183,6 +215,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "That should give us time to recover the ground crew.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -200,14 +248,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This family is going to have to fend for themselves. We're pulling out.",
+                    "words" : "You will need to do better than this, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -222,10 +270,10 @@
                 "EncounterObjectGuid" : "33166b96-5af2-4724-b970-7884ec41ffd0"
             },
             "name" : "Dialogue_AmbushWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "A primary target is damaged, Commander! Keep it up!",
+                    "words" : "Additional hostiles detected! All of them have Evil Eye markings.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -239,13 +287,61 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
+                },
+                {
+                    "words" : "But how did they find us here?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They must have picked the <i>Argo</i> at the jump point and saw an opportunity.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "They're about to find out their mistake. Take them down, Commander",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
                 }
             ]
         }
     ],
     "extractionOverrideList" : [],
-    "overwriteMissionCompleteWhenAutoComplete" : true,
-    "overrideAutoCompleteDialogueId" : null,
+    "overwriteMissionCompleteWhenAutoComplete" : false,
+    "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : true,
@@ -462,7 +558,8 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_battle"
+                        "lance_type_fire",
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -474,7 +571,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 1,
+                "lanceDifficultyAdjustment" : -1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -620,7 +717,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_support"
+                        "lance_type_recon"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -632,7 +729,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 1,
+                "lanceDifficultyAdjustment" : -1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

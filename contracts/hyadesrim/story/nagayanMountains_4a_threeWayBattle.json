@@ -1,18 +1,18 @@
 {
-    "ID" : "nagayanValley_4a_threeWayBattle",
-    "contractName" : "Nagayan Valley IV",
+    "ID" : "nagayanMountains_4a_threeWayBattle",
+    "contractName" : "Dreams Of Nagayan Mountains IV",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
+    "representativeCastDefIDOverride" : "castDef_KameaDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We've got an interesting opportunity for you, Commander. We've recently detected a major engine signature on the planet, probably a heavy-class 'Mech. We can't have a heavy-class {TEAM_TAR.FactionDef.Demonym} 'Mech that big wandering around loose, and we'd like you to handle it. The interesting part is that we've also detected <i>another</i> heavy power-up, and it's a different 'Mech entirely, and it's closing with the target, so it seems these two are about to start dueling. It's possible you can just swoop in and pick up the pieces. We're prepared to offer generous salvage terms.",
-    "longDescription" : "Taking down heavy 'Mechs isn't going to be easy, Commander, but if we can play them off against each other, we might make out quite well on this one.",
+    "shortDescription" : "The incoming bogeys match the signatures of several <i>Leopards</i> so we're dealing with at least a company, possibly with some vehicles. Considering our previous battles, those Eye forces shouldn't be so hard to defend against, if we can take them down separately.",
+    "longDescription" : "And then we can recover the ground crew and whatever they recovered from the SLDF cache.",
     "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -66,7 +66,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Forces",
+            "title" : "Destroy First Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -366,7 +366,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f55ef49e-4035-42eb-97fa-ba0063e1306b"
             },
-            "title" : "Destroy Additional Enemy Allied Reinforcements",
+            "title" : "Destroy Third Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -462,7 +462,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7b5ce847-7978-459b-97ee-3bf90ef951fb"
             },
-            "title" : "Destroy the Enemy Allied Forces",
+            "title" : "Destroy Second Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -911,7 +911,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "8c5cfff4-066b-44be-9a28-c462461a757a"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Hostile to All Chunk Group"
             ],
@@ -979,7 +979,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "cad290bc-8a58-4db3-accb-41e89a8d827f"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Enemy Ally Additional Forces Chunk Group",
                 "Target Additional Dropped Forces Chunk Group"
@@ -1003,7 +1003,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "7f7e150a-d8e3-4587-9d79-3c2dfe928855"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Enemy Ally Landed Forces Chunk Group"
             ],
@@ -3590,13 +3590,13 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "00c4ad37-d0f5-45e4-b54e-ab29d1646935"
                         },
-                        "customUnitName" : "Vigilante",
+                        "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                "unit_heavy",
+                                "unit_assault",
 								"unit_mech"
                             ],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3609,7 +3609,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_defender",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -4386,7 +4386,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -4708,7 +4708,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },

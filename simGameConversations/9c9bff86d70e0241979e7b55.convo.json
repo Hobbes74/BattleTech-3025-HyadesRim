@@ -2,7 +2,7 @@
   "idRef": {
     "id": "9c9bff86d70e0241979e7b55"
   },
-  "ui_name": "HYR_306_nagayanValley_4",
+  "ui_name": "HYR_306_nagayanMountains_4",
   "nodes": [
     {
       "idRef": {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "comstar",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -96,6 +96,48 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Kamea,Darius",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Yang,Alexander,Farah,Sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -106,7 +148,7 @@
         "id": "9ca48730d5f78d8a98e87977"
       },
       "index": 1,
-      "text": "I am [[DM.BaseDescriptionDefs[LoreComStarPrecentor],Precentor]] Cattus, commanding the ComStar vessel <i>Newton</i>, I demand to speak to the captain of the <i>Argo</i>-class DropShip currently orbiting Alloway.\n\nUnless you reply in five minutes, we will open fire upon your vessel and destroy it. ",
+      "text": "I am [[DM.BaseDescriptionDefs[LoreComStarPrecentor],Precentor]] Cattus, commanding the [[DM.Factions[faction_ComStar],ComStar]] vessel <i>Newton</i>, I demand to speak to the captain of the <i>Argo</i>-class DropShip currently orbiting this moon.\n\nUnless you reply in five minutes, we will open fire upon your vessel and destroy it. ",
       "branches": [
         {
           "responseText": "",
@@ -135,7 +177,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "cattus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -178,7 +236,7 @@
         "id": "9c86ca6d0f73cf1c2def0b40"
       },
       "index": 3,
-      "text": "Please open the channel XO, and let me respond to this Precentor.",
+      "text": "XO, open the channel and let me reply personally to this Precentor.",
       "branches": [
         {
           "responseText": "",
@@ -213,7 +271,7 @@
         "id": "9c60c49205558c0fef83d711"
       },
       "index": 4,
-      "text": "ComStar vessel <i>Newton</i>, this is High Lady Kamea Arano, the legitimate ruler of the Aurigan Reach.\n\nPrecentor Cattus, what are your intentions towards us?",
+      "text": "ComStar vessel <i>Newton</i>, this is High Lady Kamea Arano, the legitimate ruler of the Aurigan Reach.\n\nPrecentor Cattus, what are your intentions towards me and my kingdom?",
       "branches": [
         {
           "responseText": "",
@@ -248,7 +306,7 @@
         "id": "9c835a5de3fd4b15860e5e57"
       },
       "index": 5,
-      "text": "Lady Arano, this is quite a surprise. \n\nHow did you get in possession of your DropShip?",
+      "text": "Lady Arano... this is quite a surprise. \n\nAnd how did you get possession of your new DropShip?",
       "branches": [
         {
           "responseText": "",
@@ -285,7 +343,7 @@
         "id": "9ccf804a5672a5f42ed252d9"
       },
       "index": 6,
-      "text": "We've claimed it as legitimate salvage in the Deep Periphery. \n\nI demand to know why you've attacked me and my forces, so I can report you to the [[DM.BaseDescriptionDefs[LoreComStarFirstCircuit],First Circuit]] for criminal charges.",
+      "text": "Legitimate salvage in the Deep Periphery, Precentor. \n\nNow, I demand to know why you've attacked me and my forces, so I can report you to the [[DM.BaseDescriptionDefs[LoreComStarFirstCircuit],First Circuit]] for criminal charges.",
       "branches": [
         {
           "responseText": "",
@@ -320,7 +378,7 @@
         "id": "9ca8b057fae41c489486e4b2"
       },
       "index": 7,
-      "text": "Lady Arano, the Aurigan throne is not yours and we're too far away from Terra.\n\nWhat have your mercenaries discovered in that underground facility?",
+      "text": "Lady Arano, the Aurigan throne is not yours and we're too far away from [[DM.BaseDescriptionDefs[LoreTerra],Terra]].\n\nWhat have your mercenaries discovered in that underground facility?",
       "branches": [
         {
           "responseText": "",
@@ -464,7 +522,7 @@
         "id": "9c54700d65c000a44ec53bed"
       },
       "index": 11,
-      "text": "Lady Arano,  you're a wanted terrorist in the Directorate and Concordat, so I can still demand your surrender or face destruction.\n\nAnd if you won't reveal willingly what we want to know, well there are other ways.",
+      "text": "Lady Arano,  you're a wanted terrorist in the [[DM.Factions[faction_AuriganDirectorate],Directorate]] and [[DM.Factions[faction_TaurianConcordat],Concordat]], so I can still demand your surrender or face total destruction.\n\nAnd if you won't reveal willingly what we want to know, well [[DM.BaseDescriptionDefs[LoreComstarROM],ROM]] has other ways.",
       "branches": [
         {
           "responseText": "",
@@ -536,7 +594,7 @@
         "id": "9ccdd3a167847007a90be983"
       },
       "index": 13,
-      "text": "And I'm supposed to believe that, Lady Arano?\n\nYou already somehow discovered that DropShip, and now you found nothing down there?",
+      "text": "And I'm supposed to believe that, Lady Arano?\n\nYou already somehow discovered that DropShip in the Deep Periphery, and now you found nothing down there?",
       "branches": [
         {
           "responseText": "",
@@ -573,7 +631,7 @@
         "id": "9cf6b616dca721c290cd3add"
       },
       "index": 14,
-      "text": "The <i>Argo</i>'s navigational computers indicate this was the last system visited prior to being abandoned.\n\nBut whatever the SLDF had down here, they took it with them when they left.",
+      "text": "The <i>Argo</i>'s navigational computers indicate this was the last system visited prior to being abandoned.\n\nBut whatever the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] had down here, they took it with them when they left.",
       "branches": [
         {
           "responseText": "",
@@ -608,7 +666,7 @@
         "id": "9c971b517be369931563ed24"
       },
       "index": 15,
-      "text": "I'm not sure exactly to trust you entirely, Lady Arano, but if what you've affirmed it is all true, then once I secure the SLDF site you are free to go.\n\nAs to you and the current conflict, as per Blessed Blake's vision, ComStar never takes sides.",
+      "text": "I'm not sure exactly to trust you entirely, Lady Arano, but if what you've affirmed it is all true, then once I secure the SLDF site you are free to go.\n\nAs to you and the current conflict, as per [[DM.BaseDescriptionDefs[LoreJeromeBlake],Blessed Blake]]'s vision, ComStar never takes sides.",
       "branches": [
         {
           "responseText": "",
@@ -645,7 +703,7 @@
         "id": "9c2d6fcf80f025b83a2294d2"
       },
       "index": 16,
-      "text": "If you require, Precentor, I will be available to discuss this further with you or the local ComStar office at Coromodir once I defeat the Directorate.\n\nMeanwhile, you have a lot to explore. Enjoy your prize.",
+      "text": "If you require, Precentor, I will be available to discuss this further with you or the local ComStar office at [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir]] once I defeat the Directorate.\n\nMeanwhile, enjoy your empty complex.",
       "branches": [
         {
           "responseText": "",
@@ -680,7 +738,7 @@
         "id": "9c9b653492bbdee8bae75282"
       },
       "index": 17,
-      "text": "[Connection terminated.]",
+      "text": "[HPG link terminated.]",
       "branches": [
         {
           "responseText": "",
@@ -741,7 +799,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f26230355c18000069",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": {
         "ops": [
           {
@@ -766,7 +824,7 @@
         "id": "9c97ebf389b45d93d428dd9d"
       },
       "index": 19,
-      "text": "It possible but unlikely, COMMANDER.\n\nOnce I identified myself, the Precentor realized he was playing at a different level and he'll find nothing down there like we did.",
+      "text": "It possible but unlikely, Commander {COMMANDER.LastName}.\n\nOnce I identified myself, the Precentor realized he was playing at a different level and he'll find nothing down there like we did.",
       "branches": [
         {
           "responseText": "",
@@ -862,7 +920,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59baac916230356416000354",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -897,7 +955,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59baac916230356416000354",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -932,7 +990,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -967,7 +1025,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -976,7 +1034,7 @@
         "id": "9c7ae66690c06e3b7e0cbc24"
       },
       "index": 25,
-      "text": "Aye, aye, Lady Arano.\n\nAnd",
+      "text": "Aye, aye, Lady Arano.",
       "branches": [
         {
           "responseText": "",
@@ -1002,7 +1060,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     }

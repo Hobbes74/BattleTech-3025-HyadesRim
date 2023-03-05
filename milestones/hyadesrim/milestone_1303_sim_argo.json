@@ -13,10 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [
-					"flashpoint_otaku_complete",
-					"flashpoint_wilderness_complete"					
-				],
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -62,15 +59,28 @@
             "Actions" : [	
 				{
                     "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Tyrlon",
-					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
+                    "value" : "starsystemdef_Itrom",
+					"additionalValues" : [ "starsystemdef_Itrom_Contested" ]
                 },
 				{
 					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_310_aranoRestoration",
+					"value" : "fp_StoryTime_HYR_308_wilderness",
 					"valueConstant" : null,
 					"additionalValues" : [
-						"Tyrlon"
+						"Itrom"
+					]
+				},
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Mechdur",
+					"additionalValues" : [ "starsystemdef_Mechdur_Contested" ]
+                },
+				{
+					"Type" : "System_AddFlashpoint",
+					"value" : "fp_StoryTime_HYR_309_vortex",
+					"valueConstant" : null,
+					"additionalValues" : [
+						"Mechdur"
 					]
 				}
             ],

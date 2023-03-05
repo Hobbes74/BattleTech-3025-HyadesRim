@@ -1,18 +1,18 @@
 {
-    "ID" : "nagayanValley_1_battle",
-    "contractName" : "Nagayan Valley",
+    "ID" : "nagayanMountains_3a_simpleBattle",
+    "contractName" : "Dreams Of Nagayan Mountains III",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
+    "representativeCastDefIDOverride" : "castDef_KameaDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "There are three separate task forces approaching the SLDF complex from different directions, and it seems that they're aggressively probing for our location. But whomever designed the base knew exactly where to place tunnel entrances to ambush any attackers. But we risk them eventually figuring it out and detecting our location.",
-    "longDescription" : "The first group shouldn't be too hard, but we won't have time to perform repairs between missions.",
+    "shortDescription" : "The third Eye group is about to enter the valley where our team is located so we need to stop them before extracting them.",
+    "longDescription" : "Once they're done, we are not detecting anymore hostile forces approaching our position, so we will be clear for a while.",
     "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -34,13 +34,13 @@
         -1
     ],
     "mapMood" : null,
-    "startingFogOfWarVisibility" : "Unknown",
+    "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Stop the third task force",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy First Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Second Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -118,7 +118,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is going to be a stand-up fight, Commander - your lance against the opposing force's.",
+                    "words" : "Commander, you've reached the {TEAM_TAR.FactionDef.Demonym} family's territory.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,7 +134,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Intel says that they're near your current location. Move in and clear them out.",
+                    "words" : "Be on the lookout for reinforcements. We'll need to eliminate all enemy forces that take the field.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -144,13 +144,13 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliveira out.",
+                    "words" : "Don't be complacent if the 'Mechs look a little worse for wear; they can still kill you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -175,7 +175,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Targets down, Commander! Let's get you home and collect our pay.",
+                    "words" : "Good job, Commander. Let's get out of here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -200,7 +200,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Yeah, this is bad. I'm scrubbing this and bringing you home.",
+                    "words" : "This family is going to have to fend for themselves. We're pulling out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -244,8 +244,8 @@
         }
     ],
     "extractionOverrideList" : [],
-    "overwriteMissionCompleteWhenAutoComplete" : false,
-    "overrideAutoCompleteDialogueId" : "",
+    "overwriteMissionCompleteWhenAutoComplete" : true,
+    "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : true,
@@ -462,8 +462,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_fire",
-                        "lance_type_mech"
+                        "lance_type_battle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -475,7 +474,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -621,7 +620,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_recon"
+                        "lance_type_support"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -633,7 +632,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

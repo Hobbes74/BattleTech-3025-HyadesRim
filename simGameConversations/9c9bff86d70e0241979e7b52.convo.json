@@ -2,14 +2,14 @@
   "idRef": {
     "id": "9c9bff86d70e0241979e7b52"
   },
-  "ui_name": "HYR_306_nagayanValley_1",
+  "ui_name": "HYR_306_nagayanMountains_1",
   "nodes": [
     {
       "idRef": {
         "id": "9caa661001466ce5e2c2679e"
       },
       "index": 0,
-      "text": "Lady Arano, the <i>Argo</i>'s navigational data and sensors were correct.\n\nWe've found the entrance to an old network of tunnels, and there are SLDF markings all over the place.",
+      "text": "Lady Arano, the <i>Argo</i>'s navigational data and sensors were correct about [[DM.BaseDescriptionDefs[LoreZenopia],Zenopia]].\n\nWe've found the entrance to an old network of tunnels, and there are [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] markings all over the place.",
       "branches": [
         {
           "responseText": "",
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "5a7de7f0623035101200090e",
       "actions": {
         "ops": [
           {
@@ -96,6 +96,48 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Alexander,Farah,Yang",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Kamea,Darius,Sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -106,7 +148,7 @@
         "id": "9cc3f9b34a88ce74c29b0dbf"
       },
       "index": 1,
-      "text": "Captain, I still have my doubts about the structural stability of some places because they used high grade explosives to block this entrance.\n\nWe found it easily because of centuries of erosion that started exposing the blasted areas but I'm not sure of the conditions inside.",
+      "text": "Yeah, although I still have my doubts about the structural stability of some places because they used military grade explosives to block this entrance.\n\nWe found it easily because of centuries of erosion that started exposing the blasted areas.",
       "branches": [
         {
           "responseText": "",
@@ -132,7 +174,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "5a6aa4a8623035a020000ea9",
       "actions": {
         "ops": [
           {
@@ -183,8 +225,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -192,7 +250,7 @@
         "id": "9c55d0b3f24305c4e4ec5219"
       },
       "index": 3,
-      "text": "From what I remember reading about the SLDF, this could be one of their Castle Brians, likely dating to before the Periphery Uprising.\n\nThe Star League could have used it to store anything down there.",
+      "text": "From what I remember reading about the SLDF, this could be one of their [[DM.BaseDescriptionDefs[LoreCastleBrian],Castle Brians]], likely dating to before the [[DM.BaseDescriptionDefs[LorePeripheryUprising],Periphery Uprising]].\n\nThe [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] could have used it to store anything down there.",
       "branches": [
         {
           "responseText": "",
@@ -218,7 +276,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -227,7 +285,7 @@
         "id": "9c9cdc750f2928ce3a1d42bf"
       },
       "index": 4,
-      "text": "Castle Brians were heavily fortified and armed with anti-space weapons and garrisoned by divisions of BattleMechs, XO.\n\nUnless they've buried the entire structure, there's no way such a fortress could be down there without it being detected in orbital scans.",
+      "text": "Castle Brians were heavily fortified, armed with anti-space weapons and garrisoned by divisions of BattleMechs, XO.\n\nUnless they've buried the entire structure, there's no way such a fortress could be down there without it being detected in orbital scans.",
       "branches": [
         {
           "responseText": "",
@@ -253,7 +311,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "5a6aa38b623035a020000d9d",
       "actions": null,
       "comment": ""
     },
@@ -262,7 +320,7 @@
         "id": "9c94db0a4f6483577e8db3e7"
       },
       "index": 5,
-      "text": "And that's still a negative on that last one, Alexander, because our sensors are still unable to detect any artificial structures on the surface, even with the now known location of this entrance.\n\nAnd there are no other locations similar to the entrance you found in a range of nearly a hundred kilometers, but they can just be well hidden.",
+      "text": "And that's still a negative on that last one, Alexander, because our sensors are still unable to detect any artificial structures on the surface.\n\nAnd there seem to be no other structures similar to the entrance you found in that valley.",
       "branches": [
         {
           "responseText": "",
@@ -288,7 +346,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -297,7 +355,7 @@
         "id": "9c36812b13e8b5ce00486f72"
       },
       "index": 6,
-      "text": "So what are we looking at down there exactly?\n\nWhat would have the Star League have buried down there?",
+      "text": "So what are we looking at down there exactly?\n\nWhat could the Star League have buried down there?",
       "branches": [
         {
           "responseText": "",
@@ -323,7 +381,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -332,7 +390,7 @@
         "id": "9c835e0abb7e884ba79d0d02"
       },
       "index": 7,
-      "text": "We have brought hazmat suits for any possible scenarios but I doubt they would have used this for NBC weapons.",
+      "text": "We have brought hazmat suits for any possible scenarios but I doubt they would have used this for [[DM.BaseDescriptionDefs[LoreNBC],NBC]] weapons.\n\nThe <i>Argo</i>'s database shows this moon as its last location before it headed to [[DM.BaseDescriptionDefs[LoreSkyfog],Skyfog]] in the Deep Periphery... something else must be down there.",
       "branches": [
         {
           "responseText": "",
@@ -358,8 +416,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -367,7 +441,7 @@
         "id": "9c9a4cf27b32e4363885a9da"
       },
       "index": 8,
-      "text": "I agree with Dr. Murad, it's more likely we will find something else down there and I'm hoping for some SLDF 'Mechs.",
+      "text": "I agree with Dr. Murad, it's more likely we will find something else down there and I'm hoping we will find some SLDF grade 'Mechs.",
       "branches": [
         {
           "responseText": "",
@@ -393,8 +467,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "5a6aa4a8623035a020000ea9",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "yang",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -402,13 +492,13 @@
         "id": "9c6944efdf88470a71216def"
       },
       "index": 9,
-      "text": "",
+      "text": "Whatever it is, you all need to hurry.\n\nA group of unknown DropShips has landed several miles from your position and their lead elements will be entering the valley where the entrance is located soon.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 10,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -428,8 +518,215 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc59c26bed174e55f3b4208"
+      },
+      "index": 10,
+      "text": "Pilot Meyer is correct. \n\nI am ordering the company to deploy and stop their recon elements, but the <i>Argo</i> has also tracked two additional groups.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c930e2f660b7917a6fdb0be"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c509bb92cc4ac09a50f1001"
+      },
+      "index": 11,
+      "text": "From what I remember from the orbital maps, it won't be easy for them to reach our location.\n\nBecause we're going to need to time to properly search this place.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6fded344bb69d24c675efd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca2a0556fe2e4baa73ac91c"
+      },
+      "index": 12,
+      "text": "They made their orbital insertion on the other side of the moon while we dropped you in the <i>Hysteria</i> so you should be safe for now.\n\nBut the <i>Argo</i> is almost defenseless every time we deploy her, so we're risking one of those landed DropShips coming after us in orbit.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c269e2bfc5faeca14ac9098"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca3fb64d387767e4701bce7"
+      },
+      "index": 13,
+      "text": "And I can't risk this DropShip, so you all get ready to leave once we finish dealing with this first group.\n\nPrepare to deploy, Commander, the <i>Argo</i> is out.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce5f1e81ba8b4b263c54aa4"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cee1c28772a1c512741cee4"
+      },
+      "index": 14,
+      "text": "[Transmission disconnected.]",
+      "branches": [
+        {
+          "responseText": "Yes, Lady Arano.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7ed878ea631fef6a7a2214"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

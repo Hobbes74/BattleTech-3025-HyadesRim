@@ -1,19 +1,19 @@
 {
-    "ID" : "nagayanValley_2a_battle",
-    "contractName" : "Nagayan Valley II",
+    "ID" : "nagayanMountains_2a_simpleBattle",
+    "contractName" : "Dreams Of Nagayan Mountains II",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
+    "representativeCastDefIDOverride" : "castDef_KameaDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : ".",
-    "longDescription" : "They pick these empty worlds for conducting exercises in hopes of keeping it a secret. Too bad for them, I suppose.",
-    "salvagePotential" : 12,
+    "shortDescription" : "The second enemy task force is a mix of both vehicles and 'Mechs, which should make it easier for us to deal with. And Sumire has just detected that the Eye's third group has increased its speed and are racing for the valley where our team is located, so we'll have no choice but to engage them afterwards.",
+    "longDescription" : "Dr. Murad and the others just got some extra time, let's hope they find something worthwhile down there while we slug it out.",
+    "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Interrupt the military exercises",
+            "title" : "Ambush the second task force",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy First Lance",
             "description" : "The primary objective to destroy the enemy lance.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Second Lance",
             "description" : "An OPTIONAL primary objective to destroy the second enemy lance.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -118,7 +118,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've picked up fusion engine signatures and weapons fire, Commander.",
+                    "words" : "There are two lances approaching this entrance to the valley where the entrance to the mountain complex is located.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,7 +134,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Looks like our targets are in this area.",
+                    "words" : "The first one is only vehicles, so they shouldn't be too hard.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -150,14 +150,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move up, make contact, and wipe them out.",
+                    "words" : "But we definitely lost track of the second lance during our landing. And the third group is speeding up.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We will be running a tight schedule here. Take them down quickly, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -175,14 +191,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander. I've alerted our employers; let's get out of here.",
+                    "words" : "Well done, Commander. But there's still the third group to deal with.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -200,7 +216,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm not sure what went wrong, Commander, but we need to withdraw before we suffer any more losses.",
+                    "words" : "Damn it, I mean scrub the mission. Abort!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -222,10 +238,26 @@
                 "EncounterObjectGuid" : "33166b96-5af2-4724-b970-7884ec41ffd0"
             },
             "name" : "Dialogue_AmbushWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "A primary target is damaged, Commander! Keep it up!",
+                    "words" : "Several 'Mech signatures detected!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Here comes the second lance, watch out, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -462,7 +494,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_mech"
+                        "lance_type_vehicle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -474,7 +506,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -620,7 +652,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_vehicle"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },

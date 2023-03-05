@@ -2,14 +2,14 @@
   "idRef": {
     "id": "9c9bff86d70e0241979e7b53"
   },
-  "ui_name": "HYR_306_nagayanValley_2",
+  "ui_name": "HYR_306_nagayanMountains_2",
   "nodes": [
     {
       "idRef": {
         "id": "9cb4b7c6f15b0fbcc222667b"
       },
       "index": 0,
-      "text": "Ground party, this is the <i>Argo</>.\n\nFarah, how are things on the ground?",
+      "text": "Ground party, this is the <i>Argo</i>.\n\nFarah, how are things at the site?",
       "branches": [
         {
           "responseText": "",
@@ -96,6 +96,48 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Yang,Alexander,Farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Kamea,Darius,Sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -106,7 +148,7 @@
         "id": "9c18f752dbff0fdbf56e9d3b"
       },
       "index": 1,
-      "text": "Captain, we are still looking around the maze of tunnels that we have discovered and trying to map the entire complex.\n\nBut from what I've seen this must be what we're looking for, Project UMBRELLA's headquarters.",
+      "text": "Captain, we are still looking around the maze of tunnels that we have discovered and trying to map the entire complex.\n\nBut from what I've seen this must be what we're looking for, [[DM.BaseDescriptionDefs[LoreProjectUMBRELLA],Project UMBRELLA]]'s headquarters.",
       "branches": [
         {
           "responseText": "",
@@ -133,7 +175,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a7de7f0623035101200090e",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -141,7 +199,7 @@
         "id": "9c488b8348646058006d6b02"
       },
       "index": 2,
-      "text": "But is there anything actually useful down those tunnels?",
+      "text": "That's good to hear but is there anything actually useful down those tunnels?",
       "branches": [
         {
           "responseText": "",
@@ -176,7 +234,7 @@
         "id": "9c9eb54fb809e6d86a048188"
       },
       "index": 3,
-      "text": "Kamea, we've recovered SLDF documentation that proves this facility was a major installation, including the logs that show the <i>Argo</i> was once based here.\n\nThere must be something down these tunnels regarding Project UMBRELLA, and what it was its true purpose.",
+      "text": "Kamea, we've recovered [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] documentation that proves this facility was a major installation, including the logs that show the <i>[[DM.BaseDescriptionDefs[LoreArgo],Argo]]</i> was once based here.\n\nThere must be something down these tunnels regarding Project UMBRELLA, and what it was its true purpose.",
       "branches": [
         {
           "responseText": "",
@@ -203,7 +261,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -211,7 +285,7 @@
         "id": "9c5b7666ab60a73270886778"
       },
       "index": 4,
-      "text": "Yeah, Captain, we haven't seen any terraforming equipment around here but there are a lot of empty 'Mech warehouses... the underground network allowed them to move around and deploy to different areas of the base.\n\nLike Dr. Murad said, it's just a matter of time until we get jackpot.",
+      "text": "Yeah, Captain, we haven't seen any terraforming equipment around here but there are a lot of empty [[DM.BaseDescriptionDefs[LoreBattleMech],'Mech]] warehouses... the underground network allowed them to move around and deploy to different areas of the base.\n\nLike Dr. Murad said, it's just a matter of time until we hit the jackpot.",
       "branches": [
         {
           "responseText": "",
@@ -238,7 +312,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa4a8623035a020000ea9",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "yang",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -246,7 +336,7 @@
         "id": "9c3d3f00dc11d8fd9c58bfcd"
       },
       "index": 5,
-      "text": "That does not sound promising at all, Yang. ",
+      "text": "That does not sound promising at all, Yang.\n\nAnd we still have two additional [[DM.Factions[faction_EvilEye],Eye]] task forces approaching your position.",
       "branches": [
         {
           "responseText": "",
@@ -281,7 +371,7 @@
         "id": "9ccea7d0c18aacd2c08f5e5f"
       },
       "index": 6,
-      "text": "Captain, there's SLDF markings all over the tunnels and chambers, and the ones closest to the ",
+      "text": "Captain, there are SLDF markings all over the tunnels and 'Mech bays and we already recovered a few useful items that were left behind.\n\nI'm betting that whomever emptied these didn't had time or resources to bother salvaging the rest of the mountain complex.",
       "branches": [
         {
           "responseText": "",
@@ -308,7 +398,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "yang",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -316,7 +422,7 @@
         "id": "9c1232a4b5461b4f24cdae8f"
       },
       "index": 7,
-      "text": "",
+      "text": "Yang, if we take them down they'll be able to triangulate the position we are trying to defend and their DropShips will drop directly at your location.",
       "branches": [
         {
           "responseText": "",
@@ -351,7 +457,7 @@
         "id": "9cee22896aa4515a1fad4b1c"
       },
       "index": 8,
-      "text": "",
+      "text": "But Captain... we could be hitting the mother lode of all [[DM.BaseDescriptionDefs[LoreLosTech],lostech]] caches down here!\n\n<i>Saatana</i>We can't stop now!",
       "branches": [
         {
           "responseText": "",
@@ -386,7 +492,7 @@
         "id": "9cd0277c2c5a052f4f6e7432"
       },
       "index": 9,
-      "text": "Kamea, it's clear that the SLDF evacuated this Castle Brian and left to an unknown location, possibly one of the UMBRELLA worlds that we haven't discovered yet.\n\nBut they must have left at least some clue to where they went.",
+      "text": "And Kamea, it's clear that the SLDF evacuated this [[DM.BaseDescriptionDefs[LoreCastleBrian],Castle Brian]] and left to an unknown location, possibly one of the UMBRELLA worlds that we haven't discovered yet.\n\nBut they must have left at least some clue to where they went.",
       "branches": [
         {
           "responseText": "",
@@ -412,7 +518,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "5a6aa38b623035a020000d9d",
       "actions": null,
       "comment": ""
     },
@@ -599,7 +705,7 @@
       "text": "What do you think, COMMANDER?\n\nThis might just be a dead end that we're chasing, what would you recommend?",
       "branches": [
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Canyon.]</color> ",
+          "responseText": "<color=#85DBF6FF>[Story Decision: Give the team more time.]</color> We might as well take them down for the loot while they finish their search.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 16,
@@ -613,7 +719,7 @@
           "comment": ""
         },
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Canyon.]</color> ",
+          "responseText": "<color=#85DBF6FF>[Story Decision: Take no chances and leave.]</color> Lady Arano, this is a dead end we're chasing, let's not waste more time here.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 17,
@@ -636,7 +742,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
