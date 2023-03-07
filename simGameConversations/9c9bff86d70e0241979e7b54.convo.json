@@ -2,14 +2,14 @@
   "idRef": {
     "id": "9c9bff86d70e0241979e7b54"
   },
-  "ui_name": "HYR_306_nagayanValley_3",
+  "ui_name": "HYR_306_nagayanMountains_3",
   "nodes": [
     {
       "idRef": {
         "id": "9c78e5b97edffac421d846d0"
       },
       "index": 0,
-      "text": "Alexander, Farah, are you all ready to leave?\n\nWe stopped the first group but there are two others approaching the valley where the SLDF base is located.",
+      "text": "Alexander, Farah, are you all ready to leave?\n\nWe stopped the Eye task forces from reaching the valley where the SLDF base is located but we need to evac you now.",
       "branches": [
         {
           "responseText": "",
@@ -96,6 +96,48 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Kamea,Darius,Sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Yang,Alexander,Farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -133,7 +175,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a7de7f0623035101200090e",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -176,7 +234,7 @@
         "id": "9c0cb5fcbc74c9d607a3b4df"
       },
       "index": 3,
-      "text": "It's everything!\n\nThis base has been stripped clean of anything worthwhile except for the single thing that the SLDF personnel couldn't take, the physical computers of its Star League Field Library.",
+      "text": "It's everything!\n\nThis base has been stripped clean of almost anything worthwhile except for the single thing that the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] personnel couldn't take, the physical computers of its [[DM.BaseDescriptionDefs[LoreStarLeagueFieldLibrary],Star League Field Library]].",
       "branches": [
         {
           "responseText": "A Star League what?",
@@ -211,7 +269,7 @@
         "id": "9c78eb6e648db656d21a9ab2"
       },
       "index": 4,
-      "text": "Commander, three hundred years ago most of the worlds that belonged to the Star League had one of these libraries.\n\nThey were built to spread mankind's scientific knowledge so that it wouldn't be lost and to help prevent war.",
+      "text": "Commander, three hundred years ago most of the worlds that belonged to the [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] had one of these libraries.\n\nThey were built to spread mankind's scientific knowledge so that it wouldn't be lost and to help prevent war.",
       "branches": [
         {
           "responseText": "",
@@ -238,7 +296,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -246,7 +320,7 @@
         "id": "9c998ddf8836810aecee5079"
       },
       "index": 5,
-      "text": "Judging from the overall condition of the Inner Sphere nowadays, that plan didn't seem to work out. ",
+      "text": "Judging from the overall condition of the [[DM.BaseDescriptionDefs[LoreInnerSphere],Inner Sphere]] nowadays, that plan didn't seem to work out.\n\nAnd I have never heard of them before, as well.",
       "branches": [
         {
           "responseText": "",
@@ -281,7 +355,7 @@
         "id": "9cb4a8e8313402deef99f48b"
       },
       "index": 6,
-      "text": "They were all looted or destroyed during the Succession Wars, so the knowledge contained on this one is priceless.\n\nKamea, the technological wonders in this library could bring a renaissance to the Reach and the whole Inner Sphere. ",
+      "text": "They were all looted or destroyed during the [[DM.BaseDescriptionDefs[LoreSuccessionWars],Succession Wars]], so the knowledge contained on this one is priceless.\n\nKamea, the technological wonders in this library could bring a renaissance to the [[DM.BaseDescriptionDefs[LoreAuriganReach],Reach]] and the entire Inner Sphere. ",
       "branches": [
         {
           "responseText": "",
@@ -307,8 +381,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -316,7 +406,7 @@
         "id": "9c555452f98bc9eafc0073b4"
       },
       "index": 7,
-      "text": "But if the SLDF had to leave the library there, that means can't take with us as well, Farah and Alexander?",
+      "text": "But if the SLDF had to leave the library there, doesn't that mean we can't take it with us as well, Farah and Alexander?",
       "branches": [
         {
           "responseText": "",
@@ -378,7 +468,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -386,7 +492,7 @@
         "id": "9c41c28bfaf5a4129b530edf"
       },
       "index": 9,
-      "text": "Captain, there might be one of them around.\n\nAnd we're wasting time we need to keep looking, like Yang is doing right now!",
+      "text": "Captain, there might be one of them around.\n\nAnd we're wasting time we need to keep looking, like Yang is doing right now and he just found some intact SLDF gear!",
       "branches": [
         {
           "responseText": "",
@@ -413,7 +519,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a7de7f0623035101200090e",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -456,7 +578,7 @@
         "id": "9c096593ab52e10c48d0a6a6"
       },
       "index": 11,
-      "text": "Which only reinforces the importance of our prize here.\n\nWe can't let this library fall into the hands of the Taurians or pirates, the Reach needs it, Kamea.",
+      "text": "Which only reinforces the importance of our prize here.\n\nWe can't let this library fall into the hands of pirates, the Reach needs it to rebuild after the civil war is over, Kamea.",
       "branches": [
         {
           "responseText": "",
@@ -491,10 +613,10 @@
         "id": "9c7e914d18db6fda5200e7ac"
       },
       "index": 12,
-      "text": "Very well, Farah and Alexander, all of you keep looking for whatever you need.\n\nBut Yang needs to finish prepping our 'Mechs down there for another deployment.",
+      "text": "Very well, Farah and Alexander for all of you keep looking, we will need to start prepping our 'Mechs down there for yet another deployment.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "We'll be ready for it, Lady Arano.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 13,
@@ -526,7 +648,7 @@
         "id": "9cc4ebc3cfbf247c66b3a17b"
       },
       "index": 13,
-      "text": "Lady Arano, Commander, even with the tactical advantage of the Castle Brian's tunnels, this sort of prolonged engagements means that our combined damage ratio is increasing and the curve is soon going to hit us if we deploy damaged 'Mechs.",
+      "text": "Lady Arano, Commander, even with the tactical advantage of the mountain complex, this sort of prolonged engagements means that our combined damage ratio is increasing and the curve is soon going to hit us if we deploy damaged 'Mechs.\n\nAt that point, our losses will start climbing.",
       "branches": [
         {
           "responseText": "",
@@ -561,10 +683,10 @@
         "id": "9c3a652a383533a9ebb91382"
       },
       "index": 14,
-      "text": "And this is what a true war looks like, Mr. Oliveira. \n\nA lot of commanders right now are facing the same dilemmas all around the Inner Sphere while fighting the Fourth Succession War.",
+      "text": "And this is what a true war looks like, Mr. Oliveira. \n\nA lot of commanders right now are facing the same dilemmas right now... what do you think, {COMMANDER.Callsign}?",
       "branches": [
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Canyon.]</color> And the Eye also sees the place as valuable.",
+          "responseText": "<color=#85DBF6FF>[Story Decision: Give team more time.]</color> The Eye also sees the place as valuable, so something big must be down there.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 15,
@@ -578,7 +700,7 @@
           "comment": ""
         },
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Canyon.]</color> That doesn't mean we have to put ourselves into a conflict right now.",
+          "responseText": "<color=#85DBF6FF>[Story Decision: Evacuate complex.]</color> That doesn't mean we have to put ourselves into a conflict right now.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 16,
@@ -601,7 +723,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -610,13 +732,13 @@
         "id": "9cd3a54f201110d9d26260c4"
       },
       "index": 15,
-      "text": "",
+      "text": "Indeed, Commander {COMMANDER.LastName}.\n\nVery well, let's check if it is something worthwhile.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 17,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -636,7 +758,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": {
         "ops": [
           {
@@ -717,13 +839,13 @@
         "id": "9ccd9835b6420cc9aecb6b55"
       },
       "index": 16,
-      "text": "",
+      "text": "I agree with your assessment, Commander {COMMANDER.LastName}.\n\nWe took enough risks already, it's time we extract the team and leave this planetoid.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 18,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -743,7 +865,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": {
         "ops": [
           {
@@ -817,6 +939,111 @@
           }
         ]
       },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cda9392fd2052eba812d096"
+      },
+      "index": 17,
+      "text": "Yes, Lady Arano, I'll order the techs to complete their work on the 'Mechs.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cae3abdbc58d48d8f6baf85"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c266e0811dcc651cd0825fa"
+      },
+      "index": 18,
+      "text": "Aye, aye, Captain, we'll send the <i>Hysteria</i> to collect the crew right away.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd0e3d02fe9b0d7d4bf0368"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1c2eb9c5977c81bd373679"
+      },
+      "index": 19,
+      "text": "And at least they got some decent salvage even if they couldn't get that library.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6716fb9422d4b75a97b8d5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
       "comment": ""
     }
   ],

@@ -457,7 +457,7 @@
         "id": "9cee22896aa4515a1fad4b1c"
       },
       "index": 8,
-      "text": "But Captain... we could be hitting the mother lode of all [[DM.BaseDescriptionDefs[LoreLosTech],lostech]] caches down here!\n\n<i>Saatana</i>We can't stop now!",
+      "text": "But Captain... we could be hitting the mother lode of all [[DM.BaseDescriptionDefs[LoreLosTech],lostech]] caches down here!\n\n<i>Saatana</i>, we can't stop now!",
       "branches": [
         {
           "responseText": "",
@@ -483,7 +483,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "speaker_override_id": "5a6aa4a8623035a020000ea9",
       "actions": null,
       "comment": ""
     },
@@ -492,10 +492,10 @@
         "id": "9cd0277c2c5a052f4f6e7432"
       },
       "index": 9,
-      "text": "And Kamea, it's clear that the SLDF evacuated this [[DM.BaseDescriptionDefs[LoreCastleBrian],Castle Brian]] and left to an unknown location, possibly one of the UMBRELLA worlds that we haven't discovered yet.\n\nBut they must have left at least some clue to where they went.",
+      "text": "And Kamea, it's clear that the SLDF evacuated this [[DM.BaseDescriptionDefs[LoreCastleBrian],Castle Brian]] and left to an unknown location, possibly one of the UMBRELLA worlds that we haven't discovered yet.\n\nBut they must have left at least some clues to where they went.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "You mean, another delay to take a detour to the Deep Periphery?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 10,
@@ -519,7 +519,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -527,7 +543,7 @@
         "id": "9ce67a4ad4054039badb27a2"
       },
       "index": 10,
-      "text": "No matter what's down there, you all need to hurry.\n\nThe DropShip who has been trailing us has landed and is deploying BattleMechs headed to your location.",
+      "text": "Commander {COMMANDER.LastName}, all of the gear on these caves must have gone somewhere, and possibly related to projects UMBRELLA or [[DM.BaseDescriptionDefs[LoreProjectREDOUBT],REDOUBT]].",
       "branches": [
         {
           "responseText": "",
@@ -553,8 +569,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -562,7 +594,7 @@
         "id": "9c75ed7dba2f8f35a1271e5b"
       },
       "index": 11,
-      "text": "That was already suspicious how they joined up unscheduled with our JumpShip at the previous system before we jumped here.\n\nAny ID markings?",
+      "text": "Or was never there in the first place.\n\nWe know that the <i>Argo</i> visited this dwarf planet but we have no proof that they actually brought something from the mountain complex.",
       "branches": [
         {
           "responseText": "",
@@ -588,7 +620,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -597,7 +629,7 @@
         "id": "9c0f748e15e1436298c4186c"
       },
       "index": 12,
-      "text": "",
+      "text": "Alexander, Farah, at this point I am only interested in what we can salvage here that will help me regain my throne.\n\nAnything else is secondary at this point.",
       "branches": [
         {
           "responseText": "",
@@ -623,7 +655,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -632,7 +664,7 @@
         "id": "9c8acb9257f15b2019fbe3f3"
       },
       "index": 13,
-      "text": "",
+      "text": "Understood, we'll redouble our efforts recovering whatever might be salvageable down there.\n\nBut we need more time.",
       "branches": [
         {
           "responseText": "",
@@ -658,7 +690,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "5a7de7f0623035101200090e",
       "actions": null,
       "comment": ""
     },
@@ -667,7 +699,7 @@
         "id": "9c753454d2ee06a086203999"
       },
       "index": 14,
-      "text": "Lady Arano, Commander, we need to take a decision about the situation on the ground.\n\nUnless we stop the two remaining Evil Eye task groups, one of them will reach the entrance of the SLDF facility and our people will be trapped.",
+      "text": "Lady Arano, Commander {COMMANDER.LastName}, we need to take a decision now.\n\nUnless we stop the two remaining Evil Eye task groups, they'll reach our people while they continue their search.",
       "branches": [
         {
           "responseText": "",
@@ -693,7 +725,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -751,13 +783,13 @@
         "id": "9c61590746b6da9a8929a6dd"
       },
       "index": 16,
-      "text": "",
+      "text": "Very well.\n\nFarah, your team go ahead and keep probing the mountain complex, we'll drop to stop the Eye forces from reaching you.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 20,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -777,7 +809,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": {
         "ops": [
           {
@@ -858,13 +890,13 @@
         "id": "9c71b45fa942e0ec5663d60c"
       },
       "index": 17,
-      "text": "",
+      "text": "And we already got something out of that complex.\n\nXO, let's leave this planetoid as quickly as possible.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 19,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -884,7 +916,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": {
         "ops": [
           {
@@ -951,6 +983,112 @@
                 "bool_value": false,
                 "float_value": 0.0,
                 "string_value": "fp_choice_b",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cffb61d0d48b2a2e9ccfc0d"
+      },
+      "index": -1,
+      "text": "",
+      "branches": [],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c32b4701f338abc65032900"
+      },
+      "index": 19,
+      "text": "Understood, we will pick up the team right away.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9946224d55d2aa8546e729"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c12b9a75618d78b0bdd0361"
+      },
+      "index": 20,
+      "text": "We will make it count, Kamea.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cda01b822e4c158ea785932"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "5a7de7f0623035101200090e",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "farah",
                 "call_value": null,
                 "variableref_value": null
               }
