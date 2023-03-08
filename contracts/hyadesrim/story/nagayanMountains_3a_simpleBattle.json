@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The third Eye group is about to enter the valley where our team is located so we need to stop them before extracting them.",
-    "longDescription" : "Once they're done, we are not detecting anymore hostile forces approaching our position, so we will be clear for a while.",
+    "shortDescription" : "The third Eye group has cleared the mountain pass and is starting to move down the valley where our team is located. Again, they're only deploying a pair of lances, but we stop them before we can extract our team.",
+    "longDescription" : "Once they're done, we are not detecting more hostile forces approaching our position, so we might be clear for a while.",
     "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -118,7 +118,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, you've reached the {TEAM_TAR.FactionDef.Demonym} family's territory.",
+                    "words" : "And the last Eye group has just entered this valley.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,14 +134,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Be on the lookout for reinforcements. We'll need to eliminate all enemy forces that take the field.",
+                    "words" : "We can't let any of them get past us, or they'll reach the entrance to the mountain complex and trap our people inside.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -150,14 +150,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Don't be complacent if the 'Mechs look a little worse for wear; they can still kill you.",
+                    "words" : "Take all of them down, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -175,14 +175,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Good job, Commander. Let's get out of here.",
+                    "words" : "Well done, Commander. Now let's see what they found at the SLDF complex.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -200,14 +200,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This family is going to have to fend for themselves. We're pulling out.",
+                    "words" : "Extraction is a no go!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -462,6 +462,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
+                        "lance_type_mech",
                         "lance_type_battle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -620,6 +621,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
+                        "lance_type_mech",
                         "lance_type_support"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"

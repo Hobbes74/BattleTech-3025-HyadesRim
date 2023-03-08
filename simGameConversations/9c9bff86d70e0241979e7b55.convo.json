@@ -112,7 +112,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "Kamea,Darius",
+                "string_value": "Kamea,Darius,Sumire",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -133,7 +133,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "Yang,Alexander,Farah,Sumire",
+                "string_value": "Yang,Alexander,Farah",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -201,7 +201,7 @@
         "id": "9cb77738a9e19cdcfdedcfeb"
       },
       "index": 2,
-      "text": "Lady Arano, with Sumire and the <i>Hysteria</i> on their way back after picking our ground crew, we have no defenses against their DropShip.\n\nWhat should we do?",
+      "text": "Lady Arano, with the <i>Hysteria</i> away while picking up our ground crew and salvage, we have no defenses against their DropShip.\n\nWhat should we do?",
       "branches": [
         {
           "responseText": "",
@@ -271,7 +271,7 @@
         "id": "9c60c49205558c0fef83d711"
       },
       "index": 4,
-      "text": "ComStar vessel <i>Newton</i>, this is High Lady Kamea Arano, the legitimate ruler of the Aurigan Reach.\n\nPrecentor Cattus, what are your intentions towards me and my kingdom?",
+      "text": "ComStar vessel <i>Newton</i>, this is High Lady Kamea Arano, the legitimate ruler of the [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigan Reach]].\n\nPrecentor Cattus, what are your intentions towards me and my kingdom?",
       "branches": [
         {
           "responseText": "",
@@ -343,7 +343,7 @@
         "id": "9ccf804a5672a5f42ed252d9"
       },
       "index": 6,
-      "text": "Legitimate salvage in the Deep Periphery, Precentor. \n\nNow, I demand to know why you've attacked me and my forces, so I can report you to the [[DM.BaseDescriptionDefs[LoreComStarFirstCircuit],First Circuit]] for criminal charges.",
+      "text": "Legitimate salvage in the [[DM.BaseDescriptionDefs[LoreDeepPeriphery],Deep Periphery]], Precentor. \n\nNow, I demand to know why you've attacked me and my forces, so I can report you to the [[DM.BaseDescriptionDefs[LoreComStarFirstCircuit],First Circuit]] for criminal charges.",
       "branches": [
         {
           "responseText": "",
@@ -415,7 +415,7 @@
         "id": "9c2cd69a5c3934e3f32fd5da"
       },
       "index": 8,
-      "text": "You mean the Star League [[DM.BaseDescriptionDefs[LoreCastleBrian],Castle Brian]], Precentor?\n\nBecause that's what seems to be down there in that planet.",
+      "text": "You mean the Star League [[DM.BaseDescriptionDefs[LoreCastleBrian],Castle Brian]], Precentor?\n\nBecause that's what seems to be down there in that planetoid.",
       "branches": [
         {
           "responseText": "",
@@ -522,7 +522,7 @@
         "id": "9c54700d65c000a44ec53bed"
       },
       "index": 11,
-      "text": "Lady Arano,  you're a wanted terrorist in the [[DM.Factions[faction_AuriganDirectorate],Directorate]] and [[DM.Factions[faction_TaurianConcordat],Concordat]], so I can still demand your surrender or face total destruction.\n\nAnd if you won't reveal willingly what we want to know, well [[DM.BaseDescriptionDefs[LoreComstarROM],ROM]] has other ways.",
+      "text": "Lady Arano,  you're a wanted terrorist in the [[DM.Factions[faction_AuriganDirectorate],Directorate]] and [[DM.Factions[faction_TaurianConcordat],Concordat]], so I can still demand your surrender or face total destruction.\n\nAnd if you won't reveal willingly what we want to know, well [[DM.BaseDescriptionDefs[LoreComStarROM],ROM]] has other ways.",
       "branches": [
         {
           "responseText": "",
@@ -765,7 +765,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "comstar",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -859,7 +875,7 @@
         "id": "9c7675e8ce87c9dd24c4ae2f"
       },
       "index": 20,
-      "text": "But what will they do with that library?\n\nUnlike us, they will have the time and expertise to extract data from the library's data banks.",
+      "text": "But what will they do with that library?\n\nIt was important enough for ComStar to deploy 'Mechs of their own to gain control of it.",
       "branches": [
         {
           "responseText": "",
@@ -894,7 +910,7 @@
         "id": "9c276b5274958800aec5529b"
       },
       "index": 21,
-      "text": "Farah mentioned that the data storage requirements far exceeded any the capacity of any device they had in their possession, but ComStar might have access to equipment capable of getting that information.",
+      "text": "Farah mentioned that the data storage requirements far exceeded any the capacity of any device they had in their possession, but ComStar might have access to equipment capable of extracting that information.",
       "branches": [
         {
           "responseText": "",
@@ -920,7 +936,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f26230355c18000069",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -929,7 +945,7 @@
         "id": "9c9d4925fbcae7b263bdd345"
       },
       "index": 22,
-      "text": "Their mission is to preserve technology and maintain peace, so they might distribute some of its content back to the Inner Sphere.\n\nWe could try returning at a later time and see what they did to it.",
+      "text": "Well, their mission is to preserve technology and maintain peace, so they might distribute some of its content back to the [[DM.BaseDescriptionDefs[LoreInnerSphere],Inner Sphere]].\n\nWe could try returning at a later time and see what they did to it.",
       "branches": [
         {
           "responseText": "",
