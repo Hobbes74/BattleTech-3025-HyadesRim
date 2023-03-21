@@ -1,9 +1,9 @@
 {
-    "StartingMilestoneID" : "ms_fp_wilderness_001_Start",
+    "StartingMilestoneID" : "ms_fp_legendKiller_001_Start",
     "Milestones" : [
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_001_Start",
+                "Id" : "ms_fp_legendKiller_001_Start",
                 "Name" : "Start",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -13,49 +13,27 @@
             "Results" : [
                 {
                     "Scope" : "Flashpoint",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
+                    "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
                         "items" : [
-                            "fp_choice_a",
-                            "fp_choice_b"
+                            "fp_choice_b",
+                            "fp_choice_a"
                         ],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
-                    "Actions" : null,
-                    "ForceEvents" : null,
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
                 {
                     "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
+                    "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -64,16 +42,16 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
+                    "Stats" : [],
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_wilderness_002_Talk",
+                            "value" : "ms_fp_legendKiller_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
                     ],
-                    "ForceEvents" : null,
+                    "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -84,7 +62,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_002_Talk",
+                "Id" : "ms_fp_legendKiller_002_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -114,14 +92,14 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : null,
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c72e9d9cd89b08484d4f2c7",
+                            "value" : "9cb4c613a19822e963dc4512",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -129,7 +107,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_wilderness_003_Mission",
+                            "value" : "ms_fp_legendKiller_003_MissionSim",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -145,8 +123,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_003_Mission",
-                "Name" : "Mission",
+                "Id" : "ms_fp_legendKiller_003_MissionSim",
+                "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
             },
@@ -179,16 +157,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_rockyMesas_aDes",
+                            "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "wilderness_1_rescue",
+                                "legendKiller_1_captureBase",
                                 "AuriganRestoration",
-                                "TaurianConcordat",
+                                "AuriganDirectorate",
                                 "6",
-                                "ms_fp_wilderness_004_Mission",
+                                "ms_fp_legendKiller_004_Mission",
                                 null,
                                 null,
                                 null
@@ -214,7 +192,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_004_Mission",
+                "Id" : "ms_fp_legendKiller_004_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -248,16 +226,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_theMine_aDes",
+                            "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "wilderness_2_captureEscort",
+                                "legendKiller_2_defendBase",
                                 "AuriganRestoration",
-                                "TaurianConcordat",
+                                "AuriganDirectorate",
                                 "6",
-                                "ms_fp_wilderness_005_Talk",
+                                "ms_fp_legendKiller_005_Talk",
                                 null,
                                 null,
                                 null
@@ -275,9 +253,141 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_005_Talk",
+                "Id" : "ms_fp_legendKiller_005_Talk",
                 "Name" : "Talk",
-                "Details" : "Closing Conversation.",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cb4c613a19822e963dc4513",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_legendKiller_006_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_legendKiller_006_MissionSim",
+                "Name" : "Mission Sim",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_sunkenHills_iTnd",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "legendKiller_3_assassinate",
+                                "AuriganRestoration",
+                                "AuriganDirectorate",
+                                "6",
+                                "ms_fp_legendKiller_007_TalkChoice",
+                                null,
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_legendKiller_007_TalkChoice",
+                "Name" : "Talk Choice",
+                "Details" : "flashpoint",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -309,10 +419,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c72e9d9cd89b08484d4f2c9",
+                            "value" : "9cb4c613a19822e963dc4514",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -320,7 +430,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_wilderness_006_Complete",
+                            "value" : "ms_fp_legendKiller_008_A-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -336,9 +446,9 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_006_Complete",
-                "Name" : "Complete",
-                "Details" : "Flashpoint completion.",
+                "Id" : "ms_fp_legendKiller_008_A-Complete",
+                "Name" : "A-Complete",
+                "Details" : "flashpoint",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -360,7 +470,7 @@
                     },
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_wilderness_complete"
+                            "flashpoint_legendKiller_complete"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -372,20 +482,9 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_wilderness_007_B-Reward",
+                            "value" : "ms_fp_legendKiller_009_Reward",
                             "valueConstant" : null,
-                            "additionalValues" : [
-                                "itemCollection_loot_fp_reward_wilderness",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null
-                            ]
+                            "additionalValues" : null
                         }
                     ],
                     "ForceEvents" : null,
@@ -399,9 +498,9 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_007_B-Reward",
-                "Name" : "B-Reward",
-                "Details" : "Rewards",
+                "Id" : "ms_fp_legendKiller_009_Reward",
+                "Name" : "Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -423,11 +522,11 @@
                     },
                     "AddedTags" : {
                         "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
                         "items" : [],
-                        "tagSetSourceFile" : "Tags/CompanyTags"
+                        "tagSetSourceFile" : ""
                     },
                     "Stats" : [
                         {
@@ -438,7 +537,7 @@
                             "valueConstant" : null
                         }
                     ],
-                    "Actions" : [],
+                    "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
