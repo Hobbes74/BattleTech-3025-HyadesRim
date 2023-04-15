@@ -1,15 +1,33 @@
 {
     "Description" : {
-        "Id" : "fp_StoryTime_HYR_310_legendKiller",
+        "Id" : "fp_StoryTime_HYR_308_legendKiller",
         "Name" : "Legend Killer",
-        "Details" : "Legend Killer",
+        "Details" : "The company hunts the Arano Guard betrayer who killed Raju Mastiff and gave the location of Commander Markham to the Directorate's assassins during the Espinosa coup. Part eight of the Aurigan arc.",
         "Icon" : "uixTxrSpot_fp_HyadesRim_Background_27.png"
     },
     "Weight" : 10,
     "InternalName" : "legendKiller",
     "PublishState" : "PUBLISHED",
     "Difficulty" : 7,
-    "Requirements" : [],
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_marathon",
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_legendKiller_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
     "LocationRequirements" : {
         "Scope" : "StarSystem",
         "RequirementTags" : {
@@ -25,7 +43,7 @@
         "RequirementComparisons" : []
     },
     "PotentialEmployers" : [
-        "AranoRestoration"
+        "AuriganRestoration"
     ],
     "TargetFaction" : "AuriganDirectorate",
     "AllowRefitTime" : false,
@@ -39,7 +57,7 @@
     "RewardCollectionID" : "itemCollection_loot_fp_reward_legendKiller",
     "UnitDropTonnageHint" : "None",
     "LanceDropTonnageHint" : "None",
-    "FlashpointShortDescription" : "The Directorate's most notorious prison, the 'Icebox' is located at Weldry and liberating it would give the Restoration a public boost. And while striking at it, we are going also to settle an old debt with the traitors who got Raju Mastiff killed.",
+    "FlashpointShortDescription" : "The Directorate's most notorious prison, the 'Icebox' is located at Weldry and liberating it would give the Restoration a public boost. And while striking at it, we are going also to settle an old debt with the traitor that killed Raju Mastiff.",
     "FlashpointDescriberCastDefId" : "castDef_KameaDefault",
     "Tags" : {
         "items" : [],

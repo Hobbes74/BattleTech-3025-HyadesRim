@@ -162,11 +162,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "legendKiller_1_captureBase",
+                                "legendKiller_1_defendBase",
                                 "AuriganRestoration",
                                 "AuriganDirectorate",
                                 "6",
-                                "ms_fp_legendKiller_004_Mission",
+                                "ms_fp_legendKiller_004_Talk",
                                 null,
                                 null,
                                 null
@@ -192,68 +192,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_legendKiller_004_Mission",
-                "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_frigidSteppes_iTnd",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "legendKiller_2_defendBase",
-                                "AuriganRestoration",
-                                "AuriganDirectorate",
-                                "6",
-                                "ms_fp_legendKiller_005_Talk",
-                                null,
-                                null,
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_legendKiller_005_Talk",
+                "Id" : "ms_fp_legendKiller_004_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -287,7 +226,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cb4c613a19822e963dc4513",
+                            "value" : "9cb4c613a19822e963dc4512",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} II",
@@ -298,9 +237,70 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_legendKiller_006_MissionSim",
+                            "value" : "ms_fp_legendKiller_005_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_legendKiller_005_Mission",
+                "Name" : "Mission",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_sunkenHills_iTnd",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "legendKiller_2_assassinate",
+                                "AuriganRestoration",
+                                "AuriganDirectorate",
+                                "6",
+                                "ms_fp_legendKiller_006_MissionSim",
+                                null,
+                                null,
+                                null
+                            ]
                         }
                     ],
                     "ForceEvents" : null,
@@ -348,16 +348,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_sunkenHills_iTnd",
+                            "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "",
-                                "",
-                                "legendKiller_3_assassinate",
+                                null,
+                                null,
+                                "legendKiller_3_captureBase",
                                 "AuriganRestoration",
                                 "AuriganDirectorate",
-                                "6",
-                                "ms_fp_legendKiller_007_TalkChoice",
+                                "7",
+                                "ms_fp_legendKiller_007_Talk",
                                 null,
                                 null,
                                 null,
@@ -385,8 +385,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_legendKiller_007_TalkChoice",
-                "Name" : "Talk Choice",
+                "Id" : "ms_fp_legendKiller_007_Talk",
+                "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
@@ -419,7 +419,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cb4c613a19822e963dc4514",
+                            "value" : "9cb4c613a19822e963dc4513",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} III",
@@ -430,7 +430,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_legendKiller_008_A-Complete",
+                            "value" : "ms_fp_legendKiller_008_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -446,8 +446,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_legendKiller_008_A-Complete",
-                "Name" : "A-Complete",
+                "Id" : "ms_fp_legendKiller_008_Complete",
+                "Name" : "Complete",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
