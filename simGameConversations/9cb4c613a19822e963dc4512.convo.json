@@ -9,7 +9,7 @@
         "id": "9c9959fd2d46b299bf51536d"
       },
       "index": 0,
-      "text": "Legend?\n\nI don't recall anyone with that callsign in the Royal Guard roster, and I knew them all back from the days before the coup.",
+      "text": "Legend?\n\nI don't recall anyone with that callsign in the [[DM.BaseDescriptionDefs[LoreAranoRoyalGuard],Royal Guard]] roster, and I knew them all back from the days before the [[DM.BaseDescriptionDefs[LoreEspinosasCoup],coup]].",
       "branches": [
         {
           "responseText": "",
@@ -127,7 +127,7 @@
         "id": "9ca436513dd6ad6ad7587225"
       },
       "index": 1,
-      "text": "He chose the callsign after the coup, Yang, after the lucky shot he got that killed Raju Mastiff in the cockpit of his <i>Centurion</i>.\n\nAnd because of his kill, Director Espinosa promoted Guardsman Kourais as an officer in the Directorate's armed forces.\n",
+      "text": "He chose the callsign after the coup, Yang, after the lucky shot he got that killed [[DM.BaseDescriptionDefs[LoreMastiff],Raju Mastiff]] in the cockpit of his <i>Centurion</i>.\n\nAs reward, Director [[DM.BaseDescriptionDefs[LoreSantiagoEspinosa],Espinosa]] promoted Guardsman Kourais as an officer in the [[DM.Factions[faction_AuriganDirectorate],Directorate]]'s armed forces.\n",
       "branches": [
         {
           "responseText": "",
@@ -153,7 +153,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -162,7 +162,7 @@
         "id": "9c6d22a25358bdc8e1db23f1"
       },
       "index": 2,
-      "text": "All our 'Mechs were sabotaged, so that shot was also an easy one, but from what I remember about Kourais, calling himself a 'legend' sounds quite a bloated achievement.",
+      "text": "All our 'Mechs were sabotaged, so that shot was also an easy one, but from what I remember about Korais, calling himself a 'legend' sounds quite a bloated achievement.",
       "branches": [
         {
           "responseText": "",
@@ -188,7 +188,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -197,7 +197,7 @@
         "id": "9c93224122517a8139e58ef0"
       },
       "index": 3,
-      "text": "Guardsman Korais is now a captain in the Directorate but my uncle never really trusted him, so he has been assigned to Weldry in the years since the coup.\n\nAnd his betrayal also caused the death of Commander Markham after he refused Director Espinosa's order to stand down and surrender and instead rescue me.",
+      "text": "This is Korais... he is now a captain in the Directorate but my uncle never really trusted him after the coup, so he wasn't assigned to hunt us.\n\nAnd his betrayal also caused the death of Commander [[DM.BaseDescriptionDefs[LoreMarkhamsMarauders],Markham]] after he refused Director Espinosa's order to stand down and surrender and instead rescue me.",
       "branches": [
         {
           "responseText": "",
@@ -220,11 +220,42 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "59baac916230356416000354"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "guard",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -232,13 +263,13 @@
         "id": "9c322fd036221a6d5ddec015"
       },
       "index": 4,
-      "text": "We all know what he is responsible for, captain.",
+      "text": "I recognize him now... we all know what he is responsible for, captain.\n\nAnd I think we all agree that some payback is long overdue for this 'legend'.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 5,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -258,8 +289,534 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1e520e4b0d41fb9a132716"
+      },
+      "index": 5,
+      "text": "He was just following orders like we do, Yang, I understand this is personal but to me I don't see the need of killing this former guardsman instead of simply ignoring or capturing him.\n\nAnd Haust is dangling this 'Legend' in front of all of us.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9674841ed4ba95b7fae275"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb9b3b7ff8bd0d75169d38b"
+      },
+      "index": 6,
+      "text": "Korais was following orders that caused him to betray his personal obligations to his liege lord, Farah, something that the company is free from.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c15d89e1a097c0e1689d2ad"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "KAMEA",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ccce05ba16fa0bb8695f507"
+      },
+      "index": 7,
+      "text": "Alexander also betrayed you and he is right here on the bridge.\n\nSince you haven't [[DM.BaseDescriptionDefs[LorePurgeProtocol],airlocked]] him, why can't we also start showing some mercy upon the Directorate's people, or at least bring him to proper justice?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cdfbf422c18d05091910520"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c600f59b80b0312ec54a90b"
+      },
+      "index": 8,
+      "text": "It's a simple trade, Dr. Murad, we need the collaboration of Colonel Haust to ensure that House Arano regains the [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigan]] throne.\n\nI am afraid that just having him in our custody isn't enough.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c160aee406396bf211c777f"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "ALEXANDER",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca8d02e0d621f569512d248"
+      },
+      "index": 9,
+      "text": "Against [[DM.BaseDescriptionDefs[LoreTyrlon's],Tyrlon]]'s air defenses, we are going to need something a lot better than we currently have.\n\nAs I've told in every senior crew briefing when this issue is mentioned.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6f568b62d26c64e403d3b6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "SUMIRE",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c09cb1a0b3c4262a7bd3d90"
+      },
+      "index": 10,
+      "text": "Pilot Meyer, there are many keys to Tyrlon and Haust is one of them, but that's not what is at stake here...",
+      "branches": [
+        {
+          "responseText": "You mean justice, Lady Arano?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6de9221eec2bc803ea6678"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c31a63c47f1229c42873bb9"
+      },
+      "index": 11,
+      "text": "<i>Perkele!</i> No, sorry {COMMANDER.FirstName}, it's damn personal... for all of us who had to escape [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir]] and listen helplessly as our leaders were murdered in the line of duty.\n\nKorais deserves the noose for what he did... that way Commander Markham and Mastiff get the justice they deserve.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca85251676b91ea9f34c07d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "YANG",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6f74f6dbf4ae7ce6c92e81"
+      },
+      "index": 12,
+      "text": "And I am the [[DM.BaseDescriptionDefs[LoreSwordOfTheRestoration],Sword of the Restoration]] that will bring justice to the Reach, Yang.\n\nKorais dies today, for justice isn't blind to the crimes he committed.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca0a5eb5d9581b2d1b50e05"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "KAMEA",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c64f6204380df638c39c43f"
+      },
+      "index": 13,
+      "text": "Kamea! You're starting to sound just like...",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ccfdc41623292ebbdf3fe95"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c20d777820d257b8b411eca"
+      },
+      "index": 14,
+      "text": "Dr. Murad, this meeting is over, you're all dismissed.\n\nXO, prepare the company for a combat drop.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c94e258f16ccc5258f8b971"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "KAMEA",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

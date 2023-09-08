@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "One of our DropShips was in the {TGT_SYSTEM.Name} system when it experienced technical issues. A final message indicated a hard landing. That DropShip was carrying a valuable piece of technology as cargo, and while we are willing to write off the ship itself, we very much need to recover the cargo. Satellite imagery suggests that {TEAM_TAR.FactionDef.Demonym} forces recovered the cargo and are holding it at a nearby facility. We need you to raid that facility and recover the item.",
-    "longDescription" : "They just happened to be transporting valuable cargo through a rival's territory, and their DropShip just happened to go down? Sure.",
+    "shortDescription" : "The <i>Argo</i>'s sensors show that Lady Gallas' transmission originated from an abandoned outpost in one of Itrom's mountain ranges. We are deploying to check out the location, although it's more likely that she used it as a relay station to avoid detection by the Taurians. But if we can check the equipment for the frequencies they used, we should be able to determine the broadcast's point of origin.",
+    "longDescription" : "The downside is that the place is pretty exposed and easy to reach by the Taurian patrols.",
     "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Retrieve the DropShip's Cargo and Escape",
+            "title" : "Retrieve the Broadcast Equipment and Escape",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -258,14 +258,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, the {TEAM_TAR.FactionDef.Demonym} facility is just up ahead.",
+                    "words" : "Commander, that facility up ahead is the origin of Lady Gallas' transmission.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -274,14 +274,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Secure the area around the facility and get the cargo loaded aboard a 'Mech.",
+                    "words" : "Secure it and make sure Lady Gallas boards one of your 'Mechs, Commander. Restrain her if necessary.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -290,14 +290,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once you've got it, Sumire will pick you up at this LZ.",
+                    "words" : "Let's hope it doesn't come to that, although I am worried about the Taurian patrols since they disappeared from sensors a while ago.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "After you have the package, this is your designated extraction zone.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "eba2ec63-eab0-4801-b1c5-90964855a7ca",
@@ -306,14 +322,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Remember, Commander, that if the 'Mech carrying the cargo goes down, so does our payday. Oliveira out.",
+                    "words" : "And keep Lady Gallas alive, Commander, otherwise our objective here has failed. Good luck.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",

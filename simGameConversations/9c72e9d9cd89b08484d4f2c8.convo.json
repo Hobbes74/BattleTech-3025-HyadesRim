@@ -6,10 +6,10 @@
   "nodes": [
     {
       "idRef": {
-        "id": "9cfb7fbbd8285c1e1b6b304d"
+        "id": "9c12e5031d939294ad609401"
       },
       "index": 0,
-      "text": "Lady Gallas is currently on her way to Panzyr to meet with Marquis Decimis, together with the survivors that we were able to rescue.\n\nShe refused to discuss anything else with us.",
+      "text": "Lady Arano, we have finished boarding the <i>Delfinas</i>, once again our deepest thanks to you and the Restoration.\n\nWithout you, House Gallas would be extinguished by Director Espinosa, like he did to House Karosas.",
       "branches": [
         {
           "responseText": "",
@@ -19,7 +19,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c1b4c2df49eb8171ceb21dc"
+            "id": "9c593daf4e4bdb0d0e95cdec"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -32,7 +32,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "FinnGallasDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -45,7 +47,20 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "restoration",
+                "string_value": "finn",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_425_DEAD_DROP",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -83,51 +98,690 @@
                 "variableref_value": null
               }
             ]
-          },
-          {
-            "functionName": "Play BattleTech Audio Event",
-            "args": [
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "GConv-BeginMusic-GC_425_DEAD_DROP",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
-          },
-          {
-            "functionName": "Set Characters Visible",
-            "args": [
-              {
-                "int_value": 1,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "",
-                "call_value": null,
-                "variableref_value": null
-              },
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "Kamea,Alexander,Darius,Farah,Sumire,Yang",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
           }
         ]
       },
-      "comment": "GConv-BeginMusic-GC_425_DEAD_DROP"
+      "comment": ""
     },
     {
       "idRef": {
-        "id": "9cc3bcf7865d03551d2da3c4"
+        "id": "9ce554a24575ac960ebdc2d8"
       },
       "index": 1,
+      "text": "You're welcome Lord Finn, although there's still the question of Lady Samantha.\n\nYou mentioned that she and her remaining forces left you after I talked with her?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 2,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c0d42de734ae5da104d90ac"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c75475148978a90034fc82c"
+      },
+      "index": 2,
+      "text": "Yes, once she found out that she wouldn't get any help from your Restoration in liberating Itrom, she decided to reoccupy one of the Cartel's facilities to make a last stand against the Taurians.",
+      "branches": [
+        {
+          "responseText": "Someone's got a death wish, I seems.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 3,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc605ce7e29b823a37719ff"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "FinnGallasDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd4ef95e86707097ae01f0e"
+      },
+      "index": 3,
+      "text": "The initial invasion unsettled her enough to attempt to surrender to the Directorate but the Concordat Jaegers aren't interested in taking prisoners and the Directorate never replied to her HPG messages.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c0cb142d0a9f5171134898b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "FinnGallasDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c419d997404516aec07cbcb"
+      },
+      "index": 4,
+      "text": "I'm finding it hard to believe this is true, that she would actually try to make a deal with my uncle, after all that happened.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 5,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca23f83f30d953949a742ed"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c672647cb17b7a985edf487"
+      },
+      "index": 5,
+      "text": "The death of Lord Karosas made many to question the Restoration, Lady Arano, and she was also skeptic of your ability to win back your throne.\n\nUntil the <i>Argo</i> arrived, no one of our party thought we would be able to escape or survive alive... I was only a matter of time until the Taurians found us.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c89c9fc859a8be9b5d1bacd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "FinnGallasDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5e75f491e965f56f054bb0"
+      },
+      "index": 6,
+      "text": "And yet we came to save you all.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c90468eda772b1729c04924"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cba54af2225d5ea97e61f33"
+      },
+      "index": 7,
+      "text": "High Lady Arano, me and the other members of House Gallas that you saved pledge their allegiance to you and the Aurigan Coalition.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c77d8116643792752b35881"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "FinnGallasDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ce9ca6884fd8e40dc398580"
+      },
+      "index": 8,
       "text": "",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c64ace61dec266ff59ae9c5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ce0577a66f2d4980d28170c"
+      },
+      "index": 9,
+      "text": "",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf5c2ca50d49d352406c99c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cbea93fa2ead61edf2532ab"
+      },
+      "index": 10,
+      "text": "Unless I'm mistaken, we now have a massive security risk.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9982bc24a31a5a672df8d5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c0f88aefd5c9c1c83c8242d"
+      },
+      "index": 11,
+      "text": "Why? She's bottled up and waiting to die, Sumire.\n\nLet the Taurians deal with her, we can now leave this system. YANG",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc31053fd50914381fec971"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c21701d74c7b18885a2f4dc"
+      },
+      "index": 12,
+      "text": "Sensors indicate the Concordat Jaegers aren't attacking her, their forces are still concentrated around Bremenhaven.\n\nThey're either waiting for DropShip support before assaulting the Gwendor-Dorwinion facility, or they decided that it isn't worth the cost.",
+      "branches": [
+        {
+          "responseText": "And why is this a risk?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1cd4224e3b99a6369efe7e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5b597c740d229a74e8d79e"
+      },
+      "index": 13,
+      "text": "Commander, our presence has changed the strategic outlook, controlling Itrom is enough for their proposes.\n\nWhich also means that Lady Gallas might also decide again to contact Director Espinosa with some sort of deal.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4dfafcb37aeb09ddeefe1c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4dfa7b3fd4bad3845f66b4"
+      },
+      "index": 14,
+      "text": "And she knows too much about the Restoration and there's no way to telling how much she knows about the Tyrlon operation.\n\nYup, we have a massive security risk. YANG",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7a655a7c7d85b819773234"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c526793b6a522262b640d7c"
+      },
+      "index": 15,
+      "text": "Our objective here has just changed - we can't risk Lady Gallas and what she knows to fall into the hands of the Directorate or the Taurians.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c061d950f8922bb5ab900cd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c325c6b4a3b9623cd904d08"
+      },
+      "index": 16,
+      "text": "But since she already refused to come with us, that leaves only one option.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c96ac1154d841726bc45f93"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb95fe89e478128697e1741"
+      },
+      "index": 17,
+      "text": "We already saved her household members that chose not to follow her, so House Gallas will not be vanquished like House Karosas.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c288d5d49f65002567cb431"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c20c77b537ea42dc07548f3"
+      },
+      "index": 18,
+      "text": "Wait... you're actually discussing killing Lady Gallas?\n\nA noblewoman and one of your Founding Council members?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca355f5baaddc7db54ca9d4"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cac6d743879c58ed6b63daa"
+      },
+      "index": 19,
+      "text": "Finn Gallas will take her place once we reconvene the Council... for now the Restoration will stay silent on her death and blame it on the Taurians, we later can inform Pierre-Louis and the other members of the actual circumstances behind her death.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c12f01737977e6c0db24ab1"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c43e358a3a6783f53308f7b"
+      },
+      "index": 20,
+      "text": "And even if we recapture Itrom from the Taurians, as she wants, then we'd still have to hold it or even risk being trapped on this world by a Concordat relief force.",
       "branches": [
         {
           "responseText": "",
@@ -137,7 +791,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c5243fe3c0fcac3f8a3f20c"
+            "id": "9ce3799ba734916c7c82691c"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -167,7 +821,7 @@
       "hideIfUnavailable": true,
       "onlyOnce": false,
       "idRef": {
-        "id": "9cdafcab7ffe9fe56b9ca6dc"
+        "id": "9c1284d506f3ba94d02dcbf4"
       },
       "inputBypass": false,
       "auxiliaryLink": false,

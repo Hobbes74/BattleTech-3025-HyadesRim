@@ -1,6 +1,6 @@
 {
-    "ID" : "vortex_2b_simpleBattle",
-    "contractName" : "Vortex II",
+    "ID" : "vortex_1a_simpleBattle",
+    "contractName" : "Vortex",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "We believe there is a {TEAM_TAR.FactionDef.Demonym} lance operating on {TGT_SYSTEM.name}, within a region we control. All {TEAM_EMP.FactionDef.Demonym} operations are at risk as long as this lance is allowed to move unimpeded. Patrol the area, find the enemy lance, and eliminate it.",
-    "longDescription" : "This is a straightforward battle, Commander. Finding a military lance in a backwater like this should be no challenge at all.",
-    "salvagePotential" : 8,
+    "shortDescription" : "The Oligarchy's first major house.",
+    "longDescription" : "This shouldn't be too hard.",
+    "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -40,8 +40,8 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Lance",
-            "description" : "",
+            "title" : "Destroy Enemy Units",
+            "description" : "Find, engage and destroy the enemy Mercs.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Lance",
+            "title" : "Destroy Enemy Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -70,7 +70,33 @@
             "title" : "Destroy Enemy Reinforcements",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.20",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
@@ -118,7 +144,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've got them, Commander. Right out in the open.",
+                    "words" : "We're facing professionals, so we should expect well-armed and disciplined opposition.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -134,7 +160,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "These guys are amateurs. Get eyes on them and take them out.",
+                    "words" : "We've picked up comm signals from this region, so that's where you should start looking.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -150,7 +176,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliveira out.",
+                    "words" : "Keep them off balance. And be careful, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -175,7 +201,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "A milk run, just as we expected. Good work, Commander.",
+                    "words" : "Good work, Commander. I've signaled our employers that their operations are safe for now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -200,7 +226,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I don't know what went wrong, Commander, but we need to evac.",
+                    "words" : "Some days you're hammer, other days you're the anvil. Let's head home, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -244,11 +270,11 @@
         }
     ],
     "extractionOverrideList" : [],
-    "overwriteMissionCompleteWhenAutoComplete" : true,
+    "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -462,7 +488,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_battle",
+                        "lance_type_support",
                         "lance_type_notallvehicles"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -472,12 +498,10 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_50"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 2,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

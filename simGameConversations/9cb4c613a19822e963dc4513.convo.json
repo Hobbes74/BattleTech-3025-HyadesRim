@@ -9,7 +9,7 @@
         "id": "9c9d28ea20dd3c46fe1ecf98"
       },
       "index": 0,
-      "text": "Colonel Haust, I cannot say it is a pleasure to talk to you again but circumstances dictate otherwise.\n\nNow that we took care of 'Legend' and kept control of your illegal stash, do you agree with my terms?",
+      "text": "Colonel Haust, I cannot say it is a pleasure to talk to you again but circumstances dictate otherwise.\n\nNow that we took care of 'Legend' and you kept control of your illegal stash, do you agree with my terms?",
       "branches": [
         {
           "responseText": "",
@@ -105,6 +105,39 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -115,7 +148,7 @@
         "id": "9c4c9bb9d1a9bb5d64cd3c89"
       },
       "index": 1,
-      "text": "Lady Arano, I intend to fulfill my end of the bargain and by doing so betray my liege lord, just like Legend or Lord Madeira did against you.\n\nAnd, as you said, the current outlook is causing many in the Directorate to question Director Espinosa's strategy and the Taurian intervention.",
+      "text": "Lady Arano, I intend to fulfill my end of the bargain and by doing so betray my liege lord, just like Legend or Lord Madeira did against you.\n\nAs you said, the current outlook is causing many in the [[DM.Factions[faction_AuriganDirectorate],Directorate]] to question Director [[DM.BaseDescriptionDefs[LoreSantiagoEspinosa],Espinosa]]'s strategy and the [[DM.Factions[faction_TaurianConcordat],Taurian]] intervention.",
       "branches": [
         {
           "responseText": "",
@@ -138,11 +171,29 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "SE01_CaptainHaustDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -150,7 +201,7 @@
         "id": "9c2017af3fa32656092fe4c9"
       },
       "index": 2,
-      "text": "And you also get to keep your smuggling operations into Liao and Marik space at the same time, instead of my cousin Victoria putting a bullet in your head, Colonel.\n\nNot quite a bad deal, better than you'd get under different circumstances.",
+      "text": "You also get to keep your smuggling operations into [[DM.Factions[faction_Liao],Liao]] and [[DM.Factions[faction_Marik],Marik]] space at the same time, instead of my cousin [[DM.BaseDescriptionDefs[LoreVictoriaEspinosa],Victoria]] putting a bullet in your head, Colonel.\n\nNot quite a bad deal, better than you'd get under different circumstances.",
       "branches": [
         {
           "responseText": "",
@@ -185,7 +236,7 @@
         "id": "9cc8e49db7173c13119ebba9"
       },
       "index": 3,
-      "text": "No matter how much precautions you take, there's also bad luck although I suspect you also had foreign assistance in uncovering my black market operations, Lady Arano.\n\nLet's just hope they don't stab you in the back.",
+      "text": "No matter how much precautions one takes, there's also bad luck although I suspect you also had foreign assistance in uncovering my black market operations, Lady Arano.\n\nLet's just hope your 'allies' don't stab you in the back like the Taurians did to us.",
       "branches": [
         {
           "responseText": "",
@@ -208,7 +259,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "SE01_CaptainHaustDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -220,7 +273,7 @@
         "id": "9ca57195b00cd552b7cb8283"
       },
       "index": 4,
-      "text": "You mean like the Taurians did with with my uncle?\n\nYou watched and let them raze entire worlds like Smithon after they killed Lord Karosas or outright annex them.",
+      "text": "Like you and my uncle watched and let them raze entire worlds like [[DM.BaseDescriptionDefs[LoreSmithon],Smithon]] after they killed Lord [[DM.BaseDescriptionDefs[LoreSimonKarosas],Karosas]] or outright annex them like [[DM.BaseDescriptionDefs[LoreAea],Aea]] or [[DM.BaseDescriptionDefs[LoreRegisRoost],Regis Roost]]?",
       "branches": [
         {
           "responseText": "",
@@ -255,7 +308,7 @@
         "id": "9c05918a81d2f47d3b8f21dd"
       },
       "index": 5,
-      "text": "Your Restoration left us no choice... and I am afraid that even if you win against your uncle and the Taurians, you'll have also other choice than to watch your throne grow smaller and smaller.\n\nEither at the hands of your sponsors or those who are waiting to prey on the Aurigan Reach's remains.",
+      "text": "The [[DM.Factions[faction_AuriganRestoration],Restoration]] left us with no other choice... and I am afraid that even if you win against your uncle and the Concordat, you'll have to watch your throne grow smaller and smaller.\n\nEither at the hands of your sponsors or those who are waiting to prey on the [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigan Reach]]'s remains.",
       "branches": [
         {
           "responseText": "",
@@ -278,7 +331,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "SE01_CaptainHaustDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -290,7 +345,7 @@
         "id": "9c2e724602b1653406b167bd"
       },
       "index": 6,
-      "text": "",
+      "text": "Enough... you will liaison with Lord Madeira from now on, Colonel Haust.\n\nAfter all, both of you already worked together during the [[DM.BaseDescriptionDefs[LoreEspinosasCoup],coup]] that deposed me and I expect the same result against my uncle.",
       "branches": [
         {
           "responseText": "",
@@ -316,7 +371,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -325,13 +380,13 @@
         "id": "9cb5d6021614d38ba52a136e"
       },
       "index": 7,
-      "text": "",
+      "text": "Understood, Lady Arano.\n\nI  will rejoin the Directorate and wait for further instructions, as we discussed.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 8,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -348,10 +403,203 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "SE01_CaptainHaustDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c120b403e06f064ffc2f219"
+      },
+      "index": 8,
+      "text": "[Signal disconnected.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cff59c6b9e998b62e146c26"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf8eef17b002e05ae4b355f"
+      },
+      "index": 9,
+      "text": "We both know that he is not wrong, Kamea.\n\nEven if we win at Tyrlon, we'll still need to defeat the Taurians and then rebuild our nation.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3b42aca72a271304c7dbc1"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca6c1f03f1740c9069d0fef"
+      },
+      "index": 10,
+      "text": "Alexander, unless we win at Tyrlon there is no point now in discussing what happens afterwards.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c031585a4de1448328798e6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c97ec4406384c95468328e4"
+      },
+      "index": 11,
+      "text": "And what about your uncle and your cousin Victoria?\n\nAfter we've killed 'Legend', it will also send them the message that their lives will be next... it will be a race to see whomever dies first, you or them.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c95ca643f993bcb6c17c22d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf16c581536466f00261d60"
+      },
+      "index": 12,
+      "text": "So be it, let them feel what they've done to us in the past years.\n\nAs we discussed before, exile isn't really an option... as my own experience proved it.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4bac6fe7c6f6d0ff4a113f"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     }

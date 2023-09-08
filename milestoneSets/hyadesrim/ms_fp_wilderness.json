@@ -259,6 +259,14 @@
                                 null,
                                 null
                             ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
                         }
                     ],
                     "ForceEvents" : null,
@@ -274,7 +282,7 @@
             "Description" : {
                 "Id" : "ms_fp_wilderness_005_Talk",
                 "Name" : "Talk",
-                "Details" : "Closing Conversation.",
+                "Details" : "2nd Conversation.",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -317,7 +325,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_wilderness_006_Complete",
+                            "value" : "ms_fp_wilderness_006_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -333,7 +341,137 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_006_Complete",
+                "Id" : "ms_fp_wilderness_006_Mission",
+                "Name" : "Mission",
+                "Details" : "The 3rd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_lostCanyon_aBad",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "wilderness_3_fireMission",
+                                "AuriganRestoration",
+                                "AuriganRestoration",
+                                "6",
+                                "ms_fp_wilderness_007_Talk",
+                                "TaurianConcordat",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_wilderness_007_Talk",
+                "Name" : "Talk",
+                "Details" : "Closing Conversation.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c72e9d9cd89b08484d4f2c9",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_wilderness_008_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_wilderness_008_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -369,7 +507,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_wilderness_007_Reward",
+                            "value" : "ms_fp_wilderness_009_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_wilderness",
@@ -396,7 +534,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_wilderness_007_Reward",
+                "Id" : "ms_fp_wilderness_009_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null

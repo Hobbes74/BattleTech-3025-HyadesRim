@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "While we finish compiling the evidence I need to turn Colonel Haust against my uncle, it's time that this traitor to House Arano pays for the crimes he has committed against me and Raju Mastiff. The <i>Argo</i>'s sensors have his command approaching the warehouse complex, so engage them and avenge the deaths of Raju Mastiff and Commander Markham.",
-    "longDescription" : "I can't say I agree with Lady Arano's vendetta despite the role that Captain Korais played in the coup, but she's paying the bills so we have little choice on the matter.",
+    "shortDescription" : "Now that we have the evidence I need to turn Colonel Haust against my uncle, it's time that this traitor pays for the crimes he has committed against House Arano and Raju Mastiff. The <i>Argo</i>'s sensors have his command approaching the warehouse complex, so engage them and let the Sword of Restoration avenge the deaths of Raju Mastiff and Commander Markham.",
+    "longDescription" : "I can't say I agree with Lady Arano's vendetta despite the role that Captain Korais played in the coup but she's paying the bills so we have little choice on the matter.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "edafecaf-4d24-4304-98b1-9e645898c6ee"
             },
-            "title" : "Destroy the Target and Escape",
+            "title" : "Kill Legend",
             "description" : "Destroy the Target, clear area of additional forces Enemies, and Escape",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -58,7 +58,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "650245ff-89b6-4c0f-9b72-31db69cf109c"
             },
-            "title" : "Destroy Enemy Escorts",
+            "title" : "Destroy Legend's Lance",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Destroy Brock Armstrong's Mech",
+            "title" : "Kill Legend",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -142,9 +142,7 @@
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : [
-                            "chain_assassinate_HoloVidCelebrity0"
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -163,9 +161,7 @@
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : [
-                            "chain_assassinate_HoloVidCelebrity1"
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -210,7 +206,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Stop the Target from Escaping",
+            "title" : "Stop Legend from Escaping",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -300,14 +296,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, from here on out, we're expecting to encounter enemy forces.",
+                    "words" : "This are the coordinates provided by Colonel Haust.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -316,14 +312,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Armstrong's PR people have leaked his location, so we've got a good lead on where to find him.",
+                    "words" : "Captain Korais should be at this location. Make sure he doesn't escape or survive.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64",
@@ -332,17 +328,49 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Take him out, and get to the evac zone.",
+                    "words" : "Once you execute him, we can go back to finish our affairs with the Colonel.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "49c80ae9-df2d-4788-a56e-3b21cf381691",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Which seems to have gone offline... he is late to report as ordered, Lady Kamea.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "To each traitor their own fate.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -528,7 +556,7 @@
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : true,
     "disableAfterAction" : false,
@@ -902,8 +930,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_cavalry",
-                        "lance_type_notallvehicles"
+                        "lance_type_cavalry"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -1058,11 +1085,9 @@
                     "EncounterObjectGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64"
                 },
                 "name" : "Lance_Enemy_AssassinationTarget",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_solo"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1081,10 +1106,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "6cd3107e-0f9d-4809-ab8c-fb30faf4cd80"
                         },
-                        "customUnitName" : "Brock Armstrong",
+                        "customUnitName" : "Legend",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechdef_battlemaster_BLR-1S",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1097,7 +1122,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d10_sharpshooter",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

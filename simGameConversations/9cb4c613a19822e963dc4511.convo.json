@@ -91,7 +91,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "weldry",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -157,13 +157,13 @@
       "actions": {
         "ops": [
           {
-            "functionName": "Set BattleTech Viewscreen Image",
+            "functionName": "Set BattleTech Camera Lock",
             "args": [
               {
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "weldry",
+                "string_value": "AUTO",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -178,7 +178,7 @@
         "id": "9c83c621b3510cdccc61ed5c"
       },
       "index": 2,
-      "text": "Those walls may look tough but the recent fall of [[DM.BaseDescriptionDefs[LoreTikonov],Tikonov]] to the [[DM.BaseDescriptionDefs[LoreDavionAFFS],AFFS]] showed that even the strongest anti-'Mech fortifications aren't enough to stop a determined attacker.",
+      "text": "Those walls may look tough but the recent fall of [[DM.BaseDescriptionDefs[LoreTikonov],Tikonov]] to the [[DM.BaseDescriptionDefs[LoreDavionAFFS],AFFS]] showed that even the strongest anti-'Mech fortifications aren't enough to stop a determined attacker.\n\nEnough firepower can bring down any wall or it can be bypassed using jump jets.",
       "branches": [
         {
           "responseText": "",
@@ -213,7 +213,7 @@
         "id": "9ce73ef0bc0f6c773d814a53"
       },
       "index": 3,
-      "text": "Darius, [[DM.BaseDescriptionDefs[LoreHanseDavion],Hanse Davion]] dropped eight full [[DM.BaseDescriptionDefs[LoreRCT],RCTs]] into the world... it was the first time ever that all the eight [[DM.BaseDescriptionDefs[LoreCrucisLancers],Crucis Lancers]] regiments deployed together.\n\nI doubt that anyone of us will ever see that kind of massive deployment again in our lifetime.",
+      "text": "But Darius, [[DM.BaseDescriptionDefs[LoreHanseDavion],Hanse Davion]] dropped eight full [[DM.BaseDescriptionDefs[LoreRCT],RCTs]] into the world... it was the first time ever that all the eight [[DM.BaseDescriptionDefs[LoreCrucisLancers],Crucis Lancers]] regiments deployed together.\n\nI doubt that anyone of us will ever see that kind of massive deployment again in our lifetimes.",
       "branches": [
         {
           "responseText": "",
@@ -248,7 +248,7 @@
         "id": "9cbeb0aa98117c4930e767e3"
       },
       "index": 4,
-      "text": "And they were facing close to six regiments of House Liao 'Mechs, so it wasn't an easy invasion, Yang.\n\nConventional wisdom would have dictated that the 'Fox' would need at least thrice that the number of troops to conquer a fortified world such as Tikonov.",
+      "text": "And they were facing close to six regiments of House Liao 'Mechs, so it wasn't an easy invasion, Yang.\n\nConventional military strategy would have dictated that the '[[DM.BaseDescriptionDefs[LoreHanseDavion],Fox]]' would need at least thrice that the number of troops to conquer a fortified world such as Tikonov.",
       "branches": [
         {
           "responseText": "",
@@ -283,7 +283,7 @@
         "id": "9cb91a001b729c8d45b12347"
       },
       "index": 5,
-      "text": "Regardless of the numbers involved, it was the skill and experience of the AFFS that got Hanse Davion its biggest prize of the [[DM.BaseDescriptionDefs[Lore4thSuccessionWar],Fourth Succession War]] so far.\n\nAnd about the fortifications of the 'Icebox' on Weldry, those shouldn't be a concern to us because our objective is not there.",
+      "text": "Regardless of the numbers involved, it was the skill and experience of the [[DM.BaseDescriptionDefs[LoreDavionAFFS],AFFS]] that got Hanse Davion its biggest prize of the [[DM.BaseDescriptionDefs[Lore4thSuccessionWar],Fourth Succession War]] so far.\n\nAnd about the fortifications of the 'Icebox' on Weldry, those shouldn't be a concern to us because our objective is not there.",
       "branches": [
         {
           "responseText": "",
@@ -353,7 +353,7 @@
         "id": "9cb4e599ee08f89d6f2cf3c2"
       },
       "index": 7,
-      "text": "If we are not assaulting the Icebox to release the [[DM.Factions[faction_AuriganRestoration],Restoration]] captives held inside, what is our goal in this world then?",
+      "text": "If we are not assaulting the Icebox to release the [[DM.Factions[faction_AuriganRestoration],Restoration]] captives held inside, what is our goal on this world then?",
       "branches": [
         {
           "responseText": "",
@@ -380,7 +380,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59b98a97623035ac140056c6",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -429,6 +445,19 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -466,7 +495,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59b97f45623035ac140054ca",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "ALEXANDER",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -474,10 +519,10 @@
         "id": "9c88015c7994746d190d8381"
       },
       "index": 10,
-      "text": "So our mission is either to assassinate or capture him?\n\nI'd prefer some payback for what he did to Commander Markham because the boss never got a chance to fight back.",
+      "text": "So our mission is either to assassinate or capture him?\n\nI'd prefer some payback for killing Commander Markham while we had to listen on the [[DM.BaseDescriptionDefs[LoreHysteria],Hysteria]]'s bridge.",
       "branches": [
         {
-          "responseText": "And he also got Raju Mastiff killed in front of me.",
+          "responseText": "And he also got Raju Mastiff killed, Yang.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 11,
@@ -501,7 +546,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "598cd3f36230355c1800006a",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "YANG",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -509,7 +570,7 @@
         "id": "9c58d528766b137077c99b61"
       },
       "index": 11,
-      "text": "By that same logic, we will be putting bullets in the heads of everyone who collaborated with the Directorate after Lady Arano gets her throne back.\n\nAnd we're mercenaries, not executioners.",
+      "text": "Commander, following that same logic and we will be putting bullets in the heads of everyone who collaborated with the Directorate after Lady Arano gets her throne back.\n\nAnd we're mercenaries, not executioners.",
       "branches": [
         {
           "responseText": "Farah, some of them are guiltier than others.",
@@ -536,7 +597,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59b98a97623035ac140056c6",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -571,7 +648,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "598cd3a06230355c18000067",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -579,7 +672,7 @@
         "id": "9c70b5bb1c14ecd1f0db9c3b"
       },
       "index": 13,
-      "text": "Enough of this discussion!\n\nYou are under contract to me and the Restoration, and that is enough to settle that discussion.",
+      "text": "Enough of this discussion!\n\nYou are under contract to me and the Restoration, and you will follow my orders.",
       "branches": [
         {
           "responseText": "Very well, Lady Arano.",
@@ -614,7 +707,7 @@
         "id": "9cf0ee6a3b30556132405eb5"
       },
       "index": 14,
-      "text": "Considering who he is, I also doubt the Captain wants him killed, or at least until she pries out of his head all the Directorate's secrets.\n\nSo this should be an 'black bag' job, although he should also be well guarded.",
+      "text": "Considering who he is, I also doubt the Captain wants him killed, or at least until she pries out of his head all the Directorate's secrets.\n\nSo this should be an 'black bag' job, although he will be well guarded.",
       "branches": [
         {
           "responseText": "",
@@ -649,7 +742,7 @@
         "id": "9c21045fe0cebbffd8fa4845"
       },
       "index": 15,
-      "text": "Now, Colonel Haust is currently at Weldry, supervising the reopening of the 'Icebox' and according to our sources, also conducting some illegal operations of his own.\n\nThe Fourth Succession War has made war profiteering very lucrative, as we've seen on [[DM.BaseDescriptionDefs[LoreLyreton],Lyreton]].",
+      "text": "Continuing... Colonel Haust is currently at Weldry, supervising the reopening of the 'Icebox' and according to our sources, also conducting some illegal operations of his own.\n\nThe Fourth Succession War has made war profiteering very lucrative, as we've seen on [[DM.BaseDescriptionDefs[LoreLyreton],Lyreton]].",
       "branches": [
         {
           "responseText": "",
@@ -684,7 +777,7 @@
         "id": "9c0826d9ff962c5abb8e2378"
       },
       "index": 16,
-      "text": "Someone's been caught with their hand on the cookie jar, it seems.\n\nIt's time to slap it on the wrist to show them who's the boss!",
+      "text": "Someone's been caught with their hand on the cookie jar, it seems.\n\nIt's time for a slap on their wrist to show them who's the boss!",
       "branches": [
         {
           "responseText": "",
@@ -754,7 +847,7 @@
         "id": "9c8ae75ae8d566f9e967c0a0"
       },
       "index": 18,
-      "text": "Yes, {COMMANDER.FirstName}, the same way that my uncle forced Alexander to betray me and then had him to spy on the company when we were working for [[DM.BaseDescriptionDefs[LoreInterstellarExpeditions],Interstellar Expeditions]].\n\nQuite fitting that I'm paying him back using the same [[DM.BaseDescriptionDefs[LoreCBill],C-Bill]].",
+      "text": "Yes, {COMMANDER.FirstName}, the same way that my uncle forced Alexander to betray me and then had him to spy on the company when we were working for [[DM.BaseDescriptionDefs[LoreInterstellarExpeditions],Interstellar Expeditions]].\n\nQuite fitting that I'm paying him back using the same currency.",
       "branches": [
         {
           "responseText": "",
