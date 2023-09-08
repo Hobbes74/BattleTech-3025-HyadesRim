@@ -7,12 +7,12 @@
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
+    "representativeCastDefIDOverride" : "castDef_SumireDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Restoration forces had to abandon the smuggling site because their 'Mech support, meaning us, were sent in a diversion against the traitor while Colonel Haust managed to slip an undetected force past our scanners. So now we have to retake the place, but this time Colonel Haust will have defenses ready for us and who knows what other surprises might be in store.",
-    "longDescription" : "The good news is that we might be able to liberate Weldry once we defeat the Directorate forces but at what cost?",
+    "shortDescription" : "The Restoration forces had to abandon the smuggling site because their 'Mech support, meaning us, were sent in a diversion against the traitor while Colonel Haust managed to slip an undetected force past our scanners. So now I will drop with my royal guard to regain control of the contraband cache.",
+    "longDescription" : "And if we haven't been detached and she had taken care of Legend herself none of this would have happened. At least we won't be risking our necks anymore.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -34,13 +34,13 @@
         -1
     ],
     "mapMood" : null,
-    "startingFogOfWarVisibility" : "Unknown",
+    "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Capture the Decommissioned Base.",
+            "title" : "Recapture the Cache.",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -60,7 +60,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "caf2acf6-f7d4-43eb-8044-826b6180e2d6"
             },
-            "title" : "Scout the Base",
+            "title" : "Approach the Cache",
             "description" : "The objective to scout the base that is being captured. Must be completed before the actual capture of the base.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -72,7 +72,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Destroy the Enemy Force",
+            "title" : "Destroy Directorate Forces",
             "description" : "The objective to optionally destroy the defenders of the base.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -110,7 +110,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Capture the Base with Friendly 'Mechs",
+            "title" : "Capture the Cache",
             "description" : "The objective for the player to move into and capture the base.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "1e13d14a-9a12-4b6f-b567-8bde83e77275"
             },
-            "title" : "Pacify the Area around the Base",
+            "title" : "Pacify the Area around the Cache",
             "description" : "This is a general objective to indicate the player must keep playing and eliminate enemies as they come.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -146,7 +146,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7617cb28-c434-4a14-8698-a93ccfc3d750"
             },
-            "title" : "Destroy the Enemy Reinforcements",
+            "title" : "Destroy Directorate Reinforcements",
             "description" : "The primary objective to destroy the force that tries to remove the player from the captured base.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -158,7 +158,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "08f55f37-3afa-4ba6-9e68-d2bdaca90407"
             },
-            "title" : "Eliminate Base Turrets",
+            "title" : "Eliminate Turrets",
             "description" : "The chunk controlled objective to destroy the turrets for the base, if the chunk is active.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -201,7 +201,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a47386d9-3d67-4e83-ac45-ab438af31f4c"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -274,14 +274,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "So all we gotta do is just walk in there and stand around? This job sounds like bullshit to me. I wanna learn how to shoot, not stand around!",
+                    "words" : "Still no word from Colonel Haust, Lady Arano.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_1",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -290,23 +290,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I don't know, the mission sounds good to me. I need more practice driving this thing, anyway.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_5",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Let's confirm the base is undefended. Commander, move up to this location and you should be able to get eyes on the base.",
+                    "words" : "We've contacted the Restoration infantry, some are still here and they confirm it's Directorate forces that retook the site.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -322,14 +306,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Can we blow up some of the buildings?",
+                    "words" : "Understood, XO. Royal Guard, let's move and take back the cache.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_2",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
@@ -347,14 +331,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well... that certainly was an experience. Darius, I think we should get hazard pay for this kind of mission.",
+                    "words" : "Lady Kamea, you are back. I trust that you have dealt with Captain Korais?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -363,14 +347,62 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Stow it, Meyer. It all worked out fine, and we get paid.",
+                    "words" : "And you will be next, Colonel Haust, after this betrayal.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Korais had discovered the cache and was using it to pressure me to transfer off this rock.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And your cache still ended up in my possession, Colonel. Never forget that.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Perhaps it's better you continue this discussion in orbit, Lady Arano, because more Directorate forces are on their way.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -388,14 +420,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I think these kids could use some more time on the practice range.",
+                    "words" : "Royal Guard, pull back! Abort!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -413,14 +445,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Bogeys on sensors!",
+                    "words" : "Lady Arano, I am detecting a lance ahead!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -488,14 +520,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's it, Commander. Our employer is sending in the cavalry. Good work.",
+                    "words" : "The <i>Hysteria</i> has arrived.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -504,14 +536,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Aww, really? Come on, I want more targets!",
+                    "words" : "Now we just need to find Colonel Haust.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_2",
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Negative, Lady Arano.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -529,7 +577,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Hey, Darius? Didn't they say the base was decommissioned?",
+                    "words" : "Lady Arano, you have arrived.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Shit, the Directorate has activated the turrets.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -545,14 +609,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Yes. Why, do you have something?",
+                    "words" : "That's what I wanted to warn you about. The forces loyal to Director Espinosa have retaken the base while you were gone dealing with Legend.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -561,49 +625,33 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Those are turrets, boss, and they're <i>not</i> offline. They're powered up and pinging me and the Leopard.",
+                    "words" : "How convenient, Colonel Haust, for them to have appeared while I was gone. You'll have a lot of explaining to answer for.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Unless you want Director Espinosa to start suspecting of me, I recommend you take it back from them. Colonel Haust is out",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9a1bfa77-fc82-4e20-be61-63ebe1d1949e",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "T-turrets? And they're going to shoot at us? Wait, I thought this was-",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_5",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "<i>HELL</i> yeah! Live fire, baby!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_1",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -721,7 +769,7 @@
         },
         "teamGuid" : "bf40fd39-ccf9-47c4-94a6-061809681140",
         "teamName" : "Player 1",
-        "faction" : "Player1sMercUnit",
+        "faction" : "AuriganRestoration",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -751,9 +799,9 @@
                             "EncounterObjectGuid" : "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "{TEAM_EMP.FactionValue.FactionDef.heraldryDefId}",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_commando_COM-2D",
+                        "unitDefId" : "mechdef_kintaro_KTO-19b",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -766,7 +814,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_contract_TrainingDay_1",
+                        "pilotDefId" : "pilot_story_kamea_end",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -784,9 +832,9 @@
                             "EncounterObjectGuid" : "ebc06b6a-c5a8-4165-95ce-480bcf335570"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "{TEAM_EMP.FactionValue.FactionDef.heraldryDefId}",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_panther_PNT-9R",
+                        "unitDefId" : "mechdef_javelin_JVN-10N",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -799,7 +847,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_contract_TrainingDay_2",
+                        "pilotDefId" : "pilot_story_KameaGuard1",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -817,9 +865,9 @@
                             "EncounterObjectGuid" : "d50f1e9d-0a0b-4dc8-9a06-a33233aaa8a1"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "{TEAM_EMP.FactionValue.FactionDef.heraldryDefId}",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_urbanmech_UM-R60",
+                        "unitDefId" : "mechdef_phoenixhawk_PXH-1",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -832,7 +880,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_contract_TrainingDay_5",
+                        "pilotDefId" : "pilot_story_KameaGuard2",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -851,8 +899,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : null,
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_trebuchet_TBT-5N",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -865,7 +913,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilot_story_KameaGuard3",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
