@@ -1,0 +1,98 @@
+{
+    "Description": {
+        "Id": "forcedevent_Storytime_HYR_207_lustfulBallad_II",
+        "Name": "Lustful Ballad II",
+        "Details": "The alert message flashes on the screen of the DropShip, indicating that a transmission has been received and logged by the system.",
+        "Icon": "uixTxrSpot_ComputerScreen.png"
+    },
+    "Scope": "Company",
+    "Weight": 0,
+    "Requirements": {
+        "Scope": "Company",
+        "RequirementTags": {},
+        "ExclusionTags": {},
+        "RequirementComparisons": []
+    },
+    "AdditionalRequirements": [],
+    "AdditionalObjects": [],
+    "Options": [
+        {
+            "Description": {
+                "Id": "outcome_0",
+                "Name": "Proceed.",
+                "Details": "Play message",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_0_0",
+                        "Name": "Incoming Transmission",
+                        "Details": "Playback will begin shortly.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+                            "AddedTags": {},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [
+                                {
+                                    "Type": "System_StartConversation",
+									"value" : "9cf54229a0472a8d59d7a0f8",
+									"additionalValues" : [
+										"<i>LUSTFUL BALLAD II</i>",
+										"HPG NEWS"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        },
+        {
+            "Description": {
+                "Id": "outcome_1",
+                "Name": "Ignore.",
+                "Details": "Skip message",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_1_0",
+                        "Name": "Have A Coffee",
+                        "Details": "You go back to your daily affairs and let the DropShip crew deal with the message.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": []
+                }
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        }
+    ],
+    "PublishState": "PUBLISHED",
+    "ValidationState": "UNTESTED",
+    "EventType": "UNSELECTABLE"
+}

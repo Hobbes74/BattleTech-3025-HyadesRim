@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1302_notify_aranoRestoration",
+        "Id" : "milestone_1304_sim_argo",
         "Name" : "sim",
-        "Details" : "pause notification",
+        "Details" : "Sim game phase",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,11 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [
-					"flashpoint_legendKiller_complete",
-					"flashpoint_wilderness_complete",
-					"flashpoint_vortex_complete"
-				],
+                "items" : [],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -28,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1302,
+                    "val" : 1304,
                     "valueConstant" : null
                 }
             ]
@@ -38,28 +34,43 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {},
-            "RemovedTags" : {},
+            "AddedTags" : {
+			    "items" : [
+					"map_travel_5"
+				],
+                "tagSetSourceFile" : ""
+			},
+            "RemovedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
             "Stats" : [
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1,
+                    "value" : 1317,
+					"set" : true,
                     "valueConstant" : ""
                 }
-            ],
-            "Actions" : [			
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Santiago Espinosa's rule is crumbling between us and the Taurians, and without him or my niece realizing how deep the betrayal goes. We may be able to bring the entire Directorate down with a precise strike that will end this civil war.",
+			],
+            "Actions" : [	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Tyrlon",
+					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
+                },
+				{
+					"Type" : "System_AddFlashpoint",
+					"value" : "fp_StoryTime_HYR_312_swordOfTheRestoration",
+					"valueConstant" : null,
 					"additionalValues" : [
-						"Campaign Flashpoint",
-						"castDef_KameaDefault"
-					],
-                    "valueConstant" : null
-                }
+						"Tyrlon"
+					]
+				}
             ],
-            "ForceEvents" : null,
+            "ForceEvents" : [],
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

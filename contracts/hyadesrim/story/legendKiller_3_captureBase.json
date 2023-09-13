@@ -2,18 +2,18 @@
     "ID" : "legendKiller_3_captureBase",
     "contractName" : "Legend Killer III",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : "castDef_SumireDefault",
+    "representativeCastDefIDOverride" : "castDef_KameaDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
     "shortDescription" : "The Restoration forces had to abandon the smuggling site because their 'Mech support, meaning us, were sent in a diversion against the traitor while Colonel Haust managed to slip an undetected force past our scanners. So now I will drop with my royal guard to regain control of the contraband cache.",
-    "longDescription" : "And if we haven't been detached and she had taken care of Legend herself none of this would have happened. At least we won't be risking our necks anymore.",
-    "salvagePotential" : 12,
+    "longDescription" : "And if we haven't been detached away or if Lady Arano had taken care of Legend herself none of this would have happened. At least we won't be risking our necks anymore.",
+    "salvagePotential" : 0,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -331,7 +331,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Lady Kamea, you are back. I trust that you have dealt with Captain Korais?",
+                    "words" : "Lady Arano, that was quite an impressive performance on your part.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I trust that you have also dealt accordingly with Captain Korais?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -363,7 +379,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Korais had discovered the cache and was using it to pressure me to transfer off this rock.",
+                    "words" : "Korais had discovered the cache and was using it to pressure me to transfer off this rock. He send reinforcements once you captured it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -593,7 +609,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Shit, the Directorate has activated the turrets.",
+                    "words" : "Shit, the Directorate has activated the turrets on the cache.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -609,7 +625,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "That's what I wanted to warn you about. The forces loyal to Director Espinosa have retaken the base while you were gone dealing with Legend.",
+                    "words" : "That's what I wanted to warn you about. Forces loyal to Director Espinosa have retaken the base while you were gone dealing with Legend.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -641,7 +657,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Unless you want Director Espinosa to start suspecting of me, I recommend you take it back from them. Colonel Haust is out",
+                    "words" : "Later, for unless you want Director Espinosa to start suspecting of me, I recommend you take the cache back from them. Colonel Haust is out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -666,14 +682,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's the base up ahead. It <i>looks</i> empty...",
+                    "words" : "We have eyes on the base, now we just need to find Haust.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -682,23 +698,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "That sucks. Can I shoot some of the buildings anyway?",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_2",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Huh. I'm picking up engine signatures, boss. Reinforcements, and they're headed your way.",
+                    "words" : "The <i>Argo</i> is detecting additional signatures, captain.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -714,14 +714,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Oh shit, oh shit, I don't want to die-",
+                    "words" : "That must be our prey.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Contract_TrainingDay_5",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -730,14 +730,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Get your lance into that base, Commander, and hold out till our employer can get some more people on the ground.",
+                    "words" : "Royal Guard move and occupy the cache, that should draw Haust out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",

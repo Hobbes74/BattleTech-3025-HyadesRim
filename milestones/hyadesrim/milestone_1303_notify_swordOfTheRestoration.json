@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1303_sim_argo",
+        "Id" : "milestone_1303_notify_swordOfTheRestoration",
         "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -34,43 +34,28 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-			    "items" : [
-					"map_travel_5"
-				],
-                "tagSetSourceFile" : ""
-			},
-            "RemovedTags" : {
-				"items" : [
-					"AARCompleteNotificationsDisabled"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
+            "RemovedTags" : {},
             "Stats" : [
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1317,
-					"set" : true,
+                    "value" : 1,
                     "valueConstant" : ""
                 }
-			],
-            "Actions" : [	
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Tyrlon",
-					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
-                },
-				{
-					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_311_aranoRestoration",
-					"valueConstant" : null,
-					"additionalValues" : [
-						"Tyrlon"
-					]
-				}
             ],
-            "ForceEvents" : [],
+            "Actions" : [			
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Santiago Espinosa's rule is crumbling between us and the Taurians, and without him or my niece realizing how deep the betrayal goes. We may be able to bring the entire Directorate down with a precise strike of the Sword of the Restoration that will win this civil war.",
+					"additionalValues" : [
+						"Campaign Flashpoint",
+						"castDef_KameaDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

@@ -11,23 +11,23 @@ Public repository - https://github.com/Hobbes74/Battletech-3025-HyadesRim
 Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 
 Features
-* A new BattleTech story and Campaign mode, consisting of 41 planned new flashpoints, based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as the ComStar cover-up claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
+* A new BattleTech story and Campaign mode, consisting of 42 new flashpoints based on the unofficial history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Thirty-five original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate,  Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness and Vortex.
+* Thirty-six original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate,  Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness and Vortex.
 
-* Six more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Arano Restoration, Ghost Riders In The Sky, Unnatural Selection, Barbarians At The Gates, Atomic and The Eyes Of Truth.
+* Six more campaign flashpoints are being written for parts 2 and 3 of the new campaign: Sword Of The Restoration, Ghost Riders In The Sky, Unnatural Selection, Barbarians At The Gates, Atomic and The Eyes Of Truth.
 
-* New story includes a total of 114 new contracts rewritten from the originals, 145 original crew conversations and 295 additional lore descriptions, and is divided into three parts, each with its own subarcs.
+* New story includes a total of 114 new contracts rewritten from the originals, 150 new crew conversations and 295 additional lore descriptions, and is divided into three parts, each with its own subarcs.
 
 * The vanilla FPs are included in the new Campaign as independent mini-campaigns, except for the Black Widow mini-campaign but still appears on Career mode.
 
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems, as well as other Periphery realms. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
 
-* 87 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
+* 102 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
 
-* 55+ original factions, canon and new, with their own leaders, allies/enemies, contracts and 'Mech/vehicle variants. Ally/fight pirate gangs, corporations, regional powers and bandit kingdoms in both campaign and system contracts.
+* 58 original factions, canon and new, with their own leaders, allies/enemies, contracts and 'Mech/vehicle variants. Ally/fight pirate gangs, corporations, regional powers and bandit kingdoms in both campaign and system contracts.
 
-* 66 new cast characters, several with new artwork.
+* 80 new cast characters, several with new artwork.
 
 * 600+ new contracts and variants added, including pirate, IE and Periphery flavored.
 
