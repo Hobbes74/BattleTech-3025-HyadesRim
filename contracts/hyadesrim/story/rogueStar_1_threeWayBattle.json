@@ -2,7 +2,7 @@
     "ID" : "rogueStar_1_threeWayBattle",
     "contractName" : "Rogue Star",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 6,
+    "difficulty" : 5,
     "difficultyUIModifier" : 0,
     "weight" : 10,
     "scope" : "STANDARD",
@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Rogue Star confirmed that each applicant must deploy a single pilot and their 'Mech to be evaluated on the site by our potential employer, and that his company also received a clear but cryptic message to come to Espia. He got detached and assigned by his CO but decided to get some additional back-up in case things turn sour. Considering the other invitations and how we know nothing about this contract, it seems like we might be able to help one another.",
+    "shortDescription" : "Rogue Star confirmed that each applicant must deploy a single pilot and their 'Mech to be evaluated on the site by our potential employer, and that his company also received a clear but cryptic message to come to Espia. He got detached and assigned by his CO but decided to contact us to see if we wanted some back-up in case things turn sour. Considering the other invitations and how we know nothing about this contract, it seems like we might be able to help one another.",
     "longDescription" : "With the company we'll find down there, we should be prepared for the unexpected.",
     "salvagePotential" : 20,
     "requirementList" : [],
@@ -60,7 +60,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Destroy Primary {TEAM_TAR.FactionDef.Demonym} Lance",
+            "title" : "Destroy Novy Tikograd's 'Mech",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -72,7 +72,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "cb9c173c-89b3-4447-b3a0-26193cbeb601"
             },
-            "title" : "Destroy Opposing {TEAM_HOST.FactionDef.Demonym} Forces",
+            "title" : "Destroy Black Angels 'Mech",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -560,7 +560,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7b5ce847-7978-459b-97ee-3bf90ef951fb"
             },
-            "title" : "Destroy the Enemy Allied Forces",
+            "title" : "Destroy the Ali Baba's 'Mech",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -882,7 +882,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ac4199e4-c42e-4a41-ae0e-cf10f7dfcf8a"
             },
-            "title" : "Ensure {TEAM_EMP.FactionDef.Demonym} Forces Reach Evac Zone",
+            "title" : "Ensure Rogue Star Reaches Evac Zone",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -1626,14 +1626,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This is the target area, Commander. I'll be on station for evac.",
+                    "words" : "Well, we're here, I wonder where everyone else is.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1642,14 +1642,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We're expecting significant enemy strength, and possible reinforcements, so keep your eyes open. Oliviera out.",
+                    "words" : "I've got several incoming DropShip tracks, the rest of the party is coming.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1667,14 +1667,46 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That was rough, Commander. Well done.",
+                    "words" : "Congratulations on your victory. Wait in orbit to discuss your future contract.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Take us back to orbit, Pilot Meyer.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And if you're looking for a decent pilot, I'm gonna quit the Red Phoenix.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_RogueStarDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1692,14 +1724,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That was catastrophic, Commander. Let's head home and figure out what went wrong.",
+                    "words" : "I thought your company was better than this, I joined the wrong gang.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_RogueStarDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1742,14 +1774,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Heads up: We've got a 'Mech down, Argo.",
+                    "words" : "Rogue Star is down!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1758,14 +1790,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "This is Argo actual; we copy. Commander, they won't be able to take much more of this.",
+                    "words" : "I'm alright, just a little banged up on the ribs.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_RogueStarDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1824,14 +1856,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Dammit. They've taken out the last of the {TEAM_EMP.FactionDef.Demonym} lance, Commander. We're on our own.",
+                    "words" : "I'm done with this contract and working for the Red Phoenix. Good luck, {COMPANY.CompanyName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_RogueStarDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1874,7 +1906,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "As expected, ali Baba's Thieves have allied themselves with Novi Tikograd.",
+                    "words" : "As expected, ali Baba's Thieves have allied themselves with Novy Tikograd.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1890,14 +1922,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We need to take them down too!",
+                    "words" : "And we need to take them down too!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_RogueStarDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1997,14 +2029,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER The Hostile to All {TEAM_HOST.FactionDef.Demonym} lance has arrived! This is the Primary Version.",
+                    "words" : "What is this? A trap? I knew that was something wrong with this whole scheme!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_BlackAngelsLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
@@ -2013,14 +2045,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to the contract. If we want to get paid we need to take them out.",
+                    "words" : "Commander Watts, the pirates have ganged up together, you're on your own!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_BlackAngelsSergeantDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Cutthroaters and liars! They're after my 'Mech!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BlackAngelsLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
@@ -2838,14 +2886,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, my superiors have sent me to provide support. My people will engage the targets alongside you. Once we've eliminated them, we'll proceed to our own evac LZ.",
+                    "words" : "G'day everyone, time to go smash some metal.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_RogueStarDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "38efff2a-29a9-4886-a145-c5a7ca747fb7",
@@ -2854,7 +2902,39 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "This is Argo actual. Good to have you aboard.",
+                    "words" : "Nice to see you, Rogue Star.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "38efff2a-29a9-4886-a145-c5a7ca747fb7",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Pilot Meyer, I've heard that Novy Tikograd and the Thieves have joined forces together. I propose we do the same, otherwise they'll defeat us piecemeal.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_RogueStarDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "38efff2a-29a9-4886-a145-c5a7ca747fb7",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Rogue Star, this is the XO, Darius Oliveira. My CO has ordered us not to take risks, so please evac the zone when we're done defeating the other groups.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2864,20 +2944,36 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "38efff2a-29a9-4886-a145-c5a7ca747fb7",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander, we're under no obligation to keep these people alive, but I expect if they all come back in one piece, our employers may feel... generous.",
+                    "words" : "You got nothing to worry from me, Mr. Oliveira. See you at the evac zone.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_RogueStarDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Good to have you riding along us, then, over and out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -3236,7 +3332,7 @@
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "EmployerTeam",
-        "faction" : "INVALID_UNSET",
+        "faction" : "CanopianPirates",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -3269,7 +3365,7 @@
                             "EncounterObjectGuid" : "805d4192-850e-446e-afe4-cdb8a30685b4"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "CanopianPirates",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "Tagged",
                         "unitTagSet" : {
@@ -5433,7 +5529,7 @@
                             "items" : [							
 								"BlackAngels",
 								"unit_mech",
-								"unit_heavy"
+								"unit_assault"
 							],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },

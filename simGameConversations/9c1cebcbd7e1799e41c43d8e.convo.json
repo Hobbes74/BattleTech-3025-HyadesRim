@@ -210,7 +210,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa4a8623035a020000ea9",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "HOLOGRAM",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -245,7 +261,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa4a8623035a020000ea9",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -288,7 +320,7 @@
         "id": "9c0c2566d35169dbef3c7769"
       },
       "index": 5,
-      "text": "No Dr. Murad, 'Atomic' is after 'HPG Doomsday'.\n\nSince there isn't much entertainment on board this DropShip and to better impersonate them, I've been listening to Pilot Meyer's extensive holovid collection of the Banshees.",
+      "text": "No Dr. Murad, <i>Atomic</i> is after <i>HPG Doomsday</i>.\n\nSince there isn't much entertainment on board this DropShip and to better impersonate them, I've been listening to Pilot Meyer's extensive [[DM.BaseDescriptionDefs[LoreHolovid],holovid]] collection of the Banshees.",
       "branches": [
         {
           "responseText": "",
@@ -393,7 +425,7 @@
         "id": "9cb7c745419a96ef763a579b"
       },
       "index": 8,
-      "text": "He pilots a 'Mech for the Red Phoenix and his CO has ordered him to attend the evaluation, and also told him that our company and several other groups had been invited.\n\nAs for both him and Sumire being together in the same bar, it was either a lucky coincidence or it was not.",
+      "text": "He pilots a 'Mech for the [[DM.Factions[faction_CanopianPirates],Red Phoenix]] and his CO has ordered him to attend the evaluation, and also told him that our company and several other groups had been invited.\n\nAs for both him and Sumire being together in the same bar, it was either a lucky coincidence or it wasn't..",
       "branches": [
         {
           "responseText": "",
@@ -463,7 +495,7 @@
         "id": "9c51123da02457f47ecdbe5c"
       },
       "index": 10,
-      "text": "I thought this is why the MRB has periodic evaluations of all mercenary companies registered?\n\nSo that we don't have to waste time and resources in these sort of events?",
+      "text": "I thought this is why the [[DM.BaseDescriptionDefs[LoreMRB],MRB]] has periodic evaluations of all mercenary companies registered?\n\nSo that we don't have to waste time and resources in these sort of events?",
       "branches": [
         {
           "responseText": "",
@@ -498,7 +530,7 @@
         "id": "9c0843f5146f45d563c4795b"
       },
       "index": 11,
-      "text": "Captain, from my experience of working with the MRB and ComStar, I understand our employers needing assurances that we'll do the job but this sounds better that them poking around the Hysteria's 'Mech bays.\n\nThe evaluation is apparently simple, one 'Mech and pilot must be sent to a set of specific coordinates.",
+      "text": "Captain, from my experience of working with the MRB and [[DM.Factions[faction_ComStar],ComStar]], I understand our employers needing assurances that we'll do the job but this sounds better that them poking around the <i>[[DM.BaseDescriptionDefs[LoreHysteria],Hysteria]]</i>'s 'Mech bays.\n\nThe evaluation is apparently simple, one 'Mech and pilot must be sent to a set of specific coordinates.",
       "branches": [
         {
           "responseText": "",
@@ -568,7 +600,7 @@
         "id": "9cbf97fa5d49090a3bf6d803"
       },
       "index": 13,
-      "text": "Darius, considering what I've managed to find out about the other companies invited, they'll definitely want to make sure of whom they're hiring.\n\nSo far they've got the Red Phoenix, Ali Baba's Thieves, Novi Tikograd and another mercenary group called Black Angels on board. ",
+      "text": "Darius, considering what I've managed to find out about the other companies invited, they'll definitely want to make sure of whom they're hiring.\n\nSo far they've got the Red Phoenix, [[DM.Factions[faction_RegulanPirates],Ali Baba's Thieves]], [[DM.Factions[faction_TikonovPirates],Novy Tikograd]] and another mercenary group called [[DM.Factions[faction_BlackAngels],Black Angels]] on board. ",
       "branches": [
         {
           "responseText": "",
@@ -603,7 +635,7 @@
         "id": "9cd88fc49d22887d7ed0d75f"
       },
       "index": 14,
-      "text": "Never heard about the last company but the other groups are all known to be Periphery heavy hitters and with arrest warrants for piracy in the entire Inner Sphere.",
+      "text": "Never heard about the last company but the other groups are all known to be [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]] heavy hitters and with arrest warrants for piracy in the entire [[DM.BaseDescriptionDefs[LoreInnerSphere],Inner Sphere]].",
       "branches": [
         {
           "responseText": "",
@@ -673,13 +705,13 @@
         "id": "9c75ef6a2decd2285cdc0fa3"
       },
       "index": 16,
-      "text": "Aye, aye, Captain.\n\nOnce she wakes up, we'll be getting back to the hotel where the Red Phoenix are staying.",
+      "text": "Aye, aye, Captain, once she wakes up, we'll be getting back to the hotel where the Red Phoenix are staying.\n\nAnd we'll finally find out who wants to employ us, my money on the DropShip's betting pool is still on House Davion rather the [[DM.BaseDescriptionDefs[LoreDracs],Dracs]].",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 17,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -699,7 +731,144 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
+      "speaker_override_id": "5a6aa4a8623035a020000ea9",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c0e47dab2d12bd3f519c219"
+      },
+      "index": 17,
+      "text": "Hold on... what about our disguise posing as Banshees?\n\nIf this 'Rogue Star' is as much as a fan as Sumire, we can't keep pulling this act because he'll know we are not them.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc9564742884c279894aec1"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
       "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c768fa546b9813a65f5a7a9"
+      },
+      "index": 18,
+      "text": "That [[DM.BaseDescriptionDefs[LoreJumpShip],ship]] has already left the [[DM.BaseDescriptionDefs[LoreJumpPoint],jump point]], Dr. Murad, because whomever invited us here knows we're not them since 'Rogue Star' referred to us by our official name, {COMPANY.CompanyName} when he and Sumire were talking.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cea3a9737310cc4166191ff"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd29a429f3d47d136ea02f4"
+      },
+      "index": 19,
+      "text": "Better this way, we don't want to be calling too much attention to us the closer we get to the Magistracy of Canopus.\n\nCommander, XO, prepare the ship and company for a single combat drop.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7a36968841cc004153a388"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     }

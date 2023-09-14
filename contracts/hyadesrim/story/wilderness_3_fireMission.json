@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "36f0be69-3b56-447e-9374-a7643ed3eca8"
             },
-            "title" : "Attack the Installation and paint the area for a Fire Mission",
+            "title" : "Target the Cartel Facility for Fire Mission",
             "description" : "Attack the Installation and paint the area for a Fire Mission",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -124,7 +124,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9090acb8-ca3d-4d15-abce-1c520aafe9c0"
             },
-            "title" : "Get Visual Confirmation of Artillery Effect",
+            "title" : "Get Visual Confirmation of DropShip strike",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -160,7 +160,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "6512b05e-ea0d-4979-af5f-8a8c8d2e0195"
             },
-            "title" : "Destroy Enemy Garrison",
+            "title" : "Destroy Gallas Loyalists",
             "description" : "Enemy Garrison Lance",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -198,7 +198,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f3e1232a-f769-4479-a606-50020c0350df"
             },
-            "title" : "Destroy Additional Enemy Forces",
+            "title" : "Destroy Additional Gallas Loyalists",
             "description" : "Enemy Supplemental 1 Lance",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -388,7 +388,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0bbd4b2b-8b6b-4856-8c6f-c68d282646c2"
             },
-            "title" : "Place Beacons for Artillery Quickly",
+            "title" : "Place Beacons for DropShip Strike",
             "description" : "Complete the Fire Mission",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -400,7 +400,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "2b78c46d-a854-4288-adeb-c7fc1574f055"
             },
-            "title" : "Extract before Enemy Reinforcments Arrive",
+            "title" : "Extract before Taurian Reinforcements Arrive",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -424,7 +424,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9bae3b44-ec37-4674-8869-06981eca1570"
             },
-            "title" : "Defeat Enemy Kill Team",
+            "title" : "Defeat Taurian Force",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -448,7 +448,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "bfd64f77-3d48-481c-9f2e-6d704744a000"
             },
-            "title" : "Defeat Enemy Kill Team",
+            "title" : "Defeat Taurian Reinforcements",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -474,7 +474,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9090acb8-ca3d-4d15-abce-1c520aafe9c0"
             },
-            "artilleryVFXType" : "ArtilleryShellBarrage"
+            "artilleryVFXType" : "OrbitalPPC"
         }
     ],
     "buildingList" : [],
@@ -1472,9 +1472,9 @@
             }
         }
     ],
-    "overwriteMissionCompleteWhenAutoComplete" : true,
+    "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : true,
     "disableAfterAction" : false,
@@ -1677,7 +1677,7 @@
                     "EncounterObjectGuid" : "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca"
                 },
                 "name" : "Lance_Employer_Reinforcements",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1703,7 +1703,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_kintaro_KTO-19b",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1716,7 +1716,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_story_kamea_end",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1735,8 +1735,7 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_javelin_JVN-10N",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1749,7 +1748,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_story_KameaGuard1",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1769,7 +1768,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_phoenixhawk_PXH-1",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1782,7 +1781,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_story_KameaGuard2",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1802,7 +1801,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_trebuchet_TBT-5N",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1815,7 +1814,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_story_KameaGuard3",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

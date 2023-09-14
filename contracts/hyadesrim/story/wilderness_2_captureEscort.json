@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "7db60871-d4ae-423d-9c82-fb40ca083372"
             },
-            "title" : "Escort Convoy to Safety and Escape",
+            "title" : "Escort Gallas Household to Safety",
             "description" : "Capture Convoy Rally Point and Escort Convoy to Safety",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -62,7 +62,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "acf88d1b-d09f-4db7-b7ea-9f48a426075c"
             },
-            "title" : "Destroy Enemy Blocking Force",
+            "title" : "Destroy Taurian Patrol",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -100,7 +100,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "5f01500a-5087-4a6f-86d8-9e0450bc93eb"
             },
-            "title" : "Secure the Convoy Rally Point",
+            "title" : "Rendez-vous with the Gallas convoy",
             "description" : "Secure the Convoy Rally Point",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -112,7 +112,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "371c6027-0869-4e03-8d70-192a8f441d70"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Taurian Patrol",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -150,7 +150,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d4d20990-fbeb-4f6e-81b7-7e94bba6a2c5"
             },
-            "title" : "Escort Friendly units to their Destination",
+            "title" : "Escort House Gallas vehicles",
             "description" : "Escort Friendly units to their Destination",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -162,7 +162,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7da17c55-5d39-4a36-836c-69219a8ddeab"
             },
-            "title" : "Ensure All Convoy units survive during Extraction",
+            "title" : "Ensure All Gallas units survive",
             "description" : "Protect the all units in Convoy during Extraction, suffering no losses.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -262,7 +262,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "66728491-3cff-4ba8-b173-a6a386ce2c73"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -344,14 +344,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The {TEAM_EMP.FactionDef.Demonym} researchers are en route in APCs, Commander. I'm sending you coordinates for the rendezvous point. Secure the site.",
+                    "words" : "I've detected Lady Gallas at this position but she is refusing to answer our hails.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
@@ -360,17 +360,33 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Get them safely to their evac. I'll coordinate the pickups from here. Oliveira out.",
+                    "words" : "Move there and convince her otherwise, {COMMANDER.FirstName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We're detecting Taurian patrols. A lot of them!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -385,14 +401,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Excellent work, Commander. The convoy safely reached extraction, and I have Sumire moments away from your position for a pick up. Be ready.",
+                    "words" : "Lady Arano, thank you for saving me and the rest of House Gallas survivors.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FinnGallasDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -410,14 +426,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Pack it in, Commander. Nothing left to do here.",
+                    "words" : "The Taurians are... <static>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FinnGallasDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -435,14 +451,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
             "dialogueContent" : [
                 {
-                    "words" : "Commander. The enemy had deployed reinforcements and they are inbound. Expect increased resistance. ",
+                    "words" : "A Taurian DropShip is approaching, most likely reinforcements.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -460,7 +476,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Contact! That'll be {TEAM_TAR.FactionDef.Demonym} forces hunting our charges. Remember, our contract terms are to protect the convoy.",
+                    "words" : "Another Taurian patrol hunting for House Gallas is approaching, Commander!.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -510,14 +526,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The scientists are approaching the rendezvous point now. Watch over them, Commander. Those APCs are fragile.",
+                    "words" : "Lady Arano, we didn't respond because we didn't want to alert the Taurians to our location.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FinnGallasDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e",
@@ -526,14 +542,46 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep in mind that the convoy will try to stay near you for protection. Continue advancing to get them to the extract point!",
+                    "words" : "Finn Gallas, where is your aunt? We need to extract all of you off-planet now!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "She took off with our remaining 'Mechs and have left us here defenseless.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FinnGallasDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Very well, we'll extract you off planet and then you'll tell me where she went.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",

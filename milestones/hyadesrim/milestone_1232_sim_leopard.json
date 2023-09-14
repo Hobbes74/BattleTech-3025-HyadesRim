@@ -46,7 +46,14 @@
 				],
                 "tagSetSourceFile" : ""
 			},
-            "Stats" : [],
+            "Stats" : [			
+				{
+					"typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : null
+				}
+			],
             "Actions" : [
 				{
 					"Type" : "System_SimGameCharacterVisible",
@@ -67,15 +74,13 @@
 					]
 				},
 				{
-                    "value" : "trav_story_5_enterTheDragon",
-                    "Type" : "System_AddContract",
-                    "valueConstant" : null,
+					"Type" : "System_AddFlashpoint",
+					"value" : "fp_StoryTime_HYR_202_rogueStar",
+					"valueConstant" : null,
 					"additionalValues" : [
-						"AuriganPirates",
-						"Kurita",
-						"starsystemdef_Espia"
+						"Espia"
 					]
-                }
+				}
             ],
             "ForceEvents" : null,
 			"TemporaryResult" : false,
