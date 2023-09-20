@@ -259,7 +259,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59baac916230356416000354",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -267,7 +283,7 @@
         "id": "9c05582c4a3056407a949a67"
       },
       "index": 5,
-      "text": "Don't you get personal with me, young lady!\n\nI watched your mother breastfeed you, so let's keep this conversation on its proper level.",
+      "text": "Don't you get personal with me, young lady!\n\nI watched your mother Esperanza breastfeed you, so let's keep this conversation on its proper level.",
       "branches": [
         {
           "responseText": "",
@@ -294,7 +310,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a3ab9236230353c12005e2b",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -337,7 +369,7 @@
         "id": "9cdd0ec99868829e06d717e7"
       },
       "index": 7,
-      "text": "Oh but you are wrong in all accounts, Lady Kamea Arano.\n\nI do not know what your plan against Director Espinosa is, but I can make sure take this to the Funding Council and make Itrom a priority instead.",
+      "text": "Oh but you are wrong in all accounts, Lady Kamea Arano.\n\nI do not know what your plan against Director Espinosa is, but I can make sure take this to the Funding Council and change Itrom into a priority instead.",
       "branches": [
         {
           "responseText": "",
@@ -372,7 +404,7 @@
         "id": "9c39a4d9a628ac2639005440"
       },
       "index": 8,
-      "text": "This isn't the time or the place to be discussing those matters while you are being chased by my uncle's forces, Lady Gallas.",
+      "text": "This isn't the time or the place to be discussing those matters while you are being chased by my uncle's forces, Lady Gallas.\n\nWe can extract you right now then we can discuss this safely.",
       "branches": [
         {
           "responseText": "",
@@ -407,7 +439,7 @@
         "id": "9ce94a44e23d2885174b1e4b"
       },
       "index": 9,
-      "text": "Oh but it is because the way I am seeing it, you seem also set to take all the decisions by yourself and to benefit House Arano at the expense of all the other houses.\n\nAnd I am not willing to simply exchange one tyrant for another, even if it is [[DM.BaseDescriptionDefs[LoreHighLordTamatiArano],Tamati]]'s daughter.",
+      "text": "Oh but it is because the way I am seeing it, you seem also set to take all the decisions by yourself and to benefit [[DM.BaseDescriptionDefs[LoreHouseArano],House Arano]] at the expense of all the other houses.\n\nAnd I am not willing to simply exchange one tyrant for another, even if it is [[DM.BaseDescriptionDefs[LoreHighLordTamatiArano],Tamati]]'s daughter.",
       "branches": [
         {
           "responseText": "",
@@ -478,7 +510,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "",
+                "string_value": "DEFAULT",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -608,7 +640,7 @@
         "id": "9cfa0610e500750188d006e5"
       },
       "index": 13,
-      "text": "We have a fix on their current position but I doubt they'll stay there in order to avoid the [[DM.Factions[faction_TaurianConcordat],Taurian]] patrols that we've also detected.\n\nThe longer we wait, the harder it will be to find them later, captain.\n",
+      "text": "We have a fix on their current position but I doubt they'll stay there in order to avoid the [[DM.Factions[faction_TaurianConcordat],Taurian]] patrols that we've also detected.\n\nThe longer we wait, the harder it will be to find them our there in the wilderness, captain.\n",
       "branches": [
         {
           "responseText": "",
@@ -643,7 +675,7 @@
         "id": "9cc178b86dda68ef8791156c"
       },
       "index": 14,
-      "text": "The Taurian commander has also recalled a substantial force to guard the planetary capital, Lady Arano, so they must have detected the <i>[[DM.BaseDescriptionDefs[LoreArgo],Argo]]</i>.\n\nIt's a matter of time until Commodore and the <i>[[DM.BaseDescriptionDefs[LoreIberia],Iberia]]</i> arrive here.",
+      "text": "The Taurian commander has also recalled a substantial force to guard the planetary capital, Lady Arano, so they must have detected the <i>[[DM.BaseDescriptionDefs[LoreArgo],Argo]] in orbit</i>.\n\nIt's only a matter of time until Commodore Ostergaard and the <i>[[DM.BaseDescriptionDefs[LoreIberia],Iberia]]</i> arrive here.",
       "branches": [
         {
           "responseText": "",
@@ -678,7 +710,7 @@
         "id": "9c2c949d37aec1df67455a70"
       },
       "index": 15,
-      "text": "Itrom contains substantial mineral deposits that are being used by Director Santiago to finance his forces. \n\nWith control of the spaceport and the mines, they don't need Lady Gallas alive.",
+      "text": "Itrom contains substantial mineral deposits that are being used by Director Santiago to finance his forces. \n\nWith control of the spaceport and the mines, they don't need Lady Gallas alive, but without them, they would have no reason to hold to this planet.",
       "branches": [
         {
           "responseText": "",
@@ -713,17 +745,87 @@
         "id": "9c6fdc028008252a311bdb74"
       },
       "index": 16,
-      "text": "We can't get involved into the fight for this world, that's exactly what Ostergaard would want and I need Lady Gallas alive.\n\nWhat's her current status and location?",
+      "text": "Alexander, we can't get involved into the fight for this world or its resources, that's exactly what Ostergaard would want and I need Lady Gallas alive!\n\nSumire, what's the location of Lady Gallas' transmission?",
       "branches": [
         {
           "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca13733d30d2a9927ba36fe"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8b98e3ecc45f7cbbfa6c12"
+      },
+      "index": 17,
+      "text": "About two hundred klicks away from [[DM.BaseDescriptionDefs[LoreBremenhaven],Bremenhaven]], the flight map indicates a navigational beacon tower at their location used for space traffic.\n\nMy guess is they used it as a relay station for her to broadcast to us.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c333360f6e054d64badc6f8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c51ada2b8a3db1597efe075"
+      },
+      "index": 18,
+      "text": "Then {COMMANDER.Callsign}, prepare to deploy and rescue Lady Gallas.\n\nSumire, take us down there when we're ready.",
+      "branches": [
+        {
+          "responseText": "Aye, aye, Lady Arano.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": -1,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ca13733d30d2a9927ba36fe"
+            "id": "9c633318dfa7b518ad185a0a"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
