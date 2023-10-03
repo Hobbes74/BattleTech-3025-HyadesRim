@@ -336,7 +336,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f36230355c1800006a",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -345,7 +345,7 @@
         "id": "9cba54af2225d5ea97e61f33"
       },
       "index": 7,
-      "text": "High Lady Kamea Arano, since the current [[DM.BaseDescriptionDefs[LoreHerzog],Herzog]]'s actions have clearly made her unfit for her position, me and the other members of House Gallas that you saved, we all pledge their allegiance to you and the [[DM.BaseDescriptionDefs[LoreAuriganCoalition],Aurigan Coalition]].",
+      "text": "High Lady Kamea Arano, the current [[DM.BaseDescriptionDefs[LoreHerzog],Herzog]]'s actions have clearly made her unfit for her position as leader of House Gallas.\n\nSo I personally pledge my allegiance to you and the [[DM.BaseDescriptionDefs[LoreAuriganCoalition],Aurigan Coalition]].",
       "branches": [
         {
           "responseText": "",
@@ -382,7 +382,7 @@
         "id": "9ce9ca6884fd8e40dc398580"
       },
       "index": 8,
-      "text": "Your pledge is recognized and accepted by me as the Sword of the Restoration, Lord Gallas.\n\nWe will discuss this more, for now rest, as we decide on Duchess Gallas' fate.",
+      "text": "Your pledge is recognized and accepted by me as the Sword of the Restoration, Lord Gallas.\n\nWe will discuss this more after I decide on Duchess Gallas' fate.",
       "branches": [
         {
           "responseText": "",
@@ -408,7 +408,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -417,7 +417,7 @@
         "id": "9ce0577a66f2d4980d28170c"
       },
       "index": 9,
-      "text": "",
+      "text": "Very well, High Lady Arano, I'll be waiting to hear from you.\n\nFinn Gallas is out.",
       "branches": [
         {
           "responseText": "",
@@ -440,7 +440,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "FinnGallasDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -452,7 +454,7 @@
         "id": "9cbea93fa2ead61edf2532ab"
       },
       "index": 10,
-      "text": "Unless I'm mistaken, we now have a massive security risk.",
+      "text": "[Holovid link disconnected.]",
       "branches": [
         {
           "responseText": "",
@@ -478,8 +480,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -487,7 +505,7 @@
         "id": "9c0f88aefd5c9c1c83c8242d"
       },
       "index": 11,
-      "text": "Why? She's bottled up and waiting to die, Alex.\n\nLet the Taurians deal with her, we can now leave this system. YANG",
+      "text": "Sounds like now we have a massive security risk, High Lady Arano.",
       "branches": [
         {
           "responseText": "",
@@ -513,7 +531,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -522,7 +540,7 @@
         "id": "9c21701d74c7b18885a2f4dc"
       },
       "index": 12,
-      "text": "",
+      "text": "Why? She's bottled up and waiting to die, Alex.\n\nLet the Taurians deal with her, we can now leave this system.",
       "branches": [
         {
           "responseText": "",
@@ -548,7 +566,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -560,7 +578,7 @@
       "text": "Sensors indicate the [[DM.BaseDescriptionDefs[LoreConcordatsCuirassers],Concordat's Cuirassers]] aren't attacking her, their forces are still concentrated around Bremenhaven.\n\nThey're either waiting for DropShip support before assaulting the Gwendor-Dorwinion facility, or they decided she's not worth the cost.",
       "branches": [
         {
-          "responseText": "And why is this a risk?",
+          "responseText": "Lord Madeira, why is this a risk?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 14,
@@ -583,7 +601,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -592,7 +610,7 @@
         "id": "9c4dfa7b3fd4bad3845f66b4"
       },
       "index": 14,
-      "text": "Commander, our presence has changed the strategic outlook, controlling Itrom is enough for their proposes.\n\nWhich also means that Duchess Gallas might also decide again to contact Director Espinosa to reach some sort of deal.",
+      "text": "Commander, our presence has changed the strategic outlook, controlling Itrom and its resources may not be enough for the Directorate's objectives.\n\nAnd meanwhile Duchess Gallas might also decide again to contact Director Espinosa to reach some sort of deal.",
       "branches": [
         {
           "responseText": "",
@@ -618,7 +636,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -627,7 +645,7 @@
         "id": "9c526793b6a522262b640d7c"
       },
       "index": 15,
-      "text": "And she knows too much about the Restoration and there's no way to telling how much she knows about the Tyrlon operation.\n\nYup, we have a massive security risk. YANG",
+      "text": "And she knows too much about the Restoration and there's no way to telling how much she knows about the incoming [[DM.BaseDescriptionDefs[LoreTyrlon],Tyrlon]] operation.\n\nYup, we have a massive security risk, Captain and commander.",
       "branches": [
         {
           "responseText": "",
@@ -653,7 +671,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -662,7 +680,7 @@
         "id": "9c325c6b4a3b9623cd904d08"
       },
       "index": 16,
-      "text": "Our objective here has just changed - we can't risk Lady Gallas and what she knows to fall into the hands of the Directorate or the Taurians.",
+      "text": "Then our objective here has just changed - we can't risk Lady Gallas and what she might know to fall into the hands of the Directorate or the Taurians.",
       "branches": [
         {
           "responseText": "",
@@ -688,7 +706,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -697,7 +715,7 @@
         "id": "9cb95fe89e478128697e1741"
       },
       "index": 17,
-      "text": "But since she already refused to come with us, that leaves only one option.",
+      "text": "Kamea, since she already refused to come with us, that leaves only two options, to capture or eliminate her.",
       "branches": [
         {
           "responseText": "",
@@ -723,7 +741,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -732,7 +750,7 @@
         "id": "9c20c77b537ea42dc07548f3"
       },
       "index": 18,
-      "text": "We already saved her household members that chose not to follow her, so House Gallas will not be vanquished like House Karosas.",
+      "text": "And I prefer the first one Alexander, but if it is necessary, we already saved her household members that chose not to follow her.\n\nSo House Gallas will not be vanquished like my uncle did to House Karosas.",
       "branches": [
         {
           "responseText": "",
@@ -758,7 +776,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -767,7 +785,7 @@
         "id": "9cac6d743879c58ed6b63daa"
       },
       "index": 19,
-      "text": "Wait... you're actually discussing killing Lady Gallas?\n\nA noblewoman and one of your Founding Council members?",
+      "text": "Wait... you're actually discussing killing Lady Gallas?\n\nA noblewoman and one of your [[DM.BaseDescriptionDefs[LoreFoundingCouncil],Founding Council]] members?",
       "branches": [
         {
           "responseText": "",
@@ -793,8 +811,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -802,7 +836,7 @@
         "id": "9c43e358a3a6783f53308f7b"
       },
       "index": 20,
-      "text": "Finn Gallas will take her place once we reconvene the Council... for now the Restoration will stay silent on her death and blame it on the Taurians, we later can inform Pierre-Louis and the other members of the actual circumstances behind her death.",
+      "text": "That will be enough from all of you until this meeting is over.\n\nAlexander, can Finn take her place when we reconvene the Council?",
       "branches": [
         {
           "responseText": "",
@@ -828,8 +862,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -837,13 +887,13 @@
         "id": "9c98bead438a6f24d0bff947"
       },
       "index": 21,
-      "text": "And even if we recapture Itrom from the Taurians, as she wanted, then we'd still have to hold it or even risk being trapped on this world by a Concordat relief force.",
+      "text": "For now the Restoration have to stay silent on her death and blame it on the Taurians.\n\nWe later can inform Finn, Pierre-Louis and the other members of the actual circumstances behind her death.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 22,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -863,7 +913,77 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1c7164a67c4ececda4dd3f"
+      },
+      "index": 22,
+      "text": "Very well, then I will drop personally with my [[DM.BaseDescriptionDefs[LoreAranoRoyalGuard],Royal Guards]], together with {COMPANY.CompanyName} for a final attempt to convince her to join us.\n\n{COMMANDER.FirstName}, XO, prepare your company for a drop.",
+      "branches": [
+        {
+          "responseText": "Understood, Lady Arano. Darius?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 23,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c2cdf7631cf108446198164"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c46ce8bface1345ee23a8e1"
+      },
+      "index": 23,
+      "text": "We have our orders, let's move people!\n\nDr. Murad, a word in private please?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c47f1c852679487428d4ee7"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     }

@@ -103,7 +103,7 @@ Credits
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander;
 * Extended Converstations mod, by CWolfs, released under an MIT license - https://github.com/CWolfs/ExtendedConversations;
 
 Contributions/Tools:
