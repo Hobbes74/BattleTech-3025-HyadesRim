@@ -7,12 +7,12 @@
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "representativeCastDefIDOverride" : null,
+    "representativeCastDefIDOverride" : "castDef_MadeiraDefault",
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Oligarchy's second major house.",
-    "longDescription" : "This shouldn't be too easy.",
+    "shortDescription" : "The factory is the property of a consortium made by the noble houses that rule Mechdur: Mwenye, Petrauskas, and Gallain. Its defenders regularly send patrols, but their forces are suffering from low morale and dissent between pro-Directorate and independence supporters, so if we strike at the latter we might at least make rest of the Oligarchy's forces neutral, while we take and disable the 'Mech factory before the Taurians can react.",
+    "longDescription" : "This shouldn't be too hard, but I know how much that sentence has been abused in the past.",
     "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Lance",
+            "title" : "Destroy Mechdur's Independentists",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Lance",
+            "title" : "Destroy Oligarchy Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Oligarchy Reinforcements",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -117,15 +117,14 @@
             "name" : "Dialogue_MissionStart",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
-                {
-                    "words" : "We've got them, Commander. Right out in the open.",
+                    "words" : "Our sources within the Oligarchy think that we might tip the balance by hitting at the independence faction.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -134,14 +133,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "These guys are amateurs. Get eyes on them and take them out.",
+                    "words" : "The <i>Argo</i> has detected them in this area, so move in and wipe them all out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
@@ -150,14 +149,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliveira out.",
+                    "words" : "Once they're done it will easier to take the 'Mech factory. Good luck, {COMMANDER.LastName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -175,14 +174,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "A milk run, just as we expected. Good work, Commander.",
+                    "words" : "That... went easier than I expected.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Now, you just need to take the factory, boss. I mean, we need it.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -200,14 +215,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I don't know what went wrong, Commander, but we need to evac.",
+                    "words" : "That was as fucked up as a <i>Marauder</i> painted with yellow and green zebra stripes.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -463,7 +478,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_battle",
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -472,12 +487,10 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_50"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 2,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [

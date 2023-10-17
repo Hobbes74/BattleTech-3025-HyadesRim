@@ -1325,7 +1325,7 @@
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": 35,
+          "nextNodeIndex": 34,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -1351,29 +1351,9 @@
     },
     {
       "idRef": {
-        "id": "9c9e5ff864a5b32d04a611c1"
-      },
-      "index": -1,
-      "text": "",
-      "branches": [],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
         "id": "9ccfd052f677f9319cb2f5a6"
       },
-      "index": 35,
+      "index": 34,
       "text": "{COMMANDER.FirstName}, we might be able to rescue Yang but we'll need to fight the Brotherhood and we surely won't be able to recover the weapon.\n\nOr... well, I don't like that option. But it's the only way to keep the IE contracts.",
       "branches": [
         {
@@ -1401,7 +1381,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "598cd3f26230355c18000069",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

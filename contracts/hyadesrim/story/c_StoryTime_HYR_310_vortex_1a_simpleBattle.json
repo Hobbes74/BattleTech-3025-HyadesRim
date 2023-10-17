@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Oligarchy's first major house.",
-    "longDescription" : "This shouldn't be too hard.",
+    "shortDescription" : "The factory is the property of a consortium made by the noble houses that rule Mechdur: Mwenye, Petrauskas, and Gallain. Its defenders regularly send patrols, but their forces are suffering from low morale and dissent between pro-Directorate and independence supporters, so if we strike at the former we might at least make rest of the Oligarchy's forces neutral, while we take and disable the 'Mech factory before the Taurians can react.",
+    "longDescription" : "You heard Lady Arano, time to punish the traitors.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Directorate Supporters",
             "description" : "Find, engage and destroy the enemy Mercs.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Lance",
+            "title" : "Destroy Directorate Lance",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Directorate Reinforcements",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
@@ -144,14 +144,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're facing professionals, so we should expect well-armed and disciplined opposition.",
+                    "words" : "Our sources within the Oligarchy think that we might tip the balance by hitting at the Directorate supporters.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -160,14 +160,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We've picked up comm signals from this region, so that's where you should start looking.",
+                    "words" : "The <i>Argo</i> has detected them in this area, so move in and wipe them all out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "d9a28c08-abdb-42bb-a140-ad3927d1f8cf",
@@ -176,14 +176,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep them off balance. And be careful, Commander.",
+                    "words" : "Once they're done it will easier to take the 'Mech factory. Good luck, {COMMANDER.LastName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -201,14 +201,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Good work, Commander. I've signaled our employers that their operations are safe for now.",
+                    "words" : "That... went easier than I expected.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Prepare your people, Chief MechTech, you have a factory to disable.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -226,14 +242,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Some days you're hammer, other days you're the anvil. Let's head home, Commander.",
+                    "words" : "That was as fucked up as mixing a <i>Rifleman</i>'s torso with a <i>Warhammer</i> legs.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -489,7 +505,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_support",
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },

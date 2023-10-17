@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "event_co_letterOfMarque_Davion",
-        "Name" : "Letter Of Marque Davion",
-        "Details" : "Darius comes smiling. \"We have received a interesting proposal from [[DM.BaseDescriptionDefs[LoreNewSyrtis],New Syrtis]]. It appears that the Capellan March may be interested in issuing us a letter of marque so that we can perform supplemental contracts for the Federated Suns.\" \r\n\r\n\"Whoa, you mean for [[DM.BaseDescriptionDefs[LoreMichaelHasekDavion],Duke Hasek-Davion]] right? Everyone knows that he's the one running around business in the area\". Yang frowns at the idea.\r\n\r\nDarius nods. \"Yeah, no hiding that fact. But they'll provide JumpShip access to Davion space and any flashpoints that they might be interested in. It's just a way for them to go around the official way for contracts.\"\r\n\r\n\"I know for a fact that I could use a return to more civilized space. What's the catch here?\" Sumire's face brightens at the idea.\r\n\r\n\"None, except that if we sign up with them, we can't expect other such offers from the other major factions until we complete their missions. Otherwise, it's a clear deal Commander.\" Darius continues. \"We can also contact either Steiner or Kurita's representatives to see if they have an interest in our services. But we won't get the travel access to Davion space\".",
+        "Id" : "forcedevent_co_HYR_120c_letterOfMarque_Marik",
+        "Name" : "Letter Of Marque Marik",
+        "Details" : "Darius comes smiling. \"We have received a interesting proposal from [[DM.BaseDescriptionDefs[LoreAndurien],Andurien]]. It appears that Duchess Catherine Humphreys may be interested in issuing us a letter of marque so that we can perform supplemental contracts for the Free Worlds League.\" \r\n\r\n\"Which, as well all know means that we'll likely be working for the Duchy of Andurien rather than [[DM.BaseDescriptionDefs[LoreJanosMarik],Janos Marik]]\". Yang adds.\r\n\r\nDarius continues. \"Yeah, no hiding that fact. But they'll provide JumpShip access to Marik space and any flashpoints that the League might be interested in. It's just a way for them to go around the official way for contracts.\"\r\n\r\n\"I know for a fact that I could use a return to more civilized space. What's the catch here?\" Sumire's face brightens at the idea.\r\n\r\n\"None, except that if we sign up with Marik, we can't expect other such offers from the other major factions in the area until we complete their missions. Otherwise, it's a clear deal Commander.\" Darius continues.\r\n\r\n\"We can also contact either Steiner or Kurita's representatives and present them with this offer to see if they have an interest in our services. But we won't get the travel access to Marik space\".",
         "Icon" : "uixTxrSpot_DailyBriefing.png"
     },
     "Scope" : "Company",
@@ -18,7 +18,7 @@
         "ExclusionTags" : {
             "tagSetSourceFile" : "",
             "items" : [
-                "flashpoint_allianceDavion_complete",
+                "flashpoint_allianceMarik_complete",
                 "event_co_letterofmarque",
                 "letterofmarque_davion",
                 "letterofmarque_kurita",
@@ -133,7 +133,7 @@
         {
             "Description" : {
                 "Id" : "outcome_1",
-                "Name" : "Accept Davion Letter of Marque. [Pauses Story]",
+                "Name" : "Accept Marik Letter of Marque. [Pauses Story]",
                 "Details" : "Become a privateer",
                 "Icon" : null
             },
@@ -142,9 +142,9 @@
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "Accept Davion's offer. [Pauses Story]",
-                        "Details" : "After considering it for several minutes, you came to a decision. \"Duke Hasek-Davion is one of the major power players in the area and their letter of marque will be most useful. Darius, please notify New Syrtis that we accept their terms.",
-                        "Icon" : ""
+                        "Name" : "Accept Marik's offer. [Pauses Story]",
+                        "Details" : "After considering it for several minutes, you came to a decision. \"The Duchy of Andurien is one of the major power players in the area and their letter of marque will be most useful. Darius, please notify them that we accept their terms.",
+                        "Icon" : null
                     },
                     "Weight" : 100,
                     "Results" : [
@@ -154,10 +154,10 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-									"flashpoint_danseMacabre_b",
-                                    "letterofmarque_davion",
+									"flashpoint_danseMacabre_e",
+                                    "letterofmarque_marik",
                                     "map_travel_2",
-                                    "map_travel_2d"
+                                    "map_travel_2m"
                                 ]
                             },
                             "RemovedTags" : {
@@ -167,7 +167,7 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Reputation.Davion",
+                                    "name" : "Reputation.Marik",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : "[rep_gain_small]"

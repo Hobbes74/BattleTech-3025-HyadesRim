@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "event_co_letterOfMarque_Marik",
-        "Name" : "Letter Of Marque Marik",
-        "Details" : "Darius comes smiling. \"We have received a interesting proposal from [[DM.BaseDescriptionDefs[LoreAndurien],Andurien]]. It appears that Duchess Catherine Humphreys may be interested in issuing us a letter of marque so that we can perform supplemental contracts for the Free Worlds League.\" \r\n\r\n\"Which, as well all know means that we'll likely be working for the Duchy of Andurien rather than [[DM.BaseDescriptionDefs[LoreJanosMarik],Janos Marik]]\". Yang adds.\r\n\r\nDarius continues. \"Yeah, no hiding that fact. But they'll provide JumpShip access to Marik space and any flashpoints that the League might be interested in. It's just a way for them to go around the official way for contracts.\"\r\n\r\n\"I know for a fact that I could use a return to more civilized space. What's the catch here?\" Sumire's face brightens at the idea.\r\n\r\n\"None, except that if we sign up with Marik, we can't expect other such offers from the other major factions in the area until we complete their missions. Otherwise, it's a clear deal Commander.\" Darius continues.\r\n\r\n\"We can also contact either Steiner or Kurita's representatives and present them with this offer to see if they have an interest in our services. But we won't get the travel access to Marik space\".",
+        "Id" : "forcedevent_co_HYR_120b_letterOfMarque_Liao",
+        "Name" : "Letter Of Marque Liao",
+        "Details" : "Darius comes smiling. \"We have received a interesting proposal from [[DM.BaseDescriptionDefs[LoreVictoria],Victoria]]. It appears that House Liao may be interested in issuing us a letter of marque so that we can perform supplemental contracts for the Capellan Confederation.\" \r\n\r\n\"You realize that means working for [[DM.BaseDescriptionDefs[LoreMaximillianLiao], 'Mad Max' Liao]] right? Or worse, we may end up getting into the internal affairs of the Liao family and working for one of his children. And I'd really hate to be on the losing faction\". Dr. Murad seems disgusted.\r\n\r\nDarius shrugs. \"They really have a bad family reputation but their mercenary affairs are usually soild. And they'll provide JumpShip access to Liao space and any flashpoints that they might be interested in. It's just a way for them to go around the official way for contracts.\"\r\n\r\n\"Considering what we know of Candace, Romano and Tormano thanks to Yang's stories, it seems the apples haven't fallen that far from the tree. Murad's mention of Maximillian Liao's children makes everyone in the bridge look down.\r\n\r\n\"It's gonna be a major sibling fight for the throne of the Capellan Confederation, but we'll cross that bridge if we reach it . On my opinion family power struggles aren't that different from what we've seen out here in the Periphery\" Darius continues.\r\n\r\n\"We can also contact either Steiner or Kurita's representatives and present them with this offer to see if they have an interest in our services. But we can't be sure which one will accept these terms and we won't get the travel access to Liao space\".",
         "Icon" : "uixTxrSpot_DailyBriefing.png"
     },
     "Scope" : "Company",
@@ -18,7 +18,7 @@
         "ExclusionTags" : {
             "tagSetSourceFile" : "",
             "items" : [
-                "flashpoint_allianceMarik_complete",
+                "flashpoint_allianceLiao_complete",
                 "event_co_letterofmarque",
                 "letterofmarque_davion",
                 "letterofmarque_kurita",
@@ -39,7 +39,6 @@
             "ExclusionTags" : {
                 "tagSetSourceFile" : "Tags/PlanetTags",
                 "items" : [
-                    "planet_other_empty"
                 ]
             },
             "RequirementComparisons" : []
@@ -133,7 +132,7 @@
         {
             "Description" : {
                 "Id" : "outcome_1",
-                "Name" : "Accept Marik Letter of Marque. [Pauses Story]",
+                "Name" : "Accept Liao Letter of Marque. [Pauses Story]",
                 "Details" : "Become a privateer",
                 "Icon" : null
             },
@@ -142,9 +141,9 @@
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "Accept Marik's offer. [Pauses Story]",
-                        "Details" : "After considering it for several minutes, you came to a decision. \"The Duchy of Andurien is one of the major power players in the area and their letter of marque will be most useful. Darius, please notify them that we accept their terms.",
-                        "Icon" : null
+                        "Name" : "Accept Liao's offer",
+                        "Details" : "After considering it for several minutes, you came to a decision. \"The Capellan Confederation is one of the major power players in the area and their letter of marque will be most useful. Darius, please notify them that we accept their terms.",
+                        "Icon" : ""
                     },
                     "Weight" : 100,
                     "Results" : [
@@ -154,10 +153,10 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-									"flashpoint_danseMacabre_e",
-                                    "letterofmarque_marik",
+									"flashpoint_danseMacabre_d",
+                                    "letterofmarque_liao",
                                     "map_travel_2",
-                                    "map_travel_2m"
+                                    "map_travel_2l"
                                 ]
                             },
                             "RemovedTags" : {
@@ -167,7 +166,7 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Reputation.Marik",
+                                    "name" : "Reputation.Liao",
                                     "value" : "1",
                                     "set" : false,
                                     "valueConstant" : "[rep_gain_small]"
@@ -225,7 +224,7 @@
                 {
                     "Description" : {
                         "Id" : "outcome_2_0",
-                        "Name" : "Get Kurita Letter. [Pauses Story]",
+                        "Name" : "Get Kurita Letter",
                         "Details" : "You turn to Darius and Sumire. \"Contact Bob Yamaguchi and inform him that we're offering the same services as described on this letter of marque and see if he's interested.\"\r\n\r\nSeveral days later, Sumire passes along a message from the Kuritan representative agreeing to the terms.",
                         "Icon" : null
                     },
@@ -309,7 +308,7 @@
                 {
                     "Description" : {
                         "Id" : "outcome_3_0",
-                        "Name" : "Get Steiner Letter. [Pauses Story]",
+                        "Name" : "Get Steiner Letter",
                         "Details" : "You turn to Darius and Sumire. \"Contact Lord Stieglitz-Bradford and inform him that we're offering the same services as described on this letter of marque and see if he's interested.\"\r\n\r\nSeveral days later, Sumire passes along a message from the Steiner representative agreeing to the terms.",
                         "Icon" : null
                     },

@@ -6,10 +6,10 @@
   "nodes": [
     {
       "idRef": {
-        "id": "9c4c700640432c13fdca7850"
+        "id": "9cd7453ec29d50cff4e4c501"
       },
       "index": 0,
-      "text": "And, to end this briefing, we've picked up a Lyran news broadcast... Katrina Steiner has announced the death of her cousin, Duke Frederick Steiner and the sacrifice of the Tenth Lyran Guards at Dromini VI to stop a Kuritan counterattack.",
+      "text": "We've recovered and secured both the <i>[[DM.BaseDescriptionDefs[LoreHysteria],Hysteria]]</i> and the <I>[[DM.BaseDescriptionDefs[LoreDelfinas],Delfinas]]</i> and we are ready to leave.\n\nUnless we want to wait for more Taurian reinforcements to arrive.",
       "branches": [
         {
           "responseText": "",
@@ -19,7 +19,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c16206c1ecb40290c0cc4a5"
+            "id": "9c1bc27d94d76284cbb82c48"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -35,22 +35,9 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": {
         "ops": [
-          {
-            "functionName": "Play BattleTech Audio Event",
-            "args": [
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "GConv-BeginMusic-GC_440_ARMISTICE",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
-          },
           {
             "functionName": "Set BattleTech Fade",
             "args": [
@@ -85,13 +72,26 @@
             ]
           },
           {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_440_ARMISTICE",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
             "functionName": "Set BattleTech Viewscreen Image",
             "args": [
               {
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "nautilusmap",
+                "string_value": "argo",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -112,7 +112,28 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "Kamea,Alexander,Darius,Farah,Sumire,Yang",
+                "string_value": "Sumire,Darius,Alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Kamea,Yang,Farah",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -120,14 +141,14 @@
           }
         ]
       },
-      "comment": "GConv-BeginMusic-GC_440_ARMISTICE"
+      "comment": ""
     },
     {
       "idRef": {
-        "id": "9cdd2b7db3750d80505c8f25"
+        "id": "9cb8658f9b9228dee65bb803"
       },
       "index": 1,
-      "text": "Duke Frederick is dead? \n\nThat's convenient for the Archon because he was known to be one of her rivals for the Lyran throne.",
+      "text": "What's the ETA on the Taurian DropShips, Meyer?",
       "branches": [
         {
           "responseText": "",
@@ -137,7 +158,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c03b3d6e74d7cf6b8363fbc"
+            "id": "9cde247c6d4a76c67e6e8667"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -153,26 +174,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c3944e6930568f9b8b28df5"
+        "id": "9cfc488403b15996e6981df0"
       },
       "index": 2,
-      "text": "That also removes one of the Commonwealth's elite BattleMech regiments from the Lyran front... everyone is also wondering what will be Theodore Kurita's next play since he has been the only success story so far at the DCMS.",
+      "text": "Already flipped their engines and have begun burns to reduce their speed for orbital insertion, XO.\n\nThe longer we wait, the worse our chances get.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Sumire, wait until Lady Arano arrives to make the decision.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 3,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ceaa7a095ada545a42a723a"
+            "id": "9c106b952ba3106ffe27f8e0"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -188,16 +209,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c1272026eaf298a473154a7"
+        "id": "9c30f46b2c84f4f10f22b095"
       },
       "index": 3,
-      "text": "The rumor mill among the spacer crews is that the Tenth Lyran faced off against the Legions of Vega and managed to deal a lot of damage to his forces while Loki special teams disabled his JumpShips.\n\nThen the Lyrans dropped even more regiments until Theodore had to retreat back to Combine space.",
+      "text": "Aye, aye, Commander.\n\nAlthough I worry that one day the [[DM.BaseDescriptionDefs[LoreConcordatNavy],Concordat Navy]] will eventually be able to get to us, the way things have been currently going.",
       "branches": [
         {
           "responseText": "",
@@ -207,7 +228,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ce849396e2baba34a71638b"
+            "id": "9c67bd9a07452118d1fff64d"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -223,16 +244,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c3bfb4bbcabf388c8087498"
+        "id": "9cbd384922c62da149b04a1a"
       },
       "index": 4,
-      "text": "Despite his efforts, the rift between Theodore and his father Takashi seem to have increased... there will be consequences once this war is over.",
+      "text": "You're right about that, Sumire. \n\nOne of these days the [[DM.Factions[faction_AuriganRestoration],Restoration]] will need to fight and stop them, but not today.",
       "branches": [
         {
           "responseText": "",
@@ -242,7 +263,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cc0dc8e4eb24660fe9c2966"
+            "id": "9cab8d4dc003f77424f60324"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -258,16 +279,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cf7c2eb4529b63c4e95fae0"
+        "id": "9c09ee0f46776f238e068299"
       },
       "index": 5,
-      "text": "Sometimes surviving a war can be worse than winning or losing it.",
+      "text": "Commodore Ostergaard is hunting the captain and the <i>[[DM.BaseDescriptionDefs[LoreArgo],Argo]]</i>, and he will not give us a choice on that matter, Alex.",
       "branches": [
         {
           "responseText": "",
@@ -277,7 +298,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c0c2f74a092354c17243521"
+            "id": "9c561d7cf60fe3949633d54e"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -293,16 +314,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c6186401a5de801ce0ddb6a"
+        "id": "9c4011680e3d99d9a5b5408f"
       },
       "index": 6,
-      "text": "",
+      "text": "It's a matter of trading time and space until we can strike at Tyrlon, Sumire.\n\nAnd once we regain control of the Reach, we will make the Taurians stop their invasion and throw them back across the border.",
       "branches": [
         {
           "responseText": "",
@@ -312,7 +333,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c6ea28950eb79025805e5cd"
+            "id": "9c583bbc18a64deefac83cb9"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -328,16 +349,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9ce88bf6dc468307b15e2656"
+        "id": "9ce3aac9d2c9a85f390882be"
       },
       "index": 7,
-      "text": "Anyways, I've got some new holovids of the Outback Clan, if anyone is interested in new Capellan music.",
+      "text": "You're not understanding, Alex.\n\nI've met captains like Ostergaard before, they're like the black hole at the [[DM.BaseDescriptionDefs[LoreKesselRun],Kessel Run]], once you feel its attraction it's already too late.",
       "branches": [
         {
           "responseText": "",
@@ -347,7 +368,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c9afd8b619805ac6c5e8f44"
+            "id": "9c41a6fc70ed52d2fbe82805"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -363,26 +384,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9caf4d6137e611478463c65b"
+        "id": "9c46bc5af5dfb941e2e398cf"
       },
       "index": 8,
-      "text": "Yang, please not more of that Neo-Korean hip-hop blaring through the 'Mech bays speakers, even your own MechTechs complained about it.",
+      "text": "It's a matter of physics before he gets us and once we're in range of the the <i>[[DM.BaseDescriptionDefs[LoreIberia],Iberia]]</i>, that's the end of the captain and us.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "That will be enough, Pilot Meyer.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 9,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c7b7080adf3209be88c6647"
+            "id": "9cefb529d2f5aaf7131e640a"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -398,16 +419,343 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cbced20ad3510427f877000"
+        "id": "9c926a8d78bc25990c8fb18d"
       },
       "index": 9,
-      "text": "Ok, Darius, I learned the lesson on that one, don't worry, this is NeoFinnish hip-hop, I'm sure all of your guys could listen to something different for a change.",
+      "text": "No, she has a point, Commander regarding the vulnerability of the <i>Argo</i> but once we control Tyrlon, we'll be able to use its defenses for protection.\n\nUntil then, we will have to rely on luck and your skill, Pilot Meyer.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6c409c166321344b9597a8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c34f5bd16ab10761b67fc2b"
+      },
+      "index": 10,
+      "text": "Ostergaard will not stop hunting Lady Arano and the <i>Argo</i>, even after [[DM.BaseDescriptionDefs[LoreTyrlon],Tyrlon]] is taken, Lord Madeira.\n\nNothing will stand between him avenging his son' death by the captain.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c5c167cfee21e01ac47f9fe"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c02decdd47492cff97fa805"
+      },
+      "index": 11,
+      "text": "The Restoration will deal with all the Taurians once we bring down [[DM.BaseDescriptionDefs[LoreSantiagoEspinosa],Director Espinosa]]'s regime, Mr. Oliveira.\n\nUntil then, any other concerns are secondary to Lady Arano.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce519d1e33cc35d7e6a04b7"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c3458ee89215294673c5a83"
+      },
+      "index": 12,
+      "text": "One way or the other, it all ends at the [[DM.BaseDescriptionDefs[LoreGreatBeyond],Great Beyond]].\n\nAnd all the demons of our past lives will meet us there.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c42db8a61cd12665c6fae14"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc5e0c0f52bbd2491426c70"
+      },
+      "index": 13,
+      "text": "I don't remember that reference, Meyer.\n\nIs that from the <i>Kessel Run</i> again?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc0ab2433b5507b8d3c7dd3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c390e0a6567a7ddd67113ed"
+      },
+      "index": 14,
+      "text": "No Darius, it's from a new band called [[DM.BaseDescriptionDefs[LoreOutbackClan],Outback Clan]] that I have been listening after Yang mentioned them... nevermind.\n\nCommander {COMMANDER.LastName}, DropShip is secure and waiting for the captain to give her orders when she arrives at the bridge.",
+      "branches": [
+        {
+          "responseText": "Very well, Pilot Meyer.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cfa55d47c395a53a589d452"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8f76d9c44663522ff9d0f5"
+      },
+      "index": 15,
+      "text": "Wait, there's a priority transmission from the surface... it's Councilor Petrauskas...\n\nOh crap, you all need to hear this!",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf6214b27c29a0cf08c7339"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c32126f4998891b1aebcb69"
+      },
+      "index": 16,
+      "text": "<i>Argo</i>, [[DM.BaseDescriptionDefs[LoreGordonsArmoredCavalry],Gordon's Armored Cavalry]] has destroyed the MechWorks' main reactor and looted everything else in the facility, after Lady Arano left.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cbe204d8734d4914d0de8f2"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "EmaPetrauskasDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "petrauskas",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c23514f60024b07371ad982"
+      },
+      "index": 17,
+      "text": "[Bridge door opens.]",
       "branches": [
         {
           "responseText": "",
@@ -417,7 +765,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c2fae02f62dffd7224c5b19"
+            "id": "9cadbc9a52d9a20492339e4e"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -433,8 +781,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],
@@ -447,7 +811,7 @@
       "hideIfUnavailable": true,
       "onlyOnce": false,
       "idRef": {
-        "id": "9c8e18cd9c9318d795afe94a"
+        "id": "9ccd6484ba9b9335cc7d239a"
       },
       "inputBypass": false,
       "auxiliaryLink": false,

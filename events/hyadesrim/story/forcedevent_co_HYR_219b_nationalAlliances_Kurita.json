@@ -1,0 +1,522 @@
+{
+    "Description" : {
+        "Id" : "forcedevent_co_HYR_219b_nationalAlliances_Kurita",
+        "Name" : "National Alliances",
+        "Details" : "Darius rushes to the bridge from one of the hatches. \"Commander, tensions between [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] appear to have turned for the worse! [[SCN_MW,{SCN_MW.Callsign}]] can't be found anywhere on the DropShip and the logs report that one airlock was opened but it's impossible to know who was responsible.\"\r\n\r\nSumire intervenes. \"Both MechWarriors had a long standing known feud but it is also possible that this was just an accident. Not the first time a space rookie accidently jettisons {TGT_MW.Gender?Male:himself|Female:herself|NonBinary:theirselves} to space.\"\r\n\r\n\"{TGT_MW.Gender?Male:He|Female:She|NonBinary:They} {TGT_MW.Gender?Male:claims|Female:claims|NonBinary:claim} to have been with [[TRN_MW,{TRN_MW.Callsign}]] during the period just before [[TGT_MW,{TGT_MW.Callsign}]]\". Darius adds.\r\n\r\n\"Ah! Both of those MechWarriors seem to be spending a lot of time together nowadays. Does seem that someone might be replicating national alliances onboard this company\". Yang's remark catches a few on the bridge off-guard.\r\n\r\n\"If we ignore this, we risk more of these 'incidents' taking place in the future. But taking a harsher position also has risks. How would you like to proceed Commander?",
+        "Icon" : "uixTxrSpot_DailyBriefing.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 10,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+			"items" : [
+				"pilot_kurita",
+				"pilot_stressed"
+			],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : null,
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+                    "company_story_fourthSuccessionWar"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "event_mw_nationalAlliances"
+                ],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+					"items" : [
+						"pilot_davion"
+					]
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : [
+						"pilot_stressed",
+                        "pilot_rebellious",
+                        "pilot_dependable"
+                    ]
+                },
+                "RequirementComparisons" : [
+                    {
+                        "obj" : "Injuries",
+                        "op" : "Equal",
+                        "val" : 0,
+                        "valueConstant" : "0"
+                    }
+                ]
+            }
+        },
+        {
+            "Scope" : "TertiaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "TertiaryMechWarrior",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+					"items" : [
+						"pilot_liao",
+						"pilot_stressed"
+					]
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+	],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Keep the matter quiet.",
+                "Details" : "do nothing",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Morale drops, nothing happens",
+                        "Details" : "\"So, we're going to close our eyes to murder taking place inside this DropShip?\" Dr. Murad is shocked at the decision but Sumire merely looks to her and replies. \"I've seen much worse things happening inside  a DropShip, doctor.\"\r\n\r\nOn the mess ward during the next meal period, the seat normally used by is empty, while everyone avoids mentioning the missing MechWarrior, as [[TRN_MW,{TRN_MW.Callsign}]] [[TGT_MW,{TGT_MW.Callsign}]] quietly enjoy their dinner together.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "died in airlock accident."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+								"items" : [
+									"event_mw_nationalAlliances"
+								],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Open an investigation.",
+                "Details" : "Open an investigation",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "MW lives",
+                        "Details" : "You clench a fist. \"Thank you, Darius. I want to see {TGT_MW.Obj}, to say goodbye. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:deserve|Default:deserves} that.\"\r\n\r\nDarius accompanies you to the MedBay, where you take a seat beside the MechWarrior's bed and wait. After a few hours, other MechWarriors look in, sigh, and move on. An hour after that, [[TGT_MW,{TGT_MW.Callsign}]]'s shallow breathing deepens and {TGT_MW.Det} vital signs start to improve. Darius returns, summoned by a MedTech.\r\n\r\n\"You might as well rest now, Commander. {TGT_MW.Gender?Male:He's|Female:She's|NonBinary:They've} made it through this crisis. With luck there won't be another one.\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+								"items" : [
+									"event_mw_nationalAlliances"
+								],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_1",
+                        "Name" : "MW dies",
+                        "Details" : "You clench a fist. \"Thank you, Darius. I want to see {TGT_MW.Obj}, to say goodbye. {TGT_MW.Subj_C} {TGT_MW.Gender?NonBinary:deserve|Default:deserves} that.\"\r\n\r\nDarius accompanies you to the MedBay, where you take a seat beside the MechWarrior's bed and wait. After a few hours, other MechWarriors look in, sigh, and move on. An hour after that, [[TGT_MW,{TGT_MW.Callsign}]]'s shallow breathing stops. Darius returns, summoned by a MedTech.\r\n\r\n\"You might as well rest now, Commander. You did what you could. When you wake, you can record the message for {TGT_MW.Det} next of kin.\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+								"items" : [
+									"event_mw_nationalAlliances"
+								],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "died in airlock accident."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Announce new safety procedures.",
+                "Details" : "[\u00A250,000]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : null,
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : null,
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "Funds",
+                            "op" : "GreaterThan",
+                            "val" : 50000,
+                            "valueConstant" : "50000"
+                        }
+                    ]
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "MW lives",
+                        "Details" : "\"That's bullshit,\" you snap at Darius. \"I'm going over there. [[TGT_MW,{TGT_MW.Callsign}]] is too important to just write off like that.\"\r\n\r\n\"Commander\u2026\" begins Darius, before stopping himself. He follows you as you stalk over to the MedBay, where you yell at the MedTechs, yell at {TGT_MW.Callsign}, and generally clarify that death is not an option. The stressed MedTechs scurry around trying every risky solution they can think of.\r\n\r\nA few hours after you arrive, {TGT_MW.Det} vital signs improve markedly. Just as exhausted as the MedBay staff, you allow Darius to shoo you off to rest. Another battle won.",
+                        "Icon" : ""
+                    },
+                    "Weight" : 90,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "MedTechSkill",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 7
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+								"items" : [
+									"event_mw_nationalAlliances"
+								],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-50000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_1",
+                        "Name" : "MW dies",
+                        "Details" : "\"That's bullshit,\" you snap at Darius. \"I'm going over there. [[TGT_MW,{TGT_MW.Callsign}]] is too important to just write off like that.\"\r\n\r\n\"Commander\u2026\" begins Darius, before stopping himself. He follows you as you stalk over to the MedBay, where you yell at the MedTechs, yell at {TGT_MW.Callsign}, and generally clarify that death is not an option. The stressed MedTechs scurry around trying every risky solution they can think of.\r\n\r\nA few hours later, however, {TGT_MW.Det} vital signs continue to decline, and finally {TGT_MW.Det} shallow breathing stops.\r\n\r\nDarius puts a hand on your shoulder. \"You did what you could, Commander. Everyone did. You should get some rest now.\"",
+                        "Icon" : ""
+                    },
+                    "Weight" : 10,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "MedTechSkill",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 7
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+								"items" : [
+									"event_mw_nationalAlliances"
+								],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "-50000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : null,
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "died in airlock accident."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : null,
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : null,
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}
