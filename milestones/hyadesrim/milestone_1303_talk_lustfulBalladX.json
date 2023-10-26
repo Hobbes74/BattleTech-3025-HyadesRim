@@ -1,0 +1,97 @@
+{
+    "Description" : {
+        "Id" : "milestone_1303_talk_lustfulBalladX",
+        "Name" : "conversation",
+        "Details" : "Conversations",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Scope" : "Company",
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_downfall",
+					"flashpoint_legendKiller_complete",
+					"flashpoint_wilderness_complete",
+					"flashpoint_vortex_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : null,
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "NextStoryMilestone",
+                    "op" : "Equal",
+                    "val" : 1303,
+                    "valueConstant" : null
+                },
+				{
+                    "obj" : "MissionsComplete",
+                    "op" : "GreaterThanOrEqual",
+                    "val" : 3,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "Results" : [
+        {
+            "Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+				"items" : [
+					"AARCompleteNotificationsDisabled"
+				],
+                "tagSetSourceFile" : ""
+			},
+            "RemovedTags" : {},
+            "Stats" : [
+				{
+					"typeString" : "System.Int32",
+                    "name" : "NextStoryMilestone",
+                    "value" : 1,
+                    "valueConstant" : null
+				}
+            ],
+            "Actions" : [
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9c550d384401126286cedf24",
+                    "additionalValues" : [
+						"<i>LUSTFUL BALLAD X</i>",
+						"HPG NEWS"
+					]
+                },
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : true,
+					"additionalValues" : [
+						"Sumire",
+						"Darius",
+						"Farah",
+						"Yang"
+					]
+				},
+				{
+					"Type" : "System_SimGameCharacterVisible",
+					"value" : false,
+					"additionalValues" : [
+						"Alexander",
+						"Kamea"
+					]
+				}
+            ],
+            "ForceEvents" : null,
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "Repeatable" : false
+}

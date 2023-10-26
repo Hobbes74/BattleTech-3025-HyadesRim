@@ -6,7 +6,7 @@ Slavish adherence to a formal ritual is a sign that one has nothing better to th
 
 It is 3024 and Lady Kamea Arano has been exiled instead of presumed dead as in the original campaign. After Kamea and the Commander are rescued by the survivors of Markham's Marauders during House Espinosa's coup, they have joined the company in search for mercenary work in the Rimward Periphery. But as the Fourth Succession War approaches, powerful forces are now threatening to destroy the entire Aurigan Reach unless Kamea can save her realm and reclaim her throne. Work in progress.
 
-Public repository - https://github.com/Hobbes74/Battletech-3025-HyadesRim
+Public repository: Hyades Rim - https://github.com/Hobbes74/Battletech-3025-HyadesRim
 
 Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 
@@ -17,7 +17,9 @@ Features
 
 * Six more campaign flashpoints are being written for parts two and three of the new campaign: Sword Of The Restoration, Ghost Riders In The Sky, Unnatural Selection, Barbarians At The Gates, Atomic and The Eyes Of Truth.
 
-* New story includes a total of 114 new contracts rewritten from the originals, 150 new crew conversations and 295 additional lore descriptions, and is divided into three parts, each with its own subarcs.
+* Optional - Community Asset Bundle 3025 integration, includes Bombardier, Chameleon, Champion, Charger, Clint, Crockett, Crusader, Dervish, Devastator, Emperor, Exterminator, Falcon, Firebee, Firefly, Gladiator, Guillotine, Hermes, Hermes II, Hoplite, Hornet, Hussar, Icarus II, Imp, Lancelot, Linesman, Longbow, Lynx, Mackie, Marauder II, Merlin, Mongoose, Nighthawk, Nightstar, Ostroc, Ostscout, Ostsol, Ostwar, Pillager, Sentinel, Shootist, Spector, Starslayer, Stinger, Talon, Talos, Thorn, Thug, Thunderhawk, Titan, Toro, Valkyrie, Wasp, Whitworth, Wolfhound and Wyvern 'Mech models and canon variants.
+
+* New story includes a total of 135 new contracts rewritten from the originals, 152 new crew conversations and 295 additional lore descriptions, and is divided into three parts, each with its own subarcs.
 
 * The vanilla FPs are included in the new Campaign as independent mini-campaigns, except for the Black Widow mini-campaign but still appears on Career mode.
 
@@ -32,8 +34,6 @@ Features
 * 600+ new contracts and variants added, including pirate, IE and Periphery flavored.
 
 * 700+ new BattleMech variants added to fight as Opfor, can appear equipped with Infernos, ECM, plus other LosTech surprises.
-
-* Optional - Community Asset Bundle integration, currently adding the Charger, Clint, Crusader, Dervish, Falcon, Firebee, Firefly, Marauder II, Mongoose, Ostroc, Ostsol, Ostwar, Stinger, Talos, Thug, Toro, Valkyrie, Wasp and Wolfhound 'Mech models.
 
 * All the 'Mech quirks of the Heavy Metal DLC can now appear on any 'Mech model (only certain factions will use them).
 
@@ -85,11 +85,12 @@ Requirements﻿
 Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
 
-Recommended Additional Mods (not required)
-* Community Asset Bundle - requires both the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) AND the Hyades Rim CAB 3025 add-on (https://github.com/Hobbes74/HYR-CAB-3025/archive/refs/tags/release.zip). Install both at your /Mods folder and select them on the game's mod screen.
+Recommended Additional Mods (all optional, not required)
+* Community Asset Bundle - requires downloading and installing the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115), then activating it and the HYR-CAB add-on on the Mods screen at start; 
+* Inner Sphere Map - already included, only requires activating it on the Mods screen at start ( https://github.com/Hobbes74/InnerSphereMap-HyadesRim
 * Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
-* BattleTechPerformanceFix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix
-* ColorfulFlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
+* BattleTech Performance Fix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix
+* Colorful FlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
 
 Known Issues
 * When playing FPs on the Leopard, there's a visual glitch (a.k.a. 'löyly') after any conversations with the DropShip's bridge and other areas. This has no effect on gameplay can be solved by saving and reloading the game.
@@ -99,24 +100,25 @@ Known Issues
 
 Credits
 * Story and developer: Hobbes;
-* Additional character artwork: DarkKhaos;
+* Additional characters artwork: DarkKhaos;
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
 * Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared;
-* Extended Converstations mod, by CWolfs, released under an MIT license - https://github.com/CWolfs/ExtendedConversations;
 
 Contributions/Tools:
 * BattleTech videogame & DLCs: Harebrained Studios (HBS) and Catalyst Games;
-* ModTek, by several authors: https://github.com/BattletechModders/ModTek
-* Logo Replacement mod by Mpstark, released under an MIT license: https://github.com/BattletechModders/LogoReplacement
-* ConverseTek, conversation editor by CWolf, https://github.com/CWolfs/ConverseTek
-* Inner Sphere Map mod, by Morphyum for the coordinates of several canon systems;
+* ModTek, by several authors (MIT license): https://github.com/BattletechModders/ModTek
+* Logo Replacement mod by Mpstark (MIT license) -  https://github.com/BattletechModders/LogoReplacement
+* ConverseTek, conversation editor by CWolf (MIT license) - https://github.com/CWolfs/ConverseTek
+* Extended Converstations mod, by CWolfs (MIT license) - https://github.com/CWolfs/ExtendedConversations;
+* Inner Sphere Map mod, by Morphyum, changed to use the Hyades Rim star map and factions (GPL License) - https://github.com/Morphyum/InnerSphereMap
+* Community Asset Bundle 3025, by several - https://discourse.modsinexile.com/t/community-assets-bundle-cab/115 
 * MegaMek, by several, for the coordinates of several connecting systems;
 * Banner images taken from the sourcebook The Periphery, 2nd Edition;
 * Corporation logos taken and adapted from Sarna.net;
 * Sarna.net for being an amazing source for all things BattleTech related;
 * Mordel.net for the stats used in the canon 'Mech variants;
-* All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer and the whole BattleTech modding community.
+* All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer, JaimeWolf and the whole BattleTech modding community.
 
-This mod is released under a Creative Commons CC BY-NC-ND 4.0 license, see the included LICENSE file for additional details.
+This mod is released under a GNU GPL license, see the included LICENSE file for additional details.
