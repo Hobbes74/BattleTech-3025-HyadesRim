@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_MorgansHoldfast",
         "Name": "Morgan's Holdfast",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "Morgan's Holdfast was named after Henry Morgan, a famous Terran privateer who lived in the seventeen century. It primarily serves as a safe haven for the pirate bands who control the system, giving them a place to rest and enjoy their plunder.",
         "Icon": ""
     },
     "Position": {
@@ -14,26 +14,20 @@
         "items": [
 			"planet_region_outersphere",
 			"planet_name_morgansholdfast",
-			"planet_size_medium",
-			"planet_climate_terran",
-			"planet_pop_small",
+			"planet_size_small",
+			"planet_climate_desert",
+			"planet_pop_none",
+			"planet_other_volcanic",
 			"planet_civ_primitive",
+			"planet_other_pirate",
 			"planet_faction_tortugan",
 			"planet_progress_2"
         ],
         "tagSetSourceFile": ""
     },
     "SupportedBiomes": [
-        "lowlandsSpring",
-        "lowlandsFall",
-        "highlandsSpring",
-        "highlandsFall",
         "desertParched",
-        "badlandsParched",
-        "polarFrozen",
-        "tundraFrozen",
-        "jungleTropical",
-        "urbanHighTech"
+        "martianVacuum" 
     ],
     "MapRequiredTags": {
         "items": [],
@@ -44,7 +38,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 7,
     "ownerID": "TortugaDominion",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -130,7 +124,9 @@
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
-    "SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals"
+	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
@@ -143,20 +139,30 @@
     "DefaultDifficulty": 2,
     "DifficultyList": [
         2,
-        2
+        4
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "ContractEmployerIDs": [
-        "Davion",
-        "TaurianConcordat",
-        "AuriganPirates"
-    ],
-    "ContractTargetIDs": [
-        "AuriganPirates",
-        "Davion",
-        "TaurianConcordat"
-    ]
+	"ContractEmployerIDs": [
+		"TortugaDominion",
+		"Warboys",
+		"ClusterPirates",
+		"TaurianPirates",
+		"RenegadePirates",
+		"SyrtisPirates",
+		"Davion",
+		"AuriganPirates"
+	],
+	"ContractTargetIDs": [
+		"TortugaDominion",
+		"Warboys",
+		"ClusterPirates",
+		"SyrtisPirates",
+		"RenegadePirates",
+		"TaurianPirates",
+		"AuriganPirates",
+		"Davion"
+	]
 }

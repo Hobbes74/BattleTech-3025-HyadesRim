@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_TortugaPrime",
         "Name": "Tortuga Prime",
-		"Details": "Originally settled by SLDF troops who deserted during the Reunification War, Tortuga Prime was found to have no drinkable water and plenry of infectious diseases. Their descendants quickly turned to piracy in order to survive.",
+		"Details": "Originally settled by House Davion troops who deserted from the Star League Defense Force during the Reunification War, Tortuga Prime was found to have no drinkable water and plenty of infectious diseases. Their descendants quickly turned to piracy in order to survive.",
         "Icon": ""
     },
     "Position": {
@@ -18,6 +18,10 @@
 			"planet_climate_arid",
 			"planet_pop_medium",
 			"planet_civ_periphery",
+			"planet_other_banditkingdom",
+			"planet_feature_moon03",
+			"planet_other_blackmarket",
+			"planet_industry_manufacturing",
 			"planet_faction_tortugan",
 			"planet_other_capital",
 			"planet_other_factionhq_tortugadominion",
@@ -39,7 +43,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 6,
     "ownerID": "TortugaDominion",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -125,33 +129,54 @@
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
-    "SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_major_Locals",
+		"itemCollection_shop_manufacturing"
+	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
-    "BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
     "CoreSystemID": "starsystemdef_TortugaPrime",
     "StartingSystemModes": [
         "KAMEA_CAMPAIGN",
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 2,
+    "DefaultDifficulty": 4,
     "DifficultyList": [
-        2,
-        2
+        4,
+        6
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "ContractEmployerIDs": [
-        "Davion",
-        "TaurianConcordat",
-        "AuriganPirates"
-    ],
-    "ContractTargetIDs": [
-        "AuriganPirates",
-        "Davion",
-        "TaurianConcordat"
-    ]
+	"ContractEmployerIDs": [
+		"TortugaDominion",
+		"DeathsConsorts",
+		"TaurianConcordat",
+		"Warboys",
+		"ClusterPirates",
+		"TaurianPirates",
+		"RenegadePirates",
+		"SyrtisPirates",
+		"Davion",
+		"AuriganPirates",
+		"Kurita"
+	],
+	"ContractTargetIDs": [
+		"TortugaDominion",
+		"DeathsConsorts",
+		"TaurianConcordat",
+		"Warboys",
+		"ClusterPirates",
+		"SyrtisPirates",
+		"RenegadePirates",
+		"TaurianPirates",
+		"AuriganPirates",
+		"Davion",
+		"Kurita"
+	]
 }

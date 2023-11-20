@@ -3,13 +3,18 @@
         "Id": "forcedevent_Storytime_HYR_101_extendedLeave",
         "Name": "Extended Leave",
         "Details": "The alert message flashes on the screen of the DropShip, indicating that a transmission has been received and logged by the system.",
-        "Icon": "uixTxrSpot_ComputerScreen.png"
+        "Icon": "uixTxrSpot_fp_HyadesRim_Background_55.png"
     },
     "Scope": "Company",
-    "Weight": 0,
+    "Weight": 1000,
     "Requirements": {
         "Scope": "Company",
-        "RequirementTags": {},
+        "RequirementTags": {
+            "items" : [
+                "company_story_complete"			
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+		},
         "ExclusionTags": {},
         "RequirementComparisons": []
     },
@@ -76,7 +81,7 @@
                 {
                     "Description": {
                         "Id": "outcome_1_0",
-                        "Name": "Have A Coffee",
+                        "Name": "Have Coffee Instead",
                         "Details": "You go back to your daily affairs and let the DropShip crew deal with the message.",
                         "Icon": null
                     },
@@ -94,5 +99,6 @@
     ],
     "PublishState": "PUBLISHED",
     "ValidationState": "UNTESTED",
-    "EventType": "UNSELECTABLE"
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : true
 }

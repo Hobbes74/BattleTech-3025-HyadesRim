@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_NewGascony",
         "Name": "New Gascony",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "An infamous slave mining colony run by the Dominion pirates, the age expectancy of its forced inhabitants is limited to the forties due to the harsh living and working conditions.",
         "Icon": ""
     },
     "Position": {
@@ -15,8 +15,15 @@
 			"planet_region_outersphere",
 			"planet_name_newgascony",
 			"planet_size_medium",
-			"planet_climate_terran",
+			"planet_climate_rocky",
 			"planet_pop_small",
+			"planet_other_moon",
+			"planet_feature_asteroids",
+			"planet_feature_moon02",
+			"planet_industry_mining",
+			"planet_other_newcolony",
+			"planet_event_pox",
+			"planet_other_plague",
 			"planet_civ_primitive",
 			"planet_faction_tortugan",
 			"planet_progress_2"
@@ -24,16 +31,11 @@
         "tagSetSourceFile": ""
     },
     "SupportedBiomes": [
-        "lowlandsSpring",
-        "lowlandsFall",
         "highlandsSpring",
         "highlandsFall",
-        "desertParched",
         "badlandsParched",
-        "polarFrozen",
         "tundraFrozen",
-        "jungleTropical",
-        "urbanHighTech"
+        "martianVacuum"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -44,7 +46,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 4,
     "ownerID": "TortugaDominion",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -130,7 +132,10 @@
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
-    "SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals",
+		"itemCollection_shop_mining"
+	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
@@ -149,14 +154,24 @@
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "ContractEmployerIDs": [
-        "Davion",
-        "TaurianConcordat",
-        "AuriganPirates"
-    ],
-    "ContractTargetIDs": [
-        "AuriganPirates",
-        "Davion",
-        "TaurianConcordat"
-    ]
+	"ContractEmployerIDs": [
+		"DeathsConsorts",
+		"TaurianConcordat",
+		"Warboys",
+		"ClusterPirates",
+		"TaurianPirates",
+		"RenegadePirates",
+		"SyrtisPirates",
+		"AuriganPirates"
+	],
+	"ContractTargetIDs": [
+		"DeathsConsorts",
+		"TaurianConcordat",
+		"Warboys",
+		"ClusterPirates",
+		"SyrtisPirates",
+		"RenegadePirates",
+		"TaurianPirates",
+		"AuriganPirates"
+	]
 }

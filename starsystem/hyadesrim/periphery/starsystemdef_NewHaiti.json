@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_NewHaiti",
         "Name": "New Haiti",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "The homeworld of Kalvin Bar-Dyness, the former leader of the Tortuga Dominion that was deposed by Paula Trevaline and her Death's Consorts, New Haiti has reverted to a more peaceful existence after a punishment raid made in 3007 by the mercenary regiments of Wolf's Dragoons that destroyed most of the pirate gangs on the world.",
         "Icon": ""
     },
     "Position": {
@@ -14,10 +14,13 @@
         "items": [
 			"planet_region_outersphere",
 			"planet_name_newhaiti",
-			"planet_size_medium",
-			"planet_climate_terran",
-			"planet_pop_small",
+			"planet_size_small",
+			"planet_climate_tropical",
+			"planet_pop_medium",
 			"planet_civ_primitive",
+			"planet_other_highaxialtilt",
+			"planet_feature_moon01",
+			"planet_industry_aquaculture",
 			"planet_faction_tortugan",
 			"planet_progress_2"
         ],
@@ -25,15 +28,9 @@
     },
     "SupportedBiomes": [
         "lowlandsSpring",
-        "lowlandsFall",
-        "highlandsSpring",
-        "highlandsFall",
         "desertParched",
         "badlandsParched",
-        "polarFrozen",
-        "tundraFrozen",
-        "jungleTropical",
-        "urbanHighTech"
+        "jungleTropical"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -44,7 +41,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 11,
     "ownerID": "TortugaDominion",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -130,7 +127,9 @@
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
-    "SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_minor_Locals"
+	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
@@ -140,23 +139,31 @@
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 2,
+    "DefaultDifficulty": 1,
     "DifficultyList": [
-        2,
-        2
+        1,
+        3
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "ContractEmployerIDs": [
-        "Davion",
-        "TaurianConcordat",
-        "AuriganPirates"
-    ],
-    "ContractTargetIDs": [
-        "AuriganPirates",
-        "Davion",
-        "TaurianConcordat"
-    ]
+	"ContractEmployerIDs": [
+		"TortugaDominion",
+		"ClusterPirates",
+		"TaurianPirates",
+		"RenegadePirates",
+		"SyrtisPirates",
+		"Davion",
+		"AuriganPirates"
+	],
+	"ContractTargetIDs": [
+		"TortugaDominion",
+		"ClusterPirates",
+		"SyrtisPirates",
+		"RenegadePirates",
+		"TaurianPirates",
+		"AuriganPirates",
+		"Davion"
+	]
 }

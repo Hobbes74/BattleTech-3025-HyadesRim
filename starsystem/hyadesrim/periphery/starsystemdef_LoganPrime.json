@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_LoganPrime",
         "Name": "Logan Prime",
-		"Details": "<i>Here might be lothians.</i>",
+		"Details": "The second world colonized by the Lothian League and named after its first leader, Logan Prime's temperate climate and natural resources enabled the development of an economy based on mostly local consumer goods to replace expensive imports from the Inner Sphere. Although Logan Prime's workshops are officially considered as a success, most of the League still prefers buying from foreign suppliers.",
         "Icon": ""
     },
     "Position": {
@@ -16,7 +16,8 @@
 			"planet_name_loganprime",
 			"planet_size_medium",
 			"planet_climate_arctic",
-			"planet_pop_small",
+			"planet_industry_manufacturing",
+			"planet_pop_medium",
 			"planet_civ_periphery",
 			"planet_faction_lothian",
 			"planet_progress_2"
@@ -43,7 +44,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 7,
     "ownerID": "LothianLeague",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -111,7 +112,7 @@
             "Scope": "Company",
             "RequirementTags": {
                 "items": [
-                    "map_travel_4"
+                    "map_travel_2"
                 ],
                 "tagSetSourceFile": ""
             },
@@ -130,7 +131,8 @@
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Locals"
+		"itemCollection_major_Locals",
+		"itemCollection_shop_manufacturing"
 	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
@@ -141,23 +143,37 @@
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 2,
+    "DefaultDifficulty": 4,
     "DifficultyList": [
-        2,
-        2
+        4,
+        4
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
     "ContractEmployerIDs": [
-        "Locals",
-        "Marik",
+        "LothianLeague",
+        "IllyrianPirates",
+		"CanopianPirates",
+		"ExpansesPirates",
+		"DevilsDisciples",
+		"LothianPirates",
+		"MarianPirates",
+		"MarshPirates",
+		"RegulanPirates",
         "AuriganPirates"
     ],
     "ContractTargetIDs": [
-        "Locals",
-        "Marik",
+        "LothianLeague",
+        "IllyrianPirates",
+		"CanopianPirates",
+		"ExpansesPirates",
+		"DevilsDisciples",
+		"LothianPirates",
+		"MarianPirates",
+		"MarshPirates",
+		"RegulanPirates",
         "AuriganPirates"
     ]
 }

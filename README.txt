@@ -13,7 +13,7 @@ Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 Features
 * A new BattleTech story and Campaign mode, consisting of forty-two new flashpoints and forty-four new events telling an alternative history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Thirty-six original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate,  Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness and Vortex.
+* Thirty-six original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness and Vortex.
 
 * Six more campaign flashpoints are being written for parts two and three of the new campaign: Sword Of The Restoration, Ghost Riders In The Sky, Unnatural Selection, Barbarians At The Gates, Atomic and The Eyes Of Truth.
 
@@ -86,8 +86,8 @@ Installation
 * Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
 
 Recommended Additional Mods (all optional, not required)
-* Community Asset Bundle - requires downloading and installing the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115), then activating it and the HYR-CAB add-on on the Mods screen at start; 
-* Inner Sphere Map - already included, only requires activating it on the Mods screen at start ( https://github.com/Hobbes74/InnerSphereMap-HyadesRim
+* Community Asset Bundle - requires downloading and installing the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) or the full version, then activating it and the CAB3025-HyadesRim add-on on the Mods screen at start;
+* Inner Sphere Map﻿ (https://github.com/Morphyum/InnerSphereMap) by Morphyum - included with Hyades Rim, to activate select it on the game's mod screen. 
 * Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
 * BattleTech Performance Fix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix
 * Colorful FlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
@@ -100,11 +100,11 @@ Known Issues
 
 Credits
 * Story and developer: Hobbes;
-* Additional characters artwork: DarkKhaos;
+* CastSprites and conversation textures artwork: DarkKhaos;
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT;
 
 Contributions/Tools:
 * BattleTech videogame & DLCs: Harebrained Studios (HBS) and Catalyst Games;

@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_Illyria",
         "Name": "Illyria",
-		"Details": "The capital of the Illyrian Palatinate, Illyria's street markets are full of recovered SLDF artifacts from the caches found in the planet, many of which are counterfeit copies manufactured in local workshops. The world's economy is centered in its shipyards, one of the few which provide vital JumpShip repair services on this region.",
+		"Details": "The capital of the Illyrian Palatinate, Illyria's street markets are full of recovered SLDF artifacts from the caches found in the planet, many of which are counterfeit copies manufactured in local workshops. The world's economy is centered in its shipyards, which provide vital JumpShip repair services on this region.",
         "Icon": ""
     },
     "Position": {
@@ -22,7 +22,6 @@
 			"planet_other_starleague",
 			"planet_industry_manufacturing",
 			"planet_industry_electronics",
-			"planet_other_taintedair",
 			"planet_other_capital",
 			"planet_other_factionhq_illyrianpalatinate",
 			"planet_progress_2"
@@ -49,7 +48,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 5,
     "ownerID": "IllyrianPalatinate",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -129,14 +128,17 @@
         }
     ],
     "StarPosition": null,
-    "StarType": "M",
+    "StarType": "G",
     "Depletable": false,
     "UseSystemRoninHiringChance": false,
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Locals"
+		"itemCollection_major_Locals",
+		"itemCollection_shop_manufacturing",
+		"itemCollection_shop_electronics",
+		"itemCollection_shop_starleague"
 	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
@@ -147,23 +149,43 @@
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 2,
+    "DefaultDifficulty": 3,
     "DifficultyList": [
-        2,
-        2
+        3,
+        5
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
     "ContractEmployerIDs": [
-        "Locals",
+		"AlphardTradingCompany",
+        "IllyrianPalatinate",
+		"MarianHegemony",
+        "IllyrianPirates",
         "Marik",
+		"CanopianPirates",
+		"ExpansesPirates",
+		"DevilsDisciples",
+		"LothianPirates",
+		"MarianPirates",
+		"MarshPirates",
+		"RegulanPirates",
         "AuriganPirates"
     ],
     "ContractTargetIDs": [
-        "Locals",
+		"AlphardTradingCompany",
+        "IllyrianPalatinate",
+		"MarianHegemony",
+        "IllyrianPirates",
         "Marik",
+		"CanopianPirates",
+		"ExpansesPirates",
+		"DevilsDisciples",
+		"LothianPirates",
+		"MarianPirates",
+		"MarshPirates",
+		"RegulanPirates",
         "AuriganPirates"
     ]
 }

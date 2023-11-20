@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_NewPortRoyal",
         "Name": "New Port Royal",
-		"Details": "<i>Here might be dragons.</i>",
+		"Details": "A pleasant and developed system, New Port Royal serves as a 'poster world' for the Dominion because of its neutral status to all the pirate groups that operate in the region. Despite this tacit agreement to avoid trouble between gangs, offworlders and tourists are all considered fair game to steal, kidnap for ransom or sell into slavery.",
         "Icon": ""
     },
     "Position": {
@@ -16,8 +16,12 @@
 			"planet_name_newportroyal",
 			"planet_size_medium",
 			"planet_climate_terran",
-			"planet_pop_small",
-			"planet_civ_primitive",
+			"planet_pop_medium",
+			"planet_civ_periphery",
+			"planet_other_hub",
+			"planet_industry_recreation",
+			"planet_other_blackmarket",
+			"planet_industry_agriculture",
 			"planet_faction_tortugan",
 			"planet_progress_2"
         ],
@@ -32,8 +36,7 @@
         "badlandsParched",
         "polarFrozen",
         "tundraFrozen",
-        "jungleTropical",
-        "urbanHighTech"
+        "jungleTropical"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -44,7 +47,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 4,
     "ownerID": "TortugaDominion",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -130,33 +133,47 @@
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
-    "SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_major_Locals"
+	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
-    "BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
     "CoreSystemID": "starsystemdef_NewPortRoyal",
     "StartingSystemModes": [
         "KAMEA_CAMPAIGN",
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 2,
+    "DefaultDifficulty": 3,
     "DifficultyList": [
-        2,
-        2
+        3,
+        5
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-    "ContractEmployerIDs": [
-        "Davion",
-        "TaurianConcordat",
-        "AuriganPirates"
-    ],
-    "ContractTargetIDs": [
-        "AuriganPirates",
-        "Davion",
-        "TaurianConcordat"
-    ]
+	"ContractEmployerIDs": [
+		"TortugaDominion",
+		"TaurianConcordat",
+		"Warboys",
+		"ClusterPirates",
+		"TaurianPirates",
+		"Davion",
+		"AuriganPirates",
+		"Kurita"
+	],
+	"ContractTargetIDs": [
+		"TortugaDominion",
+		"TaurianConcordat",
+		"Warboys",
+		"ClusterPirates",
+		"TaurianPirates",
+		"AuriganPirates",
+		"Davion",
+		"Kurita"
+	]
 }

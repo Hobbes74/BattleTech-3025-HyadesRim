@@ -1,38 +1,35 @@
 {
     "Description": {
-        "Id": "starsystemdef_Revel",
-        "Name": "Revel",
-		"Details": "<i>Here might be ballet dancers.</i>",
+        "Id": "starsystemdef_Gardnaus",
+        "Name": "Gardnaus",
+        "Details": "The original colony on Gardnaus has been almost completely reclaimed by the scouring sandstorms that constantly sweep the planet's surface. A few research teams still pick through the battlefield remnants from Star League era conflicts.",
         "Icon": ""
     },
     "Position": {
-        "x": -400.913,
-        "y": -232.134,
+        "x": 118.31,
+        "y": -324.25,
         "z": 0
     },
     "Tags": {
         "items": [
-			"planet_region_marikexpanses",
-			"planet_name_revel",
-			"planet_size_medium",
-			"planet_climate_terran",
-			"planet_pop_none",
-			"planet_other_empty",
-			"planet_faction_nofaction",
-			"planet_progress_2"
+            "planet_size_large",
+            "planet_climate_desert",
+            "planet_pop_none",
+            "planet_civ_primitive",
+            "planet_progress_3",
+            "planet_feature_moon03",
+            "planet_other_storms",
+            "planet_other_starleague",
+            "planet_industry_poor",
+            "planet_other_moon",
+            "planet_name_gardnaus",
+            "planet_faction_liao"
         ],
         "tagSetSourceFile": ""
     },
     "SupportedBiomes": [
-        "lowlandsSpring",
-        "lowlandsFall",
-        "highlandsSpring",
-        "highlandsFall",
         "desertParched",
-        "badlandsParched",
-        "polarFrozen",
-        "tundraFrozen",
-        "jungleTropical"
+        "martianVacuum"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -43,66 +40,66 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
-    "ownerID": "NoFaction",
+    "JumpDistance": 4,
+    "ownerID": "Liao",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
-    "ShopMaxSpecials": 9,
+    "ShopMaxSpecials": 6,
     "SystemInfluence": [
         {
-            "FactionID": "NoFaction",
+            "factionID": "NoFaction",
             "Influence": 0
         },
         {
-            "FactionID": "Davion",
+            "factionID": "Davion",
             "Influence": 0
         },
         {
-            "FactionID": "Liao",
+            "factionID": "Liao",
             "Influence": 0
         },
         {
-            "FactionID": "Kurita",
+            "factionID": "Kurita",
             "Influence": 0
         },
         {
-            "FactionID": "Marik",
+            "factionID": "Marik",
             "Influence": 0
         },
         {
-            "FactionID": "Steiner",
+            "factionID": "Steiner",
             "Influence": 0
         },
         {
-            "FactionID": "TaurianConcordat",
+            "factionID": "TaurianConcordat",
             "Influence": 0
         },
         {
-            "FactionID": "MagistracyOfCanopus",
+            "factionID": "MagistracyOfCanopus",
             "Influence": 0
         },
         {
-            "FactionID": "AuriganDirectorate",
+            "factionID": "AuriganDirectorate",
             "Influence": 0
         },
         {
-            "FactionID": "AuriganRestoration",
+            "factionID": "AuriganRestoration",
             "Influence": 0
         },
         {
-            "FactionID": "ComStar",
+            "factionID": "ComStar",
             "Influence": 0
         },
         {
-            "FactionID": "MercenaryReviewBoard",
+            "factionID": "MercenaryReviewBoard",
             "Influence": 0
         },
         {
-            "FactionID": "AuriganPirates",
+            "factionID": "AuriganPirates",
             "Influence": 0
         },
         {
-            "FactionID": "AuriganMercenaries",
+            "factionID": "AuriganMercenaries",
             "Influence": 0
         }
     ],
@@ -111,7 +108,7 @@
             "Scope": "Company",
             "RequirementTags": {
                 "items": [
-                    "map_travel_4"
+                    "map_travel_2l"
                 ],
                 "tagSetSourceFile": ""
             },
@@ -123,17 +120,20 @@
         }
     ],
     "StarPosition": null,
-    "StarType": "K",
+    "StarType": "M",
     "Depletable": false,
     "UseSystemRoninHiringChance": false,
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
-	"SystemShopItems": [],
-    "FactionShopOwnerID": "INVALID_UNSET",
+    "SystemShopItems": [
+        "itemCollection_minor_Liao",
+        "itemCollection_shop_starleague"
+    ],
+    "factionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
-    "CoreSystemID": "starsystemdef_Revel",
+    "CoreSystemID": "starsystemdef_Gardnaus",
     "StartingSystemModes": [
         "KAMEA_CAMPAIGN",
         "CAREER",
@@ -142,24 +142,21 @@
     "DefaultDifficulty": 2,
     "DifficultyList": [
         2,
-        2
+        7
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
         "CAREER"
     ],
-	"ContractEmployerIDs": [
-		"Steiner",
-		"AuriganPirates",
-		"Marik",
-		"Liao",
-		"MagistracyOfCanopus"
-	],
-	"ContractTargetIDs": [
-		"Steiner",
-		"AuriganPirates",
-		"Marik",
-		"Liao",
-		"MagistracyOfCanopus"
-	]
+    "contractEmployerIDs": [
+        "Marik",
+        "Davion",
+        "Steiner",
+        "Liao"
+    ],
+    "contractTargetIDs": [
+        "AuriganPirates",
+        "Davion",
+        "Liao"
+    ]
 }

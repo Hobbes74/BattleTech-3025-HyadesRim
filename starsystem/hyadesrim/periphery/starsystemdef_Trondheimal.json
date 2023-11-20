@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_Trondheimal",
         "Name": "Trondheimal",
-		"Details": "<i>Here might be illyrians.</i>",
+		"Details": "Despite the many attempts by the Palatinate to assert its sovereignty, Trondheimal is effectively ruled by a junta of criminal gangs who control the industries and mines through front corporations and outright violence.",
         "Icon": ""
     },
     "Position": {
@@ -14,9 +14,14 @@
         "items": [
 			"planet_region_marchworlds",
 			"planet_name_trondheimal",
-			"planet_size_medium",
-			"planet_climate_terran",
-			"planet_pop_small",
+			"planet_size_large",
+			"planet_climate_rocky",
+			"planet_pop_medium",
+			"planet_industry_manufacturing",
+			"planet_industry_mining",
+			"planet_industry_poor",
+			"planet_other_humanitariancrisis",
+			"planet_other_blackmarket",
 			"planet_civ_periphery",
 			"planet_faction_illyrian",
 			"planet_progress_2"
@@ -24,15 +29,11 @@
         "tagSetSourceFile": ""
     },
     "SupportedBiomes": [
-        "lowlandsSpring",
-        "lowlandsFall",
         "highlandsSpring",
         "highlandsFall",
-        "desertParched",
         "badlandsParched",
-        "polarFrozen",
         "tundraFrozen",
-        "jungleTropical"
+        "martianVacuum"
     ],
     "MapRequiredTags": {
         "items": [],
@@ -130,20 +131,24 @@
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_minor_Locals"
+		"itemCollection_minor_Locals",
+		"itemCollection_shop_manufacturing",
+		"itemCollection_shop_mining"
 	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
-    "BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
     "CoreSystemID": "starsystemdef_Trondheimal",
     "StartingSystemModes": [
         "KAMEA_CAMPAIGN",
         "CAREER",
         "NONE"
     ],
-    "DefaultDifficulty": 2,
+    "DefaultDifficulty": 0,
     "DifficultyList": [
-        2,
+        0,
         2
     ],
     "DifficultyModes": [
@@ -151,13 +156,29 @@
         "CAREER"
     ],
     "ContractEmployerIDs": [
-        "Locals",
-        "Marik",
+        "IllyrianPalatinate",
+		"MarianHegemony",
+        "IllyrianPirates",
+		"CanopianPirates",
+		"ExpansesPirates",
+		"DevilsDisciples",
+		"LothianPirates",
+		"MarianPirates",
+		"MarshPirates",
+		"RegulanPirates",
         "AuriganPirates"
     ],
     "ContractTargetIDs": [
-        "Locals",
-        "Marik",
+        "IllyrianPalatinate",
+		"MarianHegemony",
+        "IllyrianPirates",
+		"CanopianPirates",
+		"ExpansesPirates",
+		"DevilsDisciples",
+		"LothianPirates",
+		"MarianPirates",
+		"MarshPirates",
+		"RegulanPirates",
         "AuriganPirates"
     ]
 }
