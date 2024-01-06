@@ -28,36 +28,14 @@
             "Requirements" : {
                 "Scope" : "SecondaryMechWarrior",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
                     "items" : [
-                        "pilot_lucky"
+                        "pilot_spacer"
                     ],
-                    "tagSetSourceFile" : "Tags/PilotTags"
-                },
-                "RequirementComparisons" : [
-                    {
-                        "obj" : "Injuries",
-                        "op" : "Equal",
-                        "val" : 0,
-                        "valueConstant" : "0"
-                    }
-                ]
-            }
-        },
-        {
-            "Scope" : "SecondaryMech",
-            "Requirements" : {
-                "Scope" : "SecondaryMech",
-                "RequirementTags" : {
-                    "items" : [],
                     "tagSetSourceFile" : ""
                 },
                 "ExclusionTags" : {
                     "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "Tags/PilotTags"
                 },
                 "RequirementComparisons" : []
             }
@@ -106,6 +84,31 @@
                             "ForceEvents" : null,
                             "TemporaryResult" : true,
                             "ResultDuration" : 14
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+								{
+									"typeString" : "System.Int32",
+									"name" : "Morale",
+									"value" : "-1",
+									"set" : false,
+									"valueConstant" : null
+								}
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
                         }
                     ]
                 }
@@ -139,7 +142,7 @@
                         "Details" : "Equipped with space vacuum cleaners, the MechTechs and most of the pilots sweep every square inch of the DropShip to collect the moisture from the sauna during the next several hours.\r\n\r\nOn the next day, Darius comes to you at breakfast and says, \"It's hopeless to get all of it but Yang will keep attempting to find the origin of the leak. He thinks that there must be some busted piping causing the l\u00F6yly to escape and disseminate itself, but without a space dry dock it will be hard to find it.\"",
                         "Icon" : null
                     },
-                    "Weight" : 50,
+                    "Weight" : 25,
                     "Results" : []
                 },
                 {
@@ -310,7 +313,34 @@
                         "Icon" : null
                     },
                     "Weight" : 100,
-                    "Results" : []
+                    "Results" : [
+					,
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+								{
+									"typeString" : "System.Int32",
+									"name" : "Morale",
+									"value" : "1",
+									"set" : false,
+									"valueConstant" : null
+								}
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+					]
                 }
             ],
             "Requirements" : {

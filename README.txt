@@ -1,4 +1,4 @@
-BattleTech 3025 Hyades Rim
+BattleTech 3025 Hyades Rim 
 
 BattleTech 1.9.X compatible - requires all DLCs. Work in progress.
 
@@ -83,38 +83,39 @@ Requirements﻿
 * Flashpoint, Urban Warfare and Heavy Metal DLCs
 
 Installation
-* Unzip the folder to the /Mods folder created as part of ModTek's installation guidelines.
+* Unzip the folders to the /Mods folder created as part of ModTek's installation guidelines.
 
 Recommended Additional Mods (all optional, not required)
 * Community Asset Bundle - requires downloading and installing the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) or the full version, then activating it and the CAB3025-HyadesRim add-on on the Mods screen at start;
 * Inner Sphere Map﻿ (https://github.com/Morphyum/InnerSphereMap) by Morphyum - included with Hyades Rim, to activate select it on the game's mod screen. 
 * Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
-* BattleTech Performance Fix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix
 * Colorful FlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
+* BattleTech Performance Fix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix (SEE BELOW)
 
 Known Issues
+* BattleTechPerformanceFix has a known bug that sometimes prevents a contract to be completed when all objectives are fulfilled - it can be overriden by enabling debug mode and using it to end the contract. But if you experience the bug it might be advisable to disable the mod during the before the contract, if possible;
 * When playing FPs on the Leopard, there's a visual glitch (a.k.a. 'löyly') after any conversations with the DropShip's bridge and other areas. This has no effect on gameplay can be solved by saving and reloading the game.
 * A saved star map won't update when new mod versions are released that change it, so system tags and black market markers might become inaccurate with future mod updates. 
-* Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This appears to be a Unity bug, for safety always end the month if you're on its last day before starting the flashpoint.
-* BattleTechPerformanceFix has a known bug that sometimes prevents a mission to be completed - it can be overriden by enabling debug mode and using it to end the contract;
+* Occasionally the campaign might freeze if you've just completed a story mission (non-FP) right before getting the end of the month report. This appears to be a Unity bug, for safety always end the month if you're on its last day before starting the flashpoint (FIXED?).
 
 Credits
-* Story and developer: Hobbes;
+* Story author and developer: Hobbes;
 * CastSprites and conversation textures artwork: DarkKhaos;
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt;
+
+All canon BattleTech content is property of its franchise, owned by Catalyst Games, and the BattleTech videogame and DLCs are owned by Paradox Games.
 
 Contributions/Tools:
-* BattleTech videogame & DLCs: Harebrained Studios (HBS) and Catalyst Games;
 * ModTek, by several authors (MIT license): https://github.com/BattletechModders/ModTek
 * Logo Replacement mod by Mpstark (MIT license) -  https://github.com/BattletechModders/LogoReplacement
 * ConverseTek, conversation editor by CWolf (MIT license) - https://github.com/CWolfs/ConverseTek
 * Extended Converstations mod, by CWolfs (MIT license) - https://github.com/CWolfs/ExtendedConversations;
-* Inner Sphere Map mod, by Morphyum, changed to use the Hyades Rim star map and factions (GPL License) - https://github.com/Morphyum/InnerSphereMap
+* Inner Sphere Map mod, by Morphyum, changed to use the Hyades Rim star map and factions (GNU GPL License) - https://github.com/Morphyum/InnerSphereMap
 * Community Asset Bundle 3025, by several - https://discourse.modsinexile.com/t/community-assets-bundle-cab/115 
-* MegaMek, by several, for the coordinates of several connecting systems;
+* MegaMek, by several, for the coordinates of several connecting systems - https://megamek.org/;
 * Banner images taken from the sourcebook The Periphery, 2nd Edition;
 * Corporation logos taken and adapted from Sarna.net;
 * Sarna.net for being an amazing source for all things BattleTech related;
