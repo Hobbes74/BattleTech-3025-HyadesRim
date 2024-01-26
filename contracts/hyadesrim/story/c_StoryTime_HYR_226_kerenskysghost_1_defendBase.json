@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Once your Phoenix Hawk joins me in the surface, the pirate leader you called the 'Wraith' should finally came out of his hiding. That is quite an appropriate name for what I have seen about the fellow so far... he could have attacked and killed me already but he has already realized that me and my personal DropShuttle are merely bait. And, as hoped for, the magnetic signature is indicative of an Assault-class BattleMech, and hopefully the <i>Annihilator</i> you are looking for. Now it's up to you, young fellow, do you wish to finishing avenging your mother and getting that Annie, or do I need to start looking for it in the wild myself to get a visual on it?",
-    "longDescription" : "Lady Arano already gave her consent, so it's your call boss. I wouldn't recommend it though.",
-    "salvagePotential" : 20,
+    "shortDescription" : "Once your <i>Phoenix Hawk</i> joins me in the surface, the pirate leader you called the 'Wraith' should finally came out of his hiding. That is quite an appropriate name for what I have seen about the fellow so far... he could have attacked and killed me already but he has already realized that me and my personal DropShuttle are merely bait. And, as hoped for, the magnetic signature is indicative of an assault-class BattleMech, and hopefully the <i>Grasshopper</i> you are looking for. Now it's up to you, young fellow, do you wish to finishing avenging your mother and getting that 'Mech, or do I need to start looking for it in the wild myself to finally meet one of these Kerensky's ghosts?",
+    "longDescription" : "I guess it's your call boss. I wouldn't recommend it though.",
+    "salvagePotential" : 0,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
     "OnContractFailureResults" : [],
@@ -22,25 +22,19 @@
     "lanceMinTonnage" : -1,
     "lanceMaxTonnage" : -1,
     "mechMinTonnages" : [
-        -1,
-        -1,
-        -1,
         -1
     ],
     "mechMaxTonnages" : [
-        -1,
-        -1,
-        -1,
         -1
     ],
-    "mapMood" : null,
+    "mapMood" : "AridSunsetClear",
     "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "6f5f8d17-70ed-44a8-acc0-ccf9258925aa"
             },
-            "title" : "Defend Listening Post",
+            "title" : "Avenge Your Mother",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -59,7 +53,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ca677a4d-19c8-4d0c-9c5e-3ed712081336"
             },
-            "title" : "Defend Target Buildings",
+            "title" : "Defend Colonel Mustard",
             "description" : "Defend Targeted Base Structures from Attackers",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -71,7 +65,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e4ac925-d95a-4019-aeb0-0aa553830f46"
             },
-            "title" : "Destroy the Enemy Vanguard",
+            "title" : "Destroy Kerensky's Ghost",
             "description" : "Destroy the enemy vanguard force, the first wave.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -86,15 +80,7 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
+                    "Stats" : [],
                     "Actions" : [],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
@@ -109,7 +95,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "240577eb-b4b0-43b7-b2af-a94d692a022a"
             },
-            "title" : "All target buildings must survive",
+            "title" : "Keep Settlement Intact",
             "description" : "Optional objective to keep ALL target structures intact.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -147,7 +133,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4bfadebf-a277-4ddb-8a36-f70ab7c0c68c"
             },
-            "title" : "Hold Out for Reinforcements",
+            "title" : "Hold Out",
             "description" : "Objective for tracking the time left in the mission. While the player it told to Hold Out for Reinforcements",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -221,7 +207,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "5dca4e7f-ea4c-4582-8a4c-bb531e2c0754"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -291,7 +277,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Meyer, are you picking up that assault 'Mech they said would be here?",
+                    "words" : "Good day to you sir, I am pleased to see you didn't pass this chance to join me on this safari.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Colonel, are you sure we're only facing one 'Mech out here? Because this seems pretty risky already.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -307,14 +309,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "No, I'm-- wait, there it is. Shit, that's big. How the hell are we supposed to keep <i>that</i> from blowing shit up?",
+                    "words" : "I am the one lighting up a fire here to attract our prey, so my bacon is also about to get cooked, Mr. Oliveira.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -323,7 +325,39 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Engage it and keep it--",
+                    "words" : "But do not worry, for when you were dropping, I took my backpack and did some scouting around.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And while I couldn't get my eyes to find that Kerensky's ghost, I did notice some APCs.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Alright, so that's the plan? Just wait until the pirate king decides to leave his hiding?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -339,14 +373,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Uh, Darius? You're not gonna like this. I'm detecting <i>two</i> assault engine signatures.",
+                    "words" : "Yes. Commander {COMMANDER.LastName}, you may want to show off that <i>Phoenix Hawk</i> a bit to speed up things.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,7 +389,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You gotta be kidding me.",
+                    "words" : "Hey boss, I tried to make the paint job on that Frankenmech as close as you described. Good luck.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -363,6 +397,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Considering that the <i>Argo</i>'s sensors are showing, both the Commander and Colonel will need it. Incoming bogey!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -380,14 +430,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Holy <i>shit</i>, Commander. Let's not do that again any time soon?",
+                    "words" : "Colonel, we did it!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -396,14 +446,62 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "It worked out in the end. Somehow.",
+                    "words" : "Yes, and what a fine 'Mech this Kerensky's Ghost is. Would have loved to bring it to battle with the Mustard's Beans.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "So, you're satisfied now that you've gotten your trophy?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The 'Mech is yours, Mr. Virtanen. As to my satisfaction, I'll happily retire now.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And Commander, I wish you find some peace now. Colonel Mustard is out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_ColonelMustardDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -421,7 +519,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a damn disaster. Let's debrief back in orbit.",
+                    "words" : "Colonel, we're pulling out!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -429,6 +527,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "He's not responding, XO.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -746,8 +860,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_phoenixhawk_PXH-G",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1026,12 +1140,9 @@
                     "EncounterObjectGuid" : "4d39e72c-4f99-4cc6-8fe0-d4d18cad0063"
                 },
                 "name" : "Lance_Enemy_Wave1Attackers",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_battle",
-                        "lance_type_dynamic_difficulty"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1055,7 +1166,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_grasshopper_GHR-UNK",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1068,7 +1179,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_HYR_Wraith",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1088,7 +1199,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1121,7 +1232,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1154,7 +1265,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1187,11 +1298,10 @@
                     "EncounterObjectGuid" : "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca"
                 },
                 "name" : "Lance_Enemy_Wave2Attackers",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_battle",
-                        "lance_type_dynamic_difficulty"
+                        "lance_type_convoy"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -1200,9 +1310,7 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_25"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
@@ -1215,13 +1323,10 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "Tagged",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_assault",
-                                "unit_mech"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -1251,8 +1356,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1284,8 +1389,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1364,9 +1469,7 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_25"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,

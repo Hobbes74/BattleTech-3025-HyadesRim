@@ -1,0 +1,153 @@
+{
+    "Description": {
+        "Id": "forcedevent_Storytime_HYR_100_peripheryTales",
+        "Name": "Periphery Tales",
+        "Details": "The zero-g sleeping bag feels warm after a long work shift helping with maintenance in the DropShip's MechBays and memories of a fuzzy dream briefly come to mind before fading back into the subconscious.\r\n\r\n<i>A strange BattleMech, in unknown markings, charging its way through a battle, a familiar image.</i>\r\n\r\nAn alert sound starts beeping from the electronic panel installed on the wall of the sleeping bunk, notifying the receival of an HPG message on the <i>Hysteria</i>'s bridge.",
+        "Icon": "uixTxrSpot_fp_HyadesRim.png"
+    },
+    "Scope": "Company",
+    "Weight": 100,
+    "Requirements" : {
+        "Scope": "Company",
+        "RequirementTags" : {
+            "items" : [
+				"flashpoint_exodus_complete"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+                "items" : [
+                    "event_co_peripheryTales"
+                ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Travel",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : "0"
+            }
+		]
+    },
+    "AdditionalRequirements": [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+					"planet_region_hyadesrim"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+	],
+    "AdditionalObjects": [],
+    "Options": [
+        {
+            "Description": {
+                "Id": "outcome_0",
+                "Name": "Wake-up. [Start Periphery Tales]",
+                "Details": "Wake up and go to the bridge",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_0_0",
+                        "Name": "Late Meeting",
+                        "Details": "Another late night meeting.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"company_pt_flashpoints",
+									"event_co_peripheryTales"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [
+                                {
+                                    "Type": "System_StartConversation",
+									"value" : "9c8fb8d3a0264921944d20b5",
+									"additionalValues" : [
+										"Periphery Tales",
+										"Ghost of Kerensky"
+                                    ]
+                                }
+                            ],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+                    ]
+                },
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        },
+        {
+            "Description": {
+                "Id": "outcome_1",
+                "Name": "Ignore. [Go back to sleep]",
+                "Details": "Skip message",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_1_0",
+                        "Name": "Go Back to Sleep",
+                        "Details": "You close your eyes and dooze away in zero-g.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"event_co_peripheryTales"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+					]
+                }
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL"
+}
