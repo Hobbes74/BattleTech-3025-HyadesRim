@@ -10,6 +10,8 @@ Public repository: Hyades Rim - https://github.com/Hobbes74/Battletech-3025-Hyad
 
 Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 
+Patreon (donations not required but welcome) - https://www.patreon.com/Hobbes74
+
 Features
 * A new BattleTech story and Campaign mode, consisting of forty-three new flashpoints and forty-four new events telling an alternative history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
@@ -106,7 +108,7 @@ Credits
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS, Miggles;
 
 All canon BattleTech content is property of its franchise, owned by Catalyst Games, and the BattleTech videogame and DLCs are owned by Paradox Games.
 
@@ -125,3 +127,14 @@ Contributions/Tools:
 * All the people behind the previous mods and those that provided help/feedback on Discord and the forums: LadyAlekto, Morphyum, Justin Kase, Granner, starscream, Dialcaliper, Necromis, bloodydoves, Owca, Oldtimer, JaimeWolf and the whole BattleTech modding community.
 
 This mod is released under a GNU GPL license, see the included LICENSE file for additional details.
+
+Donations:
+As I've discussed over the years on the Discord server after several requests, I have created a Patreon page for all of my mods and including Hyades Rim with the permission of the content creators, namely @DarkKhaos who has contributed all the new character artwork.
+
+Regardless of contributions, all of my work will always be for free to download and play and is usually released with a open source license. 
+
+So if you liked this mod and would like to contribute to the overhead costs since gaming and developing aren't a cheap occupation, you can do so through these links:
+* Patreon - https://www.patreon.com/Hobbes74
+* Paypal - ask me in private for the email address
+
+Thank you!

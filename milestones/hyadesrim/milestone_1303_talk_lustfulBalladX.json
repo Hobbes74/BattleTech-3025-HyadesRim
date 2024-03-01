@@ -14,7 +14,6 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"company_story_downfall",
 					"flashpoint_legendKiller_complete",
 					"flashpoint_wilderness_complete",
 					"flashpoint_vortex_complete"
@@ -31,12 +30,6 @@
                     "op" : "Equal",
                     "val" : 1303,
                     "valueConstant" : null
-                },
-				{
-                    "obj" : "MissionsComplete",
-                    "op" : "GreaterThanOrEqual",
-                    "val" : 3,
-                    "valueConstant" : null
                 }
             ]
         }
@@ -47,7 +40,8 @@
             "Requirements" : null,
             "AddedTags" : {
 				"items" : [
-					"AARCompleteNotificationsDisabled"
+					"AARCompleteNotificationsDisabled",
+					"company_story_downfall"
 				],
                 "tagSetSourceFile" : ""
 			},
@@ -63,7 +57,7 @@
             "Actions" : [
                 {
                     "Type" : "System_StartConversation",
-                    "value" : "9c550d384401126286cedf24",
+                    "value" : "9c4593a8418516264abc439e",
                     "additionalValues" : [
 						"<i>LUSTFUL BALLAD X</i>",
 						"HPG NEWS"
@@ -73,18 +67,12 @@
 					"Type" : "System_SimGameCharacterVisible",
 					"value" : true,
 					"additionalValues" : [
+						"Alexander",
+						"Kamea",
 						"Sumire",
 						"Darius",
 						"Farah",
 						"Yang"
-					]
-				},
-				{
-					"Type" : "System_SimGameCharacterVisible",
-					"value" : false,
-					"additionalValues" : [
-						"Alexander",
-						"Kamea"
 					]
 				}
             ],
