@@ -7,7 +7,7 @@
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "shortDescription" : "Tyrlon is being used by the Directorate as their main military headquarters but several of its key garrison forces have been redeployed corewards to fight the Restoration and the Taurians, giving us the perfect opportunity for a surprise blow. To begin we need to gain control of the main spaceport and negate the DropShips to prevent any escape. But the orbital batteries defending the spaceport need to be disabled before we attempt to land, {COMMANDER.Callsign}. Your mission is to take them down before our invasion fleet can lay siege to this world.",
+    "shortDescription" : "Tyrlon is being used by the Directorate as their main military headquarters but several of its key garrison forces have been redeployed corewards to fight the Restoration and the Taurians, giving us the perfect opportunity for a surprise blow. To begin we need to gain control of the main spaceport and neutralize the DropShips to prevent the Directorate's leadership from escaping. But the orbital batteries defending the spaceport need to be disabled before we attempt to land, {COMMANDER.Callsign}. Your mission is to take them down before the rest of the invasion fleet can land.",
     "longDescription" : "The batteries are being controlled from ground generators. Once we take those out, the Restoration forces can begin disembarking and securing our beachhead.",
     "salvagePotential" : 34,
     "requirementList" : [],
@@ -23,7 +23,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "8d7e4513-f6c4-4914-a08f-d7baa89672be"
             },
-            "title" : "Eliminate hostile units",
+            "title" : "Eliminate Directorate defenders",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -37,7 +37,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "ff48d447-2332-47a8-a95d-a5c753034ec1"
             },
-            "title" : "The gun batteries must be down before Restoration DropShips enter weapons range",
+            "title" : "Neutralize gun batteries before Restoration DropShips land",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -49,7 +49,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "d6b3ae34-3f85-406c-b6c9-78080cb416eb"
             },
-            "title" : "Take out the generators powering the shipyard's antiorbital gun batteries",
+            "title" : "Take out the batteries's power generators",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -1749,7 +1749,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we're making a push on the Directorate's primary shipyard. If our attack is successful, we'll gain control of my uncle's JumpShip fleet, but the first part of our plan depends on you.",
+                    "words" : "Commander, we're on our way to take the spaceport, once it's in our hands we'll have control of the skies over Tyrlon.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1765,7 +1765,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The shipyard is protected by enormous gun batteries that draw their power from the generators in front of you. I need you to destroy those generators <i>before</i> our DropShips enter their weapons range.\r",
+                    "words" : "However, the batteries defending the spaceport will do short work of our DropShips if they remain operational, so your objective is to take out their generators.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1813,7 +1813,7 @@
                     "revealRadius" : 100
                 },
                 {
-                    "words" : "\u2026And Charlie. Take out all three structures, mop up any surviving Directorate units, and our DropShip fleet will be clear to handle the rest.",
+                    "words" : "\u2026And Charlie. Take out all three structures, mop up any surviving Directorate units, and our invasion fleet will be clear to land.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1914,14 +1914,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That Spider is a Directorate prototype, specially modified to serve as a forward observer. I've heard stories about these\u2014they can fight, but their primary function is marking targets for artillery bombardment.",
+                    "words" : "That 'Mech must be relaying target coordinates for the Directorate artillery.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "f8f9c722-491c-4988-a2d3-51458ef89678",
@@ -1930,14 +1930,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "That's\u2026 not good. Keep your eyes open, boss.",
+                    "words" : "Unless we take it out, there will be more incoming fire on our positions.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1946,7 +1946,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The Directorate has too much valuable hardware out here to risk firing their artillery blind. If you can destroy all of the forward observers, it should stop them from calling out any future artillery strikes, but be careful\u2014any targets they've <i>already</i> marked will still be in danger of bombardment.",
+                    "words" : "We can't risk those spotters targeting our forces here or in the spaceport once we land. Eliminating them should remove the threat.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2046,14 +2046,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's the last of their forward observers! Nice work\u2014I'm not seeing any more activity from their artillery emplacements.",
+                    "words" : "All Directorate forward observers have been neutralized. That should end the artillery bombardment.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2071,7 +2071,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Lady Arano, be advised that we're about to enter the shipyard's weapon range. I hope to hell your mercenary is almost finished with those generators. This is getting way too close for comfort.",
+                    "words" : "Lady Arano, be advised that we're about to enter the spaceport's weapons range. It's best if the mercenaries are almost finished with those generators. Otherwise this will end shortly and badly.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2080,7 +2080,7 @@
                     },
                     "selectedCastDefId" : "castDef_RE_Tyrlon_RestorationPilotDefault",
                     "emote" : "Default",
-                    "audioName" : "rm070_160_dropship_pilot01",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -2212,7 +2212,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's the last of the generators! Good job, Commander\u2014the ground batteries are down, and our DropShips are clear to attack the shipyard. Mop up any remaining hostiles, and I'll send Sumire to extract you.",
+                    "words" : "You never fail my expectations, Commander, excellent work on those generators.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
