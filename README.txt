@@ -83,15 +83,17 @@ Disclaimer
 
 Requirements﻿
 * ModTek 0.8.0.0 or 2.0.0.X - https://github.com/BattletechModders/ModTek
-* ExtendedConversations﻿, by CWolf https://github.com/CWolfs/ExtendedConversations
+
+* ExtendedConversations﻿, by CWolf https://github.com/CWolfs/ExtendedConversations (already bundled with Hyades Rim)
+
 * Flashpoint, Urban Warfare and Heavy Metal DLCs
 
 Installation
-* Unzip the folders to the /Mods folder created as part of ModTek's installation guidelines.
+* Unzip the folders to the /Mods folder created as part of ModTek's installation guidelines and activate it on the Mod List.
 
 Recommended Additional Mods (all optional, not required)
 * Community Asset Bundle - requires downloading and installing the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) or the full version, then activating it and the CAB3025-HyadesRim add-on on the Mods screen at start;
-* Inner Sphere Map﻿ (https://github.com/Morphyum/InnerSphereMap) by Morphyum - included with Hyades Rim, to activate select it on the game's mod screen. 
+* Inner Sphere Map﻿ (https://github.com/Morphyum/InnerSphereMap) by Morphyum - bundled with Hyades Rim, to activate select it on the game's mod screen. 
 * Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
 * Colorful FlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints
 * BattleTech Performance Fix by m22spencer, https://github.com/m22spencer/BattletechPerformanceFix (SEE BELOW)
@@ -129,12 +131,10 @@ Contributions/Tools:
 This mod is released under a GNU GPL license, see the included LICENSE file for additional details.
 
 Donations:
-As I've discussed over the years on the Discord server after several requests, I have created a Patreon page for all of my mods and including Hyades Rim with the permission of the content creators, namely @DarkKhaos who has contributed all the new character artwork.
+As I've discussed over the years on the Discord server after several requests, I have created a Patreon page for all my personal mods (https://www.patreon.com/Hobbes74) and including Hyades Rim with the permission of the content creators, namely @DarkKhaos who has contributed all the new character artwork. You can also donate directly through Paypal.
 
-Regardless of contributions, all of my work will always be for free to download and play and is usually released with a open source license. 
+Regardless of donations, all of my work will always be for free to download and play and is released with a open source GNU GPL license. 
 
-So if you liked this mod and would like to contribute to the overhead costs since gaming and developing aren't a cheap occupation, you can do so through these links:
-* Patreon - https://www.patreon.com/Hobbes74
-* Paypal - ask me in private for the email address
+If you contribute through Patreon you also have the option of adding your personal touch to the mod by including your own BattleMech variant and star system.
 
 Thank you!
