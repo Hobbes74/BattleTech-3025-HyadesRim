@@ -1,30 +1,29 @@
 {
     "Description": {
-        "Cost": 5900000,
-        "Rarity": 2,
+        "Cost": 11300000,
+        "Rarity": 5,
         "Purchasable": true,
         "Manufacturer": "",
         "Model": "",
-        "UIName": "Dragon",
-        "Id": "chassisdef_dragon_DRG-Q",
-        "Name": "Dragon",
-        "Details": "This pirate Dragon removes a ton of autocannon and LRM ammo to carry an additional third Medium Laser and an extra heat sink.",
-        "Icon": "uixTxrIcon_dragon"
+        "UIName": "Banshee",
+        "Id": "chassisdef_banshee_BNC-P2",
+        "Name": "Banshee",
+        "Details": "This pirate variant of the Banshee carries three AC/10s and it has been equipped with jump jets.",
+        "Icon": "uixTxrIcon_banshee"
     },
-    "MovementCapDefID": "movedef_dragon_DRG-1N",
-    "PathingCapDefID": "pathingdef_heavy",
-    "HardpointDataDefID": "hardpointdatadef_dragon",
-    "PrefabIdentifier": "chrPrfMech_dragonBase-001",
-    "PrefabBase": "dragon",
-    "Tonnage": 60,
-    "InitialTonnage": 31,
-    "weightClass": "HEAVY",
-    "BattleValue": 5383000,
+    "MovementCapDefID": "movedef_banshee_BNC-3S",
+    "PathingCapDefID": "pathingdef_assault",
+    "HardpointDataDefID": "hardpointdatadef_banshee",
+    "PrefabIdentifier": "chrPrfMech_bansheeBase-001",
+    "PrefabBase": "banshee",
+    "Tonnage": 95,
+    "InitialTonnage": 32,
+    "weightClass": "ASSAULT",
     "Heatsinks": 0,
-    "TopSpeed": 150,
+    "TopSpeed": 90,
     "TurnRadius": 90,
-    "MaxJumpjets": 5,
-    "Stability": 160,
+    "MaxJumpjets": 3,
+    "Stability": 200,
     "StabilityDefenses": [
         0,
         0,
@@ -39,17 +38,22 @@
     "Signature": 0,
     "Radius": 8,
     "PunchesWithLeftArm": false,
-    "MeleeDamage": 90,
-    "MeleeInstability": 60,
+    "MeleeDamage": 130,
+    "MeleeInstability": 95,
     "MeleeToHitModifier": 0,
-    "DFADamage": 75,
+    "DFADamage": 120,
     "DFAToHitModifier": 0,
-    "DFASelfDamage": 75,
-    "DFAInstability": 75,
+    "DFASelfDamage": 120,
+    "DFAInstability": 120,
     "Locations": [
         {
             "Location": "Head",
-            "Hardpoints": [],
+            "Hardpoints": [
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                }
+            ],
             "Tonnage": 0,
             "InventorySlots": 1,
             "MaxArmor": 45,
@@ -60,7 +64,29 @@
             "Location": "LeftArm",
             "Hardpoints": [
                 {
-                    "WeaponMount": "Energy",
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                }
+			],
+            "Tonnage": 0,
+            "InventorySlots": 8,
+            "MaxArmor": 160,
+            "MaxRearArmor": -1,
+            "InternalStructure": 80
+        },
+        {
+            "Location": "LeftTorso",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Ballistic",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "Ballistic",
                     "Omni": false
                 },
                 {
@@ -69,55 +95,46 @@
                 }
             ],
             "Tonnage": 0,
-            "InventorySlots": 8,
-            "MaxArmor": 100,
-            "MaxRearArmor": -1,
-            "InternalStructure": 50
-        },
-        {
-            "Location": "LeftTorso",
-            "Hardpoints": [
-                {
-                    "WeaponMount": "Energy",
-                    "Omni": false
-                },
-                {
-                    "WeaponMount": "Energy",
-                    "Omni": false
-                }
-            ],
-            "Tonnage": 0,
             "InventorySlots": 10,
-            "MaxArmor": 140,
-            "MaxRearArmor": 70,
-            "InternalStructure": 70
-        },
-        {
-            "Location": "CenterTorso",
-            "Hardpoints": [
-                {
-                    "WeaponMount": "Missile",
-                    "Omni": false
-                },
-                {
-                    "WeaponMount": "Missile",
-                    "Omni": false
-                }
-            ],
-            "Tonnage": 0,
-            "InventorySlots": 4,
             "MaxArmor": 200,
             "MaxRearArmor": 100,
             "InternalStructure": 100
         },
         {
+            "Location": "CenterTorso",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                }
+			],
+            "Tonnage": 0,
+            "InventorySlots": 4,
+            "MaxArmor": 300,
+            "MaxRearArmor": 150,
+            "InternalStructure": 150
+        },
+        {
             "Location": "RightTorso",
-            "Hardpoints": [],
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Ballistic",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                }
+            ],
             "Tonnage": 0,
             "InventorySlots": 10,
-            "MaxArmor": 140,
-            "MaxRearArmor": 70,
-            "InternalStructure": 70
+            "MaxArmor": 200,
+            "MaxRearArmor": 100,
+            "InternalStructure": 100
         },
         {
             "Location": "RightArm",
@@ -127,86 +144,86 @@
                     "Omni": false
                 },
                 {
-                    "WeaponMount": "Ballistic",
+                    "WeaponMount": "AntiPersonnel",
                     "Omni": false
                 }
-            ],
+			],
             "Tonnage": 0,
             "InventorySlots": 8,
-            "MaxArmor": 100,
+            "MaxArmor": 160,
             "MaxRearArmor": -1,
-            "InternalStructure": 50
+            "InternalStructure": 80
         },
         {
             "Location": "LeftLeg",
             "Hardpoints": [],
             "Tonnage": 0,
             "InventorySlots": 4,
-            "MaxArmor": 140,
+            "MaxArmor": 200,
             "MaxRearArmor": -1,
-            "InternalStructure": 70
+            "InternalStructure": 100
         },
         {
             "Location": "RightLeg",
             "Hardpoints": [],
             "Tonnage": 0,
             "InventorySlots": 4,
-            "MaxArmor": 140,
+            "MaxArmor": 200,
             "MaxRearArmor": -1,
-            "InternalStructure": 70
+            "InternalStructure": 100
         }
     ],
     "LOSSourcePositions": [
         {
             "x": 0,
-            "y": 13,
-            "z": 1
-        },
-        {
-            "x": 3,
-            "y": 13,
+            "y": 17,
             "z": 0
         },
         {
-            "x": -3,
-            "y": 13,
-            "z": 0
+            "x": 5,
+            "y": 16,
+            "z": -1
+        },
+        {
+            "x": -5,
+            "y": 16,
+            "z": -1
         }
     ],
     "LOSTargetPositions": [
         {
             "x": 0,
-            "y": 13,
+            "y": 17,
+            "z": 0
+        },
+        {
+            "x": 5,
+            "y": 16,
+            "z": -1
+        },
+        {
+            "x": -5,
+            "y": 16,
+            "z": -1
+        },
+        {
+            "x": 3.5,
+            "y": 5.5,
             "z": 1
         },
         {
-            "x": 3,
-            "y": 13,
-            "z": 0
-        },
-        {
-            "x": -3,
-            "y": 13,
-            "z": 0
-        },
-        {
-            "x": 2,
-            "y": 5,
-            "z": 0
-        },
-        {
-            "x": -2,
-            "y": 5,
-            "z": 0
+            "x": -3.5,
+            "y": 5.5,
+            "z": 1
         }
     ],
-    "VariantName": "DRG-UNK",
+    "VariantName": "BNC-UNK",
     "ChassisTags": {
         "items": [],
         "tagSetSourceFile": ""
     },
-    "StockRole": "Skirmisher & Brawler",
-    "YangsThoughts": "This pirate Dragon removes a ton of autocannon and LRM ammo to carry an additional third Medium Laser and an extra heat sink.",
+    "StockRole": "Heavy Brawler & Sniper",
+    "YangsThoughts": "This pirate variant of the Banshee carries three AC/10s and it has been equipped with jump jets.",
     "FixedEquipment" : [
         {
             "MountedLocation" : "CenterTorso",

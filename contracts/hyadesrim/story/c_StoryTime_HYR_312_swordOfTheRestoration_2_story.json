@@ -2,13 +2,13 @@
     "ID" : "c_StoryTime_HYR_312_swordOfTheRestoration_2_story",
     "contractName" : "Sword Of The Restoration II",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 7,
+    "difficulty" : 6,
     "difficultyUIModifier" : 1,
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "shortDescription" : "Lord Parata's defection can only be achieved if we secure his family members currently being held hostage under Victoria's orders. Once the Restoration frees them, Prime Minister Parata will be compromised and I have personal assurances that his forces will either stand down or at least become neutral in the fight between Houses Arano and Espinosa.",
-    "longDescription" : "According to Captain Arano, it was J'oral's contacts with House Parata that made their neutralization possible. And their defection will drastically change the power balance.",
+    "shortDescription" : "Prime Minister Parata's defection from the Directorate can only be achieved if we secure his family members currently being held hostage under Victoria's orders. Once the Restoration frees them, Henare Parata have given personal assurances that his forces will either stand down or at least become neutral in the fight between Houses Arano and Espinosa. It is critical that we rescue his family members before we can move against Lady Victoria and the Directorate leadership.",
+    "longDescription" : "Since we have been unable to contact Colonel Haust since the initial landing, we have no intel on the Espinosa forces, so we'll be dropping into the dark here.",
     "salvagePotential" : 24,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -74,7 +74,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f6199573-0fcc-4065-b38a-76c9fa182ca8"
             },
-            "title" : "Secure the Area to Rescue Alexander",
+            "title" : "Investigate Hostage Location",
             "description" : "",
             "isPrimary" : true,
             "overrideIsRequiredForContractObjective" : null,
@@ -194,7 +194,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c6e18b66-a6bf-4dc4-89ea-52f936bb8130"
             },
-            "title" : "Download the Data",
+            "title" : "Wait For Colonel Haust",
             "description" : "",
             "isPrimary" : true,
             "overrideIsRequiredForContractObjective" : null,
@@ -209,7 +209,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "35aa7722-3820-4c17-9c51-ecfb90c07c80"
             },
-            "title" : "Complete the Data Download in Time",
+            "title" : "Rescue Colonel Haust On Time",
             "description" : "",
             "isPrimary" : true,
             "overrideIsRequiredForContractObjective" : null,
@@ -370,7 +370,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "How are we looking, Darius?",
+                    "words" : "The Royal Guard is on the field. All 'Mechs report operational and ready. Good work Chief Virtanen.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -386,14 +386,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Bad news. The APC holding Lord Madeira has already reached the facilty ahead. Whatever we're going to do, we need to do it fast. Our arrival won't stay a secret for long.",
+                    "words" : "Thanks Captain, I will pass on your compliments to the Mech Techs.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Kamea, according to Henare this is the last known location of House Parata's family members.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MadeiraDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "832034e3-0bcb-4176-b289-103aff88646d",
@@ -401,22 +417,54 @@
                     "cameraHeight" : "Default",
                     "revealRadius" : 150
                 },
-              {
-                "words": "I need Alexander by my side if we are going beat my Uncle and win this war. Cut him out of that facility, Commander. We will get that data after he is recovered.",
-                "wordsColor": {
-                  "r": 1,
-                  "g": 1,
-                  "b": 1,
-                  "a": 1
-                },
-                "selectedCastDefId": "castDef_KameaDefault",
-                "emote": "Default",
-                "audioName": "NONE",
-                "cameraFocusGuid": "832034e3-0bcb-4176-b289-103aff88646d",
-                "cameraDistance": "Medium",
-                "cameraHeight": "Default",
-                "revealRadius": 50
-              }
+				{
+					"words": "How likely is it that they are still there?",
+					"wordsColor": {
+					  "r": 1,
+					  "g": 1,
+					  "b": 1,
+					  "a": 1
+					},
+					"selectedCastDefId": "castDef_YangDefault",
+					"emote": "Default",
+					"audioName": "NONE",
+					"cameraFocusGuid": "832034e3-0bcb-4176-b289-103aff88646d",
+					"cameraDistance": "Medium",
+					"cameraHeight": "Default",
+					"revealRadius": 50
+				},
+				{
+					"words": "The Prime Minister has kept a watch on the location but we can't confirm it if the hostages are still there.",
+					"wordsColor": {
+					  "r": 1,
+					  "g": 1,
+					  "b": 1,
+					  "a": 1
+					},
+					"selectedCastDefId": "castDef_MadeiraDefault",
+					"emote": "Default",
+					"audioName": "NONE",
+					"cameraFocusGuid": "832034e3-0bcb-4176-b289-103aff88646d",
+					"cameraDistance": "Medium",
+					"cameraHeight": "Default",
+					"revealRadius": 50
+				},
+                {
+                    "words" : "Nor can I really trust Henare's word. Royal Guard, let's approach with caution.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
             ]
         },
         {
@@ -427,23 +475,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What is this, Cousin? You're <i>running?</i> Leaving Lord Madeira behind? I thought that you would do anything for each other.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "I <i>will</i> take him back from you, Victoria. Personally.",
+                    "words" : "And now we will see if exchanging House Parata for Colonel Haust was worth it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -459,30 +491,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I look forward to it, Kamea. In the interim, know that your dearest friend will languish as <i>I</i> languished in Lord Karosas's dungeons. I will make him suffer in your stead.",
+                    "words" : "The Prime Minister keeps hailing us from the surface.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "I know what I'm abandoning him to, Victoria\u2014as does he. Alexander is more courageous than either of us, and if you hurt him, I will kill you myself. I swear that on my father's name.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -510,7 +526,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All targets eliminated. Sit tight, and I can collect you from where you are at right now.\r",
+                    "words" : "All targets eliminated. Sit tight, and I can collect you from where you are at right now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -526,23 +542,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "What is this, cousin? You're <i>running?</i> Leaving Lord Madeira behind? I thought that you would do anything for each other.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "I <i>will</i> take him back from you, Victoria. Personally.",
+                    "words" : "And now we will see if exchanging House Parata for Colonel Haust was worth it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -558,30 +558,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I look forward to it, Kamea. In the interim, know that your dearest friend will languish as <i>I</i> languished in Lord Karosas's dungeons. I will make him suffer in your stead.",
+                    "words" : "The Prime Minister keeps hailing us from the surface.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "I know what I'm abandoning him to, Victoria\u2014as does he. Alexander is more courageous than either of us, and if you hurt him, I will kill you myself. I swear that on my father's name.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -629,22 +613,6 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                },
-                {
-                    "words" : "When I send you to hell, be sure to tell Lord Karosas that.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "m070_330_victoria",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
                 }
             ]
         },
@@ -656,7 +624,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Enough of these games, Kamea. Do you want to win little Alex back? Come and find me. We'll be waiting for you\u2026 won't we, Lord Madeira? ",
+                    "words" : "I was expecting your filthy Mercs to attempt rescuing Lady Georgia... I can't wait for our reunion, cousin.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -665,46 +633,14 @@
                     },
                     "selectedCastDefId" : "castDef_VictoriaDefault",
                     "emote" : "Default",
-                    "audioName" : "m070_350_victoria",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm sorry, Kamea. I evaded capture for as long as I could, but\u2014 [loud cracking sound] [muffled cry of pain]",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_MadeiraDefault",
-                    "emote" : "Default",
-                    "audioName" : "m070_360_alexander",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "That sound you just heard was his jaw, Kamea\u2026 it was every bit as fragile as I'd thought it would be. Consider this a promise kept from our first reunion.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_VictoriaDefault",
-                    "emote" : "Default",
-                    "audioName" : "m070_370_victoria",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "I'm coming for you, Victoria! Do you hear me?!",
+                    "words" : "You won't have to wait for long, Victoria.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -713,23 +649,7 @@
                     },
                     "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
-                    "audioName" : "m070_380_kamea",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "COMMUNICATION TERMINATED.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Computer",
-                    "emote" : "Default",
-                    "audioName" : "m070_390_com",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -745,7 +665,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Every fiber of my being is screaming at me to not abandon Lord Madeira. To drop everything and rescue him, as I know he'd rescue me. In leaving him, I betray myself.\r",
+                    "words" : "Lady Kamea, are you there? This is Colonel Haust.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -754,30 +674,14 @@
                     },
                     "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
-                    "audioName" : "m070_400_kamea",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "It's the right call, and it's what he wanted you to do. For your people. ",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "m070_410_darius",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "But Alexander...",
+                    "words" : "Colonel, were are you? We have been waiting for your signal since we landed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -786,23 +690,23 @@
                     },
                     "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
-                    "audioName" : "m070_420_kamea",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "He'll live. Have faith in that, and press on. It's the only thing you <i>can</i> do.",
+                    "words" : "It was only until the ambush that I was able to slip away from the Citadel. You need to capture me.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
-                    "audioName" : "m070_430_darius",
+                    "audioName" : "",
                     "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
@@ -843,7 +747,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The defenders are elminated. Now secure that base so we can extract Alexander.",
+                    "words" : "That's the last one. Royal Guard, let's move to secure the hostages.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -867,31 +771,31 @@
             "name" : "Inter_AlexanderIsNotThere",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
-              {
-                "words": "Well done, Commander. Farah, do you have a fix on Lord Madeira's exact location?",
-                "wordsColor": {
-                  "r": 1,
-                  "g": 1,
-                  "b": 1,
-                  "a": 1
-                },
-                "selectedCastDefId": "castDef_DariusDefault",
-                "emote": "Default",
-                "audioName": "NONE",
-                "cameraFocusGuid": "",
-                "cameraDistance": "Far",
-                "cameraHeight": "Default",
-                "revealRadius": -1
-              },
+				{
+					"words": "<i>Argo</i>, this place has been emptied, there's no one here.",
+					"wordsColor": {
+						"r": 1,
+						"g": 1,
+						"b": 1,
+						"a": 1
+					},
+					"selectedCastDefId": "castDef_KameaDefault",
+					"emote": "Default",
+					"audioName": "NONE",
+					"cameraFocusGuid": "",
+					"cameraDistance": "Far",
+					"cameraHeight": "Default",
+					"revealRadius": -1
+				},
                 {
-                    "words" : "Working on it, Darius. I just need a minute to - ",
+                    "words" : "Understood Guard One, Dr. Murad please run another sweep...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -900,7 +804,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You won't find your lapdog in that facility, however long you search, Cousin. Little Alex kneels at my feet as we speak.",
+                    "words" : "And you actually came to save Lady Georgia, cousin. How adorable of you and a missed opportunity to take you down myself.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -916,14 +820,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Get out of here, Kamea! She's using me as bait!",
+                    "words" : "Victoria, where are his family members? What have you done with them.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_MadeiraDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -932,7 +836,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "It's true, Kamea. Alexander was excellent bait. And now this war comes to an end.",
+                    "words" : "Nothing for now cousin, I wasn't sure of House Parata's loyalties until you decided to rescue them.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -947,8 +851,8 @@
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
-                /*{
-                    "words" : "That's enough for now Lord Maderia, time to see how much your Lady really cares for you.",
+                {
+                    "words" : "But don't worry, I'll deal with them the same I did with Karosas and the other betrayers. Now you die!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -962,7 +866,7 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }*/
+                }
             ]
         },
         {
@@ -973,7 +877,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The Directorate must've learned about Lord Madeira's subdermal transponder and cloned the signal. Keep fighting down there\u2014Sumire and I are working to get a fix on his actual location.",
+                    "words" : "Lady Arano, the Prime Minister is demanding details about his family.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -989,7 +893,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Work quickly, Dr. Murad. This could be our only chance at finding him!",
+                    "words" : "We don't know yet! Tell him to wait!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1014,39 +918,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Lady Arano, I've got a fix on Lord Madeira's transponder signal. He's being moved\u2014it looks like they're taking him to the most heavily-reinforced Directorate stronghold on Guldra.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_FarahDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Ms. Meyer! I need you to pick us up in the Leopard. It's the only way we can reach him before it's too late.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_KameaDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "That's a negative, Lady Arano. I'm reading dozens of antiaircraft guns and missile turrets around that stronghold. If I tried to fly you in, they'd blow me out of the sky.",
+                    "words" : "Captain, we're receiving a new transmission... patching it through.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1062,7 +934,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Damn it. What are our options?",
+                    "words" : "Welcome to Tyrlon, Lady Arano. I apologize I couldn't contact you until now.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Colonel Haust, your absence has been noted. Where are you now?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1078,14 +966,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "If you take off at a dead sprint, you might be able to catch them. It'll be pretty dicey, though\u2014I'm seeing a lot of 'Mechs between you and Lord Madeira. And we'll have no time to retrieve the evidence that he gathered.",
+                    "words" : "Watching you and your Royal Guards from where I've been commanding this ambush.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1094,7 +982,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The evidence can wait, we have to\u2026 [tense exhalation] \u2026Damn it.",
+                    "words" : "What? That was not what we had agreed upon, Colonel|",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1110,7 +998,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "\u2026That intel is vital to our war effort, and it's nearly in our grasp. I\u2026 [long pause] \u2026I cannot risk the future of the Reach for one man. Mr. Oliveira, I need you to give me the coordinates of Lord Madeira's dead drop. Forgive me, Alexander, but your rescue will have to wait.",
+                    "words" : "Lady Arano, I proposed the ambush to Lady Victoria as a way to leave the Citadel, otherwise I couldn't contact you safely.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I see and what are your intentions now?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1126,17 +1030,49 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Roger that, Lady Arano\u2014I'm marking the coordinates on your map now. Commander we show multiple dropships inbound, as soon as you have the Data get out of there!",
+                    "words" : "You need to personally extract me at this safe location. But there's still another loyalist lance in the area and Lady Victoria will soon realize something is wrong.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "ac26bc2c-b995-466f-afaa-5fdd3a456892",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And in exchange?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The key to your throne. See you soon, Lady Arano.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1151,14 +1087,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're receiving the data now, Lady Arano. Commander, I'm gonna have to ask you to keep one of your 'Mechs near that relay until the upload is finished.\n",
+                    "words" : "Colonel Haust, we are at the designated coordinates, where are you?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1176,14 +1112,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Transmission complete, Lady Arano - we have the package in hand and Sumire is on her way. ",
+                    "words" : "We have the Colonel. Pilot Meyer, get us a extraction zone now|",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Roger that, Captain.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "be4644cb-8385-4afe-9f56-93bc0d58d4eb",
@@ -1201,14 +1153,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's the last inbound hostile dropship from the landing force we have the window we need to evac.",
+                    "words" : "Lady Victoria has kept this DropShip as a final surprise.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "ec9f82ab-0359-40f7-836f-626d130259dc",
@@ -1217,7 +1169,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Destroying my cousin's landing force would show her the costs of her treachery and I am willing pay. However getting that recovering that data is still our priority.",
+                    "words" : "Why hasn't she escaped Tyrlon on it?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1225,6 +1177,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_KameaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Pride Lady Arano, and some rather flawed intelligence on my part.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SE01_CaptainHaustDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "e6a62fce-57da-47f8-ba23-34c254c98171",
@@ -1238,7 +1206,7 @@
     "overrideAutoCompleteDialogueId" : "1c0cc7ed-7e9a-4e37-be6b-e82cf444f5d8",
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : 2880000,
     "travelOnly" : false,
@@ -1290,9 +1258,9 @@
                             "EncounterObjectGuid" : "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
                         },
                         "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_restoration",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_atlas_AS7-D-HT",
+                        "unitDefId" : "mechdef_kintaro_KTO-19b",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1311,7 +1279,7 @@
                             ],
                             "tagSetSourceFile" : "Tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_story_kamea_mid",
+                        "pilotDefId" : "pilot_story_kamea_end",
                         "pilotTagSet" : {
                             "items" : [
                                 
@@ -1334,8 +1302,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_quickdraw_QKD-4G",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1354,7 +1322,7 @@
                             ],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_default",
+                        "pilotDefId" : "pilot_HYR_KameaGuard1",
                         "pilotTagSet" : {
                             "items" : [
                                 
@@ -1377,8 +1345,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_phoenixhawk_PXH-1",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1397,7 +1365,7 @@
                             ],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_default",
+                        "pilotDefId" : "pilot_HYR_KameaGuard2",
                         "pilotTagSet" : {
                             "items" : [
                                 
@@ -1420,8 +1388,8 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_catapult_CPLT-C1",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1440,7 +1408,7 @@
                             ],
                             "tagSetSourceFile" : "Tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_default",
+                        "pilotDefId" : "pilot_HYR_KameaGuard3",
                         "pilotTagSet" : {
                             "items" : [
                                 
@@ -1529,10 +1497,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_GALLEON",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_vehicle",
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -1572,10 +1541,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_GALLEON",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_vehicle",
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -1615,10 +1585,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_dragon_DRG-1N",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_heavy"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -1688,7 +1659,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Sniper",
+                        "unitDefId" : "turretdef_Standard_Sniper",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1731,7 +1702,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Laser",
+                        "unitDefId" : "turretdef_Standard_Laser",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1774,7 +1745,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
-                        "unitDefId" : "turretdef_Light_Laser",
+                        "unitDefId" : "turretdef_Standard_Laser",
                         "unitTagSet" : {
                             "items" : [
                                 
@@ -1847,10 +1818,12 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_hunchback_HBK-4P",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium",
+								"unit_role_brawler"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -1890,10 +1863,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_trebuchet_TBT-5N",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -1933,10 +1907,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_panther_PNT-9R",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_light"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -1976,10 +1951,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_wolverine_WVR-6K",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -2019,10 +1995,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_CARRIER_SRM",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_vehicle",
+                                "unit_heavy"
                             ],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
@@ -2092,10 +2069,12 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_firestarter_FS9-H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_light",
+								"unit_role_sniper"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -2135,10 +2114,12 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_firestarter_FS9-H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_light",
+								"unit_lance_vanguard"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -2178,10 +2159,12 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_firestarter_FS9-H",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium",
+								"unit_role_assassin"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -2221,16 +2204,20 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_kintaro_KTO-18",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium",
+								"unit_lance_tank"
                             ],
                             "tagSetSourceFile" : ""
                         },
                         "unitExcludedTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium",
+								"unit_role_assassin"
                             ],
                             "tagSetSourceFile" : "Tags/UnitTags"
                         },
@@ -2294,10 +2281,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_CARRIER_LRM",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_vehicle",
+                                "unit_assault"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -2337,10 +2325,12 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_blackknight_BL-6-KNT",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_heavy",
+								"unit_role_sniper"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -2410,10 +2400,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_commando_COM-1B",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -2453,10 +2444,11 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-D",
+                        "unitDefId" : "Tagged",
                         "unitTagSet" : {
                             "items" : [
-                                
+                                "unit_mech",
+                                "unit_medium"
                             ],
                             "tagSetSourceFile" : ""
                         },
