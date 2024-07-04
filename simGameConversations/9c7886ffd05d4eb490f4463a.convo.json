@@ -9,7 +9,7 @@
         "id": "9c6ecea4d3d60e27b4721efc"
       },
       "index": 0,
-      "text": "<i>People of the Aurigan Reach, I am High Lady Kamea Arano and I am speaking to you from the <i>Argo</i>, currently orbiting our world of Tyrlon IV.</i>",
+      "text": "People of the Aurigan Reach, I am High Lady Kamea Arano and I am speaking to you from the <i>Argo</i>, currently orbiting our world of Tyrlon IV.",
       "branches": [
         {
           "responseText": "",
@@ -140,7 +140,7 @@
         "id": "9cc7c3aa11c744b08216d7d2"
       },
       "index": 1,
-      "text": "<i>Today, from this DropShip, a tremendous wrong that begun years ago with illegal coup of House Espinosa will finally be corrected.</i>\n\n<i>My uncle's actions led the Directorate into a civil war that has divided my people and sundered the Reach apart and leaving it defenseless against the ruthless cruelty of the Taurians.</i>",
+      "text": "Today, from this DropShip, a tremendous wrong that begun years ago with illegal coup of House Espinosa will finally be corrected.\n\nMy uncle's actions led the Directorate into a civil war that has divided my people and sundered the Reach apart and leaving it defenseless against the ruthless cruelty of the Taurians.",
       "branches": [
         {
           "responseText": "",
@@ -191,7 +191,7 @@
         "id": "9cbdf14ade436ab6b5866477"
       },
       "index": 2,
-      "text": "<i>And even when I chose to stay far from his rule, his assassination attempts on me, and the many crimes committed by the Directorate against the Aurigans cannot go further.</i>",
+      "text": "And even when I chose to stay far from his rule, his assassination attempts on me, and the many crimes committed by the Directorate against the Aurigans cannot go further.",
       "branches": [
         {
           "responseText": "",
@@ -242,7 +242,7 @@
         "id": "9cae621d3f041f9f27aa037f"
       },
       "index": 3,
-      "text": "<i>For I am High Lady Kamea Arano, the Sword of the Restoration, and I am about to bring justice to us all by assuming rightfully my throne and ending House Espinosa's tyranny.\n\nSo I ask you all to join me now in overthrowing our oppressors. For the Reach!</i>",
+      "text": "For I am High Lady Kamea Arano, the Sword of the Restoration, and I am about to bring justice to us all by assuming rightfully my throne and ending House Espinosa's tyranny.\n\nSo I ask you all to join me now in overthrowing our oppressors| For the Reach! The Directorate must fall!",
       "branches": [
         {
           "responseText": "",
@@ -320,7 +320,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -363,7 +379,7 @@
         "id": "9c24ee06c2b3d79333f16017"
       },
       "index": 6,
-      "text": "I still can't believe that the security codes actually worked all the way through the planet's orbit.\n\nWhomever is helping us down in the ground, I'll buy them a drink afterwards.",
+      "text": "I still can't believe that the security codes actually worked all the way through the planet's orbit.\n\nWhomever is helping us down in the ground, I'll buy them a [[DM.BaseDescriptionDefs[LorePPC],PPC]] afterwards.",
       "branches": [
         {
           "responseText": "",
@@ -398,7 +414,7 @@
         "id": "9c495fe9925210865b86a9df"
       },
       "index": 7,
-      "text": "Colonel Haust has given us this window of opportunity for us to masquerade as one of the Directorate's DropShips.\n\nBut if someone decides to actually have a visual on us, the whole ruse will fail so I recommend we move quickly, Lady Arano.",
+      "text": "Colonel Haust has given us this window of opportunity for us to masquerade as one of the [[DM.Factions[faction_AuriganDirectorate],Directorate]]'s DropShips.\n\nBut if someone decides to actually have a visual on us, the whole ruse will fail so I recommend we move quickly, Lady Arano.",
       "branches": [
         {
           "responseText": "",
@@ -433,10 +449,10 @@
         "id": "9cbad2f75920eeb0f5506863"
       },
       "index": 8,
-      "text": "We have already secured House Parata's neutrality, so the <i>Delfinas</i> and my Royal Guard will land on the spaceport and secure it before the Directorate's forces can redeploy to stop us.\n\n",
+      "text": "We have already secured House [[DM.BaseDescriptionDefs[LoreHouseParata], Parata]]'s neutrality, so the <i>[[DM.BaseDescriptionDefs[LoreDelfinas],Delfinas]]</i> and my Royal Guard will land on the spaceport and secure it before the Directorate's forces can redeploy to stop us.\n\n",
       "branches": [
         {
-          "responseText": "And what us Lady Arano?",
+          "responseText": "And what about us Lady Arano?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 9,
@@ -503,10 +519,10 @@
         "id": "9c52aee5ee4324e3f019fba6"
       },
       "index": 10,
-      "text": "And once we secure it, we'll have control of Tyrlon and its skies and we'll trap their military leadership on the planet.\n\nThe remaining Directorate forces will be stranded since we gained control of their navy.",
+      "text": "Once we secure it, we'll have control of [[DM.BaseDescriptionDefs[LoreTyrlon],Tyrlon]] and its skies and we'll trap their military leadership on the planet.\n\nThe remaining Directorate forces will be stranded after we gain control of their navy.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Understood, we'll take over the spaceport.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 11,
@@ -538,7 +554,7 @@
         "id": "9c8f6fafb44236e1ca0ba3cc"
       },
       "index": 11,
-      "text": "We were hoping to trap both Director Espinosa and his daughter Victoria in Tyrlon, but Colonel Haust has just reported the presence of Lady Santiago on the planet despite our efforts to draw them both here.\n\nSo she is our primary target on this entire operation.",
+      "text": "We were hoping to trap both [[DM.BaseDescriptionDefs[LoreSantiagoEspinosa],Director Espinosa]] and his [[DM.BaseDescriptionDefs[LoreVictoriaEspinosa],daughter]] in Tyrlon, but Colonel Haust has just reported the presence of Lady Victoria on the planet despite our efforts to draw them both here.\n\nSo she is our primary target on this entire operation, Commander {COMMANDER.LastName}.",
       "branches": [
         {
           "responseText": "",
@@ -573,7 +589,7 @@
         "id": "9cb453e95ba89382a21c2579"
       },
       "index": 12,
-      "text": "Lady Victoria and the Directorate are using a former Liao fortress that once belonged to House Parata as their combined headquarters in the civil conflict.\n\nWith the help of House Parata, we'll take it and cripple their entire war effort.",
+      "text": "Now Lady Victoria and the Directorate are using a former [[DM.Factions[faction_Liao],Liao]] fortress called the 'Citadel' as their combined headquarters in the civil conflict.\n\nWith the help of House Parata, we'll take it and cripple their entire war effort by capturing her and the Directorate military leadership.",
       "branches": [
         {
           "responseText": "What are our orders regarding Lady Victoria?",
@@ -608,7 +624,7 @@
         "id": "9cd08e36b36a04e6aae3ccb1"
       },
       "index": 13,
-      "text": "Capture if possible, kill if necessary.\n\nThose are your orders regarding her presence in the battlefield, Commander.",
+      "text": "Capture if possible, kill if necessary.\n\nThose are your orders regarding her presence in the battlefield, {COMMANDER.FirstName}.",
       "branches": [
         {
           "responseText": "Kill if necessary, understood Lady Arano.",
@@ -643,10 +659,10 @@
         "id": "9c2ffa8e7703f6de4691aaf0"
       },
       "index": 14,
-      "text": "No Commander, it is important to capture her, if we have her alive we can pressure her father to capitulate and end his war.\n\nOtherwise, we might still have to invade and conquer Coromodir.",
+      "text": "No Commander {COMMANDER.LastName}, it is important to capture her, if we have her alive it will be easier to pressure her father to capitulate and end his war.\n\nOtherwise, we might still have to invade and conquer [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir]].",
       "branches": [
         {
-          "responseText": "The only justice she deserves is to face the barrel of a PPC, Lady Arano.",
+          "responseText": "Alexander, the only justice she deserves is to face the barrel of a PPC.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 15,
@@ -678,7 +694,7 @@
         "id": "9c00984261c4c79fc2f9d766"
       },
       "index": 15,
-      "text": "It will be more important for the Reach if it's the Founding Council that judges their actions during the coup and afterwards and under our laws.\n\nThis is what makes us <i>different</i>, Commander.",
+      "text": "You may be right but it will be more important for the [[DM.BaseDescriptionDefs[LoreAuriganReach],Reach]] if it's the [[DM.BaseDescriptionDefs[LoreFoundingCouncil],Founding Council]] that judges their actions during the [[DM.BaseDescriptionDefs[LoreEspinosasCoup],coup]] and afterwards and under our laws.\n\nThis is what makes us <i>different</i>, Commander.",
       "branches": [
         {
           "responseText": "",
@@ -713,7 +729,7 @@
         "id": "9c043203c4691f48fdb338fd"
       },
       "index": 16,
-      "text": "Ah, winner's justice.\n\nAlex, I agree with the Commander, it would be easier just to shoot both in the head and spare all the mess.",
+      "text": "Ah, winner's justice as usual.\n\nAlex, I agree with the Commander, it would be easier just to shoot both Espinosas in the head than dealing with them alive afterwards.",
       "branches": [
         {
           "responseText": "",
@@ -748,7 +764,7 @@
         "id": "9c391dc46fa2805265484368"
       },
       "index": 17,
-      "text": "What about House Parata's forces, Lady Arano?\n\nAre we certain that they'll defect from House Espinosa?",
+      "text": "But what about House Parata's forces, Lady Arano?\n\nAre we certain that they'll defect from the Directorate and House Espinosa?",
       "branches": [
         {
           "responseText": "",
@@ -783,7 +799,7 @@
         "id": "9ce2c6aa52fcbcf1febe4fb6"
       },
       "index": 18,
-      "text": "Our deal with Prime Minister Parata is that he and the rest of his house will be safe during the transition of power and retain control of Tyrlon.\n\nAnd once we secure the spaceport with their neutrality, there won't be no change of heart because their loyalties will be clear for all.",
+      "text": "Our deal with Prime Minister Parata is that he and the rest of his house will be safe during the transition of power and retain control of Tyrlon.\n\nOnce we secure the spaceport, their true loyalties will be revealed for all.",
       "branches": [
         {
           "responseText": "",
@@ -853,7 +869,7 @@
         "id": "9cf6145efb557fc27d52a5a5"
       },
       "index": 20,
-      "text": "Colonel Haust's defection to us at Weldry means that we control their entire intelligence apparatus.\n\nMy uncle and cousin are blind to our moves.",
+      "text": "Colonel Haust's defection to us at [[DM.BaseDescriptionDefs[LoreWeldry],Weldry]] means that we control their entire intelligence apparatus, Chief Virtanen... they're even more blind and unprepared than us.",
       "branches": [
         {
           "responseText": "",
@@ -879,7 +895,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59baac916230356416000354",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -888,7 +904,7 @@
         "id": "9c858d7d62febc2737d79710"
       },
       "index": 21,
-      "text": "And it has always been a gamble since we fled from Coromodir years ago, Yang.\n\nBut now we have a couple of aces in our hand, so it's time to play them.",
+      "text": "And it has always been a gamble since we fled from Coromodir years ago, Yang.\n\nBut now we have a couple of aces in my hand, so it's time to play them.",
       "branches": [
         {
           "responseText": "",
@@ -918,13 +934,13 @@
       "actions": {
         "ops": [
           {
-            "functionName": "Set BattleTech Camera Lock",
+            "functionName": "Play BattleTech Audio Event",
             "args": [
               {
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "DEFAULT",
+                "string_value": "GConv-LastDialogueBranchMusic",
                 "call_value": null,
                 "variableref_value": null
               }

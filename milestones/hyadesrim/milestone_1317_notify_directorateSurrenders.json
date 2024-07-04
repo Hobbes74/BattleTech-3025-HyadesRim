@@ -14,7 +14,7 @@
             "Scope" : "Company",
             "RequirementTags" : {
                 "items" : [
-					"flashpoint_aranoRestoration_complete"					
+					"flashpoint_swordOfTheRestoration_complete"					
 				],
                 "tagSetSourceFile" : ""
             },
@@ -54,12 +54,67 @@
             "Actions" : [			
                 {
                     "Type" : "System_PauseNotification",
-                    "value" : "The rule of the Directorate is over, their garrisons are surrendering or turning to the Restoration. My uncle may be still running but the Founding Council has reinstated me and House Arano as the rightful rulers of the Reach, so he has lost already.",
+                    "value" : "The coup is over and the Sword of the Restoration has won. The rule of the Directorate is over and their garrisons are surrendering or defecting to the my cause. House Arano is the rightful ruler of the Reach once more.",
 					"additionalValues" : [
 						"Directorate Surrenders",
 						"castDef_KameaDefault"
 					],
                     "valueConstant" : null
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Tyrlon",
+					"additionalValues" : [ "starsystemdef_Tyrlon_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Guldra",
+					"additionalValues" : [ "starsystemdef_Guldra_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Heliat",
+					"additionalValues" : [ "starsystemdef_Heliat_Contested" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Gangtok",
+					"additionalValues" : [ "starsystemdef_Gangtok_Contested" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Coromodir",
+					"additionalValues" : [ "starsystemdef_Coromodir_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Itrom",
+					"additionalValues" : [ "starsystemdef_Itrom_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Mechdur",
+					"additionalValues" : [ "starsystemdef_Mechdur_Flipped" ]
+                },	
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Artru",
+					"additionalValues" : [ "starsystemdef_Artru_Contested" ]
+                },
+				{
+					"Type" : "StarSystem_SetActiveDef",
+					"value" : "starsystemdef_Mangzhangdian",
+					"additionalValues" : [ "starsystemdef_Mangzhangdian_Contested" ]
+				},
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Katinka",
+					"additionalValues" : [ "starsystemdef_Katinka_Contested" ]
+                },
+				{
+                    "Type" : "StarSystem_SetActiveDef",
+                    "value" : "starsystemdef_Smithon",
+					"additionalValues" : [ "starsystemdef_Smithon_Contested" ]
                 }
             ],
             "ForceEvents" : null,
