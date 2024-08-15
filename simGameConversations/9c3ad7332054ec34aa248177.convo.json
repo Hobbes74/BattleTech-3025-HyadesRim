@@ -9,7 +9,7 @@
         "id": "9cb083990fea026606b8d17b"
       },
       "index": 0,
-      "text": "Unnatural Selection 2",
+      "text": "Darius, you don't sound well.\n\nWhat's the status on the ground?",
       "branches": [
         {
           "responseText": "",
@@ -106,10 +106,10 @@
         "id": "9c68acee5b6ee2d30e26cd8a"
       },
       "index": 1,
-      "text": "Darius, you look like you've seen... you don't look well.",
+      "text": "<i>Argo</i>, the Taurians have been conducting indiscriminate artillery bombardments in Nassau Heights and other settlements.\n\nThere are a lot of casualties from those strikes and everyone has to keep close to a vacuum suit at all times.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "XO, what about your family? Have you found them?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 2,
@@ -141,10 +141,10 @@
         "id": "9c143220c3b208f0d549e6a6"
       },
       "index": 2,
-      "text": "Yeah, I know. Until you diverted their attention, the Taurians were doing regular artillery bombardments on the moon's domes... there are a lot of casualties from those strikes. \n\nEveryone has to carry a vacuum suit at all times.",
+      "text": "Yeah, their moon dome was lucky to withhold a couple LRM volleys fired at it and we're ready to leave. \n\nBut everyone has to carry a vacuum suit at all times.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Roger that XO, Yang, what is our status on the 'Mechs? ",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 3,
@@ -176,7 +176,7 @@
         "id": "9c37c12c631d19780bc72e8a"
       },
       "index": 3,
-      "text": "Roger that. \n\nYang, what is our status? ",
+      "text": "We're ready to deploy them to deal with the Taurian ground commander, boss.",
       "branches": [
         {
           "responseText": "",
@@ -211,10 +211,10 @@
         "id": "9c679c4c240a5b6903dff14e"
       },
       "index": 4,
-      "text": "Once we finish patching up your 'Mechs, we'll start setting up the explosives by the SLDF base entrance. ",
+      "text": "Commander, I still don't think it's such a good idea to redeploy rather than picking up Darius and leaving this system.\n\nThe Iberia...",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "What's wrong Sumire?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 5,
@@ -246,7 +246,7 @@
         "id": "9cabfcabee7bdcfc0f569b12"
       },
       "index": 5,
-      "text": "Once Ostergaard realizes that he's dealing with a single lance, he'll move to strike directly at the valley and avoid dealing with the mountain passes.",
+      "text": "I'm sorry Commander... what is that???\n\nFarah, is that a colony ship?",
       "branches": [
         {
           "responseText": "",
@@ -281,7 +281,7 @@
         "id": "9c8ecbf078539d7ba6f75298"
       },
       "index": 6,
-      "text": "Farad reports they already had AeroSpace assets overflying their location. \n\nThe Taurians know that something is down there.",
+      "text": "Likely it once was a old Conestoga but has been massively changed, Sumire.\n\nAnd this JumpShip... this is a WarShip, and it can stalk and destroy us.",
       "branches": [
         {
           "responseText": "",
@@ -308,7 +308,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "dobrev",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
