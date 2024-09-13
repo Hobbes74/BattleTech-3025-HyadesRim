@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1305_sim_argo",
+        "Id" : "milestone_1317_notify_mech",
         "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Details" : "pause notification",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [],
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1305,
+                    "val" : 1317,
                     "valueConstant" : null
                 }
             ]
@@ -34,41 +34,28 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-			    "items" : [],
-                "tagSetSourceFile" : ""
-			},
-            "RemovedTags" : {
-				"items" : [
-					"AARCompleteNotificationsDisabled"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
+            "RemovedTags" : {},
             "Stats" : [
                 {
                     "typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1316,
-					"set" : true,
+                    "value" : 1,
                     "valueConstant" : ""
                 }
-			],
-            "Actions" : [	
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Tyrlon",
-					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
-                },
-				{
-					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_312_swordOfTheRestoration",
-					"valueConstant" : null,
-					"additionalValues" : [
-						"Tyrlon"
-					]
-				}
             ],
-            "ForceEvents" : [],
+            "Actions" : [				
+                {
+                    "Type" : "System_PauseNotification",
+                    "value" : "Boss, Lady Arano has given us the late Lady Victoria's <i>King Crab</i> BattleMech that we defeated in combat. And after it was salvaged, she has ordered the Aurigan quartermasters to equip it with the latest advanced weaponry available, as an additional reward.",
+					"additionalValues" : [
+						"LosTech 'Mech",
+						"castDef_YangDefault"
+					],
+                    "valueConstant" : null
+                }
+            ],
+            "ForceEvents" : null,
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }

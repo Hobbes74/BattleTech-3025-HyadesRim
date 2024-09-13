@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "milestone_1305_sim_argo",
-        "Name" : "sim",
-        "Details" : "Sim game phase",
+        "Id" : "milestone_1311_talk_aranoRestoration_2",
+        "Name" : "conversation DEPRECATED",
+        "Details" : "Conversations",
         "Icon" : "",
         "Cost" : 0,
         "Rarity" : 0,
@@ -13,7 +13,7 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : [],
+                "items" : null,
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -24,7 +24,7 @@
                 {
                     "obj" : "NextStoryMilestone",
                     "op" : "Equal",
-                    "val" : 1305,
+                    "val" : 1311,
                     "valueConstant" : null
                 }
             ]
@@ -34,41 +34,27 @@
         {
             "Scope" : "Company",
             "Requirements" : null,
-            "AddedTags" : {
-			    "items" : [],
-                "tagSetSourceFile" : ""
-			},
-            "RemovedTags" : {
-				"items" : [
-					"AARCompleteNotificationsDisabled"
-				],
-                "tagSetSourceFile" : ""
-			},
+            "AddedTags" : {},
+            "RemovedTags" : {},
             "Stats" : [
-                {
-                    "typeString" : "System.Int32",
+				{
+					"typeString" : "System.Int32",
                     "name" : "NextStoryMilestone",
-                    "value" : 1316,
-					"set" : true,
+                    "value" : 1,
                     "valueConstant" : ""
-                }
-			],
-            "Actions" : [	
-				{
-                    "Type" : "StarSystem_SetActiveDef",
-                    "value" : "starsystemdef_Tyrlon",
-					"additionalValues" : [ "starsystemdef_Tyrlon_Contested" ]
-                },
-				{
-					"Type" : "System_AddFlashpoint",
-					"value" : "fp_StoryTime_HYR_312_swordOfTheRestoration",
-					"valueConstant" : null,
-					"additionalValues" : [
-						"Tyrlon"
-					]
 				}
             ],
-            "ForceEvents" : [],
+            "Actions" : [
+                {
+                    "Type" : "System_StartConversation",
+                    "value" : "9c7886ffd05d4eb490f4463b",
+                    "additionalValues" : [
+						"ARANO RESTORATION II",
+						"In Orbit - Tyrlon"
+					]
+                }
+            ],
+            "ForceEvents" : null,
             "TemporaryResult" : false,
             "ResultDuration" : 0
         }
