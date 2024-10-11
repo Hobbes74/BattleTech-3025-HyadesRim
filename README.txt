@@ -25,8 +25,6 @@ Features
 
 * New story includes a total of 136 new contracts rewritten from the originals, 161 new crew conversations and 358 new lore descriptions, and is divided into three parts, each with its own subarcs.
 
-* The vanilla FPs are included in the new Campaign as independent mini-campaigns, except for the Black Widow mini-campaign but still appears on Career mode.
-
 * 473 new playable star systems, adding all of the Taurian, Canopian and Marian worlds plus several Deep Periphery systems, with the star map extended in all directions to also include more Davion, Liao and Marik systems, as well as other Periphery realms. All of the new systems' descriptions have been written to reflect the 3025 BattleTech era.
 
 * 102 new events that include crew deaths, a parrot, JumpShip issues, and assorted oddities, all part of living during a difficult period and region of space, with wars flaring up all the national sentiments.
@@ -70,7 +68,7 @@ Balance and Story Changes
 
 * The special equipment of the Marauder has been nerfed, with the Called Shot ability reduced from a 33% maximum to 25%, and the 10% damage reduction only applying to the Marauder, not the whole lance.
 
-* Stores/Black Markets have been changed to restore the appearance of LosTech to before the Heavy Metal DLC was released. Since it's 3025 it is only possible to find Star League tech era in former SLDF systems and it's impossible to find full SLDF 'Mechs for sale. And the appearance of 3025 'Mechs in stores has also been reduced or replaced by pirate variants in black markets.
+* Stores/Black Markets have been changed to restore the appearance of LosTech to before the Heavy Metal DLC was released. Since it is 3025 it's only possible to find Star League tech era in former SLDF systems and it's impossible to find full SLDF 'Mechs for sale. And the appearance of 3025 'Mechs in stores has also been reduced or replaced by pirate variants in black markets.
 
 * Opfor pilots levels can vary, being possible to encounter pilots with a different skill levels than the contract's difficulty; there's also a chance some of them might be immune to headshots, in order to balance the player's Called Shot ability.
 
