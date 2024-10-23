@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Westerhand",
 		"Name": "Westerhand",
-		"Details": "Westerhand II, settled during the First Exodus from Terra, is the second planet in the Westerhand system and has three moons named Delsia, Ralston and Vannora. Self-sufficient and moderately advanced, Westerhand nonetheless lacks any significant industrial development or output.",
+		"Details": "Westerhand II, settled during the First Exodus from Terra, is the second planet in the Westerhand system and has three moons named Delsia, Ralston and Vannora. Self-sufficient and moderately advanced, Westerhand nonetheless lacks any significant industrial development or output, although it has a thriving mercenary hall.",
 		"Icon": ""
 	},
 	"Position": {
@@ -13,15 +13,13 @@
 	"Tags": {
 		"items": [
 			"planet_name_westerhand",
-			"planet_climate_mars",
-			"planet_climate_lunar",
-			"planet_climate_rocky",
 			"planet_climate_tropical",
-			"planet_climate_water",
 			"planet_feature_moon03",
 			"planet_size_medium",
-			"planet_climate_terran",
-			"planet_pop_medium",
+			"planet_other_hub",
+			"planet_other_blackmarket",
+			"planet_industry_recreation",
+			"planet_pop_large",
 			"planet_faction_liao",
 			"planet_progress_3"
 		],
@@ -36,8 +34,7 @@
 		"badlandsParched",
 		"polarFrozen",
 		"tundraFrozen",
-		"jungleTropical",
-		"urbanHighTech"
+		"jungleTropical"
 	],
 	"MapRequiredTags": {
 		"items": [],
@@ -48,7 +45,7 @@
 		"tagSetSourceFile": ""
 	},
 	"FuelingStation": false,
-	"JumpDistance": 8,
+	"JumpDistance": 7,
 	"ownerID": "Liao",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
@@ -116,7 +113,7 @@
             "Scope": "Company",
             "RequirementTags": {
                 "items": [
-                    "map_travel_4"
+                    "map_travel_2l"
                 ],
                 "tagSetSourceFile": ""
             },
@@ -139,7 +136,9 @@
 	],
 	"FactionShopOwnerID": "INVALID_UNSET",
 	"FactionShopItems": null,
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Westerhand",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",

@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_Hustaing",
         "Name": "Hustaing",
-		"Details": "<i>Here might be Liaos.</i>",
+		"Details": "Colonized during the First Exodus from Terra, Hustaing later became host to one of the Capellan Confederation's better known artistic communities during the Star League, although the Maskirovka later heavily suppressed any dissident voices of the Chancellor during the Sucession Wars.",
         "Icon": ""
     },
     "Position": {
@@ -15,7 +15,14 @@
 			"planet_name_hustaing",
 			"planet_size_medium",
 			"planet_climate_terran",
-			"planet_pop_medium",
+			"planet_other_megacity",
+			"planet_other_starleague",
+			"planet_industry_rich",
+			"planet_industry_manufacturing",
+			"planet_civ_innersphere",
+			"planet_feature_moon02",
+			"planet_pop_large",
+			"planet_industry_research",
 			"planet_faction_liao",
 			"planet_progress_3"
         ],
@@ -42,7 +49,7 @@
         "tagSetSourceFile": ""
     },
     "FuelingStation": false,
-    "JumpDistance": 8,
+    "JumpDistance": 10,
     "ownerID": "Liao",
     "ShopRefreshRate": 0,
     "ShopMaxInventory": 0,
@@ -110,7 +117,7 @@
             "Scope": "Company",
             "RequirementTags": {
                 "items": [
-                    "map_travel_4"
+                    "map_travel_2l"
                 ],
                 "tagSetSourceFile": ""
             },
@@ -128,7 +135,15 @@
     "RoninHiringChance": 0,
     "UseMaxContractOverride": false,
     "MaxContractOverride": 0,
-    "SystemShopItems": [],
+	"SystemShopItems": [
+		"itemCollection_shop_manufacturing",
+		"itemCollection_shop_manufacturingProgression",
+		"itemCollection_shop_research",
+		"itemCollection_shop_researchProgression",
+		"itemCollection_shop_starleague",
+		"itemCollection_shop_starleagueProgression",
+		"itemCollection_major_Liao"
+	],
     "FactionShopOwnerID": "INVALID_UNSET",
     "FactionShopItems": null,
     "BlackMarketShopItems": null,
@@ -141,7 +156,7 @@
     "DefaultDifficulty": 2,
     "DifficultyList": [
         2,
-        2
+        9
     ],
     "DifficultyModes": [
         "KAMEA_CAMPAIGN",
