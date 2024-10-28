@@ -115,13 +115,22 @@
                     "Actions" : [
                         {
                             "Type" : "System_SimGameCharacterVisible",
-                            "value" : true,
+                            "value" : "True",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "Darius",
                                 "Sumire",
                                 "Yang",
                                 "Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea",
+                                "Alexander"
                             ]
                         },
                         {
@@ -187,16 +196,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_lostCanyon_aBad",
+                            "value" : "mapGeneral_crimsonValley_bMars",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_StoryTime_HYR_315_ghostRiders_1_attackDefend",
+                                "c_StoryTime_HYR_315_ghostRiders_1_attack",
                                 "TortugaPirates",
                                 "RimPirates",
                                 "6",
-                                "ms_fp_ghostRiders_004_Talk",
+                                "ms_fp_ghostRiders_004_TalkChoice",
                                 null,
                                 null,
                                 null
@@ -222,8 +231,8 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_004_Talk",
-                "Name" : "Talk",
+                "Id" : "ms_fp_ghostRiders_004_TalkChoice",
+                "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : null
             },
@@ -267,7 +276,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_ghostRiders_005_Mission",
+                            "value" : "ms_fp_ghostRiders_005_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -283,7 +292,96 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_005_Mission",
+                "Id" : "ms_fp_ghostRiders_005_Branch",
+                "Name" : "Branch",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_a"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_100_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_b"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_200_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_100_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -316,17 +414,87 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_toxicMire_aBad",
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_lostCanyon_aBad",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_StoryTime_HYR_315_ghostRiders_2_fireMission",
+                                "c_StoryTime_HYR_315_ghostRiders_2a_attackDefend",
                                 "TortugaPirates",
                                 "RimPirates",
                                 "6",
-                                "ms_fp_ghostRiders_006_Talk",
+                                "ms_fp_ghostRiders_101_Mission",
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_101_Mission",
+                "Name" : "Mission",
+                "Details" : "The 3rd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_bleakRidge_aBad",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "c_StoryTime_HYR_315_ghostRiders_3_threeWayBattle",
+                                "TortugaPirates",
+                                "RimPirates",
+                                "6",
+                                "ms_fp_ghostRiders_102_Talk",
+                                "GhostRiders",
                                 null,
                                 null,
                                 null
@@ -344,9 +512,9 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_006_Talk",
+                "Id" : "ms_fp_ghostRiders_102_Talk",
                 "Name" : "Talk",
-                "Details" : "flashpoint",
+                "Details" : "Closing Conversation.",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -389,7 +557,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_ghostRiders_007_Mission",
+                            "value" : "ms_fp_ghostRiders_103_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -405,7 +573,190 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_007_Mission",
+                "Id" : "ms_fp_ghostRiders_103_Complete",
+                "Name" : "Complete",
+                "Details" : "Flashpoint completion.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_ghostRiders_complete"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_ghostRiders_104_Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_ghostRiders",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_104_Reward",
+                "Name" : "Reward",
+                "Details" : "Rewards",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Funds",
+                            "value" : "1000000",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_200_Mission",
+                "Name" : "Mission",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_toxicMire_aBad",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "c_StoryTime_HYR_315_ghostRiders_2b_fireMission",
+                                "TortugaPirates",
+                                "RimPirates",
+                                "6",
+                                "ms_fp_ghostRiders_201_Mission",
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_201_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -448,8 +799,8 @@
                                 "TortugaPirates",
                                 "RimPirates",
                                 "7",
-                                "ms_fp_ghostRiders_008_Talk",
-                                null,
+                                "ms_fp_ghostRiders_202_Talk",
+                                "GhostRiders",
                                 null,
                                 null
                             ]
@@ -466,7 +817,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_008_Talk",
+                "Id" : "ms_fp_ghostRiders_202_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -500,10 +851,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cf7e455ae29c08231a72545",
+                            "value" : "9cf7e455ae29c08231a72547",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -511,7 +862,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_ghostRiders_009_Complete",
+                            "value" : "ms_fp_ghostRiders_203_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -527,7 +878,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_009_Complete",
+                "Id" : "ms_fp_ghostRiders_203_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -563,7 +914,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_ghostRiders_010_Reward",
+                            "value" : "ms_fp_ghostRiders_204_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_ghostRiders",
@@ -590,7 +941,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_010_Reward",
+                "Id" : "ms_fp_ghostRiders_204_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null

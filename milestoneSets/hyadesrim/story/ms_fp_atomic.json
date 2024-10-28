@@ -103,6 +103,26 @@
                             ]
                         },
                         {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea"
+                            ]
+                        },
+                        {
                             "Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_atomic_003_MissionSim",
                             "valueConstant" : null,
@@ -162,7 +182,7 @@
                                 "c_StoryTime_HYR_318_atomic_1_threeWayBattle",
                                 "AuriganRestoration",
                                 "AuriganDirectorate",
-                                "7",
+                                "8",
                                 "ms_fp_atomic_004_Talk",
                                 null,
                                 null
@@ -291,8 +311,8 @@
                                 "c_StoryTime_HYR_318_atomic_2_story",
                                 "AuriganRestoration",
                                 "AuriganDirectorate",
-                                "7",
-                                "ms_fp_atomic_006_Talk",
+                                "8",
+                                "ms_fp_atomic_006_Mission",
                                 null,
                                 null
                             ]
@@ -317,7 +337,67 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_atomic_006_Talk",
+                "Id" : "ms_fp_atomic_006_Mission",
+                "Name" : "Mission",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_rawCliffsides_vHigh",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "c_StoryTime_HYR_318_atomic_3_ambushConvoy",
+                                "AuriganRestoration",
+                                "AuriganDirectorate",
+                                "8",
+                                "ms_fp_atomic_007_Talk",
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_atomic_007_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -362,7 +442,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_atomic_007_Complete",
+                            "value" : "ms_fp_atomic_008_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -378,7 +458,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_atomic_007_Complete",
+                "Id" : "ms_fp_atomic_008_Complete",
                 "Name" : "Complete",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -414,7 +494,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_atomic_008_Reward",
+                            "value" : "ms_fp_atomic_009_Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         },
@@ -438,7 +518,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_atomic_008_Reward",
+                "Id" : "ms_fp_atomic_009_Reward",
                 "Name" : "Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
@@ -448,18 +528,37 @@
             "Results" : [
                 {
                     "Scope" : "Company",
-                    "Requirements" : null,
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
                     "AddedTags" : {
                         "items" : [],
-                        "tagSetSourceFile" : ""
+                        "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
                         "items" : [],
-                        "tagSetSourceFile" : ""
+                        "tagSetSourceFile" : "Tags/CompanyTags"
                     },
-                    "Stats" : [],
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Funds",
+                            "value" : "1000000",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
                     "Actions" : [],
-                    "ForceEvents" : [],
+                    "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
