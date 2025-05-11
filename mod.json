@@ -1,7 +1,7 @@
 {
     "Name": "Hyades Rim",
     "Enabled": true,
-    "Version": "9.6.6a",
+    "Version": "9.6.7",
     "Description": "Adds the BattleTech 3025 Hyades Rim campaign.",	
     "Author": "Hobbes et al.",
 	"Website": "https://github.com/Hobbes74/Battletech-3025-HyadesRim",
@@ -16,15 +16,15 @@
         { "name": "BattleTech.ContractTypeEnumeration", "path": "enums/ContractType.json" }
 	],
 	"Manifest": [
-        { "Type": "AbilityDef", "Path": "abilities", "AddToDB": true },
         { "Type": "AmmunitionBoxDef", "Path": "ammunitionBox/base", "ShouldMergeJSON": true, "AddToDB": false },
         { "Type": "AmmunitionBoxDef", "Path": "ammunitionBox/dlc", "AddToDB": true },
         { "Type": "AmmunitionBoxDef", "Path": "ammunitionBox/dlc_merge", "ShouldMergeJSON": true, "AddToDB": false },
+        { "Type": "AmmunitionBoxDef", "Path": "ammunitionBox/hyadesrim", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "BackgroundQuestionDef", "Path": "backgroundQuestions/base", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "BackgroundDef", "Path": "backgrounds/base", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "BackgroundDef", "Path": "backgrounds/hyadesrim", "AddToDB": true },
         { "Type": "CastDef", "Path": "cast/base", "ShouldMergeJSON": true, "AddToDB": false },
-        { "Type": "CastDef", "Path": "cast/hyadesrim" },
+        { "Type": "CastDef", "Path": "cast/hyadesrim", "AddToDB": true },
 		{ "Type": "Sprite", "Path": "castSprites" },
 		{ "Type": "ChassisDef", "Path": "chassis/base", "ShouldMergeJSON": true, "AddToDB": false },
 		{ "Type": "ChassisDef", "Path": "chassis/canon", "AddToDB": true },

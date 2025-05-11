@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Commander, we've been ordered by Lady Arano to extract several groups of civilians who have required evacuation from Artru. We can´'t stay for long until the <i>Iberia</i> shows up and threatens the <i>Argo</i> but we need to attempt to save as many as possible before we leave.",
-    "longDescription" : "My family is in another group.",
+    "shortDescription" : "Commander, we've been ordered by Lady Arano to extract two VIPs who have required evacuation from Artru. We can´'t stay for long until the <i>Iberia</i> or that Dark JumpShip shows up and threatens the <i>Argo</i> but we need to attempt to save as many as possible before we leave.",
+    "longDescription" : "My family have been recovered safely Commander, thank you for coming for us.",
     "salvagePotential" : 8,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Rescue Darius",
+            "title" : "Rescue Aurigan VIPs",
             "description" : "Retrieve Aurigan Refugees and Extract Safely",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -56,7 +56,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Recover the Data by Securing the Designated Area",
+            "title" : "Rescue VIP by Securing the Designated Area",
             "description" : "The objective for the player to retrieve the primary rescue target.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -92,7 +92,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
             },
-            "title" : "Ensure the Data Recovery Unit Survives",
+            "title" : "Ensure the VIP Survives",
             "description" : "The objective to keep the unit which is carrying the primary target alive. Player will fail if it is destroyed.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -104,7 +104,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "b8e94728-f1b4-4c2b-a4b3-6716dd48e721"
             },
-            "title" : "Recover the Operative by Securing the Secondary Designated Area",
+            "title" : "Rescue the second VIP by Securing the Secondary Designated Area",
             "description" : "The secondary and optional objective to secure the second rescue target.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -154,7 +154,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "a9f1746b-e990-4c8f-90be-3c4f229da58f"
             },
-            "title" : "Ensure the Operative Recovery Unit Survives",
+            "title" : "Ensure the second VIP Survives",
             "description" : "The objective to keep the unit which is carrying the secondary target alive. The player can fail this objective.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -258,7 +258,96 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Yang Singh, we're picking up a tight-beam transmission coming from the secondary facility in the lagoon. It's our operative's distress signal.",
+                    "words" : "I'm back on the <i>Hysteria</i>'s bridge, Commander. As ordered per Lady Arano, two of her people need extraction from Artru.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "One of the assets is located over here at this facility.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And I've ordered the other one to another location nearby, so that both wouldn't get caught together by the Taurians.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "eba2ec63-eab0-4801-b1c5-90964855a7ca",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Which are already on their way, according to the sensors, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+            ]
+        },
+        {
+            "dialogue" : {
+                "EncounterObjectGuid" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9"
+            },
+            "name" : "Dialogue_MissionSuccess",
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                    "words" : "We've secured the Aurigan assets and my family but a lot of folks are also gonna be left behind on Artru...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Darius, everyone, the <i>Iberia</i> is gone! It has been destroyed by the Dark JumpShip!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -274,71 +363,46 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Blast. They must have caught him uploading the data on their facilities. Is there anything else, Commander?",
+                    "words" : "What? How is that...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Yang, he's signaling no-scrub. The data is still ready for pickup at the primary facility.",
+                    "words" : "Because it's a damn WarShip that's how! We need to leave immediately!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "eba2ec63-eab0-4801-b1c5-90964855a7ca",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "This complicates matters. Commander, if you have the opportunity, I'd take it as a personal favor if you would pick up my agent at the secondary facility, but… the data must come first.",
+                    "words" : "Roger that, everybody make sure you are strapped tightly, this is gonna be a high-g burn all the way to the <i>Argo</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9"
-            },
-            "name" : "Dialogue_MissionSuccess",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
-                {
-                    "words" : "Well done, Commander. We'll begin analyzing the data immediately. I'll have an update for you shortly.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -356,7 +420,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've lost Jawad—and his data. I have to scrub the operation, Commander.",
+                    "words" : "<i>Saatana</i>!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -381,7 +445,55 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, broadcast the following validation code toward the facility on our comms frequency, and the upload to your 'Mech should begin automatically.",
+                    "words" : "With the asset secured we shouldn't waste more time....",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I'm sorry to interrupt, but you all need to hear this!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "e",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "[...] tell Lady Arano I'll meet her in hell once she pays for her crimes!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_OstergaardDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What was all that? Farah?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -397,7 +509,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once that data's aboard, the whole operation depends on that 'Mech making it out safely.",
+                    "words" : "What was all that? Farah?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -405,6 +517,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I don't know Yang, just give me a second!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -522,46 +650,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Friendly down! It's… it's Jawad, Yang. He's gone.",
+                    "words" : "The asset is down! Lady Arano won't like this.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_FarahDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "…",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_YangDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "He knew the risks of this operation. Commander, get that data out intact. Make his death mean something.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -573,8 +669,8 @@
         }
     ],
     "extractionOverrideList" : [],
-    "overwriteMissionCompleteWhenAutoComplete" : false,
-    "overrideAutoCompleteDialogueId" : null,
+    "overwriteMissionCompleteWhenAutoComplete" : true,
+    "overrideAutoCompleteDialogueId" : "DialogBucketDef_unnaturalSelection_2_rescue",
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
@@ -584,8 +680,8 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0,
-    "negotiatedSalvage" : 0,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {

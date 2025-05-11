@@ -7,12 +7,22 @@
     },
     "Scope": "Company",
     "Weight": 0,
-    "Requirements": {
-        "Scope": "Company",
-        "RequirementTags": {},
-        "ExclusionTags": {},
-        "RequirementComparisons": []
-    },
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_youOnTheRun_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
     "AdditionalRequirements": [],
     "AdditionalObjects": [],
     "Options": [
@@ -37,7 +47,12 @@
                         {
                             "Scope": "Company",
                             "Requirements": null,
-                            "AddedTags": {},
+							"AddedTags" : {
+								"items" : [
+									"company_story_sos"	
+								],
+								"tagSetSourceFile" : ""
+							},
                             "RemovedTags": {},
                             "Stats": [],
                             "Actions": [

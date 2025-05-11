@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Our third target is protected by several anti-aircraft turrets that will limit our deployment options. Your first objective is to take those out and allow the Ghost Riders to land their lance, then paint the Harbinger fortress for the <i>Bad Kitty</i> to blast it to a million pieces. Once this is done, extract your 'Mechs and rejoin the rest of the Coalition forces for our final battle here.",
+    "shortDescription" : "Our next target is protected by several anti-aircraft turrets that will limit our deployment options. Your first objective is to take those out and allow the Devil's Disciples to land their lance, then paint the Harbinger fortress for the <i>Bad Kitty</i> to blast it to a million pieces. Once this is done, extract your 'Mechs and rejoin the rest of the Coalition forces for our final battle here.",
     "longDescription" : "Final battle? Commander, Murray is completely dictating us around here but that's nothing new, I guess.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -33,15 +33,15 @@
         -1,
         -1
     ],
-    "mapMood" : "",
-    "startingFogOfWarVisibility" : "Unknown",
+    "mapMood" : null,
+    "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "36f0be69-3b56-447e-9374-a7643ed3eca8"
             },
-            "title" : "Attack the Installation and paint the area for a Fire Mission",
-            "description" : "Attack the Installation and paint the area for a Fire Mission",
+            "title" : "Quickly Place the Artillery Beacons",
+            "description" : "Place Targeting Beacons to mark the Steiner installation for an Artillery Strike",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -64,7 +64,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "b666957c-c0f2-4ea2-959b-33165d490ba5"
             },
-            "title" : "Place Beacon Alpha",
+            "title" : "Place Artillery Beacon Alpha",
             "description" : "Place Beacon Alpha for Artillery Designation",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -76,7 +76,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "82e56617-5098-4baf-bbb9-ce5dc4ce470f"
             },
-            "title" : "Place Beacon Bravo",
+            "title" : "Place Artillery Beacon Bravo",
             "description" : "Place Beacon Bravo for Artillery Designation",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -88,7 +88,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "92415cd8-d751-455b-8496-b11a09c8d7cd"
             },
-            "title" : "Place Beacon Charlie",
+            "title" : "Place Artillery Beacon Charlie",
             "description" : "Place Beacon Charlie for Artillery Designation",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -112,7 +112,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d6b0c5db-ce49-4097-ad2f-97525fa70539"
             },
-            "title" : "Dropship on Approach",
+            "title" : "DropShip on Approach",
             "description" : "Dropship on Approach",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -124,7 +124,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9090acb8-ca3d-4d15-abce-1c520aafe9c0"
             },
-            "title" : "Get Visual Confirmation of Artillery Effect",
+            "title" : "Get Visual Confirmation of the Artillery's Effect",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -148,7 +148,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "8ff11c96-4bd9-454e-b883-2f5e089bff1a"
             },
-            "title" : "Safely Extract Lance",
+            "title" : "Extract before Steiner Reinforcements Arrive",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -160,7 +160,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "6512b05e-ea0d-4979-af5f-8a8c8d2e0195"
             },
-            "title" : "Destroy Enemy Garrison",
+            "title" : "Destroy the Steiner Garrison",
             "description" : "Enemy Garrison Lance",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -198,36 +198,10 @@
             "objective" : {
                 "EncounterObjectGuid" : "f3e1232a-f769-4479-a606-50020c0350df"
             },
-            "title" : "Destroy Additional Enemy Forces",
+            "title" : "Destroy the Additional Steiner Forces",
             "description" : "Enemy Supplemental 1 Lance",
             "isPrimary" : false,
-            "OnSuccessResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
+            "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -236,36 +210,10 @@
             "objective" : {
                 "EncounterObjectGuid" : "6748d641-b9af-4279-a7bb-a85bbf26924d"
             },
-            "title" : "Destroy Additional Enemy Forces",
+            "title" : "Destroy the Additional Enemy Forces",
             "description" : "Enemy Supplemental 2 Lance",
             "isPrimary" : false,
-            "OnSuccessResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
+            "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -274,7 +222,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Destroy Enemy Special Reinforcements",
+            "title" : "Destroy the Steiner Reinforcements",
             "description" : "Enemy Ally Special Reinforcement Lance",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -312,36 +260,10 @@
             "objective" : {
                 "EncounterObjectGuid" : "b2e99a59-4be0-425e-ad3f-3ecdb8db26a7"
             },
-            "title" : "Enemy Reinforcements Inbound",
+            "title" : "Steiner Reinforcements Inbound",
             "description" : "",
             "isPrimary" : false,
-            "OnSuccessResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
+            "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -350,8 +272,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "da38a572-828a-441a-9d5b-bef67e728f4d"
             },
-            "title" : "Defeat Enemy Air Defense",
-            "description" : "Defeat Enemy Air Defense to allow Employer Reinforcements to Land",
+            "title" : "Eliminate the Steiner Air Defenses",
+            "description" : "Eliminate Steiner Air Defenses to allow Gwydion Company to Land",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -388,7 +310,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0bbd4b2b-8b6b-4856-8c6f-c68d282646c2"
             },
-            "title" : "Place Beacons for Artillery Quickly",
+            "title" : "Place the Targeting Beacons for Marik's Artillery",
             "description" : "Complete the Fire Mission",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -400,7 +322,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "2b78c46d-a854-4288-adeb-c7fc1574f055"
             },
-            "title" : "Extract before Enemy Reinforcments Arrive",
+            "title" : "Extract before Steiner Reinforcements Arrive",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -412,7 +334,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "e47e2e68-3927-41de-9fd0-e8de166dc4c1"
             },
-            "title" : "Await Dropship Arrival",
+            "title" : "Await the DropShip's Arrival",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -493,7 +415,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "80c67186-d629-4cba-9145-288724cc0718"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -511,7 +433,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "efb53005-cf39-4754-9ff1-8b0c81ee8760"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -520,7 +442,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "01b0e9ab-f953-475b-b744-c44d890cc4c6"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -547,7 +469,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "04f0e24a-0540-4078-9627-1f593b1d7d89"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -704,7 +626,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Ok, Commander, the clock is ticking on this one, so let's cover the basics quickly. Right now there's a military DropShip inbound to this location. It's going to have only a few moments to make a flyby and take the shot.",
+                    "words" : "This is a target acquisition run, Commander—we're going to mark House Steiner's unauthorized military base for destruction, and Marik artillery will handle the rest.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -720,7 +642,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "At that speed, the only way it's going to hit anything is if we're painting the target for it. Yang?",
+                    "words" : "You'll need to get our 'Mechs to the three zones marked on your map, plant targeting beacons, and then get back out again.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -736,46 +658,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Right, so the way this works is, you move a 'Mech into each of these three target regions, and the pilot will deploy a beacon.",
+                    "words" : "Our 'Mechs will need to hold their positions in the target zones while they plant the beacons. You'll also need to be sure that the regions aren't contested by Steiner forces.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "4f98aca6-0a4c-4d89-95ce-5a3401bb76ab",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You need to keep the 'Mech there to ensure the beacon is fully activated. Then move on to the next one.",
+                    "words" : "You'll be on a short timetable, so splitting your lance is recommended. The OpFor will also have you badly outgunned. Thankfully, our employer has sent in Gwydion Company to assist… what's your ETA, Gwydion Actual?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "9d1145a1-4395-4bb1-a8ac-11212a29b282",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Once all three are placed, the {TEAM_EMP.FactionDef.Demonym} DropShip will take its shot, and we'll get the hell out of here.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "74637c9a-99e7-4e66-80f1-349fb6871d85",
@@ -784,14 +690,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander, when that shot lands, it's going to vaporize just about anything nearby. Get our people clear of the blast before it lands.",
+                    "words" : "That'll depend on your people in the field. We've got a Leopard en route, but the OpFor just brought antiair turrets online. We're going to need you to shut down their generator before we can even attempt a landing.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
@@ -800,7 +706,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "That's when I'll pick you up, Commander. Just get our people over to the LZ and I'll pick you up.",
+                    "words" : "Roger that, Carronade… we've got you. Oliveira out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -810,7 +716,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -825,14 +731,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Wow. Did you see that? Hell yes!",
+                    "words" : "Beautifully done, Commander. That hideous barnacle of a fortress has been cracked in two, and House Steiner has lost its foothold in Marik space.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_MarikRepDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -841,14 +747,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "See it? I'm gonna be seeing spots for the next week!",
+                    "words" : "Our pleasure, Force Commander Singh. Thanks for the assist, Commander Carnby.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Hey, no problem. Gwydion Company will work with you anytime.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -866,14 +788,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's it, we're done here. We have to abort.",
+                    "words" : "Attention, Force Commander Singh—our {COMPANY.CompanyName} lance is down! We're going to have to scrub the mission. Gwydion Actual out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -891,7 +813,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Observer Actual, this is {TEAM_EMP.FactionDef.Demonym} Fast Mover: Target Locked. Cover your eyes, folks.",
+                    "words" : "Observer Actual, this is Fire Control: Target Locked. Firing for Effect. HE 30 rounds. Danger Close.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -899,6 +821,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Observer Actual, this is Fire Control: Shot Over. Splash in 30.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Fire Control, this is Observer Actual: Confirmed. Shot, out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
@@ -991,14 +945,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, I don't think they're very happy with you down there. Incoming hostiles.",
+                    "words" : "All Steiner units, focus your fire on the 'Mechs with the beacons! They're marking us for artillery bombardment!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_OpForDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "e7acc01a-0514-468f-8b6c-7c8eeb68e1ff",
@@ -1016,14 +970,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All units, close distance on enemy forces. Send a short wave burst near them to disrupt enemy Artillery from locking on! Move quickly!",
+                    "words" : "Close in on those artillery spotters, damn it! Crush them before their Long Toms can get a lock on us!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Target",
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_OpForDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1032,14 +986,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Keep the pressure on to prevent them a chance to place those beacons!",
+                    "words" : "If their big guns fire, we're all dead! Do your damned jobs and keep those beacons from activating!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Target",
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_OpForDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1082,7 +1036,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Greetings, Commander. Understand that this facility is as important to the {TEAM_TAR_ALLY.FactionDef.Name} as it is to our {TEAM_TAR.FactionDef.Demonym} friends.",
+                    "words" : "NOT USED IN THIS FLASHPOINT.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1098,7 +1052,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Let's see what you got.",
+                    "words" : "NOT USED IN THIS FLASHPOINT.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1123,7 +1077,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "[static] -ell, this round is yours. *COUGH* Until next time.",
+                    "words" : "NOT USED IN THIS FLASHPOINT.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1148,14 +1102,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, {TEAM_EMP.FactionDef.Demonym} forces on station. Thanks for clearing those defenses to make way for us.",
+                    "words" : "Thanks for handling those turrets, Commander {COMMANDER.LastName}. Now it's our turn to return the favor.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca",
@@ -1164,14 +1118,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We'll work in parallel to you and eliminate any opposition we come into contact with.",
+                    "words" : "Thank you, Commander Carnby. We appreciate the assist.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I'll bet you do. You just focus on getting those artillery beacons planted, and Gwydion Company will handle the rest. Carronade out.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1189,14 +1159,46 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're finished, Commander. You're on your own again.",
+                    "words" : "I'm sorry, Commander. These Lyrans are animals. They're hitting way harder than we can handle. Our lance is shattered—we can't go on.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You've soaked up a lot of fire that would've gone into us, Carnby. Get your people out while you can, and we'll handle it from here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Thank you, Oliveira. We'll catch you on the other side.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca",
@@ -1214,14 +1216,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, long range sensors are picking up an enemy bogey. They'll be landing any minute.",
+                    "words" : "Heads up, Commander—I've got a Steiner DropShip coming in on my long-range sensors.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "fddf5e8b-07c6-492b-861e-2d9c2bde80ee",
@@ -1230,14 +1232,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I don't have any way to know where they will land, but you can bet they will be close to the base.",
+                    "words" : "I can't say where they're gonna drop their reinforcements, but you can bet it's gonna be something big, and it'll probably be too close for comfort.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
@@ -1255,14 +1257,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Uh, Commander? They're sending out a lot of vehicles. I mean, a <i>lot</i>.",
+                    "words" : "NOT USED IN THIS FLASHPOINT",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1271,7 +1273,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Looks like a subterranean motor pool. No way we can knock that out on our own, so stay focused on the beacons, and <i>hurry up</i>.",
+                    "words" : "NOT USED IN THIS FLASHPOINT",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1296,14 +1298,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, I'm getting a signal from the {TEAM_EMP.FactionDef.Demonym} DropShip. They need to start their run <i>now</i>. You're almost out of time down there.",
+                    "words" : "Commander, your window of opportunity for this strike is closing! Move quickly and place the beacons before the Lyrans turn their own artillery on us!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MarikRepDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1321,7 +1323,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, my sensors show a large incoming enemy reaction force. Clear out of this AO!",
+                    "words" : "My sensors are picking up a hell of a lot of fresh enemy contacts, Oliveira. I'd advise your people to clear out while they still can.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What about Gwydion Company?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1332,6 +1350,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Don't worry about us, we've got reinforcements on the way. Now get your people moving! We'll cover your escape.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FP_friendInNeed_GwydionDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "2dc3da6a-fce4-4f95-a7c9-05fc5fd53ec2",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1472,19 +1506,19 @@
             }
         }
     ],
-    "overwriteMissionCompleteWhenAutoComplete" : false,
+    "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : null,
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : true,
+    "disableCancelButton" : false,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0,
-    "negotiatedSalvage" : 0,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -1679,7 +1713,9 @@
                 "name" : "Lance_Employer_Reinforcements",
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
-                    "items" : [],
+                    "items" : [
+                        "lance_type_battle"
+                    ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1703,7 +1739,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_panther1b_PNT-9R",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1736,7 +1772,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_trebuchet_TBT-5N",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1769,7 +1805,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_catapult_CPLT-C1",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1802,7 +1838,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_jagermech_JM6-A",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1849,8 +1885,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_battle",
-                        "lance_type_mech"
+                        "lance_type_battle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -2010,8 +2045,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_support",
-                        "lance_type_mech"
+                        "lance_type_support"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -2171,8 +2205,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_cavalry",
-                        "lance_type_mech"
+                        "lance_type_cavalry"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -2186,7 +2219,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : -2,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -2421,11 +2454,9 @@
                     "EncounterObjectGuid" : "7691018e-6622-48ee-b233-9e4dc8a56a1e"
                 },
                 "name" : "Lance_Enemy_TurretSpawner",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_turret_d3_manual_antiAirTurret",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_turret"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {

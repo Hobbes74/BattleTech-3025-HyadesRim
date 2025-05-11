@@ -42,10 +42,55 @@
                         {
                             "Scope": "Company",
                             "Requirements": null,
-                            "AddedTags": {},
+							"AddedTags" : {
+								"items" : [
+									"company_story_extendedleave"
+								],
+								"tagSetSourceFile" : ""
+							},
                             "RemovedTags": {},
                             "Stats": [],
                             "Actions": [
+								{
+									"Type" : "System_ShowSummaryOverlay",
+									"value" : "Magistracy Intelligence Ministry Report",
+									"additionalValues" : [
+										"CLASSIFICATION: Magestrix Eyes Only.\r\n\r\nEmma, this the only copy of the MIM report that you requested in your new position as Magestrix. I would advise you to bury this issue as your mother did upon my advice, but now that's your prerrogative to make. So the decision will be yours.\r\n\r\nAna Maria\r\n\r\nAURIGAN CIVIL WAR - EXECUTIVE SUMMARY\r\n\r\nIn 3022 the unexpected death of High Lord Tamati Arano, who had played a balancing act between Canopian and Taurian interests in the Aurigan Reach, caused a diplomatic crisis for the Magistracy. Santiago Espinosa's coup during Kamea Arano's coronation day and her posterior exile removed any Canopian influence in the new regime. The new Directorate initially favored Taurian interests while Santiago Espinosa consolidated his rule over the Reach and dealt with the remaining threats to his power...",
+									]
+								},
+								{
+									"Type" : "System_PlayVideo",
+									"value" : "1A-setting.bk2",
+									"valueConstant" : null
+								},
+								{
+									"Type" : "System_PlayVideo",
+									"value" : "1B-betrayal.bk2",
+									"valueConstant" : null
+								},
+								{
+									"Type" : "System_ToggleIgnoredContractEmployers",
+									"value" : true,
+									"additionalValues" : [ "AuriganRestoration" ]
+								},
+								{
+									"Type" : "System_SimGameCharacterVisible",
+									"value" : false,
+									"additionalValues" : [
+										"Kamea",
+										"Alexander",
+										"Farah"
+									]
+								},
+								{
+									"Type" : "System_SimGameCharacterVisible",
+									"value" : true,
+									"additionalValues" : [
+										"Darius",
+										"Yang",
+										"Sumire"
+									]
+								},
                                 {
                                     "Type": "System_StartConversation",
                                     "value": "9c1885a1201f35a5ac70aff4",
@@ -53,7 +98,12 @@
 										"EXTENDED LEAVE",
 										"In Orbit — Coromodir"
                                     ]
-                                }
+                                },
+								{
+									"Type" : "System_PlayVideo",
+									"value" : "1C-coup.bk2",
+									"valueConstant" : null
+								}
                             ],
                             "ForceEvents": null,
                             "TemporaryResult": false,

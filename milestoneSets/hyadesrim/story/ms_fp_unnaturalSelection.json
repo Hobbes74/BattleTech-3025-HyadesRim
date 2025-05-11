@@ -208,7 +208,7 @@
                                 "AuriganRestoration",
                                 "TaurianConcordat",
                                 "8",
-                                "ms_fp_unnaturalSelection_004_Talk",
+                                "ms_fp_unnaturalSelection_004_Mission",
                                 null,
                                 null,
                                 null
@@ -234,68 +234,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_unnaturalSelection_004_Talk",
-                "Name" : "Talk",
-                "Details" : "flashpoint",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "System_StartConversation",
-                            "value" : "9c3ad7332054ec34aa248178",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
-                                "Conference",
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_unnaturalSelection_005_Mission",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_unnaturalSelection_005_Mission",
+                "Id" : "ms_fp_unnaturalSelection_004_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -338,7 +277,7 @@
                                 "AuriganRestoration",
                                 "TaurianConcordat",
                                 "8",
-                                "ms_fp_unnaturalSelection_006_Talk",
+                                "ms_fp_unnaturalSelection_005_Talk",
                                 null,
                                 null,
                                 null
@@ -364,7 +303,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_unnaturalSelection_006_Talk",
+                "Id" : "ms_fp_unnaturalSelection_005_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -398,10 +337,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c3ad7332054ec34aa248179",
+                            "value" : "9c3ad7332054ec34aa248178",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -409,7 +348,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_unnaturalSelection_007_Complete",
+                            "value" : "ms_fp_unnaturalSelection_006_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -425,7 +364,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_unnaturalSelection_007_Complete",
+                "Id" : "ms_fp_unnaturalSelection_006_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -461,7 +400,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_unnaturalSelection_008_Reward",
+                            "value" : "ms_fp_unnaturalSelection_007_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_unnaturalSelection",
@@ -488,7 +427,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_unnaturalSelection_008_Reward",
+                "Id" : "ms_fp_unnaturalSelection_007_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null

@@ -37,18 +37,49 @@
                         {
                             "Scope": "Company",
                             "Requirements": null,
-                            "AddedTags": {},
+							"AddedTags" : {
+								"items" : [
+									"company_story_downfall"
+								],
+								"tagSetSourceFile" : ""
+							},
                             "RemovedTags": {},
                             "Stats": [],
                             "Actions": [
-                                {
-                                    "Type": "System_StartConversation",
+								{
+									"Type" : "System_SimGameCharacterVisible",
+									"value" : false,
+									"additionalValues" : [
+										"Alexander",
+										"Farah"
+									]
+								},
+								{
+									"Type" : "System_SimGameCharacterVisible",
+									"value" : true,
+									"additionalValues" : [
+										"Kamea",
+										"Darius",
+										"Yang",
+										"Sumire"
+									]
+								},
+								{
+									"Type" : "System_StartConversation",
 									"value" : "9ccc87a49cce8eb8222eb3f6",
 									"additionalValues" : [
 										"DOWNFALL",
 										"In Transit — Jump Point"
-                                    ]
-                                }
+									]
+								},
+								{
+									"Type" : "System_AddFlashpoint",
+									"value" : "fp_StoryTime_HYR_106_exodus",
+									"valueConstant" : null,
+									"additionalValues" : [
+										"Farhome"
+									]
+								}
                             ],
                             "ForceEvents": null,
                             "TemporaryResult": false,
