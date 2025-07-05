@@ -9,7 +9,7 @@
         "id": "9cb083990fea026606b8d17b"
       },
       "index": 0,
-      "text": "Darius, you don't sound well.\n\nWhat's the status on the ground?",
+      "text": "Darius, your voice doesn't sound very well.\n\nWhat's the status on the ground?",
       "branches": [
         {
           "responseText": "",
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "darius",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -106,7 +106,7 @@
         "id": "9c68acee5b6ee2d30e26cd8a"
       },
       "index": 1,
-      "text": "<i>Argo</i>, the Taurians have been conducting indiscriminate artillery bombardments in Nassau Heights and other settlements.\n\nThere are a lot of casualties from those strikes and everyone has to keep close to a vacuum suit at all times.",
+      "text": "<i>Argo</i>, *cough* the Taurians have been conducting indiscriminate bombardments in the ground settlements, including another a couple hours ago. \n\nThere are a lot of casualties from those strikes and everyone has to keep close to a atmospheric suit at all times.\n",
       "branches": [
         {
           "responseText": "XO, what about your family? Have you found them?",
@@ -132,7 +132,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -141,7 +141,7 @@
         "id": "9c143220c3b208f0d549e6a6"
       },
       "index": 2,
-      "text": "Yeah, their moon dome was lucky to withhold a couple LRM volleys fired at it and we're ready to leave. \n\nBut everyone has to carry a vacuum suit at all times.",
+      "text": "Yeah, as I expected they left [[DM.BaseDescriptionDefs[LoreNassauHeights],Nassau Heights]] a couple weeks ago to be safer in the surface and they are unharmed and staying at our cousin's place.\n\nWe're ready to leave as soon as you can pick us up at the rendezvous point. ",
       "branches": [
         {
           "responseText": "Roger that XO, Sumire, what's your status?",
@@ -167,8 +167,37 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -176,7 +205,7 @@
         "id": "9c37c12c631d19780bc72e8a"
       },
       "index": 3,
-      "text": "The <i>Hysteria</i> is halfway back to redeploy and deal with the Taurian ground commander, boss.\n\nThen we'll pick Darius and his family as planned.",
+      "text": "The <i>Hysteria</i> is halfway to deal with the Taurian ground commander, boss.\n\nThen we'll pick Darius and his family and the Restoration operatives on [[DM.BaseDescriptionDefs[LoreArtru],Artru]]'s first moon.",
       "branches": [
         {
           "responseText": "",
@@ -202,8 +231,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -211,7 +256,7 @@
         "id": "9c679c4c240a5b6903dff14e"
       },
       "index": 4,
-      "text": "Commander, I still don't think it's such a good idea to redeploy before picking up Darius.\n\nThe <i>Iberia</i> will eventually reappear and engage us...",
+      "text": "Commander, I still don't think it's such a good idea this combat drop before picking up Darius.\n\nThe <i>[[DM.BaseDescriptionDefs[LoreIberia],Iberia]]</i> might have been tricked by our [[DM.BaseDescriptionDefs[LorePiratePoint],pirate jump]] and orbital insertion but they'll figure out quickly that we're not heading for the first moon.",
       "branches": [
         {
           "responseText": "We've already been through this Dr. Murad.",
@@ -237,8 +282,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -246,7 +307,7 @@
         "id": "9cabfcabee7bdcfc0f569b12"
       },
       "index": 5,
-      "text": "Wait... Farah, use the <i>Argo</i>'s sensors to check Artru's second moon.\n\nThe <i>Hysteria</i> just detected what a very strange signature, but we've already past it.",
+      "text": "Excuse me all, Farah, could you please the <i>Argo</i>'s sensors to check Artru's second moon?\n\nThe <i>Hysteria</i> has detected a rather large signature, but we've already past it and you're better positioned than us to check it out.",
       "branches": [
         {
           "responseText": "",
@@ -272,8 +333,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -281,7 +358,7 @@
         "id": "9c8ecbf078539d7ba6f75298"
       },
       "index": 6,
-      "text": "Redirecting sensors now Sumire..",
+      "text": "Redirecting sensors now Sumire.\n\nOh, that is quite a big signature...",
       "branches": [
         {
           "responseText": "",
@@ -307,7 +384,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": {
         "ops": [
           {
@@ -317,7 +394,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "dobrev",
+                "string_value": "axylus",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -335,7 +412,7 @@
       "text": "[The image of a spaceship appears over an airless moon.]",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "What in Kerensky's name...",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 8,
@@ -358,8 +435,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "dobrev",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -367,7 +460,7 @@
         "id": "9c45c3973426eb84ce01ef48"
       },
       "index": 8,
-      "text": "Is that... Sumire, is that an <i>Conestoga</i>?",
+      "text": "What is that thing...?\n\nSumire, is that an <i>[[DM.BaseDescriptionDefs[LoreConestoga],Conestoga]]</i>?",
       "branches": [
         {
           "responseText": "",
@@ -393,8 +486,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -402,7 +511,7 @@
         "id": "9c192c6048996a5f632208e1"
       },
       "index": 9,
-      "text": "Likely it once was a old Conestoga but has been massively changed, Farah.\n\nThere's no way that thing could have landed on that moon's surface.",
+      "text": "Likely it once was a old Conestoga but has been massively changed, Farah.\n\nAnd there's no way such a [[DM.BaseDescriptionDefs[LoreJumpShip],JumpShip]] could have landed on that moon's surface.",
       "branches": [
         {
           "responseText": "",
@@ -428,8 +537,37 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -437,7 +575,7 @@
         "id": "9c0a4abc55591b402416fb1f"
       },
       "index": 10,
-      "text": "Unless it's a WarShip, and it's just activated its fusion drive Sumire.\n\nHold on, the <i>Iberia</i> has changed its flight path, it seems to have detected it as well.",
+      "text": "Unless it's a WarShip... Sumire, I am detecting the fusion drive being activated.\n\nThat spaceship is about to become operational, unless the sensors are malfunctioning.",
       "branches": [
         {
           "responseText": "",
@@ -463,8 +601,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -472,7 +626,7 @@
         "id": "9c8c18cf7d5a8a3c9c5b0b43"
       },
       "index": 11,
-      "text": "Could that be to be one of the Dark JumpShips we keep hearing rumors about?",
+      "text": "Could that be one of those [[DM.BaseDescriptionDefs[LoreDarkJumpShip],Dark JumpShips]] we keep hearing rumors about?\n\nYou know, like the '[[DM.BaseDescriptionDefs[LoreJumpShipOrionsBelt],Orion's Belt]]' of that news holovid?",
       "branches": [
         {
           "responseText": "",
@@ -498,7 +652,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -507,10 +661,10 @@
         "id": "9c1f217b520b4adc75f84739"
       },
       "index": 12,
-      "text": "Yang, that ship isn't like the <i>Argo</i>, it couldn't possibly ever fly, it must have crashed...\n\n<i>Inshalah</i>, it's... it's taking off from the surface!",
+      "text": "Yang, there aren't Dark JumpShips and that ship could never fly...\n\n<i>[[DM.BaseDescriptionDefs[LoreInshallah],Inshallah]]</i>, it's... it's taking off from the surface!",
       "branches": [
         {
-          "responseText": "What's its destination?",
+          "responseText": "Dr. Murad, what's its destination?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 13,
@@ -533,8 +687,37 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "axylus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -542,7 +725,7 @@
         "id": "9c2b72b608db3117ac15fc28"
       },
       "index": 13,
-      "text": "Commander, neither of us.\n\nIt was waiting for the <i>Iberia</i> to came closer because that spaceship is starting to maneuver and engage it.",
+      "text": "Commander, it seems to be heading for the <i>Iberia</i> because the Taurian DropShip has changed their course to intercept it.\n\nThey must have detected the JumpShip's fusion drive being activated.",
       "branches": [
         {
           "responseText": "",
@@ -568,8 +751,37 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -577,7 +789,7 @@
         "id": "9cf42b63920c06abdd09483b"
       },
       "index": 14,
-      "text": "Sir, should we continue with Lady Arano's mission?\n\nWe were ordered to rescue as many as possible and to hit the Taurians in the process but with that ship around there's no point in our second objective.",
+      "text": "Commander {COMMANDER.LastName}, should we continue with Lady Arano's mission?\n\nWe were ordered for a rescue mission and to hit the Taurians in the process but with that spaceship around, the risk just increased a lot.",
       "branches": [
         {
           "responseText": "",
@@ -603,8 +815,37 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "axylus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -612,10 +853,10 @@
         "id": "9cf9536f11d2d75048ae32ec"
       },
       "index": 15,
-      "text": "Commander, I can turn around the <i>Hysteria</i> to exfiltrate Darius and as many people as possible from <i>Nassau Heights</i>.",
+      "text": "Commander, we have actually gained more time because both ships are now chasing one another rather than us.\n\nBut I can still turn around the <i>Hysteria</i> towards the first moon, if you give the order.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Darius, what's your opinion?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 16,
@@ -638,8 +879,37 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -647,10 +917,10 @@
         "id": "9c37fecb5e15bbfdc74a8152"
       },
       "index": 16,
-      "text": "",
+      "text": "Sir, so my advice is to keep to the original plan and eliminate [[DM.BaseDescriptionDefs[LoreTDFBrigadier],Brigadier]] Hansen, the Taurian ground commander. \n\nIt will stop temporarily the bombardments and I use the additional time to try to convince more folks on the moon to leave.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "We're not here to save everyone XO.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 17,
@@ -673,8 +943,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "darius",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -682,13 +968,13 @@
         "id": "9cf8316e4451b99b24f24799"
       },
       "index": 17,
-      "text": "Understood Commander, we'll be ready for pick-up once you take out the Taurian ground force.",
+      "text": "Yeah, Darius, you better get yourself and your family back here as soon as possible, <i>perkele</i>!\n\nSome of the crew already have ideas about leaving you behind.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 18,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -708,8 +994,187 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf3ae3a774b97b7b0d849a5"
+      },
+      "index": 18,
+      "text": "You should see the odds about leaving <i>you</i> behind for the Dark JumpShips, Yang.\n\nDarius, we'll keep an eye on the space engagement but better hurry, things could change.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf9b662c766b0e881e287e3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "sumire",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5e3c1837176221a7174c04"
+      },
+      "index": 19,
+      "text": "Understood Sumire, we'll be ready for pick-up once you take out the Taurian Brigadier and his lance.\n\nDarius out.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c393da232945a6ececf3d4c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "darius",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c90ee1ced684af875892387"
+      },
+      "index": 20,
+      "text": "Leaving me behind? What does mean?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6a2cabf859e77617e7c0e6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

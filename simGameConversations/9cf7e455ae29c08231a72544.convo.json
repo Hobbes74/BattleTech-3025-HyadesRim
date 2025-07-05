@@ -1,25 +1,25 @@
 {
   "idRef": {
-    "id": "9cf54229a0472a8d59d7a0e6"
+    "id": "9cf7e455ae29c08231a72544"
   },
-  "ui_name": "HYR_106_exodus_3",
+  "ui_name": "HYR_315_ghostRiders_1",
   "nodes": [
     {
       "idRef": {
-        "id": "5a7ba5df623035b8080007c6:5a7bb42a623035b808001033"
+        "id": "9cb357b93eb25a90e1718173"
       },
       "index": 0,
-      "text": "Greetings, Commander {COMMANDER.LastName} of {COMPANY.CompanyName}. I am Alexander Madeira, the senior [[DM.Factions[faction_InterstellarExpeditions],Interstellar Expeditions]] associate present, after the expedition director died of exposure while we attempted to reach the back up site.\n\nOn the behalf of all of IE, thank you for your rescue, otherwise I fear that we would never return to the [[DM.BaseDescriptionDefs[LoreInnerSphere],Inner Sphere]] again. Or it would have been a long road back.",
+      "text": "I don't care Darius, you can't just swap the holovid order as you did without consulting with the rest of us! \n\nReplacing [[DM.BaseDescriptionDefs[LoreHolovidClansOfNewSamarkand],Clans of New Samarkand]] halfway in the season with [[DM.BaseDescriptionDefs[LoreHolovidFemaleSlaversOfDariah],Female Slavers Of Dariah]], what are you thinking?",
       "branches": [
         {
-          "responseText": "Just doing our job, but a thank you is always welcome, Lord Madeira.",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 1,
-          "hideIfUnavailable": false,
+          "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "59b97681623035ac14005201:5abac4e26230353c1e002bfe"
+            "id": "9c91e87bf4d10c430ff24660"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "speaker_override_id": "",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,20 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "GConv-BeginMusic-GC_200_IN_EXILE",
+                "string_value": "GConv-BeginMusic-GC_420_REVELATIONS",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -83,40 +96,27 @@
                 "variableref_value": null
               }
             ]
-          },
-          {
-            "functionName": "Set BattleTech Viewscreen Image",
-            "args": [
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "alexander",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
           }
         ]
       },
-      "comment": "GConv-BeginMusic-GC_200_IN_EXILE"
+      "comment": ""
     },
     {
       "idRef": {
-        "id": "5abac4e26230353c1e002c01"
+        "id": "9c207af5f8a0c0f9a1498098"
       },
       "index": 1,
-      "text": "Lord Madeira??? What are you doing here? It's a been a long time since [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir]] and the [[DM.BaseDescriptionDefs[LoreEspinosasCoup],coup]].",
+      "text": "The XO might be expecting a visit later, Yang?\n\nOf a certain redhead, perhaps?",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 2,
-          "hideIfUnavailable": false,
+          "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "59b97681623035ac14005201:5abab05d6230353c1e001b25"
+            "id": "9ccef78a194a14f98dd79522"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -130,640 +130,6 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "598cd3a06230355c18000067",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "5abab05d6230353c1e001b28"
-      },
-      "index": 2,
-      "text": "Indeed it has, pilot Meyer. I was not expecting your unit to be operating this far out in the [[DM.BaseDescriptionDefs[LoreDeepPeriphery],Deep Periphery]] and I only recognized your company and the <i>Hysteria</i> when we took off from the planet in our DropShip.\n\nI assume [[DM.BaseDescriptionDefs[LoreKameaArano],Lady Kamea]] is still with your unit, I didn't think I saw her <i>[[DM.MechDefs[mechdef_kintaro_KTO-18],Kintaro]]</i> in the field though?",
-      "branches": [
-        {
-          "responseText": "All of the Aurigan MechWarriors left us recently after she was attacked by a Directorate bounty hunter and survived.",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 3,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7ded376230351012000c8d"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "5a7ded376230351012000c90"
-      },
-      "index": 3,
-      "text": "I see.\n\nWell, I do hope that everything goes well for her in the future. ",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 4,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7deec86230351012000cc8"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "5a7df1146230351012000ccd"
-      },
-      "index": 4,
-      "text": "Lord Madeira, I suspect that if Kamea ever learns that we saved <i>you</i> she'll prefer that we had failed this contract because of your actions at Coromodir.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 5,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5abaacb16230353c1e001810"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "59b98a97623035ac140056c6",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "5abaacb16230353c1e001813"
-      },
-      "index": 5,
-      "text": "Farah, you are right that Lady Arano lost her throne because of Lord Madeira's actions, but he also allowed for us to rescue her.\n\nSo before you continue that discussion with our employer, please keep that in mind.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 6,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7df2806230351012000e2a"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "598cd3f26230355c18000069",
-      "actions": {
-        "ops": []
-      },
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5a7df2806230351012000e2c"
-      },
-      "index": 6,
-      "text": "Yes. I made a deal with Lord [[DM.BaseDescriptionDefs[LoreHouseEspinosa],Espinosa]] to betray Kamea, no blood spilled in exchange for my cooperation and the lives of the [[DM.BaseDescriptionDefs[LoreHouseMadeira],Madeira]] house members. \n\nI can't go back in the past and change things, and I doubt Kamea will ever forgive me. But I also thought it would prevent blood and violence being spilled across the [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigan Reach]].\n\n",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 7,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7df2806230351012000e2e"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5a7df2806230351012000e30"
-      },
-      "index": 7,
-      "text": "That's still just a convenient excuse for betraying your best friend, Lord Madeira.  If that's even the truth, that is.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 8,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7df2806230351012000e4a"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "59b98a97623035ac140056c6",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5a7df2806230351012000e4c"
-      },
-      "index": 8,
-      "text": "You may believe what you wish but I've already paid a price for my actions.\n\nFor saving Kamea, my family was spared but [[DM.BaseDescriptionDefs[LoreSantiagoEspinosa],Santiago]] and [[DM.BaseDescriptionDefs[LoreVictoriaEspinosa],Victoria]] considered me untrustworthy and a threat to them. Since every move I made would be watched by the [[DM.Factions[faction_AuriganDirectorate],Directorate]], I left the Reach into voluntary exile and joined Interstellar Expeditions as an historian researcher. \n\n",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 9,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7df2806230351012000e4e"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5a7df2806230351012000e50"
-      },
-      "index": 9,
-      "text": "Farah, he is not making this up. I heard this from Victoria Espinosa herself after we had saved Lady Arano. \n\nWe're talking about the past and everyone has done regrettable things along the road. I say we move on.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 10,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7df2806230351012000e52"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "598cd3a06230355c18000067",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5a7df2806230351012000e54"
-      },
-      "index": 10,
-      "text": "Speaking of the present for a change, Lord Madeira, what are you doing here so far away from everything? \n\nI thought we had it bad, but this is a far worse place than our current situation.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 11,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7df2806230351012000e86"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "598cd3f36230355c1800006a",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5a7df2806230351012000e88"
-      },
-      "index": 11,
-      "text": "This is a world with conditions close to pre-historic [[DM.BaseDescriptionDefs[LoreTerra],Terra]], and much to our surprise we eventually discovered humans living on the world, although we were still attempting to determine their origin. \n\nThey live in a technological and cultural level closer to primitive hunter-gatherers but they must have come from somewhere else to the world.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 12,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5a7df2806230351012000e8a"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5aa3770d6665303c0a0007de"
-      },
-      "index": 12,
-      "text": "No one here had ever heard of [[DM.BaseDescriptionDefs[LoreFarhome],Farhome]] before. How did IE learn of its existence?",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 13,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aa3770d6665303c0a0007e0"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "598cd3a06230355c18000067",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5aa3770d6665303c0a0007e2"
-      },
-      "index": 13,
-      "text": "ComStar's [[DM.BaseDescriptionDefs[LoreComStarExplorerCorps],Explorer Corps]] discovered this world during one of their [[DM.BaseDescriptionDefs[LoreMilkyWay],galactic]] surveys. Its existence was eventually leaked and became an open secret among the academic community, although no one could guess the area.\n\nNot until IE received a report of a stranded JumpShip stumbling into a habitable world in the Deep Periphery, and we were able to join all of the pieces together and discover the system ourselves. [[DM.BaseDescriptionDefs[LoreComStar],ComStar]] likely won't be happy about it when we publish our research though.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 14,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aa3770d6665303c0a0007e4"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5aa3770d6665303c0a0007e6"
-      },
-      "index": 14,
-      "text": "Didn't you have any kind of military support? Pretty risky to go unarmed around these parts, with all the rising pirate activity in this sector.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 15,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aa3770d6665303c0a0007e8"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "598cd3f26230355c18000069",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5aa3770d6665303c0a0007ea"
-      },
-      "index": 15,
-      "text": "We did have a mercenary company until they decided to break their contract and head elsewhere. Likely ended up as pirates somewhere in the [[DM.BaseDescriptionDefs[LoreRimwardPeriphery],Rimward Periphery]].\n\nWhich reminds of something I want to discuss with your company, Commander {COMMANDER.LastName}.\n\n",
-      "branches": [
-        {
-          "responseText": "Let's hear it, Lord Madeira. ",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 16,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aba87886230353c1e000989"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "5aba87a06230353c1e000990"
-      },
-      "index": 16,
-      "text": "After the coup, House Espinosa divided the spoils of the Arano estate with the other houses, after taking a substantial share for itself. I sold the assets assigned to [[DM.BaseDescriptionDefs[LoreHouseMadeira],House Madeira]] then transferred the money to Canopian space to protect it from the Directorate's hands.\n\nWhich got me evicted from [[DM.BaseDescriptionDefs[LoreGuldra],Guldra]] once my family members found out. And this got the blessing of Lord Espinosa since it allowed him to get rid of an untrustworthy and potential rival in the Founding Council.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 17,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aba89416230353c1e00099c"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "5aba89416230353c1e00099f"
-      },
-      "index": 17,
-      "text": "So besides betraying your friend, you embezzled Kamea's money from your own family to keep for yourself?\n\nNo wonder you're out here, Lord Madeira, you likely made everyone angry at you back in civilized space.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 18,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aba89916230353c1e0009a7"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "59b98a97623035ac140056c6",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "59b97681623035ac14005201:5aba898f6230353c1e0009a1"
-      },
-      "index": 18,
-      "text": "All those assets were in my name because they were a personal 'gift' from House Espinosa that couldn't be refused, being a bribe that all the [[DM.BaseDescriptionDefs[LoreFoundingHouses],Founding Houses]] accepted to validate the coup. \n\nAs far as I'm concerned, that money still belongs to Lady Kamea and I'm just administrating whatever is left of the Arano legacy. However, for security reasons involving the safety of my house, I can't simply give it back to her.",
-      "branches": [
-        {
-          "responseText": "We can't confirm anything about Kamea other that she is still alive.",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 19,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aba8b6f6230353c1e0009cf"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "5aba8b6f6230353c1e0009d2"
-      },
-      "index": 19,
-      "text": "I understand, but from what I know, your current financial situation comes as a consequence of you taking her and her remaining followers into exodus with your company from Directorate space. \n\nSo when we reach civilized space I'll repay part of your loan to the [[DM.Factions[faction_AlphardTradingCompany],Alphard Trading Company]] with those funds if you agree, as a bonus for my rescue. That way, nothing can be traced between me and her.\n",
-      "branches": [
-        {
-          "responseText": "We'll reply to you later on that.",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 20,
-          "hideIfUnavailable": false,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "59b97681623035ac14005201:5aba89ac6230353c1e0009b8"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "5a6aa38b623035a020000d9d"
-      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -772,20 +138,695 @@
     },
     {
       "idRef": {
-        "id": "5aba8a666230353c1e0009bd"
+        "id": "9caa9d625c271ebd75484059"
+      },
+      "index": 2,
+      "text": "Everyone stop, it was an honest mistake, I was just checking the new holovid and forgot to put the old one back into the player.\n\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 3,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c348caac8be1d56d15f4a0a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8d37cfa9ff63b1bb9c31dc"
+      },
+      "index": 3,
+      "text": "I see that the crew meetings haven't changed much while I was gone, Commander.\n\nThey are still lively as before.",
+      "branches": [
+        {
+          "responseText": "Sumire, let's start.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4f5031686ab49c791ca8fb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5a29a515332aa0ef2f4035"
+      },
+      "index": 4,
+      "text": "Yes Ilkhan... I mean, Commander. \n\nConnecting to the <i>Bad Kitty</i> now.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 5,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cdecf16b8f2255cbdc6fb94"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ce539fd1acdddc79ddea2f3"
+      },
+      "index": 5,
+      "text": "[Holovid transmission initializing.]\n\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cceca5153f148e9d41215d5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf9389ce9e01d1c31d66e72"
+      },
+      "index": 6,
+      "text": "<i>Tequilla!</i>",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c0a7126801221d81ff060e0"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "kitten",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4eeafc51fb66efbd7f90d1"
+      },
+      "index": 7,
+      "text": "<i>Argo</i> you finally arrived and not too unfashionably late to join our little party at Heliat against the Harbingers.\n\nYou haven't remembered to bring some Canopian tequilla, <i>da</i>?",
+      "branches": [
+        {
+          "responseText": "Hello, Captain Murray, you're having a party?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce31b015c34c2e280fb1dd6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cee3f43ca039b1269fa8e99"
+      },
+      "index": 8,
+      "text": "No... Captain Memphis has already retired to his DropShip and took all the remaining tequilla with him.\n\nBefore he left, we were thinking of renaming ourselves the Princess' Misfits until Captain Johnson vetoed it.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3446a809f6913edf1c687e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c50543122fe8d5a7918dd48"
+      },
+      "index": 9,
+      "text": "Ah, Commander, glad your master let you and your friends join our little party. \n\nToo bad your queen didn't send more... I was expecting more. And more.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1695221dd6fdcfeb43c6fb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc3c2be24bbb39fa1e6d0af"
+      },
+      "index": 10,
+      "text": "Captain Murray, you've assembled quite a flotilla in orbit, that's the <i>Hostile Intentions</i> of the Devil's Disciples, and the <i>Pegasus</i> from the Ghost Riders, plus your own DropShip.\n\nWhat in Kerensky's name are you expecting to find down there?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c72225171c07579add0051c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd116af15ea6eed80454c60"
+      },
+      "index": 11,
+      "text": "Mister Woodpecker, the equivalent of more than a battalion being assembled before striking at your Reach and your former best friend.\n\nHowever, they weren't expecting us here so we have orbital superiority, at least until we fulfill our objectives.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c20ba5f84de3598eaf8de94"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc220b2d0c0024807213d32"
+      },
+      "index": 12,
+      "text": "More than a full battalion? \n\nBetween all of the groups present here, there's about two companies Murray.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6d7cd4f1e948c20e716b9f"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c19ea87d297e7d18624f864"
+      },
+      "index": 13,
+      "text": "You can complain to your Lady Kamea that she didn't send more help as I asked her. \n\nWe needed at least twice as many troops from her for my plan A to work, now it's time for plan B.",
+      "branches": [
+        {
+          "responseText": "I don't like this already... what's plan B?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf95038f74069ad4aa64cd2"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9793f9b0393d0849f7d69c"
+      },
+      "index": 14,
+      "text": "A series of hit and run strikes to destroy their supply network and cripple their offensive. \n\nThey have the numbers over us but we can deploy more troops and they can't defend everywhere. ",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c54ec8d2f7a943cb3de02c6"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c27a9bc1bcc0c2e2d942213"
+      },
+      "index": 15,
+      "text": "For maximum effect we'll split between two task forces since that will also force them to divide their response.\n\nLess risky, perfect plan now that you are all here.",
+      "branches": [
+        {
+          "responseText": "And how is this different from plan A?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9ac2afdfcce43821172944"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c22fbde885f33c1732f7d4d"
+      },
+      "index": 16,
+      "text": "We'd be hunting them instead of targeting their ammunition and spares. \n\nI had hoped we might also be able to raid some of their supplies for our own use but we'll just have to slow them down.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd738f3f32baab2c772687d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c54d563b3bc438114df06ef"
+      },
+      "index": 17,
+      "text": "Captain Murray, you seemed pretty certain of all this intel, where did you get it?\n\nHow do you know they're even gonna strike at the Aurigan worlds?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c287d941fb9072bbfb028cb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c3e28cb7c62a824f5074897"
+      },
+      "index": 18,
+      "text": "Look four eyes, considering what I have experienced so far with them, they have the numbers and the motivation to make such an attempt, plus there was an uptick in reports from the Capellan Marches.\n\nSo, before they showed up and start setting up their forward base, I started making plans to hit it before they invade.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c27f586bf570c4f0bee4e41"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c32edf723a51e1d81c59fd5"
+      },
+      "index": 19,
+      "text": "That still doesn't explain how you knew knew that the Harbingers would attack.\n\nYour story about the Tortuga Dominion and these raiders hasn't been fully confirmed as well.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3aad3016668b8afacd2a44"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c28835ba454c2fab7addb60"
       },
       "index": 20,
-      "text": "Well in [[DM.Factions[faction_Liao],Capellan]] culture, a good way to move past personal issues is to make amends and give reparations.\n\nIf those involve large amounts of C-Bills or other precious goods even better.",
+      "text": "<i>Yob tvoyu mat</i>.\n\nJohnson! Get over here and talk what you know to this idiot, perhaps you'll convince him... oh, maybe he left already the party too...",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 21,
-          "hideIfUnavailable": false,
+          "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "59b97681623035ac14005201:5abbc40362303578170000fd"
+            "id": "9cecc4c292ef64c5731003a5"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -801,26 +842,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f36230355c1800006a",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "5abbc5d962303578170001d9"
+        "id": "9c2d825c6289d072073c0143"
       },
       "index": 21,
-      "text": "And I have one last proposal, Commander. Currently, Interstellar Expeditions is developing a series of surveying and research efforts on the [[DM.BaseDescriptionDefs[LoreHyadesRim],Hyades Rim]], and from experience it is advisable to have a trustworthy mercenary unit to protect IE's teams. \n\nAnd since we have an immediate opening, I offer your company a retainer contract to support IE operations in the Hyades Rim. You'll be free to pursue your own contracts but you'll be required to provide military support for IE. ",
+      "text": "You still haven't won our bet, Laura.\n\nLord Madeira, Commander, nice to see you all again.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Same to you, Captain Johnson.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 22,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c0c9d74140ea0527f2377dc"
+            "id": "9cd49762674a900fe20271a8"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -836,26 +877,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cd7ac65d59ca2050249365e"
+        "id": "9c14d89a49698e8b4e86977d"
       },
       "index": 22,
-      "text": "Commander, a retainer contract is exactly what we were looking for.",
+      "text": "Commander, I've already made some preliminary recon while we were waiting for Lady Arano's response.\n\nAs Captain Murray said, they aren't expecting us and we have orbital superiority, at least for now.",
       "branches": [
         {
-          "responseText": "Interesting. We will still be able to take independent missions and travel?",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 23,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cf5c57cc9e0fb8cb8b59f16"
+            "id": "9c026fcb65fe3607007c63e5"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -871,16 +912,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f26230355c18000069",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9ca7c87018d3a2f88e55fa94"
+        "id": "9c96f7b3f4e8de3c7804095d"
       },
       "index": 23,
-      "text": "As long as it's limited to the Hyades Rim. We'll give you exclusivity of our contracts, but in exchange you are required to be available at the discretion of the local IE teams. \n\nIn many occasions, time is of the essence and we have no need for a mercenary unit that is hundreds of light years away in the Inner Sphere.",
+      "text": "That is starting to worry me a lot, Captain Johnson.\n\nWhere are the defenders' JumpShips and why did they left most of their ground forces stranded in this world?",
       "branches": [
         {
           "responseText": "",
@@ -890,7 +931,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c546c61869f4d9ef548d86a"
+            "id": "9c098328f63f609be3a99332"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -906,26 +947,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c2bf57da7ee2e11ca02e9df"
+        "id": "9c048ea7b93cf20bc5fa50e6"
       },
       "index": 24,
-      "text": "Commander, this is a good as it gets out here in the [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]] for a mercenary company, other than creating your own personal empire and becoming a [[DM.BaseDescriptionDefs[LoreBanditKingdom],bandit king]]. \n\nAn official [[DM.BaseDescriptionDefs[LoreInnerSphere],Inner Sphere]] backer is something that few merc units can claim out here.",
+      "text": "Based on the reports received from other worlds, they're interdicting all systems in the area to prevent outsiders from even knowing of their presence.\n\nThat means capturing or destroying any JumpShips or DropShips present.",
       "branches": [
         {
-          "responseText": "Thank you for the offer, Lord Madeira. I'll later confirm to you our definite answer and discuss the specific details in time. ",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 25,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c51b7a47588e9e5cf2cb06d"
+            "id": "9cb32efcd2049e97358a223b"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -941,16 +982,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f26230355c18000069",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c8647393766b00e946ae013"
+        "id": "9c67a4cabf274a575b0ca2e1"
       },
       "index": 25,
-      "text": "[Viewscreen goes offline.]",
+      "text": "Interdicting? \n\nYou mean Artru and the appearance of that Dark JumpShip...",
       "branches": [
         {
           "responseText": "",
@@ -960,7 +1001,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c2599affce2699a6b5de432"
+            "id": "9cd8293a6c70437258221c95"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -976,32 +1017,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": {
-        "ops": [
-          {
-            "functionName": "Set BattleTech Viewscreen Image",
-            "args": [
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "lostsignal",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
-          }
-        ]
-      },
+      "speaker_override_id": "",
+      "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cb54d7a339afe70a7450708"
+        "id": "9cd778e858df2ebbd1789a18"
       },
       "index": 26,
-      "text": "Sounds good, but a lot of mercenaries here do have 'unofficial' Inner Sphere backers, governments that need someone else to do their dirty work. Like [[DM.BaseDescriptionDefs[LoreGrayNoton],Gray Noton]].\n\nBeing official doesn't mean that we will be exempted from doing that kind of work as well.",
+      "text": "Yes Lord Madeira, they're capturing or destroying all space traffic in this region of the Periphery as the final preparation for their attack into your worlds. \n\nAnd considering the remoteness of this region, it will take months or even years until someone notices something went odd.",
       "branches": [
         {
           "responseText": "",
@@ -1011,7 +1036,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c1a121f1883330383ea43f1"
+            "id": "9c48a59778680088c7b6e6f5"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -1027,26 +1052,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f36230355c1800006a",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c40afe1b4e3b84a5c439f99"
+        "id": "9cdaf7f6d6dfd0e1d695e15a"
       },
       "index": 27,
-      "text": "The IE contract does look interesting but partial loan repayment will depend whether Kamea will accept it. At this point though, I can't see her deciding otherwise since she's long quit on regaining her throne and has thrown her luck in with us.\n\nBetter to keep her away from Lord Madeira during the rest of the journey back though.",
+      "text": "Even ComStar's eunuchs won't notice anything odd since their eyes are all set in their great inner war.",
       "branches": [
         {
-          "responseText": "Very well, Sumire.",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 28,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cdea99ae7b0a85063279b1e"
+            "id": "9cfe3d199f95926b4789507a"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -1062,16 +1087,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3a06230355c18000067",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c2487e2be4f9ae2d0cce386"
+        "id": "9ca9da2b369cb9aa2977404f"
       },
       "index": 28,
-      "text": "I can't say I blame her. I don't trust Lord Madeira based on his past actions, and so far Interstellar Expeditions have proven their reputation of being well-financed reckless amateurs.\n\nSigning up with IE might sound like the solution to all our financial problems but it could get us into all sorts of trouble, especially if we end up taking orders from Alexander Madeira.",
+      "text": "What you're saying has only been partially confirmed by Colonel Haus and Aurigan intelligence...",
       "branches": [
         {
           "responseText": "",
@@ -1081,7 +1106,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c95b7faceea4df8af3e3ff0"
+            "id": "9c3802230810b35432f48bc7"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -1097,26 +1122,166 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b98a97623035ac140056c6",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c65cb6d82b8c51cc6eac97d"
+        "id": "9c561318edb51b4a7e245fa8"
       },
       "index": 29,
-      "text": "Your objections are noted, Doctor Murad. \n\nWe spoke our opinions about the matter but I don't think there is much choice involved here.",
+      "text": "Fuck Aurigan intelligence, because they have no idea of what is coming to hit your princess. \n\nSee for yourself below us, four eyes, and in case you don't believe your sensors, feel free to check them personally on the ground.",
       "branches": [
         {
-          "responseText": "We need this contract to survive out here, XO.",
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 30,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf26b4a91778bb82c4dc784"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8331afb79cc6c621f1c4f0"
+      },
+      "index": 30,
+      "text": "I am not questioning that this can only be an invasion force stationed right outside our worlds, what I am not sure is their identity and objective, Captain Murray.\n\nThe same way I am not sure about yours.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 31,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1931a9c3bdbfaf0c0cb063"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd3d40a063eaacb6574f162"
+      },
+      "index": 31,
+      "text": "Murder them all. \n\nAnd either you have something useful to contribute on that matter, or you can shut up and get the fuck out of my task force.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 32,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd89708cd0e4e72d1edacc3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb7bd5f318aec5d4eef27a3"
+      },
+      "index": 32,
+      "text": "Laura, we are just trying to figure out exactly...",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 33,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4710e57a565b2fb95c0c51"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6e63ae98d402bb6c64aaf5"
+      },
+      "index": 33,
+      "text": "XO, sometimes you do sound like one of those ComStar eunuchs.\n\n<i>Slovach</i>, see you all on the ground. Kitten Actual is out.",
+      "branches": [
+        {
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": -1,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9ca9c53eff51dec8faddad4d"
+            "id": "9cf5fa0c7b009fff2357e7b1"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -1132,24 +1297,8 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f26230355c18000069",
-      "actions": {
-        "ops": [
-          {
-            "functionName": "Play BattleTech Audio Event",
-            "args": [
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "GConv-LastDialogueBranchMusic",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
-          }
-        ]
-      },
+      "speaker_override_id": "",
+      "actions": null,
       "comment": ""
     }
   ],
@@ -1159,10 +1308,10 @@
       "conditions": null,
       "actions": null,
       "nextNodeIndex": 0,
-      "hideIfUnavailable": false,
+      "hideIfUnavailable": true,
       "onlyOnce": false,
       "idRef": {
-        "id": "59b97681623035ac14005201:59b97681623035ac14005205"
+        "id": "9c91c20951bfc5e7672fb929"
       },
       "inputBypass": false,
       "auxiliaryLink": false,
