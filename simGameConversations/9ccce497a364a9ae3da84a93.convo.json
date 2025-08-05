@@ -4242,6 +4242,76 @@
       "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c2abbce3ea4f35b1d7993c1"
+      },
+      "index": 85,
+      "text": "Lord Alexander Madeira\n\nRole: Adviser and astech\n\nBirth: 2997, Guldra, Aurigan Coalition",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 86,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cbfc784b1e89833d6e845e3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd4b81c9737f76bb470aeee"
+      },
+      "index": 86,
+      "text": "Former associate of [[DM.Factions[faction_InterstellarExpeditions],Interstellar Expeditions]]. and heir apparent to the Emirate of [[DM.BaseDescriptionDefs[LoreGuldra],Guldra]] and [[DM.BaseDescriptionDefs[LoreHouseMadeira],House Madeira]], one of the founding houses of the [[DM.BaseDescriptionDefs[LoreAuriganCoalition],Aurigan Coalition]].\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca9ecf542e2cd9934429929"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": null,
+      "comment": ""
     }
   ],
   "roots": [
@@ -4748,6 +4818,76 @@
       "inputBypass": false,
       "auxiliaryLink": false,
       "comment": "HUB 01—oc04_post_argo"
+    },
+    {
+      "responseText": "",
+      "conditions": {
+        "ops": [
+          {
+            "functionName": "Evaluate Tag for Company",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "HasOrHasNot",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Tag From String",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "company_story_downfall",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "actions": null,
+      "nextNodeIndex": 85,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9c715986a5727d6a7125cb71"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
     }
   ],
   "default_speaker_id": "",

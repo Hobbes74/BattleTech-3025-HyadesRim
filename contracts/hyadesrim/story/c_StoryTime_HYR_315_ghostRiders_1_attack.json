@@ -7,7 +7,11 @@
     "weight" : 1,
     "scope" : "STANDARD",
     "finalDifficulty" : 0,
-    "shortDescription" : "This will be a coordinated attack envolving all of my coalition's units. My Kitttens and the rest of us will draw away most of the Harbinger defenders from the main supply dump so that the <i>Hysteria</i> can drop your company on their backyard and you catch them with their pants on the ground. Just destroy their supplies while we get their attention, Commander.",
+    "representativeCastDefIDOverride" : null,
+    "missionSuccessStatementOverride" : null,
+    "badFaithStatementOverride" : null,
+    "goodFaithStatementOverride" : null,
+    "shortDescription" : "This will be a coordinated attack envolving all of my coalition's units. My Kitttens and the rest of us will draw away most of the Harbinger defenders from the main supply depot so that the <i>Hysteria</i> can drop your company on their backyard and you catch them with their pants on the ground. Capture their depot while we get their attention, Commander, but remember to leave us some supplies so we can continue our campaign.",
     "longDescription" : "Be careful with the blast from the ammo crates, Commander, it can kill us as well as the Harbingers.",
     "salvagePotential" : 8,
     "requirementList" : [],
@@ -16,6 +20,20 @@
     "contractType" : "Smithon_Attack",
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
+    "lanceMinTonnage" : -1,
+    "lanceMaxTonnage" : -1,
+    "mechMinTonnages" : [
+        -1,
+        -1,
+        -1,
+        -1
+    ],
+    "mechMaxTonnages" : [
+        -1,
+        -1,
+        -1,
+        -1
+    ],
     "mapMood" : "RestorationSmithonAttack",
     "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
@@ -779,7 +797,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Good luck, <i>Argo</i> actual.WWWWWW",
+                    "words" : "Good luck, <i>Argo</i> actual.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1022,12 +1040,13 @@
             ]
         }
     ],
-    "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : true,
+    "extractionOverrideList" : [],
+    "overwriteMissionCompleteWhenAutoComplete" : false,
+    "overrideAutoCompleteDialogueId" : "",
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
-    "contractRewardOverride" : 1920000,
+    "contractRewardOverride" : null,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,

@@ -5601,6 +5601,76 @@
       "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c49313667e8e192d6006e7b"
+      },
+      "index": 98,
+      "text": "Name: Sumire Meyer\n\nRole: DropShip Pilot\n\nBirth: 2996, New Vandenburg, Taurian Concordat",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 99,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf04650b90cad80b7773619"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca17fec79e243c7d2462a74"
+      },
+      "index": 99,
+      "text": "Sumire Meyer is the only remaining member of an impoverished minor noble house of the Draconis Combine who relocated to [[DM.BaseDescriptionDefs[LoreNewVandenburg],New Vandenburg]] during the [[DM.BaseDescriptionDefs[Lore3rdSuccessionWar],Third Succession War]].\n\nHer family connections allowed her to getting a DropShip and JumpShip certification through the [[DM.BaseDescriptionDefs[LoreTaurianNavalSchool],Taurian Naval School]]. After a brief commercial career, she joined [[DM.BaseDescriptionDefs[LoreMarkhamsMarauders],Markham's Marauders]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c0891a207af6d669d0a397e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": null,
+      "comment": ""
     }
   ],
   "roots": [
@@ -6177,6 +6247,76 @@
       "inputBypass": false,
       "auxiliaryLink": false,
       "comment": "HUB 01—oc01_post_se2"
+    },
+    {
+      "responseText": "",
+      "conditions": {
+        "ops": [
+          {
+            "functionName": "Evaluate Tag for Company",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "HasOrHasNot",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Tag From String",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "company_story_downfall",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "actions": null,
+      "nextNodeIndex": 98,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9c47f54d501a3edc1495197b"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
     }
   ],
   "default_speaker_id": "",

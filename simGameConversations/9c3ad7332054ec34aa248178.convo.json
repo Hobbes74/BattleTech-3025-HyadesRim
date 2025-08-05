@@ -651,7 +651,7 @@
         "id": "9c28fc78e8f516e78fd500f5"
       },
       "index": 14,
-      "text": "Alexander... remember the dread we felt when we went hiding in the 'Mech bays of the Ducal Palace at [[DM.BaseDescriptionDefs[LoreJojoken],Jojoken]] during my father state visit to [[DM.BaseDescriptionDefs[LoreAndurien],Andurien]] and were found by the Duchess' guards?",
+      "text": "Alexander... remember the dread we felt when we went hiding in the 'Mech Bays of the Ducal Palace at [[DM.BaseDescriptionDefs[LoreJojoken],Jojoken]] during my father state visit to [[DM.BaseDescriptionDefs[LoreAndurien],Andurien]] and were found by the Duchess' guards?",
       "branches": [
         {
           "responseText": "",
@@ -686,7 +686,7 @@
         "id": "9c810d2e9386dcdf6c3a557f"
       },
       "index": 15,
-      "text": "When the <i>[[DM.MechDefs[mechdef_griffin_GRF-1N],Griffin]]</i> found us hiding on that basement because you wanted to find the Duchess' Mechbays?\n\nTo me it was worse when [[DM.BaseDescriptionDefs[LoreDameCatherine],Duchess Humphries]] and your father [[DM.BaseDescriptionDefs[LoreHighLordTamatiArano],Lord Tatami]] both reprimanded us for causing a diplomatic incident and a security breach.",
+      "text": "When the <i>[[DM.MechDefs[mechdef_griffin_GRF-1N],Griffin]]</i> found us hiding on that hangar because you wanted to find the Duchess' Mech Bays?\n\nTo me it was worse when [[DM.BaseDescriptionDefs[LoreDameCatherine],Duchess Humphries]] and your father [[DM.BaseDescriptionDefs[LoreHighLordTamatiArano],Lord Tatami]] both reprimanded us for causing a diplomatic incident and a security breach.",
       "branches": [
         {
           "responseText": "",
@@ -826,7 +826,93 @@
         "id": "9c69454096ad673c68c3f1c1"
       },
       "index": 19,
-      "text": "Alexander, you and Colonel Haust need to start gathering all available information on those 'dark JumpShips', or whatever they are, and the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]].\n\nIt appears Laura Murray might be right.",
+      "text": "Alexander, you and Colonel Haust need to start gathering all available information on those 'Dark JumpShips', or whatever they are, and the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]].\n\nAnd you need to join the <i>Argo</i> and travel to Fairuza to confirm Laura Murray's story.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3a6e4be15a4b37cf8246f4"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb135c0b1f38118a3e6b817"
+      },
+      "index": 20,
+      "text": "What about your uncle Kamea?\n\nColonel Haust's intelligence staff is still full of [[DM.Factions[faction_AuriganDirectorate],Directorate]] sympathizers, so it's no wonder that they haven't captured Director Espinosa.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 21,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cac283651e3ae761be91f7e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cea94012cfa483b4e19c060"
+      },
+      "index": 21,
+      "text": "If [[DM.BaseDescriptionDefs[LoreGrayNoton],Gray Noton]] was still alive, we might hire him as a bounty hunter, but according to the latest '[[DM.BaseDescriptionDefs[LoreLustfulBallad],Lustful Ballad]]', an assassin snapped his neck while he was in his office on [[DM.BaseDescriptionDefs[LoreSolaris7],Solaris VII]].\n\nNo, we'll have to finish dealing with my uncle later.",
       "branches": [
         {
           "responseText": "",
@@ -836,7 +922,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c3a6e4be15a4b37cf8246f4"
+            "id": "9ce311f29f44b0c52b256ddc"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -863,19 +949,6 @@
                 "bool_value": false,
                 "float_value": 0.0,
                 "string_value": "GConv-LastDialogueBranchMusic",
-                "call_value": null,
-                "variableref_value": null
-              }
-            ]
-          },
-          {
-            "functionName": "Set BattleTech Camera Lock",
-            "args": [
-              {
-                "int_value": 0,
-                "bool_value": false,
-                "float_value": 0.0,
-                "string_value": "DEFAULT",
                 "call_value": null,
                 "variableref_value": null
               }

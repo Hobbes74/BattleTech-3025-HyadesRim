@@ -3920,6 +3920,76 @@
       "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4b732d64f984129671e2d2"
+      },
+      "index": 71,
+      "text": "Name: Dr. Farah Murad\n\nRole: Chief Engineer and Med Tech\n\nBirth: 2989, Regulus, Free Worlds League",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 72,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c327f2c83e7ab2bf6962604"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c66dccccae3dabea59f944e"
+      },
+      "index": 72,
+      "text": "Graduated from both the University of [[DM.BaseDescriptionDefs[LoreAtreus],Atreus]] and [[DM.BaseDescriptionDefs[LoreSian],Sian]] University, with doctorates in both physics and mechanical engineering.\n\n",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c65d0c96326f02b6e5671f2"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": null,
+      "comment": ""
     }
   ],
   "roots": [
@@ -4286,6 +4356,76 @@
       "inputBypass": false,
       "auxiliaryLink": false,
       "comment": "HUB 01—oc04_post_argo"
+    },
+    {
+      "responseText": "",
+      "conditions": {
+        "ops": [
+          {
+            "functionName": "Evaluate Tag for Company",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "HasOrHasNot",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Tag From String",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "company_story_downfall",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "actions": null,
+      "nextNodeIndex": 71,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9c58cbe3914298287a0132cf"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
     }
   ],
   "default_speaker_id": "",

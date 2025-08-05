@@ -6824,6 +6824,92 @@
       "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cbe49b87e69a8b1eeb9cb1b"
+      },
+      "index": 131,
+      "text": "Name: Yang Virtanen\n\nRole: Chief MechTech\n\nBirth: 2987, Bryant, Capellan Confederation",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 132,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca2b63fa8e3178ddc907f29"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-IC_000_YANG",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c604c58ff969422069c8b72"
+      },
+      "index": 132,
+      "text": "Joined the [[DM.BaseDescriptionDefs[LoreLiaoCCAF],Capellan Confederation Armed Forces]] as an enlisted soldier, served in First Battalion of the [[DM.BaseDescriptionDefs[LoreStIvesLancers],Second St. Ives Lancers]]. Lost his right arm during an attack of Davion's [[DM.BaseDescriptionDefs[LoreCetiHussars],Ceti Hussars]] while deployed to St. Loris.\n\nLeft CCAF service and became a mercenary shortly after recovering from his injuries.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c17c801dc7cbe4f6b15af36"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": null,
+      "comment": ""
     }
   ],
   "roots": [
@@ -7400,6 +7486,76 @@
       "inputBypass": false,
       "auxiliaryLink": false,
       "comment": "HUB 01—oc01_post_se2"
+    },
+    {
+      "responseText": "",
+      "conditions": {
+        "ops": [
+          {
+            "functionName": "Evaluate Tag for Company",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "HasOrHasNot",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Tag From String",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "company_story_downfall",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "actions": null,
+      "nextNodeIndex": 131,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9c15f2941065510e3ed63110"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
     }
   ],
   "default_speaker_id": "",

@@ -19,7 +19,7 @@ Features
 
 * Four more campaign flashpoints are being written for part three of the new campaign: Ghost Riders In The Sky,  Barbarians At The Gates, Atomic and The Eyes Of Truth.
 
-* A optional 'Periphery Tales' campaign consisting of 52 mini-flashpoints, simultaneous with the main story.
+An optional 'Periphery Tales' campaign consisting of 52 mini-flashpoints, taking place simultaneous with the main story, with increased rewards to speed up 'farming'.
 
 * Optional - Community Asset Bundle 3025 integration, includes Bombardier, Chameleon, Champion, Charger, Clint, Crockett, Crusader, Dervish, Devastator, Emperor, Exterminator, Falcon, Firebee, Firefly, Gladiator, Guillotine, Hermes, Hermes II, Hoplite, Hornet, Hussar, Icarus II, Imp, Lancelot, Linesman, Longbow, Lynx, Mackie, Marauder II, Merlin, Mongoose, Nighthawk, Nightstar, Ostroc, Ostscout, Ostsol, Ostwar, Pillager, Sentinel, Shootist, Spector, Starslayer, Stinger, Talon, Talos, Thorn, Thug, Thunderhawk, Titan, Toro, Valkyrie, Wasp, Whitworth, Wolfhound and Wyvern 'Mech models and canon variants.
 
@@ -109,7 +109,7 @@ Credits
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS, Miggles, HunterZ, Arin Fei, Narks, Splittix, Thortol, Iry, Aotrs Commander, George-D;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS, Miggles, HunterZ, Arin Fei, Narks, Splittix, Thortol, Iry, Aotrs Commander, George-D, KarbinCry;
 
 All canon BattleTech content is property of its franchise, owned by Catalyst Games, and the BattleTech videogame and DLCs are owned by Paradox Games.
 
