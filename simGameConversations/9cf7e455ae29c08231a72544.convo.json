@@ -96,6 +96,27 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Yang,Alexander,Farah,Sumire,Darius",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -272,7 +293,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59f8f0296230359c2100082c",
       "actions": null,
       "comment": ""
     },
@@ -281,7 +302,7 @@
         "id": "9cf9389ce9e01d1c31d66e72"
       },
       "index": 6,
-      "text": "<i>Tequila!</i> It makes you happy <i>da</i>?\n\n<i>Argo</i>, you finally arrived!",
+      "text": "<i>Tequila!</i> It makes you happy!\n\n<i>Argo</i>, you finally arrived!",
       "branches": [
         {
           "responseText": "Hello Captain Murray, are you having a party?",
@@ -347,7 +368,7 @@
         "id": "9c4eeafc51fb66efbd7f90d1"
       },
       "index": 7,
-      "text": "And not too unfashionably late to join our little party at [[DM.BaseDescriptionDefs[LoreFairuza],Fairuza]] against the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]].\n\nYou haven't remembered to bring more Canopian tequila, <i>da</i>?",
+      "text": "And not too unfashionably late to join our little party at [[DM.BaseDescriptionDefs[LoreFairuza],Fairuza]] against the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]].\n\nYou haven't remembered to bring more [[DM.BaseDescriptionDefs[LoreMaglissTequila],Canopian tequila]], <i>da</i>?",
       "branches": [
         {
           "responseText": "",
@@ -400,7 +421,7 @@
         "id": "9cee3f43ca039b1269fa8e99"
       },
       "index": 8,
-      "text": "Wait.... no... Captain Memphis has already retired to his DropShip and took all the remaining tequila with him.\n\nBefore he left, we were thinking of renaming ourselves the Princess' Misfits until Captain Johnson vetoed it.",
+      "text": "Wait.... no... Captain Memphis has already retired to his DropShip and took all the remaining tequila with him.\n\nBefore he left, we were thinking of renaming ourselves the 'Princess' Misfits' until Captain Johnson vetoed it... oh, he retired too.",
       "branches": [
         {
           "responseText": "Why have they left? Wasn't this a briefing?",
@@ -435,7 +456,7 @@
         "id": "9c50543122fe8d5a7918dd48"
       },
       "index": 9,
-      "text": "And they have been briefed since you and your friends took a while to join our little party. \n\nToo bad your queen didn't send more... I was expecting more. Much more. Tequila.",
+      "text": "And they have been briefed since you and your friends took a while to join our little party. \n\nToo bad your queen didn't send more... I was expecting more. Much more. Just more tequila.",
       "branches": [
         {
           "responseText": "",
@@ -472,7 +493,7 @@
         "id": "9cc3c2be24bbb39fa1e6d0af"
       },
       "index": 10,
-      "text": "Captain Murray, you've assembled quite a flotilla in orbit, that's the <i>Hostile Intentions</i> of the Devil's Disciples, and the <i>Pegasus</i> from the Ghost Riders, plus your own DropShip.\n\nWhat are you expecting to find down there?",
+      "text": "Captain Murray, you've assembled quite a flotilla in orbit, that's the <i>Hostile Intentions</i> of the [[DM.Factions[faction_DevilsDisciples],Devil's Disciples]], and the <i>Pegasus</i> from the [[DM.Factions[faction_GhostRiders],Ghost Riders]], plus your own Satan's Kittens and us.\n\nWith all those DropShips in orbit, what are you expecting to find down there?",
       "branches": [
         {
           "responseText": "",
@@ -507,7 +528,7 @@
         "id": "9cd116af15ea6eed80454c60"
       },
       "index": 11,
-      "text": "Mister Woodpecker, the equivalent of more than a regiment being assembled before striking at your Reach and your best friend.\n\nHowever, they weren't expecting us here so we have orbital superiority, at least until we fulfill our objectives.",
+      "text": "Mister Woodpecker, the equivalent of more than a regiment being assembled and waiting to strike at your [[DM.BaseDescriptionDefs[LoreAuriganReach],Reach]] and your [[DM.BaseDescriptionDefs[LoreKameaArano],best friend]].\n\nHowever, they weren't expecting us here so we have orbital superiority... had... have it still.",
       "branches": [
         {
           "responseText": "",
@@ -544,7 +565,7 @@
         "id": "9cc220b2d0c0024807213d32"
       },
       "index": 12,
-      "text": "More than a full regiment? \n\nBetween all of the groups present here, there's about two companies Murray.",
+      "text": "More than a full regiment? \n\nEven if that is true, between all of the groups present here, there's about two companies of 'Mechs, Captain Murray.",
       "branches": [
         {
           "responseText": "",
@@ -579,10 +600,10 @@
         "id": "9c19ea87d297e7d18624f864"
       },
       "index": 13,
-      "text": "Yeah, damn your queen and her 'nobles' for not sending real help and having me to deal with your lot.\n\nWe needed at least twice as many troops from her for my plan A to work, now it's time for plan B.",
+      "text": "Yeah, damn you <i>nobles</i> for not sending real help other than the Ghost Riders, in addition to having me to deal with your lot.\n\nWe needed at least twice as many troops from your Princess for my plan A to work, now it's time for plan B.",
       "branches": [
         {
-          "responseText": "I don't like this already... what's plan B?",
+          "responseText": "I don't like this already... what was plan A?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 14,
@@ -616,7 +637,7 @@
         "id": "9c9793f9b0393d0849f7d69c"
       },
       "index": 14,
-      "text": "A series of hit and run strikes to destroy their supply network and slow their offensive. \n\nThey have the numbers over us but we can deploy more troops and they can't defend everywhere. ",
+      "text": "A series of hit and run strikes to destroy their supply network and slow the Harbinger offensive. \n\nThey have the numbers over us but we can deploy by air and they can't defend everywhere. ",
       "branches": [
         {
           "responseText": "",
@@ -653,10 +674,10 @@
         "id": "9c27a9bc1bcc0c2e2d942213"
       },
       "index": 15,
-      "text": "For maximum effect we'll split between several task forces since that will also force them to divide their response.\n\nLess risky, still perfect plan, now that you are all here.",
+      "text": "For maximum effect we'll split between several task forces since that will also force them to divide their response.\n\nLess risky, still perfect plan, now that you are all here, you'll love it.",
       "branches": [
         {
-          "responseText": "And how is this different from plan A?",
+          "responseText": "And how is plan B different from plan A?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 16,
@@ -690,7 +711,7 @@
         "id": "9c22fbde885f33c1732f7d4d"
       },
       "index": 16,
-      "text": "We'd be hunting them instead of targeting their ammunition and spares. \n\nI had hoped we might also be able to raid some of their supplies for our own use but we'll just have to slow them down.",
+      "text": "We'd be just hunting them instead of blowing up their ammunition and spares in the process. \n\nI had hoped we might also be able to raid some of their supplies for our own use but we'll just have to slow them down.",
       "branches": [
         {
           "responseText": "",
@@ -762,7 +783,7 @@
         "id": "9c3e28cb7c62a824f5074897"
       },
       "index": 18,
-      "text": "Look Four Eyes, considering what I have experienced so far with them, they have the numbers and the motivation to make such an attempt, plus there was an uptick in reports from the Capellan Marches.\n\nSo, before they showed up and start setting up their forward base, I started making plans to hit it before they invade.",
+      "text": "<i>Four Eyes</i>, considering what I have experienced so far with them, they have the numbers and the motivation to make such an attempt, plus there was an uptick in reports from the [[DM.BaseDescriptionDefs[LoreCapellanMarches],Capellan Marches]] and the [[DM.BaseDescriptionDefs[LoreHyadesRim],Hyades Rim]].\n\nSo, before they showed up and start setting up their forward base, I started making plans in case they invaded your realm.",
       "branches": [
         {
           "responseText": "",
@@ -799,7 +820,7 @@
         "id": "9c32edf723a51e1d81c59fd5"
       },
       "index": 19,
-      "text": "That still doesn't explain how you knew knew that the Harbingers would attack.\n\nYour story about the Tortuga Dominion and these raiders hasn't been fully confirmed as well.",
+      "text": "That still doesn't explain how you knew knew that the Harbingers would attack.\n\nAnd your story about the [[DM.Factions[faction_TortugaDominion],Tortuga Dominion]] and these raiders hasn't been fully confirmed as well.",
       "branches": [
         {
           "responseText": "",
@@ -834,7 +855,7 @@
         "id": "9c28835ba454c2fab7addb60"
       },
       "index": 20,
-      "text": "<i>Yob tvoyu mat</i>.\n\nJohnson! Get over here and talk what you know to this idiot, perhaps you'll convince him... oh, he left already the party too...",
+      "text": "<i>Yob tvoyu mat</i>.\n\nJohnson! Get over here and talk what you know to this idiot, perhaps you'll convince him... oh, I forgot, he left the party too after he lost the bet...",
       "branches": [
         {
           "responseText": "",
@@ -871,7 +892,7 @@
         "id": "9c2d825c6289d072073c0143"
       },
       "index": 21,
-      "text": "I've already patched in from my DropShip and you still haven't won our bet, Laura.\n\nLord Madeira, Commander, nice to see you all again since Cygnus.",
+      "text": "<static> I've already patched in from my DropShip and you still haven't won our bet, Laura.\n\nLord Madeira, Commander, nice to see you all again since the ambush at [[DM.BaseDescriptionDefs[LoreCygnus],Cygnus]].",
       "branches": [
         {
           "responseText": "Same to you, Captain Johnson.",
@@ -924,7 +945,7 @@
         "id": "9c14d89a49698e8b4e86977d"
       },
       "index": 22,
-      "text": "The Ghost Riders have already made some preliminary recon before you arrive.\n\nAs Captain Murray said, they aren't expecting us and we have orbital superiority, at least for now.",
+      "text": "The Ghost Riders have already made some preliminary recon before you arrival and I can personally confirm what Captain Murray said, they aren't expecting us and we have orbital superiority, at least for now.",
       "branches": [
         {
           "responseText": "",
@@ -961,7 +982,7 @@
         "id": "9c96f7b3f4e8de3c7804095d"
       },
       "index": 23,
-      "text": "That is starting to worry me a lot, Captain Johnson.\n\nWhere are the defenders' JumpShips and why did they left most of their ground forces stranded in this world?",
+      "text": "And that is starting to worry me a lot, Captain Johnson.\n\nWhere are the defenders' [[DM.BaseDescriptionDefs[LoreJumpShip],JumpShips]] and why did they left most of their ground forces stranded in this world?",
       "branches": [
         {
           "responseText": "",
@@ -996,7 +1017,7 @@
         "id": "9c048ea7b93cf20bc5fa50e6"
       },
       "index": 24,
-      "text": "Not here and based on the reports received from other worlds, they're interdicting all systems in the area to prevent outsiders from even knowing of their presence.\n\nThat means capturing or destroying any JumpShips or DropShips present.",
+      "text": "They're interdicting all systems in the area to prevent outsiders from even knowing of their presence.\n\nThat means capturing or destroying any JumpShips or DropShips present.",
       "branches": [
         {
           "responseText": "",
@@ -1020,12 +1041,28 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "GhostRidersLeaderDefault"
+        "id": "TortugaPirateLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "kitten",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -1033,7 +1070,7 @@
         "id": "9c67a4cabf274a575b0ca2e1"
       },
       "index": 25,
-      "text": "Interdicting? \n\nYou mean Artru and the appearance of that Dark JumpShip...",
+      "text": "Interdicting? \n\nYou mean [[DM.BaseDescriptionDefs[LoreArtru],Artru]] and the appearance of that [[DM.BaseDescriptionDefs[LoreDarkJumpShip],Dark JumpShip]]...",
       "branches": [
         {
           "responseText": "",
@@ -1059,7 +1096,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59b97f45623035ac140054ca",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -1068,7 +1105,7 @@
         "id": "9cd778e858df2ebbd1789a18"
       },
       "index": 26,
-      "text": "Yes Lord Madeira, they're capturing or destroying all space traffic in this region of the Periphery as the final preparation for their attack into your worlds. \n\nAnd considering the remoteness of this region, it will take months or even years until someone notices something went odd.",
+      "text": "Yes Mr. Oliveira, there have been other reports of worlds going into blackout and unknown JumpShips capturing or destroying all space traffic in this region of the Periphery.\n\nAnd considering the remoteness of this region, it will take months or even years until someone notices something went odd with the Reach.",
       "branches": [
         {
           "responseText": "",
@@ -1097,7 +1134,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "johnson",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -1105,7 +1158,7 @@
         "id": "9cdaf7f6d6dfd0e1d695e15a"
       },
       "index": 27,
-      "text": "And even ComStar's eunuchs and the other Spheroids won't notice anything odd since their eyes are all set in their great inner war.\n\nIt will all burn! <i>Burn!</i>",
+      "text": "And even [[DM.Factions[faction_ComStar],ComStar]]'s eunuchs and the other [[DM.BaseDescriptionDefs[LoreSpheroid],Spheroids]] won't notice anything odd since they are so busy in their great [[DM.BaseDescriptionDefs[Lore4thSuccessionWar],inner war]].\n\nIt will all burn! <i>Burn!</i>",
       "branches": [
         {
           "responseText": "",
@@ -1158,7 +1211,7 @@
         "id": "9ca9da2b369cb9aa2977404f"
       },
       "index": 28,
-      "text": "What both of you are saying has only been partially confirmed by Colonel Haust and Aurigan intelligence...",
+      "text": "What both of you are saying has been partially confirmed by Colonel Haust and Aurigan intelligence before I left Tyrlon but it's quite a stretch...",
       "branches": [
         {
           "responseText": "",
@@ -1230,7 +1283,7 @@
         "id": "9c8331afb79cc6c621f1c4f0"
       },
       "index": 30,
-      "text": "I am not questioning that this can only be an invasion force stationed right outside our worlds, what I am not sure is their identity and objective, Captain Murray.\n\nThe same way I am not 100% sure about yours.",
+      "text": "I am not questioning that this can only be an invasion force stationed right outside our worlds or that a blockade is in progress, what I am not sure is their identity and objective, Captain Murray.",
       "branches": [
         {
           "responseText": "",
@@ -1265,7 +1318,7 @@
         "id": "9cd3d40a063eaacb6574f162"
       },
       "index": 31,
-      "text": "Murder them all!\n\nAnd either you have something useful to contribute on that matter, or you can shut up and get the fuck out of my task force.",
+      "text": "Murder them all!\n\nAnd either you idiots have something useful to contribute on that matter, or you can shut up and get the fuck out of my task force!",
       "branches": [
         {
           "responseText": "",
@@ -1460,7 +1513,7 @@
         "id": "9c671cd983ae5034b819c535"
       },
       "index": 36,
-      "text": "Just leave her... she'll be sober enough to lead her lance to her target later after some rest.\n\nShe was expecting for one of the Dark JumpShips to be here, the one you've encountered over Artru.",
+      "text": "Just leave her... she'll be sober enough to lead her lance to her target later after some rest.\n\nShe was expecting for the Dark JumpShips to be here, like the one you've encountered over Artru.",
       "branches": [
         {
           "responseText": "The <i>Orion's Belt</i>?",
@@ -1550,7 +1603,7 @@
         "id": "9c57a85ac5affd2161b7ac7f"
       },
       "index": 38,
-      "text": "Captain Johnson, what's the origin of the feud?\n\nShe reminds me of Chancellor Liao's obsession with Hanse Davion.",
+      "text": "Captain Johnson, any idea on what's the origin of the feud?\n\nShe reminds me of [[DM.BaseDescriptionDefs[LoreMaximillianLiao],Chancellor Liao]]'s obsession with [[DM.BaseDescriptionDefs[LoreHanseDavion],Hanse Davion]].",
       "branches": [
         {
           "responseText": "",
@@ -1585,7 +1638,7 @@
         "id": "9c3f4e66e762892a7487c05f"
       },
       "index": 39,
-      "text": "That's a puzzle inside an enigma and we don't have time to solve it here now.\n\nWe've identified convoys all over the planet, the faster we deploy the quicker we can move to the next phase. ",
+      "text": "That's a puzzle inside an enigma also to me and we have no time to spare.\n\nWe've identified convoys all over the planet, the faster we deploy the quicker we can move to the next phase. ",
       "branches": [
         {
           "responseText": "Back to that, what's the next phase?",
@@ -1659,7 +1712,7 @@
         "id": "9cb2dddad7ccb7bab354420d"
       },
       "index": 41,
-      "text": "Roger that, good hunting Commander.\n\nGhost actual is out.",
+      "text": "Roger that, good hunting Commander {COMMANDER.LastName}.\n\nGhost Actual is out.",
       "branches": [
         {
           "responseText": "",

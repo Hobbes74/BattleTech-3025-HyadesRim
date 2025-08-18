@@ -33,6 +33,7 @@
                         "items" : [
                             "fp_choice_a",
                             "fp_choice_b",
+                            "fp_choice_c",
                             "fp_choice_cancel"
                         ],
                         "tagSetSourceFile" : "Tags/CompanyTags"
@@ -171,7 +172,7 @@
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name}",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Synchronous Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
                             ]
@@ -301,7 +302,7 @@
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} II",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
                             ]
@@ -405,6 +406,43 @@
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Flashpoint",
+                        "RequirementTags" : {
+                            "items" : [
+                                "fp_choice_c"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_300_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,
@@ -446,29 +484,21 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_lostCanyon_aBad",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "c_StoryTime_HYR_315_ghostRiders_2a_attackDefend",
-                                "GhostRiders",
-                                "RimPirates",
-                                "6",
-                                "ms_fp_ghostRiders_101_Mission",
+                                "TortugaPirates",
+                                "DeepRaiders",
+                                "7",
+                                "ms_fp_ghostRiders_101_Talk",
                                 null,
                                 null,
                                 null,
-                                "BlackAngels"
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
+                                null
                             ]
                         }
                     ],
@@ -483,7 +513,88 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_101_Mission",
+                "Id" : "ms_fp_ghostRiders_101_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf7e455ae29c08231a72546",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Synchronous Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_102_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_102_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -524,9 +635,9 @@
                                 null,
                                 "c_StoryTime_HYR_315_ghostRiders_3_threeWayBattle",
                                 "TortugaPirates",
-                                "RimPirates",
-                                "6",
-                                "ms_fp_ghostRiders_102_Talk",
+                                "DeepRaiders",
+                                "7",
+                                "ms_fp_ghostRiders_103_Talk",
                                 "GhostRiders",
                                 "HarbingersOfDoom",
                                 null,
@@ -545,7 +656,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_102_Talk",
+                "Id" : "ms_fp_ghostRiders_103_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -579,18 +690,18 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cf7e455ae29c08231a72546",
+                            "value" : "9cf7e455ae29c08231a72547",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "Zenith Jump Point \u2014 Coromodir",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_ghostRiders_103_Complete",
+                            "value" : "ms_fp_ghostRiders_104_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -606,7 +717,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_103_Complete",
+                "Id" : "ms_fp_ghostRiders_104_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -642,7 +753,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_ghostRiders_104_Reward",
+                            "value" : "ms_fp_ghostRiders_105_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_ghostRiders",
@@ -669,7 +780,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_104_Reward",
+                "Id" : "ms_fp_ghostRiders_105_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null
@@ -708,7 +819,28 @@
                             "valueConstant" : null
                         }
                     ],
-                    "Actions" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Alexander",
+                                "Kamea"
+                            ]
+                        }
+					],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -753,28 +885,20 @@
                     "Stats" : null,
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_toxicMire_aBad",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "c_StoryTime_HYR_315_ghostRiders_2b_fireMission",
-                                "DevilsDisciples",
-                                "RimPirates",
-                                "6",
-                                "ms_fp_ghostRiders_201_Mission",
+                                "GhostRiders",
+                                "DeepRaiders",
+                                "7",
+                                "ms_fp_ghostRiders_201_Talk",
                                 null,
                                 null,
                                 null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
                             ]
                         }
                     ],
@@ -789,7 +913,88 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_201_Mission",
+                "Id" : "ms_fp_ghostRiders_201_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf7e455ae29c08231a72546",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Synchronous Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_202_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_202_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -823,16 +1028,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_bleakRidge_aBad",
+                            "value" : "mapGeneral_rockyMesas_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
                                 "c_StoryTime_HYR_315_ghostRiders_3_threeWayBattle",
                                 "TortugaPirates",
-                                "RimPirates",
+                                "DeepRaiders",
                                 "7",
-                                "ms_fp_ghostRiders_202_Talk",
+                                "ms_fp_ghostRiders_203_Talk",
                                 "GhostRiders",
                                 "HarbingersOfDoom",
                                 null
@@ -850,7 +1055,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_202_Talk",
+                "Id" : "ms_fp_ghostRiders_203_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -884,18 +1089,18 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cf7e455ae29c08231a72546",
+                            "value" : "9cf7e455ae29c08231a72547",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "Zenith Jump Point \u2014 Coromodir",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_ghostRiders_203_Complete",
+                            "value" : "ms_fp_ghostRiders_204_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -911,7 +1116,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_203_Complete",
+                "Id" : "ms_fp_ghostRiders_204_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -947,7 +1152,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_ghostRiders_204_Reward",
+                            "value" : "ms_fp_ghostRiders_205_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_ghostRiders",
@@ -974,7 +1179,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_ghostRiders_204_Reward",
+                "Id" : "ms_fp_ghostRiders_205_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null
@@ -1013,7 +1218,430 @@
                             "valueConstant" : null
                         }
                     ],
-                    "Actions" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Alexander",
+                                "Kamea"
+                            ]
+                        }
+					],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_300_Mission",
+                "Name" : "Mission",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_highPlateaus_aDes",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "c_StoryTime_HYR_315_ghostRiders_2c_captureEscort",
+                                "DevilsDisciples",
+                                "DeepRaiders",
+                                "7",
+                                "ms_fp_ghostRiders_301_Talk",
+                                null,
+                                null,
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_301_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf7e455ae29c08231a72546",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Synchronous Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_302_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_302_Mission",
+                "Name" : "Mission",
+                "Details" : "The 3rd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_StartContract",
+                            "value" : "mapGeneral_rockyMesas_aDes",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "c_StoryTime_HYR_315_ghostRiders_3_threeWayBattle",
+                                "TortugaPirates",
+                                "DeepRaiders",
+                                "7",
+                                "ms_fp_ghostRiders_303_Talk",
+                                "GhostRiders",
+                                "HarbingersOfDoom",
+                                null,
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_303_Talk",
+                "Name" : "Talk",
+                "Details" : "Closing Conversation.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cf7e455ae29c08231a72547",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "Zenith Jump Point \u2014 Coromodir",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_ghostRiders_304_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_304_Complete",
+                "Name" : "Complete",
+                "Details" : "Flashpoint completion.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_ghostRiders_complete"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_ghostRiders_305_Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "itemCollection_loot_fp_reward_ghostRiders",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_ghostRiders_305_Reward",
+                "Name" : "Reward",
+                "Details" : "Rewards",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [
+						],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Int32",
+                            "name" : "Funds",
+                            "value" : "1000000",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Alexander",
+                                "Kamea"
+                            ]
+                        }
+					],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0

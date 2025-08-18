@@ -2,7 +2,7 @@
     "ID" : "c_StoryTime_HYR_315_ghostRiders_2a_attackDefend",
     "contractName" : "Ghost Riders In The Sky II",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
-    "difficulty" : 8,
+    "difficulty" : 7,
     "difficultyUIModifier" : 1,
     "weight" : 1,
     "scope" : "STANDARD",
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The appearance of the armada of Black JumpShips has changed the entire nature of this venture, meaning that we need to evacuate this system before the Harbingers are able to trap us on this planet. Unfortunately, the Harbinger garrison appears to have been energized by their reinforcements and are threatening our main DropShip landing zone. You need to protect it and take out their command lance before we rejoin our forces.",
-    "longDescription" : "Final battle? Commander, Murray is completely dictating us around here but that's nothing new, I guess.",
+    "shortDescription" : "The Harbinger garrison appears to have been energized by our previous attacks but they're like half-drunks attempting to fight their way out of a Periphery tavern since we can keep them at arms' length. They have a number of previously unknown DropShips operating but they shouldn't be a problem for our glorious coalition fleet. Maybe we'll all go in a major space battle instead of fighting it down like real warriors.",
+    "longDescription" : "Space battle? Commander, Murray is... unreliable but that's nothing new, I guess.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "411d4077-b39c-4c85-a73e-89ed06f20dd2"
             },
-            "title" : "Defend {TEAM_EMP.FactionDef.Demonym} Base and Destroy {TEAM_TAR.FactionDef.Demonym} Base",
+            "title" : "Defend Kitten Depot and Destroy Harbinger Base",
             "description" : "Attack and Defend",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -76,7 +76,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "54046856-08c7-4498-a897-9a56bb704ea5"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Base",
+            "title" : "Destroy the Harbinger Base",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -148,7 +148,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4e1739df-5cea-4ae8-8b98-2c3253e5b997"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
+            "title" : "Destroy Harbinger Attackers",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -160,7 +160,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
+            "title" : "Destroy Harbinger Attackers",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -198,7 +198,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "836c1bef-fe50-475b-a169-c65fe7cb9333"
             },
-            "title" : "Defend the {TEAM_EMP.FactionDef.Demonym} Base",
+            "title" : "Defend the Kitten Ammo Depot",
             "description" : "At least 1 must survive.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -210,7 +210,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0529f39a-3356-4333-9e98-da04c4cce535"
             },
-            "title" : "Keep all friendly structures standing",
+            "title" : "Keep ammo depot intact",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -284,7 +284,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ede7737f-1312-450a-992e-0490307333b4"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Turrets",
+            "title" : "Destroy Harbinger Turrets",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -334,7 +334,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3c3c1340-1c98-40f3-b7d3-14e187100d40"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Defenders",
+            "title" : "Destroy Harbinger Defenders",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -346,7 +346,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "128092ce-f5b9-4cc6-a9a4-8360a4dd2a3d"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Defenders",
+            "title" : "Destroy Harbinger Defenders",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -1128,7 +1128,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "ef0a0d81-445a-42a5-946d-58aa9765c2d9"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Destroy Lance Defenders Chunk Group"
             ],
@@ -1139,7 +1139,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "980d31ca-5d9a-4dae-a1a5-bf02400fd5ee"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Destroy Lance Defenders Chunk Group"
             ],
@@ -1225,7 +1225,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a6abe383-33ba-44d9-bd60-0f39e4c4bc5a"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -1234,7 +1234,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "01a3f91d-ee85-4871-8aa1-b227f4e906b9"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -1490,7 +1490,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're expecting the {TEAM_TAR.FactionDef.Demonym} forces to begin their assault on this facility at any moment. If they destroy it, our employers lose their eyes on the operational area; they'll scrub the mission at that point.",
+                    "words" : "Kitten Actual, we're ready to support you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1506,7 +1506,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "So here's the plan. We're going to hold the {TEAM_TAR.FactionDef.Demonym} force and keep them busy, and well away from the friendly facility. Meanwhile, a {TEAM_HOST.FactionDef.Demonym} strike force will be inbound to the AO.",
+                    "words" : "I told Johnson that I didn't need help... why can't you people listen!?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "He disagreed and so did we and we don't follow your orders.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1516,13 +1532,29 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a4f2f476-5c52-4835-9842-024c55d1a09f",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once they land, they'll engage everyone -- friendly and hostile -- and generally stir up trouble. The goal is to get them to take the brunt of the enemy fire; we move in and clean up the mess afterwards.",
+                    "words" : "Defiance? I am the commander here, Argo Actual. Oh, here they came.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What is the plan?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1532,20 +1564,20 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "b7c4af34-c713-446f-9039-db2515064124",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The number one priority is to destroy that base. Once it's gone, the {TEAM_TAR.FactionDef.Demonym} brass will call off the assault, and we'll be clear to evac. Questions?",
+                    "words" : "There's a command post somewhere ahead. You may destroy it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "cf8a8a02-0689-4753-87a5-dec1d3ecec8b",
@@ -1554,14 +1586,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Yeah, whose bullshit idea was this, anyway?",
+                    "words" : "May destroy it? What are the mission objectives?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1570,7 +1602,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Not helpful, Meyer. Stay on station to make the pickup once the base is down. Commander... good luck.",
+                    "words" : "You need a fucking drawing? Get moving, that's an order.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Pilot Meyer, please stay on station in case this goes wrong. Good luck Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1595,14 +1643,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Oh thank God. Commander, that's the friendly reinforcements. We can leave whenever you're ready.",
+                    "words" : "Not what I had expected but I will take it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1611,7 +1659,39 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'll pick you up at the designated LZ.",
+                    "words" : "And what was that that you were expecting?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "A ride home. Pilot Meyer, take us out of here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Aye aye, Commander I'll pick you up at the designated LZ.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1636,7 +1716,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "This was always going to be a long shot. Let's get clear of this, Commander.",
+                    "words" : "Murray? You have some explaining to do.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1686,7 +1766,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Commander, I'm seeing hostile defenders surrounding the enemy base. Primary Version.",
+                    "words" : "That must be the command post, take it out to prevent reinforcements.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1702,7 +1782,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER. We can't complete the contract until those units are destroyed. Primary Version.",
+                    "words" : "You'll need also to destroy the Harbinger defenders.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1727,7 +1807,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The opfor's holding forces back at the captured base, presumably to cover their intel teams. They're optional targets, Commander.",
+                    "words" : "That must be the command post, take it out to prevent reinforcements.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1868,7 +1948,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's it, Commander. The enemy base has been destroyed.",
+                    "words" : "The Harbinger command post has been destroyed.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1925,14 +2005,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "As long as you're still in the AO, Commander, you'll need to keep the {TEAM_EMP.FactionDef.Demonym} base secure.",
+                    "words" : "You still need to help us out while you're here Argo Actual.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2553,14 +2633,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER. The {TEAM_EMP.FactionDef.Name} has provided some of their own forces to support us.",
+                    "words" : "Hm, we're low on ammo so we need to defend this depot.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3a5b4e72-3004-4113-aa92-b9527d7fcf35",
@@ -2569,14 +2649,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER. They're here to defend their base and will engage any hostiles that get too close.",
+                    "words" : "You take down the command post, we hold the depot.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TortugaPirateLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2623,9 +2703,9 @@
     ],
     "overwriteMissionCompleteWhenAutoComplete" : false,
     "overrideAutoCompleteDialogueId" : null,
-    "disableNegotations" : false,
+    "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,
@@ -2828,7 +2908,9 @@
                 "name" : "LanceSpawner",
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
-                    "items" : [],
+                    "items" : [
+                        "lance_type_mech",
+					],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -2850,10 +2932,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4dbbdd6c-7d27-4a93-8410-5c4aea4f933c"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Mad Cat",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_marauder_MAD-MC",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -2866,7 +2948,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_HYR_Kitten",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3001,7 +3083,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : -1,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -3010,9 +3092,10 @@
                             "EncounterObjectGuid" : "e5750a7f-1034-4b98-82a4-270b0af5060f"
                         },
                         "customUnitName" : "",
+                        "customUnitName" : "Mad Cat",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_marauder_MAD-MC",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3025,7 +3108,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_HYR_Kitten",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3147,7 +3230,7 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_support"
+                        "lance_type_battle"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -3172,13 +3255,12 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
+                        "customUnitName" : "Mad Cat",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_marauder_MAD-MC",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_medium",
-                                "unit_vehicle"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -3189,7 +3271,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_HYR_Kitten",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

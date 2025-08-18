@@ -15,11 +15,11 @@ Patreon (donations not required but welcome) - https://www.patreon.com/Hobbes74
 Features
 * A new BattleTech story and Campaign mode, consisting of forty-three new flashpoints and forty-four new events telling an alternative history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Thirty-nine original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration and Unnatural Selection.
+* Forty original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection and Ghost Riders In The Sky.
 
-* Four more campaign flashpoints are being written for part three of the new campaign: Ghost Riders In The Sky,  Barbarians At The Gates, Atomic and The Eyes Of Truth.
+* Three more campaign flashpoints are being written for part three of the new campaign: Barbarians At The Gates, Atomic and The Eyes Of Truth.
 
-An optional 'Periphery Tales' campaign consisting of 52 mini-flashpoints, taking place simultaneous with the main story, with increased rewards to speed up 'farming'.
+* An optional 'Periphery Tales' campaign consisting of 52 mini-flashpoints, taking place simultaneous with the main story, with increased rewards to speed up 'farming'.
 
 * Optional - Community Asset Bundle 3025 integration, includes Bombardier, Chameleon, Champion, Charger, Clint, Crockett, Crusader, Dervish, Devastator, Emperor, Exterminator, Falcon, Firebee, Firefly, Gladiator, Guillotine, Hermes, Hermes II, Hoplite, Hornet, Hussar, Icarus II, Imp, Lancelot, Linesman, Longbow, Lynx, Mackie, Marauder II, Merlin, Mongoose, Nighthawk, Nightstar, Ostroc, Ostscout, Ostsol, Ostwar, Pillager, Sentinel, Shootist, Spector, Starslayer, Stinger, Talon, Talos, Thorn, Thug, Thunderhawk, Titan, Toro, Valkyrie, Wasp, Whitworth, Wolfhound and Wyvern 'Mech models and canon variants.
 
@@ -109,7 +109,7 @@ Credits
 * Additional writing: Camicon_Dachass (Liao systems);
 * Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS, Miggles, HunterZ, Arin Fei, Narks, Splittix, Thortol, Iry, Aotrs Commander, George-D, KarbinCry;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS, Miggles, HunterZ, Arin Fei, Narks, Splittix, Thortol, Iry, Aotrs Commander, George-D, KarbinCry, Scholomancer, NewAgeOfPower, Josh;
 
 All canon BattleTech content is property of its franchise, owned by Catalyst Games, and the BattleTech videogame and DLCs are owned by Paradox Games.
 
@@ -120,6 +120,7 @@ Contributions/Tools:
 * Extended Converstations mod, by CWolfs (MIT license) - https://github.com/CWolfs/ExtendedConversations;
 * Inner Sphere Map mod, by Morphyum, changed to use the Hyades Rim star map and factions (GNU GPL License) - https://github.com/Morphyum/InnerSphereMap
 * Community Asset Bundle 3025, by several - https://discourse.modsinexile.com/t/community-assets-bundle-cab/115 
+* MechResizer, by janxious - https://github.com/janxious/MechResizer 
 * MegaMek, by several, for the coordinates of several connecting systems - https://megamek.org/;
 * Several images taken and adapted from the sourcebook The Periphery, 2nd Edition;
 * Corporation logos taken and adapted from Sarna.net;

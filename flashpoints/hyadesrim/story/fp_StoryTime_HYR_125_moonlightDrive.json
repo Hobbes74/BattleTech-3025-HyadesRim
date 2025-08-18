@@ -1,0 +1,68 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_125_moonlightDrive",
+        "Name" : "Moonlight Drive",
+        "Details" : "A bounty hunter contract involving a former collaegue of the Commander.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_65.png"
+    },
+    "Weight" : 50,
+    "InternalName" : "moonlightDrive",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 4,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_moonlightDrive_complete",
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_moonlightDrive_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_fugeres",
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"AuriganPirates"
+    ],
+    "TargetFaction" : "SyrtisPirates",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : false,
+    "MilestoneSetID" : "ms_fp_moonlightDrive",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_moonlightDrive",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "Tell me Commander, have you ever danced with the Devil under a pale moonlight?",
+    "FlashpointDescriberCastDefId" : "castDef_FP_scoundrel_AyashaDefault",
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

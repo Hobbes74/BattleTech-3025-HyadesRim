@@ -9,7 +9,7 @@
         "id": "9c67a6ce7082303fb5b693e7"
       },
       "index": 0,
-      "text": "Darius, I'm certain none of the techs are responsible for that Pleasure Sticks package you found while searching for contraband. \n\nThat stuff is dangerous to consume while working in a 'Mech Bay, I'd have noticed it by now.",
+      "text": "Darius, I'm certain none of the techs are responsible for that [[DM.BaseDescriptionDefs[LorePleasureSticks],Pleasure Sticks]] package you found while searching for contraband. \n\nThat stuff is dangerous to consume while working in a 'Mech Bay, I'd have noticed it by now.",
       "branches": [
         {
           "responseText": "",
@@ -227,7 +227,7 @@
         "id": "9cee6aab3b2badef190c7edf"
       },
       "index": 4,
-      "text": "A few months ago, word come to us about the possible location of a priceless historical artifact called the '[[DM.BaseDescriptionDefs[LoreAmarisLegacy],Amaris Legacy]]' that some in IE have sought for decades. \n\nIt's the laser pistol that [[DM.BaseDescriptionDefs[LoreStefanAmaris],Stefan Amaris]] gave to the last First Lord of the Star League, [[DM.BaseDescriptionDefs[LoreRichardCameron],Richard Cameron]], as a Christmas gift and then used it to kill the First Lord as the start of his coup. ",
+      "text": "A few months ago, word come to us about the possible location of a priceless historical artifact called the '[[DM.BaseDescriptionDefs[LoreAmarisLegacy],Amaris Legacy]]' that some in IE have sought for decades. \n\nIt's the laser pistol that [[DM.BaseDescriptionDefs[LoreStefanAmaris],Stefan Amaris]] gave to the last First Lord of the Star League, [[DM.BaseDescriptionDefs[LoreRichardCameron],Richard Cameron]], as a Christmas gift and then used it to kill the [[DM.BaseDescriptionDefs[LoreStarLeagueFirstLord],First Lord]] as the start of his coup. ",
       "branches": [
         {
           "responseText": "",
@@ -262,7 +262,7 @@
         "id": "9c10522f3f9b2ea5eaeda665"
       },
       "index": 5,
-      "text": "The weapon was then kept by Stefan during his rule as Emperor of the Amaris Empire, and later he surrendered it at the feet of General Kerensky's <i>[[DM.MechDefs[mechdef_orion_ON1-K],Orion]]</i> after the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] invaded Amaris' palace during the liberation of [[DM.BaseDescriptionDefs[LoreTerra],Terra]]. \n\nAfterwards, the weapon disappeared from public record and it was assumed to have been taken by the departing Star League army. However, we recently received a reliable report that the pistol was recovered by the [[DM.Factions[faction_BrotherhoodOfRandis],Brotherhood of Randis]].",
+      "text": "The weapon was then kept by Stefan during his rule as Emperor of the Amaris Empire, and later he surrendered it at the feet of General Kerensky's <i>[[DM.MechDefs[mechdef_orion_ON1-K],Orion]]</i> after the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]] invaded Amaris' palace during the liberation of [[DM.BaseDescriptionDefs[LoreTerra],Terra]]. \n\nAfterwards, the weapon disappeared from public record and it was assumed to have been taken by the departing [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]]. However, IE recently received a reliable report that the pistol was recovered by the [[DM.Factions[faction_BrotherhoodOfRandis],Brotherhood of Randis]].",
       "branches": [
         {
           "responseText": "",
@@ -394,7 +394,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -439,6 +455,19 @@
                 "bool_value": false,
                 "float_value": 0.0,
                 "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -558,7 +587,7 @@
         "id": "9c8d1e878cf5f6211fdc19b5"
       },
       "index": 13,
-      "text": "We're not talking about the [[DM.BaseDescriptionDefs[LorePianPian],Pleasure Sticks]] again are we, Yang? \n\nDoesn't matter what this thing is, let's recover it and clear our record with Interstellar Expeditions. ",
+      "text": "We're not talking about the [[DM.BaseDescriptionDefs[LorePianPian],Pian Pians]] or Pleasure Sticks again are we, Yang? \n\nDoesn't matter what this thing is, let's recover it and clear our record with Interstellar Expeditions. ",
       "branches": [
         {
           "responseText": "",
@@ -873,7 +902,7 @@
         "id": "9c8d61aa26e76c4dcb6ad401"
       },
       "index": 22,
-      "text": "I can certainly smell a rat here... why me and not one of your MechWarriors? ",
+      "text": "<i>Perkele</i>I can certainly smell a rat here... why me and not one of your MechWarriors? ",
       "branches": [
         {
           "responseText": "",
