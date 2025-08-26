@@ -1,0 +1,136 @@
+{
+    "Description": {
+        "Id": "forcedevent_co_HYR_002_aranoRoyalGuard",
+        "Name": "Flashback - Arano Royal Guard",
+        "Details": "Night comes, dictated by the internal clock of the DropShip, and you're sleeping in your bunk in your quarters when an old memory resurfaces, of your time with Raju 'Mastiff' Montgomery, after he recruited you into Lord Tamati Arano's Royal Guard.",
+        "Icon": "uixTxrSpot_fp_HyadesRim_Background_46.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight": 10,
+    "Requirements": {
+        "Scope": "Company",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+			"items" : [
+				"event_co_aranoRoyalGuard"
+			],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons": []
+    },
+    "AdditionalRequirements": [],
+    "AdditionalObjects": [],
+    "Options": [
+        {
+            "Description": {
+                "Id": "outcome_0",
+                "Name": "<color=#85DBF6FF>[Start Flashback.]</color> Dream time.",
+                "Details": "Play message",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_0_0",
+                        "Name": "Dream Time",
+                        "Details": "Flashback will begin shortly.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"event_co_aranoRoyalGuard"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [
+								{
+									"Type" : "System_StartContract",
+									"value" : "c_StoryTime_HYR_002_aranoRoyalGuard_defendBase",
+									"valueConstant" : null,
+									"additionalValues" : [
+										"AuriganPirates",
+										"AuriganRestoration"
+									]
+								}
+                            ],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        },
+        {
+            "Description": {
+                "Id": "outcome_1",
+                "Name": "<color=#85DBF6FF>[It's just a dream.]</color> Ignore Mastiff's voice.",
+                "Details": "Skip message",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_1_0",
+                        "Name": "Go Back to Sleep",
+                        "Details": "You close your eyes and dooze away in zero-g, quickly falling back again into sleep.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"event_co_aranoRoyalGuard"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+					]
+                }
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        }
+    ],
+    "PublishState": "PUBLISHED",
+    "ValidationState": "UNTESTED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

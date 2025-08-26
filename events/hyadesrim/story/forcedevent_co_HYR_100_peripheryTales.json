@@ -2,8 +2,8 @@
     "Description": {
         "Id": "forcedevent_co_HYR_100_peripheryTales",
         "Name": "Periphery Tales",
-        "Details": "A sharp sound brings your conscience from the depths of sleep to slowly feel the warmth of the zero-g sleeping bag permeating your body and it feels relaxing after a long work shift helping Yang and the MechTechs with maintenance in the DropShip's MechBays. Memories of a fuzzy dream briefly come to mind from into the subconscious, the image briefly appearing in the bulkhead above before fading back as the eyelids close again.\r\n\r\n<i>The strange BattleMech in unknown markings, charging its way through a fierce battle, but familiar... the same that killed mother!</i>\r\n\r\nThe old childhood nightmare fades back as an alert sound starts beeping a second time from the electronic panel installed on the wall of the sleeping bunk, notifying the receival of a priority HPG message on the <i>[[DM.BaseDescriptionDefs[LoreHysteria],Hysteria]]</i>'s bridge.",
-        "Icon": "uixTxrSpot_fp_HyadesRim.png"
+        "Details": "A sharp sound brings your conscience from the depths of sleep to slowly feel the warmth of the zero-g sleeping bag permeating your body and it feels relaxing after a long work shift helping Yang and the MechTechs with maintenance in the DropShip's 'Mech Bays. Memories of a fuzzy dream briefly come to mind from and into the subconscious, the image briefly appearing in the bulkhead above before fading back as the eyelids close again.\r\n\r\n<i>The strange BattleMech in unknown markings, charging its way through a fierce battle, but familiar... the same that killed mother!</i>\r\n\r\nThe old childhood nightmare fades back as an alert sound starts beeping a second time from the electronic panel installed on the wall of the sleeping bunk, notifying the receival of a priority HPG message on the <i>[[DM.BaseDescriptionDefs[LoreHysteria],Hysteria]]</i>'s bridge.",
+        "Icon": "uixTxrSpot_fp_HyadesRim_Background_0.png"
     },
     "Scope": "Company",
     "Weight": 1000,
@@ -16,9 +16,9 @@
             "tagSetSourceFile" : ""
         },
         "ExclusionTags" : {
-                "items" : [
-                    "event_co_peripheryTales"
-                ],
+			"items" : [
+				"event_co_peripheryTales"
+			],
             "tagSetSourceFile" : ""
         },
         "RequirementComparisons" : []
@@ -89,7 +89,24 @@
 									]
 								}
                             ],
-                            "ForceEvents": null,
+							"ForceEvents" : [
+								{
+									"Scope" : "Company",
+									"EventID" : "forcedevent_co_HYR_001_eighteenthBirthday",
+									"MinDaysWait" : 15,
+									"MaxDaysWait" : 30,
+									"Probability" : 100,
+									"RetainPilot" : false
+								},
+								{
+									"Scope" : "Company",
+									"EventID" : "forcedevent_co_HYR_002_aranoRoyalGuard",
+									"MinDaysWait" : 45,
+									"MaxDaysWait" : 60,
+									"Probability" : 100,
+									"RetainPilot" : false
+								}
+							],
                             "TemporaryResult": false,
                             "ResultDuration": 0
                         }

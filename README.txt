@@ -15,7 +15,7 @@ Patreon (donations not required but welcome) - https://www.patreon.com/Hobbes74
 Features
 * A new BattleTech story and Campaign mode, consisting of forty-three new flashpoints and forty-four new events telling an alternative history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Forty original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection and Ghost Riders In The Sky.
+* Forty-two original flashpoints released, campaign mode only: Eighteen Birthday, Arano Royal Guard, You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection and Ghost Riders In The Sky.
 
 * Three more campaign flashpoints are being written for part three of the new campaign: Barbarians At The Gates, Atomic and The Eyes Of Truth.
 
@@ -59,10 +59,6 @@ Balance and Story Changes
 * For most of the campaign you'll use the Hysteria (Leopard), and only get the Argo at the end of part 2, with the Question Of Faith campaign flashpoint.
 
 * Several of the new campaign flashpoints have consecutive deployments. This was done to increase the challenge of having to run multiple operations with limited assets, and for story telling proposes, the flashpoint conditions usually involve fast operations. Certain flashpoint choices can reduce the number of consecutive deployments or allow you to use third-party 'Mechs.
-
-* The original flashpoints of the five Inner Sphere factions are optional to play during the campaign, and will immediately precede the 4th Succession War. They're also played sequentially, starting from the lowest difficulty.
-
-* On campaign, JumpShip access to the Inner Sphere is limited, and depends on you unlocking letters of marque from the Successor Lords (which also unlock their faction FPs).
 
 * More terrain variety - in the original game each contract (like One Man's Art) can only appear at a certain system difficulty and certain campaign milestones. Those limitations have been removed, allowing for a greater terrain variety during regular contracts.
 

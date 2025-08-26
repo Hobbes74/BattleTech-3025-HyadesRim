@@ -1,0 +1,138 @@
+{
+    "Description": {
+        "Id": "forcedevent_co_HYR_001_eighteenthBirthday",
+        "Name": "Flashback - Eighteenth Birthday",
+        "Details": "Night comes, dictated by the internal clock of the DropShip, and you're sleeping in your bunk in your quarters when an old memory resurfaces, of your time with Raju 'Mastiff' Montgomery, of the mission that took place in the day after your eighteenth birthday.",
+        "Icon": "uixTxrSpot_fp_HyadesRim_Background_59.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight": 10,
+    "Requirements": {
+        "Scope": "Company",
+        "RequirementTags" : {
+            "items" : [
+				"event_co_peripheryTales"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+			"items" : [
+				"event_co_eighteenthBirthday"
+			],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons": []
+    },
+    "AdditionalRequirements": [],
+    "AdditionalObjects": [],
+    "Options": [
+        {
+            "Description": {
+                "Id": "outcome_0",
+                "Name": "<color=#85DBF6FF>[Start Flashback.]</color> Dream time.",
+                "Details": "Play message",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_0_0",
+                        "Name": "Dream Time",
+                        "Details": "Flashback will begin shortly.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"event_co_eighteenthBirthday"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [
+								{
+									"Type" : "System_StartContract",
+									"value" : "c_StoryTime_HYR_001_eighteenthBirthday_simpleBattle",
+									"valueConstant" : null,
+									"additionalValues" : [
+										"Davion",
+										"AuriganMercenaries"
+									]
+								}
+                            ],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        },
+        {
+            "Description": {
+                "Id": "outcome_1",
+                "Name": "<color=#85DBF6FF>[It's just a dream.]</color> Ignore Mastiff's voice.",
+                "Details": "Skip message",
+                "Icon": null
+            },
+            "RequirementList": [],
+            "ResultSets": [
+                {
+                    "Description": {
+                        "Id": "outcome_1_0",
+                        "Name": "Go Back to Sleep",
+                        "Details": "You close your eyes and dooze away in zero-g, quickly falling back again into sleep.",
+                        "Icon": null
+                    },
+                    "Weight": 100,
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"event_co_eighteenthBirthday"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+					]
+                }
+            ],
+            "Requirements": {
+                "Scope": "Company",
+                "RequirementTags": {},
+                "ExclusionTags": {},
+                "RequirementComparisons": []
+            }
+        }
+    ],
+    "PublishState": "PUBLISHED",
+    "ValidationState": "UNTESTED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

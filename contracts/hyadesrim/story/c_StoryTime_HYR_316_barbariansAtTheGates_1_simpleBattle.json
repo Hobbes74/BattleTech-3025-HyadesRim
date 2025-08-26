@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Restoration scouts have detected an approaching unknown BattleMech lance towards the main settlement. We need to stop the Harbingers from reaching the civilian areas.",
+    "shortDescription" : "There are scattered reports coming from all over Gangtok of what seems to be Harbinger activity and Sumire and Dr. Murad have detected an approaching unknown BattleMech lance towards the main settlement. We need to stop the Harbingers from reaching the civilian areas before anything else.",
     "longDescription" : "The former Directorate units now on the Restoration's side have been decimated by the Harbingers, and we need to buy them time to retreat off-world.",
     "salvagePotential" : 8,
     "requirementList" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "73275787-720a-4c33-9f20-953b1bbf48bd"
             },
-            "title" : "Intercept the Enemy Lance",
+            "title" : "Intercept the Harbinger Lance",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -55,7 +55,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d111d351-a666-4852-8e4b-a300d0cccc2d"
             },
-            "title" : "Destroy Enemy Units",
+            "title" : "Destroy Harbinger Units",
             "description" : "The primary objective to destroy the enemy lance.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -67,7 +67,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e2a07c1-e22a-47a7-a353-3e93ebcd7b47"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Harbinger Reinforcements",
             "description" : "An OPTIONAL primary objective to destroy the second enemy lance.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -84,7 +84,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "181d617b-02bc-4fd3-be25-d6d5cffb78de"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -118,14 +118,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Our employer's intel was accurate, Commander. We've spotted our targets.",
+                    "words" : "The unknown lance is several hundred meters ahead and still haven't replied to our attempts at communication.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -134,7 +134,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Move up to this area and make contact, and then engage and destroy them.",
+                    "words" : "And Brigadier Paiva's Mechs are deployed elsewhere, so these unknowns must be Harbingers.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -150,7 +150,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander.",
+                    "words" : "It seems like a lance that has infiltrated for recon so we might have reached the system on time if we stop it.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "So good hunting Commander, Argo is out.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -175,7 +191,55 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That ought to buy our employers enough time to track down the prospector's story.",
+                    "words" : "One Harbinger lance down, let us hope they are the only ones...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Don't hold on to that hope XO, Brigadier Paiva has just been ambushed on his way to rejoin the Directorate lance.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And he is now screaming on the comms that our contract requires us to rescue him immediately.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And now he wants us to fulfill the contract he rejecting as fake. Very well, let's prepare for another drop.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

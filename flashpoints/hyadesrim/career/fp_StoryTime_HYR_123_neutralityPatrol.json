@@ -1,0 +1,69 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_123_neutralityPatrol",
+        "Name" : "Neutrality Patrol",
+        "Details" : "A border skirmish turns deadly between the Lothian League and the Marian Hegemony.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_25.png"
+    },
+    "Weight" : 50,
+    "InternalName" : "neutralityPatrol",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 4,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_neutralityPatrol_complete",
+					"company_story_flashpoints",
+					"flashpoint_evilEye_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_neutralityPatrol_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_paulinus"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"TaurianConcordat"
+    ],
+    "TargetFaction" : "Davion",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_neutralityPatrol",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_neutralityPatrol",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "We've detected several breaches of the neutral zone involving unknown military forces being staged in the area. We are unsure of the identity of the party or parties involved but we can't send our own forces to a demilitarized zone.",
+    "FlashpointDescriberCastDefId" : "castDef_TaurianRepDefault",
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}
