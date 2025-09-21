@@ -8,7 +8,7 @@ It is 3024 and Lady Kamea Arano has been exiled instead of presumed dead as in t
 
 Release version: https://www.nexusmods.com/battletech/mods/473 (use this to play)
 
-Public repository: https://github.com/Hobbes74/Battletech-3025-HyadesRim
+Public repository: https://github.com/Hobbes74/Battletech-3025-HyadesRim (do not use this to play)
 
 Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 
