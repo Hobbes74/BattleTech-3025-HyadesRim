@@ -6,7 +6,9 @@ Slavish adherence to a formal ritual is a sign that one has nothing better to th
 
 It is 3024 and Lady Kamea Arano has been exiled instead of presumed dead as in the original campaign. After Kamea and the Commander are rescued by the survivors of Markham's Marauders during House Espinosa's coup, they have joined the company in search for mercenary work in the Rimward Periphery. But as the Fourth Succession War approaches, powerful forces are now threatening to destroy the entire Aurigan Reach unless Kamea can save her realm and reclaim her throne. Work in progress.
 
-Public repository: Hyades Rim - https://github.com/Hobbes74/Battletech-3025-HyadesRim
+Release version: https://www.nexusmods.com/battletech/mods/473 (use this to play)
+
+Public repository: https://github.com/Hobbes74/Battletech-3025-HyadesRim
 
 Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 
