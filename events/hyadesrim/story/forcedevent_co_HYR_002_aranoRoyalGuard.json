@@ -6,11 +6,13 @@
         "Icon": "uixTxrSpot_fp_HyadesRim_Background_46.png"
     },
     "Scope" : "MechWarrior",
-    "Weight": 10,
+    "Weight": 100,
     "Requirements": {
         "Scope": "Company",
         "RequirementTags" : {
-            "items" : [],
+            "items" : [
+				"event_co_peripheryTales"
+            ],
             "tagSetSourceFile" : ""
         },
         "ExclusionTags" : {
@@ -21,7 +23,27 @@
         },
         "RequirementComparisons": []
     },
-    "AdditionalRequirements": [],
+    "AdditionalRequirements": [
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Injuries",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : null
+                }
+            ]
+        }
+	],
     "AdditionalObjects": [],
     "Options": [
         {
@@ -125,12 +147,5 @@
     ],
     "PublishState": "PUBLISHED",
     "ValidationState": "UNTESTED",
-    "EventType" : "UNSELECTABLE",
-    "OneTimeEvent" : false,
-    "Tags" : {
-        "items" : [
-			"BLACKLISTED"
-        ],
-        "tagSetSourceFile" : "tags/EventTags"
-    }
+    "EventType" : "NORMAL"
 }

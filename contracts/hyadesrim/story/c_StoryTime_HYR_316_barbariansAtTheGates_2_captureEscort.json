@@ -12,7 +12,7 @@
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
     "shortDescription" : "The Harbingers are chasing whatever is left of the Aurigan high command on this world, most of them former Directorate personnel but they're our people now.",
-    "longDescription" : "We are being overrun all over this world, it's about time Colonel Haust or Lady Arano order an evacuation.",
+    "longDescription" : "We are being overrun all over this world, it's about time someone orders an evacuation.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "7db60871-d4ae-423d-9c82-fb40ca083372"
             },
-            "title" : "Capture Facility, Protect Covert Team, and Extract Safely",
+            "title" : "Rescue Brigadier Paiva and the Aurigan Command",
             "description" : "Capture Convoy Rally Point, Escort Convoy to Safety, and Extract Safely",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -62,7 +62,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "acf88d1b-d09f-4db7-b7ea-9f48a426075c"
             },
-            "title" : "Destroy Enemy Blocking Force",
+            "title" : "Destroy Harbinger Hunter Killers",
             "description" : "The objective to destroy the force of enemies which will try andstop the player from reaching the rally point.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -100,7 +100,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "5f01500a-5087-4a6f-86d8-9e0450bc93eb"
             },
-            "title" : "Secure the Facility",
+            "title" : "Secure Planetary Command HQ",
             "description" : "Secure the Convoy Rally Point",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -112,7 +112,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "371c6027-0869-4e03-8d70-192a8f441d70"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Harbinger Reinforcements",
             "description" : "The objective to destroy enemy units which will attempt to block the convoy from reaching its destination.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -150,7 +150,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d4d20990-fbeb-4f6e-81b7-7e94bba6a2c5"
             },
-            "title" : "Escort Friendly units to their Destination",
+            "title" : "Escort Brigadier Paiva to Safety",
             "description" : "Escort Friendly units to their Destination",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -344,14 +344,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Mercenary force, you are entering a restricted {TEAM_TAR.FactionDef.Demonym} area. Withdraw or you will be fired on.",
+                    "words" : "Mercenary. Identify yourselves!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Target",
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9df10d9c-bf14-43ad-aa64-9202f93d3d49",
@@ -360,7 +360,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Yeah, they weren't surprised at all to see us. That sounds like a blown operation to me.",
+                    "words" : "We've been talking for the past two hours, you know it's {COMPANY.CompanyName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -376,7 +376,39 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Agreed. Commander, once you've dealt with the response force, you'll find our employer's people here, at this facility.",
+                    "words" : "How would I know? You could have been infiltrated or something.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Now that you are here, save us. We have our belongings ready to go.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Belongings? We can't lose time carrying luggage.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -386,20 +418,36 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Try not to get any of them shot or stepped on. Good luck.",
+                    "words" : "You can't expect us to leave behind all the planetary administration records. It would be a dereliction of duty...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, get moving, I'll make sure they join you once you get to the planetary HQ site.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -417,7 +465,55 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The covert team and the research materials are safe. Well done, Commander.",
+                    "words" : "The planetary administration is safe and out of the Harbingers' reach.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "And I will turn in a full report of the events here and your participation.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Now, as for the formal evacuation, we have already issued notices to the relevant personnel and dependents to gather at a secondary spaceport.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Fine, send us the coordinates and we will get another extraction.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -442,14 +538,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well, I suppose that could have been worse. Let's debrief back on the Argo.",
+                    "words" : "Well, no more 'for the Aurigan Reach' now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -492,7 +588,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Hey boss, I'm seeing more contacts. Whatever these guys stole must be important.",
+                    "words" : "More Harbinger hunker killers on route, watch your six.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -514,17 +610,17 @@
                 "EncounterObjectGuid" : "59fd62f4-62f0-4e14-b203-d796e231c3a8"
             },
             "name" : "Dialogue_HoldOutOrders",
-            "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_InPositionHoldOut",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You've reached the extraction point for the objective vehicles. Hold there are keep them safe until we can get them out.",
+                    "words" : "Well, where's the DropShip, we can't sit here like stationary targets.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -542,14 +638,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Shit, we're glad to see you folks. [gunshots] I was worried we'd have to walk home.",
+                    "words" : "We have everything loaded up and ready to go, {COMPANY.CompanyName}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -558,14 +654,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We have an LZ marked for you. Is your team ready to move?",
+                    "words" : "And we are ready to extract you here Brigadier.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
@@ -574,14 +670,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Everyone who's left. We're mounting up now. [muffled explosion] <i>Let's move, people!</i>",
+                    "words" : "That is acceptable, let's start moving.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -590,14 +686,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Darius? Commander? I'm seeing a <i>lot</i> of new 'Mech signatures out there. It looks like someone kicked a beehive.",
+                    "words" : "Brigadier, we are still detecting incoming hostiles. Brace yourselves for impact.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -615,7 +711,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_ObjSecured",
             "dialogueContent" : [
                 {
-                    "words" : "And they are away! The convoy is safely out of the AO. Good work, Commander. Now get your remaining forces to the second evac zone for extraction there. ",
+                    "words" : "Planetary administration secured, now we need to start thinking on leave this system immediately.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -623,6 +719,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "No, {COMPANY.CompanyName}! The evacuation isn't complete yet.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_BrigadierPaivaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",

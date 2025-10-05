@@ -6,7 +6,9 @@ Slavish adherence to a formal ritual is a sign that one has nothing better to th
 
 It is 3024 and Lady Kamea Arano has been exiled instead of presumed dead as in the original campaign. After Kamea and the Commander are rescued by the survivors of Markham's Marauders during House Espinosa's coup, they have joined the company in search for mercenary work in the Rimward Periphery. But as the Fourth Succession War approaches, powerful forces are now threatening to destroy the entire Aurigan Reach unless Kamea can save her realm and reclaim her throne. Work in progress.
 
-Public repository: Hyades Rim - https://github.com/Hobbes74/Battletech-3025-HyadesRim
+Release version: https://www.nexusmods.com/battletech/mods/473 (use this to play)
+
+Public repository: https://github.com/Hobbes74/Battletech-3025-HyadesRim (do not use this to play)
 
 Discord server (discussions and feedback) - https://discord.gg/zgeQrnV
 
@@ -15,9 +17,9 @@ Patreon (donations not required but welcome) - https://www.patreon.com/Hobbes74
 Features
 * A new BattleTech story and Campaign mode, consisting of forty-three new flashpoints and forty-four new events telling an alternative history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Forty-two original flashpoints released, campaign mode only: Eighteen Birthday, Arano Royal Guard, You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection and Ghost Riders In The Sky.
+* Forty-three original flashpoints released, campaign mode only: Eighteen Birthday, Arano Royal Guard, You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection, Ghost Riders In The Sky and Barbarians At The Gates.
 
-* Three more campaign flashpoints are being written for part three of the new campaign: Barbarians At The Gates, Atomic and The Eyes Of Truth.
+* Two more campaign flashpoints are being written for part three of the new campaign: Atomic and The Eyes Of Truth.
 
 * An optional 'Periphery Tales' campaign consisting of 52 mini-flashpoints, taking place simultaneous with the main story, with increased rewards to speed up 'farming'.
 
@@ -86,7 +88,7 @@ Installation
 * Unzip the folders to the /Mods folder created as part of ModTek's installation guidelines and activate it on the Mod List.
 
 Recommended Additional Mods (all optional, not required)
-* Community Asset Bundle - requires downloading and installing the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) or the full version, then activating it and the CAB3025-HyadesRim add-on on the Mods screen at start;
+* Community Asset Bundle - requires downloading and installing the CAB (https://discourse.modsinexile.com/t/community-assets-bundle-cab/115) or the full version, then activating it together with the CAB3025-HyadesRim and MechResizer add-ons on the Mods screen at start;
 * Inner Sphere Map﻿ (https://github.com/Morphyum/InnerSphereMap) by Morphyum - bundled with Hyades Rim, to activate select it on the game's mod screen. 
 * Navigation Computer by mpstark, makes travel easier, https://github.com/BattletechModders/NavigationComputer
 * Colorful FlashPoints, by JWolf612, https://github.com/wmtorode/ColourfulFlashPoints

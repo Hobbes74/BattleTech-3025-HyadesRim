@@ -196,7 +196,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_alpineCathedral_iTnd",
+                            "value" : "mapGeneral_riverBend_vLow",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
@@ -205,7 +205,7 @@
                                 "AuriganRestoration",
                                 "DeepRaiders",
                                 "7",
-                                "ms_fp_barbariansAtTheGates_004_MissionSim",
+                                "ms_fp_barbariansAtTheGates_004_Talk",
                                 null,
                                 null,
                                 null
@@ -231,7 +231,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_barbariansAtTheGates_004_MissionSim",
+                "Id" : "ms_fp_barbariansAtTheGates_004_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cc8356c5eea0c1e2c50f517",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_barbariansAtTheGates_005_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_barbariansAtTheGates_005_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -274,7 +335,7 @@
                                 "AuriganRestoration",
                                 "DeepRaiders",
                                 "7",
-                                "ms_fp_barbariansAtTheGates_005_Talk",
+                                "ms_fp_barbariansAtTheGates_006_Talk",
                                 null,
                                 null,
                                 null
@@ -292,7 +353,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_barbariansAtTheGates_005_Talk",
+                "Id" : "ms_fp_barbariansAtTheGates_006_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : null
@@ -326,10 +387,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cc8356c5eea0c1e2c50f516",
+                            "value" : "9cc8356c5eea0c1e2c50f518",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -337,7 +398,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_barbariansAtTheGates_006_Mission",
+                            "value" : "ms_fp_barbariansAtTheGates_007_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -353,7 +414,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_barbariansAtTheGates_006_Mission",
+                "Id" : "ms_fp_barbariansAtTheGates_007_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -387,7 +448,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_craterField_bMars",
+                            "value" : "mapRestoration_Smithon_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
@@ -396,7 +457,7 @@
                                 "AuriganRestoration",
                                 "DeepRaiders",
                                 "7",
-                                "ms_fp_barbariansAtTheGates_007_Talk",
+                                "ms_fp_barbariansAtTheGates_008_Talk",
                                 null,
                                 null,
                                 null
@@ -414,7 +475,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_barbariansAtTheGates_007_Talk",
+                "Id" : "ms_fp_barbariansAtTheGates_008_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -448,18 +509,18 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c12b69786c08013ec537377",
+                            "value" : "9cc8356c5eea0c1e2c50f519",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "High Orbit \u2014 Coromodir",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_barbariansAtTheGates_008_Complete",
+                            "value" : "ms_fp_barbariansAtTheGates_009_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -475,7 +536,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_barbariansAtTheGates_008_Complete",
+                "Id" : "ms_fp_barbariansAtTheGates_009_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -511,7 +572,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_barbariansAtTheGates_009_Reward",
+                            "value" : "ms_fp_barbariansAtTheGates_010_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_barbariansAtTheGates",
@@ -538,7 +599,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_barbariansAtTheGates_009_Reward",
+                "Id" : "ms_fp_barbariansAtTheGates_010_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null
