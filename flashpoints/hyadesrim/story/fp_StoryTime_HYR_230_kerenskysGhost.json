@@ -1,0 +1,66 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_230_kerenskysGhost",
+        "Name" : "Kerensky's Ghost",
+        "Details" : "Final Periphery Tales flashpoint. The player returns to their homeworld for vengeance against the pirate who killed their mother.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_0.png"
+    },
+    "Weight" : 50,
+    "InternalName" : "kerenskysGhost",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 7,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"event_co_unfinishedBusiness",
+					"company_pt_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_kerenskysGhost_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_mingue"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"ColonelMustard"
+    ],
+    "TargetFaction" : "RimPirates",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_kerenskysGhost",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_kerenskysGhost",
+    "UnitDropTonnageHint" : "",
+    "LanceDropTonnageHint" : "",
+    "FlashpointShortDescription" : "Commander, I have one last contract to offer your company before I retire and I believe you will be personally very interested in fulfilling it. Please meet me at the coordinates I have provided sir, if you are interested.",
+    "FlashpointDescriberCastDefId" : "castDef_ColonelMustardDefault",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

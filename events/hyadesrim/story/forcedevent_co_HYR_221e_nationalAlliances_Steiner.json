@@ -1,0 +1,511 @@
+{
+    "Description" : {
+        "Id" : "forcedevent_co_HYR_221e_nationalAlliances_Steiner",
+        "Name" : "National Alliances",
+        "Details" : "Darius rushes to the bridge from one of the hatches. \"Commander, tensions between [[TGT_MW,{TGT_MW.Callsign}]] and [[SCN_MW,{SCN_MW.Callsign}]] appear to have turned for the worse! [[SCN_MW,{SCN_MW.Callsign}]] can't be found anywhere on the DropShip and the logs report that one airlock was opened but it's impossible to know who was responsible.\"\r\n\r\nSumire intervenes. \"Both MechWarriors had a long standing known feud but it is also possible that this was just an accident. Not the first time a space rookie accidently jettisons {TGT_MW.Gender?Male:himself|Female:herself|NonBinary:theirselves} to space.\"\r\n\r\n\"{TGT_MW.Gender?Male:He|Female:She|NonBinary:They} {TGT_MW.Gender?Male:claims|Female:claims|NonBinary:claim} to have been with [[TRT_MW,{TRT_MW.Callsign}]] during the period just before [[TGT_MW,{TGT_MW.Callsign}]]\". Darius adds.\r\n\r\n\"Ah! Both of those MechWarriors seem to be spending a lot of time together nowadays. Does seem that someone might be replicating national rivalries onboard this company, since [[TGT_MW,{TGT_MW.Callsign}]] and [[TRT_MW,{TRT_MW.Callsign}]] are both from [[DM.Factions[faction_Steiner],Lyran Commonwealth]] and the [[DM.Factions[faction_Davion],Federated Suns]], while [[SCN_MW,{SCN_MW.Callsign}]] comes from the [[DM.Factions[faction_Marik],Free Worlds League]] \". Yang's remark catches a few on the bridge off-guard.\r\n\r\n\"If we ignore this, we risk more of these 'incidents' taking place in the future. But taking a harsher position also has risks. How would you like to proceed Commander?",
+        "Icon" : "uixTxrSpot_DailyBriefing.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 10,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [
+                "pilot_stressed",
+                "pilot_steiner"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+                    "company_story_fourthSuccessionWar"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "event_mw_nationalAlliances"
+                ],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [
+                        "pilot_marik"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Scope" : "TertiaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "TertiaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [
+                        "pilot_davion"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Keep the matter quiet.",
+                "Details" : "do nothing",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Morale drops, nothing happens",
+                        "Details" : "\"So, we're going to close our eyes to murder taking place inside this DropShip?\" Dr. Murad is shocked at the decision but Sumire merely looks to her and replies. \"I've seen much worse things happening inside  a DropShip, doctor.\"\r\n\r\nOn the mess ward during the next meal period, the seat normally used by is empty, while everyone avoids mentioning the missing MechWarrior, as [[TRT_MW,{TRT_MW.Callsign}]] [[TGT_MW,{TGT_MW.Callsign}]] quietly enjoy their dinner together, barely talking to one another.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "died in airlock accident."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_nationalAlliances"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Open an investigation.",
+                "Details" : "Open an investigation",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Video cameras not working",
+                        "Details" : "Dr. Murad comes to the bridge after going through the computer logs. \"The video cameras that covered the area around that airlock hadn't been working for a week, I had been informed already but the techs had more important issues to attend to.\"\r\n\r\nDarius considers that for a second. \"Dr. Murad, if it isn't possible to see anything near the airlock, what about the crew quarters where {TGT_MW.Obj} and {TRT_MW.Obj} claim to have been together during that period?\"\r\n\r\n\"Looked into that as well but the logs shown both of them in their quarters for several hours. Either they're telling the truth or they found a way for {TGT_MW.Callsign} or {TRT_MW.Callsign} to slip through the cameras unnoticed.\"\r\n\r\nYou turn to Sumire. \"What about the airlock? What are the odds of it mysteriously malfuncioning while a pilot is passing by?\"\r\n\r\n\"The system shows that both the outer and inner airlock were activated in succession and I've personally checked it. It is impossible to tell if it was a freak mechanical failure, or if someone deliberately activated both systems, either {SCN_MW.Callsign} {SNC_MW.Gender?Male:himself|Female:herself|NonBinary:themselves} or someone else\". \r\n\"Then there's no way to determine if {TGT_MW.FirstName} or {TRT_MW.FirstName} are telling the truth. I hate to say this, Commander {COMMANDER.LastName}, but it's better if we attribute this to a 'freak accident' for morale proposes, even if both MechWarriors might have caused {SCN_MW.FirstName}'s death.",
+                        "Icon" : null
+                    },
+                    "Weight" : 25,
+                    "Results" : [
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "died in airlock accident."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_nationalAlliances"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_1",
+                        "Name" : "MW confesses",
+                        "Details" : "You, Darius and Yang look at {TRT_MW.Callsign}, who is floating in zero-g gravity inside the airlock chamber where {SCN_MW.Callsign} reportedly disappeared. \r\n\r\n\"See, {TRT_MW.FirstName}, the problem with your story is that you and {TGT_MW.FirstName} both claim to have spent hours together, but there are several gaps missing.\" You pause to look at Yang, who nods towards you.\r\n\r\n\"There's something stinky in this DropShip, so unless your alibis start smelling better, we are going to start testing this airlock to make sure accidents don't happen again in the future.\" A small electronic display turns from green to red, as the air inside the chamber starts venting to space.\r\n\r\nTwo minutes later, {TRT_MW.Callsign} confesses over the intercom that {TGT_MW.Callsign} had asked {TGT_MW.Gender?Male:him|Female:her|NonBinary:their} to cover {TGT_MW.Gender?Male:his|Female:her|NonBinary:their} story but denies knowing  {TGT_MW.Gender?Male:him|Female:her|NonBinary:their} intentions towards {SCN_MW.Callsign}.\r\n\r\n\"{TGT_MW.FirstName} might have been a Marik, but {TGT_MW.Gender?Male:he|Female:she|NonBinary:they} didn't deserve to die like this.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 25,
+                    "Results" : [
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "died in airlock accident."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "for murder of a fellow pilot."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_nationalAlliances"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_2",
+                        "Name" : "MW found",
+                        "Details" : "\"I wasn't easy, but I realized that it would be possible to try to use the <i>Hysteria</i>'s sensors to locate {SCN_MW.Callsign} along our previous flight path, considering the position of the airlock in the DropShip.\" She punches a few keys on her electronic notepad.\r\n\r\n\"Luckly for {SCN_MW.Gender?Male:him|Female:her|NonBinary:their}, it appears that {SCN_MW.Gender?Male:he|Female:she|NonBinary:they} was wearing an EVA suit since we picked up the distress beacon. We can't reach {SCN_MW.Gender?Male:him|Female:her|NonBinary:them} on radio, so we won't be sure of {SCN_MW.Gender?Male:him|Female:her|NonBinary:their} status until we rescue {SCN_MW.Gender?Male:him|Female:her|NonBinary:them}.\"\r\n\r\nSeveral hours later, {SCN_MW.Callsign} is at the MedBay recovering from dehydratation, laying on the bed while you and Darius stand on {SCN_MW.Gender?Male:his|Female:her|NonBinary:their} flanks.\r\n\r\n\"I'm sorry for all the mess I caused, Commander. I liked using that airlock for some quiet space walks since I knew the security system wasn't working, and sometimes others would join me.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_nationalAlliances"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 0
+                        }
+					]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Purge protocol for both.",
+                "Details" : "",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Both pilots get the airlock",
+                        "Details" : "\"Well, whatever their issues with {TGT_MW.Callsign}, {TGT_MW.Callsign} and {TGT_MW.Callsign} can join {TGT_MW.Gender?Male:him|Female:her|NonBinary:their} in deep space. We don't have time to deal with this sort of national rivalries, no matter if we are in the middle of a major war.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_nationalAlliances"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "died in airlock accident."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "for murder of a fellow pilot."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "TertiaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "for murder of a fellow pilot."
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

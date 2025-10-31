@@ -1,0 +1,69 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_222_neutralityPatrol",
+        "Name" : "Neutrality Patrol",
+        "Details" : "A border skirmish turns deadly between the Lothian League and the Marian Hegemony.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_25.png"
+    },
+    "Weight" : 50,
+    "InternalName" : "neutralityPatrol",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 4,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"flashpoint_neutralityPatrol_complete",
+					"company_story_fourthSuccessionWar",
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_neutralityPatrol_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_paulinus"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"LothianLeague"
+    ],
+    "TargetFaction" : "MarianHegemony",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_neutralityPatrol",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_neutralityPatrol",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "We've detected several breaches of the informal neutral zone between us and the Marians, with several of their military forces staging unauthorized exercises as a provocation. Sending our own forces to a demilitarized zone would be seen as an excuse for them to attack our colony at Paulinus so we need you to inspect their exercises.",
+    "FlashpointDescriberCastDefId" : "castDef_LothianLeagueLeaderDefault",
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}
