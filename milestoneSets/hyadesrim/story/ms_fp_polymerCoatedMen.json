@@ -150,7 +150,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_polymerCoatedMen_100_MissionSim",
+                            "value" : "ms_fp_polymerCoatedMen_003_MissionSim",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -166,7 +166,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMen_100_MissionSim",
+                "Id" : "ms_fp_polymerCoatedMen_003_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -200,16 +200,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_crimsonValley_bMars",
+                            "value" : "mapRestoration_Smithon_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_fp_polymerCoatedMen_1_destroyBase",
+                                "c_StoryTime_HYR_116_polymerCoatedMen_1_attack",
                                 "InterconnectednessUnlimited",
                                 "SpreadingTheGloriesIncorporated",
                                 "5",
-                                "ms_fp_polymerCoatedMen_101_Mission",
+                                "ms_fp_polymerCoatedMen_004_Talk",
                                 null,
                                 null,
                                 null
@@ -235,7 +235,88 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMen_101_Mission",
+                "Id" : "ms_fp_polymerCoatedMen_004_Talk",
+                "Name" : "Talk",
+                "Details" : "flashpoint",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "True",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Kamea",
+                                "Alexander"
+                            ]
+                        },
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : "False",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Darius",
+                                "Sumire",
+                                "Yang",
+                                "Farah"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cef74e7f481d568938c734c",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_polymerCoatedMen_005_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_polymerCoatedMen_005_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -269,16 +350,16 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_craterField_bMars",
+                            "value" : "mapGeneral_rockyMesas_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_fp_polymerCoatedMen_2_ambushConvoy",
-                                "TaurianConcordat",
-                                "TortugaPirates",
-                                "3",
-                                "ms_fp_polymerCoatedMen_102-Mission",
+                                "c_StoryTime_HYR_116_polymerCoatedMen_2_captureBase",
+                                "InterconnectednessUnlimited",
+                                "SpreadingTheGloriesIncorporated",
+                                "5",
+                                "ms_fp_polymerCoatedMen_006_Talk",
                                 null,
                                 null,
                                 null
@@ -296,68 +377,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMen_102-Mission",
-                "Name" : "Mission",
-                "Details" : "The 3rd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_craterField_bMars",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "c_fp_polymerCoatedMen_3_assassinate",
-                                "TaurianConcordat",
-                                "TortugaPirates",
-                                "4",
-                                "ms_polymerCoatedMen_201-Talk",
-                                null,
-                                null,
-                                null,
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_polymerCoatedMen_201-Talk",
+                "Id" : "ms_fp_polymerCoatedMen_006_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -391,10 +411,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c8f27b2a3cbeb4c8817462b",
+                            "value" : "9cef74e7f481d568938c734d",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -402,7 +422,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_polymerCoatedMen_202-Complete",
+                            "value" : "ms_fp_polymerCoatedMen_007_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -418,7 +438,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMen_202-Complete",
+                "Id" : "ms_fp_polymerCoatedMen_007_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -454,7 +474,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_polymerCoatedMen_203-Reward",
+                            "value" : "ms_fp_polymerCoatedMen_008_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_polymerCoatedMen",
@@ -496,8 +516,7 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
-                    ],
+                    "Stats" : [],
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
@@ -510,9 +529,9 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMen_203-Reward",
-                "Name" : "A-Reward",
-                "Details" : "A Branch rewards",
+                "Id" : "ms_fp_polymerCoatedMen_008_Reward",
+                "Name" : "Reward",
+                "Details" : "Additional rewards",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -533,31 +552,15 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Funds",
-                            "value" : "2000000",
-                            "set" : false,
-                            "valueConstant" : null
-                        },
-                        {
-                            "typeString" : "System.Int32",
-                            "name" : "Reputation.TaurianConcordat",
-                            "value" : "-30",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
+                    "Stats" : [],
+                    "Actions" : [],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -577,8 +580,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
@@ -589,7 +591,7 @@
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
-                    "ResultDuration" : 666
+                    "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,

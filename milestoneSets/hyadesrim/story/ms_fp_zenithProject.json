@@ -87,7 +87,7 @@
             "Description" : {
                 "Id" : "ms_fp_zenithProject_002_Talk",
                 "Name" : "Talk",
-                "Details" : "flashpoint",
+                "Details" : "First Conversation.",
                 "Icon" : null
             },
             "Scope" : "Company",
@@ -119,7 +119,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_SimGameCharacterVisible",
-                            "value" : true,
+                            "value" : "True",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "Yang",
@@ -129,12 +129,12 @@
                         },
                         {
                             "Type" : "System_SimGameCharacterVisible",
-                            "value" : false,
+                            "value" : "False",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "Farah",
-								"Alexander",
-								"Kamea"
+                                "Alexander",
+                                "Kamea"
                             ]
                         },
                         {
@@ -150,7 +150,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_zenithProject_100_MissionSim",
+                            "value" : "ms_fp_zenithProject_003_MissionSim",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -166,7 +166,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithProject_100_MissionSim",
+                "Id" : "ms_fp_zenithProject_003_MissionSim",
                 "Name" : "MissionSim",
                 "Details" : "The 1st Mission.",
                 "Icon" : null
@@ -209,7 +209,7 @@
                                 "TaurianConcordat",
                                 "TortugaPirates",
                                 "6",
-                                "ms_fp_zenithProject_101_Mission",
+                                "ms_fp_zenithProject_004_Mission",
                                 null,
                                 null,
                                 null
@@ -235,7 +235,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithProject_101_Mission",
+                "Id" : "ms_fp_zenithProject_004_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -278,7 +278,7 @@
                                 "TaurianConcordat",
                                 "TortugaPirates",
                                 "3",
-                                "ms_fp_zenithProject_102-Mission",
+                                "ms_fp_zenithProject_005_Mission",
                                 null,
                                 null,
                                 null
@@ -296,7 +296,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithProject_102-Mission",
+                "Id" : "ms_fp_zenithProject_005_Mission",
                 "Name" : "Mission",
                 "Details" : "The 3rd Mission.",
                 "Icon" : null
@@ -339,10 +339,10 @@
                                 "TaurianConcordat",
                                 "TortugaPirates",
                                 "4",
-                                "ms_zenithProject_201-Talk",
+                                "ms_fp_zenithProject_006_Talk",
                                 null,
                                 null,
-                                null,
+                                null
                             ]
                         }
                     ],
@@ -357,7 +357,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithProject_201-Talk",
+                "Id" : "ms_fp_zenithProject_006_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -391,7 +391,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9cb772d927863af145f6047b",
+                            "value" : "9cd4070a45b5869e48e82cb7",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name}",
@@ -402,7 +402,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_zenithProject_202-Complete",
+                            "value" : "ms_fp_zenithProject_007_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -418,7 +418,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithProject_202-Complete",
+                "Id" : "ms_fp_zenithProject_007_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -454,7 +454,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_zenithProject_203-Reward",
+                            "value" : "ms_fp_zenithProject_008_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_zenithProject",
@@ -496,8 +496,7 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
-                    ],
+                    "Stats" : [],
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
@@ -510,7 +509,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithProject_203-Reward",
+                "Id" : "ms_fp_zenithProject_008_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "A Branch rewards",
                 "Icon" : null
@@ -533,13 +532,11 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "Stats" : [
@@ -558,6 +555,7 @@
                             "valueConstant" : null
                         }
                     ],
+                    "Actions" : [],
                     "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -577,8 +575,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [
-                        ],
+                        "items" : [],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "RemovedTags" : {
@@ -589,7 +586,7 @@
                     "Actions" : null,
                     "ForceEvents" : null,
                     "TemporaryResult" : true,
-                    "ResultDuration" : 666
+                    "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,
