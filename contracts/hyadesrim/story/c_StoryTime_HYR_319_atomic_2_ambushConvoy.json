@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "All traitors must die, we can't risk Colonel Haust being left behind and captured by the Harbingers after we leave. So I order you to hunt and kill his convoy before you evacuate Guldra. Good hunting, Commander.",
-    "longDescription" : "That just leaves Director Espinosa to capture and give him to the Taurians as per Lady Arano's orders.",
+    "shortDescription" : "We have located the Directorate convoy that escaped the nuke storage silos after we arrived and engaged their companions and the Harbingers. They're unescorted but we don't have much time before their reach the protection of their DropShip. The PALs are armored enough to withstand accidents so you may fire at will since there's no nuclear material involved and we can recover them from the wreckage.",
+    "longDescription" : "Lord Madeira has gone silent on the whole PAL issue but my bet is that we have another traitor among our ranks.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Destroy the Evacuation Convoy and Escape",
+            "title" : "Destroy the Directorate Convoy",
             "description" : "The ENEMYFACTION scum are trying to get from one place to another. Kill them.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -70,7 +70,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Convoy",
+            "title" : "Stop the Directorate Convoy",
             "description" : "The objective for destroying the convoy units.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -257,7 +257,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've got a signal from the {TEAM_EMP.FactionDef.Demonym} spotters, Commander. Convoy is incoming.",
+                    "words" : "The <i>Argo</i>'s sensors say that this is the best spot to ambush the convoy.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -273,7 +273,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "This should be a turkey shoot. Move up, make contact, and take the convoy out.",
+                    "words" : "We'll still need to do some little recon though but it shouldn't be a problem.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -289,7 +289,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Then proceed to the evac point for pickup.",
+                    "words" : "Once you destroy them, we can recover the PALs and head for evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -305,7 +305,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander.",
+                    "words" : "Remember to fire at will, even the fingers on your 'Mechs hands can't damage those PALs.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -330,7 +330,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "A clean strike. Let's head home and debrief.",
+                    "words" : "Done. Yang?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -338,6 +338,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yeah, we recovered the codes plus a couple warheads they had stored in one of the vehicles. We can go back to Coromodir now.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -355,7 +371,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's a disappointing result, Commander.",
+                    "words" : "That's unfortunate.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -380,7 +396,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_EyesOnTarget",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicles. They should be to your front. Engage and destroy, Commander.",
+                    "words" : "Lead Directorate vehicle spotted!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -405,7 +421,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That's got it, keep firing on those targets until they are neutralized. ",
+                    "words" : "Don't let any escape!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -430,7 +446,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Escorts are down, Commander. That leaves the field wide open, press our advantage.",
+                    "words" : "The escorts have been eliminated, move to neutralize the rest.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -455,7 +471,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy's almost escaped, Commander. Once they get out of range, that data's as good as gone.",
+                    "words" : "The Directorate personnel has almost escaped! Without the PALs the nukes are useless!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -477,10 +493,10 @@
                 "EncounterObjectGuid" : "366443c6-7895-4b4c-aea9-544f1a88c43e"
             },
             "name" : "Dialogue_ConvoyTargetDestroyed",
-            "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "One down. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "One less vehicle, move to recover the PALs from its wreckage.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -553,7 +569,7 @@
     "overrideAutoCompleteDialogueId" : "",
     "disableNegotations" : true,
     "disableLanceConfiguration" : false,
-    "disableCancelButton" : false,
+    "disableCancelButton" : true,
     "disableAfterAction" : false,
     "contractRewardOverride" : -1,
     "travelOnly" : false,

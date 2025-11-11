@@ -17,9 +17,9 @@ Patreon (donations not required but welcome) - https://www.patreon.com/Hobbes74
 Features
 * A new BattleTech story and Campaign mode, consisting of forty-three new flashpoints and forty-four new events telling an alternative history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Forty-three original flashpoints released, campaign mode only: Eighteen Birthday, Arano Royal Guard, You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection, Ghost Riders In The Sky and Barbarians At The Gates.
+* Forty-three original flashpoints released, campaign mode only: Eighteen Birthday, Arano Royal Guard, You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection, Ghost Riders In The Sky, Barbarians At The Gates and Atomic.
 
-* Two more campaign flashpoints are being written for part three of the new campaign: Atomic and The Eyes Of Truth.
+* One more campaign flashpoint is being written for part three of the new campaign: The Eyes Of Truth.
 
 * An optional 'Periphery Tales' campaign consisting of 52 mini-flashpoints, taking place simultaneous with the main story, with increased rewards to speed up 'farming'.
 
@@ -33,7 +33,7 @@ Features
 
 * 58 original factions, canon and new, with their own leaders, allies/enemies, contracts and 'Mech/vehicle variants. Ally/fight pirate gangs, corporations, regional powers and bandit kingdoms in both campaign and system contracts.
 
-* 80 new cast characters, several with new artwork.
+* 95 new cast characters, several with new artwork.
 
 * 600+ new contracts and variants added, including pirate, IE and Periphery flavored.
 
@@ -43,7 +43,7 @@ Features
 
 * 23 new vehicle variants, called 'technicals', only used by pirate factions.
 
-* 77 canon variants of the vanilla 'Mechs, nearly all of the 3025 era and SLDF variants.
+* 104 canon variants of the vanilla 'Mechs, nearly all of the 3025 era and SLDF variants.
 
 * 24 new turrets, several equipped with artillery pieces.
 

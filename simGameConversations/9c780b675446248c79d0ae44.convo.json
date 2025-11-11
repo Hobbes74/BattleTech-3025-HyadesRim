@@ -12,7 +12,7 @@
       "text": "Greetings {COMMANDER.Callsign} and {COMPANY.CompanyName}.\n\nGood, you've finally arrived, there is still time.",
       "branches": [
         {
-          "responseText": "Greetings Lord Madeira, what is our mission?",
+          "responseText": "Greetings Lord Madeira, what is our 'special mission'?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 1,
@@ -78,7 +78,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "kamea",
+                "string_value": "alexander",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -96,6 +96,48 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Darius,Yang,Sumire,Farah",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Kamea,Alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -106,7 +148,7 @@
         "id": "9c97bb304f34fa69ecccde52"
       },
       "index": 1,
-      "text": "Something fast I hope because the arrival of the <i>Orion's Belt</i> in system doesn't leave us with a lot of time, Alex.\n\nThe Harbingers are coming and land at your homeworld in a matter of days.",
+      "text": "It better be something simple and fast because the recent arrival of [[DM.BaseDescriptionDefs[LoreDarkJumpShip],Dark JumpShips]] in the nadir jump point doesn't leave us with a lot of time, Alex.\n\nThe [[DM.Factions[faction_HarbingersOfDoom],Harbingers]] are coming to your homeworld in a matter of days.",
       "branches": [
         {
           "responseText": "",
@@ -141,10 +183,10 @@
         "id": "9c0d4aa6327b939c18cf50c8"
       },
       "index": 2,
-      "text": "And the evacuation efforts are proceeding on Guldra, although our transport ability is too limited for what is required, Sumire.\n\nThat's also why I asked for the <i>Argo</i>, we can use its cargo bays to temporarily house and transport refugees to Coromodir.",
+      "text": "And the evacuation efforts are proceeding on [[DM.BaseDescriptionDefs[LoreGuldra],Guldra]], although our transport ability is too limited for what is required, Sumire.\n\nThat's also why I asked for the <i>Argo</i>, we can use its cargo bays to temporarily transport refugees to [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir]].",
       "branches": [
         {
-          "responseText": "But that's not our mission?",
+          "responseText": "Our mission is to transport refugees?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 3,
@@ -176,10 +218,10 @@
         "id": "9cf42cd0fbbd1782f5231036"
       },
       "index": 3,
-      "text": "No Commander, there is something vital that you need to retrieve from the system and bring back to Lady Arano before the Harbingers arrive.\n\nThe fate of the invasion could depend on success of this mission.",
+      "text": "No Commander, there is something vital that you need to retrieve from the one of Guldra's moons and bring back to Coromodir before the Harbingers arrive.\n\nThe fate of the invasion could depend on success of this mission.",
       "branches": [
         {
-          "responseText": "Carry on, Lord Alexander.",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 4,
@@ -211,10 +253,10 @@
         "id": "9cca416feb437242333303f6"
       },
       "index": 4,
-      "text": "What you are all going to hear is top secret and should not in any circumstances be known to the rest of the crew, unless to those strictly necessary.\n\nAs you know, Colonel Haust, the former director of Military Intelligence is now working on our side.",
+      "text": "What you are all going to hear is top secret and should not in any circumstances be known to the rest of the crew, unless to those strictly necessary.\n\nAs you know, Colonel Haust, the former director of the [[DM.Factions[faction_AuriganDirectorate],Directorate]]'s Military Intelligence is now working on our side.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Carry on, Lord Alexander.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 5,
@@ -246,7 +288,7 @@
         "id": "9cf15783ca796d19529e1dc4"
       },
       "index": 5,
-      "text": "After the fall of Tyrlon to our forces and the demise of the Directorate, Colonel Haust revealed to us one of the biggest secrets of Director Espinosa.\n\nShortly after he deposed Kamea, Director Espinosa ordered a covert expansion of the Directorate's military abilities.",
+      "text": "After the fall of Tyrlon to our forces and the demise of the Directorate, Colonel Haust revealed to us one of the biggest secrets of [[DM.BaseDescriptionDefs[LoreSantiagoEspinosa],Director Espinosa]].\n\nShortly after he deposed Kamea, Director Espinosa ordered a covert expansion of the Directorate's military abilities.",
       "branches": [
         {
           "responseText": "",
@@ -273,7 +315,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -308,7 +366,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -316,7 +390,7 @@
         "id": "9cf5848e9ecfe3670d7676eb"
       },
       "index": 7,
-      "text": "Yes, Commander, although other threats were also considered. \n\nAnd as a result, a number of prototype warheads were developed and tested at Guldra under the supervision of House Madeira, and placed under their care.",
+      "text": "Yes, Commander, although other threats were also considered. \n\nAnd as a result, a number of prototype warheads were developed and tested at Guldra under the supervision of [[DM.BaseDescriptionDefs[LoreHouseMadeira],House Madeira]], and placed under their care.",
       "branches": [
         {
           "responseText": "",
@@ -351,7 +425,7 @@
         "id": "9cc652e42aa8dee2682f4727"
       },
       "index": 8,
-      "text": "This way, House Madeira developed and controlled the warheads, while House Espinosa had control of the delivery systems.\n\nAnd in the event of a crisis, the leaders of both houses could authorize a nuclear strike, if both agreed that it was an appropriate response if the other side used first such weapons.",
+      "text": "This way, House Madeira developed and controlled the warheads, while [[DM.BaseDescriptionDefs[LoreHouseEspinosa],House Espinosa]] had control of the delivery systems.\n\nAnd in the event of a crisis, the leaders of both houses could authorize a nuclear strike, if both agreed that it was an appropriate response if the other side used first such weapons.",
       "branches": [
         {
           "responseText": "",
@@ -386,7 +460,7 @@
         "id": "9ca67b97eb87eaba310ede0a"
       },
       "index": 9,
-      "text": "Nevermind that the Ares Conventions ban the use of such weapons, no one would ever think of using them again nowadays with the destruction that they would bring.",
+      "text": "Nevermind that the [[DM.BaseDescriptionDefs[LoreAresConventions],Ares Conventions]] ban the use of such weapons, no one would ever think of using them again nowadays with the destruction that they would bring.\n\nI am surprised that your family went along with this project, Alexander.",
       "branches": [
         {
           "responseText": "",
@@ -421,7 +495,7 @@
         "id": "9ccbf74c651fcafc4bd9e62e"
       },
       "index": 10,
-      "text": "A lot of people in the universe don't seem to care about the Ares Conventions, Dr. Murad.\n\nThis was the assurance that the Reach wouldn't be pray to blackmail or annihilation at the hands of someone in the possession of atomic weapons.",
+      "text": "A lot of people in the universe don't seem to care about the Ares Conventions, Dr. Murad, or even other people's lives.\n\nMy parents saw this as the assurance that the [[DM.BaseDescriptionDefs[LoreAuriganReach],Reach]] wouldn't be pray to blackmail or annihilation at the hands of someone in the possession of weapons of mass destruction.",
       "branches": [
         {
           "responseText": "",
@@ -456,7 +530,7 @@
         "id": "9ce380a1228465e74f1ab4f3"
       },
       "index": 11,
-      "text": "Too many politicians have used those same words to justify even greater atrocities, Alexander.\n\nYours parents included since House Guldra was the designer and manufacturer of the atomics, as you mentioned.",
+      "text": "Too many politicians have used those same words to justify even greater atrocities, Alexander.\n\nHouse Guldra should never have accepted to be the designer and manufacturer of atomic weapons.",
       "branches": [
         {
           "responseText": "",
@@ -491,7 +565,7 @@
         "id": "9ca53f54160d3540bd53c795"
       },
       "index": 12,
-      "text": "Farah, the Founding Council has heard Colonel Haust's report and decided to recover these weapons.\n\nThey can't be left behind to fall at the hands of the Harbingers, who knows what they'll do with them after what we've seen so far!",
+      "text": "Regardless of the past, now the [[DM.BaseDescriptionDefs[LoreFoundingCouncil],Founding Council]] decided to recover these weapons, after hearing Colonel Haust's briefing.\n\nThey can't be left behind to fall at the hands of the Harbingers, who knows what they'll do with them after what we've seen so far.",
       "branches": [
         {
           "responseText": "",
@@ -526,7 +600,7 @@
         "id": "9c31f95ad158fd7a44738671"
       },
       "index": 13,
-      "text": "Time to dust off the field manual that deals with nuclear weapons, Dr. Murad.\n\nI can spare you a Free Worlds Military copy.",
+      "text": "Time to dust off the field manual that deals with nuclear weapons, Dr. Murad.\n\nI can spare you a [[DM.BaseDescriptionDefs[LoreMarikFWLM],Free Worlds League Military]] copy, if you prefer, instead of the [[DM.BaseDescriptionDefs[LoreLiaoCCAF],CCAF]] one.",
       "branches": [
         {
           "responseText": "",
@@ -596,7 +670,7 @@
         "id": "9ca56d426a5d3d4abc196637"
       },
       "index": 15,
-      "text": "The facility where the warheads are stored has gone offline and no one knows the reason why the House Guldra personnel stationed there isn't responding to our radio calls.\n\nAnd since they are located in one of the moons, we couldn't spare a DropShip without proper escort. ",
+      "text": "The facility where the warheads are stored has gone offline and no one knows the reason why the House Guldra personnel stationed there isn't responding to our radio calls.\n\nDue to the evacuation we couldn't spare a [[DM.BaseDescriptionDefs[LoreDropShip],DropShip]] with a proper escort until you arrived. ",
       "branches": [
         {
           "responseText": "Directorate forces?",
@@ -622,8 +696,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "axylus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -631,13 +721,13 @@
         "id": "9ccddbee5552a1dd1f6e998d"
       },
       "index": 16,
-      "text": "Very likely... although we are already seeing Harbinger infiltrators on Guldra",
+      "text": "Very likely... although we are already seeing Harbinger infiltrators operating on Guldra.\n\nBut our orbital and in-system detection and observation abilities are limited, so we can't know what we will face.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 17,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -657,8 +747,215 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "alexander",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c45c10aa41afb2d62f64e4b"
+      },
+      "index": 17,
+      "text": "Then it seems we have our mission, {COMMANDER.Callsign}.",
+      "branches": [
+        {
+          "responseText": "Let's proceed, XO.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c703c0da45c5c7e0791614f"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf592fee0f0cdbc61ae497a"
+      },
+      "index": 18,
+      "text": "And what will happen when we are ordered to use those atomic weapons?\n\nWho will press the trigger?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9daa5bced0f1ad69c20111"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8291ea29353af172ce8d37"
+      },
+      "index": 19,
+      "text": "There will be a formal decision, Dr. Murad, with the proper safeguards in place, I believe we can minimize...",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1e6c74de7e802f7d7088e0"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "5a6aa38b623035a020000d9d",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf4e980d8ba393a0a49f577"
+      },
+      "index": 20,
+      "text": "Proper safeguards, Alexander?\n\nHouse Guldra couldn't even keep them safe and you would have no power if Director Espinosa ordered their use, regardless of what your family claimed.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 21,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ccaedd2f813dd18b97d20f7"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c28d74ad31dc633e5d112c2"
+      },
+      "index": 21,
+      "text": "Dr. Murad, unless you find a better way to stop the Harbingers, I would suggest you keep your opinions to yourself, or you can always resign from the company and we will drop you off in Coromodir once we reached it.\n\nAnyone else wants to add any final remarks?",
+      "branches": [
+        {
+          "responseText": "We're done. Time to discuss the next item on the agenda.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc1d6e97e650cc36c71b0a8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],
