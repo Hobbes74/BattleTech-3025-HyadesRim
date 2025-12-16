@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "nautilusmap",
+                "string_value": "alexander",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -281,7 +281,7 @@
         "id": "9ccc1bac15dfcd2839dda09c"
       },
       "index": 6,
-      "text": "Then we need to track the Directorate personnel that opened one of the silos and removed several warheads before we arrived there.\n\nWe detected a number of transmissions from the silos, they must have escaped and be on their way to their DropShip.",
+      "text": "Then we need to track all the Directorate personnel that was present at the site.\n\nWe detected a number of transmissions from the silos, some must have escaped and be on their way to their DropShip.",
       "branches": [
         {
           "responseText": "",
@@ -316,7 +316,7 @@
         "id": "9c0eea776808975f6a9ed14a"
       },
       "index": 7,
-      "text": "The compartments at one of the silos were unlocked and we saw several empty racks, someone must have gotten inside, took the atomics and left. \n\nAnd they were not the 'Mech lance we encountered since they weren't carrying any missing nuclear weapons with them.",
+      "text": "Yeah... the compartments at one of the silos were unlocked and we saw several empty racks, someone must have gotten inside, took the atomics and left. \n\nAnd they were not the 'Mech lance we encountered since they weren't carrying any missing nuclear weapons with them or PALs.",
       "branches": [
         {
           "responseText": "",
@@ -386,7 +386,7 @@
         "id": "9cdbab56c3bda203aec1e847"
       },
       "index": 9,
-      "text": "That's a mystery to discover later, when we are back at Coromodir.\n\nGo find the PALs, {COMPANY.CompanyName}, we need them otherwise the mission is over.",
+      "text": "That's a mystery to solve later, when we are back at Coromodir.\n\nGo find the PALs, {COMPANY.CompanyName}, we need them otherwise the mission is over.",
       "branches": [
         {
           "responseText": "",
@@ -413,7 +413,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "5a6aa38b623035a020000d9d",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

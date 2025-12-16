@@ -9,7 +9,7 @@
         "id": "9caacc64b243be44f2f9aaf0"
       },
       "index": 0,
-      "text": "",
+      "text": "What just happened your Grace? \n\nDrone Assault 'Mechs were your secret project?",
       "branches": [
         {
           "responseText": "",
@@ -35,8 +35,83 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "apple",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_320_ANOMALY",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -44,13 +119,13 @@
         "id": "9c0478cc44311c4a31f9ae64"
       },
       "index": 1,
-      "text": "",
+      "text": "This is not over, you mercenaries need to return to the face of the planet and eliminate the remaining drone 'Mechs.\n\nWe can't risk our technology falling into the wrong hands!",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 2,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -67,11 +142,883 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6845f204b53cc7450e4616"
+      },
+      "index": 2,
+      "text": "<i>Perkele</i>, you need to do some explaining first if you want us to get back and face those monsters again.\n\nHow is even possible to pilot a BattleMech without a [[DM.BaseDescriptionDefs[LoreNeuroHelmet],neurohelmet]] to provide balance to the gyro?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 3,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7d585a3941007ebb7274e2"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
       "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cafda50346ccd1f8e272a7f"
+      },
+      "index": 3,
+      "text": "After decades of research Apple managed to create an artificial microprocessor dedicated solely to managing the BattleMech's balance.\n\nThe downside is that it occupies the entire cockpit and it can only be equipped on 'Mechs of Assault class and we also had to remove several tons of armor for weight issues.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c261080345c5e7cb3d774bd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
       "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6b5eb52fdb62f4c9194dad"
+      },
+      "index": 4,
+      "text": "That does not explain all that we saw, your Grace.\n\nSeveral [[DM.BaseDescriptionDefs[LoreIndustrialMech],IndustrialMechs]] are already automated for specific tasks and can operate remotely without the need for neurohelmets or even pilots.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 5,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c34048acf62c1c8fb9e96bc"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1c118ccd8c7da3a4ba6761"
+      },
+      "index": 5,
+      "text": "But what we saw back there was not automated [[DM.BaseDescriptionDefs[LoreAgroMech],AgroMechs]] picking up grain from fields.\n\nWhatever was piloting these [[DM.BaseDescriptionDefs[LoreBattleMech],'Mechs]], it knew tactics and coordination to ambush us.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c21f4f9f92de58673f65c05"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c7da26ad2d30e707aaad0dd"
+      },
+      "index": 6,
+      "text": "As I previously said, we can't trust your company with that kind of information.\n\nNow, you need to return to the planet and destroy the main research base... ",
+      "branches": [
+        {
+          "responseText": "Excuse me, your Grace, but I believed we have already fulfilled our contract. XO?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3f404113ac90a157494abd"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c3d27683b0f5935875d1134"
+      },
+      "index": 7,
+      "text": "That is correct, Commander {COMMANDER.LastName}.\n\nOur contract specified a site recovery and we have completed it, so according to [[DM.BaseDescriptionDefs[LoreMercenaryReviewBoard],MRB]] we are free to depart and collect our pay.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6223b3296f266d3cc30eb5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c82e50855c5787c3f9f98f9"
+      },
+      "index": 8,
+      "text": "You... you mercenaries don't actually believe you and your 'Mechs can  just run and hide under contract regulations, do you?\n\nBecause the moment your DropShip starts leaving orbit, is when I hire all the bounty hunters in the Periphery after you and Prince Davion might even set the [[DM.BaseDescriptionDefs[LoreMIIO],MIIO]] and his [[DM.BaseDescriptionDefs[LoreRabidFoxes],Rabid Foxes]] after you!",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cbf9ff5feea36654332967e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c76d1b075bf142ad2346c34"
+      },
+      "index": 9,
+      "text": "Your Grace, we can't properly defeat these 'Mechs unless you reveal to us what is their origin and abilities.\n\nAnd since we are renegotiating a new contract, we consider this to be crucial information for operational security.\n",
+      "branches": [
+        {
+          "responseText": "And you already want the technology destroyed, so who will believe mercenaries like us?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf6f054a33a6f416cb0d0ce"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c54590376d5bde659875e6e"
+      },
+      "index": 10,
+      "text": "Very well, since the [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] we have been working on computer solutions for the issues of depending on MechWarriors to pilot BattleMechs and their unreliability to follow orders.\n\nHowever, our research into artificial intelligence was not well received initially because of the social changes it would imply to replace an entire warrior caste and declare them obsolete.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c8805fadce60c40e5536806"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c346c2479812bddb360c2db"
+      },
+      "index": 11,
+      "text": "However, the [[DM.BaseDescriptionDefs[LoreSuccessionWars],Succession Wars]] changed that paradigm - we now live in a time of 'Mech scarcity, and a single lance can conquer an entire planet.\n\nAnd the ability of control and coordinate efficiently lances, companies or even greater numbers of military units multiplies even further their combat value.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c5394815ad3a03ab97a1c59"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cd166619c2c788a1ef367c8"
+      },
+      "index": 12,
+      "text": "However, while the software requirements to remotely control a group of 'Mechs could be solved out by our engineers, we were missing a key element until we had a breakthrough.\n\nHave any of you ever heard of the [[DM.BaseDescriptionDefs[LoreSpaceDefenseSystem],Casper SDS]] system?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c48c7019f7e89428b85b37c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf942ddc13ddf00a1d95a0d"
+      },
+      "index": 13,
+      "text": "Yes, your Grace, I studied it at the academy, it was a series of automated drones that was used during the Star League to protect high-value systems like [[DM.BaseDescriptionDefs[LoreTerra],Terra]].\n\nYou were able to replicate the system?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c968af1565787f9e57c221b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c0a53f137f278acaf99ee79"
+      },
+      "index": 14,
+      "text": "Partially, we already had gained access to the schematics possessed by [[DM.BaseDescriptionDefs[LoreNirasakiComputersCollective],Nirasaki Computers Collective]] but once the Combine found out about our interest in [[DM.BaseDescriptionDefs[LoreNirasaki],Nirasaki]], our operatives had to leave the planet.\n\nBut the real breakthrough was with the [[DM.BaseDescriptionDefs[LoreFedComAccords],FedCom Accords]] which gave us access to the models made by the original designer, [[DM.BaseDescriptionDefs[LoreUlsopRobotics],Ultrop Robotics]], since they used to have an office at [[DM.BaseDescriptionDefs[LoreTharkad],Tharkad]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc0d949e9c93fdfd1083d34"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cbff1388becac108a0f1c85"
+      },
+      "index": 15,
+      "text": "So what do you think happened on the planet, Duke Roberts?\n\nYour AI model became self-aware and ordered the 'Mechs to kill all humans?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9daa46a74c15b9a7bd6347"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6f6e54edf24e16d236060f"
+      },
+      "index": 16,
+      "text": "We gave it strict parameters and guardrails, the AI agent piloting the drones was guaranteed to follow orders unless it was sabotaged...\n\nIt does not matter, this project must be completely eliminated because we can't risk bringing back any compromised systems.",
+      "branches": [
+        {
+          "responseText": "{COMPANY.CompanyName} right here at your disposal, your Grace.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c5551313a6d0c388be9601e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c7a84b8de919c7ed0e059ee"
+      },
+      "index": 17,
+      "text": "We certainly can do it, as the Commander says, for the right price, Duke Roberts.\n\nBut we would like as payment the <i>Dark Horse</i> that we returned to Apple Computers, as you previously requested to us.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c63041b06fcad32ba4136d0"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c119bdd27d438283a15d319"
+      },
+      "index": 18,
+      "text": "The <i>Wolverine</i> with the pirated [[DM.BaseDescriptionDefs[LoreTekBattlecom],Tek Battlecom]]?\n\nThat's impossible, we have already sold it back to the [[DM.BaseDescriptionDefs[LoreDavionAFFS],AFFS]], after our engineers removed the communications device from its chassis.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c70f1875e61e60026c9afdf"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ccc5487f429789f99e35406"
+      },
+      "index": 19,
+      "text": "What about just the recovered Tek BattleCom then, your Grace?\n\nIf your people have no more use for it, we certainly could use it on the battlefield.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf64cf031b170be0748de7b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8d4da13638ee03c19aa90b"
+      },
+      "index": 20,
+      "text": "That is... acceptable, with the proper legal safeguards of course, and if you destroy the research base and all the remaining drone 'Mechs.\n\nDo we have an agreement Commander {COMMANDER.LastName}?",
+      "branches": [
+        {
+          "responseText": "Yes, your Grace, we will deploy when ready.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 21,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c17fa090d569ed5354df364"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "AppleComputersInterstellarLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c11993a215a3688222b76f9"
+      },
+      "index": 21,
+      "text": "[Transmission disconnected.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 22,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca2c27ba5196fbcce733ca7"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1ac00167b907013c2dea5b"
+      },
+      "index": 22,
+      "text": "AI controlled 'Mechs like that [[DM.BaseDescriptionDefs[LoreHolovidPeripheryTales],Periphery Tales]] called <i>It's A Kind Of Magic</i>?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 23,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1e776740c8c5baa52fdd57"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc153fa807e65e0f75350fc"
+      },
+      "index": 23,
+      "text": "I am not sure of what is happening exactly with those transmissions since they are heavily encrypted and Duke Roberts himself does not look sure of what has gone wrong.\n\nHowever, he's playing the right protocol, to contain and destroy everything in case of a potential AI escape.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3b13c996310e9d9d424735"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],
