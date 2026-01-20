@@ -106,7 +106,7 @@
         "id": "9c0f2a6995383d31d0abc62f"
       },
       "index": 1,
-      "text": "Yang! I told you to be careful with that holovid!\n\nIt's almost impossible to find a copy of the original version nowadays, you only get the [[DM.Factions[faction_Marik],Marik]] remake.",
+      "text": "Yang! I told you to be careful with that holovid!\n\nIt's almost impossible to find a copy of the original version nowadays, you only get the [[DM.Factions[faction_Marik],Free Worlds]] remake.",
       "branches": [
         {
           "responseText": "",
@@ -211,7 +211,7 @@
         "id": "9cfe32c430953be403104271"
       },
       "index": 4,
-      "text": "The 'HPG Orb',where they have a personal [[DM.BaseDescriptionDefs[LoreHPG],hyperpulse generator]] floating ball that allows them to talk with anyone and anywhere in the [[DM.BaseDescriptionDefs[LoreFlatGalaxyTheory],galaxy]]?\n\nThat show is just too awful to watch.",
+      "text": "The 'HPG Orb', where they have a personal [[DM.BaseDescriptionDefs[LoreHPG],hyperpulse generator]] floating ball that allows them to talk with anyone and anywhere in the [[DM.BaseDescriptionDefs[LoreFlatGalaxyTheory],galaxy]]?\n\nThat show is just too awful to watch.",
       "branches": [
         {
           "responseText": "",
@@ -246,7 +246,7 @@
         "id": "9c74cffa2465f623e27eab60"
       },
       "index": 5,
-      "text": "Dr. Murad, it's science fiction, it's not reality.\n\nThere are rumors that the [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] was working on such projects.",
+      "text": "Hey, it's science fiction, it's not reality.\n\nAnd there are rumors that the [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] was working on such projects.",
       "branches": [
         {
           "responseText": "",
@@ -281,7 +281,7 @@
         "id": "9c3fd094d335f36cda912715"
       },
       "index": 6,
-      "text": "No Chief Virtanen, the 'HPG Orb' is simply bad storytelling, \n\nLike when they suddenly begun using the Orb to talk to dead historical figures like First Lord [[DM.BaseDescriptionDefs[LoreIanCameron],Ian Cameron]], the founder of the Star League or even the Usurper [[DM.BaseDescriptionDefs[LoreStefanAmaris],Stefan Amaris]].",
+      "text": "No, the 'HPG Orb' is simply bad storytelling.\n\nLike when they suddenly begun using the orb to talk to dead historical figures like First Lord [[DM.BaseDescriptionDefs[LoreIanCameron],Ian Cameron]], the founder of the Star League or even the Usurper [[DM.BaseDescriptionDefs[LoreStefanAmaris],Stefan Amaris]].",
       "branches": [
         {
           "responseText": "I think we can start with the briefing XO.",
@@ -351,7 +351,7 @@
         "id": "9c90109691abcba2ce5d90f7"
       },
       "index": 8,
-      "text": "What, <i>the</i> Interconnectedness Unlimited?\n\nDarius, is this a crew joke related to the HPG Orb'?",
+      "text": "What, <i>the</i> Interconnectedness Unlimited?\n\nI thought we were done with the crew jokes related to the 'HPG Orb'?",
       "branches": [
         {
           "responseText": "No one is laughing so what do you mean?",
@@ -651,7 +651,7 @@
         "id": "9c41e8611b786ad436009d9c"
       },
       "index": 16,
-      "text": "Good, in that case there's work to be done.\n\nIs any your crew is acquainted with the [[DM.Factions[faction_Kurita],Kuritan]] holovid '[[DM.BaseDescriptionDefs[LoreHolovidTheAttackOfThePolymerCoatedMen],The Attack Of The Polymer Coated Men]]'?",
+      "text": "Good, in that case there's work to be done.\n\nIs any your crew is acquainted with the [[DM.Factions[faction_Kurita],Kuritan]] holovid '[[DM.BaseDescriptionDefs[LoreHolovidTheAttackOfThePolymerCoatedMan],The Attack Of The Polymer Coated Man]]'?",
       "branches": [
         {
           "responseText": "",
@@ -832,7 +832,7 @@
         "id": "9cc971612fb8bd663cbbeb19"
       },
       "index": 21,
-      "text": "So we need your company to pilot a lance of modified <i>Vindicators</i> and act as the Polymer Coated Men on the major battles of the holovid.",
+      "text": "So we need your company to pilot a lance of modified <i>Vindicators</i> and act as the Polymer Coated Man on the major battles of the holovid.",
       "branches": [
         {
           "responseText": "",
@@ -1052,7 +1052,7 @@
         "id": "9c8a553f3fe65512f139f817"
       },
       "index": 27,
-      "text": "Ipsum",
+      "text": "But do not worry, the interconnectedness has brought us all to where we are needed.\n\nUntil we meet soon.",
       "branches": [
         {
           "responseText": "",
@@ -1075,10 +1075,12 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "InterconnectednessUnlimitedLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
@@ -1087,7 +1089,7 @@
         "id": "9c4589c8005f5fb63a217873"
       },
       "index": 28,
-      "text": "Ipsum",
+      "text": "[Transmission ended.]",
       "branches": [
         {
           "responseText": "",
@@ -1114,7 +1116,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -1122,7 +1140,7 @@
         "id": "9c28b4065e788edcab3886a7"
       },
       "index": 29,
-      "text": "Ipsum",
+      "text": "Anyone else felt weird that Count's talk about the interconnectedness and the interlinked crap?\n\nWhat the hell was that all about?",
       "branches": [
         {
           "responseText": "",
@@ -1148,7 +1166,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -1157,13 +1175,13 @@
         "id": "9c86a7074cf8d5f6746f5721"
       },
       "index": 30,
-      "text": "Anyone else felt weird that Count's talk about the interconnectedness and the interlink?",
+      "text": "Even worse... what are we exactly filming?\n\nWe have several sayings in the [[DM.Factions[faction_Marik],Free Worlds League]] about Kurita holovids and they are not nice at all.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 31,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -1183,7 +1201,77 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "598cd3f36230355c1800006a",
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c3304127dcbbf40684fa5a7"
+      },
+      "index": 31,
+      "text": "It is one of the biggest hits ever back home, it is about an [[DM.BaseDescriptionDefs[LoreNAIS],NAIS]] secret project to enhance a [[DM.BaseDescriptionDefs[LoreMechWarrior],MechWarrior]]'s resistance to heat by grafting their skin with a polymer substance, which is extremely painful and drives them to insanity and eventual death.\n\nEventually the project works, but the test subjects manage to escape and attack Kurita space where are only stopped by a [[DM.BaseDescriptionDefs[LoreDEST],DEST]] commando unit equipped with vibrokatanas.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 32,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c708e5dd41994e09d9c004b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb99bbc63e7eb1b757eed3f"
+      },
+      "index": 32,
+      "text": "That's not how polymers work... sounds as awful as I was expecting.\n\nOK... yeah, I believe I'll pass this one, unless Darius decides to make it mandatory for crew viewing.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c009af22a1d54157adf6fa0"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     }
