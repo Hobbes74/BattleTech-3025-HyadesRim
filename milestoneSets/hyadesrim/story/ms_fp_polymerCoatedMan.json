@@ -206,8 +206,8 @@
                                 null,
                                 null,
                                 "c_StoryTime_HYR_123_polymerCoatedMan_1_attack",
-                                "InterconnectednessUnlimited",
-                                "InterconnectednessUnlimited",
+                                "PolymerCoatedMan",
+                                "FakeDeathCommandos",
                                 "4",
                                 "ms_fp_polymerCoatedMan_004_Talk",
                                 null,
@@ -349,17 +349,86 @@
                     "Stats" : null,
                     "Actions" : [
                         {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_rockyMesas_aDes",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "c_StoryTime_HYR_123_polymerCoatedMan_2_destroyBase",
+                                "PolymerCoatedMan",
+                                "FakeDeathCommandos",
+                                "4",
+                                "ms_fp_polymerCoatedMan_006_Mission",
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_polymerCoatedMan_006_Mission",
+                "Name" : "Mission",
+                "Details" : "The 3rd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
                             "Type" : "Flashpoint_StartContract",
                             "value" : "mapGeneral_rockyMesas_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_StoryTime_HYR_123_polymerCoatedMan_2_captureBase",
-                                "InterconnectednessUnlimited",
-                                "SpreadingTheGloriesIncorporated",
+                                "c_StoryTime_HYR_123_polymerCoatedMan_3_captureBase",
+                                "PolymerCoatedMan",
+                                "FakeDeathCommandos",
                                 "5",
-                                "ms_fp_polymerCoatedMan_006_Talk",
+                                "ms_fp_polymerCoatedMan_007_Talk",
                                 null,
                                 null,
                                 null
@@ -377,7 +446,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMan_006_Talk",
+                "Id" : "ms_fp_polymerCoatedMan_007_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -422,7 +491,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_polymerCoatedMan_007_Complete",
+                            "value" : "ms_fp_polymerCoatedMan_008_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -438,7 +507,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMan_007_Complete",
+                "Id" : "ms_fp_polymerCoatedMan_008_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -474,7 +543,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_polymerCoatedMan_008_Reward",
+                            "value" : "ms_fp_polymerCoatedMan_009_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_polymerCoatedMan",
@@ -529,7 +598,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_polymerCoatedMan_008_Reward",
+                "Id" : "ms_fp_polymerCoatedMan_009_Reward",
                 "Name" : "Reward",
                 "Details" : "Additional rewards",
                 "Icon" : null

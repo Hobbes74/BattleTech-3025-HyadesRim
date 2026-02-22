@@ -617,7 +617,7 @@
       "text": "Commander {COMMANDER.LastName}, while this might be a mundane assignment for you, I can assure you that I have been invested with the authority and urgency of this enterprise by no one else than First Prince Hanse Davion.\n\nSo as you can see, the links are already in short and deep consonance for our success, wouldn't you agree?",
       "branches": [
         {
-          "responseText": "Completely your Grace, we look forward to full collaboration with the First Prince.",
+          "responseText": "Completely Prince, I mean your Grace.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 16,
@@ -651,7 +651,7 @@
         "id": "9c41e8611b786ad436009d9c"
       },
       "index": 16,
-      "text": "Good, in that case there's work to be done.\n\nIs any your crew is acquainted with the [[DM.Factions[faction_Kurita],Kuritan]] holovid '[[DM.BaseDescriptionDefs[LoreHolovidTheAttackOfThePolymerCoatedMan],The Attack Of The Polymer Coated Man]]'?",
+      "text": "Good, because there is great work to be done.\n\nIs any your crew is acquainted with the [[DM.Factions[faction_Kurita],Kuritan]] holovid '[[DM.BaseDescriptionDefs[LoreHolovidTheAttackOfThePolymerCoatedMan],The Attack Of The Polymer Coated Man]]'?",
       "branches": [
         {
           "responseText": "",
@@ -688,7 +688,7 @@
         "id": "9cb14703d278611dfb4bf93f"
       },
       "index": 17,
-      "text": "S.T.G.'s The Attack of the Polymer of the Coated Man?'\n\nYes your Grace, I am Pilot Meyer and have family in the Combine and heard about that holovid being a hit back there.",
+      "text": "[[DM.BaseDescriptionDefs[LoreSpreadingTheGloriesIncorporated],S.T.G.]]'s The Attack of the Polymer of the Coated Man?'\n\nYes your Grace, I am Pilot Meyer and have family in the Combine and heard about that holovid being a hit back there.",
       "branches": [
         {
           "responseText": "",
@@ -723,7 +723,7 @@
         "id": "9c873a0e7b5826f3c4942ad4"
       },
       "index": 18,
-      "text": "And I've seen it on shore leave on Taurian space, it's the usual anti-Davion propaganda, although their special effects did look impressive on the technical scale since they used live 'Mechs in the holovid.",
+      "text": "And I've seen it on shore leave on [[DM.Factions[faction_TaurianConcordat],Taurian]] space, it's the usual anti-Davion propaganda, although their special effects did look impressive on the technical scale since they used live 'Mechs in the holovid.\n\nBut the acting is the usual Kurita horror mix of deadpan expression and screaming.",
       "branches": [
         {
           "responseText": "",
@@ -832,7 +832,7 @@
         "id": "9cc971612fb8bd663cbbeb19"
       },
       "index": 21,
-      "text": "So we need your company to pilot a lance of modified <i>Vindicators</i> and act as the Polymer Coated Man on the major battles of the holovid.",
+      "text": "So we need your company to pilot a lance of modified <i>[[DM.MechDefs[mechdef_vindicator_VND-1R],Vindicators]]</i> and act as the Polymer Coated Man and his associates during the major battles of the holovid.",
       "branches": [
         {
           "responseText": "",
@@ -869,7 +869,7 @@
         "id": "9c69162d4cf59a848284530f"
       },
       "index": 22,
-      "text": "<i>Vindicators</i>? But the original Kurita version used <i>Dragons</i> since it is an exclusive BattleMech model of the Combine.\n\nWhy are we using a [[DM.BaseDescriptionDefs[LoreLiaoCCAF],CCAF]] model... oh.",
+      "text": "<i>Vindicators</i>? But the original Kurita version used <i>[[DM.MechDefs[mechdef_dragon_DRG-1N],Dragons]]</i> since it is an exclusive BattleMech model of the Combine.\n\nWhy are we using a [[DM.BaseDescriptionDefs[LoreLiaoCCAF],CCAF]] model... <i>perkele</i>, you're turning it into a anti-Liao holovid.",
       "branches": [
         {
           "responseText": "",
@@ -904,7 +904,7 @@
         "id": "9c7b155b1c936cf3b69a1c07"
       },
       "index": 23,
-      "text": "We do not question the providence of the interconnectedness but follow its flow, Chief Mech Tech.\n\nYou will later receive additional details and technical specifications of the 'Mechs your company will be piloting.",
+      "text": "We do not question the providence of the interconnectedness but follow its flow, Chief Mech Tech Virtanen.\n\nYou will later receive additional details and technical specifications of the 'Mechs your company will be piloting.",
       "branches": [
         {
           "responseText": "Very well your Grace, just one final question, why this system?",
@@ -941,7 +941,7 @@
         "id": "9c3b3af086fa43f9e9ace001"
       },
       "index": 24,
-      "text": "Physics, the personal intervention of the First Prince, Hanse Davion himself and the need for secrecy.\n\nThe original holovid is supposed to take place in Terra, but ComStar has placed heavy restrictions and fees to filming on the planet.",
+      "text": "Physics, the personal intervention of the First Prince, Hanse Davion himself and the need for secrecy.\n\nThe original holovid is supposed to take place in Terra, but [[DM.Factions[faction_ComStar],ComStar]] has placed heavy restrictions and hugely expensive fees to filming on the planet.",
       "branches": [
         {
           "responseText": "",
@@ -1245,7 +1245,7 @@
         "id": "9cb99bbc63e7eb1b757eed3f"
       },
       "index": 32,
-      "text": "That's not how polymers work... sounds as awful as I was expecting.\n\nOK... yeah, I believe I'll pass this one, unless Darius decides to make it mandatory for crew viewing.",
+      "text": "That's not how polymers work... and 'S.T.G.'s The Attack of the Polymer-Coated Man' is sounding as awful as I expected.\n\nI'll pass this one, unless Darius decides to make it mandatory for crew viewing.",
       "branches": [
         {
           "responseText": "",
@@ -1272,7 +1272,23 @@
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "59b98a97623035ac140056c6",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],
