@@ -176,21 +176,19 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_frostySlopes_iTnd",
+                            "value" : "mapGeneral_Interchange_aDes",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_StoryTime_HYR_202_leviathanWakes_1_threeWayBattle",
-                                "SelfEmployed_Kamea",
-                                "TikonovPirates",
+                                "c_StoryTime_HYR_117_leviathanWakes_1_captureEscort",
+                                "TaurianConcordat",
+                                "LoneWolves",
                                 "5",
                                 "ms_fp_leviathanWakes_004_Talk",
-                                "CanopianPirates",
-                                "RegulanPirates",
                                 null,
                                 null,
-                                "BlackAngels"
+                                null
                             ]
                         },
                         {
@@ -214,6 +212,216 @@
         {
             "Description" : {
                 "Id" : "ms_fp_leviathanWakes_004_Talk",
+                "Name" : "Talk",
+                "Details" : "2nd Conversation.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_SimGameCharacterVisible",
+                            "value" : true,
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Farah",
+                                "Sumire",
+                                "Darius",
+                                "Yang"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c93df11d45c0039c6507ab1",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_leviathanWakes_005_MissionSim",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_leviathanWakes_005_MissionSim",
+                "Name" : "MissionSim",
+                "Details" : "The 2nd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_rawCliffsides_vHigh",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "c_StoryTime_HYR_117_leviathanWakes_2_ambushConvoy",
+                                "TaurianConcordat",
+                                "LoneWolves",
+                                "5",
+                                "ms_fp_leviathanWakes_006_MissionSim",
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_leviathanWakes_006_MissionSim",
+                "Name" : "MissionSim",
+                "Details" : "The 3rd Mission.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_lushIsthmus_vJung",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                null,
+                                null,
+                                "c_StoryTime_HYR_117_leviathanWakes_3_defendBase",
+                                "TaurianConcordat",
+                                "LoneWolves",
+                                "5",
+                                "ms_fp_leviathanWakes_007_Talk",
+                                null,
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_leviathanWakes_007_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -253,17 +461,15 @@
                                 "Alexander",
                                 "Farah",
                                 "Sumire",
-                                "Darius",
-                                "Yang",
-                                "Kamea"
+                                "Darius"
                             ]
                         },
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9c93df11d45c0039c6507ab1",
+                            "value" : "9c93df11d45c0039c6507ab2",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -271,7 +477,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_leviathanWakes_005_Complete",
+                            "value" : "ms_fp_leviathanWakes_008_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -287,7 +493,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_leviathanWakes_005_Complete",
+                "Id" : "ms_fp_leviathanWakes_008_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -334,19 +540,13 @@
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_leviathanWakes_006_Reward",
+                            "value" : "ms_fp_leviathanWakes_009_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "itemCollection_loot_fp_reward_leviathanWakes",
                                 null
                             ]
                         },
-						{
-							"Type" : "MechWarrior_AddHiring",
-							"value" : "pilot_HYR_leviathanWakes",
-							"valueConstant" : null,
-							"additionalValues" : null
-						},
                         {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Ship",
@@ -367,7 +567,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_leviathanWakes_006_Reward",
+                "Id" : "ms_fp_leviathanWakes_009_Reward",
                 "Name" : "Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null

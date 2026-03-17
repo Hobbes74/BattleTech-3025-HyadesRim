@@ -9,7 +9,7 @@
         "id": "9cecb55e9693030c01a21af1"
       },
       "index": 0,
-      "text": "The First Prince won't like to hear about our failure but I deserved this for underestimating Spreading the Glories.\n\nStill, the alternative could have been worse had they brought me back to the Combine as their prisoner.",
+      "text": "The [[DM.BaseDescriptionDefs[LoreHanseDavion],First Prince]] won't like to hear about our failure but I deserved this for underestimating [[DM.BaseDescriptionDefs[LoreSpreadingTheGloriesIncorporated],Spreading the Glories]] and their Kuritan backers.\n\nStill, the alternative could have been worse had they brought me or even Bailey Hudson back to the [[DM.Factions[faction_Kurita],Combine]] as their prisoners.",
       "branches": [
         {
           "responseText": "",
@@ -33,7 +33,7 @@
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
       "sourceInSceneRef": {
-        "id": "SteffelbusDefault"
+        "id": "InterconnectednessUnlimitedLeaderDefault"
       },
       "sourceWithTagInScene": "",
       "override_speaker": null,
@@ -150,7 +150,7 @@
         "id": "9cbd6252b8057acd2cd41a70"
       },
       "index": 1,
-      "text": "Count von Steffelbus, how are you certain they were operating with the Combine?\n\nWe are very far from my family's country and the Rimward Periphery is crawling with criminals.",
+      "text": "Count von Steffelbus, how are you certain they were operating with the Combine?\n\nWe are very far from my family's country and the [[DM.BaseDescriptionDefs[LoreRimwardPeriphery],Rimward Periphery]] is crawling with criminals and impersonators.",
       "branches": [
         {
           "responseText": "",
@@ -176,7 +176,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -185,7 +185,7 @@
         "id": "9c15efcdeda6b3608575c0af"
       },
       "index": 2,
-      "text": "I would expect no less than the wrath of the 'Dragon' for attempting to interfere on their success, if I had tried to replicate the <i>Polymer Coated Man</i> in a world close to Kurita space.\n\nMy mistake was expecting that I could avoid their ISF spies by moving to the other side of the galaxy.",
+      "text": "I had expected the wrath of the 'Dragon' for attempting to interfere on their success, if I had tried to replicate the <i>[[DM.BaseDescriptionDefs[LoreHolovidTheAttackOfThePolymerCoatedMan],The Attack of the Polymer-Coated Man]]</i> in a world close to Kurita space.\n\nMy mistake was expecting that I could avoid their ISF spies by moving to the other side of the galaxy.",
       "branches": [
         {
           "responseText": "",
@@ -208,7 +208,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "InterconnectednessUnlimitedLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -220,7 +222,7 @@
         "id": "9ce5a807ce0d8fde9c8a21cf"
       },
       "index": 3,
-      "text": "So what will you do now? ",
+      "text": "So what will you do now, your Grace? ",
       "branches": [
         {
           "responseText": "",
@@ -246,7 +248,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -278,7 +280,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "InterconnectednessUnlimitedLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -313,7 +317,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "InterconnectednessUnlimitedLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -325,7 +331,7 @@
         "id": "9ceed9e67bf4e46858e29434"
       },
       "index": 6,
-      "text": "",
+      "text": "[Forever interlinked.]",
       "branches": [
         {
           "responseText": "",
@@ -351,8 +357,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59f8f0296230359c2100082c",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -360,7 +382,7 @@
         "id": "9c1801e52f3e2e5a0f4cc10a"
       },
       "index": 7,
-      "text": "",
+      "text": "That's too bad, I heard Captain Kamea wanted a chance to talk to Hudson Bailey because he was one of her favorite actors but now she will never have the opportunity.\n\nNot unlike others present here, right Yang?",
       "branches": [
         {
           "responseText": "",
@@ -395,13 +417,13 @@
         "id": "9c3baa1766670f62c25717e9"
       },
       "index": 8,
-      "text": "",
+      "text": "Hey, I didn't touch Bailey, he just tripped over a cable on the Mech Bay, despite what he said afterwards.\n\nAnd physically he could pass for [[DM.BaseDescriptionDefs[LoreMaximillianLiao],Maximillian Liao]] but he was not that good as an actor.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 9,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -421,8 +443,129 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cab35a341f070031b78c673"
+      },
+      "index": 9,
+      "text": "Says the specialist in weird fiction holovids... stick to the Mech Bay, Chief Virtanen, you are way better there than as a holovid producer.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c00685e7e1337bd467b44bb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c510754abf88d1753cae716"
+      },
+      "index": 10,
+      "text": "Just a question, how does 'The Attack of the Polymer-Coated Man' ends?\n\nI never watched the original Kurita movie and now we won't be around to see them filming the end, so I am curious.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3569fb8cfd281838f5a534"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf17b2fe9e7d96be2a48cc5"
+      },
+      "index": 11,
+      "text": "XO, no spoilers, if I ever find the original 'S.T.G.'s The Attack of the Polymer-Coated Man' available we will organize a viewing for the entire crew.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c8f0d7d524f7c08eed8d351"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],
