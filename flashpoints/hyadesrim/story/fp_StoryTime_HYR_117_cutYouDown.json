@@ -1,0 +1,66 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_117_cutYouDown",
+		"Name" : "Cut You Down",
+        "Details" : "A strange radiation signature is detected in the Hyades Rim close to Taurian colonies. Part one of Interconnectedness Unlimited subarc.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_36.png"
+    },
+    "Weight" : 100,
+    "InternalName" : "cutYouDown",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 4,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints",
+					"flashpoint_evilEye_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_cutYouDown_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_mirfak"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"TaurianConcordat"
+    ],
+    "TargetFaction" : "LoneWolves",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_cutYouDown",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_cutYouDown",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "A colony has reported a strange X-Ray emission being transmitted from an unknown source in the star system and it seems artificial in origin, so they have asked the Taurian Defense Force to investigate. Be advised: there's a high possibillity of Davion forces being responsible due to recent civil unrest and enemy activity.",
+    "FlashpointDescriberCastDefId" : "castDef_TaurianRepDefault",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}
