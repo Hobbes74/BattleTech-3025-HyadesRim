@@ -1,0 +1,85 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_124_thereCanBeOnlyOne",
+        "Name" : "There Can Be Only One",
+        "Details" : "The Northwind Highlanders hire the company to do some dirty laundry.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_66.png"
+    },
+    "Weight" : 100,
+    "InternalName" : "thereCanBeOnlyOne",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 5,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints",
+					"flashpoint_danseMacabre_complete"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_thereCanBeOnlyOne_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Injuries",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_athna"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"NorthwindHighlanders"
+    ],
+    "TargetFaction" : "Unknown",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_thereCanBeOnlyOne",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_thereCanBeOnlyOne",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "Commander, the Northwind Hichlanders have an internal issue thon we neit ootside help tae solve. Please come tae the mentionit system for further details.",
+    "FlashpointDescriberCastDefId" : "castDef_NorthwindHighlandersLeaderDefault",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

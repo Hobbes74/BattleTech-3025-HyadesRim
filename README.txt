@@ -17,7 +17,7 @@ Patreon (donations not required but welcome) - https://www.patreon.com/Hobbes74
 Features
 * A new BattleTech story and Campaign mode, consisting of forty-seven new flashpoints and forty-four new events telling an alternative history of the Arano Restoration where Kamea Arano wasn't presumed killed as ComStar's cover-up story claims (a.k.a. original campaign). Instead, she was exiled and the company entered the service of canon BattleTech figures such as Interstellar Expeditions and Chandrasekhar Kurita and the real events of the Aurigan campaign were suppressed.
 
-* Forty-seven original flashpoints released, campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, It's A Kind Of Magic, Cut You Down, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, The Attack Of The Polymer Coated Man, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Zenith Initiative, Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection, Ghost Riders In The Sky, Barbarians At The Gates, Atomic and With My Mind She Runs.
+* Forty-eight original flashpoints , campaign mode only: You On The Run, Exodus, Evil Eye, The Periphery Is A Harsh Mistress, The Mad Cat Who Walks Through Walls, Here Might Be Dragons, Jinxed, It Came From The Rim, Death's Mask, God Mecha, It's A Kind Of Magic, Cut You Down, Amaris Legacy, Tales of 1001 BattleMechs, The Man Comes Around, Danse Macabre, The Attack Of The Polymer Coated Man, There Can Be Only One, Rogue Star, Putting Out A Fire, A Country Too Far, Paradise City, Kiss Them For Me, Bandit Kingdoms and Petty Tyrants, The Magistrate, Flesh For Fantasy, Heads Will Roll, Backdoor Man, Dark Forest, Horse Latitudes, Stranger In A Strange Land, Dark Horse, Kerensky's Ghost, Comanche Moon, Zenith Initiative (unreleased), Question Of Faith, Speak Of The Devil, Otaku, Dreams of Nagayan Mountains, Legend Killer, Wilderness, Vortex, Sword Of The Restoration, Unnatural Selection, Ghost Riders In The Sky, Barbarians At The Gates, Atomic and With My Mind She Runs (unreleased).
 
 * An optional 'Periphery Tales' campaign consisting of 52 mini-flashpoints and two flashbacks, Eighteen Birthday and Arano Royal Guard, taking place simultaneous with the main story, with increased rewards to speed up 'farming'.
 
@@ -103,9 +103,9 @@ Credits
 * Story author and developer: Hobbes;
 * CastSprites and conversation textures artwork: DarkKhaos;
 * Additional writing: Camicon_Dachass (Liao systems);
-* Text editing: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
+* Text editing teams: ComStar Grammar Police (DarkKhaos, MarkDey and Tetro75), Ministry Of Bob (Hantta, SanchoPanzer and unclecid) and commiehunter;
 * Playtesters: TL_Warlord_Roff, stormfather, Lobo das Estepes, Hantta, MarkDey and SanchoPanzer, dogwart and commiehunter;
-* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS, Miggles, HunterZ, Arin Fei, Narks, Splittix, Thortol, Iry, Aotrs Commander, George-D, KarbinCry, Scholomancer, NewAgeOfPower, Josh, Bulldog5769, Bojislav, Josh, meatball, dfwall02453;
+* Bug reporting: taintedloki, 1apetus, mystictiger, nowater, samian, Midicow, Thalion, phearless047, Oldtimer, Silber, l33tn3ss, Thalion, veryinky, LordTyrranus, kasdikana, Frenzier, RedKitsune, UlfrStrongarm, Khairus, GeniusSaj, Ichthyos, don_zappo, SaintBomber, DEADWEIGHT, stormfather, f.abel, Cla, Camicon_Dachass, Sancho Panzer, Azymorath, CatLady, MarkDey, unclecid, A. vak, Stahlseele, ALE999, CryptoDan, Wpmz, CertainNanomachineSenator, Ballonmann, FrozenPear, Spartakus, FoolsGold, TheHolyLancer, TotallyNotEvil, AAAHGaming, St Up Nr, jemy000, Travesty, Questionable Life Decisions, Alexander, T-squared, Jade CAT, Matt, PetrCS, Miggles, HunterZ, Arin Fei, Narks, Splittix, Thortol, Iry, Aotrs Commander, George-D, KarbinCry, Scholomancer, NewAgeOfPower, Josh, Bulldog5769, Bojislav, Josh, meatball, dfwall02453, TheGlyphstone;
 
 All canon BattleTech content is property of its franchise, owned by Catalyst Games, and the BattleTech videogame and DLCs are owned by Paradox Games.
 
@@ -131,6 +131,6 @@ As I've discussed over the years on the Discord server after several requests, I
 
 Regardless of donations, all of my work will always be for free to download and play and is released with a open source GNU GPL license. 
 
-If you contribute through Patreon you also have the option of adding your personal touch to the mod by including your own BattleMech variant and star system.
+If you contribute through Patreon you also have the option of adding your personal touch to the mod by including your own BattleMech variant and star system (you'll have to ask).
 
 Thank you!

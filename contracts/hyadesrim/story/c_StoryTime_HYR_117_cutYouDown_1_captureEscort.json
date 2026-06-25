@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "7db60871-d4ae-423d-9c82-fb40ca083372"
             },
-            "title" : "Capture Convoy Rally Point, Escort Convoy to Safety, and Extract Safely",
+            "title" : "Capture Inheritor Leadership",
             "description" : "Capture Convoy Rally Point, Escort Convoy to Safety, and Extract Safely",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -62,7 +62,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "acf88d1b-d09f-4db7-b7ea-9f48a426075c"
             },
-            "title" : "Destroy Enemy Blocking Force",
+            "title" : "Destroy Inheritor Bodyguards",
             "description" : "The objective to destroy the force of enemies which will try andstop the player from reaching the rally point.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -100,7 +100,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "5f01500a-5087-4a6f-86d8-9e0450bc93eb"
             },
-            "title" : "Secure the Convoy Rally Point",
+            "title" : "Capture Inheritor Leadership",
             "description" : "Secure the Convoy Rally Point",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -112,7 +112,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "371c6027-0869-4e03-8d70-192a8f441d70"
             },
-            "title" : "Destroy Enemy Reinforcements",
+            "title" : "Destroy Lone Wolves",
             "description" : "The objective to destroy enemy units which will attempt to block the convoy from reaching its destination.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -150,7 +150,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d4d20990-fbeb-4f6e-81b7-7e94bba6a2c5"
             },
-            "title" : "Escort Friendly units to their Destination",
+            "title" : "Escort Jarring",
             "description" : "Escort Friendly units to their Destination",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -162,7 +162,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "7da17c55-5d39-4a36-836c-69219a8ddeab"
             },
-            "title" : "Ensure All Convoy units survive during Extraction",
+            "title" : "Ensure Vehicle Survives",
             "description" : "Protect the all units in Convoy during Extraction, suffering no losses.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -224,7 +224,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "9820d0c3-79e7-4456-b55c-ca820e82fae2"
             },
-            "title" : "Protect Convoy while Dropship Arrives",
+            "title" : "Protect Jarring while Dropship Arrives",
             "description" : "USELESS OBJECTIVE",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -236,7 +236,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "fa7458f8-c940-480c-91ce-4605fa8965d4"
             },
-            "title" : "Protect Convoy as they Embark on the Dropship",
+            "title" : "Protect Jarring as she Embarks on the Dropship",
             "description" : "USELESS OBJECTIVE",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -253,7 +253,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "68ac8364-8ea0-408a-949e-3e395ed8655b"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -262,7 +262,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "66728491-3cff-4ba8-b173-a6a386ce2c73"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -344,7 +344,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy has stopped at a nearby facility, Commander.",
+                    "words" : "According to the TMM intel, the Inheritor leadership is currently inspecting their holdings.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -360,7 +360,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Let's move up and get them underway to their extract point.",
+                    "words" : "In order to keep things civil, we have been ordered to strike it to see if the rest of the Creed followers fall in line.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -371,6 +371,38 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "That doesn't sound very 'civil'.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I just sign the contracts Yang, I don't write the legalese to justify killing people.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -385,14 +417,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's a wrap, Commander. Well done.",
+                    "words" : "Thank you for the rescue barista.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_JarringDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -410,14 +442,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Dammit. We're going to have to report this one as a loss, Commander.",
+                    "words" : "Barista, you claim to be third rate mercenaries?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_JarringDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -432,10 +464,10 @@
                 "EncounterObjectGuid" : "6c8a5135-f5b5-4c1f-b142-d3c20f51be67"
             },
             "name" : "Dialogue_ReinforcementWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander. The enemy had deployed reinforcements and they are inbound. Expect increased resistance. ",
+                    "words" : "More Inheritors incoming!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -460,14 +492,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "More contacts, Commander. These folks are shooting to kill. They <i>really</i> don't want our friends getting their people back.",
+                    "words" : "Barista are you watching this? Are you going to do anything about it?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_JarringDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yes Darius, what are we doing about it?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -482,17 +530,17 @@
                 "EncounterObjectGuid" : "59fd62f4-62f0-4e14-b203-d796e231c3a8"
             },
             "name" : "Dialogue_HoldOutOrders",
-            "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_InPositionHoldOut",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You've reached the extraction point for the objective vehicles. Hold there are keep them safe until we can get them out.",
+                    "words" : "Oye barista, we need some protection now!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_JarringDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -510,7 +558,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Just got word from the driver of the lead vehicle. They're ready to move out.",
+                    "words" : "The place looks deserted... this is weird, where are the Inheritors?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -518,6 +566,86 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Barista! We are here! And ready to move!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JarringDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Darius, looks like we found the Inheritors",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Inheritors? No, I work for Magliss Spirits and have been kidnapped by them",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JarringDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The Canopian wine company?! ",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yes, just help me escape and I'll help you with the Inheritors.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JarringDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -532,17 +660,17 @@
                 "EncounterObjectGuid" : "e8895550-a34c-4545-aa0b-27d4dfd21eeb"
             },
             "name" : "Dialogue_ConvoyExtractSuccessEscapeInstruction",
-            "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_ObjSecured",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "And they are away! The convoy is safely out of the AO. Good work, Commander. Now get your remaining forces to the second evac zone for extraction there. ",
+                    "words" : "Let's talk in orbit with the rest of your mercenaries.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_JarringDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -557,8 +685,25 @@
                 "EncounterObjectGuid" : "e066d510-3c33-4caf-8c40-39f15c92936a"
             },
             "name" : "Dialogue_EscortProximity",
-            "overrideDialogueBucketId" : "DialogBucketDef_CaptureEscort_EscortProximity",
-            "dialogueContent" : []
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [			
+                {
+                    "words" : "Barista, please get moving, don't leave a lady here all by herself.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_JarringDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                }
+			]
         }
     ],
     "extractionOverrideList" : [
@@ -782,11 +927,9 @@
                     "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
                 },
                 "name" : "Lance_Friendly_Escort",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_convoy"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -805,10 +948,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "customUnitName" : "Jarring's Packrat",
+                        "customHeraldryDefId" : "heraldrydef_MaglissSpirits",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "vehicledef_PACKRAT_Technical",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -821,7 +964,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_d5_gunner",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -841,7 +984,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -874,7 +1017,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -907,7 +1050,7 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

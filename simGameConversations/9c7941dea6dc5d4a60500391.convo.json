@@ -1,0 +1,491 @@
+{
+  "idRef": {
+    "id": "9c7941dea6dc5d4a60500391"
+  },
+  "ui_name": "HYR_124_thereCanBeOnlyOne_1",
+  "nodes": [
+    {
+      "idRef": {
+        "id": "9c9f82b9963becfc64588522"
+      },
+      "index": 0,
+      "text": "Our employer has declined to accompany us to [[DM.BaseDescriptionDefs[LoreAthna],Athna]], but the instructions of the [[DM.Factions[faction_NorthwindHighlanders],Northwind Highlanders]] are pretty clear.\n\nOne of their former members has stolen an item from them and we are to recover it by force, if necessary, but highly likely from the contracts' terms.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cdb89c7a2dc58e807e91387"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_341_FAMILY_REUNION",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9133c273c9787119ecc489"
+      },
+      "index": 1,
+      "text": "Really? I met quite a few of the Highlanders when I was temporarily assigned as an [[DM.BaseDescriptionDefs[LoreAstech],astech]] to [[DM.BaseDescriptionDefs[LoreElgin],Elgin]], where two of their regiments are based.\n\nThey are a pretty tight crowd, what did this character steal to piss them?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 2,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cb1c23d8e19d4b1127a8f9e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c58a87f5c6379236d2f9a4c"
+      },
+      "index": 2,
+      "text": "A sword, or more accurately, the regimental [[DM.BaseDescriptionDefs[LoreSwordClaymore],claymore]] of the [[DM.BaseDescriptionDefs[Lore1stKearnyHighlanders],1st Kearny Highlanders]].\n\nSomething important enough to deserve a substantial reward.",
+      "branches": [
+        {
+          "responseText": "We're being paid to recover a sword?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 3,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c22e1d9f2f8dbf7a6087426"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cbae5dbb614f756ce2ccf0f"
+      },
+      "index": 3,
+      "text": "<i>Perkele</i>! Not just any sword, Commander {COMMANDER.LastName}, if you're shared a of drinks with the Highlanders, they are incredibly tight about their traditions after being ejected by House Davion centuries ago from their home system of [[DM.BaseDescriptionDefs[LoreNorthwind],Northwind]].\n\nTwenty years ago, one of their former officers went mad and stole the weapon from the regimental headquarters before fleeing to the [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]]. Since then the Highlanders have never been able to recover the sword, despite several bounties placed by them to the officer.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c95b5f0d2895714916be566"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c24a823eaf5eefceb336390"
+      },
+      "index": 4,
+      "text": "I get the importance of recovering a regimental antique weapon, Yang.\n\nAnd the officer is former Highlander Colonel Robert MacLeod of Clan MacLeod, according to the contract.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 5,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4063cff112405eaf30d58c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c952a9680884299d88e6a10"
+      },
+      "index": 5,
+      "text": "It was someone of [[DM.BaseDescriptionDefs[LoreNorthwindClan],Clan]] MacLeod? <i>[[DM.BaseDescriptionDefs[LoreSaatana],Saatana]]</i> I met quite a few of their family members, this is really the real stuff about to happen.\n\nThe Highlanders must have gotten finally an indication of the location of the claymore after all this years.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c27880264d09ddfc27590e7"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9b6ae0eed2bff325df90a2"
+      },
+      "index": 6,
+      "text": "Not according to the contract Yang, it says that Colonel MacLeod arrived in 3001 to Athna, in possession of one of his clan's ancestral 'Mechs, a <i>[[DM.MechDefs[mechdef_highlander_HGN-732],Highlander]]</i>, but that the Highlanders appear to have left him alone all this years. \n\nThey even know his exact location in one of the system's habitable moons.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cad415c9182c652fd7e53c9"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9f731ca2aec7c759f8816c"
+      },
+      "index": 7,
+      "text": "That's weird, if the sword was so important to them, why didn't they go and recover it after all this years, and why is it so important now?\n\nAnd why did their leaders apparently lied to the rest of the Highlanders about what they knew?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c15d0cd6f9ceb9f7c180a18"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c857a26900b7d2ab01bce23"
+      },
+      "index": 8,
+      "text": "Honor and also kinship rules preventing them from striking one of their members, that's an easy answer Dr. Murad.\n\nThat's why they hired us instead of sending their own people to recover the claymore.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc2a94a2256643d425e47bb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ce964b8fbdfe5ae3d08309d"
+      },
+      "index": 9,
+      "text": "And it is so important that they even included the ancestral 'Mech as part of the salvage, although we'll still have to fight it one on one to get it.\n\nKeeping honor intact and with discretion requires a price, I guess, although I fail to see the point of ordering us to a duel but that's our employer's discretion to do so.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4475f4a7dff720a64a7c1e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c606616db1a835cdb59965c"
+      },
+      "index": 10,
+      "text": "Darius, you're not the one that will be paying that price by going solo against an assault class 'Mech dating back from the [[DM.BaseDescriptionDefs[LoreSLDF],SLDF]].\n\nThe Highlanders were known to be one of the elite units of the [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] before they became mercenary, plus this MacLeod was the former CO of one of their [[DM.BaseDescriptionDefs[LoreMarionsHighlanders],regiments]].",
+      "branches": [
+        {
+          "responseText": "Well said Yang, time to go the 'Mech Bay and decide who that will be.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7c74e3e4e3b16c06805d5d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    }
+  ],
+  "roots": [
+    {
+      "responseText": "",
+      "conditions": null,
+      "actions": null,
+      "nextNodeIndex": 0,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9cece1dfbfb78ebcf4103e29"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
+    }
+  ],
+  "default_speaker_id": "",
+  "default_speaker_override": null,
+  "persistent_conversation": false,
+  "speaker_override_id": ""
+}
