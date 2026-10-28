@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Lady Arano has been ambushed while responding to the second landing site, with more Harbinger infiltrators linking up with the airborne landings to pin the Royal Guard between both forces. Losses have been reported as heavy and the entire unit has gone offline, so the Aurigan high command has ordered the company to attempt a rescue of Lady Arano and any additional survivors.",
+    "shortDescription" : "Lady Arano has been ambushed while hunting a marauding Harbinger warband, with a second group waiting to pin the Royal Guard between both forces. Losses have been reported as heavy and the entire unit has gone offline, so the Aurigan high command has ordered the company to attempt a rescue of Lady Arano and any additional survivors.",
     "longDescription" : "A lot of the guards died to keep the Captain alive, let's make their loss not in vain.",
     "salvagePotential" : 16,
     "requirementList" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "dee3ebc7-d9df-4e5f-bfbb-0fb7dff587f8"
             },
-            "title" : "Retrieve the Agent and Escape",
+            "title" : "Retrieve Lady Arano and Escape",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -92,7 +92,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ff3cb25c-4bd9-4343-be9a-be14fa22718c"
             },
-            "title" : "The 'Mech Carrying the Operative Must Survive",
+            "title" : "The 'Mech Carrying Lady Arano Must Survive",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -171,7 +171,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a4e9541a-082c-491f-bb80-2f1241b0c349"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -232,7 +232,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're coming up on the target facility, Commander.",
+                    "words" : "We are approaching Lady Arano's location.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -248,7 +248,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "There it is. Move up, secure the location, and pick up the agent.",
+                    "words" : "I see a light beacon, move ahead and pick her.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -264,7 +264,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Get her to the evac zone, and get the hell out of there.",
+                    "words" : "Then get to the evac zone, and both of you evac.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -280,7 +280,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good luck, Commander. Oliveira out.",
+                    "words" : "Keep an eye out for an ambush. Harbingers are headhunting our forces.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -305,14 +305,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The agent is away. Good work, Commander. Let's go get paid.",
+                    "words" : "I am safe. Thank you all and let us leave this location.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -330,7 +330,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I'm pulling the plug, Commander. No way to salvage this mess.",
+                    "words" : "We failed. Lady Arano is still out there and the Harbingers are zeroing on her position!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -355,14 +355,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The agent is on her way out. Hold position until she's safely aboard, and then get out of there.",
+                    "words" : "I am here. Let's leave this place.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_KameaDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -719,7 +719,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_battle",
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -879,7 +879,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_support",
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },

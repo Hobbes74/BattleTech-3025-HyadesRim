@@ -2,17 +2,17 @@
   "idRef": {
     "id": "9c93df11d45c0039c6507ab1"
   },
-  "ui_name": "HYR_117_cutYouDown_2",
+  "ui_name": "HYR_117_honiSoitQuiMalYPense_2",
   "nodes": [
     {
       "idRef": {
         "id": "9c05587b79a0b75d808ff99f"
       },
       "index": 0,
-      "text": "Oye oye Jarring.\n\nThank you for the rescue, although your spaceship's living conditions are deplorable.",
+      "text": "Oye oye Jarring.",
       "branches": [
         {
-          "responseText": "Indeed you are in looks, lady.",
+          "responseText": "Indeed you are lady.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 1,
@@ -32,10 +32,12 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "",
       "actions": {
         "ops": [
           {
@@ -106,7 +108,7 @@
         "id": "9cc27be24b224eef7c07e4b4"
       },
       "index": 1,
-      "text": "Lady, how did you leave the DropShip?\n\nI somehow doubt you're just a journalist working for a Canopian wine maker.",
+      "text": "Why have I been locked up in one of the cabins? \n\nThis isn't quite the rescue I was expecting.",
       "branches": [
         {
           "responseText": "",
@@ -129,7 +131,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -141,10 +145,10 @@
         "id": "9c52d671616c0849be803b2d"
       },
       "index": 2,
-      "text": "Barista, you are not the DropShip I was expecting to extract me from this world and I don't trust you yet.\n\nAre you mercs any good or did you just got joined all together for what you assumed was an easy money fighting the Lone Wolves?",
+      "text": "Until we figure out who you really are, you are restricted to your cabin.\n\nI somehow doubt you're just a trade representative working for a [[DM.Factions[faction_MagistracyOfCanopus],Canopian]] wine maker, as you claim.",
       "branches": [
         {
-          "responseText": "Who are you?",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 3,
@@ -152,6 +156,41 @@
           "onlyOnce": false,
           "idRef": {
             "id": "9c80ea384f858d6a6b25d688"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c9cc297111b2f1dc907975c"
+      },
+      "index": 3,
+      "text": "[[DM.BaseDescriptionDefs[LoreBarista],Barista]], you are not the DropShip I was expecting to extract me from this world and I don't trust you yet too.\n\nBut if you want to negotiate with these terms, fine.",
+      "branches": [
+        {
+          "responseText": "Who are you?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce637561d7161c229481430"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -175,45 +214,10 @@
     },
     {
       "idRef": {
-        "id": "9c9cc297111b2f1dc907975c"
-      },
-      "index": 3,
-      "text": "I am Jarring, just Jarring thank you, and I came from Vanra in the Duchy of Orloff, and Magliss Spirits hired me to scout for potential investment locations on several worlds.\n\nOnce your barista left me in my detention cell, I decided to leave, so I stole a pressure suit and hacked an airlock after breaking out.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 4,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9ce637561d7161c229481430"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
         "id": "9c83990cfc2c2a0729b67fcf"
       },
       "index": 4,
-      "text": "What? Of course we are good, COMPANY has been operating as legitimate registered mercenaries for years with an MRB rating.\n\nAnd how do you know those 'Mechs belonged to the Lone Wolves?",
+      "text": "I am Jarring, just Jarring thank you, again I came from [[DM.BaseDescriptionDefs[LoreVanra],Vanra]] in the [[DM.BaseDescriptionDefs[LoreDuchyOfOrloff],Duchy of Orloff]], and [[DM.Factions[faction_MaglissSpirits],Magliss Spirits]] hired me to scout for potential investment locations on several worlds.\n\nAre you mercs any good or did you just got joined all together for what you assumed was an easy money fighting the [[DM.Factions[faction_LoneWolves],Lone Wolves]]?",
       "branches": [
         {
           "responseText": "",
@@ -236,7 +240,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -248,10 +254,10 @@
         "id": "9cca93b483dcc8eef05c4849"
       },
       "index": 5,
-      "text": "Barista, you can be whomever you want, as long as you are able to take me off this planet before the Taurian Constabulary locates me.\n\nIf I tell you about the Lone Wolves, do we have a deal to take me to the next system?",
+      "text": "What? Of course we are good, {COMPANY.CompanyName} has been operating as legitimate registered mercenaries for years with an official [[DM.BaseDescriptionDefs[LoreMercenaryReviewBoard],MRB]] rating.\n\nAnd how do you know about the Lone Wolves?",
       "branches": [
         {
-          "responseText": "Since you mentioned, why are the Taurians after you?",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 6,
@@ -271,12 +277,10 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": {
-        "id": "JarringDefault"
-      },
+      "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -285,10 +289,10 @@
         "id": "9c2e4d78331342775201430f"
       },
       "index": 6,
-      "text": "Because I figured out what's behind the recent unusual activity on this planet, it must be the same as other sightings that first appeared in the Capellan March a couple of years ago.\n\nAnd in the process I stepped into witnessing how TMM and the Inheritors have been fighting from control of Mirfak.",
+      "text": "Barista, any MRB rating is fine as long as you take me off this planet before the [[DM.BaseDescriptionDefs[LoreConcordatConstabulary],Concordat Constabulary]] finds me.\n\nAnd about the Lone Wolves... let's put it this way, if I tell you about the location of the Inheritor base, do we have a deal to take me to the next system?",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "Perhaps... since you mentioned now, why are the Taurians after you?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 7,
@@ -322,7 +326,7 @@
         "id": "9c53b3bef08e456391a8f018"
       },
       "index": 7,
-      "text": "The reported unusual x-ray signatures? \n\nThat's more easily explained by one nearby star going supernova, there's nothing strange with them.",
+      "text": "Because I stepped into witnessing how [[DM.Factions[faction_TaurusMajorisMining],TMM]] has been pressing the [[DM.BaseDescriptionDefs[LoreFarLookers],Far-Lookers]] for control of Mirfak by hiring mercenaries to raid their settlements.\n\nAnd when you first appeared, your company looked just like one of them to me.",
       "branches": [
         {
           "responseText": "",
@@ -345,7 +349,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -357,7 +363,7 @@
         "id": "9c5f4436518388b0d1cbf152"
       },
       "index": 8,
-      "text": "I disagree... a JumpShip crew first reported these 'sigils' after arriving at Euschelus zenith point, and then other signatures have been reported from Cadiz and Micros III, plus I have confirmation from a third party of sightings in Davion space, and all since two years ago.",
+      "text": "What, that's not what we have been told by Lady Marisol-Chaplin, she claimed that the Far Lookers escalated first by hiring the Lone Wolves.\n\nAnd that within them there are also Inheritors and that they need to cut down on the armed several groups to restore order.",
       "branches": [
         {
           "responseText": "",
@@ -383,7 +389,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -392,10 +398,10 @@
         "id": "9c64c4a2003049d5427b15eb"
       },
       "index": 9,
-      "text": "Commander, this is now sounding like some sort of Taurian black operations that they must be running on Mirfak.\n\nThere is a lot more than we are being informed here by our employer, but I don't really trust this 'journalist'.",
+      "text": "Marisol-Chaplin hasn't told you most of what happened - the Lone Wolves appeared and offered their services when the TMM mercenaries were suppressing the Far Lookers.\n\nThey accepted and then defeated the mercenaries, which gave her and the Taurian government a huge problem.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "I bet.",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 10,
@@ -415,7 +421,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -427,7 +435,7 @@
         "id": "9c54c0bddfa3b62de660dd17"
       },
       "index": 10,
-      "text": "What the Taurians are doing is to systematically clean up competing claims on Mirfak through mercenary contracts through proxy companies like Tauris Majoris Mining to capture and remove illegal or hostile settlements.\n\nEthnic cleansing looks bad on the news, especially when TMM is doing it against the Far Lookers.",
+      "text": "And Taurians are doing this all over the Hyades Rim... systematically clean up competing claims on newly colonized worlds through mercenary contracts through proxy companies like Tauris Majoris Mining.\n\nBut ethnic cleansing looks bad on the news when TMM is doing it against their own people.",
       "branches": [
         {
           "responseText": "",
@@ -464,7 +472,7 @@
         "id": "9c3eb189f10fd7ebaab5d37d"
       },
       "index": 11,
-      "text": "You are saying we have been ordered to clear a Far Looker colony by the Concordat representative, acting through TMM?\n\nWhy on Terra would they want it removed?",
+      "text": "You are saying we have been ordered to clear a Far Looker colony by the Concordat representative, after she failed to do so through TMM?\n\nWhy on Terra would they want it removed?",
       "branches": [
         {
           "responseText": "",
@@ -490,7 +498,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": null,
       "comment": ""
     },
@@ -499,7 +507,7 @@
         "id": "9c475d0bc671db7aca1ce6b8"
       },
       "index": 12,
-      "text": "Because my sources in the Concordat government tell me that there's institutional conflict between several ministries and the Far Lookers supporters who have populated all levels of Taurian society.\n\nColonization is a rich business and full of graft and corruption.",
+      "text": "Because my sources in the Concordat government tell me that there's institutional conflict between several ministries and the Far Lookers, in addition to the troubles already being caused by the rise of the Inheritors within their movement.\n\nColonization is a rich business and full of graft and corruption, isn't it?",
       "branches": [
         {
           "responseText": "",
@@ -536,7 +544,7 @@
         "id": "9c161aaa9173d937898f3071"
       },
       "index": 13,
-      "text": "Marisol-Chaplin wants to use you as scapegoats, to blame the action to remove the Far Looker colony to rogue mercenaries operating under a Tauris Majoris Mining contract.",
+      "text": "We don't care about how the Taurians deal their dirty laundry by hiding it but in this case we are about to become their next unfinished business if we don't fulfill their contract.\n\nSo what can you give us in return for a ticket home, as you mentioned before?",
       "branches": [
         {
           "responseText": "",
@@ -547,6 +555,41 @@
           "onlyOnce": false,
           "idRef": {
             "id": "9c4c28f6d73f717de42d87b4"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c58229ca5f0faa0598b5644"
+      },
+      "index": 14,
+      "text": "Marisol-Chaplin gave you the wrong location for the Inheritor leadership because she knew that the Lone Wolves were operating in the area.\n\nThat way she could get rid of their threat, then later redirect you to hit the Far Looker settlements until you 'found' the radicals.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c2e1b9c3f45efe07f25d371"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -570,20 +613,57 @@
     },
     {
       "idRef": {
-        "id": "9c58229ca5f0faa0598b5644"
+        "id": "9ce39e6fe3d8ba30c37e50b1"
       },
-      "index": 14,
-      "text": "Mirfak is currently being colonized by three different groups, TMM and other megacorporations, the Far Lookers, and some independent efforts by Taurian citizens. \n\nOver the years, the Far Lookers have taken over most of the bureaucracy and lobbied hard, so the TDF has been forced to stay off world unless foreign interests threatened its security.",
+      "index": 15,
+      "text": "And as I said before, I can give you the exact coordinates of the Inheritor leadership and prevent you from committing a number of war crimes against civilians.\n\nAfter you complete your contract, we can both go our own ways.",
+      "branches": [
+        {
+          "responseText": "We need a minute to discuss this.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cbe05ff4dd2ed379b0159b9"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c2c2f509ffb7cd8859ac0ad"
+      },
+      "index": 16,
+      "text": "[Holovid transmission paused.]",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": 15,
+          "nextNodeIndex": 17,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c2e1b9c3f45efe07f25d371"
+            "id": "9c2952dccadf48e1ce3e81d6"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -599,17 +679,32 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59f8f0296230359c2100082c",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9ce39e6fe3d8ba30c37e50b1"
+        "id": "9cc8ac0408bee42e17550f0e"
       },
-      "index": 15,
-      "text": "",
-      "branches": [],
+      "index": 17,
+      "text": "I say we go with what she got, Commander.\n\nOtherwise we risk breaching our contract, or worse, be blamed by the Taurians for the whole incident.",
+      "branches": [
+        {
+          "responseText": "OK, let's take down the Inheritor base.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc3a821ea9acd34f7fb489d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
       "nodeType": 1,
       "truthValue": false,
       "autoFollowBranchDelay": 1,
@@ -619,8 +714,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

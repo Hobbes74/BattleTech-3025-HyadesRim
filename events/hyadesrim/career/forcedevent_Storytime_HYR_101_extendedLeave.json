@@ -25,7 +25,7 @@
         {
             "Description": {
                 "Id": "outcome_0",
-                "Name": "Proceed (Starts Hyades Rim Campaign).",
+                "Name": "<color=#85DBF6FF>[Story: Hyades Rim Campaign.]</color> Proceed.",
                 "Details": "Play message",
                 "Icon": null
             },
@@ -45,7 +45,7 @@
                             "Requirements": null,
 							"AddedTags" : {
 								"items" : [
-									"company_story_extendedleave"
+									"company_story_extendedLeave"
 								],
 								"tagSetSourceFile" : ""
 							},
@@ -132,12 +132,29 @@
                 {
                     "Description": {
                         "Id": "outcome_1_0",
-                        "Name": "Have Coffee Instead",
+						"Name": "<color=#85DBF6FF>[Story: Hyades Rim Campaign.]</color> Proceed.",
                         "Details": "You go back to your daily affairs and let the DropShip crew deal with the message.",
                         "Icon": null
                     },
                     "Weight": 100,
-                    "Results": []
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"company_story_extendedLeave"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+                    ]
                 }
             ],
             "Requirements": {

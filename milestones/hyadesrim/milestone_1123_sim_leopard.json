@@ -13,7 +13,9 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
-                "items" : null,
+				"items" : [
+					"flashpoint_sos_complete"	
+				],
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
@@ -35,9 +37,7 @@
             "Scope" : "Company",
             "Requirements" : null,
             "AddedTags" : {
-				"items" : [
-					"company_story_sos"	
-				],
+				"items" : [],
                 "tagSetSourceFile" : ""
 			},
             "RemovedTags" : {
@@ -47,20 +47,24 @@
                 "tagSetSourceFile" : ""
 			},
             "Stats" : [],
-            "Actions" : [],
+            "Actions" : [
+				{
+                    "Type" : "System_AddContract",
+                    "value" : "c_StoryTime_HYR_104_sos_trav",
+                    "valueConstant" : null,
+					"additionalValues" : [
+						"NoFaction",
+						"InterstellarExpeditions",
+						"starsystemdef_Gaul"
+					]
+                }
+            ],
             "ForceEvents" : [
 				{
 					"Scope" : "MechWarrior",
 					"EventID" : "forcedevent_co_HYR_104a_sauna",
 					"MinDaysWait" : 6,
 					"MaxDaysWait" : 6,
-					"Probability" : 100
-				},
-				{
-					"Scope" : "MechWarrior",
-					"EventID" : "forcedevent_Storytime_HYR_105_theEdgeOfTheUniverse",
-					"MinDaysWait" : 12,
-					"MaxDaysWait" : 12,
 					"Probability" : 100
 				}
 			],

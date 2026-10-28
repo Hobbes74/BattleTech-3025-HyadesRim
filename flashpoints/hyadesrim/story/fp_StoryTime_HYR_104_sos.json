@@ -1,0 +1,65 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_104_sos",
+        "Name" : "SOS",
+        "Details" : "Shortages of basic items force the company to take direct measures to secure essential supplies.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_69.png"
+    },
+    "Weight" : 100,
+    "InternalName" : "sos",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 3,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"flashpoint_sos_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_lastpost"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"SelfEmployed_Sumire"
+    ],
+    "TargetFaction" : "TaurianPirates",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_sos",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_sos",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "We are in dire need of basic supplies, which has caused low crew morale and could lead to bigger problems ahead. Due to the remoteness of this region, our best chance to resupply is at one of the largest Taurian colonies.",
+    "FlashpointDescriberCastDefId" : "castDef_SumireDefault",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

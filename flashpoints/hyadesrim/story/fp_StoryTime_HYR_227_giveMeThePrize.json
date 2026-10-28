@@ -1,0 +1,86 @@
+{
+    "Description" : {
+        "Id" : "fp_StoryTime_HYR_227_giveMeThePrize",
+        "Name" : "Give Me The Prize",
+        "Details" : "The Kurgan comes to claim his prize. Part two of Highlander subarc.",
+        "Icon" : "uixTxrSpot_fp_HyadesRim_Background_65.png"
+    },
+    "Weight" : 100,
+    "InternalName" : "giveMeThePrize",
+    "PublishState" : "PUBLISHED",
+    "Difficulty" : 6,
+    "Requirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+					"company_story_flashpoints",
+					"company_story_fourthSuccessionWar"
+				],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+					"company_story_argonauts",
+					"flashpoint_giveMeThePrize_complete"
+				],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Injuries",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "LocationRequirements" : {
+        "Scope" : "StarSystem",
+        "RequirementTags" : {
+            "items" : [
+				"planet_name_vixen"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "PotentialEmployers" : [
+		"ComStar"
+    ],
+    "TargetFaction" : "FourHorsemen",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : true,
+    "MilestoneSetID" : "ms_fp_giveMeThePrize",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 0,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 0,
+    "RewardCollectionID" : "itemCollection_loot_fp_reward_giveMeThePrize",
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "We have tracked a highly violent and dangerous pirate band calling themselves the 'Four Horsemen' that has been raiding nearby worlds. The list of massacres and crimes committed by these individuals is staggering and they need to be stopped and brought to justice before they restart their path of murder, terror and looting.",
+    "FlashpointDescriberCastDefId" : "castDef_ComStarPrecentorRodriguezDefault",
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/FlashpointTags"
+    }
+}

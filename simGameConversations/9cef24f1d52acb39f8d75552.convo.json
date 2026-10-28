@@ -9,7 +9,7 @@
         "id": "9c0d7e8e4f88ea97a7149342"
       },
       "index": 0,
-      "text": "Well done, you've recaptured the spaceport and prevented the Harbingers from securing their beachhead and land supplies.\n\nBut I am afraid we might have been outmaneuvered because their forces near the capital have regrouped.",
+      "text": "Captain Murray, what have you done?",
       "branches": [
         {
           "responseText": "",
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "kitten",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -96,6 +96,27 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Alexander,Farah,Sumire,Darius,Yang,Kamea",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -106,7 +127,7 @@
         "id": "9c5ecb5370a9b796e2de79c2"
       },
       "index": 1,
-      "text": "Regrouped? \n\nWhat are we dealing with now here?",
+      "text": "I don't trust [[DM.Factions[faction_ComStar],ComStar]] so I sneaked myself into the mission as one of the Fusiliers and followed the [[DM.BaseDescriptionDefs[LoreComStarPrecentor],Precentor]] to the HPG control room.\n\nI learned at [[DM.BaseDescriptionDefs[LoreHellespont],Hellespont]] that their [[DM.BaseDescriptionDefs[LoreComStarExplorerCorps],Explorer Corps]] has a secret protocol for hostile encounters and that's what she really wanted to send back to Terra.",
       "branches": [
         {
           "responseText": "",
@@ -141,7 +162,7 @@
         "id": "9ccd336f6f460377a158730e"
       },
       "index": 2,
-      "text": "Based on our intel, or what's left of it, we have detected a reinforced lance that we suspect is their headquarters unit, and that so far eluded us despite being part of their first wave.\n\nWe assume it to be currently waiting for reinforcements, based on the activity we have detected at the jump points.",
+      "text": "What is this protocol? \n\nWhat about our [[DM.BaseDescriptionDefs[LoreComStarInterdiction],Interdiction]]?",
       "branches": [
         {
           "responseText": "",
@@ -167,7 +188,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
@@ -176,7 +197,7 @@
         "id": "9c48f69e0ce7732ac7e37b65"
       },
       "index": 3,
-      "text": "The Aurigan forces took heavy damage and the raiders disabled the Mech yards, at this rate it will become impossible to do any more repairs on time.\n\nWe will have to retreat or surrender.",
+      "text": "Termination of everyone involved in case of a breach. \n\nAnd she lied because the Interdiction would never have been lifted by the [[DM.BaseDescriptionDefs[LoreComStarFirstCircuit],First Circuit]].",
       "branches": [
         {
           "responseText": "",
@@ -211,7 +232,7 @@
         "id": "9cab692ebc653ba995c3d354"
       },
       "index": 4,
-      "text": "I will do neither.",
+      "text": "This isn't surprising, ComStar treated us as hostiles when we were attempting to rescue them from pirates back at that Deep Periphery [[DM.BaseDescriptionDefs[LoreMcEvedysFolly],world]].\n\nThey even chose to blow up their DropShip than allowing themselves to be captured.",
       "branches": [
         {
           "responseText": "",
@@ -237,7 +258,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -246,13 +267,13 @@
         "id": "9c0f0170e72c33f4ccc5874e"
       },
       "index": 5,
-      "text": "We lost the spaceport.\n\nAs we moved out of the spaceport to help the Royal Guard engage the Harbingers, more of their infiltrators attacked the facilities and were able to overcome the guards.",
+      "text": "We have stopped the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]] use of the HPG array, we can deal with ComStar later.\n\nThe Harbingers are quick to figure out the opportunities caused by our deployments and their intelligence is better than we had expected.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "What happened this time?",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 6,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -272,8 +293,355 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c23950593093c235d7ee93f"
+      },
+      "index": 6,
+      "text": "While we were busy rescuing Kamea and then denying them the use of ComStar's compound, they used the distraction to attack us again.\n\nThe Second Decimis Fusiliers engaged but without 'Mech support they were completely brushed aside, so we lost control of the [[DM.BaseDescriptionDefs[LoreKeonaAranoSpaceport],spaceport]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc968d2b3199a4953cb6600"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "axylus",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cbb2edbb76fa1c27a4fb601"
+      },
+      "index": 7,
+      "text": "How is this possible? \n\nWe were expecting a much lighter presence first but now it seems they when full ahead on their first landings despite keeping the <i>Orion's Belt</i> and a ton of DropShips as a reserve.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca6a90ae9a8db3575b54081"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c3c8381133d7bc3b86f3824"
+      },
+      "index": 8,
+      "text": "My own 'Mech and the [[DM.BaseDescriptionDefs[LoreAranoRoyalGuard],Royal Guards]] were ambushed right after we left the city to reinforce the [[DM.BaseDescriptionDefs[LoreEspinosaRefitYards],Refit Yards]].\n\nAll of this was only possible with a lot of preparation beforehand.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7781c231411280de9d8e74"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb505592dd387e22c6fab98"
+      },
+      "index": 9,
+      "text": "Or just a lot of coordination because the Harbingers were waiting for our response and already preparing to it.\n\nWe have clearly misjudged their abilities and so far we have played into their hands.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c653ebc52c99265c6b84541"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c16cc27c8976674ebb9a3b0"
+      },
+      "index": 10,
+      "text": "The battle of the Refit Yards ended barely in our favor... only two Kitten 'Mechs remain standing on their legs plus a full lance of pilot casualties.\n\nThe raiders effectively disabled the 'Mech yards, at this rate it will become impossible to do any more repairs.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c0098d29bbf19c2fbc76289"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ceefc63d2bd8062089364e7"
+      },
+      "index": 11,
+      "text": "While Aurigan forces took heavy damage after the raiders had disabled the Refit Yards.\n\nAt this rate of tear and wear it will be a choice to retreat or surrender.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4038fd2129e103e3ce5a1b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9caade81de498a2a467026a5"
+      },
+      "index": 12,
+      "text": "And I will do neither, Yang, we either expel the raiders from my world or I will die here fighting them.\n\nWhat are our tactical options?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ceb352b481769619530959d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c97f0da9eab807aa85f5c86"
+      },
+      "index": 13,
+      "text": "The Refit Yards are back in our possession but we were fortunate that our 'special ordnance' was stored in the Royal Palace for maximum safety because the raiders wrecked the facility as the Chief MechTech said.\n\nBut before anything, we need take the spaceport back to deny its use by the massed Harbinger fleet that is about to arrive at Coromodir's orbit.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd8593ac364eabe43248d2d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cfc02b0228af73b1c862867"
+      },
+      "index": 14,
+      "text": "Then we will recover it.\n\nCommander, I have an assignment for you: retake the spaceport.",
+      "branches": [
+        {
+          "responseText": "We will be ready, Lady Arano.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ca039e70d4b1d3cb581fdd8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     }
   ],

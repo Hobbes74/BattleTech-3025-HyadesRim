@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The rest of the Harbinger company has been located somewhere in this region but they have gone into the ground after striking at civilian targets. Be advised we have also located what appears to be one of their command 'Mechs operating amongst them, so we might have a shot at eliminating the beachhead's leadership.",
-    "longDescription" : "Kitten demanded to be included in this mission but Kamea overrid her and ordered her instead to keep guarding the Refit Yards, so we're alone here.",
+    "shortDescription" : "The rest of the Harbinger company has been located somewhere in this region but they have gone into the ground after striking at civilian targets. Be advised we have also located what appears to be one of their command 'Mechs operating amongst them, so we might have a shot at eliminating this recon party's leadership.",
+    "longDescription" : "These initial landings are proving to be tougher than expected, but so far nothing we can't handle.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -134,7 +134,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Destroy 'Mech",
+            "title" : "Kill Harbinger Leader",
             "description" : "The objective to destroy the Assassination Target.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -199,7 +199,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "19e8fa2a-f850-42f0-a067-15fcafcc8123"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -260,7 +260,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're picking up live fire from the surface, Commander.",
+                    "words" : "[static] ...jamming but we have cleared it.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -276,7 +276,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We've got a lock on the target 'Mech's position. Engage it and take it down.",
+                    "words" : "The Harbinger commander of their recon lance is up ahead.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -292,7 +292,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We're seeing comm chatter nearby, so there may be reinforcements. Be careful. Oliveira out.",
+                    "words" : "But due to heavy jamming we can't detect the rest of the lance.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -303,6 +303,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "49c80ae9-df2d-4788-a56e-3b21cf381691",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Watch out there, Commander. Happy hunting.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -317,14 +333,62 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well done, Commander. You made that look easy.",
+                    "words" : "Well done Commander, we taken down the advance landing party.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MadeiraDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "One of them, and their main force hasn't landed yet.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Just how many 'Mechs do they already have on Coromodir?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Commander, pull back to the spaceport immediately - we are detecting movement!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -704,7 +768,8 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_battle"
+                        "lance_type_battle",
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -716,7 +781,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
@@ -863,7 +928,7 @@
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_cavalry",
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },

@@ -28,7 +28,7 @@
                 {
                     "Description": {
                         "Id": "outcome_0_0",
-                        "Name": "Incoming Transmission",
+                        "Name": "<color=#85DBF6FF>[Story: Start Conversation]</color> Incoming Transmission.",
                         "Details": "Playback will begin shortly.",
                         "Icon": null
                     },
@@ -37,7 +37,12 @@
                         {
                             "Scope": "Company",
                             "Requirements": null,
-                            "AddedTags": {},
+							"AddedTags" : {
+								"items" : [
+									"company_story_epilogue"
+								],
+								"tagSetSourceFile" : ""
+							},
                             "RemovedTags": {},
                             "Stats": [],
                             "Actions": [
@@ -76,12 +81,29 @@
                 {
                     "Description": {
                         "Id": "outcome_1_0",
-                        "Name": "Have A Coffee",
+						"Name": "<color=#85DBF6FF>[Story: Skip Conversation.]</color> Have A Coffee.",
                         "Details": "You go back to your daily affairs and let the DropShip crew deal with the message.",
                         "Icon": null
                     },
                     "Weight": 100,
-                    "Results": []
+                    "Results": [
+                        {
+                            "Scope": "Company",
+                            "Requirements": null,
+							"AddedTags" : {
+								"items" : [
+									"company_story_epilogue"
+								],
+								"tagSetSourceFile" : ""
+							},
+                            "RemovedTags": {},
+                            "Stats": [],
+                            "Actions": [],
+                            "ForceEvents": null,
+                            "TemporaryResult": false,
+                            "ResultDuration": 0
+                        }
+                    ]
                 }
             ],
             "Requirements": {

@@ -9,7 +9,7 @@
         "id": "9cc9d6f94f7856fb5b6203a5"
       },
       "index": 0,
-      "text": "DARIUS We are still taking casualties from the raider attack at the space port and elsewhere on Coromodir, both military and civilian and despite our efforts they have secured enough beachheads for the rest of their forces in orbit to deploy safely and start laying siege on the city.",
+      "text": "Well done {COMPANY.CompanyName}, you have secured the spaceport and we have successfully prevented the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]] establishing a beachhead there but overall the situation is not good. \n\nWe lost the [[DM.BaseDescriptionDefs[LoreEspinosaRefitYards],Espinosa Refit Yards]] due to a coordinated landing while their infiltrators attacked it from the inside, the [[DM.Factions[faction_TortugaPirates],Kittens]] kept their 'Mechs at bay initially but she was forced to withdraw once we lost control of the complex.",
       "branches": [
         {
           "responseText": "",
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "lostsignal",
+                "string_value": "axylus",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -96,17 +96,72 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Alexander,Farah,Sumire,Darius,Yang",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Kamea",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
-      "comment": "GConv-BeginMusic-GC_525_THE_CHALLENGE"
+      "comment": ""
     },
     {
       "idRef": {
         "id": "9c739d897383fc69731b0050"
       },
       "index": 1,
-      "text": "ALEX And any attempts to negotiate or even communicate are unsuccessful, even with the intent for a cease-fire for surrender terms. \n\nTheir destruction of the HPG transmitter also makes it impossible to send a help message although I doubt any one could prevent Coromodir from falling at this point.",
+      "text": "[[DM.BaseDescriptionDefs[LoreCordiaCity],Cordia City]] and the Royal Palace are still in our hands but the [[DM.BaseDescriptionDefs[LoreAranoRoyalGuard],Royal Guard]] has been ambushed while attempting to reinforce the Yards garrison.\n\nKamea is still alive and uninjured but her 'Mech has gone down and we need to send a search and rescue operation.",
       "branches": [
         {
           "responseText": "",
@@ -132,8 +187,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -141,7 +212,7 @@
         "id": "9c187605c1c583d837653d9f"
       },
       "index": 2,
-      "text": "SUMIRE Their naval blockade also makes it impossible for anyone to leave this system, although they haven't yet decided to establish orbital superiority. \n\nBut they have the numbers and firepower to do so when they wish, although the <i>Argo</i> gives the Aurigan DropShips an orbital position to operate. ",
+      "text": "And their naval blockade is about to extend to the planet, since the <i>[[DM.BaseDescriptionDefs[LoreJumpShipOrionsBelt],Orion's Belt]]</i> is maneuvering to position itself in Coromodir IV's orbit in a matter of days once their main fleet arrives. \n\nOnce that happens, they can secure any landing zone and we'll be facing a lot more than lances.",
       "branches": [
         {
           "responseText": "",
@@ -167,7 +238,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -176,7 +247,7 @@
         "id": "9c4af88ab842bdf47a218790"
       },
       "index": 3,
-      "text": "Overall the situation is... not good. We lost the Espinosa Refit Yards due to a coordinated landing while their infiltrators attacked it from the outside. Cordia City is still in our hands but the Royal Guard has been ambushed while attemping to reinforce the yard garrison. Kamea is still alive but her 'Mech has gone offline and unpowered to hide. ",
+      "text": "It will be checkmate once their [[DM.BaseDescriptionDefs[LoreWarShip],WarShip]] arrives.\n\nThey will have us trapped on [[DM.BaseDescriptionDefs[LoreCoromodir],Coromodir IV]], without any way to get reinforcements or to break through their blockade.",
       "branches": [
         {
           "responseText": "",
@@ -202,7 +273,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": null,
       "comment": ""
     },
@@ -211,7 +282,7 @@
         "id": "9c11991c06bef4b80dcf5d49"
       },
       "index": 4,
-      "text": "Coromodir is nearly lost, Alexander. Our Restoration forces, the Directorate loyalists, Laura Murray and her allies, despite our tactical wins we can't stop the raiders everywhere.\n\nAnd like before, whatever gains we get are temporary because we need to keep retreating. ",
+      "text": "Their ship as a 'WarShip' in really it is nothing more than a heavily armed ancient JumpShip, like the [[DM.BaseDescriptionDefs[LoreJollyRoger],jolly rogers]] such as the Kittens' <i>[[DM.BaseDescriptionDefs[LoreBadKitty],Bad Kitty]]</i>.\n\nRegardless, the <i>Orion's Belt</i> with its DropShips and AeroFighters will achieve air superiority over the planet unless there's a way to oppose them.",
       "branches": [
         {
           "responseText": "",
@@ -237,7 +308,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": null,
       "comment": ""
     },
@@ -246,10 +317,10 @@
         "id": "9ca8c42cdea427dd0091b65e"
       },
       "index": 5,
-      "text": "",
+      "text": "Besides the loss of the Refit Yards, Kamea's status as MIA is causing morale issues throughout the Aurigan defenders.\n\nAnd Precentor Rodriguez has contacted us, he has been hiding since Harbinger infiltrators occupied [[DM.Factions[faction_ComStar],ComStar]]'s HPG facility.",
       "branches": [
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Stay ready as tactical reserve.]</color>",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 6,
@@ -257,20 +328,6 @@
           "onlyOnce": false,
           "idRef": {
             "id": "9c6e11100468616f7aa25443"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        },
-        {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Stay ready as tactical reserve.]</color>",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 7,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9c2148d576e3725a7d41295c"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -286,7 +343,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
@@ -295,13 +352,13 @@
         "id": "9c57a6f9fb1c6cee3c587669"
       },
       "index": 6,
-      "text": "",
+      "text": "Wait, didn't the [[DM.BaseDescriptionDefs[LoreComStarRobbie],robbies]] report it being destroyed and us placed under ComStar [[DM.BaseDescriptionDefs[LoreComStarInterdiction],interdiction]] because we were considered a party to its destruction?\n\nTheir [[DM.BaseDescriptionDefs[LoreHPG],HPG]] is still operating?",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 7,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
@@ -321,7 +378,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "598cd3f36230355c1800006a",
       "actions": {
         "ops": [
           {
@@ -399,20 +456,20 @@
     },
     {
       "idRef": {
-        "id": "9cc55818b43e09c7a9477d17"
+        "id": "9c1059c90d76f48aeef63c36"
       },
       "index": 7,
-      "text": "",
+      "text": "According to the [[DM.BaseDescriptionDefs[LoreComStarPrecentor],Precentor]] they was coerced into making that report to trick us and the [[DM.BaseDescriptionDefs[LoreComStarFirstCircuit],First Circuit]] at [[DM.BaseDescriptionDefs[LoreTerra],Terra]].\n\nThen he managed to escape when the Harbingers started executing all the prisoners and has been hiding from them ever since.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 8,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c9ba87c3a7f8f1fbf92eb20"
+            "id": "9c1cc5e10f85f900b4797f5a"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -428,7 +485,371 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4dc6f0f7da139cdc0472fa"
+      },
+      "index": 8,
+      "text": "The Harbingers did the same previously at [[DM.BaseDescriptionDefs[LoreHellespont],Hellespont]], back where we first encountered the Kittens back at the [[DM.BaseDescriptionDefs[LoreHyadesRim],Hyades Rim]].\n\nThey overran the local ComStar facility until Captain Murray recaptured it for herself.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cb0216a2e57af20dc34bb58"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cf74a922ec4b08eabf7b1e0"
+      },
+      "index": 9,
+      "text": "Back then the Harbingers were using the [[DM.BaseDescriptionDefs[LoreHPG],HPG]] antenna but they didn't kill any of its personnel.\n\nTthat was entirely Captain Murray's and her [[DM.Factions[faction_TortugaPirates],Kittens]] when she was attempting to use the HPG transmitter for her own proposes.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc474b75e66b552de56db1c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5298b01370e07ff110482c"
+      },
+      "index": 10,
+      "text": "Even a lowly [[DM.BaseDescriptionDefs[LoreComStarAdept],adept]] can be troublesome if they report you back to the authorities, <i>da</i>?\n\nBetter to leave no witnesses behind and to make sure no one listens to your messages, like [[DM.BaseDescriptionDefs[LoreJeromeBlake],Blake]]'s eunuchs do all the time.",
+      "branches": [
+        {
+          "responseText": "You kept other witnesses alive including us.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c69059ae5f4fed99ae111bb"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
       "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "kitten",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4247db4a30d6c5c3e22513"
+      },
+      "index": 11,
+      "text": "You were useful, or at least some of you were, {COMMANDER.Callsign}.\n\nAnd you kept your side of the bargain as a mercenary while ComStar wouldn't be so... cooperative.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c55021d039e153a539b3b0d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5041617c62f1ea7592347c"
+      },
+      "index": 12,
+      "text": "The Harbingers breaching ComStar's neutrality isn't a surprise but we need to help them retake their facility and clear our name and ask for help from Terra.\n\nBut the priority is to send a lance to rescue Lady Arano, otherwise our morale and defense might crack without her to lead us in battle.",
+      "branches": [
+        {
+          "responseText": "<color=#85DBF6FF>[Story Decision: Rescue Kamea first.]</color> Agreed, Lady Arano is still out there.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c630c33af0234b9f7a9e6b3"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        },
+        {
+          "responseText": "<color=#85DBF6FF>[Story Decision: Retake HPG facility.]</color> We will assist the Precentor and ComStar.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c09b80dd6596602ee4ecaef"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5795978329a1a1f936c3b7"
+      },
+      "index": 13,
+      "text": "Prepare your 'Mechs then, we will provide you with the location.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9d7819e9149e12ea4d94d9"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Tag",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameAddRemove",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameScope",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 3,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "fp_choice_c",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c05b40bc1e4f08d1c128fcc"
+      },
+      "index": 14,
+      "text": "And watch out {COMMANDER.LastName}.\n\nWe suspect the initial targets of the Harbingers are our tactical commanders, and they took Lady Kamea and nearly got Captain Murray.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1e0dc3ebe1a46f14929a94"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": {
         "ops": [
           {
@@ -495,6 +916,59 @@
                 "bool_value": false,
                 "float_value": 0.0,
                 "string_value": "fp_choice_d",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c214a54fbca939c4c206eb3"
+      },
+      "index": 15,
+      "text": "Bah, and now I come to save the princess.\n\nFour eyes, tell your friend to be ready when we arrive.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c138e7ce8e26aed72ba9230"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
                 "call_value": null,
                 "variableref_value": null
               }

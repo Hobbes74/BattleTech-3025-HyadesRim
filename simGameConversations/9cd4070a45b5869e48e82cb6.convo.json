@@ -2,14 +2,14 @@
   "idRef": {
     "id": "9cd4070a45b5869e48e82cb6"
   },
-  "ui_name": "HYR_302_zenithInitiative_1",
+  "ui_name": "HYR_302_zenithInitiative_2",
   "nodes": [
     {
       "idRef": {
         "id": "9c2f60e7d0ed248e46def67e"
       },
       "index": 0,
-      "text": "Jarring? You are Spreading the Glories' agent on the planet?\n\nAnd what are you hunting down this time?",
+      "text": "So Jarring, how did you get to be [[DM.Factions[faction_SpreadingTheGloriesIncorporated],Spreading the Glories]]' agent on the planet?",
       "branches": [
         {
           "responseText": "",
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3f26230355c18000069",
       "actions": {
         "ops": [
           {
@@ -99,14 +99,14 @@
           }
         ]
       },
-      "comment": ""
+      "comment": "GConv-BeginMusic-GC_200_IN_EXILE"
     },
     {
       "idRef": {
         "id": "9c7925f7671a81b27cb57793"
       },
       "index": 1,
-      "text": "I am not under their direct employ, me and J'oral work together from time to time, and I figured Yamaguchi might be interested on the results of this investigation.\n\nIt is too sensible material to publish at this stage though... but once the war is over, it might be possible to reveal it.",
+      "text": "Through [[DM.BaseDescriptionDefs[LoreDeeJoral],J'oral]] I got in touch with [[DM.BaseDescriptionDefs[LoreBobKurita],Bob Yamaguchi]] and I convinced him to sponsor this expedition.\n\nAlthough it might too sensible material to publish now... once the [[DM.BaseDescriptionDefs[Lore4thSuccessionWar],war]] is over, it might be possible to reveal it.",
       "branches": [
         {
           "responseText": "",
@@ -129,7 +129,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -141,7 +143,7 @@
         "id": "9c420f05e1afc1b9ca8a6787"
       },
       "index": 2,
-      "text": "What are you talking about?\n\nOn Mirfak you were hunting down Kearny-Fuchida technology related to unusual radiation readings, is this related?",
+      "text": "What are you talking about?\n\nWhen we met on [[DM.BaseDescriptionDefs[LoreMirfak],Mirfak]] you were working for [[DM.Factions[faction_MaglissSpirits],Magliss Spirits]], while discovering evidence of [[DM.Factions[faction_TaurianConcordat],Taurian]] atrocities, so what is going on here and who do you really work for?",
       "branches": [
         {
           "responseText": "",
@@ -167,8 +169,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -176,7 +194,7 @@
         "id": "9ca59535e84a4d68484d8117"
       },
       "index": 3,
-      "text": "Yes and no.\n\nEventually I received indications that Interconnectedness Unlimited was also involved in some unspecified way with those freak signatures detected on Mirfak but the meaning of those is still unclear.",
+      "text": "When we met in reality I was investigating a series of weird electromagnetic anomalies that begun in [[DM.BaseDescriptionDefs[LoreNewSyrtis],New Syrtis]] and then were reported in several other [[DM.BaseDescriptionDefs[LoreRimwardPeriphery],Rimward]] systems.\n\nUntil I was able to trace it back to [[DM.Factions[faction_InterconnectednessUnlimited],Interconnectedness Unlimited]] and this world.",
       "branches": [
         {
           "responseText": "We encountered IU while they were filming Davion propaganda.",
@@ -199,7 +217,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -211,7 +231,7 @@
         "id": "9c0dbc5ed9dd8284d5dd10b7"
       },
       "index": 4,
-      "text": "IU has very long arms into the Federated Suns' government Commander, besides contributing to Hanse Davion's propaganda machine, and they might even be working together with the NAIS in the most top secret projects.\n\nOne of them might be testing a new weapon of mass destruction based on HPG principles, based on what you have previously seen on Mirfak during my rescue from the Lone Wolves.",
+      "text": "They have very long arms into the [[DM.Factions[faction_FederatedSuns],Federated Suns]]' government Commander and besides propaganda, they are working together with the [[DM.BaseDescriptionDefs[LoreNAIS],NAIS]] on the top secret weapons projects.\n\nAnd I am mostly independent, but with the current war, there is a lot of interest on [[DM.BaseDescriptionDefs[LoreHanseDavion],Hanse Davion]]'s secret projects.",
       "branches": [
         {
           "responseText": "",
@@ -234,7 +254,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -246,7 +268,7 @@
         "id": "9cbc80014e4546da90f673a5"
       },
       "index": 5,
-      "text": "You have evidence of the 'null bomb'?\n\nWeapons that can interfere with HPG communications and interstellar travel are theoretical, there was never evidence that anyone has ever worked on them.\n",
+      "text": "OK, so you mentioned strange electromagnetic signatures, what are you exactly looking for?\n\nAnd why do you believe that it is House Davion and IU are behind it?",
       "branches": [
         {
           "responseText": "",
@@ -272,7 +294,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b98a97623035ac140056c6",
       "actions": null,
       "comment": ""
     },
@@ -281,10 +303,10 @@
         "id": "9c7b8813db01b2349e35881a"
       },
       "index": 6,
-      "text": "That is what I suspect might have happened there and in other locations, a test of that weapon, against single JumpShips and Periphery systems, causing temporary blackouts and delays that can be easily dismissed since the HPG waves can propagate through several star systems.\n\nBut now with the Fourth Succession War in progress, the KF weapon has been deployed close to an exposed Liao border.",
+      "text": "Something important enough destroyed part of the New Syrtis shipyards years ago, although the official report from the [[DM.BaseDescriptionDefs[LoreDavionAFFS],AFFS]] mentions only a 'fuel leakage' and the total extent of the damage has been hidden.\n\nMeanwhile the same anomalous signature reported on New Syrtis was later reported in several other worlds close to the Davion-Periphery border.",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "What are we talking about here Jarring?",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 7,
@@ -304,7 +326,9 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
@@ -316,7 +340,7 @@
         "id": "9c6caf1678f39a4f8bb1652f"
       },
       "index": 7,
-      "text": "Dr. Murad, is there anything in the Project UMBRELLA files that can confirm this weapon since they were already working in similar projects?",
+      "text": "My bet is that it is a weapon of mass destruction based on [[DM.BaseDescriptionDefs[LoreKearnyFuchida],Kearny-Fuchida]] principles, back in the Star League they call it a 'null bomb'.\n\nIt is a device that can disrupt [[DM.BaseDescriptionDefs[LoreHPG],hyper pulse generation]] and cripple interstellar travel and communications.",
       "branches": [
         {
           "responseText": "",
@@ -339,11 +363,29 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -351,7 +393,7 @@
         "id": "9ca73377cd08cc642dff6672"
       },
       "index": 8,
-      "text": "No... I mean, there are theoretical references for using terraforming technology as planetary weapons, but not a null bomb.\n\n",
+      "text": "And you have definitive evidence of this 'null bomb' other than circumstantial evidence?\n\nWeapons that can interfere with HPG communications and interstellar travel are theoretical, there was never any evidence that anyone has ever worked on them since the end of the Star League.",
       "branches": [
         {
           "responseText": "",
@@ -377,8 +419,24 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
@@ -386,6 +444,574 @@
         "id": "9c029dbbae043d2f4df487ed"
       },
       "index": 9,
+      "text": "Tests of the weapon against single [[DM.BaseDescriptionDefs[LoreJumpShip],JumpShips]] and [[DM.BaseDescriptionDefs[LorePeriphery],Periphery]] systems is the most likely explanation for what is causing temporary blackouts and delays in travel and communications.\n\nAnd with the Fourth Succession War in progress, it seems this weapon has been deployed here, close to the undefended Liao-Periphery border.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9caa86bfc321407fe0a4e313"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8658ed8d71fcc72a38254a"
+      },
+      "index": 10,
+      "text": "Dr. Murad, is there anything in the Project [[DM.BaseDescriptionDefs[LoreProjectUMBRELLA],UMBRELLA]] files that can confirm this existence of this weapon since they were already working in top secret projects?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6d6d7256fa8fc7f05088c8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ccac9ed4ec8583088b5c671"
+      },
+      "index": 11,
+      "text": "No... I mean, there are theoretical references for using terraforming technology as planetary weapons, but not a 'null bomb'.\n\nI mean, I suspect it might be also possible according to Kearny-Fuchida principles, but to interfere with interstellar travel and communications would be equivalent to a weapon of mass destruction.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c02e7a60529bbd43f3d3035"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8d2265ed9fa8855228cc01"
+      },
+      "index": 12,
+      "text": "After the initial report in New Syrtis on the [[DM.BaseDescriptionDefs[LoreCapellanMarch],Capellan March]] a couple of years ago, new reports came of spikes in K-F activity and corresponding radiation that was officially explained as 'never encountered natural phenomena'.\n\nThen a JumpShip crew first reported these 'spikes' after arriving at [[DM.BaseDescriptionDefs[LoreEuschelus],Euschelus]] zenith point, and then reports came from [[DM.BaseDescriptionDefs[LoreCadiz],Cadiz]], [[DM.BaseDescriptionDefs[LoreMicrosIII],Micros III]] and finally [[DM.BaseDescriptionDefs[LoreMirfak],Mirfak]], were we met.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 13,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c38c350c71d353f0c284eae"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c945b63f33e2bcd42ecf51d"
+      },
+      "index": 13,
+      "text": "And the 'null bomb', what is the proof that the [[DM.BaseDescriptionDefs[LoreNAIS],NAIS]] and [[DM.Factions[faction_InterconnectednessUnlimited],IU]] are actually working on that matter?\n\nCount von Steffelbus might just be filming another propaganda [[DM.BaseDescriptionDefs[LoreHolovid],holovid]] down there and nearby stars going supernova usually a better explanation for such HPG disruptions.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c29ead66910537abe4e55a8"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cad8cfdd1e663c4deaf4cc6"
+      },
+      "index": 14,
+      "text": "The 'null bomb' is the better choice for several events that might be related like [[DM.Factions[faction_ComStar],ComStar]] to issuing specific travel warnings for systems with reported K-F spikes, while users also reported technical delays in HPG messages.\n\nEven the toga boys can't hide when their services don't work if the whole galaxy depends on them daily.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1224be677ccb09cf29ce77"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c868a522f599cd1052a0ee8"
+      },
+      "index": 15,
+      "text": "Or maybe the entire propaganda is about convincing Davion's enemies that something important is taking place in this backwater world such as a magic weapon that they should be fear.\n\nJarring, we could just be looking at a whole [[DM.BaseDescriptionDefs[LoreMIIO],MIIO]] deception operation.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce54fa9699e5ec85916935e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ced111b06820758aa217b88"
+      },
+      "index": 16,
+      "text": "The presence of both the Count von Steffelbus and Duke Richards on Liu's Memory, plus the rift between [[DM.BaseDescriptionDefs[LoreMichaelHasekDavion],Michael Hasek-Davion]] and [[DM.BaseDescriptionDefs[LoreHanseDavion],Hanse Davion]] imply something important is taking place on this world.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c7e04c7d95bc1e6de37333a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca97af4a769b430fc3b8e8a"
+      },
+      "index": 17,
+      "text": "And J'oral managed to have a private interview with Count Von Steffelbus where she gathered clues that IU has some rather secret projects going on this world.\n\nUnmarked and independent JumpShips have been watched coming and going, so there's definitely something down there.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cd2c087f0c72bbcbf5ba69e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "JarringDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c20991d344be1db0bfbaef7"
+      },
+      "index": 18,
+      "text": "",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c846fd17f7ebbbd169a3ad7"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c94fd5d0a1fc5adc889df4b"
+      },
+      "index": 19,
+      "text": "",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c3ed8164520debae6403a37"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cae678c0de9bb068cb0c0b1"
+      },
+      "index": 20,
+      "text": "",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 21,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c27ed47518cef709fbd278c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c1c8f6e2f2413f57c11c536"
+      },
+      "index": 21,
+      "text": "[Connecting to Apple.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 22,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c99c4dd4e19c7bc3446cf58"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc851ddd162b7d409b99214"
+      },
+      "index": 22,
+      "text": "Unknown force, you have transgressed into corporate property.\n\nIdentify yourself and state your intentions now or you will be considered hostile.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 23,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c9beee6682fadaf944b50a4"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c81657d85ac375eb7479cb4"
+      },
+      "index": 23,
+      "text": "Commander, do not answer Duke Roberts.\n\nFrom my knowledge, Interconnectedness Unlimited is engaged in a fierce competition with Apple, and I doubt they have been invited by Count Steffelbus.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 24,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c5fb6edaaa8e7aa3ff4f8c4"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c261c9d314aaf64692c3551"
+      },
+      "index": 24,
+      "text": "We don't need to answer...\n\nCount von Steffelbus is doing that.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 25,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cad44e540510fd1d9b0fc1a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc485aaaec9efdcac6f3cb5"
+      },
+      "index": 25,
       "text": "",
       "branches": [
         {
@@ -396,7 +1022,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9caa86bfc321407fe0a4e313"
+            "id": "9c6ad0c82e43e29ea1536398"
           },
           "inputBypass": false,
           "auxiliaryLink": false,

@@ -1,0 +1,577 @@
+{
+  "idRef": {
+    "id": "9c964208bbf5bccb1b343305"
+  },
+  "ui_name": "HYR_228_queenOfSpades_1",
+  "nodes": [
+    {
+      "idRef": {
+        "id": "9cf19a96daaa8cb30c8f4535"
+      },
+      "index": 0,
+      "text": "Darius, you accepted an offer from a pirate we have encountered before under the [[DM.Factions[faction_TortugaPirates],Satan's Kittens]] employ?\n\nI have met her personally when me and my team were ambushed at the [[DM.Factions[faction_ComStar],ComStar]] facility at [[DM.BaseDescriptionDefs[LoreHellespont],Hellespont]], remember?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c123565e34c87dfb2a89981"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-BeginMusic-GC_111_RENT_TO_OWN",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Fade",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": {
+                  "functionName": "Get Preset Value (int)",
+                  "args": [
+                    {
+                      "int_value": 0,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "SimGameFadeValues",
+                      "call_value": null,
+                      "variableref_value": null
+                    },
+                    {
+                      "int_value": 1,
+                      "bool_value": false,
+                      "float_value": 0.0,
+                      "string_value": "",
+                      "call_value": null,
+                      "variableref_value": null
+                    }
+                  ]
+                },
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": "GConv-BeginMusic-GC_111_RENT_TO_OWN"
+    },
+    {
+      "idRef": {
+        "id": "9c3ea7dee8d90d04caa95c68"
+      },
+      "index": 1,
+      "text": "Whoa, a former Kittens member?\n\nWhich one are we talking about here?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 2,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c8fed89b4454b5c0a46fd75"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c683a38a0114c1240f4ed08"
+      },
+      "index": 2,
+      "text": "The one that we captured at [[DM.BaseDescriptionDefs[LoreFieryPlains],Fiery Plains]] piloting Murray's 'Mech and later claimed to be Natasha Kerensky when I confronted her that she wasn't the real Laura Murray after we captured her.\n\nI guess she was neither the Kitten captain or the [[DM.BaseDescriptionDefs[LoreBlackWidow],Black Widow]].",
+      "branches": [
+        {
+          "responseText": "So, who is this woman?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 3,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cb8d960450d319ebab66471"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "kerensky",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c0af4d1f1e7ef011a419a96"
+      },
+      "index": 3,
+      "text": "She approached me during shore leave on [[DM.Factions[faction_MagistracyOfCanopus],Canopian]] space and I recognized her immediately but she freely admitted to everything she did while on pirate service.\n\nShe claims Murray left her in her personal <i>Marauder</i> as a decoy to escape the system. And that she has always been a [[DM.BaseDescriptionDefs[LoreWolfsDragoons],Dragoon]] and Natasha Kerensky's groupie since she was a teenager.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 4,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cca59d27b4bcb6d66458d16"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6f5e51c69f826cdb230eec"
+      },
+      "index": 4,
+      "text": "So she lied to her captors about her real identity and claimed to be the Black Widow in order to escape?\n\nSounds like she got right that part of the impersonation but who is she really then?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 5,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c81f4cf48ece2cf2c4a461c"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c33368808ae8468f977ec87"
+      },
+      "index": 5,
+      "text": "Her name is Delilah Anne, a former [[DM.BaseDescriptionDefs[LoreMAF],MAF]] soldier who got expelled and convicted for embezzling funds from the military to pay for the cosmetic changes required to look a copycat of Natasha Kerensky.\n\nAfter being released she turned pirate and eventually was recruited by the Kittens when they moved into the [[DM.BaseDescriptionDefs[LoreRimwardPeriphery],Rimward Periphery]].",
+      "branches": [
+        {
+          "responseText": "What is she proposing?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 6,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c4ff2b679edf4590fe47fa5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9caa2e167e90b02b45ce24bf"
+      },
+      "index": 6,
+      "text": "After returning to Canopian space since we last encountered her, she was [[DM.BaseDescriptionDefs[LoreDispossessed],dispossessed]] so she returned to her previous robbery skills.\n\nAnd she claims to know the location and timing of a [[DM.Factions[faction_MaglissSpirits],Magliss Spirits]] convoy that she says is loaded with precious goods.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 7,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c8880c36e8db40c6b887f08"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8a0c83f954573f2136e3c3"
+      },
+      "index": 7,
+      "text": "Darius, I hope both of you haven't discussed this while drunk because that woman could outdrink anyone onboard the <i>[[DM.BaseDescriptionDefs[LoreHysteria],Hysteria]]</i>.\n\nHow many [[DM.BaseDescriptionDefs[LoreCBill],C-Bills]] are involved with this potential heist?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 8,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ccce52b91ddabb3d1cdbefe"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4b2f025bc50d393eff0f94"
+      },
+      "index": 8,
+      "text": "More than ten million C-Bills, all in cash, need to be transported out of [[DM.BaseDescriptionDefs[LoreEarlyDawn],Early Dawn]] and into nearby Canopian worlds regularly.\n\nSince Magliss Spirits is one of the biggest Canopian corporations, they are legally required to reinvest their profits outside their headquarters system because they heavily distort the local economy.",
+      "branches": [
+        {
+          "responseText": "That's a lot of money.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 9,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce5d4fe69ebb9fa91f1a6ea"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c8273685871368f809d0bbc"
+      },
+      "index": 9,
+      "text": "When one of the biggest businesses is booze it sure sells.\n\nSo, what happened after you and this lady discussed business? You guys found yourselves a Canopian water bed?",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 10,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce53ae43f0f1484745d049d"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c53eb7ec440b97d9cd62794"
+      },
+      "index": 10,
+      "text": "First, I wasn't drunk and she made it clear that she blames the MAF, and their recent positive discrimination policies favoring males for restricting her opportunities and having to resort to criminal behavior.\n\nSecond, her aversion to males also extends to a romantic level, so the discussion was rather bordering hostile in some parts.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 11,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9ce29674dd2d033468dfbd92"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f26230355c18000069",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c4ba50cfeccfc53e63f3478"
+      },
+      "index": 11,
+      "text": "Still... she wants to recruit us for a contract but she reveals that sort of attitude towards you, the company XO?\n\nThat doesn't sound trustworthy at all, Darius.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 12,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6a26d89b02b15bf8077dc4"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b98a97623035ac140056c6",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cb9fd7aced82ae239d51794"
+      },
+      "index": 12,
+      "text": "Or the opposite Dr. Murad, we may not be fully convinced that she's trustworthy but at least we know that 'circumstances' did not cloud Darius thinking.\n\nUnless anyone objects, I shall do the talking with her during this contract.",
+      "branches": [
+        {
+          "responseText": "Very well Sumire.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c99c5834004f284d201484b"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3a06230355c18000067",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    }
+  ],
+  "roots": [
+    {
+      "responseText": "",
+      "conditions": null,
+      "actions": null,
+      "nextNodeIndex": 0,
+      "hideIfUnavailable": true,
+      "onlyOnce": false,
+      "idRef": {
+        "id": "9cd786e8ca71d1d7953284fd"
+      },
+      "inputBypass": false,
+      "auxiliaryLink": false,
+      "comment": ""
+    }
+  ],
+  "default_speaker_id": "",
+  "default_speaker_override": null,
+  "persistent_conversation": false,
+  "speaker_override_id": ""
+}

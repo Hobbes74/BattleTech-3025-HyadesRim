@@ -6,10 +6,10 @@
   "nodes": [
     {
       "idRef": {
-        "id": "9c7eb5a7b5fdb747050ef5a5"
+        "id": "9ce461e102d6414ad926dc4b"
       },
       "index": 0,
-      "text": "We ordered back all of our remaining forces to Coromodir except for a few units defending Panzyr and Tyrlon and we have evacuated as many people as we can to safer locations but that safety might be only temporary.\n\nWe have detected several Harbinger DropShips heading for landing zones, it is time now to deploy our forces to stop them.",
+      "text": "The Harbingers kept the <i>[[DM.BaseDescriptionDefs[LoreJumpShipOrionsBelt],Orion's Belt]]</i> at the zenith [[DM.BaseDescriptionDefs[LoreJumpPoint],jump point]] but now it is heading towards Coromodir IV and should arrive in three days.\n\nSo far we have identified the signatures of several <i>[[DM.BaseDescriptionDefs[LoreLeopard],Leopards]]</i> and <i>[[DM.BaseDescriptionDefs[LoreUnion],Unions]]</i> and from their total estimated mass, that's at least a [[DM.BaseDescriptionDefs[LoreBattleMechRegiment],regiment]] heading towards orbital insertion.",
       "branches": [
         {
           "responseText": "",
@@ -19,7 +19,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c18174e748c7d3daf90417a"
+            "id": "9c235606495df224004a3bec"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -35,7 +35,7 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "598cd3a06230355c18000067",
       "actions": {
         "ops": [
           {
@@ -45,7 +45,7 @@
                 "int_value": 0,
                 "bool_value": false,
                 "float_value": 0.0,
-                "string_value": "kitten",
+                "string_value": "nautilusmap",
                 "call_value": null,
                 "variableref_value": null
               }
@@ -96,6 +96,40 @@
                 "variableref_value": null
               }
             ]
+          },
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
+          {
+            "functionName": "Set Characters Visible",
+            "args": [
+              {
+                "int_value": 1,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              },
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "Alexander,Farah,Sumire,Darius,Yang,Kamea",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
           }
         ]
       },
@@ -103,20 +137,20 @@
     },
     {
       "idRef": {
-        "id": "9c0a4d0a8e04ad46d9ea0688"
+        "id": "9cb7c0fe2d4f092d832dec3f"
       },
       "index": 1,
-      "text": "Highly questionable that the ones you have here now will achieve the job, <i>da</i>?\n\nUnless you have a surprise weapon to pull out of your hat... say like a big bomb that goes boom and radiates everything including 'Mechs, hum?",
+      "text": "Counting the [[DM.BaseDescriptionDefs[LoreAranoRoyalGuard],Royal Guard]], Aurigan house troops and mercenary and... [[DM.Factions[faction_TortugaPirates],allied]] units, we have assembled a reinforced battalion to defend Coromodir IV and [[DM.BaseDescriptionDefs[LoreCordiaCity],Cordia City]] of conventional and 'Mech forces.\n\nBut against at least one regiment using [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]] 'Mechs and technology, the odds are clearly not in our favor here, and that's not even counting the Harbinger units already on Coromodir, either infiltrated or about to land.",
       "branches": [
         {
-          "responseText": "How would you know...",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 2,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cef3c48402240c3f34c0bff"
+            "id": "9ca9b451b84e2b10b7b37c21"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -132,16 +166,32 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c178d03e1ba9cb626b9498e"
+        "id": "9c30ca227ebc00b47e6aad78"
       },
       "index": 2,
-      "text": "Commander this is not the time to discuss such a breach of operational security.\n\nCaptain Murray, you are welcome to leave if you do not like our battle plan or if you want to reveal all of our secrets to the enemy.",
+      "text": "Coromodir IV is the most populous and rich planet of this [[DM.BaseDescriptionDefs[LoreCoromodir],system]] and the entire [[DM.BaseDescriptionDefs[LoreAuriganReach],Aurigan Reach]], which makes it such a target for those Periphery marauders.\n\nThis also makes it challenging to defend because of the multitude of targets, although the presence of the <i>[[DM.BaseDescriptionDefs[LoreArgo],Argo]]</i> gives us a tactical advantage to quickly redeploy the company.",
       "branches": [
         {
           "responseText": "",
@@ -151,7 +201,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cd4526463caaba30c5512fb"
+            "id": "9c9d01637033ce83706e9836"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -167,26 +217,26 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c0fd5b1a8c9397b94932fff"
+        "id": "9cd39acbf3230ff52be3b7db"
       },
       "index": 3,
-      "text": "Coromodir is the most populous and rich system of the Aurigan Reach, which makes it such a target for those Periphery marauders.\n\nThis also makes it challenging to defend because of the multitude of targets, although the presence of the <i>Argo</i> gives us a small tactical advantage to quickly redeploy the company. ",
+      "text": "Highly questionable that your forces here can hold off the Harbingers, or that they'll keep their WarShip away,<i>da</i>?\n\nUnless you have a surprise to pull out of your cockpit... say like a big bomb that goes boom and irradiates everyone of their 'Mechs!",
       "branches": [
         {
-          "responseText": "",
+          "responseText": "XO, how does she know...",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 4,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c851fce3d78af6f485a3beb"
+            "id": "9cb9353daf9dce81bed8fe06"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -199,19 +249,37 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "kitten",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c9df136e82cdb7431ea694c"
+        "id": "9c81c61df2d0f28c904ace3b"
       },
       "index": 4,
-      "text": "Until they decide to deploy the <i>Orion's Belt</i> that is currently at the nadir jumppoint and the raiders are coming for the jugular. \n\nThey'll smash any organized resistance they can find before looting and killing everything else and terrorize the civilian population as needed.",
+      "text": "Commander, we shall deal later with this breach of operational security, although the special warheads are hardly a secret among the crew of the <i>Argo</i>.\n\nCaptain Murray, please do restrain yourself... we can't have that kind of leaks to the enemy if we want to keep the surprise element...",
       "branches": [
         {
           "responseText": "",
@@ -221,7 +289,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c1946e1769b09777f9c45ae"
+            "id": "9ca70f5f8f398b55475958e0"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -237,16 +305,16 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c77d71ce8c22264db64a726"
+        "id": "9c509a33a983000f0cac7542"
       },
       "index": 5,
-      "text": "As needed... that is want we are here to avoid Captain Murray\n\nJust say it Laura. what do you propose then? ",
+      "text": "Surprise, professor four eyes??? \n\n<i>Tvoyu mat</i>, your surprise will be the moment after you use your nuke, when the <i>[[DM.BaseDescriptionDefs[LoreJumpShipOrionsBelt],Orion's Belt]]</i> and their fleet reply by conducting an orbital bombardment that will glass the surface of this planet!",
       "branches": [
         {
           "responseText": "",
@@ -256,7 +324,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c2c37d28442785e9d1c9891"
+            "id": "9cfe96f4d43d935a08d3830a"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -269,19 +337,37 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cd2c00f1075b805581c34eb"
+        "id": "9c5f041e7a63ad839fec44f8"
       },
       "index": 6,
-      "text": "Your defense plans for this world are garbage because they assume that your raiders will follow any laws of war.\n\nThe raider fleet might as well arrive in orbit and begin conducting orbital bombardments and terror raids to force you to respond and spread your forces. ",
+      "text": "You're all assuming the [[DM.Factions[faction_HarbingersOfDoom],Harbingers]] can be intimidated or will follow your [[DM.BaseDescriptionDefs[LoreSpheroid],Spheroid]] rules of war!\n\nThey'll smash you then loot you then kill you then raze this world.",
       "branches": [
         {
           "responseText": "",
@@ -291,7 +377,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c7b3012c02abb37019b3ffa"
+            "id": "9cff366e79576f17521e4035"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -304,19 +390,37 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
       "speaker_override_id": "",
-      "actions": null,
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cee5eb98aecb29f13e94fcf"
+        "id": "9c701acaab82efb423ec4aee"
       },
       "index": 7,
-      "text": "Because that's what would do?\n\nWhat you are saying is nonsense.",
+      "text": "And that is want we are here to avoid, Laura.\n\nWhat do you propose then to defend Coromodir that doesn't involve using a nuclear warhead? ",
       "branches": [
         {
           "responseText": "",
@@ -326,7 +430,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c0f4a3c02e066887e46929c"
+            "id": "9c1f3ab00f0c174d97cf673f"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -342,16 +446,32 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9cdfd1c659abb48128b5ad28"
+        "id": "9c9418bb3801894ef416e5e5"
       },
       "index": 8,
-      "text": "No, that's what I saw them doing on Tortuga City.\n\nThe Council of the Damned couldn't stop them back then. They just picked us one by one until we realized too long that this wasn't one of our bands.",
+      "text": "Wait for their incoming main fleet to land, then deploy all your forces outside the city and issue a big loud challenge to them and their leadership.\n\nThen defeat the Harbingers in a single decisive battle and if not... we all die anyways, in atomic fire if necessary.",
       "branches": [
         {
           "responseText": "",
@@ -361,7 +481,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9caa02663af5a9a5b7eaeeb1"
+            "id": "9ca3971d0cc0d42eae65f25a"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -374,19 +494,21 @@
       "inputMaxLength": 0,
       "sourceTopicRef": null,
       "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c54af1509f1b45a4f3cfcf7"
+        "id": "9c9f6797d3cb32ba896c53de"
       },
       "index": 9,
-      "text": "We can't just concentrate our forces at Cordia City and leave the other cities undefended. ",
+      "text": "If we follow your plan and are defeated, then millions and millions of people will become completely undefended at the hands of the Harbingers.\n\nSlowly grinding them by holding key locations gives us a better chance.",
       "branches": [
         {
           "responseText": "",
@@ -396,7 +518,7 @@
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c90d2b2fdf6547c3efec936"
+            "id": "9c8e53e1e12a9f81e905a186"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -412,40 +534,95 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
-      "actions": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "DEFAULT",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c02c6c9ed90942b1378519f"
+        "id": "9cb70a40435395d45ec027e1"
       },
       "index": 10,
-      "text": "Suit yourself.  A or B?",
+      "text": "That's a repeat of [[DM.BaseDescriptionDefs[LoreTortugaCity],Tortuga City]], the [[DM.BaseDescriptionDefs[LoreCouncilOfDamned],Council of the Damned]] couldn't stop them back then because they thought they were just another pirate group. \n\nThen they just picked us one by one until we realized too long that this wasn't like anything we had faced, sounds familiar, <i>da</i>?",
       "branches": [
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Hunt the Harbingers.]</color>",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 11,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c1712b9cd0d6cfa5a9de0a6"
+            "id": "9c54beb56c252b2f18bd8e67"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
           "comment": ""
-        },
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Set BattleTech Camera Lock",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "AUTO",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cce75b2b695b3d9d832cee2"
+      },
+      "index": 11,
+      "text": "We aren't as spread out and disorganized as [[DM.BaseDescriptionDefs[LorePaulaTrevaline],Paula Trevaline]] and her council of pirates and criminals.\n\nBy concentrating our forces around Cardia City we are limiting the damage caused by the fighting and we can better reinforce our fortified positions, even if we lose orbital control to the Harbingers' main fleet.",
+      "branches": [
         {
-          "responseText": "<color=#85DBF6FF>[Story Decision: Stay ready as tactical reserve.]</color>",
+          "responseText": "",
           "conditions": null,
           "actions": null,
           "nextNodeIndex": 12,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9c143fbd5933a556fd6c7282"
+            "id": "9c0dbf44285fa90ca76bea1d"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -461,26 +638,63 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "59b97f45623035ac140054ca",
       "actions": null,
       "comment": ""
     },
     {
       "idRef": {
-        "id": "9c5ab4a633ed3cf039c87272"
+        "id": "9c6365eac776ec50140bb7ef"
       },
-      "index": 11,
-      "text": "A",
+      "index": 12,
+      "text": "Professor, keep using your history manuals that call for arcane battle rules if you want to die.\n\n<i>Pizdets</i>, time to go find vodka, I am done with this meeting, <i>Argo</i> Actual, come see me in the <i>[[DM.BaseDescriptionDefs[LoreBadKitty],Bad Kitty]]</i> when this is over.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": -1,
+          "nextNodeIndex": 13,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cf676e6951ff872d7c9553a"
+            "id": "9c36a2f3bf096c7f3093e70e"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": {
+        "id": "TortugaPirateLeaderDefault"
+      },
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c5da8ebb4b0e1f62db40ca5"
+      },
+      "index": 13,
+      "text": "[Link disconnected.]",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 14,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cb73f9d4553ec0011c813b5"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -499,6 +713,294 @@
       "speaker_override_id": "59f8f0296230359c2100082c",
       "actions": {
         "ops": [
+          {
+            "functionName": "Set BattleTech Viewscreen Image",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "lostsignal",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          }
+        ]
+      },
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c2f59ea4963ab0e50b10a52"
+      },
+      "index": 14,
+      "text": "XO, please inform Captain Murray later that the [[DM.Factions[faction_TortugaPirates],Satan's Kittens]] will be assigned to the defense of the [[DM.BaseDescriptionDefs[LoreEspinosaRefitYards],Espinosa Refit Yards]].\n\nAnd {COMPANY.CompanyName} will be assigned to secure the [[DM.BaseDescriptionDefs[LoreKeonaAranoSpaceport],Keona Arano Spaceport]].",
+      "branches": [
+        {
+          "responseText": "The spaceport?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 15,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c1d1dec8a243ff972db97cc"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cfa4287a7924181c3a8cd0b"
+      },
+      "index": 15,
+      "text": "{COMMANDER.FirstName} and the rest of the company had assumed we would be more on active role to oppose the Harbinger landings.\n\nWe must be the best equipped unit in this entire army since we are packing a ton of [[DM.BaseDescriptionDefs[LoreLosTech],lostech]].",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 16,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cf6167b97a358ded03d09e5"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c242d4c2c03e9915e52dc7e"
+      },
+      "index": 16,
+      "text": "Chief Yang, the spaceport is currently our only way of communication with the rest of the galaxy since we have also been placed into [[DM.BaseDescriptionDefs[LoreComStarInterdiction],Interdiction]] by ComStar following the destruction of Coromodir's [[DM.BaseDescriptionDefs[LoreHPG],HPG]] transmitter shortly after [[DM.BaseDescriptionDefs[LoreSantiagoEspinosa],Director Espinosa]] was overthrown.\n\nAt the time we thought it was the work of [[DM.Factions[faction_AuriganDirectorate],Directorate]] saboteurs, now it is far more likely that the Harbingers were behind it.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 17,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cb03951f0d07b5e983be89a"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59b97f45623035ac140054ca",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9ca15cabc636d6697123a5d8"
+      },
+      "index": 17,
+      "text": "<i>Perkele</i>, just like [[DM.Factions[faction_ComStar],ComStar]] did recently with the [[DM.Factions[faction_Davion],Federated Suns]] after the destruction of their HPG compound at [[DM.BaseDescriptionDefs[Lore],Sarna]] by [[DM.BaseDescriptionDefs[LoreDavionAFFS],AFFS]] troops.\n\nYeah, that justifies the spaceport being such a priority.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 18,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c25f38dd60e84ba31eb64e9"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "598cd3f36230355c1800006a",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9cc4a1805aff483c47b4c764"
+      },
+      "index": 18,
+      "text": "And after the revelation on [[DM.BaseDescriptionDefs[LoreGuldra],Guldra]] that Colonel Haust was a triple agent and had reverted back to House Espinosa, we do not trust the DropShips to anyone else than the most loyal commander, {COMMANDER.FirstName}.\n\nUnless you believe we can also use your unit to counterattack their scouting parties.",
+      "branches": [
+        {
+          "responseText": "What counterattacks?",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 19,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6cc933d617f9eda9637059"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c6971fbd2da90f996e9edff"
+      },
+      "index": 19,
+      "text": "We have detected several Harbinger lances already operating on Coromodir's surface, that must have been infiltrated using drop pods from an unseen and undetected DropShip.\n\nThose advance units must be performing recon for their main landings, so taking them down is vital.",
+      "branches": [
+        {
+          "responseText": "<color=#85DBF6FF>[Story Decision: Hunt the recon party.]</color> We can take down and still defend the spaceport.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 20,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9cc64937fa8fb5aa94d58fca"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        },
+        {
+          "responseText": "<color=#85DBF6FF>[Story Decision: Prioritize the spaceport.]</color> No, we need to focus on the spaceport, it is too important.",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": 21,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c6841ca33c8132e638f5450"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": null,
+      "comment": ""
+    },
+    {
+      "idRef": {
+        "id": "9c7d75c9dd310aca1225add3"
+      },
+      "index": 20,
+      "text": "Very well, prepare your unit for deployment. Happy hunting, {COMMANDER.FirstName}.",
+      "branches": [
+        {
+          "responseText": "",
+          "conditions": null,
+          "actions": null,
+          "nextNodeIndex": -1,
+          "hideIfUnavailable": true,
+          "onlyOnce": false,
+          "idRef": {
+            "id": "9c45c5173094c0a988425020"
+          },
+          "inputBypass": false,
+          "auxiliaryLink": false,
+          "comment": ""
+        }
+      ],
+      "nodeType": 1,
+      "truthValue": false,
+      "autoFollowBranchDelay": 1,
+      "inputMaxLength": 0,
+      "sourceTopicRef": null,
+      "subjectTopicRefs": [],
+      "sourceInSceneRef": null,
+      "sourceWithTagInScene": "",
+      "override_speaker": null,
+      "speaker_override_id": "59baac916230356416000354",
+      "actions": {
+        "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
           {
             "functionName": "Set BattleTech Tag",
             "args": [
@@ -574,20 +1076,20 @@
     },
     {
       "idRef": {
-        "id": "9c9d02692ac532ba4b3f1495"
+        "id": "9c1340cacfc3ca8866b47350"
       },
-      "index": 12,
-      "text": "B",
+      "index": 21,
+      "text": "Good and won't worry, you'll get into action soon.\n\nLet's prepare to hunt.",
       "branches": [
         {
           "responseText": "",
           "conditions": null,
           "actions": null,
-          "nextNodeIndex": 13,
+          "nextNodeIndex": -1,
           "hideIfUnavailable": true,
           "onlyOnce": false,
           "idRef": {
-            "id": "9cb083b84ac62d11fdabad21"
+            "id": "9c1926da2e05b4a4af30f977"
           },
           "inputBypass": false,
           "auxiliaryLink": false,
@@ -603,9 +1105,22 @@
       "sourceInSceneRef": null,
       "sourceWithTagInScene": "",
       "override_speaker": null,
-      "speaker_override_id": "59f8f0296230359c2100082c",
+      "speaker_override_id": "59baac916230356416000354",
       "actions": {
         "ops": [
+          {
+            "functionName": "Play BattleTech Audio Event",
+            "args": [
+              {
+                "int_value": 0,
+                "bool_value": false,
+                "float_value": 0.0,
+                "string_value": "GConv-LastDialogueBranchMusic",
+                "call_value": null,
+                "variableref_value": null
+              }
+            ]
+          },
           {
             "functionName": "Set BattleTech Tag",
             "args": [
@@ -678,251 +1193,6 @@
         ]
       },
       "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9c42c2a179f1c7f6ea4f7a28"
-      },
-      "index": 13,
-      "text": "We have also been placed into Interdiction by ComStar following the destruction of Coromodir's HPG transmitter shortly after the completion of the coup that deposed House Espinosa.\n\nAt the time we thought it was the work of Directorate saboteurs, now it is far more likely that the Harbingers were behind it.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 14,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9c90a767ece35fab658cd88c"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9cebe9a423dc08a6f5a88f3f"
-      },
-      "index": 14,
-      "text": "Just like ComStar did recently with the Federated Suns after the destruction of their compound at Sarna.\n\nAnd the Harbingers did the same previously at Hellespont, back where we first encountered the Kittens.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 15,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9cbe2cdbfcbb739ee19547b7"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9c4739ad5cdd8de683062e0d"
-      },
-      "index": 15,
-      "text": "No, back then the Harbingers were using the HPG antenna for something else, they didn't destroy it after capturing or even killed any of its personnel, that was entirely Captain Murray's and her Kittens.\n\nIn fact, she was also attempting to use the HPG transmitter back then,",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 16,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9c81809a22352990e7537450"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9ce769d415bbdd9f0ac1c14d"
-      },
-      "index": 16,
-      "text": "Live ComStar personnel can be troublesome when they report you back to the authorities, da?\n\nBetter to leave no witnesses behind.",
-      "branches": [
-        {
-          "responseText": "You left plenty of witnesses alive, including us.",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 17,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9cd111ee401444b05aa612ee"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9c2af8c69feed663eb4ab82b"
-      },
-      "index": 17,
-      "text": "You were useful, or at least some of you were, Commander.\n\nAnd you kept your side of the bargain as a mercenary while ComStar wouldn't be so... cooperative.",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 18,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9cbae8ad40eff4940205057d"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9c0ba927b9a1dbe92da4e235"
-      },
-      "index": 18,
-      "text": "So what did you discover?",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": 19,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9c8233834167f9b164206e63"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
-    },
-    {
-      "idRef": {
-        "id": "9c4483e3c6aa97217a6bb594"
-      },
-      "index": 19,
-      "text": "",
-      "branches": [
-        {
-          "responseText": "",
-          "conditions": null,
-          "actions": null,
-          "nextNodeIndex": -1,
-          "hideIfUnavailable": true,
-          "onlyOnce": false,
-          "idRef": {
-            "id": "9cf98c942ab2df409c488ef8"
-          },
-          "inputBypass": false,
-          "auxiliaryLink": false,
-          "comment": ""
-        }
-      ],
-      "nodeType": 1,
-      "truthValue": false,
-      "autoFollowBranchDelay": 1,
-      "inputMaxLength": 0,
-      "sourceTopicRef": null,
-      "subjectTopicRefs": [],
-      "sourceInSceneRef": null,
-      "sourceWithTagInScene": "",
-      "override_speaker": null,
-      "speaker_override_id": "",
-      "actions": null,
-      "comment": ""
     }
   ],
   "roots": [
@@ -934,7 +1204,7 @@
       "hideIfUnavailable": true,
       "onlyOnce": false,
       "idRef": {
-        "id": "9ce3baf64a9e980928078159"
+        "id": "9c7bcb65673c046d30782961"
       },
       "inputBypass": false,
       "auxiliaryLink": false,
