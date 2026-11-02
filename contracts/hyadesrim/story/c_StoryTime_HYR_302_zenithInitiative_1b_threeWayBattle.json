@@ -1,5 +1,5 @@
 {
-    "ID" : "c_StoryTime_HYR_302_zenithInitiative_1_threeWayBattle",
+    "ID" : "c_StoryTime_HYR_302_zenithInitiative_1b_threeWayBattle",
     "contractName" : "Zenith Initiative",
     "contractDisplayStyle" : "HeavyMetalFlashpointCampaign",
     "difficulty" : 6,
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Interconnectedness Unlimited has occupied the former Liao military headquarters and they are using it to house their null weapon. We can't be sure of the effects of the weapon but the risk is that they might use it to disable our JumpShip and trap us at the world so we need to seize it before they have a chance to deploy it.",
-    "longDescription" : "I don't like her arithmetics but the casualties list keep piling up on both sides.",
+    "shortDescription" : "Interconnectedness Unlimited has occupied the former Liao military headquarters but before we can assault it, we need to trim down the numbers of the Syrtis Fusiliers that are defending the compound. Fortunately, your arrival has balanced the equation, if we can use the opportunity. When the Irregulars are ready to deploy, we will link with you and attack the Fusiliers together.",
+    "longDescription" : "I don't like the arithmetics for Count von Steffelbus, he might just surrender once he realizes the differences between forces.",
     "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -40,7 +40,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "8d7e4513-f6c4-4914-a08f-d7baa89672be"
             },
-            "title" : "Destroy All Davion Units",
+            "title" : "Destroy All Fusilier Units",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -1341,7 +1341,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "7f7e150a-d8e3-4587-9d79-3c2dfe928855"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Enemy Ally Landed Forces Chunk Group"
             ],
@@ -1418,7 +1418,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "889ff9a0-067e-4fc5-bb85-99c2ee9e9e81"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Employer Forces Chunk Group"
             ],
@@ -1632,14 +1632,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "You're approaching the target area, Commander. There's definitely been fighting in this region; lots of low-intensity laser scoring.",
+                    "words" : "In the middle of darkness, we can leap into mankind's zenith with the right leadership Peter.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_InterconnectednessUnlimitedLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1648,30 +1648,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Intel says the target lance should be in this area. Engage them, and keep your eyes open for that other lance.",
+                    "words" : "You are a disgrace to the Federated Suns.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_AppleComputersInterstellarLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Good hunting, Commander. Oliviera out.",
+                    "words" : "Mercenaries, engage the Count's forces.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_AppleComputersInterstellarLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
@@ -1689,14 +1689,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "That's all of them, Commander. Let's go home.",
+                    "words" : "You have performed well mercenaries.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_AppleComputersInterstellarLeaderDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2860,7 +2860,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Commander, our {TEAM_EMP.FactionDef.Demonym} friends have deployed forces to assist in our operation here. This is the Secondary version.",
+                    "words" : "The Blue Star Irregulars lance is deploying and we are ordered to assist them taking down the Syrtis Fusiliers.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2871,38 +2871,6 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "38efff2a-29a9-4886-a145-c5a7ca747fb7",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "PLACEHOLDER That's an affirmative, XO Olivera. We're on station and will provie support to achieve the primary objective. When it's destoryed we have orders to proceed to our Evac.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "38efff2a-29a9-4886-a145-c5a7ca747fb7",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "PLACEHOLDER. Understood Lance leader, glad to have you with us.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -3621,7 +3589,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
+                "lanceDifficultyAdjustment" : 1,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,

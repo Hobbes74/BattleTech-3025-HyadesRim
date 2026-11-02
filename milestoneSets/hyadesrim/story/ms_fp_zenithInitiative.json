@@ -144,7 +144,7 @@
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name}",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
                             ]
@@ -332,11 +332,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_StoryTime_HYR_302_zenithInitiative_1_threeWayBattle",
+                                "c_StoryTime_HYR_302_zenithInitiative_1a_threeWayBattle",
                                 "SpreadingTheGloriesIncorporated",
                                 "CapellanMarch",
                                 "6",
-                                "ms_fp_zenithInitiative_101_Mission",
+                                "ms_fp_zenithInitiative_101_Talk",
                                 null,
                                 null,
                                 null,
@@ -364,7 +364,68 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_101_Mission",
+                "Id" : "ms_fp_zenithInitiative_101_Talk",
+                "Name" : "Talk",
+                "Details" : "First Conversation.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9cd4070a45b5869e48e82cb6",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "Conference",
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_zenithInitiative_102_Mission",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_zenithInitiative_102_Mission",
                 "Name" : "Mission",
                 "Details" : "The 2nd Mission.",
                 "Icon" : null
@@ -403,11 +464,11 @@
                             "additionalValues" : [
                                 null,
                                 null,
-                                "c_StoryTime_HYR_302_zenithInitiative_2a_capturebase",
+                                "c_StoryTime_HYR_302_zenithInitiative_2a_captureBase",
                                 "SpreadingTheGloriesIncorporated",
-                                "Davion",
+                                "CapellanMarch",
                                 "6",
-                                "ms_fp_zenithInitiative_102_Talk",
+                                "ms_fp_zenithInitiative_103_Talk",
                                 null,
                                 null,
                                 null
@@ -425,7 +486,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_102_Talk",
+                "Id" : "ms_fp_zenithInitiative_103_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -462,15 +523,15 @@
                             "value" : "9cd4070a45b5869e48e82cb7",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "Low Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_zenithInitiative_103_Complete",
+                            "value" : "ms_fp_zenithInitiative_104_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -486,7 +547,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_103_Complete",
+                "Id" : "ms_fp_zenithInitiative_104_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -523,10 +584,10 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_zenithInitiative_104_Reward",
+                            "value" : "ms_fp_zenithInitiative_105_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "itemCollection_loot_fp_reward_zenithInitiative",
+                                "itemCollection_loot_fp_reward_a_zenithInitiative",
                                 null
                             ]
                         },
@@ -578,7 +639,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_104_Reward",
+                "Id" : "ms_fp_zenithInitiative_105_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null
@@ -707,7 +768,7 @@
                                 "BlueStarIrregulars",
                                 "CapellanMarch",
                                 "6",
-                                "ms_fp_zenithInitiative_201_Mission",
+                                "ms_fp_zenithInitiative_201_Talk",
                                 null,
                                 null,
                                 null,
@@ -734,68 +795,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_201_Mission",
-                "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_taigaRiver_iTnd",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "c_StoryTime_HYR_302_zenithInitiative_2b_destroyBase",
-                                "BlueStarIrregulars",
-                                "CapellanMarch",
-                                "6",
-                                "ms_fp_zenithInitiative_202_Talk",
-                                null,
-                                null,
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_zenithInitiative_202_Talk",
+                "Id" : "ms_fp_zenithInitiative_201_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -832,7 +832,7 @@
                             "value" : "9cd4070a45b5869e48e82cb8",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -840,7 +840,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_zenithInitiative_203_Complete",
+                            "value" : "ms_fp_zenithInitiative_202_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -856,7 +856,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_203_Complete",
+                "Id" : "ms_fp_zenithInitiative_202_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -893,10 +893,10 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_zenithInitiative_204_Reward",
+                            "value" : "ms_fp_zenithInitiative_203_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "itemCollection_loot_fp_reward_zenithInitiative",
+                                "itemCollection_loot_fp_reward_b_zenithInitiative",
                                 null
                             ]
                         },
@@ -948,7 +948,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_204_Reward",
+                "Id" : "ms_fp_zenithInitiative_203_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null
@@ -1084,7 +1084,7 @@
                                 "CapellanMarch",
                                 "BlueStarIrregulars",
                                 "6",
-                                "ms_fp_zenithInitiative_301_Mission",
+                                "ms_fp_zenithInitiative_301_Talk",
                                 null,
                                 null,
                                 null,
@@ -1111,68 +1111,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_301_Mission",
-                "Name" : "Mission",
-                "Details" : "The 2nd Mission.",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : null,
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_StartContract",
-                            "value" : "mapGeneral_taigaRiver_iTnd",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                null,
-                                null,
-                                "c_StoryTime_HYR_302_zenithInitiative_2c_defendBase",
-                                "CapellanMarch",
-                                "BlueStarIrregulars",
-                                "6",
-                                "ms_fp_zenithInitiative_302_Talk",
-                                null,
-                                null,
-                                null
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : null,
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {
-                "Id" : "ms_fp_zenithInitiative_302_Talk",
+                "Id" : "ms_fp_zenithInitiative_301_Talk",
                 "Name" : "Talk",
                 "Details" : "Closing Conversation.",
                 "Icon" : null
@@ -1209,7 +1148,7 @@
                             "value" : "9cd4070a45b5869e48e82cb8",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -1217,7 +1156,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_zenithInitiative_303_Complete",
+                            "value" : "ms_fp_zenithInitiative_302_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1233,7 +1172,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_303_Complete",
+                "Id" : "ms_fp_zenithInitiative_302_Complete",
                 "Name" : "Complete",
                 "Details" : "Flashpoint completion.",
                 "Icon" : null
@@ -1270,10 +1209,10 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_zenithInitiative_304_Reward",
+                            "value" : "ms_fp_zenithInitiative_303_Reward",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "itemCollection_loot_fp_reward_zenithInitiative",
+                                "itemCollection_loot_fp_reward_b_zenithInitiative",
                                 null
                             ]
                         },
@@ -1325,7 +1264,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_zenithInitiative_304_Reward",
+                "Id" : "ms_fp_zenithInitiative_303_Reward",
                 "Name" : "Reward",
                 "Details" : "Rewards",
                 "Icon" : null
